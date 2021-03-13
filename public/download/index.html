@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Downloading Perlang </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Downloading Perlang ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/asciinema-player.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="downloading-perlang">Downloading Perlang</h1>
+
+<h2 id="released-versions">Released versions</h2>
+<p>There are currently no &quot;released&quot; version of Perlang in that sense. We don&#39;t feel that the language &amp; tooling is mature even to the point where it would make sense to call the version &quot;0.1.0&quot;. Hopefully this will change in the future, but there is currently not timeframe available for when this will happen.</p>
+<h2 id="automated-snapshot-builds">Automated snapshot builds</h2>
+<p>Each commit to the <code>master</code> branch triggers a build that gets published as a set of <code>.tar.gz</code> files at <a href="https://builds.perlang.org">https://builds.perlang.org</a> (CDN sponsored by <a href="https://www.fastly.com/">Fastly</a> - thank you!). These builds are available for Linux, macOS and Windows.</p>
+<p>The easiest way to install the latest build is by using the <a href="https://github.com/perlang-org/perlang/tree/master/scripts/perlang-install">perlang-install</a> script. It works on all supported platforms (Linux, macOS and Windows - the latter requires a POSIX shell like Git Bash to be available). Use it like this:</p>
+<pre><code class="lang-shell hljs"><span class="hljs-meta">$ </span><span class="bash">curl -sSL https://perlang.org/install.sh | sh</span>
+</code></pre>
+
+<p>If you have a previous build installed and want to overwrite it, use the following:</p>
+<pre><code class="lang-shell hljs"><span class="hljs-meta">$ </span><span class="bash">curl -sSL https://perlang.org/install.sh | sh -s -- --force</span>
+</code></pre>
+
+<p><strong>Note</strong>: If you are running the installer in Git Bash on Windows, running <code>perlang</code> after installation will unfortunately not work in the Bash shell (because of limitations preventing us from reading individual keystrokes in Git Bash). Please close the <code>bash</code> session after installation and open a plain <code>cmd</code> shell instead (Command Prompt on the Start menu). In that shell, <code>cd %userprofile%\.perlang\nightly\bin</code>. You should then be able to run <code>perlang</code> to open up the Perlang REPL.</p>
+<p>For more details about this bug, please see <a href="https://github.com/perlang-org/perlang/issues/107">https://github.com/perlang-org/perlang/issues/107</a>.</p>
+<h2 id="video-tutorial">Video tutorial</h2>
+<p>For those of you who prefer to learn by watching videos, here&#39;s a short screencast (courtesy of <a href="https://asciinema.org/">Asciinema</a>) which shows what the installer looks like when you run it:</p>
+<p><asciinema-player cols="177" rows="28" speed="2" src="/casts/perlang-install.cast"></asciinema-player></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/docs/download/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright 2020 The Perlang Authors
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../js/asciinema-player.js"></script>
+  </body>
+</html>

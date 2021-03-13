@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Syntax Grammar </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Syntax Grammar ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/asciinema-player.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p>(This whole document is shamelessly inspired by <a href="https://github.com/munificent/craftinginterpreters/blob/master/book/appendix-i.md">https://github.com/munificent/craftinginterpreters/blob/master/book/appendix-i.md</a>)</p>
+<h2 id="syntax-grammar">Syntax Grammar</h2>
+<p>The syntactic grammar is used to parse the linear sequence of tokens into the
+nested syntax tree structure. It starts with the first rule that matches an
+entire Perlang program (or a single REPL entry):</p>
+<pre><code class="lang-perlang">program        → declaration* EOF ;
+</code></pre><h3 id="declarations">Declarations</h3>
+<p>A program is a series of declarations, which are the statements that bind new
+identifiers or any of the other statement types:</p>
+<pre><code class="lang-perlang">declaration    → classDecl
+               | funDecl
+               | varDecl
+               | statement ;
+
+classDecl      → &quot;class&quot; IDENTIFIER ( &quot;&lt;&quot; IDENTIFIER )?
+                 &quot;{&quot; function* &quot;}&quot; ;
+funDecl        → &quot;fun&quot; function ;
+varDecl        → &quot;var&quot; IDENTIFIER ( &quot;=&quot; expression )? &quot;;&quot; ;
+</code></pre><h3 id="statements">Statements</h3>
+<p>The remaining statement rules produce side effects, but do not introduce
+bindings:</p>
+<pre><code class="lang-perlang">statement      → exprStmt
+               | forStmt
+               | ifStmt
+               | printStmt
+               | returnStmt
+               | whileStmt
+               | block ;
+
+exprStmt       → expression &quot;;&quot; ;
+forStmt        → &quot;for&quot; &quot;(&quot; ( varDecl | exprStmt | &quot;;&quot; )
+                           expression? &quot;;&quot;
+                           expression? &quot;)&quot; statement ;
+ifStmt         → &quot;if&quot; &quot;(&quot; expression &quot;)&quot; statement ( &quot;else&quot; statement )? ;
+printStmt      → &quot;print&quot; expression &quot;;&quot; ;
+returnStmt     → &quot;return&quot; expression? &quot;;&quot; ;
+whileStmt      → &quot;while&quot; &quot;(&quot; expression &quot;)&quot; statement ;
+block          → &quot;{&quot; declaration* &quot;}&quot; ;
+</code></pre><p>Note that <code>block</code> is a statement rule, but is also used as a nonterminal in a
+couple of other rules for things like function bodies.</p>
+<h3 id="expressions">Expressions</h3>
+<p>Expressions produce values. Perlang has a number of unary and binary operators with
+different levels of precedence. Some grammars for languages do not directly
+encode the precedence relationships and specify that elsewhere. Here, we use a
+separate rule for each precedence level to make it explicit:</p>
+<pre><code class="lang-perlang">expression     → assignment ;
+
+assignment     → ( call &quot;.&quot; )? IDENTIFIER &quot;=&quot; assignment
+               | unary_postfix | logic_or;
+unary_postfix  → IDENTIFIER ( &quot;--&quot; | &quot;++&quot; ) ;
+
+logic_or       → logic_and ( &quot;or&quot; logic_and )* ;
+logic_and      → equality ( &quot;and&quot; equality )* ;
+equality       → comparison ( ( &quot;!=&quot; | &quot;==&quot; ) comparison )* ;
+comparison     → addition ( ( &quot;&gt;&quot; | &quot;&gt;=&quot; | &quot;&lt;&quot; | &quot;&lt;=&quot; ) addition )* ;
+addition       → multiplication ( ( &quot;-&quot; | &quot;+&quot; ) multiplication )* ;
+multiplication → unary_prefix ( ( &quot;/&quot; | &quot;*&quot; ) unary_prefix )* ;
+
+unary_prefix   → ( &quot;!&quot; | &quot;-&quot; ) unary_prefix | call ;
+call           → primary ( &quot;(&quot; arguments? &quot;)&quot; | &quot;.&quot; IDENTIFIER )* ;
+primary        → &quot;true&quot; | &quot;false&quot; | &quot;nil&quot; | &quot;this&quot;
+               | NUMBER | STRING | IDENTIFIER | &quot;(&quot; expression &quot;)&quot;
+               | &quot;super&quot; &quot;.&quot; IDENTIFIER ;
+</code></pre><h3 id="utility-rules">Utility Rules</h3>
+<p>In order to keep the above rules a little cleaner, some of the grammar is
+split out into a few reused helper rules:</p>
+<pre><code class="lang-perlang">function       → IDENTIFIER &quot;(&quot; parameters? &quot;)&quot; block ;
+parameters     → IDENTIFIER ( &quot;,&quot; IDENTIFIER )* ;
+arguments      → expression ( &quot;,&quot; expression )* ;
+</code></pre><h2 id="lexical-grammar">Lexical Grammar</h2>
+<p>The lexical grammar is used by the scanner to group characters into tokens.
+Where the syntax is <a href="https://en.wikipedia.org/wiki/Context-free_grammar">context free</a>, the lexical grammar is <a href="https://en.wikipedia.org/wiki/Regular_grammar">regular</a> -- note
+that there are no recursive rules.</p>
+<pre><code class="lang-lox">NUMBER         → DIGIT+ ( &quot;.&quot; DIGIT+ )? ;
+STRING         → &#39;&quot;&#39; &lt;any char except &#39;&quot;&#39;&gt;* &#39;&quot;&#39; ;
+IDENTIFIER     → ALPHA ( ALPHA | DIGIT )* ;
+ALPHA          → &#39;a&#39; ... &#39;z&#39; | &#39;A&#39; ... &#39;Z&#39; | &#39;_&#39; ;
+DIGIT          → &#39;0&#39; ... &#39;9&#39; ;
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/docs/syntax-grammar.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright 2020 The Perlang Authors
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+    <script type="text/javascript" src="js/asciinema-player.js"></script>
+  </body>
+</html>

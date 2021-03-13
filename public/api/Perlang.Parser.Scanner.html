@@ -1,0 +1,829 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Scanner
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Scanner
+   ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/asciinema-player.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Perlang.Parser.Scanner">
+  
+  
+  <h1 id="Perlang_Parser_Scanner" data-uid="Perlang.Parser.Scanner" class="text-break">Class Scanner
+  </h1>
+  <div class="markdown level0 summary"><p>Scans a Perlang program, converting it to a list of <a class="xref" href="Perlang.Token.html">Token</a>s.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Scanner</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.Parser.html">Perlang.Parser</a></h6>
+  <h6><strong>Assembly</strong>: Perlang.Parser.dll</h6>
+  <h5 id="Perlang_Parser_Scanner_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Scanner : object</code></pre>
+  </div>
+  <h5 id="Perlang_Parser_Scanner_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Note that the documentation for this class talks about an &quot;input stream&quot; but in the current implementation, the
+whole program is read into a <code>String</code>. If this turns out to be inefficient, we may replace it with a
+stream-based implementation instead. An individual source file is unlikely to become much larger than a few
+thousand lines at most, so just using a plain <code>String</code> is probably the easiest, reasonable approach for now.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner__ctor_System_String_Perlang_Parser_ScanErrorHandler_.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.%23ctor(System.String%2CPerlang.Parser.ScanErrorHandler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L48">View Source</a>
+  </span>
+  <a id="Perlang_Parser_Scanner__ctor_" data-uid="Perlang.Parser.Scanner.#ctor*"></a>
+  <h4 id="Perlang_Parser_Scanner__ctor_System_String_Perlang_Parser_ScanErrorHandler_" data-uid="Perlang.Parser.Scanner.#ctor(System.String,Perlang.Parser.ScanErrorHandler)">Scanner(String, ScanErrorHandler)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scanner(string source, ScanErrorHandler scanErrorHandler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.Parser.ScanErrorHandler.html">ScanErrorHandler</a></td>
+        <td><span class="parametername">scanErrorHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_current.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.current%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L45">View Source</a>
+  </span>
+  <h4 id="Perlang_Parser_Scanner_current" data-uid="Perlang.Parser.Scanner.current">current</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int current</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_line.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.line%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L46">View Source</a>
+  </span>
+  <h4 id="Perlang_Parser_Scanner_line" data-uid="Perlang.Parser.Scanner.line">line</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int line</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_ReservedKeywords.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.ReservedKeywords%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L19">View Source</a>
+  </span>
+  <h4 id="Perlang_Parser_Scanner_ReservedKeywords" data-uid="Perlang.Parser.Scanner.ReservedKeywords">ReservedKeywords</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly IDictionary&lt;string, TokenType&gt; ReservedKeywords</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Perlang.TokenType.html">TokenType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_scanErrorHandler.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.scanErrorHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L41">View Source</a>
+  </span>
+  <h4 id="Perlang_Parser_Scanner_scanErrorHandler" data-uid="Perlang.Parser.Scanner.scanErrorHandler">scanErrorHandler</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly ScanErrorHandler scanErrorHandler</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Parser.ScanErrorHandler.html">ScanErrorHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_source.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.source%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L40">View Source</a>
+  </span>
+  <h4 id="Perlang_Parser_Scanner_source" data-uid="Perlang.Parser.Scanner.source">source</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly string source</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_start.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.start%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L44">View Source</a>
+  </span>
+  <h4 id="Perlang_Parser_Scanner_start" data-uid="Perlang.Parser.Scanner.start">start</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int start</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_tokens.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.tokens%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L43">View Source</a>
+  </span>
+  <h4 id="Perlang_Parser_Scanner_tokens" data-uid="Perlang.Parser.Scanner.tokens">tokens</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly List&lt;Token&gt; tokens</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Perlang.Token.html">Token</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_AddToken_Perlang_TokenType_System_Object_.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.AddToken(Perlang.TokenType%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L372">View Source</a>
+  </span>
+  <a id="Perlang_Parser_Scanner_AddToken_" data-uid="Perlang.Parser.Scanner.AddToken*"></a>
+  <h4 id="Perlang_Parser_Scanner_AddToken_Perlang_TokenType_System_Object_" data-uid="Perlang.Parser.Scanner.AddToken(Perlang.TokenType,System.Object)">AddToken(TokenType, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddToken(TokenType type, object literal = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.TokenType.html">TokenType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">literal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_Advance.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.Advance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L366">View Source</a>
+  </span>
+  <a id="Perlang_Parser_Scanner_Advance_" data-uid="Perlang.Parser.Scanner.Advance*"></a>
+  <h4 id="Perlang_Parser_Scanner_Advance" data-uid="Perlang.Parser.Scanner.Advance">Advance()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">char Advance()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_Identifier.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.Identifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L204">View Source</a>
+  </span>
+  <a id="Perlang_Parser_Scanner_Identifier_" data-uid="Perlang.Parser.Scanner.Identifier*"></a>
+  <h4 id="Perlang_Parser_Scanner_Identifier" data-uid="Perlang.Parser.Scanner.Identifier">Identifier()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Identifier()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_IsAlpha_System_Char_.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.IsAlpha(System.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L350">View Source</a>
+  </span>
+  <a id="Perlang_Parser_Scanner_IsAlpha_" data-uid="Perlang.Parser.Scanner.IsAlpha*"></a>
+  <h4 id="Perlang_Parser_Scanner_IsAlpha_System_Char_" data-uid="Perlang.Parser.Scanner.IsAlpha(System.Char)">IsAlpha(Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static bool IsAlpha(char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_IsAlphaNumeric_System_Char_.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.IsAlphaNumeric(System.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L357">View Source</a>
+  </span>
+  <a id="Perlang_Parser_Scanner_IsAlphaNumeric_" data-uid="Perlang.Parser.Scanner.IsAlphaNumeric*"></a>
+  <h4 id="Perlang_Parser_Scanner_IsAlphaNumeric_System_Char_" data-uid="Perlang.Parser.Scanner.IsAlphaNumeric(System.Char)">IsAlphaNumeric(Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static bool IsAlphaNumeric(char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_IsAtEnd.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.IsAtEnd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L363">View Source</a>
+  </span>
+  <a id="Perlang_Parser_Scanner_IsAtEnd_" data-uid="Perlang.Parser.Scanner.IsAtEnd*"></a>
+  <h4 id="Perlang_Parser_Scanner_IsAtEnd" data-uid="Perlang.Parser.Scanner.IsAtEnd">IsAtEnd()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsAtEnd()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_IsDigit_System_Char_.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.IsDigit(System.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L360">View Source</a>
+  </span>
+  <a id="Perlang_Parser_Scanner_IsDigit_" data-uid="Perlang.Parser.Scanner.IsDigit*"></a>
+  <h4 id="Perlang_Parser_Scanner_IsDigit_System_Char_" data-uid="Perlang.Parser.Scanner.IsDigit(System.Char)">IsDigit(Char)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static bool IsDigit(char c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_Match_System_Char_.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.Match(System.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L305">View Source</a>
+  </span>
+  <a id="Perlang_Parser_Scanner_Match_" data-uid="Perlang.Parser.Scanner.Match*"></a>
+  <h4 id="Perlang_Parser_Scanner_Match_System_Char_" data-uid="Perlang.Parser.Scanner.Match(System.Char)">Match(Char)</h4>
+  <div class="markdown level1 summary"><p>Checks if the current character of the input stream matches the given character. If it matches, the
+character is consumed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Match(char expected)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">expected</span></td>
+        <td><p>The character to look for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the character matches, <code>false</code> if it doesn&apos;t matches or if we are at EOF.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_Number.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.Number%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L218">View Source</a>
+  </span>
+  <a id="Perlang_Parser_Scanner_Number_" data-uid="Perlang.Parser.Scanner.Number*"></a>
+  <h4 id="Perlang_Parser_Scanner_Number" data-uid="Perlang.Parser.Scanner.Number">Number()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Number()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_Peek.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.Peek%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L325">View Source</a>
+  </span>
+  <a id="Perlang_Parser_Scanner_Peek_" data-uid="Perlang.Parser.Scanner.Peek*"></a>
+  <h4 id="Perlang_Parser_Scanner_Peek" data-uid="Perlang.Parser.Scanner.Peek">Peek()</h4>
+  <div class="markdown level1 summary"><p>Returns the current character of the input stream, without advancing the current position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">char Peek()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><p>The character at the current position, or <code>\0</code> if at EOF.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_PeekNext.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.PeekNext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L340">View Source</a>
+  </span>
+  <a id="Perlang_Parser_Scanner_PeekNext_" data-uid="Perlang.Parser.Scanner.PeekNext*"></a>
+  <h4 id="Perlang_Parser_Scanner_PeekNext" data-uid="Perlang.Parser.Scanner.PeekNext">PeekNext()</h4>
+  <div class="markdown level1 summary"><p>Returns the character immediately after the current character of the input stream, without advancing the
+current position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">char PeekNext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><p>The character at the given position, or <code>\0</code> if at EOF.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_ScanToken.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.ScanToken%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L77">View Source</a>
+  </span>
+  <a id="Perlang_Parser_Scanner_ScanToken_" data-uid="Perlang.Parser.Scanner.ScanToken*"></a>
+  <h4 id="Perlang_Parser_Scanner_ScanToken" data-uid="Perlang.Parser.Scanner.ScanToken">ScanToken()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ScanToken()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_ScanTokens.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.ScanTokens%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L54">View Source</a>
+  </span>
+  <a id="Perlang_Parser_Scanner_ScanTokens_" data-uid="Perlang.Parser.Scanner.ScanTokens*"></a>
+  <h4 id="Perlang_Parser_Scanner_ScanTokens" data-uid="Perlang.Parser.Scanner.ScanTokens">ScanTokens()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Token&gt; ScanTokens()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Perlang.Token.html">Token</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner_String.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner.String%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L272">View Source</a>
+  </span>
+  <a id="Perlang_Parser_Scanner_String_" data-uid="Perlang.Parser.Scanner.String*"></a>
+  <h4 id="Perlang_Parser_Scanner_String" data-uid="Perlang.Parser.Scanner.String">String()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void String()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Parser_Scanner.md&amp;value=---%0Auid%3A%20Perlang.Parser.Scanner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Parser/Scanner.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright 2020 The Perlang Authors
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../js/asciinema-player.js"></script>
+  </body>
+</html>

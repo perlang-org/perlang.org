@@ -1,0 +1,1769 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Resolver
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Resolver
+   ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/asciinema-player.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Perlang.Interpreter.Resolution.Resolver">
+  
+  
+  <h1 id="Perlang_Interpreter_Resolution_Resolver" data-uid="Perlang.Interpreter.Resolution.Resolver" class="text-break">Class Resolver
+  </h1>
+  <div class="markdown level0 summary"><p>The Resolver is responsible for resolving names of local and global variable/function names.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Resolver</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Perlang.Expr.IVisitor-1.html">Expr.IVisitor</a>&lt;<a class="xref" href="Perlang.VoidObject.html">VoidObject</a>&gt;</div>
+    <div><a class="xref" href="Perlang.Stmt.IVisitor-1.html">Stmt.IVisitor</a>&lt;<a class="xref" href="Perlang.VoidObject.html">VoidObject</a>&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.Interpreter.Resolution.html">Perlang.Interpreter.Resolution</a></h6>
+  <h6><strong>Assembly</strong>: Perlang.Interpreter.dll</h6>
+  <h5 id="Perlang_Interpreter_Resolution_Resolver_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">class Resolver : object, Expr.IVisitor&lt;VoidObject&gt;, Stmt.IVisitor&lt;VoidObject&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver__ctor_IImmutableDictionary_System_String_Type__IImmutableDictionary_System_String_Type__Action_Perlang_Interpreter_Resolution_Binding__Action_Perlang_Interpreter_Resolution_Binding__Action_System_String_Perlang_PerlangClass__Perlang_Interpreter_ResolveErrorHandler_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.%23ctor(IImmutableDictionary%7BSystem.String%2CType%7D%2CIImmutableDictionary%7BSystem.String%2CType%7D%2CAction%7BPerlang.Interpreter.Resolution.Binding%7D%2CAction%7BPerlang.Interpreter.Resolution.Binding%7D%2CAction%7BSystem.String%2CPerlang.PerlangClass%7D%2CPerlang.Interpreter.ResolveErrorHandler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L47">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver__ctor_" data-uid="Perlang.Interpreter.Resolution.Resolver.#ctor*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver__ctor_IImmutableDictionary_System_String_Type__IImmutableDictionary_System_String_Type__Action_Perlang_Interpreter_Resolution_Binding__Action_Perlang_Interpreter_Resolution_Binding__Action_System_String_Perlang_PerlangClass__Perlang_Interpreter_ResolveErrorHandler_" data-uid="Perlang.Interpreter.Resolution.Resolver.#ctor(IImmutableDictionary{System.String,Type},IImmutableDictionary{System.String,Type},Action{Perlang.Interpreter.Resolution.Binding},Action{Perlang.Interpreter.Resolution.Binding},Action{System.String,Perlang.PerlangClass},Perlang.Interpreter.ResolveErrorHandler)">Resolver(IImmutableDictionary&lt;String, Type&gt;, IImmutableDictionary&lt;String, Type&gt;, Action&lt;Binding&gt;, Action&lt;Binding&gt;, Action&lt;String, PerlangClass&gt;, ResolveErrorHandler)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Perlang.Interpreter.Resolution.Resolver.html">Resolver</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Resolver(IImmutableDictionary&lt;string, Type&gt; globalClasses, IImmutableDictionary&lt;string, Type&gt; superGlobals, Action&lt;Binding&gt; addLocalExprCallback, Action&lt;Binding&gt; addGlobalExprCallback, Action&lt;string, PerlangClass&gt; addGlobalClassCallback, ResolveErrorHandler resolveErrorHandler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IImmutableDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">Type</span>&gt;</td>
+        <td><span class="parametername">globalClasses</span></td>
+        <td><p>A dictionary of global classes, with the class name as key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IImmutableDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">Type</span>&gt;</td>
+        <td><span class="parametername">superGlobals</span></td>
+        <td><p>A dictionary of &quot;super-globals&quot;; a set of pre-defined global variables, coming
+from outside of the program itself.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Interpreter.Resolution.Binding.html">Binding</a>&gt;</td>
+        <td><span class="parametername">addLocalExprCallback</span></td>
+        <td><p>A callback used to add an expression to a local scope at a
+given depth away from the call site. One level of nesting = one extra level of depth.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Interpreter.Resolution.Binding.html">Binding</a>&gt;</td>
+        <td><span class="parametername">addGlobalExprCallback</span></td>
+        <td><p>A callback used to add an expression to the global scope.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Perlang.PerlangClass.html">PerlangClass</a>&gt;</td>
+        <td><span class="parametername">addGlobalClassCallback</span></td>
+        <td><p>A callback used to add a global, top-level class.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.Interpreter.ResolveErrorHandler.html">ResolveErrorHandler</a></td>
+        <td><span class="parametername">resolveErrorHandler</span></td>
+        <td><p>A callback which will be called in case of resolution errors. Note that
+multiple resolution errors will cause the provided callback to be called multiple times.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_addGlobalClassCallback.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.addGlobalClassCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L19">View Source</a>
+  </span>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_addGlobalClassCallback" data-uid="Perlang.Interpreter.Resolution.Resolver.addGlobalClassCallback">addGlobalClassCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly Action&lt;string, PerlangClass&gt; addGlobalClassCallback</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Perlang.PerlangClass.html">PerlangClass</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_addGlobalExprCallback.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.addGlobalExprCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L18">View Source</a>
+  </span>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_addGlobalExprCallback" data-uid="Perlang.Interpreter.Resolution.Resolver.addGlobalExprCallback">addGlobalExprCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly Action&lt;Binding&gt; addGlobalExprCallback</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Interpreter.Resolution.Binding.html">Binding</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_addLocalExprCallback.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.addLocalExprCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L17">View Source</a>
+  </span>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_addLocalExprCallback" data-uid="Perlang.Interpreter.Resolution.Resolver.addLocalExprCallback">addLocalExprCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly Action&lt;Binding&gt; addLocalExprCallback</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Interpreter.Resolution.Binding.html">Binding</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_currentFunction.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.currentFunction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L33">View Source</a>
+  </span>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_currentFunction" data-uid="Perlang.Interpreter.Resolution.Resolver.currentFunction">currentFunction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Resolver.FunctionType currentFunction</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Interpreter.Resolution.Resolver.FunctionType.html">Resolver.FunctionType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_globals.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.globals%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L31">View Source</a>
+  </span>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_globals" data-uid="Perlang.Interpreter.Resolution.Resolver.globals">globals</h4>
+  <div class="markdown level1 summary"><p>An instance-local list of global symbols (variables, functions etc).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly IDictionary&lt;string, IBindingFactory&gt; globals</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Perlang.Interpreter.Resolution.IBindingFactory.html">IBindingFactory</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_resolveErrorHandler.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.resolveErrorHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L20">View Source</a>
+  </span>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_resolveErrorHandler" data-uid="Perlang.Interpreter.Resolution.Resolver.resolveErrorHandler">resolveErrorHandler</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly ResolveErrorHandler resolveErrorHandler</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Interpreter.ResolveErrorHandler.html">ResolveErrorHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_scopes.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.scopes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L26">View Source</a>
+  </span>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_scopes" data-uid="Perlang.Interpreter.Resolution.Resolver.scopes">scopes</h4>
+  <div class="markdown level1 summary"><p>An instance-local list of scopes. The innermost scope is always the last entry in this list. As the code is
+being traversed, scopes are created and removed as blocks are opened/closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly List&lt;IDictionary&lt;string, IBindingFactory&gt;&gt; scopes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Perlang.Interpreter.Resolution.IBindingFactory.html">IBindingFactory</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_BeginScope.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.BeginScope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L84">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_BeginScope_" data-uid="Perlang.Interpreter.Resolution.Resolver.BeginScope*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_BeginScope" data-uid="Perlang.Interpreter.Resolution.Resolver.BeginScope">BeginScope()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void BeginScope()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_Declare_Perlang_Token_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.Declare(Perlang.Token)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L99">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_Declare_" data-uid="Perlang.Interpreter.Resolution.Resolver.Declare*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_Declare_Perlang_Token_" data-uid="Perlang.Interpreter.Resolution.Resolver.Declare(Perlang.Token)">Declare(Token)</h4>
+  <div class="markdown level1 summary"><p>Declares a variable or function as existing (but not yet initialized) in the innermost scope. This allows
+the variable to shadow variables in outer scopes with the same name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Declare(Token name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Token.html">Token</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the variable or function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_Define_Perlang_Token_Perlang_TypeReference_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.Define(Perlang.Token%2CPerlang.TypeReference)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L133">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_Define_" data-uid="Perlang.Interpreter.Resolution.Resolver.Define*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_Define_Perlang_Token_Perlang_TypeReference_" data-uid="Perlang.Interpreter.Resolution.Resolver.Define(Perlang.Token,Perlang.TypeReference)">Define(Token, TypeReference)</h4>
+  <div class="markdown level1 summary"><p>Defines a previously declared variable as initialized, available for use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Define(Token name, TypeReference typeReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Token.html">Token</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The variable or function name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.TypeReference.html">TypeReference</a></td>
+        <td><span class="parametername">typeReference</span></td>
+        <td><p>A TypeReference describing the variable or function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_DefineClass_Perlang_Token_Perlang_PerlangClass_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.DefineClass(Perlang.Token%2CPerlang.PerlangClass)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L179">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_DefineClass_" data-uid="Perlang.Interpreter.Resolution.Resolver.DefineClass*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_DefineClass_Perlang_Token_Perlang_PerlangClass_" data-uid="Perlang.Interpreter.Resolution.Resolver.DefineClass(Perlang.Token,Perlang.PerlangClass)">DefineClass(Token, PerlangClass)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DefineClass(Token name, PerlangClass perlangClass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Token.html">Token</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.PerlangClass.html">PerlangClass</a></td>
+        <td><span class="parametername">perlangClass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_DefineFunction_Perlang_Token_Perlang_TypeReference_Perlang_Stmt_Function_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.DefineFunction(Perlang.Token%2CPerlang.TypeReference%2CPerlang.Stmt.Function)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L159">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_DefineFunction_" data-uid="Perlang.Interpreter.Resolution.Resolver.DefineFunction*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_DefineFunction_Perlang_Token_Perlang_TypeReference_Perlang_Stmt_Function_" data-uid="Perlang.Interpreter.Resolution.Resolver.DefineFunction(Perlang.Token,Perlang.TypeReference,Perlang.Stmt.Function)">DefineFunction(Token, TypeReference, Stmt.Function)</h4>
+  <div class="markdown level1 summary"><p>Defines a previously declared function as defined, available for use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DefineFunction(Token name, TypeReference typeReference, Stmt.Function function)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Token.html">Token</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The variable or function name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.TypeReference.html">TypeReference</a></td>
+        <td><span class="parametername">typeReference</span></td>
+        <td><p>A TypeReference describing the variable or function.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.Function.html">Stmt.Function</a></td>
+        <td><span class="parametername">function</span></td>
+        <td><p>The function statement should be provided here.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_EndScope.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.EndScope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L89">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_EndScope_" data-uid="Perlang.Interpreter.Resolution.Resolver.EndScope*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_EndScope" data-uid="Perlang.Interpreter.Resolution.Resolver.EndScope">EndScope()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void EndScope()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_IsEmpty_ICollection_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.IsEmpty(ICollection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L122">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_IsEmpty_" data-uid="Perlang.Interpreter.Resolution.Resolver.IsEmpty*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_IsEmpty_ICollection_" data-uid="Perlang.Interpreter.Resolution.Resolver.IsEmpty(ICollection)">IsEmpty(ICollection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static bool IsEmpty(ICollection stack)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ICollection</span></td>
+        <td><span class="parametername">stack</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_Resolve_IEnumerable_Perlang_Stmt__.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.Resolve(IEnumerable%7BPerlang.Stmt%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L71">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_Resolve_" data-uid="Perlang.Interpreter.Resolution.Resolver.Resolve*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_Resolve_IEnumerable_Perlang_Stmt__" data-uid="Perlang.Interpreter.Resolution.Resolver.Resolve(IEnumerable{Perlang.Stmt})">Resolve(IEnumerable&lt;Stmt&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Resolve(IEnumerable&lt;Stmt&gt; statements)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Perlang.Stmt.html">Stmt</a>&gt;</td>
+        <td><span class="parametername">statements</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_Resolve_Perlang_Expr_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.Resolve(Perlang.Expr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L79">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_Resolve_" data-uid="Perlang.Interpreter.Resolution.Resolver.Resolve*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_Resolve_Perlang_Expr_" data-uid="Perlang.Interpreter.Resolution.Resolver.Resolve(Perlang.Expr)">Resolve(Expr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Resolve(Expr expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.html">Expr</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_Resolve_Perlang_Stmt_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.Resolve(Perlang.Stmt)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L346">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_Resolve_" data-uid="Perlang.Interpreter.Resolution.Resolver.Resolve*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_Resolve_Perlang_Stmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.Resolve(Perlang.Stmt)">Resolve(Stmt)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Resolve(Stmt stmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.html">Stmt</a></td>
+        <td><span class="parametername">stmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_ResolveFunction_Perlang_Stmt_Function_Perlang_Interpreter_Resolution_Resolver_FunctionType_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.ResolveFunction(Perlang.Stmt.Function%2CPerlang.Interpreter.Resolution.Resolver.FunctionType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L367">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_ResolveFunction_" data-uid="Perlang.Interpreter.Resolution.Resolver.ResolveFunction*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_ResolveFunction_Perlang_Stmt_Function_Perlang_Interpreter_Resolution_Resolver_FunctionType_" data-uid="Perlang.Interpreter.Resolution.Resolver.ResolveFunction(Perlang.Stmt.Function,Perlang.Interpreter.Resolution.Resolver.FunctionType)">ResolveFunction(Stmt.Function, Resolver.FunctionType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ResolveFunction(Stmt.Function function, Resolver.FunctionType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.Function.html">Stmt.Function</a></td>
+        <td><span class="parametername">function</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.Interpreter.Resolution.Resolver.FunctionType.html">Resolver.FunctionType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_ResolveLocalOrGlobal_Perlang_Expr_Perlang_Token_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.ResolveLocalOrGlobal(Perlang.Expr%2CPerlang.Token)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L191">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_ResolveLocalOrGlobal_" data-uid="Perlang.Interpreter.Resolution.Resolver.ResolveLocalOrGlobal*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_ResolveLocalOrGlobal_Perlang_Expr_Perlang_Token_" data-uid="Perlang.Interpreter.Resolution.Resolver.ResolveLocalOrGlobal(Perlang.Expr,Perlang.Token)">ResolveLocalOrGlobal(Expr, Token)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ResolveLocalOrGlobal(Expr referringExpr, Token name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.html">Expr</a></td>
+        <td><span class="parametername">referringExpr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.Token.html">Token</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitAssignExpr_Perlang_Expr_Assign_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitAssignExpr(Perlang.Expr.Assign)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L234">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitAssignExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitAssignExpr*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitAssignExpr_Perlang_Expr_Assign_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitAssignExpr(Perlang.Expr.Assign)">VisitAssignExpr(Expr.Assign)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitAssignExpr(Expr.Assign expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Assign.html">Expr.Assign</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitBinaryExpr_Perlang_Expr_Binary_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitBinaryExpr(Perlang.Expr.Binary)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L242">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitBinaryExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitBinaryExpr*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitBinaryExpr_Perlang_Expr_Binary_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitBinaryExpr(Perlang.Expr.Binary)">VisitBinaryExpr(Expr.Binary)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitBinaryExpr(Expr.Binary expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Binary.html">Expr.Binary</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitBlockStmt_Perlang_Stmt_Block_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitBlockStmt(Perlang.Stmt.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L323">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitBlockStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitBlockStmt*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitBlockStmt_Perlang_Stmt_Block_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitBlockStmt(Perlang.Stmt.Block)">VisitBlockStmt(Stmt.Block)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitBlockStmt(Stmt.Block stmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.Block.html">Stmt.Block</a></td>
+        <td><span class="parametername">stmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitCallExpr_Perlang_Expr_Call_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitCallExpr(Perlang.Expr.Call)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L250">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitCallExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitCallExpr*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitCallExpr_Perlang_Expr_Call_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitCallExpr(Perlang.Expr.Call)">VisitCallExpr(Expr.Call)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitCallExpr(Expr.Call expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Call.html">Expr.Call</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitClassStmt_Perlang_Stmt_Class_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitClassStmt(Perlang.Stmt.Class)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L332">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitClassStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitClassStmt*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitClassStmt_Perlang_Stmt_Class_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitClassStmt(Perlang.Stmt.Class)">VisitClassStmt(Stmt.Class)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitClassStmt(Stmt.Class stmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.Class.html">Stmt.Class</a></td>
+        <td><span class="parametername">stmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitEmptyExpr_Perlang_Expr_Empty_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitEmptyExpr(Perlang.Expr.Empty)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L229">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitEmptyExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitEmptyExpr*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitEmptyExpr_Perlang_Expr_Empty_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitEmptyExpr(Perlang.Expr.Empty)">VisitEmptyExpr(Expr.Empty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitEmptyExpr(Expr.Empty expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Empty.html">Expr.Empty</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitExpressionStmt_Perlang_Stmt_ExpressionStmt_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitExpressionStmt(Perlang.Stmt.ExpressionStmt)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L351">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitExpressionStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitExpressionStmt*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitExpressionStmt_Perlang_Stmt_ExpressionStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitExpressionStmt(Perlang.Stmt.ExpressionStmt)">VisitExpressionStmt(Stmt.ExpressionStmt)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitExpressionStmt(Stmt.ExpressionStmt stmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.ExpressionStmt.html">Stmt.ExpressionStmt</a></td>
+        <td><span class="parametername">stmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitFunctionStmt_Perlang_Stmt_Function_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitFunctionStmt(Perlang.Stmt.Function)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L357">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitFunctionStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitFunctionStmt*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitFunctionStmt_Perlang_Stmt_Function_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitFunctionStmt(Perlang.Stmt.Function)">VisitFunctionStmt(Stmt.Function)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitFunctionStmt(Stmt.Function stmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.Function.html">Stmt.Function</a></td>
+        <td><span class="parametername">stmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitGetExpr_Perlang_Expr_Get_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitGetExpr(Perlang.Expr.Get)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L316">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitGetExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitGetExpr*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitGetExpr_Perlang_Expr_Get_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitGetExpr(Perlang.Expr.Get)">VisitGetExpr(Expr.Get)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitGetExpr(Expr.Get expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Get.html">Expr.Get</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitGroupingExpr_Perlang_Expr_Grouping_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitGroupingExpr(Perlang.Expr.Grouping)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L267">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitGroupingExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitGroupingExpr*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitGroupingExpr_Perlang_Expr_Grouping_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitGroupingExpr(Perlang.Expr.Grouping)">VisitGroupingExpr(Expr.Grouping)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitGroupingExpr(Expr.Grouping expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Grouping.html">Expr.Grouping</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitIdentifierExpr_Perlang_Expr_Identifier_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitIdentifierExpr(Perlang.Expr.Identifier)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L301">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitIdentifierExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitIdentifierExpr*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitIdentifierExpr_Perlang_Expr_Identifier_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitIdentifierExpr(Perlang.Expr.Identifier)">VisitIdentifierExpr(Expr.Identifier)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitIdentifierExpr(Expr.Identifier expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Identifier.html">Expr.Identifier</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitIfStmt_Perlang_Stmt_If_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitIfStmt(Perlang.Stmt.If)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L386">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitIfStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitIfStmt*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitIfStmt_Perlang_Stmt_If_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitIfStmt(Perlang.Stmt.If)">VisitIfStmt(Stmt.If)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitIfStmt(Stmt.If stmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.If.html">Stmt.If</a></td>
+        <td><span class="parametername">stmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitLiteralExpr_Perlang_Expr_Literal_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitLiteralExpr(Perlang.Expr.Literal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L273">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitLiteralExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitLiteralExpr*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitLiteralExpr_Perlang_Expr_Literal_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitLiteralExpr(Perlang.Expr.Literal)">VisitLiteralExpr(Expr.Literal)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitLiteralExpr(Expr.Literal expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Literal.html">Expr.Literal</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitLogicalExpr_Perlang_Expr_Logical_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitLogicalExpr(Perlang.Expr.Logical)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L278">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitLogicalExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitLogicalExpr*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitLogicalExpr_Perlang_Expr_Logical_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitLogicalExpr(Perlang.Expr.Logical)">VisitLogicalExpr(Expr.Logical)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitLogicalExpr(Expr.Logical expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Logical.html">Expr.Logical</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitPrintStmt_Perlang_Stmt_Print_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitPrintStmt(Perlang.Stmt.Print)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L399">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitPrintStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitPrintStmt*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitPrintStmt_Perlang_Stmt_Print_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitPrintStmt(Perlang.Stmt.Print)">VisitPrintStmt(Stmt.Print)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitPrintStmt(Stmt.Print stmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.Print.html">Stmt.Print</a></td>
+        <td><span class="parametername">stmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitReturnStmt_Perlang_Stmt_Return_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitReturnStmt(Perlang.Stmt.Return)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L405">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitReturnStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitReturnStmt*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitReturnStmt_Perlang_Stmt_Return_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitReturnStmt(Perlang.Stmt.Return)">VisitReturnStmt(Stmt.Return)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitReturnStmt(Stmt.Return stmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.Return.html">Stmt.Return</a></td>
+        <td><span class="parametername">stmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitUnaryPostfixExpr_Perlang_Expr_UnaryPostfix_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitUnaryPostfixExpr(Perlang.Expr.UnaryPostfix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L293">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitUnaryPostfixExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitUnaryPostfixExpr*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitUnaryPostfixExpr_Perlang_Expr_UnaryPostfix_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitUnaryPostfixExpr(Perlang.Expr.UnaryPostfix)">VisitUnaryPostfixExpr(Expr.UnaryPostfix)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitUnaryPostfixExpr(Expr.UnaryPostfix expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.UnaryPostfix.html">Expr.UnaryPostfix</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitUnaryPrefixExpr_Perlang_Expr_UnaryPrefix_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitUnaryPrefixExpr(Perlang.Expr.UnaryPrefix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L286">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitUnaryPrefixExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitUnaryPrefixExpr*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitUnaryPrefixExpr_Perlang_Expr_UnaryPrefix_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitUnaryPrefixExpr(Perlang.Expr.UnaryPrefix)">VisitUnaryPrefixExpr(Expr.UnaryPrefix)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitUnaryPrefixExpr(Expr.UnaryPrefix expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.UnaryPrefix.html">Expr.UnaryPrefix</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitVarStmt_Perlang_Stmt_Var_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitVarStmt(Perlang.Stmt.Var)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L420">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitVarStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitVarStmt*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitVarStmt_Perlang_Stmt_Var_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitVarStmt(Perlang.Stmt.Var)">VisitVarStmt(Stmt.Var)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitVarStmt(Stmt.Var stmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.Var.html">Stmt.Var</a></td>
+        <td><span class="parametername">stmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitWhileStmt_Perlang_Stmt_While_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitWhileStmt(Perlang.Stmt.While)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L434">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Resolution_Resolver_VisitWhileStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitWhileStmt*"></a>
+  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitWhileStmt_Perlang_Stmt_While_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitWhileStmt(Perlang.Stmt.While)">VisitWhileStmt(Stmt.While)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitWhileStmt(Stmt.While stmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.While.html">Stmt.While</a></td>
+        <td><span class="parametername">stmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Perlang.Expr.IVisitor-1.html">Expr.IVisitor&lt;TR&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Perlang.Stmt.IVisitor-1.html">Stmt.IVisitor&lt;TR&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Resolution/Resolver.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright 2020 The Perlang Authors
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../js/asciinema-player.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1470 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/perlang/perlang/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Humanizer.InflectorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Humanizer.InflectorExtensions.html",
+          "hash": "8G0GpLH94LK3Hjvdde1cNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Humanizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Humanizer.html",
+          "hash": "rZTmaE/npIowwr4aBF/OSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Attributes.GlobalClassAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Attributes.GlobalClassAttribute.html",
+          "hash": "8RYdRZnQd8y2dfTFs1MIbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Attributes.html",
+          "hash": "s0msj1PoPQ7IaExjoCDiWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.CommonConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.CommonConstants.html",
+          "hash": "fcEslVjlvaS86qSRDfCzzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.ConsoleApp.Program.AutoCompletionHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.ConsoleApp.Program.AutoCompletionHandler.html",
+          "hash": "rmDUQJsgnAbPkhIT0/ftxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.ConsoleApp.Program.ExitCodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.ConsoleApp.Program.ExitCodes.html",
+          "hash": "d4jwSDqFRwPB0atZWJuR3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.ConsoleApp.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.ConsoleApp.Program.html",
+          "hash": "VOolAYp6CDmF1atuGK0YXg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.ConsoleApp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.ConsoleApp.html",
+          "hash": "KX7qeQOjZMQ4b2OE/X/T9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Exceptions.IllegalStateException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Exceptions.IllegalStateException.html",
+          "hash": "ROrRCsR0QRcWitnAzuadjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Exceptions.StdlibException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Exceptions.StdlibException.html",
+          "hash": "yaeZVgnQ4xf7lyNncd07Hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Exceptions.html",
+          "hash": "RV3unuBg88VcCwdsEzxjrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Expr.Assign.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Expr.Assign.html",
+          "hash": "tZ5+ZbKqZ7emFlrAjun/6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Expr.Binary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Expr.Binary.html",
+          "hash": "lFj9v3wyPi66y8WcyP/zeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Expr.Call.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Expr.Call.html",
+          "hash": "7k/yEDd0UFdACkCsV6dPog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Expr.Empty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Expr.Empty.html",
+          "hash": "zCrzM0K/dY2jUPCWyJmq5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Expr.Get.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Expr.Get.html",
+          "hash": "smJcrfcwqM7bF3/xRKsWcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Expr.Grouping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Expr.Grouping.html",
+          "hash": "BcB8hSsnneMyUQQN/JQqJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Expr.IVisitor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Expr.IVisitor-1.html",
+          "hash": "aBatyen5+Bj9GA1RmPwNxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Expr.Identifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Expr.Identifier.html",
+          "hash": "Tzj9dAp8XL9d8gWCt/HOQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Expr.Literal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Expr.Literal.html",
+          "hash": "ebfZ60Mw8YBvA+755+8TZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Expr.Logical.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Expr.Logical.html",
+          "hash": "2x+viI58+WYOPEny7K7jpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Expr.UnaryPostfix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Expr.UnaryPostfix.html",
+          "hash": "mrDQMCVb3xxFEM2b3gKwDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Expr.UnaryPrefix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Expr.UnaryPrefix.html",
+          "hash": "T7YDbvfeLBnym4gktTcT3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Expr.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Expr.html",
+          "hash": "itL+MI2RJFgelPxVdm5C1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.ICallable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.ICallable.html",
+          "hash": "FUdy/HeGOZFzzIyLnRKrtA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.IEnvironment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.IEnvironment.html",
+          "hash": "C1RD2DI5DT4yVB+lsKcsLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.IInterpreter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.IInterpreter.html",
+          "hash": "dR0tgsh3DZfH6Z17rDtP+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.ITokenAware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.ITokenAware.html",
+          "hash": "7k8p0QzVFDU072I+00uOhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Extensions.DictionaryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Extensions.DictionaryExtensions.html",
+          "hash": "iq3zeBjEjZcLWOKHWly0Eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Extensions.TokenTypeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Extensions.TokenTypeExtensions.html",
+          "hash": "21yyJTk4cFyifAQxGj/HjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Extensions.TypeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Extensions.TypeExtensions.html",
+          "hash": "pEEkWDuV1J+rGvJ4OtCfzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Extensions.html",
+          "hash": "R6OJeiaKob++trLxNT4Few=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Immutability.ImmutabilityValidationError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Immutability.ImmutabilityValidationError.html",
+          "hash": "R3s3F0rTGjgAqoyYy/l80A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Immutability.ImmutabilityValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Immutability.ImmutabilityValidator.html",
+          "hash": "FcyxoveEYxlmz1Ta0MIMMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Immutability.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Immutability.html",
+          "hash": "yt+tU0zrEffzNG87RlN2Iw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Internals.AstPrinter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Internals.AstPrinter.html",
+          "hash": "zWeSeZo5t+Fi4+WOjAu4EA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Internals.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Internals.html",
+          "hash": "BwZeeCpfCz2IyC8Ljt6fbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.PerlangEnvironment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.PerlangEnvironment.html",
+          "hash": "DeAdrgGa4jDDOrYMo15OXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.PerlangFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.PerlangFunction.html",
+          "hash": "IISH3NRuAuetJ0z5vdGD2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.PerlangInterpreter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.PerlangInterpreter.html",
+          "hash": "47vftrG9nWP25fprAnWMEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.PerlangInterpreterException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.PerlangInterpreterException.html",
+          "hash": "6eu8Pmyq9M92tb16Lt8Vwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.Binding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.Binding.html",
+          "hash": "pSaUIGtIz4nfm3/R9ZLOeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.ClassBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.ClassBinding.html",
+          "hash": "thl9V0gEA43vCEl2tkZvoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.ClassBindingFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.ClassBindingFactory.html",
+          "hash": "tRDoLrZHNHGVb8PVQg/9Tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.FunctionBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.FunctionBinding.html",
+          "hash": "EfuTCGooawaf3kLvfdpbUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.FunctionBindingFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.FunctionBindingFactory.html",
+          "hash": "PyKi0I4fAiFSikSj0cWSBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.IBindingFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.IBindingFactory.html",
+          "hash": "Nau3//F9y5PycbmIXdj1dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.IDistanceAwareBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.IDistanceAwareBinding.html",
+          "hash": "CvLObgd+WuCytaoq2HVZyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.NameResolutionError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.NameResolutionError.html",
+          "hash": "SqO+Hl4usoHykFk6FrOkSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.NativeClassBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.NativeClassBinding.html",
+          "hash": "6L0sLatRqvzxyOnfNutRYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.NativeClassBindingFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.NativeClassBindingFactory.html",
+          "hash": "IyNLD9ks4Pag5FGM21E9Ow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.NativeObjectBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.NativeObjectBinding.html",
+          "hash": "CksDsF+ijBn9U9ZptqdMzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.NativeObjectBindingFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.NativeObjectBindingFactory.html",
+          "hash": "V0GZPM+D/6zlCJGEos3vYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.ResolveError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.ResolveError.html",
+          "hash": "u7PIH8BgqxXRwA6xYS6axA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.Resolver.FunctionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.Resolver.FunctionType.html",
+          "hash": "lxnfA6QN+dJf0ko676XGMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.Resolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.Resolver.html",
+          "hash": "kNSs5gqyEBdzbwYlLfz88A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.VariableBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.VariableBinding.html",
+          "hash": "+JhcF6+CEHv61lwwyQaEIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.VariableBindingFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.VariableBindingFactory.html",
+          "hash": "5JCN/4ZJBFYceH62Uonz0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Resolution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Resolution.html",
+          "hash": "/JAE4GAz5gofgpeXRJiB1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.ResolveErrorHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.ResolveErrorHandler.html",
+          "hash": "aHl4NbeL+9S5k65Q2WOWSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Return.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Return.html",
+          "hash": "+Cf0e4+l+WlbZX8nib9AtA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.TargetAndMethodContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.TargetAndMethodContainer.html",
+          "hash": "yirtzi6tv4ysI+tH58SMLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Typing.TypeValidationError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Typing.TypeValidationError.html",
+          "hash": "1H+W2u0pGnjxRni+Jx6uiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Typing.TypeValidator.TypeResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Typing.TypeValidator.TypeResolver.html",
+          "hash": "fpe0iOwqvy2cKuC5xtdtaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Typing.TypeValidator.TypeValidatorHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Typing.TypeValidator.TypeValidatorHelper.html",
+          "hash": "TDAANWFDmRGCiT7hCvvrUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Typing.TypeValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Typing.TypeValidator.html",
+          "hash": "z5rb5YzkjULz1pK6jtNU/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.Typing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.Typing.html",
+          "hash": "rG118XYZube4/1rwe1/9Dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.ValidationError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.ValidationError.html",
+          "hash": "g0rv2iN+dKWT68wSBGUUWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.ValidationErrorHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.ValidationErrorHandler.html",
+          "hash": "CEMdXtORnM4R2+rq/G9ARg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Interpreter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Interpreter.html",
+          "hash": "N84M/F//HPTxJ+Jzf2Xg7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.NullObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.NullObject.html",
+          "hash": "HcZ5hpi+76O+OZ5fI21N1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Parameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Parameter.html",
+          "hash": "zhhJUUTxX8Q5Hyr8n8AFnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Parser.ParseError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Parser.ParseError.html",
+          "hash": "JK0/NTtps2bYGoY4CIYrFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Parser.ParseErrorHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Parser.ParseErrorHandler.html",
+          "hash": "tMnifWNRgf9ng9tokzmrOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Parser.ParseErrorType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Parser.ParseErrorType.html",
+          "hash": "iirxE180uJavqBd/JOPdEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Parser.PerlangParser.InternalParseError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Parser.PerlangParser.InternalParseError.html",
+          "hash": "0inNzptcvhcUFaKe/u2XDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Parser.PerlangParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Parser.PerlangParser.html",
+          "hash": "1dGIdRoMaHcS9UqG+mluUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Parser.ScanError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Parser.ScanError.html",
+          "hash": "E4xk8Khzne9sLStSDZfFYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Parser.ScanErrorHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Parser.ScanErrorHandler.html",
+          "hash": "eHT7MONdYFTVVZZUaD3gMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Parser.Scanner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Parser.Scanner.html",
+          "hash": "h58bDEFZoTrS9q9bk139Kw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Parser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Parser.html",
+          "hash": "7Q2QFppJvwZaGeFwCALptQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.PerlangClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.PerlangClass.html",
+          "hash": "7Mj/HALSD6NlltS+4g8k/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.RuntimeError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.RuntimeError.html",
+          "hash": "Dd8tX78h6WSt331k5SFwjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Stdlib.Argv.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Stdlib.Argv.html",
+          "hash": "WjOPIrZ2RRaORMzKb9lvxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Stdlib.Base64.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Stdlib.Base64.html",
+          "hash": "h0gUSs6vjdg6cBSo8QNNHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Stdlib.Time.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Stdlib.Time.html",
+          "hash": "eP2WNnWhbDUR1Q0+TACsQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Stdlib.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Stdlib.html",
+          "hash": "W8/qFI+Jb35g4EPTeGBjCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Stmt.Block.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Stmt.Block.html",
+          "hash": "jj6490eZZEBtUc/4RmIYlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Stmt.Class.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Stmt.Class.html",
+          "hash": "yOUIYubAcZOsxg7B/eh9Yg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Stmt.ExpressionStmt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Stmt.ExpressionStmt.html",
+          "hash": "binXFJbMWpozuror5wXIfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Stmt.Function.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Stmt.Function.html",
+          "hash": "PxBtf6+f681APNWMICeFLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Stmt.IVisitor-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Stmt.IVisitor-1.html",
+          "hash": "su7PENS6LbzcqPFV3ICv9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Stmt.If.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Stmt.If.html",
+          "hash": "hffio97LxsMzh2Hk0dyRNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Stmt.Print.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Stmt.Print.html",
+          "hash": "+nCyzJbWEvZtcGhAwTGMXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Stmt.Return.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Stmt.Return.html",
+          "hash": "p4X7rxHLjYvGq/WNLe494Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Stmt.Var.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Stmt.Var.html",
+          "hash": "vi5zjXDF+cyDLGR+vxPLIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Stmt.While.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Stmt.While.html",
+          "hash": "7b5fRRj0womezm8XoZvd8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Stmt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Stmt.html",
+          "hash": "ct0RqNl+dBbE93EXzc0eLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Token.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Token.html",
+          "hash": "5oIFf+F/zisldH1OSgar9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.TokenType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.TokenType.html",
+          "hash": "rfWpxS3n4XZt81MThmHwKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.TypeReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.TypeReference.html",
+          "hash": "8d6m6OJuhHJk1vt4n/pWsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.Utils.html",
+          "hash": "UVmp1IUkm17bNkRX0bOiqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.VisitorBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.VisitorBase.html",
+          "hash": "Eeq+XmzKQzeFVKmYkb0JUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.VoidObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.VoidObject.html",
+          "hash": "epugb713utiSzYABAqTmwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Perlang.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Perlang.html",
+          "hash": "WEdqKDikwCCAbEeK7yswhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "LyzffgKnv9zmqmjhQ/ZBgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "js7fnCCJ1BA10H4R/N7XVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "casts/perlang-install.cast",
+      "output": {
+        "resource": {
+          "relative_path": "casts/perlang-install.cast"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "casts/repl.cast",
+      "output": {
+        "resource": {
+          "relative_path": "casts/repl.cast"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "contribute/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "contribute/index.html",
+          "hash": "E9b0VNVXOv5h+VntIPc9eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "download/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "download/index.html",
+          "hash": "a6YnmRUKzuhEHCy3P6dIyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "l9QFeOoBl2lUQ5l2xYSubw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "js/asciinema-player.js",
+      "output": {
+        "resource": {
+          "relative_path": "js/asciinema-player.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "learn/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "learn/index.html",
+          "hash": "DekfPL2flnMkKJUdS+EMsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "syntax-grammar.md",
+      "output": {
+        ".html": {
+          "relative_path": "syntax-grammar.html",
+          "hash": "NNmSUpLhnvvcmz5CLmDqUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "6URQGPPDZ1n9d56bgeAu8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 6,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 106,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

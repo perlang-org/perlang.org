@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Learn Perlang </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Learn Perlang ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/asciinema-player.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="learn-perlang">Learn Perlang</h1>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This section presumes that you have installed the Perlang tooling using the instructions on our <a href="../download">download page</a>, and added it to your <code>$PATH</code>.</p>
+<p>There are basically two ways in which you can use Perlang:</p>
+<ul>
+<li><em>REPL mode</em></li>
+<li><em>Scripting mode</em></li>
+</ul>
+<p>In <em>REPL mode</em>, each line you type is interpreted as you press Enter. This mode is useful for doing mathematical operations (for example: <code>2 * 3</code>, <code>2 ** 10</code>, etc) as well as for doing &quot;exploratory programming&quot;, learning how a particular class or API works. For this purpose, it works well. If you are working on a program where the program will be executed more than one time, it is typically not the right choice.</p>
+<p>In <em>scripting mode</em>, you type your program in a file and execute <code>perlang &lt;filename&gt;</code> (without the angle brackets). Perlang scripts conventionally follows the  <code>filename.per</code> convention, although this is no way enforced by the interpreter.</p>
+<blockquote><p>In the future, we hope to add a <em>compiled mode</em> as well, where Perlang programs are precompiled to bytecode before they are executed. It is anticipated that this will provide magnitudes better performance than the current, interpreted mode.</p>
+</blockquote>
+<p>Some of the examples below illustrate both ways of running a Perlang program, but the longer examples are only really practical to run in scripting mode. As we move along through this guide, we introduce various concepts in how the Perlang interpreter and language works as well, so this section aims to provide the reader with more than just the bare essentials.</p>
+<h2 id="hello-world">Hello World</h2>
+<h4 id="repl-version">REPL version</h4>
+<pre><code class="lang-shell">$ perlang
+Perlang Interactive REPL Console (0.1.0-dev.117, built from 3263a42)
+&gt; print &quot;Hello World&quot;
+Hello World
+</code></pre><p>As can be seen, printing Hello World is pretty much like in many other programming languages. The <code>print</code> function is a language keyword, so there is no requirement to use parentheses around the string being printed. (The interpreter will not complain if you do choose to use parentheses, though.)</p>
+<p>You can also do it like this:</p>
+<pre><code class="lang-shell">&gt; &quot;Hello World&quot;
+Hello World
+</code></pre><p>In the Perlang REPL, much like in the Python or Ruby REPL, the result of each (valid) expression is printed. You can try this with other expressions also, like <code>10 * 50</code>, <code>2 ** 32</code> and so forth.</p>
+<p>Here&#39;s an example of a REPL session in action:</p>
+<p><asciinema-player cols="126" rows="30" speed="2" src="/casts/repl.cast"></asciinema-player></p>
+<p>Worth mentioning is that normally in Perlang, each complete <em>statement</em> (like <code>print &quot;Hello World&quot;</code>) must be terminated by a semicolon, much like in languages in the C-family. In the REPL however, it&#39;s permissible to skip the semicolon. A newline can be considered to be interpreted as a &quot;semicolon and newline&quot;, for convenience.</p>
+<h4 id="scripting-mode">Scripting mode</h4>
+<pre><code class="lang-perlang" name="hello_world">// hello_world.per
+print &quot;Hello World&quot;;
+</code></pre><p>The comment on the first line is strictly speaking not a required part in this script. It is only there to help you understand that this program should be saved to disk using the suggested file name given there. (Feel free to disobey this suggestion if you are a little rebellious, just like me.)</p>
+<p>Run the program like this: <code>perlang hello_world.per</code>. If all goes well, you should get an output that looks like this:</p>
+<pre><code class="lang-shell">$ perlang hello_world.per
+Hello World
+</code></pre><h2 id="calculating-an-arbitrary-number-of-pi-decimals">Calculating an arbitrary number of pi decimals</h2>
+<p>Many programming language tutorials are kind of boring (<em>feel like calculating Fibonacci sequences, anyone?</em>). This is my feeble attempt to make it just a <em>little</em> bit more exciting. Based on an algorithm by Andrew Jennings<a href="http://ajennings.net/blog/a-million-digits-of-pi-in-9-lines-of-javascript.html">1</a>, this program will give you the first 1000 digits of π.</p>
+<p>(Given the size of this, there is little reason to show the REPL version; some of this would also have to be typed on a single line in the REPL at the moment, making it even more inconvenient.)</p>
+<pre><code class="lang-perlang" name="pi">// pi.per
+//
+// The number of digits we should calculate
+var digits = 1000;
+
+var i = 1;
+var x = 3 * (10 ** (digits + 20));
+var pi = x;
+
+while (x &gt; 0) {
+    x = x * i / ((i + 1) * 4);
+    pi += (x / (i + 2));
+    i += 2;
+}
+
+print(pi / (10 ** 20));
+</code></pre><h3 id="how-about-performance">How about performance?</h3>
+<p>Perlang is in no way performance-optimized (yet). Because of its scripted, interpreted nature, it will be much inferior to more grown-up languages like Java and C# (which compile to &quot;virtual machine executables&quot; - Java bytecode and MSIL respectively). It will likely even be less efficient than JavaScript. Let&#39;s try it and see for ourselves!</p>
+<p>If we increase the number of Pi digits from 1000 to 10000, this is the runtime on my current machine (i5-8250U CPU @ 1.60GHz):</p>
+<pre><code class="lang-shell">$ time perlang docs/examples/pi.per
+314159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339360726024914127372458700660631558817488152092096282925409171536436789259036001133053054882046652138414695194151160943305727036575959195309218611738193261179310511854807446237996274956735188575272489122793818301194912983367336244065664308602139494639522473719070217986094370277053921717629317675238467481846766940513200056812714526356082778577134275778960917363717872146844090122495343014654958537105079227968925892354201995611212902196086403441815981362977477130996051870721134999999837297804995105973173281609631859502445945534690830264252230825334468503526193118817101000313783875288658753320838142061717766914730359825349042875546873115956286388235378759375195778185778053217122680661300192787661119590921642019893809525720106548586327886593615338182796823030195203530185296899577362259941389[...]
+
+real    0m0.614s
+user    0m0.602s
+sys 0m0.032s
+</code></pre><p>Now, for the sake of it, here is the JavaScript equivalent (Andrew Jennings example with number of digits increased from 1000 to 10000):</p>
+<pre><code>$ node -v
+v14.15.5
+$ time node pi.js
+314159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339360726024914127372458700660631558817488152092096282925409171536436789259036001133053054882046652138414695194151160943305727036575959195309218611738193261179310511854807446237996274956735188575272489122793818301194912983367336244065664308602139494639522473719070217986094370277053921717629317675238467481846766940513200056812714526356082778577134275778960917363717872146844090122495343014654958537105079227968925892354201995611212902196086403441815981362977477130996051870721134999999837297804995105973173281609631859502445945534690830264252230825334468503526193118817101000313783875288658753320838142061717766914730359825349042875546873115956286388235378759375195778185778053217122680661300192787661119590921642019893809525720106548586327886593615338182796823030195203530185296899577362259941389[...]
+
+real    0m0.380s
+user    0m0.383s
+sys 0m0.005s
+</code></pre><p>So, we are running about 60% slower than the JavaScript counterpart. For many applications, this could be tolerable but it&#39;s quite obvious that there&#39;s a lot of work that needs to be done in this area before Perlang is anywhere near &quot;production quality&quot;.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/docs/learn/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright 2020 The Perlang Authors
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../js/asciinema-player.js"></script>
+  </body>
+</html>

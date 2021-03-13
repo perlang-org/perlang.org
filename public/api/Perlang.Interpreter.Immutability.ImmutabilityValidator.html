@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ImmutabilityValidator
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ImmutabilityValidator
+   ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/asciinema-player.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator">
+  
+  
+  <h1 id="Perlang_Interpreter_Immutability_ImmutabilityValidator" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator" class="text-break">Class ImmutabilityValidator
+  </h1>
+  <div class="markdown level0 summary"><p>Validator which ensures that objects which are intended to be immutable (either by nature or because they have
+been configured in a particular way) cannot be mutated.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Perlang.VisitorBase.html">VisitorBase</a></div>
+    <div class="level2"><span class="xref">ImmutabilityValidator</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Perlang.Expr.IVisitor-1.html">Expr.IVisitor</a>&lt;<a class="xref" href="Perlang.VoidObject.html">VoidObject</a>&gt;</div>
+    <div><a class="xref" href="Perlang.Stmt.IVisitor-1.html">Stmt.IVisitor</a>&lt;<a class="xref" href="Perlang.VoidObject.html">VoidObject</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Perlang.VisitorBase.Visit(IEnumerable&lt;&gt;)</span>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_Visit_Perlang_Stmt_">VisitorBase.Visit(Stmt)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_Visit_Perlang_Expr_">VisitorBase.Visit(Expr)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitEmptyExpr_Perlang_Expr_Empty_">VisitorBase.VisitEmptyExpr(Expr.Empty)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitBinaryExpr_Perlang_Expr_Binary_">VisitorBase.VisitBinaryExpr(Expr.Binary)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitCallExpr_Perlang_Expr_Call_">VisitorBase.VisitCallExpr(Expr.Call)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitGroupingExpr_Perlang_Expr_Grouping_">VisitorBase.VisitGroupingExpr(Expr.Grouping)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitLiteralExpr_Perlang_Expr_Literal_">VisitorBase.VisitLiteralExpr(Expr.Literal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitLogicalExpr_Perlang_Expr_Logical_">VisitorBase.VisitLogicalExpr(Expr.Logical)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitUnaryPrefixExpr_Perlang_Expr_UnaryPrefix_">VisitorBase.VisitUnaryPrefixExpr(Expr.UnaryPrefix)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitUnaryPostfixExpr_Perlang_Expr_UnaryPostfix_">VisitorBase.VisitUnaryPostfixExpr(Expr.UnaryPostfix)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitIdentifierExpr_Perlang_Expr_Identifier_">VisitorBase.VisitIdentifierExpr(Expr.Identifier)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitGetExpr_Perlang_Expr_Get_">VisitorBase.VisitGetExpr(Expr.Get)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitBlockStmt_Perlang_Stmt_Block_">VisitorBase.VisitBlockStmt(Stmt.Block)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitClassStmt_Perlang_Stmt_Class_">VisitorBase.VisitClassStmt(Stmt.Class)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitExpressionStmt_Perlang_Stmt_ExpressionStmt_">VisitorBase.VisitExpressionStmt(Stmt.ExpressionStmt)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitFunctionStmt_Perlang_Stmt_Function_">VisitorBase.VisitFunctionStmt(Stmt.Function)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitIfStmt_Perlang_Stmt_If_">VisitorBase.VisitIfStmt(Stmt.If)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitPrintStmt_Perlang_Stmt_Print_">VisitorBase.VisitPrintStmt(Stmt.Print)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitReturnStmt_Perlang_Stmt_Return_">VisitorBase.VisitReturnStmt(Stmt.Return)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitVarStmt_Perlang_Stmt_Var_">VisitorBase.VisitVarStmt(Stmt.Var)</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitWhileStmt_Perlang_Stmt_While_">VisitorBase.VisitWhileStmt(Stmt.While)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.Interpreter.Immutability.html">Perlang.Interpreter.Immutability</a></h6>
+  <h6><strong>Assembly</strong>: Perlang.Interpreter.dll</h6>
+  <h5 id="Perlang_Interpreter_Immutability_ImmutabilityValidator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">class ImmutabilityValidator : VisitorBase, Expr.IVisitor&lt;VoidObject&gt;, Stmt.IVisitor&lt;VoidObject&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Immutability_ImmutabilityValidator__ctor_Action_Perlang_Interpreter_ValidationError__Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Immutability.ImmutabilityValidator.%23ctor(Action%7BPerlang.Interpreter.ValidationError%7D%2CFunc%7BPerlang.Expr%2CPerlang.Interpreter.Resolution.Binding%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Immutability/ImmutabilityValidator.cs/#L25">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Immutability_ImmutabilityValidator__ctor_" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator.#ctor*"></a>
+  <h4 id="Perlang_Interpreter_Immutability_ImmutabilityValidator__ctor_Action_Perlang_Interpreter_ValidationError__Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator.#ctor(Action{Perlang.Interpreter.ValidationError},Func{Perlang.Expr,Perlang.Interpreter.Resolution.Binding})">ImmutabilityValidator(Action&lt;ValidationError&gt;, Func&lt;Expr, Binding&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ImmutabilityValidator(Action&lt;ValidationError&gt; immutabilityValidationErrorCallback, Func&lt;Expr, Binding&gt; getVariableOrFunctionBinding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Interpreter.ValidationError.html">ValidationError</a>&gt;</td>
+        <td><span class="parametername">immutabilityValidationErrorCallback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="Perlang.Expr.html">Expr</a>, <a class="xref" href="Perlang.Interpreter.Resolution.Binding.html">Binding</a>&gt;</td>
+        <td><span class="parametername">getVariableOrFunctionBinding</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Immutability_ImmutabilityValidator_getVariableOrFunctionBinding.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Immutability.ImmutabilityValidator.getVariableOrFunctionBinding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Immutability/ImmutabilityValidator.cs/#L15">View Source</a>
+  </span>
+  <h4 id="Perlang_Interpreter_Immutability_ImmutabilityValidator_getVariableOrFunctionBinding" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator.getVariableOrFunctionBinding">getVariableOrFunctionBinding</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly Func&lt;Expr, Binding&gt; getVariableOrFunctionBinding</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="Perlang.Expr.html">Expr</a>, <a class="xref" href="Perlang.Interpreter.Resolution.Binding.html">Binding</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Immutability_ImmutabilityValidator_immutabilityValidationErrorCallback.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Immutability.ImmutabilityValidator.immutabilityValidationErrorCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Immutability/ImmutabilityValidator.cs/#L14">View Source</a>
+  </span>
+  <h4 id="Perlang_Interpreter_Immutability_ImmutabilityValidator_immutabilityValidationErrorCallback" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator.immutabilityValidationErrorCallback">immutabilityValidationErrorCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly Action&lt;ValidationError&gt; immutabilityValidationErrorCallback</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Interpreter.ValidationError.html">ValidationError</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Immutability_ImmutabilityValidator_Validate_ImmutableList_Perlang_Stmt__Action_Perlang_Interpreter_ValidationError__Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Immutability.ImmutabilityValidator.Validate(ImmutableList%7BPerlang.Stmt%7D%2CAction%7BPerlang.Interpreter.ValidationError%7D%2CFunc%7BPerlang.Expr%2CPerlang.Interpreter.Resolution.Binding%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Immutability/ImmutabilityValidator.cs/#L17">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Immutability_ImmutabilityValidator_Validate_" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator.Validate*"></a>
+  <h4 id="Perlang_Interpreter_Immutability_ImmutabilityValidator_Validate_ImmutableList_Perlang_Stmt__Action_Perlang_Interpreter_ValidationError__Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator.Validate(ImmutableList{Perlang.Stmt},Action{Perlang.Interpreter.ValidationError},Func{Perlang.Expr,Perlang.Interpreter.Resolution.Binding})">Validate(ImmutableList&lt;Stmt&gt;, Action&lt;ValidationError&gt;, Func&lt;Expr, Binding&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Validate(ImmutableList&lt;Stmt&gt; statements, Action&lt;ValidationError&gt; immutabilityValidationErrorCallback, Func&lt;Expr, Binding&gt; getVariableOrFunctionBinding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ImmutableList</span>&lt;<a class="xref" href="Perlang.Stmt.html">Stmt</a>&gt;</td>
+        <td><span class="parametername">statements</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Interpreter.ValidationError.html">ValidationError</a>&gt;</td>
+        <td><span class="parametername">immutabilityValidationErrorCallback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="Perlang.Expr.html">Expr</a>, <a class="xref" href="Perlang.Interpreter.Resolution.Binding.html">Binding</a>&gt;</td>
+        <td><span class="parametername">getVariableOrFunctionBinding</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Immutability_ImmutabilityValidator_VisitAssignExpr_Perlang_Expr_Assign_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Immutability.ImmutabilityValidator.VisitAssignExpr(Perlang.Expr.Assign)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Immutability/ImmutabilityValidator.cs/#L33">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Immutability_ImmutabilityValidator_VisitAssignExpr_" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator.VisitAssignExpr*"></a>
+  <h4 id="Perlang_Interpreter_Immutability_ImmutabilityValidator_VisitAssignExpr_Perlang_Expr_Assign_" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator.VisitAssignExpr(Perlang.Expr.Assign)">VisitAssignExpr(Expr.Assign)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override VoidObject VisitAssignExpr(Expr.Assign expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Assign.html">Expr.Assign</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitAssignExpr_Perlang_Expr_Assign_">VisitorBase.VisitAssignExpr(Expr.Assign)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Perlang.Expr.IVisitor-1.html">Expr.IVisitor&lt;TR&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Perlang.Stmt.IVisitor-1.html">Stmt.IVisitor&lt;TR&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/perlang-org/perlang/new/1d436ac29495024ba09a632d068d3bcca0dea49a/apiSpec/new?filename=Perlang_Interpreter_Immutability_ImmutabilityValidator.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Immutability.ImmutabilityValidator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/perlang-org/perlang/blob/1d436ac29495024ba09a632d068d3bcca0dea49a/Perlang.Interpreter/Immutability/ImmutabilityValidator.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright 2020 The Perlang Authors
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../js/asciinema-player.js"></script>
+  </body>
+</html>

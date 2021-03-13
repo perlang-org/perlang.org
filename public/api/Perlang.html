@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Perlang
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Perlang
+   ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/asciinema-player.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Perlang">
+  
+  <h1 id="Perlang" data-uid="Perlang" class="text-break">Namespace Perlang
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Perlang.CommonConstants.html">CommonConstants</a></h4>
+      <section><p>Contains common constants shared between multiple assemblies.</p>
+<p>This mechanism serves two purposes:</p>
+<ul>
+<li>To avoid duplication of the version identifier among multiple assemblies (which would make it unnecessarily
+awkward to bump version numbers).</li>
+<li>To make it possible to retrieve the version identifier(s) programmatically, at runtime via reflection.</li>
+</ul>
+</section>
+      <h4><a class="xref" href="Perlang.Expr.html">Expr</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Expr.Assign.html">Expr.Assign</a></h4>
+      <section><p>An assignment expression.</p>
+</section>
+      <h4><a class="xref" href="Perlang.Expr.Binary.html">Expr.Binary</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Expr.Call.html">Expr.Call</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Expr.Empty.html">Expr.Empty</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Expr.Get.html">Expr.Get</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Expr.Grouping.html">Expr.Grouping</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Expr.Identifier.html">Expr.Identifier</a></h4>
+      <section><p>Represents an identifier, such as a variable name, a function name or a class.</p>
+</section>
+      <h4><a class="xref" href="Perlang.Expr.Literal.html">Expr.Literal</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Expr.Logical.html">Expr.Logical</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Expr.UnaryPostfix.html">Expr.UnaryPostfix</a></h4>
+      <section><p>Represents unary postfix expressions. Examples of such expressions are <code>i++</code> and <code>j--</code>.</p>
+</section>
+      <h4><a class="xref" href="Perlang.Expr.UnaryPrefix.html">Expr.UnaryPrefix</a></h4>
+      <section><p>Represents unary prefix expressions. Examples of such expressions are <code>!flag</code> and <code>-10</code>. Note that prefix
+increment and decrement are currently not supported.</p>
+</section>
+      <h4><a class="xref" href="Perlang.NullObject.html">NullObject</a></h4>
+      <section><p>&quot;Null-object&quot;. This object is used in cases where we need a Type that corresponds to null values. Since
+typeof(null) is invalid, we need a fake construct we can use instead.</p>
+</section>
+      <h4><a class="xref" href="Perlang.Parameter.html">Parameter</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.PerlangClass.html">PerlangClass</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.RuntimeError.html">RuntimeError</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Stmt.html">Stmt</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Stmt.Block.html">Stmt.Block</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Stmt.Class.html">Stmt.Class</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Stmt.ExpressionStmt.html">Stmt.ExpressionStmt</a></h4>
+      <section><p>An expression statement is a statement for wrapping a single expression in statement form.</p>
+</section>
+      <h4><a class="xref" href="Perlang.Stmt.Function.html">Stmt.Function</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Stmt.If.html">Stmt.If</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Stmt.Print.html">Stmt.Print</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Stmt.Return.html">Stmt.Return</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Stmt.Var.html">Stmt.Var</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Stmt.While.html">Stmt.While</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.Token.html">Token</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.TypeReference.html">TypeReference</a></h4>
+      <section><p>A type reference is a (potentially unresolved) reference to a Perlang type.</p>
+<p>The object is mutable.</p>
+</section>
+      <h4><a class="xref" href="Perlang.Utils.html">Utils</a></h4>
+      <section><p>Various utility methods.</p>
+</section>
+      <h4><a class="xref" href="Perlang.VisitorBase.html">VisitorBase</a></h4>
+      <section><p>Abstract base class for expression visitors.</p>
+<p>All the methods implemented in this class are no-op, but they do their best to try and make the whole tree
+be traversed. The idea is to give child classes an opportunity to only override a smaller subset of the full
+set of expression types, to avoid unnecessary boilerplate code.</p>
+</section>
+      <h4><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></h4>
+      <section><p>Dummy type used to fulfill the requirements of the <a class="xref" href="Perlang.Expr.IVisitor-1.html">Expr.IVisitor&lt;TR&gt;</a> and <a class="xref" href="Perlang.Stmt.IVisitor-1.html">Stmt.IVisitor&lt;TR&gt;</a>
+type parameters</p>
+<p>For some use cases of the IVisitor interfaces mentioned above, we need to be able to provide a type parameter
+(typically &quot;object&quot;). Instead of hard-wiring these interfaces to return &quot;object&quot;, we have made them be
+a couple of type-parameterized interfaces. However, for other use cases the return type does not make sense.</p>
+<p>Since &quot;void&quot; is not a type in .NET, we must use something else than void to describe &quot;no return value&quot;. The
+VoidObject is an answer to this question. Given that it is abstract, it can never be instantiated. A visitor
+using this type as type parameter is expected to return &quot;VoidObject.Void&quot; from all its methods.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Perlang.Expr.IVisitor-1.html">Expr.IVisitor&lt;TR&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.ICallable.html">ICallable</a></h4>
+      <section><p>Interface for user-defined functions.</p>
+<p>Note that this interface is not used to call &quot;native&quot; (.NET-defined) functions. For those, we use reflection
+to be able to support methods with multiple parameters in a more convenient manner.</p>
+</section>
+      <h4><a class="xref" href="Perlang.IEnvironment.html">IEnvironment</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.IInterpreter.html">IInterpreter</a></h4>
+      <section><p>Shared interface for the Perlang interpreter instance.</p>
+</section>
+      <h4><a class="xref" href="Perlang.ITokenAware.html">ITokenAware</a></h4>
+      <section><p>Interface for expressions and statements which provide a <a class="xref" href="Perlang.ITokenAware.html#Perlang_ITokenAware_Token">Token</a>. This is used to augment error
+handling, for a better end-user experience.</p>
+</section>
+      <h4><a class="xref" href="Perlang.Stmt.IVisitor-1.html">Stmt.IVisitor&lt;TR&gt;</a></h4>
+      <section></section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Perlang.TokenType.html">TokenType</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright 2020 The Perlang Authors
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../js/asciinema-player.js"></script>
+  </body>
+</html>
