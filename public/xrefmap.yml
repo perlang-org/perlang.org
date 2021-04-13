@@ -5240,19 +5240,6 @@ references:
   isSpec: "True"
   fullName: Perlang.Parser.PerlangParser.Check
   nameWithType: PerlangParser.Check
-- uid: Perlang.Parser.PerlangParser.ClassDeclaration
-  name: ClassDeclaration()
-  href: api/Perlang.Parser.PerlangParser.html#Perlang_Parser_PerlangParser_ClassDeclaration
-  commentId: M:Perlang.Parser.PerlangParser.ClassDeclaration
-  fullName: Perlang.Parser.PerlangParser.ClassDeclaration()
-  nameWithType: PerlangParser.ClassDeclaration()
-- uid: Perlang.Parser.PerlangParser.ClassDeclaration*
-  name: ClassDeclaration
-  href: api/Perlang.Parser.PerlangParser.html#Perlang_Parser_PerlangParser_ClassDeclaration_
-  commentId: Overload:Perlang.Parser.PerlangParser.ClassDeclaration
-  isSpec: "True"
-  fullName: Perlang.Parser.PerlangParser.ClassDeclaration
-  nameWithType: PerlangParser.ClassDeclaration
 - uid: Perlang.Parser.PerlangParser.Comparison
   name: Comparison()
   href: api/Perlang.Parser.PerlangParser.html#Perlang_Parser_PerlangParser_Comparison
@@ -7075,12 +7062,6 @@ references:
   commentId: F:Perlang.TokenType.BANG_EQUAL
   fullName: Perlang.TokenType.BANG_EQUAL
   nameWithType: TokenType.BANG_EQUAL
-- uid: Perlang.TokenType.CLASS
-  name: CLASS
-  href: api/Perlang.TokenType.html#Perlang_TokenType_CLASS
-  commentId: F:Perlang.TokenType.CLASS
-  fullName: Perlang.TokenType.CLASS
-  nameWithType: TokenType.CLASS
 - uid: Perlang.TokenType.COLON
   name: COLON
   href: api/Perlang.TokenType.html#Perlang_TokenType_COLON
@@ -7255,6 +7236,12 @@ references:
   commentId: F:Perlang.TokenType.PRINT
   fullName: Perlang.TokenType.PRINT
   nameWithType: TokenType.PRINT
+- uid: Perlang.TokenType.RESERVED_WORD
+  name: RESERVED_WORD
+  href: api/Perlang.TokenType.html#Perlang_TokenType_RESERVED_WORD
+  commentId: F:Perlang.TokenType.RESERVED_WORD
+  fullName: Perlang.TokenType.RESERVED_WORD
+  nameWithType: TokenType.RESERVED_WORD
 - uid: Perlang.TokenType.RETURN
   name: RETURN
   href: api/Perlang.TokenType.html#Perlang_TokenType_RETURN
