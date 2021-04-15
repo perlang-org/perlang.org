@@ -5115,6 +5115,12 @@ references:
   commentId: F:Perlang.Parser.ParseErrorType.MISSING_TRAILING_SEMICOLON
   fullName: Perlang.Parser.ParseErrorType.MISSING_TRAILING_SEMICOLON
   nameWithType: ParseErrorType.MISSING_TRAILING_SEMICOLON
+- uid: Perlang.Parser.ParseErrorType.RESERVED_WORD_ENCOUNTERED
+  name: RESERVED_WORD_ENCOUNTERED
+  href: api/Perlang.Parser.ParseErrorType.html#Perlang_Parser_ParseErrorType_RESERVED_WORD_ENCOUNTERED
+  commentId: F:Perlang.Parser.ParseErrorType.RESERVED_WORD_ENCOUNTERED
+  fullName: Perlang.Parser.ParseErrorType.RESERVED_WORD_ENCOUNTERED
+  nameWithType: ParseErrorType.RESERVED_WORD_ENCOUNTERED
 - uid: Perlang.Parser.PerlangParser
   name: PerlangParser
   href: api/Perlang.Parser.PerlangParser.html
@@ -5214,6 +5220,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Parser.PerlangParser.Block
   nameWithType: PerlangParser.Block
+- uid: Perlang.Parser.PerlangParser.BlockReservedIdentifiers(Perlang.Token)
+  name: BlockReservedIdentifiers(Token)
+  href: api/Perlang.Parser.PerlangParser.html#Perlang_Parser_PerlangParser_BlockReservedIdentifiers_Perlang_Token_
+  commentId: M:Perlang.Parser.PerlangParser.BlockReservedIdentifiers(Perlang.Token)
+  fullName: Perlang.Parser.PerlangParser.BlockReservedIdentifiers(Perlang.Token)
+  nameWithType: PerlangParser.BlockReservedIdentifiers(Token)
+- uid: Perlang.Parser.PerlangParser.BlockReservedIdentifiers*
+  name: BlockReservedIdentifiers
+  href: api/Perlang.Parser.PerlangParser.html#Perlang_Parser_PerlangParser_BlockReservedIdentifiers_
+  commentId: Overload:Perlang.Parser.PerlangParser.BlockReservedIdentifiers
+  isSpec: "True"
+  fullName: Perlang.Parser.PerlangParser.BlockReservedIdentifiers
+  nameWithType: PerlangParser.BlockReservedIdentifiers
 - uid: Perlang.Parser.PerlangParser.Call
   name: Call()
   href: api/Perlang.Parser.PerlangParser.html#Perlang_Parser_PerlangParser_Call
@@ -5903,6 +5922,25 @@ references:
   commentId: F:Perlang.Parser.Scanner.ReservedKeywords
   fullName: Perlang.Parser.Scanner.ReservedKeywords
   nameWithType: Scanner.ReservedKeywords
+- uid: Perlang.Parser.Scanner.reservedKeywordStrings
+  name: reservedKeywordStrings
+  href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_reservedKeywordStrings
+  commentId: F:Perlang.Parser.Scanner.reservedKeywordStrings
+  fullName: Perlang.Parser.Scanner.reservedKeywordStrings
+  nameWithType: Scanner.reservedKeywordStrings
+- uid: Perlang.Parser.Scanner.ReservedKeywordStrings
+  name: ReservedKeywordStrings
+  href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_ReservedKeywordStrings
+  commentId: P:Perlang.Parser.Scanner.ReservedKeywordStrings
+  fullName: Perlang.Parser.Scanner.ReservedKeywordStrings
+  nameWithType: Scanner.ReservedKeywordStrings
+- uid: Perlang.Parser.Scanner.ReservedKeywordStrings*
+  name: ReservedKeywordStrings
+  href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_ReservedKeywordStrings_
+  commentId: Overload:Perlang.Parser.Scanner.ReservedKeywordStrings
+  isSpec: "True"
+  fullName: Perlang.Parser.Scanner.ReservedKeywordStrings
+  nameWithType: Scanner.ReservedKeywordStrings
 - uid: Perlang.Parser.Scanner.scanErrorHandler
   name: scanErrorHandler
   href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_scanErrorHandler
