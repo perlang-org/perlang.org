@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Perlang.Interpreter.Typing
    ">
-    <meta name="generator" content="docfx 2.51.0.0">
+    <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -81,6 +81,18 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="Perlang.Interpreter.Typing.TypeResolver.html">TypeResolver</a></h4>
+      <section><p>Class responsible for resolving implicit and explicit type references.</p>
+<p>The class implements the Visitor pattern, using the mechanisms provided by the base class to reduce the
+amount of boilerplate code. The tree traversal must be done depth-first, since the resolving for tree nodes
+closer to the top are sometimes dependent on child nodes&apos; having their type references already resolved.</p>
+</section>
+      <h4><a class="xref" href="Perlang.Interpreter.Typing.TypesResolvedValidator.html">TypesResolvedValidator</a></h4>
+      <section><p>Visitor which validates that the type references are resolved in the given list of statements.</p>
+<p>This visitor works under the assumption that explicit types have been resolved, and implicit types have
+been inferred; in other words, <a class="xref" href="Perlang.Interpreter.Typing.TypeResolver.html">TypeResolver</a> have been visiting the expression tree(s) in
+question.</p>
+</section>
       <h4><a class="xref" href="Perlang.Interpreter.Typing.TypeValidationError.html">TypeValidationError</a></h4>
       <section><p>Exception thrown on type validation errors.</p>
 </section>
@@ -88,25 +100,14 @@
       <section><p>Tree-walker which validates all explicit and implicit type references in an expression tree.</p>
 <p>Each expression is populated with the &quot;aggregate type&quot; of its descendants, recursively. The &quot;aggregate type&quot;
 is determined by walking the tree and concluding what the final type to evaluate the expression will be. For
-example, adding two integers (1 + 1) will have an aggregate type of &quot;int&quot;. Adding
-an integer and a float (1 + 1.0) will have an aggregate type of &quot;float&quot;, and so forth.</p>
-<p>Adding a smaller type and a larger type (e.g. int and float) will expand the expression to the greater
-of the involved types. Note that this can lose some precision when expanding double or float values to
-the CLR decimal type, but the order of magnitude is always retained.</p>
+example, adding two integers (1 + 1) will have an aggregate type of <code>int</code>. Adding
+an integer and a float (1 + 1.0) will have an aggregate type of <code>float</code>, and so forth.</p>
+<p>Adding a smaller type and a larger type (e.g. <code>int</code> and <code>float</code>) will expand the expression to the greater of
+the involved types. Note that this can lose some precision when expanding <code>double</code> or <code>float</code> values to the CLR
+<code>decimal</code> type, but the order of magnitude is always retained.</p>
 <p>For expression trees where no clear aggregate type can be determined, or where an aggregate type would be
 potentially confusing to the user, a result indicating this is returned to the caller. We try to follow the
 good old Python rule of &quot;explicit is better than implicit&quot;, where relevant.</p>
-</section>
-      <h4><a class="xref" href="Perlang.Interpreter.Typing.TypeValidator.TypeResolver.html">TypeValidator.TypeResolver</a></h4>
-      <section><p>Class responsible for resolving implicit and explicit type references.</p>
-<p>The class implements the Visitor pattern, using the mechanisms provided by the base class to reduce the
-amount of boilerplate code. The tree traversal must be done depth-first, since the resolving for tree nodes
-closer to the top are sometimes dependent on child nodes&apos; having their type references already resolved.</p>
-</section>
-      <h4><a class="xref" href="Perlang.Interpreter.Typing.TypeValidator.TypeValidatorHelper.html">TypeValidator.TypeValidatorHelper</a></h4>
-      <section><p>Helper visitor which validates the type references in the given list of statements.</p>
-<p>This visitor works under the assumption that explicit types have been resolved, and implicit types have
-been inferred.</p>
 </section>
 </article>
           </div>
