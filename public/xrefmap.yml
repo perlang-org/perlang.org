@@ -159,6 +159,38 @@ references:
   commentId: N:Perlang.ConsoleApp
   fullName: Perlang.ConsoleApp
   nameWithType: Perlang.ConsoleApp
+- uid: Perlang.ConsoleApp.CommandResultExtensions
+  name: CommandResultExtensions
+  href: api/Perlang.ConsoleApp.CommandResultExtensions.html
+  commentId: T:Perlang.ConsoleApp.CommandResultExtensions
+  fullName: Perlang.ConsoleApp.CommandResultExtensions
+  nameWithType: CommandResultExtensions
+- uid: Perlang.ConsoleApp.CommandResultExtensions.HasArgument(CommandResult,IArgument)
+  name: HasArgument(CommandResult, IArgument)
+  href: api/Perlang.ConsoleApp.CommandResultExtensions.html#Perlang_ConsoleApp_CommandResultExtensions_HasArgument_CommandResult_IArgument_
+  commentId: M:Perlang.ConsoleApp.CommandResultExtensions.HasArgument(CommandResult,IArgument)
+  fullName: Perlang.ConsoleApp.CommandResultExtensions.HasArgument(CommandResult, IArgument)
+  nameWithType: CommandResultExtensions.HasArgument(CommandResult, IArgument)
+- uid: Perlang.ConsoleApp.CommandResultExtensions.HasArgument*
+  name: HasArgument
+  href: api/Perlang.ConsoleApp.CommandResultExtensions.html#Perlang_ConsoleApp_CommandResultExtensions_HasArgument_
+  commentId: Overload:Perlang.ConsoleApp.CommandResultExtensions.HasArgument
+  isSpec: "True"
+  fullName: Perlang.ConsoleApp.CommandResultExtensions.HasArgument
+  nameWithType: CommandResultExtensions.HasArgument
+- uid: Perlang.ConsoleApp.CommandResultExtensions.HasOption(CommandResult,IOption)
+  name: HasOption(CommandResult, IOption)
+  href: api/Perlang.ConsoleApp.CommandResultExtensions.html#Perlang_ConsoleApp_CommandResultExtensions_HasOption_CommandResult_IOption_
+  commentId: M:Perlang.ConsoleApp.CommandResultExtensions.HasOption(CommandResult,IOption)
+  fullName: Perlang.ConsoleApp.CommandResultExtensions.HasOption(CommandResult, IOption)
+  nameWithType: CommandResultExtensions.HasOption(CommandResult, IOption)
+- uid: Perlang.ConsoleApp.CommandResultExtensions.HasOption*
+  name: HasOption
+  href: api/Perlang.ConsoleApp.CommandResultExtensions.html#Perlang_ConsoleApp_CommandResultExtensions_HasOption_
+  commentId: Overload:Perlang.ConsoleApp.CommandResultExtensions.HasOption
+  isSpec: "True"
+  fullName: Perlang.ConsoleApp.CommandResultExtensions.HasOption
+  nameWithType: CommandResultExtensions.HasOption
 - uid: Perlang.ConsoleApp.Program
   name: Program
   href: api/Perlang.ConsoleApp.Program.html
