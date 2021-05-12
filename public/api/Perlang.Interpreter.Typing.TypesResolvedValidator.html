@@ -164,18 +164,18 @@ question.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator__ctor_Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__Action_Perlang_Interpreter_Typing_TypeValidationError__.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator.%23ctor(Func%7BPerlang.Expr%2CPerlang.Interpreter.Resolution.Binding%7D%2CAction%7BPerlang.Interpreter.Typing.TypeValidationError%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator__ctor_Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__Action_Perlang_Interpreter_Typing_TypeValidationError__Action_Perlang_Parser_CompilerWarning__.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator.%23ctor(Func%7BPerlang.Expr%2CPerlang.Interpreter.Resolution.Binding%7D%2CAction%7BPerlang.Interpreter.Typing.TypeValidationError%7D%2CAction%7BPerlang.Parser.CompilerWarning%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/080b5bfc05f6a8e8e5f9d50e13bcb94b53b8ae98/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L26">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/c1ca18f4fbab8f3d0e7ddd71121012b2cb5efc08/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L30">View Source</a>
   </span>
   <a id="Perlang_Interpreter_Typing_TypesResolvedValidator__ctor_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.#ctor*"></a>
-  <h4 id="Perlang_Interpreter_Typing_TypesResolvedValidator__ctor_Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__Action_Perlang_Interpreter_Typing_TypeValidationError__" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.#ctor(Func{Perlang.Expr,Perlang.Interpreter.Resolution.Binding},Action{Perlang.Interpreter.Typing.TypeValidationError})">TypesResolvedValidator(Func&lt;Expr, Binding&gt;, Action&lt;TypeValidationError&gt;)</h4>
+  <h4 id="Perlang_Interpreter_Typing_TypesResolvedValidator__ctor_Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__Action_Perlang_Interpreter_Typing_TypeValidationError__Action_Perlang_Parser_CompilerWarning__" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.#ctor(Func{Perlang.Expr,Perlang.Interpreter.Resolution.Binding},Action{Perlang.Interpreter.Typing.TypeValidationError},Action{Perlang.Parser.CompilerWarning})">TypesResolvedValidator(Func&lt;Expr, Binding&gt;, Action&lt;TypeValidationError&gt;, Action&lt;CompilerWarning&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">TypesResolvedValidator(Func&lt;Expr, Binding&gt; getVariableOrFunctionCallback, Action&lt;TypeValidationError&gt; typeValidationErrorCallback)</code></pre>
+    <pre><code class="lang-csharp hljs">TypesResolvedValidator(Func&lt;Expr, Binding&gt; getVariableOrFunctionCallback, Action&lt;TypeValidationError&gt; typeValidationErrorCallback, Action&lt;CompilerWarning&gt; compilerWarningCallback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -197,16 +197,50 @@ question.</p>
         <td><span class="parametername">typeValidationErrorCallback</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Parser.CompilerWarning.html">CompilerWarning</a>&gt;</td>
+        <td><span class="parametername">compilerWarningCallback</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="fields">Fields
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator_compilerWarningCallback.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator.compilerWarningCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/c1ca18f4fbab8f3d0e7ddd71121012b2cb5efc08/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L26">View Source</a>
+  </span>
+  <h4 id="Perlang_Interpreter_Typing_TypesResolvedValidator_compilerWarningCallback" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.compilerWarningCallback">compilerWarningCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly Action&lt;CompilerWarning&gt; compilerWarningCallback</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Parser.CompilerWarning.html">CompilerWarning</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator_getVariableOrFunctionCallback.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator.getVariableOrFunctionCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/080b5bfc05f6a8e8e5f9d50e13bcb94b53b8ae98/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L23">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/c1ca18f4fbab8f3d0e7ddd71121012b2cb5efc08/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L24">View Source</a>
   </span>
   <h4 id="Perlang_Interpreter_Typing_TypesResolvedValidator_getVariableOrFunctionCallback" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.getVariableOrFunctionCallback">getVariableOrFunctionCallback</h4>
   <div class="markdown level1 summary"></div>
@@ -232,10 +266,39 @@ question.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator_typeCoercer.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator.typeCoercer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/c1ca18f4fbab8f3d0e7ddd71121012b2cb5efc08/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L28">View Source</a>
+  </span>
+  <h4 id="Perlang_Interpreter_Typing_TypesResolvedValidator_typeCoercer" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.typeCoercer">typeCoercer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly TypeCoercer typeCoercer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Interpreter.Typing.TypeCoercer.html">TypeCoercer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator_typeValidationErrorCallback.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator.typeValidationErrorCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/080b5bfc05f6a8e8e5f9d50e13bcb94b53b8ae98/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L24">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/c1ca18f4fbab8f3d0e7ddd71121012b2cb5efc08/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L25">View Source</a>
   </span>
   <h4 id="Perlang_Interpreter_Typing_TypesResolvedValidator_typeValidationErrorCallback" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.typeValidationErrorCallback">typeValidationErrorCallback</h4>
   <div class="markdown level1 summary"></div>
@@ -263,134 +326,10 @@ question.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator_CanBeCoercedInto_Perlang_TypeReference_Perlang_TypeReference_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator.CanBeCoercedInto(Perlang.TypeReference%2CPerlang.TypeReference)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/080b5bfc05f6a8e8e5f9d50e13bcb94b53b8ae98/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L399">View Source</a>
-  </span>
-  <a id="Perlang_Interpreter_Typing_TypesResolvedValidator_CanBeCoercedInto_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.CanBeCoercedInto*"></a>
-  <h4 id="Perlang_Interpreter_Typing_TypesResolvedValidator_CanBeCoercedInto_Perlang_TypeReference_Perlang_TypeReference_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.CanBeCoercedInto(Perlang.TypeReference,Perlang.TypeReference)">CanBeCoercedInto(TypeReference, TypeReference)</h4>
-  <div class="markdown level1 summary"><p>Determines if a value of <code data-dev-comment-type="paramref" class="paramref">sourceTypeReference</code> can be coerced into
-<code data-dev-comment-type="paramref" class="paramref">targetTypeReference</code>.</p>
-<p>The <code>source</code> and <code>target</code> concepts are important here. Sometimes values can be coerced in one direction
-but not the other. For example, an <code>int</code> can be coerced to a <code>long</code>, but not the other way around
-(without an explicit type cast). The same goes for unsigned integer types; they can not be coerced to
-their signed counterpart (<code>uint</code> -&gt; <code>int</code>), but they can be coerced to a larger signed type if
-available.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static bool CanBeCoercedInto(TypeReference targetTypeReference, TypeReference sourceTypeReference)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Perlang.TypeReference.html">TypeReference</a></td>
-        <td><span class="parametername">targetTypeReference</span></td>
-        <td><p>A reference to the target type.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Perlang.TypeReference.html">TypeReference</a></td>
-        <td><span class="parametername">sourceTypeReference</span></td>
-        <td><p>A reference to the source type.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if a source value can be coerced into the target type, <code>false</code> otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator_CanBeCoercedInto_Type_Type_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator.CanBeCoercedInto(Type%2CType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/080b5bfc05f6a8e8e5f9d50e13bcb94b53b8ae98/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L417">View Source</a>
-  </span>
-  <a id="Perlang_Interpreter_Typing_TypesResolvedValidator_CanBeCoercedInto_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.CanBeCoercedInto*"></a>
-  <h4 id="Perlang_Interpreter_Typing_TypesResolvedValidator_CanBeCoercedInto_Type_Type_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.CanBeCoercedInto(Type,Type)">CanBeCoercedInto(Type, Type)</h4>
-  <div class="markdown level1 summary"><p>Determines if a value of <code data-dev-comment-type="paramref" class="paramref">sourceType</code> can be coerced into
-<code data-dev-comment-type="paramref" class="paramref">targetType</code>.</p>
-<p>The <code>source</code> and <code>target</code> concepts are important here. Sometimes values can be coerced in one direction
-but not the other. For example, an <code>int</code> can be coerced to a <code>long</code>, but not the other way around
-(without an explicit type cast). The same goes for unsigned integer types; they can not be coerced to
-their signed counterpart (<code>uint</code> -&gt; <code>int</code>), but they can be coerced to a larger signed type if
-available.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">static bool CanBeCoercedInto(Type targetType, Type sourceType)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Type</span></td>
-        <td><span class="parametername">targetType</span></td>
-        <td><p>The target type.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Type</span></td>
-        <td><span class="parametername">sourceType</span></td>
-        <td><p>The source type.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if a source value can be coerced into the target type, <code>false</code> otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator_ReportErrors_IEnumerable_Perlang_Stmt__.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator.ReportErrors(IEnumerable%7BPerlang.Stmt%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/080b5bfc05f6a8e8e5f9d50e13bcb94b53b8ae98/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L32">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/c1ca18f4fbab8f3d0e7ddd71121012b2cb5efc08/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L42">View Source</a>
   </span>
   <a id="Perlang_Interpreter_Typing_TypesResolvedValidator_ReportErrors_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.ReportErrors*"></a>
   <h4 id="Perlang_Interpreter_Typing_TypesResolvedValidator_ReportErrors_IEnumerable_Perlang_Stmt__" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.ReportErrors(IEnumerable{Perlang.Stmt})">ReportErrors(IEnumerable&lt;Stmt&gt;)</h4>
@@ -422,7 +361,7 @@ available.</p>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator_ReportErrors_Perlang_Expr_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator.ReportErrors(Perlang.Expr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/080b5bfc05f6a8e8e5f9d50e13bcb94b53b8ae98/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L40">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/c1ca18f4fbab8f3d0e7ddd71121012b2cb5efc08/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L50">View Source</a>
   </span>
   <a id="Perlang_Interpreter_Typing_TypesResolvedValidator_ReportErrors_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.ReportErrors*"></a>
   <h4 id="Perlang_Interpreter_Typing_TypesResolvedValidator_ReportErrors_Perlang_Expr_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.ReportErrors(Perlang.Expr)">ReportErrors(Expr)</h4>
@@ -454,7 +393,7 @@ available.</p>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator_ReportErrors_Perlang_Stmt_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator.ReportErrors(Perlang.Stmt)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/080b5bfc05f6a8e8e5f9d50e13bcb94b53b8ae98/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L45">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/c1ca18f4fbab8f3d0e7ddd71121012b2cb5efc08/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L55">View Source</a>
   </span>
   <a id="Perlang_Interpreter_Typing_TypesResolvedValidator_ReportErrors_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.ReportErrors*"></a>
   <h4 id="Perlang_Interpreter_Typing_TypesResolvedValidator_ReportErrors_Perlang_Stmt_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.ReportErrors(Perlang.Stmt)">ReportErrors(Stmt)</h4>
@@ -486,7 +425,7 @@ available.</p>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator_VisitCallExpr_Perlang_Expr_Call_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator.VisitCallExpr(Perlang.Expr.Call)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/080b5bfc05f6a8e8e5f9d50e13bcb94b53b8ae98/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L54">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/c1ca18f4fbab8f3d0e7ddd71121012b2cb5efc08/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L64">View Source</a>
   </span>
   <a id="Perlang_Interpreter_Typing_TypesResolvedValidator_VisitCallExpr_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.VisitCallExpr*"></a>
   <h4 id="Perlang_Interpreter_Typing_TypesResolvedValidator_VisitCallExpr_Perlang_Expr_Call_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.VisitCallExpr(Perlang.Expr.Call)">VisitCallExpr(Expr.Call)</h4>
@@ -535,7 +474,7 @@ available.</p>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator_VisitCallExprForGetCallee_Perlang_Expr_Call_Perlang_Expr_Get_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator.VisitCallExprForGetCallee(Perlang.Expr.Call%2CPerlang.Expr.Get)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/080b5bfc05f6a8e8e5f9d50e13bcb94b53b8ae98/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L68">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/c1ca18f4fbab8f3d0e7ddd71121012b2cb5efc08/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L78">View Source</a>
   </span>
   <a id="Perlang_Interpreter_Typing_TypesResolvedValidator_VisitCallExprForGetCallee_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.VisitCallExprForGetCallee*"></a>
   <h4 id="Perlang_Interpreter_Typing_TypesResolvedValidator_VisitCallExprForGetCallee_Perlang_Expr_Call_Perlang_Expr_Get_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.VisitCallExprForGetCallee(Perlang.Expr.Call,Perlang.Expr.Get)">VisitCallExprForGetCallee(Expr.Call, Expr.Get)</h4>
@@ -572,7 +511,7 @@ available.</p>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator_VisitCallExprForOtherCallee_Perlang_Expr_Call_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator.VisitCallExprForOtherCallee(Perlang.Expr.Call)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/080b5bfc05f6a8e8e5f9d50e13bcb94b53b8ae98/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L158">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/c1ca18f4fbab8f3d0e7ddd71121012b2cb5efc08/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L172">View Source</a>
   </span>
   <a id="Perlang_Interpreter_Typing_TypesResolvedValidator_VisitCallExprForOtherCallee_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.VisitCallExprForOtherCallee*"></a>
   <h4 id="Perlang_Interpreter_Typing_TypesResolvedValidator_VisitCallExprForOtherCallee_Perlang_Expr_Call_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.VisitCallExprForOtherCallee(Perlang.Expr.Call)">VisitCallExprForOtherCallee(Expr.Call)</h4>
@@ -604,7 +543,7 @@ available.</p>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator_VisitFunctionStmt_Perlang_Stmt_Function_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator.VisitFunctionStmt(Perlang.Stmt.Function)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/080b5bfc05f6a8e8e5f9d50e13bcb94b53b8ae98/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L235">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/c1ca18f4fbab8f3d0e7ddd71121012b2cb5efc08/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L250">View Source</a>
   </span>
   <a id="Perlang_Interpreter_Typing_TypesResolvedValidator_VisitFunctionStmt_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.VisitFunctionStmt*"></a>
   <h4 id="Perlang_Interpreter_Typing_TypesResolvedValidator_VisitFunctionStmt_Perlang_Stmt_Function_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.VisitFunctionStmt(Perlang.Stmt.Function)">VisitFunctionStmt(Stmt.Function)</h4>
@@ -653,7 +592,7 @@ available.</p>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator_VisitReturnStmt_Perlang_Stmt_Return_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator.VisitReturnStmt(Perlang.Stmt.Return)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/080b5bfc05f6a8e8e5f9d50e13bcb94b53b8ae98/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L274">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/c1ca18f4fbab8f3d0e7ddd71121012b2cb5efc08/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L289">View Source</a>
   </span>
   <a id="Perlang_Interpreter_Typing_TypesResolvedValidator_VisitReturnStmt_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.VisitReturnStmt*"></a>
   <h4 id="Perlang_Interpreter_Typing_TypesResolvedValidator_VisitReturnStmt_Perlang_Stmt_Return_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.VisitReturnStmt(Perlang.Stmt.Return)">VisitReturnStmt(Stmt.Return)</h4>
@@ -702,7 +641,7 @@ available.</p>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator_VisitVarStmt_Perlang_Stmt_Var_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator.VisitVarStmt(Perlang.Stmt.Var)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/080b5bfc05f6a8e8e5f9d50e13bcb94b53b8ae98/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L305">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/c1ca18f4fbab8f3d0e7ddd71121012b2cb5efc08/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L320">View Source</a>
   </span>
   <a id="Perlang_Interpreter_Typing_TypesResolvedValidator_VisitVarStmt_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.VisitVarStmt*"></a>
   <h4 id="Perlang_Interpreter_Typing_TypesResolvedValidator_VisitVarStmt_Perlang_Stmt_Var_" data-uid="Perlang.Interpreter.Typing.TypesResolvedValidator.VisitVarStmt(Perlang.Stmt.Var)">VisitVarStmt(Stmt.Var)</h4>
@@ -764,7 +703,7 @@ available.</p>
                     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypesResolvedValidator.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypesResolvedValidator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/080b5bfc05f6a8e8e5f9d50e13bcb94b53b8ae98/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L21" class="contribution-link">View Source</a>
+                    <a href="https://github.com/perlang-org/perlang/blob/c1ca18f4fbab8f3d0e7ddd71121012b2cb5efc08/src/Perlang.Interpreter/Typing/TypesResolvedValidator.cs/#L22" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

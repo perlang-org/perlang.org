@@ -245,6 +245,51 @@ references:
   isSpec: "True"
   fullName: Perlang.ConsoleApp.Program.AutoCompletionHandler.Separators
   nameWithType: Program.AutoCompletionHandler.Separators
+- uid: Perlang.ConsoleApp.Program.CompilerWarning(CompilerWarning)
+  name: CompilerWarning(CompilerWarning)
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_CompilerWarning_CompilerWarning_
+  commentId: M:Perlang.ConsoleApp.Program.CompilerWarning(CompilerWarning)
+  fullName: Perlang.ConsoleApp.Program.CompilerWarning(CompilerWarning)
+  nameWithType: Program.CompilerWarning(CompilerWarning)
+- uid: Perlang.ConsoleApp.Program.CompilerWarning*
+  name: CompilerWarning
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_CompilerWarning_
+  commentId: Overload:Perlang.ConsoleApp.Program.CompilerWarning
+  isSpec: "True"
+  fullName: Perlang.ConsoleApp.Program.CompilerWarning
+  nameWithType: Program.CompilerWarning
+- uid: Perlang.ConsoleApp.Program.CompilerWarningAsError(CompilerWarning)
+  name: CompilerWarningAsError(CompilerWarning)
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_CompilerWarningAsError_CompilerWarning_
+  commentId: M:Perlang.ConsoleApp.Program.CompilerWarningAsError(CompilerWarning)
+  fullName: Perlang.ConsoleApp.Program.CompilerWarningAsError(CompilerWarning)
+  nameWithType: Program.CompilerWarningAsError(CompilerWarning)
+- uid: Perlang.ConsoleApp.Program.CompilerWarningAsError*
+  name: CompilerWarningAsError
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_CompilerWarningAsError_
+  commentId: Overload:Perlang.ConsoleApp.Program.CompilerWarningAsError
+  isSpec: "True"
+  fullName: Perlang.ConsoleApp.Program.CompilerWarningAsError
+  nameWithType: Program.CompilerWarningAsError
+- uid: Perlang.ConsoleApp.Program.CompilerWarningAsWarning(CompilerWarning)
+  name: CompilerWarningAsWarning(CompilerWarning)
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_CompilerWarningAsWarning_CompilerWarning_
+  commentId: M:Perlang.ConsoleApp.Program.CompilerWarningAsWarning(CompilerWarning)
+  fullName: Perlang.ConsoleApp.Program.CompilerWarningAsWarning(CompilerWarning)
+  nameWithType: Program.CompilerWarningAsWarning(CompilerWarning)
+- uid: Perlang.ConsoleApp.Program.CompilerWarningAsWarning*
+  name: CompilerWarningAsWarning
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_CompilerWarningAsWarning_
+  commentId: Overload:Perlang.ConsoleApp.Program.CompilerWarningAsWarning
+  isSpec: "True"
+  fullName: Perlang.ConsoleApp.Program.CompilerWarningAsWarning
+  nameWithType: Program.CompilerWarningAsWarning
+- uid: Perlang.ConsoleApp.Program.disabledWarningsAsErrors
+  name: disabledWarningsAsErrors
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_disabledWarningsAsErrors
+  commentId: F:Perlang.ConsoleApp.Program.disabledWarningsAsErrors
+  fullName: Perlang.ConsoleApp.Program.disabledWarningsAsErrors
+  nameWithType: Program.disabledWarningsAsErrors
 - uid: Perlang.ConsoleApp.Program.Error(Token,System.String)
   name: Error(Token, String)
   href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_Error_Token_System_String_
@@ -389,19 +434,32 @@ references:
   commentId: F:Perlang.ConsoleApp.Program.ReplCommands
   fullName: Perlang.ConsoleApp.Program.ReplCommands
   nameWithType: Program.ReplCommands
-- uid: Perlang.ConsoleApp.Program.Report(System.Int32,System.String,System.String)
-  name: Report(Int32, String, String)
-  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_Report_System_Int32_System_String_System_String_
-  commentId: M:Perlang.ConsoleApp.Program.Report(System.Int32,System.String,System.String)
-  fullName: Perlang.ConsoleApp.Program.Report(System.Int32, System.String, System.String)
-  nameWithType: Program.Report(Int32, String, String)
-- uid: Perlang.ConsoleApp.Program.Report*
-  name: Report
-  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_Report_
-  commentId: Overload:Perlang.ConsoleApp.Program.Report
+- uid: Perlang.ConsoleApp.Program.ReportError(System.Int32,System.String,System.String)
+  name: ReportError(Int32, String, String)
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_ReportError_System_Int32_System_String_System_String_
+  commentId: M:Perlang.ConsoleApp.Program.ReportError(System.Int32,System.String,System.String)
+  fullName: Perlang.ConsoleApp.Program.ReportError(System.Int32, System.String, System.String)
+  nameWithType: Program.ReportError(Int32, String, String)
+- uid: Perlang.ConsoleApp.Program.ReportError*
+  name: ReportError
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_ReportError_
+  commentId: Overload:Perlang.ConsoleApp.Program.ReportError
   isSpec: "True"
-  fullName: Perlang.ConsoleApp.Program.Report
-  nameWithType: Program.Report
+  fullName: Perlang.ConsoleApp.Program.ReportError
+  nameWithType: Program.ReportError
+- uid: Perlang.ConsoleApp.Program.ReportWarning(System.Int32,System.String,System.String)
+  name: ReportWarning(Int32, String, String)
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_ReportWarning_System_Int32_System_String_System_String_
+  commentId: M:Perlang.ConsoleApp.Program.ReportWarning(System.Int32,System.String,System.String)
+  fullName: Perlang.ConsoleApp.Program.ReportWarning(System.Int32, System.String, System.String)
+  nameWithType: Program.ReportWarning(Int32, String, String)
+- uid: Perlang.ConsoleApp.Program.ReportWarning*
+  name: ReportWarning
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_ReportWarning_
+  commentId: Overload:Perlang.ConsoleApp.Program.ReportWarning
+  isSpec: "True"
+  fullName: Perlang.ConsoleApp.Program.ReportWarning
+  nameWithType: Program.ReportWarning
 - uid: Perlang.ConsoleApp.Program.ResolveError(Perlang.Interpreter.Resolution.ResolveError)
   name: ResolveError(ResolveError)
   href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_ResolveError_Perlang_Interpreter_Resolution_ResolveError_
@@ -415,12 +473,12 @@ references:
   isSpec: "True"
   fullName: Perlang.ConsoleApp.Program.ResolveError
   nameWithType: Program.ResolveError
-- uid: Perlang.ConsoleApp.Program.Run(System.String)
-  name: Run(String)
-  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_Run_System_String_
-  commentId: M:Perlang.ConsoleApp.Program.Run(System.String)
-  fullName: Perlang.ConsoleApp.Program.Run(System.String)
-  nameWithType: Program.Run(String)
+- uid: Perlang.ConsoleApp.Program.Run(System.String,CompilerWarningHandler)
+  name: Run(String, CompilerWarningHandler)
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_Run_System_String_CompilerWarningHandler_
+  commentId: M:Perlang.ConsoleApp.Program.Run(System.String,CompilerWarningHandler)
+  fullName: Perlang.ConsoleApp.Program.Run(System.String, CompilerWarningHandler)
+  nameWithType: Program.Run(String, CompilerWarningHandler)
 - uid: Perlang.ConsoleApp.Program.Run*
   name: Run
   href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_Run_
@@ -505,6 +563,19 @@ references:
   isSpec: "True"
   fullName: Perlang.ConsoleApp.Program.ValidationError
   nameWithType: Program.ValidationError
+- uid: Perlang.ConsoleApp.Program.Warn(Token,System.String)
+  name: Warn(Token, String)
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_Warn_Token_System_String_
+  commentId: M:Perlang.ConsoleApp.Program.Warn(Token,System.String)
+  fullName: Perlang.ConsoleApp.Program.Warn(Token, System.String)
+  nameWithType: Program.Warn(Token, String)
+- uid: Perlang.ConsoleApp.Program.Warn*
+  name: Warn
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_Warn_
+  commentId: Overload:Perlang.ConsoleApp.Program.Warn
+  isSpec: "True"
+  fullName: Perlang.ConsoleApp.Program.Warn
+  nameWithType: Program.Warn
 - uid: Perlang.Exceptions
   name: Perlang.Exceptions
   href: api/Perlang.Exceptions.html
@@ -2476,15 +2547,15 @@ references:
   commentId: T:Perlang.Interpreter.PerlangInterpreter
   fullName: Perlang.Interpreter.PerlangInterpreter
   nameWithType: PerlangInterpreter
-- uid: Perlang.Interpreter.PerlangInterpreter.#ctor(Action{Perlang.RuntimeError},System.Nullable{Action{System.String}},System.Nullable{IEnumerable{System.String}},System.Boolean)
-  name: PerlangInterpreter(Action<RuntimeError>, Nullable<Action<String>>, Nullable<IEnumerable<String>>, Boolean)
-  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter__ctor_Action_Perlang_RuntimeError__System_Nullable_Action_System_String___System_Nullable_IEnumerable_System_String___System_Boolean_
-  commentId: M:Perlang.Interpreter.PerlangInterpreter.#ctor(Action{Perlang.RuntimeError},System.Nullable{Action{System.String}},System.Nullable{IEnumerable{System.String}},System.Boolean)
-  name.vb: PerlangInterpreter(Action(Of RuntimeError), Nullable(Of Action(Of String)), Nullable(Of IEnumerable(Of String)), Boolean)
-  fullName: Perlang.Interpreter.PerlangInterpreter.PerlangInterpreter(Action<Perlang.RuntimeError>, System.Nullable<Action<System.String>>, System.Nullable<IEnumerable<System.String>>, System.Boolean)
-  fullName.vb: Perlang.Interpreter.PerlangInterpreter.PerlangInterpreter(Action(Of Perlang.RuntimeError), System.Nullable(Of Action(Of System.String)), System.Nullable(Of IEnumerable(Of System.String)), System.Boolean)
-  nameWithType: PerlangInterpreter.PerlangInterpreter(Action<RuntimeError>, Nullable<Action<String>>, Nullable<IEnumerable<String>>, Boolean)
-  nameWithType.vb: PerlangInterpreter.PerlangInterpreter(Action(Of RuntimeError), Nullable(Of Action(Of String)), Nullable(Of IEnumerable(Of String)), Boolean)
+- uid: Perlang.Interpreter.PerlangInterpreter.#ctor(Action{Perlang.RuntimeError},Action{System.String},System.Nullable{IEnumerable{System.String}},System.Boolean)
+  name: PerlangInterpreter(Action<RuntimeError>, Action<String>, Nullable<IEnumerable<String>>, Boolean)
+  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter__ctor_Action_Perlang_RuntimeError__Action_System_String__System_Nullable_IEnumerable_System_String___System_Boolean_
+  commentId: M:Perlang.Interpreter.PerlangInterpreter.#ctor(Action{Perlang.RuntimeError},Action{System.String},System.Nullable{IEnumerable{System.String}},System.Boolean)
+  name.vb: PerlangInterpreter(Action(Of RuntimeError), Action(Of String), Nullable(Of IEnumerable(Of String)), Boolean)
+  fullName: Perlang.Interpreter.PerlangInterpreter.PerlangInterpreter(Action<Perlang.RuntimeError>, Action<System.String>, System.Nullable<IEnumerable<System.String>>, System.Boolean)
+  fullName.vb: Perlang.Interpreter.PerlangInterpreter.PerlangInterpreter(Action(Of Perlang.RuntimeError), Action(Of System.String), System.Nullable(Of IEnumerable(Of System.String)), System.Boolean)
+  nameWithType: PerlangInterpreter.PerlangInterpreter(Action<RuntimeError>, Action<String>, Nullable<IEnumerable<String>>, Boolean)
+  nameWithType.vb: PerlangInterpreter.PerlangInterpreter(Action(Of RuntimeError), Action(Of String), Nullable(Of IEnumerable(Of String)), Boolean)
 - uid: Perlang.Interpreter.PerlangInterpreter.#ctor*
   name: PerlangInterpreter
   href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter__ctor_
@@ -2585,12 +2656,12 @@ references:
   commentId: F:Perlang.Interpreter.PerlangInterpreter.currentEnvironment
   fullName: Perlang.Interpreter.PerlangInterpreter.currentEnvironment
   nameWithType: PerlangInterpreter.currentEnvironment
-- uid: Perlang.Interpreter.PerlangInterpreter.Eval(System.String,Perlang.Parser.ScanErrorHandler,Perlang.Parser.ParseErrorHandler,Perlang.Interpreter.ResolveErrorHandler,Perlang.Interpreter.ValidationErrorHandler,Perlang.Interpreter.ValidationErrorHandler)
-  name: Eval(String, ScanErrorHandler, ParseErrorHandler, ResolveErrorHandler, ValidationErrorHandler, ValidationErrorHandler)
-  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_Eval_System_String_Perlang_Parser_ScanErrorHandler_Perlang_Parser_ParseErrorHandler_Perlang_Interpreter_ResolveErrorHandler_Perlang_Interpreter_ValidationErrorHandler_Perlang_Interpreter_ValidationErrorHandler_
-  commentId: M:Perlang.Interpreter.PerlangInterpreter.Eval(System.String,Perlang.Parser.ScanErrorHandler,Perlang.Parser.ParseErrorHandler,Perlang.Interpreter.ResolveErrorHandler,Perlang.Interpreter.ValidationErrorHandler,Perlang.Interpreter.ValidationErrorHandler)
-  fullName: Perlang.Interpreter.PerlangInterpreter.Eval(System.String, Perlang.Parser.ScanErrorHandler, Perlang.Parser.ParseErrorHandler, Perlang.Interpreter.ResolveErrorHandler, Perlang.Interpreter.ValidationErrorHandler, Perlang.Interpreter.ValidationErrorHandler)
-  nameWithType: PerlangInterpreter.Eval(String, ScanErrorHandler, ParseErrorHandler, ResolveErrorHandler, ValidationErrorHandler, ValidationErrorHandler)
+- uid: Perlang.Interpreter.PerlangInterpreter.Eval(System.String,Perlang.Parser.ScanErrorHandler,Perlang.Parser.ParseErrorHandler,Perlang.Interpreter.ResolveErrorHandler,Perlang.Interpreter.ValidationErrorHandler,Perlang.Interpreter.ValidationErrorHandler,Perlang.Parser.CompilerWarningHandler)
+  name: Eval(String, ScanErrorHandler, ParseErrorHandler, ResolveErrorHandler, ValidationErrorHandler, ValidationErrorHandler, CompilerWarningHandler)
+  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_Eval_System_String_Perlang_Parser_ScanErrorHandler_Perlang_Parser_ParseErrorHandler_Perlang_Interpreter_ResolveErrorHandler_Perlang_Interpreter_ValidationErrorHandler_Perlang_Interpreter_ValidationErrorHandler_Perlang_Parser_CompilerWarningHandler_
+  commentId: M:Perlang.Interpreter.PerlangInterpreter.Eval(System.String,Perlang.Parser.ScanErrorHandler,Perlang.Parser.ParseErrorHandler,Perlang.Interpreter.ResolveErrorHandler,Perlang.Interpreter.ValidationErrorHandler,Perlang.Interpreter.ValidationErrorHandler,Perlang.Parser.CompilerWarningHandler)
+  fullName: Perlang.Interpreter.PerlangInterpreter.Eval(System.String, Perlang.Parser.ScanErrorHandler, Perlang.Parser.ParseErrorHandler, Perlang.Interpreter.ResolveErrorHandler, Perlang.Interpreter.ValidationErrorHandler, Perlang.Interpreter.ValidationErrorHandler, Perlang.Parser.CompilerWarningHandler)
+  nameWithType: PerlangInterpreter.Eval(String, ScanErrorHandler, ParseErrorHandler, ResolveErrorHandler, ValidationErrorHandler, ValidationErrorHandler, CompilerWarningHandler)
 - uid: Perlang.Interpreter.PerlangInterpreter.Eval*
   name: Eval
   href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_Eval_
@@ -4503,6 +4574,53 @@ references:
   commentId: N:Perlang.Interpreter.Typing
   fullName: Perlang.Interpreter.Typing
   nameWithType: Perlang.Interpreter.Typing
+- uid: Perlang.Interpreter.Typing.TypeCoercer
+  name: TypeCoercer
+  href: api/Perlang.Interpreter.Typing.TypeCoercer.html
+  commentId: T:Perlang.Interpreter.Typing.TypeCoercer
+  fullName: Perlang.Interpreter.Typing.TypeCoercer
+  nameWithType: TypeCoercer
+- uid: Perlang.Interpreter.Typing.TypeCoercer.#ctor(Action{Perlang.Parser.CompilerWarning})
+  name: TypeCoercer(Action<CompilerWarning>)
+  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer__ctor_Action_Perlang_Parser_CompilerWarning__
+  commentId: M:Perlang.Interpreter.Typing.TypeCoercer.#ctor(Action{Perlang.Parser.CompilerWarning})
+  name.vb: TypeCoercer(Action(Of CompilerWarning))
+  fullName: Perlang.Interpreter.Typing.TypeCoercer.TypeCoercer(Action<Perlang.Parser.CompilerWarning>)
+  fullName.vb: Perlang.Interpreter.Typing.TypeCoercer.TypeCoercer(Action(Of Perlang.Parser.CompilerWarning))
+  nameWithType: TypeCoercer.TypeCoercer(Action<CompilerWarning>)
+  nameWithType.vb: TypeCoercer.TypeCoercer(Action(Of CompilerWarning))
+- uid: Perlang.Interpreter.Typing.TypeCoercer.#ctor*
+  name: TypeCoercer
+  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer__ctor_
+  commentId: Overload:Perlang.Interpreter.Typing.TypeCoercer.#ctor
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Typing.TypeCoercer.TypeCoercer
+  nameWithType: TypeCoercer.TypeCoercer
+- uid: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token,Perlang.TypeReference,Perlang.TypeReference)
+  name: CanBeCoercedInto(Token, TypeReference, TypeReference)
+  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Perlang_Token_Perlang_TypeReference_Perlang_TypeReference_
+  commentId: M:Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token,Perlang.TypeReference,Perlang.TypeReference)
+  fullName: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token, Perlang.TypeReference, Perlang.TypeReference)
+  nameWithType: TypeCoercer.CanBeCoercedInto(Token, TypeReference, TypeReference)
+- uid: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token,Type,Type)
+  name: CanBeCoercedInto(Token, Type, Type)
+  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Perlang_Token_Type_Type_
+  commentId: M:Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token,Type,Type)
+  fullName: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token, Type, Type)
+  nameWithType: TypeCoercer.CanBeCoercedInto(Token, Type, Type)
+- uid: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto*
+  name: CanBeCoercedInto
+  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_
+  commentId: Overload:Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto
+  nameWithType: TypeCoercer.CanBeCoercedInto
+- uid: Perlang.Interpreter.Typing.TypeCoercer.compilerWarningCallback
+  name: compilerWarningCallback
+  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_compilerWarningCallback
+  commentId: F:Perlang.Interpreter.Typing.TypeCoercer.compilerWarningCallback
+  fullName: Perlang.Interpreter.Typing.TypeCoercer.compilerWarningCallback
+  nameWithType: TypeCoercer.compilerWarningCallback
 - uid: Perlang.Interpreter.Typing.TypeResolver
   name: TypeResolver
   href: api/Perlang.Interpreter.Typing.TypeResolver.html
@@ -4741,15 +4859,15 @@ references:
   commentId: T:Perlang.Interpreter.Typing.TypesResolvedValidator
   fullName: Perlang.Interpreter.Typing.TypesResolvedValidator
   nameWithType: TypesResolvedValidator
-- uid: Perlang.Interpreter.Typing.TypesResolvedValidator.#ctor(Func{Perlang.Expr,Perlang.Interpreter.Resolution.Binding},Action{Perlang.Interpreter.Typing.TypeValidationError})
-  name: TypesResolvedValidator(Func<Expr, Binding>, Action<TypeValidationError>)
-  href: api/Perlang.Interpreter.Typing.TypesResolvedValidator.html#Perlang_Interpreter_Typing_TypesResolvedValidator__ctor_Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__Action_Perlang_Interpreter_Typing_TypeValidationError__
-  commentId: M:Perlang.Interpreter.Typing.TypesResolvedValidator.#ctor(Func{Perlang.Expr,Perlang.Interpreter.Resolution.Binding},Action{Perlang.Interpreter.Typing.TypeValidationError})
-  name.vb: TypesResolvedValidator(Func(Of Expr, Binding), Action(Of TypeValidationError))
-  fullName: Perlang.Interpreter.Typing.TypesResolvedValidator.TypesResolvedValidator(Func<Perlang.Expr, Perlang.Interpreter.Resolution.Binding>, Action<Perlang.Interpreter.Typing.TypeValidationError>)
-  fullName.vb: Perlang.Interpreter.Typing.TypesResolvedValidator.TypesResolvedValidator(Func(Of Perlang.Expr, Perlang.Interpreter.Resolution.Binding), Action(Of Perlang.Interpreter.Typing.TypeValidationError))
-  nameWithType: TypesResolvedValidator.TypesResolvedValidator(Func<Expr, Binding>, Action<TypeValidationError>)
-  nameWithType.vb: TypesResolvedValidator.TypesResolvedValidator(Func(Of Expr, Binding), Action(Of TypeValidationError))
+- uid: Perlang.Interpreter.Typing.TypesResolvedValidator.#ctor(Func{Perlang.Expr,Perlang.Interpreter.Resolution.Binding},Action{Perlang.Interpreter.Typing.TypeValidationError},Action{Perlang.Parser.CompilerWarning})
+  name: TypesResolvedValidator(Func<Expr, Binding>, Action<TypeValidationError>, Action<CompilerWarning>)
+  href: api/Perlang.Interpreter.Typing.TypesResolvedValidator.html#Perlang_Interpreter_Typing_TypesResolvedValidator__ctor_Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__Action_Perlang_Interpreter_Typing_TypeValidationError__Action_Perlang_Parser_CompilerWarning__
+  commentId: M:Perlang.Interpreter.Typing.TypesResolvedValidator.#ctor(Func{Perlang.Expr,Perlang.Interpreter.Resolution.Binding},Action{Perlang.Interpreter.Typing.TypeValidationError},Action{Perlang.Parser.CompilerWarning})
+  name.vb: TypesResolvedValidator(Func(Of Expr, Binding), Action(Of TypeValidationError), Action(Of CompilerWarning))
+  fullName: Perlang.Interpreter.Typing.TypesResolvedValidator.TypesResolvedValidator(Func<Perlang.Expr, Perlang.Interpreter.Resolution.Binding>, Action<Perlang.Interpreter.Typing.TypeValidationError>, Action<Perlang.Parser.CompilerWarning>)
+  fullName.vb: Perlang.Interpreter.Typing.TypesResolvedValidator.TypesResolvedValidator(Func(Of Perlang.Expr, Perlang.Interpreter.Resolution.Binding), Action(Of Perlang.Interpreter.Typing.TypeValidationError), Action(Of Perlang.Parser.CompilerWarning))
+  nameWithType: TypesResolvedValidator.TypesResolvedValidator(Func<Expr, Binding>, Action<TypeValidationError>, Action<CompilerWarning>)
+  nameWithType.vb: TypesResolvedValidator.TypesResolvedValidator(Func(Of Expr, Binding), Action(Of TypeValidationError), Action(Of CompilerWarning))
 - uid: Perlang.Interpreter.Typing.TypesResolvedValidator.#ctor*
   name: TypesResolvedValidator
   href: api/Perlang.Interpreter.Typing.TypesResolvedValidator.html#Perlang_Interpreter_Typing_TypesResolvedValidator__ctor_
@@ -4757,25 +4875,12 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Typing.TypesResolvedValidator.TypesResolvedValidator
   nameWithType: TypesResolvedValidator.TypesResolvedValidator
-- uid: Perlang.Interpreter.Typing.TypesResolvedValidator.CanBeCoercedInto(Perlang.TypeReference,Perlang.TypeReference)
-  name: CanBeCoercedInto(TypeReference, TypeReference)
-  href: api/Perlang.Interpreter.Typing.TypesResolvedValidator.html#Perlang_Interpreter_Typing_TypesResolvedValidator_CanBeCoercedInto_Perlang_TypeReference_Perlang_TypeReference_
-  commentId: M:Perlang.Interpreter.Typing.TypesResolvedValidator.CanBeCoercedInto(Perlang.TypeReference,Perlang.TypeReference)
-  fullName: Perlang.Interpreter.Typing.TypesResolvedValidator.CanBeCoercedInto(Perlang.TypeReference, Perlang.TypeReference)
-  nameWithType: TypesResolvedValidator.CanBeCoercedInto(TypeReference, TypeReference)
-- uid: Perlang.Interpreter.Typing.TypesResolvedValidator.CanBeCoercedInto(Type,Type)
-  name: CanBeCoercedInto(Type, Type)
-  href: api/Perlang.Interpreter.Typing.TypesResolvedValidator.html#Perlang_Interpreter_Typing_TypesResolvedValidator_CanBeCoercedInto_Type_Type_
-  commentId: M:Perlang.Interpreter.Typing.TypesResolvedValidator.CanBeCoercedInto(Type,Type)
-  fullName: Perlang.Interpreter.Typing.TypesResolvedValidator.CanBeCoercedInto(Type, Type)
-  nameWithType: TypesResolvedValidator.CanBeCoercedInto(Type, Type)
-- uid: Perlang.Interpreter.Typing.TypesResolvedValidator.CanBeCoercedInto*
-  name: CanBeCoercedInto
-  href: api/Perlang.Interpreter.Typing.TypesResolvedValidator.html#Perlang_Interpreter_Typing_TypesResolvedValidator_CanBeCoercedInto_
-  commentId: Overload:Perlang.Interpreter.Typing.TypesResolvedValidator.CanBeCoercedInto
-  isSpec: "True"
-  fullName: Perlang.Interpreter.Typing.TypesResolvedValidator.CanBeCoercedInto
-  nameWithType: TypesResolvedValidator.CanBeCoercedInto
+- uid: Perlang.Interpreter.Typing.TypesResolvedValidator.compilerWarningCallback
+  name: compilerWarningCallback
+  href: api/Perlang.Interpreter.Typing.TypesResolvedValidator.html#Perlang_Interpreter_Typing_TypesResolvedValidator_compilerWarningCallback
+  commentId: F:Perlang.Interpreter.Typing.TypesResolvedValidator.compilerWarningCallback
+  fullName: Perlang.Interpreter.Typing.TypesResolvedValidator.compilerWarningCallback
+  nameWithType: TypesResolvedValidator.compilerWarningCallback
 - uid: Perlang.Interpreter.Typing.TypesResolvedValidator.getVariableOrFunctionCallback
   name: getVariableOrFunctionCallback
   href: api/Perlang.Interpreter.Typing.TypesResolvedValidator.html#Perlang_Interpreter_Typing_TypesResolvedValidator_getVariableOrFunctionCallback
@@ -4810,6 +4915,12 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Typing.TypesResolvedValidator.ReportErrors
   nameWithType: TypesResolvedValidator.ReportErrors
+- uid: Perlang.Interpreter.Typing.TypesResolvedValidator.typeCoercer
+  name: typeCoercer
+  href: api/Perlang.Interpreter.Typing.TypesResolvedValidator.html#Perlang_Interpreter_Typing_TypesResolvedValidator_typeCoercer
+  commentId: F:Perlang.Interpreter.Typing.TypesResolvedValidator.typeCoercer
+  fullName: Perlang.Interpreter.Typing.TypesResolvedValidator.typeCoercer
+  nameWithType: TypesResolvedValidator.typeCoercer
 - uid: Perlang.Interpreter.Typing.TypesResolvedValidator.typeValidationErrorCallback
   name: typeValidationErrorCallback
   href: api/Perlang.Interpreter.Typing.TypesResolvedValidator.html#Perlang_Interpreter_Typing_TypesResolvedValidator_typeValidationErrorCallback
@@ -4919,15 +5030,15 @@ references:
   commentId: T:Perlang.Interpreter.Typing.TypeValidator
   fullName: Perlang.Interpreter.Typing.TypeValidator
   nameWithType: TypeValidator
-- uid: Perlang.Interpreter.Typing.TypeValidator.Validate(IList{Perlang.Stmt},Action{Perlang.Interpreter.Typing.TypeValidationError},Func{Perlang.Expr,Perlang.Interpreter.Resolution.Binding})
-  name: Validate(IList<Stmt>, Action<TypeValidationError>, Func<Expr, Binding>)
-  href: api/Perlang.Interpreter.Typing.TypeValidator.html#Perlang_Interpreter_Typing_TypeValidator_Validate_IList_Perlang_Stmt__Action_Perlang_Interpreter_Typing_TypeValidationError__Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__
-  commentId: M:Perlang.Interpreter.Typing.TypeValidator.Validate(IList{Perlang.Stmt},Action{Perlang.Interpreter.Typing.TypeValidationError},Func{Perlang.Expr,Perlang.Interpreter.Resolution.Binding})
-  name.vb: Validate(IList(Of Stmt), Action(Of TypeValidationError), Func(Of Expr, Binding))
-  fullName: Perlang.Interpreter.Typing.TypeValidator.Validate(IList<Perlang.Stmt>, Action<Perlang.Interpreter.Typing.TypeValidationError>, Func<Perlang.Expr, Perlang.Interpreter.Resolution.Binding>)
-  fullName.vb: Perlang.Interpreter.Typing.TypeValidator.Validate(IList(Of Perlang.Stmt), Action(Of Perlang.Interpreter.Typing.TypeValidationError), Func(Of Perlang.Expr, Perlang.Interpreter.Resolution.Binding))
-  nameWithType: TypeValidator.Validate(IList<Stmt>, Action<TypeValidationError>, Func<Expr, Binding>)
-  nameWithType.vb: TypeValidator.Validate(IList(Of Stmt), Action(Of TypeValidationError), Func(Of Expr, Binding))
+- uid: Perlang.Interpreter.Typing.TypeValidator.Validate(IList{Perlang.Stmt},Action{Perlang.Interpreter.Typing.TypeValidationError},Func{Perlang.Expr,Perlang.Interpreter.Resolution.Binding},Action{Perlang.Parser.CompilerWarning})
+  name: Validate(IList<Stmt>, Action<TypeValidationError>, Func<Expr, Binding>, Action<CompilerWarning>)
+  href: api/Perlang.Interpreter.Typing.TypeValidator.html#Perlang_Interpreter_Typing_TypeValidator_Validate_IList_Perlang_Stmt__Action_Perlang_Interpreter_Typing_TypeValidationError__Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__Action_Perlang_Parser_CompilerWarning__
+  commentId: M:Perlang.Interpreter.Typing.TypeValidator.Validate(IList{Perlang.Stmt},Action{Perlang.Interpreter.Typing.TypeValidationError},Func{Perlang.Expr,Perlang.Interpreter.Resolution.Binding},Action{Perlang.Parser.CompilerWarning})
+  name.vb: Validate(IList(Of Stmt), Action(Of TypeValidationError), Func(Of Expr, Binding), Action(Of CompilerWarning))
+  fullName: Perlang.Interpreter.Typing.TypeValidator.Validate(IList<Perlang.Stmt>, Action<Perlang.Interpreter.Typing.TypeValidationError>, Func<Perlang.Expr, Perlang.Interpreter.Resolution.Binding>, Action<Perlang.Parser.CompilerWarning>)
+  fullName.vb: Perlang.Interpreter.Typing.TypeValidator.Validate(IList(Of Perlang.Stmt), Action(Of Perlang.Interpreter.Typing.TypeValidationError), Func(Of Perlang.Expr, Perlang.Interpreter.Resolution.Binding), Action(Of Perlang.Parser.CompilerWarning))
+  nameWithType: TypeValidator.Validate(IList<Stmt>, Action<TypeValidationError>, Func<Expr, Binding>, Action<CompilerWarning>)
+  nameWithType.vb: TypeValidator.Validate(IList(Of Stmt), Action(Of TypeValidationError), Func(Of Expr, Binding), Action(Of CompilerWarning))
 - uid: Perlang.Interpreter.Typing.TypeValidator.Validate*
   name: Validate
   href: api/Perlang.Interpreter.Typing.TypeValidator.html#Perlang_Interpreter_Typing_TypeValidator_Validate_
@@ -5068,6 +5179,70 @@ references:
   commentId: N:Perlang.Parser
   fullName: Perlang.Parser
   nameWithType: Perlang.Parser
+- uid: Perlang.Parser.CompilerWarning
+  name: CompilerWarning
+  href: api/Perlang.Parser.CompilerWarning.html
+  commentId: T:Perlang.Parser.CompilerWarning
+  fullName: Perlang.Parser.CompilerWarning
+  nameWithType: CompilerWarning
+- uid: Perlang.Parser.CompilerWarning.#ctor(System.String,Perlang.Token,Perlang.Parser.WarningType)
+  name: CompilerWarning(String, Token, WarningType)
+  href: api/Perlang.Parser.CompilerWarning.html#Perlang_Parser_CompilerWarning__ctor_System_String_Perlang_Token_Perlang_Parser_WarningType_
+  commentId: M:Perlang.Parser.CompilerWarning.#ctor(System.String,Perlang.Token,Perlang.Parser.WarningType)
+  fullName: Perlang.Parser.CompilerWarning.CompilerWarning(System.String, Perlang.Token, Perlang.Parser.WarningType)
+  nameWithType: CompilerWarning.CompilerWarning(String, Token, WarningType)
+- uid: Perlang.Parser.CompilerWarning.#ctor*
+  name: CompilerWarning
+  href: api/Perlang.Parser.CompilerWarning.html#Perlang_Parser_CompilerWarning__ctor_
+  commentId: Overload:Perlang.Parser.CompilerWarning.#ctor
+  isSpec: "True"
+  fullName: Perlang.Parser.CompilerWarning.CompilerWarning
+  nameWithType: CompilerWarning.CompilerWarning
+- uid: Perlang.Parser.CompilerWarning.Token
+  name: Token
+  href: api/Perlang.Parser.CompilerWarning.html#Perlang_Parser_CompilerWarning_Token
+  commentId: P:Perlang.Parser.CompilerWarning.Token
+  fullName: Perlang.Parser.CompilerWarning.Token
+  nameWithType: CompilerWarning.Token
+- uid: Perlang.Parser.CompilerWarning.Token*
+  name: Token
+  href: api/Perlang.Parser.CompilerWarning.html#Perlang_Parser_CompilerWarning_Token_
+  commentId: Overload:Perlang.Parser.CompilerWarning.Token
+  isSpec: "True"
+  fullName: Perlang.Parser.CompilerWarning.Token
+  nameWithType: CompilerWarning.Token
+- uid: Perlang.Parser.CompilerWarning.ToString
+  name: ToString()
+  href: api/Perlang.Parser.CompilerWarning.html#Perlang_Parser_CompilerWarning_ToString
+  commentId: M:Perlang.Parser.CompilerWarning.ToString
+  fullName: Perlang.Parser.CompilerWarning.ToString()
+  nameWithType: CompilerWarning.ToString()
+- uid: Perlang.Parser.CompilerWarning.ToString*
+  name: ToString
+  href: api/Perlang.Parser.CompilerWarning.html#Perlang_Parser_CompilerWarning_ToString_
+  commentId: Overload:Perlang.Parser.CompilerWarning.ToString
+  isSpec: "True"
+  fullName: Perlang.Parser.CompilerWarning.ToString
+  nameWithType: CompilerWarning.ToString
+- uid: Perlang.Parser.CompilerWarning.WarningType
+  name: WarningType
+  href: api/Perlang.Parser.CompilerWarning.html#Perlang_Parser_CompilerWarning_WarningType
+  commentId: P:Perlang.Parser.CompilerWarning.WarningType
+  fullName: Perlang.Parser.CompilerWarning.WarningType
+  nameWithType: CompilerWarning.WarningType
+- uid: Perlang.Parser.CompilerWarning.WarningType*
+  name: WarningType
+  href: api/Perlang.Parser.CompilerWarning.html#Perlang_Parser_CompilerWarning_WarningType_
+  commentId: Overload:Perlang.Parser.CompilerWarning.WarningType
+  isSpec: "True"
+  fullName: Perlang.Parser.CompilerWarning.WarningType
+  nameWithType: CompilerWarning.WarningType
+- uid: Perlang.Parser.CompilerWarningHandler
+  name: CompilerWarningHandler
+  href: api/Perlang.Parser.CompilerWarningHandler.html
+  commentId: T:Perlang.Parser.CompilerWarningHandler
+  fullName: Perlang.Parser.CompilerWarningHandler
+  nameWithType: CompilerWarningHandler
 - uid: Perlang.Parser.ParseError
   name: ParseError
   href: api/Perlang.Parser.ParseError.html
@@ -6036,6 +6211,12 @@ references:
   commentId: F:Perlang.Parser.Scanner.tokens
   fullName: Perlang.Parser.Scanner.tokens
   nameWithType: Scanner.tokens
+- uid: Perlang.Parser.WarningType
+  name: WarningType
+  href: api/Perlang.Parser.WarningType.html
+  commentId: T:Perlang.Parser.WarningType
+  fullName: Perlang.Parser.WarningType
+  nameWithType: WarningType
 - uid: Perlang.PerlangClass
   name: PerlangClass
   href: api/Perlang.PerlangClass.html
@@ -7460,6 +7641,19 @@ references:
   isSpec: "True"
   fullName: Perlang.TypeReference.ExplicitTypeSpecified
   nameWithType: TypeReference.ExplicitTypeSpecified
+- uid: Perlang.TypeReference.IsNullObject
+  name: IsNullObject
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_IsNullObject
+  commentId: P:Perlang.TypeReference.IsNullObject
+  fullName: Perlang.TypeReference.IsNullObject
+  nameWithType: TypeReference.IsNullObject
+- uid: Perlang.TypeReference.IsNullObject*
+  name: IsNullObject
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_IsNullObject_
+  commentId: Overload:Perlang.TypeReference.IsNullObject
+  isSpec: "True"
+  fullName: Perlang.TypeReference.IsNullObject
+  nameWithType: TypeReference.IsNullObject
 - uid: Perlang.TypeReference.IsResolved
   name: IsResolved
   href: api/Perlang.TypeReference.html#Perlang_TypeReference_IsResolved
