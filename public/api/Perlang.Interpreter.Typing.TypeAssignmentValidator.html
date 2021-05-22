@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ImmutabilityValidator
+    <title>Class TypeAssignmentValidator
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ImmutabilityValidator
+    <meta name="title" content="Class TypeAssignmentValidator
    ">
     <meta name="generator" content="docfx 2.57.2.0">
     
@@ -72,20 +72,20 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator">
+            <article class="content wrap" id="_content" data-uid="Perlang.Interpreter.Typing.TypeAssignmentValidator">
   
   
-  <h1 id="Perlang_Interpreter_Immutability_ImmutabilityValidator" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator" class="text-break">Class ImmutabilityValidator
+  <h1 id="Perlang_Interpreter_Typing_TypeAssignmentValidator" data-uid="Perlang.Interpreter.Typing.TypeAssignmentValidator" class="text-break">Class TypeAssignmentValidator
   </h1>
-  <div class="markdown level0 summary"><p>Validator which ensures that objects which are intended to be immutable (either by nature or because they have
-been configured in a particular way) cannot be mutated.</p>
+  <div class="markdown level0 summary"><p>Visitor which ensures that all assignments in the given list of statements use values which can be coerced to
+the variable type in question.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="Perlang.VisitorBase.html">VisitorBase</a></div>
-    <div class="level2"><span class="xref">ImmutabilityValidator</span></div>
+    <div class="level2"><span class="xref">TypeAssignmentValidator</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -161,28 +161,28 @@ been configured in a particular way) cannot be mutated.</p>
       <a class="xref" href="Perlang.VisitorBase.html#Perlang_VisitorBase_VisitWhileStmt_Perlang_Stmt_While_">VisitorBase.VisitWhileStmt(Stmt.While)</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.Interpreter.Immutability.html">Perlang.Interpreter.Immutability</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.Interpreter.Typing.html">Perlang.Interpreter.Typing</a></h6>
   <h6><strong>Assembly</strong>: Perlang.Interpreter.dll</h6>
-  <h5 id="Perlang_Interpreter_Immutability_ImmutabilityValidator_syntax">Syntax</h5>
+  <h5 id="Perlang_Interpreter_Typing_TypeAssignmentValidator_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">class ImmutabilityValidator : VisitorBase, Expr.IVisitor&lt;VoidObject&gt;, Stmt.IVisitor&lt;VoidObject&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">class TypeAssignmentValidator : VisitorBase, Expr.IVisitor&lt;VoidObject&gt;, Stmt.IVisitor&lt;VoidObject&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Immutability_ImmutabilityValidator__ctor_Action_Perlang_Interpreter_ValidationError__Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Immutability.ImmutabilityValidator.%23ctor(Action%7BPerlang.Interpreter.ValidationError%7D%2CFunc%7BPerlang.Expr%2CPerlang.Interpreter.Resolution.Binding%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypeAssignmentValidator__ctor_Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__Action_Perlang_Interpreter_Typing_TypeValidationError__Action_Perlang_Parser_CompilerWarning__.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypeAssignmentValidator.%23ctor(Func%7BPerlang.Expr%2CPerlang.Interpreter.Resolution.Binding%7D%2CAction%7BPerlang.Interpreter.Typing.TypeValidationError%7D%2CAction%7BPerlang.Parser.CompilerWarning%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/2c83bd982bc400d70b4b181d9caead06c4724b3b/src/Perlang.Interpreter/Immutability/ImmutabilityValidator.cs/#L25">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/2c83bd982bc400d70b4b181d9caead06c4724b3b/src/Perlang.Interpreter/Typing/TypeAssignmentValidator.cs/#L18">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Immutability_ImmutabilityValidator__ctor_" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator.#ctor*"></a>
-  <h4 id="Perlang_Interpreter_Immutability_ImmutabilityValidator__ctor_Action_Perlang_Interpreter_ValidationError__Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator.#ctor(Action{Perlang.Interpreter.ValidationError},Func{Perlang.Expr,Perlang.Interpreter.Resolution.Binding})">ImmutabilityValidator(Action&lt;ValidationError&gt;, Func&lt;Expr, Binding&gt;)</h4>
+  <a id="Perlang_Interpreter_Typing_TypeAssignmentValidator__ctor_" data-uid="Perlang.Interpreter.Typing.TypeAssignmentValidator.#ctor*"></a>
+  <h4 id="Perlang_Interpreter_Typing_TypeAssignmentValidator__ctor_Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__Action_Perlang_Interpreter_Typing_TypeValidationError__Action_Perlang_Parser_CompilerWarning__" data-uid="Perlang.Interpreter.Typing.TypeAssignmentValidator.#ctor(Func{Perlang.Expr,Perlang.Interpreter.Resolution.Binding},Action{Perlang.Interpreter.Typing.TypeValidationError},Action{Perlang.Parser.CompilerWarning})">TypeAssignmentValidator(Func&lt;Expr, Binding&gt;, Action&lt;TypeValidationError&gt;, Action&lt;CompilerWarning&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ImmutabilityValidator(Action&lt;ValidationError&gt; immutabilityValidationErrorCallback, Func&lt;Expr, Binding&gt; getVariableOrFunctionBinding)</code></pre>
+    <pre><code class="lang-csharp hljs">public TypeAssignmentValidator(Func&lt;Expr, Binding&gt; getVariableOrFunctionCallback, Action&lt;TypeValidationError&gt; typeValidationErrorCallback, Action&lt;CompilerWarning&gt; compilerWarningCallback)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -195,13 +195,18 @@ been configured in a particular way) cannot be mutated.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Interpreter.ValidationError.html">ValidationError</a>&gt;</td>
-        <td><span class="parametername">immutabilityValidationErrorCallback</span></td>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="Perlang.Expr.html">Expr</a>, <a class="xref" href="Perlang.Interpreter.Resolution.Binding.html">Binding</a>&gt;</td>
+        <td><span class="parametername">getVariableOrFunctionCallback</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="Perlang.Expr.html">Expr</a>, <a class="xref" href="Perlang.Interpreter.Resolution.Binding.html">Binding</a>&gt;</td>
-        <td><span class="parametername">getVariableOrFunctionBinding</span></td>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Interpreter.Typing.TypeValidationError.html">TypeValidationError</a>&gt;</td>
+        <td><span class="parametername">typeValidationErrorCallback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Parser.CompilerWarning.html">CompilerWarning</a>&gt;</td>
+        <td><span class="parametername">compilerWarningCallback</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -210,17 +215,17 @@ been configured in a particular way) cannot be mutated.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Immutability_ImmutabilityValidator_getVariableOrFunctionBinding.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Immutability.ImmutabilityValidator.getVariableOrFunctionBinding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypeAssignmentValidator_getVariableOrFunctionCallback.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypeAssignmentValidator.getVariableOrFunctionCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/2c83bd982bc400d70b4b181d9caead06c4724b3b/src/Perlang.Interpreter/Immutability/ImmutabilityValidator.cs/#L15">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/2c83bd982bc400d70b4b181d9caead06c4724b3b/src/Perlang.Interpreter/Typing/TypeAssignmentValidator.cs/#L14">View Source</a>
   </span>
-  <h4 id="Perlang_Interpreter_Immutability_ImmutabilityValidator_getVariableOrFunctionBinding" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator.getVariableOrFunctionBinding">getVariableOrFunctionBinding</h4>
+  <h4 id="Perlang_Interpreter_Typing_TypeAssignmentValidator_getVariableOrFunctionCallback" data-uid="Perlang.Interpreter.Typing.TypeAssignmentValidator.getVariableOrFunctionCallback">getVariableOrFunctionCallback</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">readonly Func&lt;Expr, Binding&gt; getVariableOrFunctionBinding</code></pre>
+    <pre><code class="lang-csharp hljs">readonly Func&lt;Expr, Binding&gt; getVariableOrFunctionCallback</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -239,17 +244,17 @@ been configured in a particular way) cannot be mutated.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Immutability_ImmutabilityValidator_immutabilityValidationErrorCallback.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Immutability.ImmutabilityValidator.immutabilityValidationErrorCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypeAssignmentValidator_typeCoercer.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypeAssignmentValidator.typeCoercer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/2c83bd982bc400d70b4b181d9caead06c4724b3b/src/Perlang.Interpreter/Immutability/ImmutabilityValidator.cs/#L14">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/2c83bd982bc400d70b4b181d9caead06c4724b3b/src/Perlang.Interpreter/Typing/TypeAssignmentValidator.cs/#L16">View Source</a>
   </span>
-  <h4 id="Perlang_Interpreter_Immutability_ImmutabilityValidator_immutabilityValidationErrorCallback" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator.immutabilityValidationErrorCallback">immutabilityValidationErrorCallback</h4>
+  <h4 id="Perlang_Interpreter_Typing_TypeAssignmentValidator_typeCoercer" data-uid="Perlang.Interpreter.Typing.TypeAssignmentValidator.typeCoercer">typeCoercer</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">readonly Action&lt;ValidationError&gt; immutabilityValidationErrorCallback</code></pre>
+    <pre><code class="lang-csharp hljs">readonly TypeCoercer typeCoercer</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -261,7 +266,36 @@ been configured in a particular way) cannot be mutated.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Interpreter.ValidationError.html">ValidationError</a>&gt;</td>
+        <td><a class="xref" href="Perlang.Interpreter.Typing.TypeCoercer.html">TypeCoercer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypeAssignmentValidator_typeValidationErrorCallback.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypeAssignmentValidator.typeValidationErrorCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/2c83bd982bc400d70b4b181d9caead06c4724b3b/src/Perlang.Interpreter/Typing/TypeAssignmentValidator.cs/#L15">View Source</a>
+  </span>
+  <h4 id="Perlang_Interpreter_Typing_TypeAssignmentValidator_typeValidationErrorCallback" data-uid="Perlang.Interpreter.Typing.TypeAssignmentValidator.typeValidationErrorCallback">typeValidationErrorCallback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly Action&lt;TypeValidationError&gt; typeValidationErrorCallback</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Interpreter.Typing.TypeValidationError.html">TypeValidationError</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -270,18 +304,18 @@ been configured in a particular way) cannot be mutated.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Immutability_ImmutabilityValidator_Validate_ImmutableList_Perlang_Stmt__Action_Perlang_Interpreter_ValidationError__Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Immutability.ImmutabilityValidator.Validate(ImmutableList%7BPerlang.Stmt%7D%2CAction%7BPerlang.Interpreter.ValidationError%7D%2CFunc%7BPerlang.Expr%2CPerlang.Interpreter.Resolution.Binding%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypeAssignmentValidator_ReportErrors_IList_Perlang_Stmt__.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypeAssignmentValidator.ReportErrors(IList%7BPerlang.Stmt%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/2c83bd982bc400d70b4b181d9caead06c4724b3b/src/Perlang.Interpreter/Immutability/ImmutabilityValidator.cs/#L17">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/2c83bd982bc400d70b4b181d9caead06c4724b3b/src/Perlang.Interpreter/Typing/TypeAssignmentValidator.cs/#L29">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Immutability_ImmutabilityValidator_Validate_" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator.Validate*"></a>
-  <h4 id="Perlang_Interpreter_Immutability_ImmutabilityValidator_Validate_ImmutableList_Perlang_Stmt__Action_Perlang_Interpreter_ValidationError__Func_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator.Validate(ImmutableList{Perlang.Stmt},Action{Perlang.Interpreter.ValidationError},Func{Perlang.Expr,Perlang.Interpreter.Resolution.Binding})">Validate(ImmutableList&lt;Stmt&gt;, Action&lt;ValidationError&gt;, Func&lt;Expr, Binding&gt;)</h4>
+  <a id="Perlang_Interpreter_Typing_TypeAssignmentValidator_ReportErrors_" data-uid="Perlang.Interpreter.Typing.TypeAssignmentValidator.ReportErrors*"></a>
+  <h4 id="Perlang_Interpreter_Typing_TypeAssignmentValidator_ReportErrors_IList_Perlang_Stmt__" data-uid="Perlang.Interpreter.Typing.TypeAssignmentValidator.ReportErrors(IList{Perlang.Stmt})">ReportErrors(IList&lt;Stmt&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Validate(ImmutableList&lt;Stmt&gt; statements, Action&lt;ValidationError&gt; immutabilityValidationErrorCallback, Func&lt;Expr, Binding&gt; getVariableOrFunctionBinding)</code></pre>
+    <pre><code class="lang-csharp hljs">public void ReportErrors(IList&lt;Stmt&gt; statements)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -294,31 +328,21 @@ been configured in a particular way) cannot be mutated.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ImmutableList</span>&lt;<a class="xref" href="Perlang.Stmt.html">Stmt</a>&gt;</td>
+        <td><span class="xref">IList</span>&lt;<a class="xref" href="Perlang.Stmt.html">Stmt</a>&gt;</td>
         <td><span class="parametername">statements</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Interpreter.ValidationError.html">ValidationError</a>&gt;</td>
-        <td><span class="parametername">immutabilityValidationErrorCallback</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">Func</span>&lt;<a class="xref" href="Perlang.Expr.html">Expr</a>, <a class="xref" href="Perlang.Interpreter.Resolution.Binding.html">Binding</a>&gt;</td>
-        <td><span class="parametername">getVariableOrFunctionBinding</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Immutability_ImmutabilityValidator_VisitAssignExpr_Perlang_Expr_Assign_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Immutability.ImmutabilityValidator.VisitAssignExpr(Perlang.Expr.Assign)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypeAssignmentValidator_VisitAssignExpr_Perlang_Expr_Assign_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypeAssignmentValidator.VisitAssignExpr(Perlang.Expr.Assign)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/2c83bd982bc400d70b4b181d9caead06c4724b3b/src/Perlang.Interpreter/Immutability/ImmutabilityValidator.cs/#L33">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/2c83bd982bc400d70b4b181d9caead06c4724b3b/src/Perlang.Interpreter/Typing/TypeAssignmentValidator.cs/#L37">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Immutability_ImmutabilityValidator_VisitAssignExpr_" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator.VisitAssignExpr*"></a>
-  <h4 id="Perlang_Interpreter_Immutability_ImmutabilityValidator_VisitAssignExpr_Perlang_Expr_Assign_" data-uid="Perlang.Interpreter.Immutability.ImmutabilityValidator.VisitAssignExpr(Perlang.Expr.Assign)">VisitAssignExpr(Expr.Assign)</h4>
+  <a id="Perlang_Interpreter_Typing_TypeAssignmentValidator_VisitAssignExpr_" data-uid="Perlang.Interpreter.Typing.TypeAssignmentValidator.VisitAssignExpr*"></a>
+  <h4 id="Perlang_Interpreter_Typing_TypeAssignmentValidator_VisitAssignExpr_Perlang_Expr_Assign_" data-uid="Perlang.Interpreter.Typing.TypeAssignmentValidator.VisitAssignExpr(Perlang.Expr.Assign)">VisitAssignExpr(Expr.Assign)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -374,10 +398,10 @@ been configured in a particular way) cannot be mutated.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Immutability_ImmutabilityValidator.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Immutability.ImmutabilityValidator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypeAssignmentValidator.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypeAssignmentValidator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/2c83bd982bc400d70b4b181d9caead06c4724b3b/src/Perlang.Interpreter/Immutability/ImmutabilityValidator.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/perlang-org/perlang/blob/2c83bd982bc400d70b4b181d9caead06c4724b3b/src/Perlang.Interpreter/Typing/TypeAssignmentValidator.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
