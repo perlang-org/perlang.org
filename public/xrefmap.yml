@@ -6357,12 +6357,12 @@ references:
   isSpec: "True"
   fullName: Perlang.Parser.WarningType.Name
   nameWithType: WarningType.Name
-- uid: Perlang.Parser.WarningType.NIL_USAGE
-  name: NIL_USAGE
-  href: api/Perlang.Parser.WarningType.html#Perlang_Parser_WarningType_NIL_USAGE
-  commentId: F:Perlang.Parser.WarningType.NIL_USAGE
-  fullName: Perlang.Parser.WarningType.NIL_USAGE
-  nameWithType: WarningType.NIL_USAGE
+- uid: Perlang.Parser.WarningType.NULL_USAGE
+  name: NULL_USAGE
+  href: api/Perlang.Parser.WarningType.html#Perlang_Parser_WarningType_NULL_USAGE
+  commentId: F:Perlang.Parser.WarningType.NULL_USAGE
+  fullName: Perlang.Parser.WarningType.NULL_USAGE
+  nameWithType: WarningType.NULL_USAGE
 - uid: Perlang.PerlangClass
   name: PerlangClass
   href: api/Perlang.PerlangClass.html
@@ -7585,12 +7585,12 @@ references:
   commentId: F:Perlang.TokenType.MINUS_MINUS
   fullName: Perlang.TokenType.MINUS_MINUS
   nameWithType: TokenType.MINUS_MINUS
-- uid: Perlang.TokenType.NIL
-  name: NIL
-  href: api/Perlang.TokenType.html#Perlang_TokenType_NIL
-  commentId: F:Perlang.TokenType.NIL
-  fullName: Perlang.TokenType.NIL
-  nameWithType: TokenType.NIL
+- uid: Perlang.TokenType.NULL
+  name: "NULL"
+  href: api/Perlang.TokenType.html#Perlang_TokenType_NULL
+  commentId: F:Perlang.TokenType.NULL
+  fullName: Perlang.TokenType.NULL
+  nameWithType: TokenType.NULL
 - uid: Perlang.TokenType.NUMBER
   name: NUMBER
   href: api/Perlang.TokenType.html#Perlang_TokenType_NUMBER
