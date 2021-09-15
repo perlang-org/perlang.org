@@ -2353,6 +2353,140 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Internals.AstPrinter.VisitWhileStmt
   nameWithType: AstPrinter.VisitWhileStmt
+- uid: Perlang.Interpreter.Internals.BindingHandler
+  name: BindingHandler
+  href: api/Perlang.Interpreter.Internals.BindingHandler.html
+  commentId: T:Perlang.Interpreter.Internals.BindingHandler
+  fullName: Perlang.Interpreter.Internals.BindingHandler
+  nameWithType: BindingHandler
+- uid: Perlang.Interpreter.Internals.BindingHandler.AddGlobalExpr(Perlang.Interpreter.Resolution.Binding)
+  name: AddGlobalExpr(Binding)
+  href: api/Perlang.Interpreter.Internals.BindingHandler.html#Perlang_Interpreter_Internals_BindingHandler_AddGlobalExpr_Perlang_Interpreter_Resolution_Binding_
+  commentId: M:Perlang.Interpreter.Internals.BindingHandler.AddGlobalExpr(Perlang.Interpreter.Resolution.Binding)
+  fullName: Perlang.Interpreter.Internals.BindingHandler.AddGlobalExpr(Perlang.Interpreter.Resolution.Binding)
+  nameWithType: BindingHandler.AddGlobalExpr(Binding)
+- uid: Perlang.Interpreter.Internals.BindingHandler.AddGlobalExpr*
+  name: AddGlobalExpr
+  href: api/Perlang.Interpreter.Internals.BindingHandler.html#Perlang_Interpreter_Internals_BindingHandler_AddGlobalExpr_
+  commentId: Overload:Perlang.Interpreter.Internals.BindingHandler.AddGlobalExpr
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Internals.BindingHandler.AddGlobalExpr
+  nameWithType: BindingHandler.AddGlobalExpr
+- uid: Perlang.Interpreter.Internals.BindingHandler.AddLocalExpr(Perlang.Interpreter.Resolution.Binding)
+  name: AddLocalExpr(Binding)
+  href: api/Perlang.Interpreter.Internals.BindingHandler.html#Perlang_Interpreter_Internals_BindingHandler_AddLocalExpr_Perlang_Interpreter_Resolution_Binding_
+  commentId: M:Perlang.Interpreter.Internals.BindingHandler.AddLocalExpr(Perlang.Interpreter.Resolution.Binding)
+  fullName: Perlang.Interpreter.Internals.BindingHandler.AddLocalExpr(Perlang.Interpreter.Resolution.Binding)
+  nameWithType: BindingHandler.AddLocalExpr(Binding)
+- uid: Perlang.Interpreter.Internals.BindingHandler.AddLocalExpr*
+  name: AddLocalExpr
+  href: api/Perlang.Interpreter.Internals.BindingHandler.html#Perlang_Interpreter_Internals_BindingHandler_AddLocalExpr_
+  commentId: Overload:Perlang.Interpreter.Internals.BindingHandler.AddLocalExpr
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Internals.BindingHandler.AddLocalExpr
+  nameWithType: BindingHandler.AddLocalExpr
+- uid: Perlang.Interpreter.Internals.BindingHandler.GetLocalBinding(Perlang.Expr,Perlang.Interpreter.Resolution.Binding@)
+  name: GetLocalBinding(Expr, out Binding)
+  href: api/Perlang.Interpreter.Internals.BindingHandler.html#Perlang_Interpreter_Internals_BindingHandler_GetLocalBinding_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__
+  commentId: M:Perlang.Interpreter.Internals.BindingHandler.GetLocalBinding(Perlang.Expr,Perlang.Interpreter.Resolution.Binding@)
+  name.vb: GetLocalBinding(Expr, ByRef Binding)
+  fullName: Perlang.Interpreter.Internals.BindingHandler.GetLocalBinding(Perlang.Expr, out Perlang.Interpreter.Resolution.Binding)
+  fullName.vb: Perlang.Interpreter.Internals.BindingHandler.GetLocalBinding(Perlang.Expr, ByRef Perlang.Interpreter.Resolution.Binding)
+  nameWithType: BindingHandler.GetLocalBinding(Expr, out Binding)
+  nameWithType.vb: BindingHandler.GetLocalBinding(Expr, ByRef Binding)
+- uid: Perlang.Interpreter.Internals.BindingHandler.GetLocalBinding*
+  name: GetLocalBinding
+  href: api/Perlang.Interpreter.Internals.BindingHandler.html#Perlang_Interpreter_Internals_BindingHandler_GetLocalBinding_
+  commentId: Overload:Perlang.Interpreter.Internals.BindingHandler.GetLocalBinding
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Internals.BindingHandler.GetLocalBinding
+  nameWithType: BindingHandler.GetLocalBinding
+- uid: Perlang.Interpreter.Internals.BindingHandler.GetVariableOrFunctionBinding(Perlang.Expr)
+  name: GetVariableOrFunctionBinding(Expr)
+  href: api/Perlang.Interpreter.Internals.BindingHandler.html#Perlang_Interpreter_Internals_BindingHandler_GetVariableOrFunctionBinding_Perlang_Expr_
+  commentId: M:Perlang.Interpreter.Internals.BindingHandler.GetVariableOrFunctionBinding(Perlang.Expr)
+  fullName: Perlang.Interpreter.Internals.BindingHandler.GetVariableOrFunctionBinding(Perlang.Expr)
+  nameWithType: BindingHandler.GetVariableOrFunctionBinding(Expr)
+- uid: Perlang.Interpreter.Internals.BindingHandler.GetVariableOrFunctionBinding*
+  name: GetVariableOrFunctionBinding
+  href: api/Perlang.Interpreter.Internals.BindingHandler.html#Perlang_Interpreter_Internals_BindingHandler_GetVariableOrFunctionBinding_
+  commentId: Overload:Perlang.Interpreter.Internals.BindingHandler.GetVariableOrFunctionBinding
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Internals.BindingHandler.GetVariableOrFunctionBinding
+  nameWithType: BindingHandler.GetVariableOrFunctionBinding
+- uid: Perlang.Interpreter.Internals.BindingHandler.globalBindings
+  name: globalBindings
+  href: api/Perlang.Interpreter.Internals.BindingHandler.html#Perlang_Interpreter_Internals_BindingHandler_globalBindings
+  commentId: F:Perlang.Interpreter.Internals.BindingHandler.globalBindings
+  fullName: Perlang.Interpreter.Internals.BindingHandler.globalBindings
+  nameWithType: BindingHandler.globalBindings
+- uid: Perlang.Interpreter.Internals.BindingHandler.localBindings
+  name: localBindings
+  href: api/Perlang.Interpreter.Internals.BindingHandler.html#Perlang_Interpreter_Internals_BindingHandler_localBindings
+  commentId: F:Perlang.Interpreter.Internals.BindingHandler.localBindings
+  fullName: Perlang.Interpreter.Internals.BindingHandler.localBindings
+  nameWithType: BindingHandler.localBindings
+- uid: Perlang.Interpreter.Internals.IBindingHandler
+  name: IBindingHandler
+  href: api/Perlang.Interpreter.Internals.IBindingHandler.html
+  commentId: T:Perlang.Interpreter.Internals.IBindingHandler
+  fullName: Perlang.Interpreter.Internals.IBindingHandler
+  nameWithType: IBindingHandler
+- uid: Perlang.Interpreter.Internals.IBindingHandler.AddGlobalExpr(Perlang.Interpreter.Resolution.Binding)
+  name: AddGlobalExpr(Binding)
+  href: api/Perlang.Interpreter.Internals.IBindingHandler.html#Perlang_Interpreter_Internals_IBindingHandler_AddGlobalExpr_Perlang_Interpreter_Resolution_Binding_
+  commentId: M:Perlang.Interpreter.Internals.IBindingHandler.AddGlobalExpr(Perlang.Interpreter.Resolution.Binding)
+  fullName: Perlang.Interpreter.Internals.IBindingHandler.AddGlobalExpr(Perlang.Interpreter.Resolution.Binding)
+  nameWithType: IBindingHandler.AddGlobalExpr(Binding)
+- uid: Perlang.Interpreter.Internals.IBindingHandler.AddGlobalExpr*
+  name: AddGlobalExpr
+  href: api/Perlang.Interpreter.Internals.IBindingHandler.html#Perlang_Interpreter_Internals_IBindingHandler_AddGlobalExpr_
+  commentId: Overload:Perlang.Interpreter.Internals.IBindingHandler.AddGlobalExpr
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Internals.IBindingHandler.AddGlobalExpr
+  nameWithType: IBindingHandler.AddGlobalExpr
+- uid: Perlang.Interpreter.Internals.IBindingHandler.AddLocalExpr(Perlang.Interpreter.Resolution.Binding)
+  name: AddLocalExpr(Binding)
+  href: api/Perlang.Interpreter.Internals.IBindingHandler.html#Perlang_Interpreter_Internals_IBindingHandler_AddLocalExpr_Perlang_Interpreter_Resolution_Binding_
+  commentId: M:Perlang.Interpreter.Internals.IBindingHandler.AddLocalExpr(Perlang.Interpreter.Resolution.Binding)
+  fullName: Perlang.Interpreter.Internals.IBindingHandler.AddLocalExpr(Perlang.Interpreter.Resolution.Binding)
+  nameWithType: IBindingHandler.AddLocalExpr(Binding)
+- uid: Perlang.Interpreter.Internals.IBindingHandler.AddLocalExpr*
+  name: AddLocalExpr
+  href: api/Perlang.Interpreter.Internals.IBindingHandler.html#Perlang_Interpreter_Internals_IBindingHandler_AddLocalExpr_
+  commentId: Overload:Perlang.Interpreter.Internals.IBindingHandler.AddLocalExpr
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Internals.IBindingHandler.AddLocalExpr
+  nameWithType: IBindingHandler.AddLocalExpr
+- uid: Perlang.Interpreter.Internals.IBindingHandler.GetLocalBinding(Perlang.Expr,Perlang.Interpreter.Resolution.Binding@)
+  name: GetLocalBinding(Expr, out Binding)
+  href: api/Perlang.Interpreter.Internals.IBindingHandler.html#Perlang_Interpreter_Internals_IBindingHandler_GetLocalBinding_Perlang_Expr_Perlang_Interpreter_Resolution_Binding__
+  commentId: M:Perlang.Interpreter.Internals.IBindingHandler.GetLocalBinding(Perlang.Expr,Perlang.Interpreter.Resolution.Binding@)
+  name.vb: GetLocalBinding(Expr, ByRef Binding)
+  fullName: Perlang.Interpreter.Internals.IBindingHandler.GetLocalBinding(Perlang.Expr, out Perlang.Interpreter.Resolution.Binding)
+  fullName.vb: Perlang.Interpreter.Internals.IBindingHandler.GetLocalBinding(Perlang.Expr, ByRef Perlang.Interpreter.Resolution.Binding)
+  nameWithType: IBindingHandler.GetLocalBinding(Expr, out Binding)
+  nameWithType.vb: IBindingHandler.GetLocalBinding(Expr, ByRef Binding)
+- uid: Perlang.Interpreter.Internals.IBindingHandler.GetLocalBinding*
+  name: GetLocalBinding
+  href: api/Perlang.Interpreter.Internals.IBindingHandler.html#Perlang_Interpreter_Internals_IBindingHandler_GetLocalBinding_
+  commentId: Overload:Perlang.Interpreter.Internals.IBindingHandler.GetLocalBinding
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Internals.IBindingHandler.GetLocalBinding
+  nameWithType: IBindingHandler.GetLocalBinding
+- uid: Perlang.Interpreter.Internals.IBindingHandler.GetVariableOrFunctionBinding(Perlang.Expr)
+  name: GetVariableOrFunctionBinding(Expr)
+  href: api/Perlang.Interpreter.Internals.IBindingHandler.html#Perlang_Interpreter_Internals_IBindingHandler_GetVariableOrFunctionBinding_Perlang_Expr_
+  commentId: M:Perlang.Interpreter.Internals.IBindingHandler.GetVariableOrFunctionBinding(Perlang.Expr)
+  fullName: Perlang.Interpreter.Internals.IBindingHandler.GetVariableOrFunctionBinding(Perlang.Expr)
+  nameWithType: IBindingHandler.GetVariableOrFunctionBinding(Expr)
+- uid: Perlang.Interpreter.Internals.IBindingHandler.GetVariableOrFunctionBinding*
+  name: GetVariableOrFunctionBinding
+  href: api/Perlang.Interpreter.Internals.IBindingHandler.html#Perlang_Interpreter_Internals_IBindingHandler_GetVariableOrFunctionBinding_
+  commentId: Overload:Perlang.Interpreter.Internals.IBindingHandler.GetVariableOrFunctionBinding
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Internals.IBindingHandler.GetVariableOrFunctionBinding
+  nameWithType: IBindingHandler.GetVariableOrFunctionBinding
 - uid: Perlang.Interpreter.PerlangEnvironment
   name: PerlangEnvironment
   href: api/Perlang.Interpreter.PerlangEnvironment.html
@@ -2547,15 +2681,15 @@ references:
   commentId: T:Perlang.Interpreter.PerlangInterpreter
   fullName: Perlang.Interpreter.PerlangInterpreter
   nameWithType: PerlangInterpreter
-- uid: Perlang.Interpreter.PerlangInterpreter.#ctor(Action{Perlang.RuntimeError},Action{System.String},System.Nullable{IEnumerable{System.String}},System.Boolean)
-  name: PerlangInterpreter(Action<RuntimeError>, Action<String>, Nullable<IEnumerable<String>>, Boolean)
-  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter__ctor_Action_Perlang_RuntimeError__Action_System_String__System_Nullable_IEnumerable_System_String___System_Boolean_
-  commentId: M:Perlang.Interpreter.PerlangInterpreter.#ctor(Action{Perlang.RuntimeError},Action{System.String},System.Nullable{IEnumerable{System.String}},System.Boolean)
-  name.vb: PerlangInterpreter(Action(Of RuntimeError), Action(Of String), Nullable(Of IEnumerable(Of String)), Boolean)
-  fullName: Perlang.Interpreter.PerlangInterpreter.PerlangInterpreter(Action<Perlang.RuntimeError>, Action<System.String>, System.Nullable<IEnumerable<System.String>>, System.Boolean)
-  fullName.vb: Perlang.Interpreter.PerlangInterpreter.PerlangInterpreter(Action(Of Perlang.RuntimeError), Action(Of System.String), System.Nullable(Of IEnumerable(Of System.String)), System.Boolean)
-  nameWithType: PerlangInterpreter.PerlangInterpreter(Action<RuntimeError>, Action<String>, Nullable<IEnumerable<String>>, Boolean)
-  nameWithType.vb: PerlangInterpreter.PerlangInterpreter(Action(Of RuntimeError), Action(Of String), Nullable(Of IEnumerable(Of String)), Boolean)
+- uid: Perlang.Interpreter.PerlangInterpreter.#ctor(Action{Perlang.RuntimeError},Action{System.String},Perlang.Interpreter.Internals.IBindingHandler,System.Nullable{IEnumerable{System.String}},System.Boolean)
+  name: PerlangInterpreter(Action<RuntimeError>, Action<String>, IBindingHandler, Nullable<IEnumerable<String>>, Boolean)
+  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter__ctor_Action_Perlang_RuntimeError__Action_System_String__Perlang_Interpreter_Internals_IBindingHandler_System_Nullable_IEnumerable_System_String___System_Boolean_
+  commentId: M:Perlang.Interpreter.PerlangInterpreter.#ctor(Action{Perlang.RuntimeError},Action{System.String},Perlang.Interpreter.Internals.IBindingHandler,System.Nullable{IEnumerable{System.String}},System.Boolean)
+  name.vb: PerlangInterpreter(Action(Of RuntimeError), Action(Of String), IBindingHandler, Nullable(Of IEnumerable(Of String)), Boolean)
+  fullName: Perlang.Interpreter.PerlangInterpreter.PerlangInterpreter(Action<Perlang.RuntimeError>, Action<System.String>, Perlang.Interpreter.Internals.IBindingHandler, System.Nullable<IEnumerable<System.String>>, System.Boolean)
+  fullName.vb: Perlang.Interpreter.PerlangInterpreter.PerlangInterpreter(Action(Of Perlang.RuntimeError), Action(Of System.String), Perlang.Interpreter.Internals.IBindingHandler, System.Nullable(Of IEnumerable(Of System.String)), System.Boolean)
+  nameWithType: PerlangInterpreter.PerlangInterpreter(Action<RuntimeError>, Action<String>, IBindingHandler, Nullable<IEnumerable<String>>, Boolean)
+  nameWithType.vb: PerlangInterpreter.PerlangInterpreter(Action(Of RuntimeError), Action(Of String), IBindingHandler, Nullable(Of IEnumerable(Of String)), Boolean)
 - uid: Perlang.Interpreter.PerlangInterpreter.#ctor*
   name: PerlangInterpreter
   href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter__ctor_
@@ -2563,19 +2697,6 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.PerlangInterpreter.PerlangInterpreter
   nameWithType: PerlangInterpreter.PerlangInterpreter
-- uid: Perlang.Interpreter.PerlangInterpreter.AddGlobal(Perlang.Interpreter.Resolution.Binding)
-  name: AddGlobal(Binding)
-  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_AddGlobal_Perlang_Interpreter_Resolution_Binding_
-  commentId: M:Perlang.Interpreter.PerlangInterpreter.AddGlobal(Perlang.Interpreter.Resolution.Binding)
-  fullName: Perlang.Interpreter.PerlangInterpreter.AddGlobal(Perlang.Interpreter.Resolution.Binding)
-  nameWithType: PerlangInterpreter.AddGlobal(Binding)
-- uid: Perlang.Interpreter.PerlangInterpreter.AddGlobal*
-  name: AddGlobal
-  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_AddGlobal_
-  commentId: Overload:Perlang.Interpreter.PerlangInterpreter.AddGlobal
-  isSpec: "True"
-  fullName: Perlang.Interpreter.PerlangInterpreter.AddGlobal
-  nameWithType: PerlangInterpreter.AddGlobal
 - uid: Perlang.Interpreter.PerlangInterpreter.AddGlobalClass(System.String,Perlang.PerlangClass)
   name: AddGlobalClass(String, PerlangClass)
   href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_AddGlobalClass_System_String_Perlang_PerlangClass_
@@ -2589,19 +2710,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.PerlangInterpreter.AddGlobalClass
   nameWithType: PerlangInterpreter.AddGlobalClass
-- uid: Perlang.Interpreter.PerlangInterpreter.AddLocal(Perlang.Interpreter.Resolution.Binding)
-  name: AddLocal(Binding)
-  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_AddLocal_Perlang_Interpreter_Resolution_Binding_
-  commentId: M:Perlang.Interpreter.PerlangInterpreter.AddLocal(Perlang.Interpreter.Resolution.Binding)
-  fullName: Perlang.Interpreter.PerlangInterpreter.AddLocal(Perlang.Interpreter.Resolution.Binding)
-  nameWithType: PerlangInterpreter.AddLocal(Binding)
-- uid: Perlang.Interpreter.PerlangInterpreter.AddLocal*
-  name: AddLocal
-  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_AddLocal_
-  commentId: Overload:Perlang.Interpreter.PerlangInterpreter.AddLocal
+- uid: Perlang.Interpreter.PerlangInterpreter.BindingHandler
+  name: BindingHandler
+  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_BindingHandler
+  commentId: P:Perlang.Interpreter.PerlangInterpreter.BindingHandler
+  fullName: Perlang.Interpreter.PerlangInterpreter.BindingHandler
+  nameWithType: PerlangInterpreter.BindingHandler
+- uid: Perlang.Interpreter.PerlangInterpreter.BindingHandler*
+  name: BindingHandler
+  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_BindingHandler_
+  commentId: Overload:Perlang.Interpreter.PerlangInterpreter.BindingHandler
   isSpec: "True"
-  fullName: Perlang.Interpreter.PerlangInterpreter.AddLocal
-  nameWithType: PerlangInterpreter.AddLocal
+  fullName: Perlang.Interpreter.PerlangInterpreter.BindingHandler
+  nameWithType: PerlangInterpreter.BindingHandler
 - uid: Perlang.Interpreter.PerlangInterpreter.CheckNumberOperand(Perlang.Token,System.Nullable{System.Object})
   name: CheckNumberOperand(Token, Nullable<Object>)
   href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_CheckNumberOperand_Perlang_Token_System_Nullable_System_Object__
@@ -2711,25 +2832,6 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.PerlangInterpreter.ExecuteBlock
   nameWithType: PerlangInterpreter.ExecuteBlock
-- uid: Perlang.Interpreter.PerlangInterpreter.GetVariableOrFunctionBinding(Perlang.Expr)
-  name: GetVariableOrFunctionBinding(Expr)
-  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_GetVariableOrFunctionBinding_Perlang_Expr_
-  commentId: M:Perlang.Interpreter.PerlangInterpreter.GetVariableOrFunctionBinding(Perlang.Expr)
-  fullName: Perlang.Interpreter.PerlangInterpreter.GetVariableOrFunctionBinding(Perlang.Expr)
-  nameWithType: PerlangInterpreter.GetVariableOrFunctionBinding(Expr)
-- uid: Perlang.Interpreter.PerlangInterpreter.GetVariableOrFunctionBinding*
-  name: GetVariableOrFunctionBinding
-  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_GetVariableOrFunctionBinding_
-  commentId: Overload:Perlang.Interpreter.PerlangInterpreter.GetVariableOrFunctionBinding
-  isSpec: "True"
-  fullName: Perlang.Interpreter.PerlangInterpreter.GetVariableOrFunctionBinding
-  nameWithType: PerlangInterpreter.GetVariableOrFunctionBinding
-- uid: Perlang.Interpreter.PerlangInterpreter.globalBindings
-  name: globalBindings
-  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_globalBindings
-  commentId: F:Perlang.Interpreter.PerlangInterpreter.globalBindings
-  fullName: Perlang.Interpreter.PerlangInterpreter.globalBindings
-  nameWithType: PerlangInterpreter.globalBindings
 - uid: Perlang.Interpreter.PerlangInterpreter.globalClasses
   name: globalClasses
   href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_globalClasses
@@ -2819,12 +2921,6 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.PerlangInterpreter.LoadStdlib
   nameWithType: PerlangInterpreter.LoadStdlib
-- uid: Perlang.Interpreter.PerlangInterpreter.localBindings
-  name: localBindings
-  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_localBindings
-  commentId: F:Perlang.Interpreter.PerlangInterpreter.localBindings
-  fullName: Perlang.Interpreter.PerlangInterpreter.localBindings
-  nameWithType: PerlangInterpreter.localBindings
 - uid: Perlang.Interpreter.PerlangInterpreter.LookUpVariable(Perlang.Token,Perlang.Expr.Identifier)
   name: LookUpVariable(Token, Expr.Identifier)
   href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_LookUpVariable_Perlang_Token_Perlang_Expr_Identifier_
@@ -3862,15 +3958,15 @@ references:
   commentId: T:Perlang.Interpreter.Resolution.Resolver
   fullName: Perlang.Interpreter.Resolution.Resolver
   nameWithType: Resolver
-- uid: Perlang.Interpreter.Resolution.Resolver.#ctor(IImmutableDictionary{System.String,Type},IImmutableDictionary{System.String,Type},Action{Perlang.Interpreter.Resolution.Binding},Action{Perlang.Interpreter.Resolution.Binding},Action{System.String,Perlang.PerlangClass},Perlang.Interpreter.ResolveErrorHandler)
-  name: Resolver(IImmutableDictionary<String, Type>, IImmutableDictionary<String, Type>, Action<Binding>, Action<Binding>, Action<String, PerlangClass>, ResolveErrorHandler)
-  href: api/Perlang.Interpreter.Resolution.Resolver.html#Perlang_Interpreter_Resolution_Resolver__ctor_IImmutableDictionary_System_String_Type__IImmutableDictionary_System_String_Type__Action_Perlang_Interpreter_Resolution_Binding__Action_Perlang_Interpreter_Resolution_Binding__Action_System_String_Perlang_PerlangClass__Perlang_Interpreter_ResolveErrorHandler_
-  commentId: M:Perlang.Interpreter.Resolution.Resolver.#ctor(IImmutableDictionary{System.String,Type},IImmutableDictionary{System.String,Type},Action{Perlang.Interpreter.Resolution.Binding},Action{Perlang.Interpreter.Resolution.Binding},Action{System.String,Perlang.PerlangClass},Perlang.Interpreter.ResolveErrorHandler)
-  name.vb: Resolver(IImmutableDictionary(Of String, Type), IImmutableDictionary(Of String, Type), Action(Of Binding), Action(Of Binding), Action(Of String, PerlangClass), ResolveErrorHandler)
-  fullName: Perlang.Interpreter.Resolution.Resolver.Resolver(IImmutableDictionary<System.String, Type>, IImmutableDictionary<System.String, Type>, Action<Perlang.Interpreter.Resolution.Binding>, Action<Perlang.Interpreter.Resolution.Binding>, Action<System.String, Perlang.PerlangClass>, Perlang.Interpreter.ResolveErrorHandler)
-  fullName.vb: Perlang.Interpreter.Resolution.Resolver.Resolver(IImmutableDictionary(Of System.String, Type), IImmutableDictionary(Of System.String, Type), Action(Of Perlang.Interpreter.Resolution.Binding), Action(Of Perlang.Interpreter.Resolution.Binding), Action(Of System.String, Perlang.PerlangClass), Perlang.Interpreter.ResolveErrorHandler)
-  nameWithType: Resolver.Resolver(IImmutableDictionary<String, Type>, IImmutableDictionary<String, Type>, Action<Binding>, Action<Binding>, Action<String, PerlangClass>, ResolveErrorHandler)
-  nameWithType.vb: Resolver.Resolver(IImmutableDictionary(Of String, Type), IImmutableDictionary(Of String, Type), Action(Of Binding), Action(Of Binding), Action(Of String, PerlangClass), ResolveErrorHandler)
+- uid: Perlang.Interpreter.Resolution.Resolver.#ctor(IImmutableDictionary{System.String,Type},IImmutableDictionary{System.String,Type},Perlang.Interpreter.Internals.IBindingHandler,Action{System.String,Perlang.PerlangClass},Perlang.Interpreter.ResolveErrorHandler)
+  name: Resolver(IImmutableDictionary<String, Type>, IImmutableDictionary<String, Type>, IBindingHandler, Action<String, PerlangClass>, ResolveErrorHandler)
+  href: api/Perlang.Interpreter.Resolution.Resolver.html#Perlang_Interpreter_Resolution_Resolver__ctor_IImmutableDictionary_System_String_Type__IImmutableDictionary_System_String_Type__Perlang_Interpreter_Internals_IBindingHandler_Action_System_String_Perlang_PerlangClass__Perlang_Interpreter_ResolveErrorHandler_
+  commentId: M:Perlang.Interpreter.Resolution.Resolver.#ctor(IImmutableDictionary{System.String,Type},IImmutableDictionary{System.String,Type},Perlang.Interpreter.Internals.IBindingHandler,Action{System.String,Perlang.PerlangClass},Perlang.Interpreter.ResolveErrorHandler)
+  name.vb: Resolver(IImmutableDictionary(Of String, Type), IImmutableDictionary(Of String, Type), IBindingHandler, Action(Of String, PerlangClass), ResolveErrorHandler)
+  fullName: Perlang.Interpreter.Resolution.Resolver.Resolver(IImmutableDictionary<System.String, Type>, IImmutableDictionary<System.String, Type>, Perlang.Interpreter.Internals.IBindingHandler, Action<System.String, Perlang.PerlangClass>, Perlang.Interpreter.ResolveErrorHandler)
+  fullName.vb: Perlang.Interpreter.Resolution.Resolver.Resolver(IImmutableDictionary(Of System.String, Type), IImmutableDictionary(Of System.String, Type), Perlang.Interpreter.Internals.IBindingHandler, Action(Of System.String, Perlang.PerlangClass), Perlang.Interpreter.ResolveErrorHandler)
+  nameWithType: Resolver.Resolver(IImmutableDictionary<String, Type>, IImmutableDictionary<String, Type>, IBindingHandler, Action<String, PerlangClass>, ResolveErrorHandler)
+  nameWithType.vb: Resolver.Resolver(IImmutableDictionary(Of String, Type), IImmutableDictionary(Of String, Type), IBindingHandler, Action(Of String, PerlangClass), ResolveErrorHandler)
 - uid: Perlang.Interpreter.Resolution.Resolver.#ctor*
   name: Resolver
   href: api/Perlang.Interpreter.Resolution.Resolver.html#Perlang_Interpreter_Resolution_Resolver__ctor_
@@ -3884,18 +3980,6 @@ references:
   commentId: F:Perlang.Interpreter.Resolution.Resolver.addGlobalClassCallback
   fullName: Perlang.Interpreter.Resolution.Resolver.addGlobalClassCallback
   nameWithType: Resolver.addGlobalClassCallback
-- uid: Perlang.Interpreter.Resolution.Resolver.addGlobalExprCallback
-  name: addGlobalExprCallback
-  href: api/Perlang.Interpreter.Resolution.Resolver.html#Perlang_Interpreter_Resolution_Resolver_addGlobalExprCallback
-  commentId: F:Perlang.Interpreter.Resolution.Resolver.addGlobalExprCallback
-  fullName: Perlang.Interpreter.Resolution.Resolver.addGlobalExprCallback
-  nameWithType: Resolver.addGlobalExprCallback
-- uid: Perlang.Interpreter.Resolution.Resolver.addLocalExprCallback
-  name: addLocalExprCallback
-  href: api/Perlang.Interpreter.Resolution.Resolver.html#Perlang_Interpreter_Resolution_Resolver_addLocalExprCallback
-  commentId: F:Perlang.Interpreter.Resolution.Resolver.addLocalExprCallback
-  fullName: Perlang.Interpreter.Resolution.Resolver.addLocalExprCallback
-  nameWithType: Resolver.addLocalExprCallback
 - uid: Perlang.Interpreter.Resolution.Resolver.BeginScope
   name: BeginScope()
   href: api/Perlang.Interpreter.Resolution.Resolver.html#Perlang_Interpreter_Resolution_Resolver_BeginScope
@@ -3909,6 +3993,12 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Resolution.Resolver.BeginScope
   nameWithType: Resolver.BeginScope
+- uid: Perlang.Interpreter.Resolution.Resolver.bindingHandler
+  name: bindingHandler
+  href: api/Perlang.Interpreter.Resolution.Resolver.html#Perlang_Interpreter_Resolution_Resolver_bindingHandler
+  commentId: F:Perlang.Interpreter.Resolution.Resolver.bindingHandler
+  fullName: Perlang.Interpreter.Resolution.Resolver.bindingHandler
+  nameWithType: Resolver.bindingHandler
 - uid: Perlang.Interpreter.Resolution.Resolver.currentFunction
   name: currentFunction
   href: api/Perlang.Interpreter.Resolution.Resolver.html#Perlang_Interpreter_Resolution_Resolver_currentFunction
