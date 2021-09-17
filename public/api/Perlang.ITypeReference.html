@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IBindingFactory
+    <title>Interface ITypeReference
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IBindingFactory
+    <meta name="title" content="Interface ITypeReference
    ">
     <meta name="generator" content="docfx 2.57.2.0">
     
@@ -72,37 +72,35 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Perlang.Interpreter.Resolution.IBindingFactory">
+            <article class="content wrap" id="_content" data-uid="Perlang.ITypeReference">
   
   
-  <h1 id="Perlang_Interpreter_Resolution_IBindingFactory" data-uid="Perlang.Interpreter.Resolution.IBindingFactory" class="text-break">Interface IBindingFactory
+  <h1 id="Perlang_ITypeReference" data-uid="Perlang.ITypeReference" class="text-break">Interface ITypeReference
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.Interpreter.Resolution.html">Perlang.Interpreter.Resolution</a></h6>
-  <h6><strong>Assembly</strong>: Perlang.Interpreter.dll</h6>
-  <h5 id="Perlang_Interpreter_Resolution_IBindingFactory_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.html">Perlang</a></h6>
+  <h6><strong>Assembly</strong>: Perlang.Common.dll</h6>
+  <h5 id="Perlang_ITypeReference_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">interface IBindingFactory</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ITypeReference</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_IBindingFactory_ObjectType.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.IBindingFactory.ObjectType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_ITypeReference_ClrType.md&amp;value=---%0Auid%3A%20Perlang.ITypeReference.ClrType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/429fa4caad30f0b6dafb586a36cd9e5211917a8c/src/Perlang.Interpreter/Resolution/IBindingFactory.cs/#L18">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/429fa4caad30f0b6dafb586a36cd9e5211917a8c/src/Perlang.Common/ITypeReference.cs/#L12">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_IBindingFactory_ObjectType_" data-uid="Perlang.Interpreter.Resolution.IBindingFactory.ObjectType*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_IBindingFactory_ObjectType" data-uid="Perlang.Interpreter.Resolution.IBindingFactory.ObjectType">ObjectType</h4>
-  <div class="markdown level1 summary"><p>Gets the type of object this binding refers to. Can be used to e.g. construct helpful error messages to end
-users.</p>
-</div>
+  <a id="Perlang_ITypeReference_ClrType_" data-uid="Perlang.ITypeReference.ClrType*"></a>
+  <h4 id="Perlang_ITypeReference_ClrType" data-uid="Perlang.ITypeReference.ClrType">ClrType</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">string ObjectType { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">Type? ClrType { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -114,26 +112,27 @@ users.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Type</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_IBindingFactory_ObjectTypeTitleized.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.IBindingFactory.ObjectTypeTitleized%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_ITypeReference_ExplicitTypeSpecified.md&amp;value=---%0Auid%3A%20Perlang.ITypeReference.ExplicitTypeSpecified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/429fa4caad30f0b6dafb586a36cd9e5211917a8c/src/Perlang.Interpreter/Resolution/IBindingFactory.cs/#L23">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/429fa4caad30f0b6dafb586a36cd9e5211917a8c/src/Perlang.Common/ITypeReference.cs/#L18">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_IBindingFactory_ObjectTypeTitleized_" data-uid="Perlang.Interpreter.Resolution.IBindingFactory.ObjectTypeTitleized*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_IBindingFactory_ObjectTypeTitleized" data-uid="Perlang.Interpreter.Resolution.IBindingFactory.ObjectTypeTitleized">ObjectTypeTitleized</h4>
-  <div class="markdown level1 summary"><p>Gets the type of object this binding refers to, with the initial letter converted to upper-case.</p>
+  <a id="Perlang_ITypeReference_ExplicitTypeSpecified_" data-uid="Perlang.ITypeReference.ExplicitTypeSpecified*"></a>
+  <h4 id="Perlang_ITypeReference_ExplicitTypeSpecified" data-uid="Perlang.ITypeReference.ExplicitTypeSpecified">ExplicitTypeSpecified</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the type reference contains an explicit type specifier or not. If this is
+false, the user is perhaps intending for the type to be inferred from the program context.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">virtual object ObjectTypeTitleized { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">bool ExplicitTypeSpecified { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -145,55 +144,59 @@ users.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_IBindingFactory_CreateBinding_System_Int32_Perlang_Expr_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.IBindingFactory.CreateBinding(System.Int32%2CPerlang.Expr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_ITypeReference_IsResolved.md&amp;value=---%0Auid%3A%20Perlang.ITypeReference.IsResolved%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/429fa4caad30f0b6dafb586a36cd9e5211917a8c/src/Perlang.Interpreter/Resolution/IBindingFactory.cs/#L12">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/429fa4caad30f0b6dafb586a36cd9e5211917a8c/src/Perlang.Common/ITypeReference.cs/#L24">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_IBindingFactory_CreateBinding_" data-uid="Perlang.Interpreter.Resolution.IBindingFactory.CreateBinding*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_IBindingFactory_CreateBinding_System_Int32_Perlang_Expr_" data-uid="Perlang.Interpreter.Resolution.IBindingFactory.CreateBinding(System.Int32,Perlang.Expr)">CreateBinding(Int32, Expr)</h4>
-  <div class="markdown level1 summary"><p>Creates a binding using the provided parameters.</p>
+  <a id="Perlang_ITypeReference_IsResolved_" data-uid="Perlang.ITypeReference.IsResolved*"></a>
+  <h4 id="Perlang_ITypeReference_IsResolved" data-uid="Perlang.ITypeReference.IsResolved">IsResolved</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the type reference has been successfully resolved to a (loaded) CLR type or
+not.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Binding CreateBinding(int distance, Expr referringExpr)</code></pre>
+    <pre><code class="lang-csharp hljs">bool IsResolved { get; }</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">distance</span></td>
-        <td><p>The distance for the scope from the global scope. (1 = one level of nesting, 2 = two,
-etc.)</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Perlang.Expr.html">Expr</a></td>
-        <td><span class="parametername">referringExpr</span></td>
-        <td><p>The referring expression.</p>
-</td>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_ITypeReference_TypeSpecifier.md&amp;value=---%0Auid%3A%20Perlang.ITypeReference.TypeSpecifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/429fa4caad30f0b6dafb586a36cd9e5211917a8c/src/Perlang.Common/ITypeReference.cs/#L9">View Source</a>
+  </span>
+  <a id="Perlang_ITypeReference_TypeSpecifier_" data-uid="Perlang.ITypeReference.TypeSpecifier*"></a>
+  <h4 id="Perlang_ITypeReference_TypeSpecifier" data-uid="Perlang.ITypeReference.TypeSpecifier">TypeSpecifier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Token TypeSpecifier { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -203,9 +206,8 @@ etc.)</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Perlang.Interpreter.Resolution.Binding.html">Binding</a></td>
-        <td><p>A newly created <code>Binding</code> instance.</p>
-</td>
+        <td><a class="xref" href="Perlang.Token.html">Token</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -217,10 +219,10 @@ etc.)</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_IBindingFactory.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.IBindingFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_ITypeReference.md&amp;value=---%0Auid%3A%20Perlang.ITypeReference%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/429fa4caad30f0b6dafb586a36cd9e5211917a8c/src/Perlang.Interpreter/Resolution/IBindingFactory.cs/#L3" class="contribution-link">View Source</a>
+                    <a href="https://github.com/perlang-org/perlang/blob/429fa4caad30f0b6dafb586a36cd9e5211917a8c/src/Perlang.Common/ITypeReference.cs/#L7" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -3303,12 +3303,12 @@ references:
   commentId: T:Perlang.Interpreter.Resolution.Binding
   fullName: Perlang.Interpreter.Resolution.Binding
   nameWithType: Binding
-- uid: Perlang.Interpreter.Resolution.Binding.#ctor(Perlang.TypeReference,Perlang.Expr)
-  name: Binding(TypeReference, Expr)
-  href: api/Perlang.Interpreter.Resolution.Binding.html#Perlang_Interpreter_Resolution_Binding__ctor_Perlang_TypeReference_Perlang_Expr_
-  commentId: M:Perlang.Interpreter.Resolution.Binding.#ctor(Perlang.TypeReference,Perlang.Expr)
-  fullName: Perlang.Interpreter.Resolution.Binding.Binding(Perlang.TypeReference, Perlang.Expr)
-  nameWithType: Binding.Binding(TypeReference, Expr)
+- uid: Perlang.Interpreter.Resolution.Binding.#ctor(Perlang.ITypeReference,Perlang.Expr)
+  name: Binding(ITypeReference, Expr)
+  href: api/Perlang.Interpreter.Resolution.Binding.html#Perlang_Interpreter_Resolution_Binding__ctor_Perlang_ITypeReference_Perlang_Expr_
+  commentId: M:Perlang.Interpreter.Resolution.Binding.#ctor(Perlang.ITypeReference,Perlang.Expr)
+  fullName: Perlang.Interpreter.Resolution.Binding.Binding(Perlang.ITypeReference, Perlang.Expr)
+  nameWithType: Binding.Binding(ITypeReference, Expr)
 - uid: Perlang.Interpreter.Resolution.Binding.#ctor*
   name: Binding
   href: api/Perlang.Interpreter.Resolution.Binding.html#Perlang_Interpreter_Resolution_Binding__ctor_
@@ -4439,12 +4439,12 @@ references:
   commentId: T:Perlang.Interpreter.Resolution.VariableBinding
   fullName: Perlang.Interpreter.Resolution.VariableBinding
   nameWithType: VariableBinding
-- uid: Perlang.Interpreter.Resolution.VariableBinding.#ctor(Perlang.TypeReference,System.Int32,Perlang.Expr)
-  name: VariableBinding(TypeReference, Int32, Expr)
-  href: api/Perlang.Interpreter.Resolution.VariableBinding.html#Perlang_Interpreter_Resolution_VariableBinding__ctor_Perlang_TypeReference_System_Int32_Perlang_Expr_
-  commentId: M:Perlang.Interpreter.Resolution.VariableBinding.#ctor(Perlang.TypeReference,System.Int32,Perlang.Expr)
-  fullName: Perlang.Interpreter.Resolution.VariableBinding.VariableBinding(Perlang.TypeReference, System.Int32, Perlang.Expr)
-  nameWithType: VariableBinding.VariableBinding(TypeReference, Int32, Expr)
+- uid: Perlang.Interpreter.Resolution.VariableBinding.#ctor(Perlang.ITypeReference,System.Int32,Perlang.Expr)
+  name: VariableBinding(ITypeReference, Int32, Expr)
+  href: api/Perlang.Interpreter.Resolution.VariableBinding.html#Perlang_Interpreter_Resolution_VariableBinding__ctor_Perlang_ITypeReference_System_Int32_Perlang_Expr_
+  commentId: M:Perlang.Interpreter.Resolution.VariableBinding.#ctor(Perlang.ITypeReference,System.Int32,Perlang.Expr)
+  fullName: Perlang.Interpreter.Resolution.VariableBinding.VariableBinding(Perlang.ITypeReference, System.Int32, Perlang.Expr)
+  nameWithType: VariableBinding.VariableBinding(ITypeReference, Int32, Expr)
 - uid: Perlang.Interpreter.Resolution.VariableBinding.#ctor*
   name: VariableBinding
   href: api/Perlang.Interpreter.Resolution.VariableBinding.html#Perlang_Interpreter_Resolution_VariableBinding__ctor_
@@ -4755,12 +4755,12 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Typing.TypeCoercer.TypeCoercer
   nameWithType: TypeCoercer.TypeCoercer
-- uid: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token,Perlang.TypeReference,Perlang.TypeReference)
-  name: CanBeCoercedInto(Token, TypeReference, TypeReference)
-  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Perlang_Token_Perlang_TypeReference_Perlang_TypeReference_
-  commentId: M:Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token,Perlang.TypeReference,Perlang.TypeReference)
-  fullName: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token, Perlang.TypeReference, Perlang.TypeReference)
-  nameWithType: TypeCoercer.CanBeCoercedInto(Token, TypeReference, TypeReference)
+- uid: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token,Perlang.ITypeReference,Perlang.ITypeReference)
+  name: CanBeCoercedInto(Token, ITypeReference, ITypeReference)
+  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Perlang_Token_Perlang_ITypeReference_Perlang_ITypeReference_
+  commentId: M:Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token,Perlang.ITypeReference,Perlang.ITypeReference)
+  fullName: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token, Perlang.ITypeReference, Perlang.ITypeReference)
+  nameWithType: TypeCoercer.CanBeCoercedInto(Token, ITypeReference, ITypeReference)
 - uid: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token,Type,Type)
   name: CanBeCoercedInto(Token, Type, Type)
   href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Perlang_Token_Type_Type_
@@ -4850,12 +4850,12 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Typing.TypeResolver.Resolve
   nameWithType: TypeResolver.Resolve
-- uid: Perlang.Interpreter.Typing.TypeResolver.ResolveExplicitTypes(Perlang.TypeReference)
-  name: ResolveExplicitTypes(TypeReference)
-  href: api/Perlang.Interpreter.Typing.TypeResolver.html#Perlang_Interpreter_Typing_TypeResolver_ResolveExplicitTypes_Perlang_TypeReference_
-  commentId: M:Perlang.Interpreter.Typing.TypeResolver.ResolveExplicitTypes(Perlang.TypeReference)
-  fullName: Perlang.Interpreter.Typing.TypeResolver.ResolveExplicitTypes(Perlang.TypeReference)
-  nameWithType: TypeResolver.ResolveExplicitTypes(TypeReference)
+- uid: Perlang.Interpreter.Typing.TypeResolver.ResolveExplicitTypes(Perlang.ITypeReference)
+  name: ResolveExplicitTypes(ITypeReference)
+  href: api/Perlang.Interpreter.Typing.TypeResolver.html#Perlang_Interpreter_Typing_TypeResolver_ResolveExplicitTypes_Perlang_ITypeReference_
+  commentId: M:Perlang.Interpreter.Typing.TypeResolver.ResolveExplicitTypes(Perlang.ITypeReference)
+  fullName: Perlang.Interpreter.Typing.TypeResolver.ResolveExplicitTypes(Perlang.ITypeReference)
+  nameWithType: TypeResolver.ResolveExplicitTypes(ITypeReference)
 - uid: Perlang.Interpreter.Typing.TypeResolver.ResolveExplicitTypes*
   name: ResolveExplicitTypes
   href: api/Perlang.Interpreter.Typing.TypeResolver.html#Perlang_Interpreter_Typing_TypeResolver_ResolveExplicitTypes_
@@ -5275,6 +5275,64 @@ references:
   isSpec: "True"
   fullName: Perlang.ITokenAware.Token
   nameWithType: ITokenAware.Token
+- uid: Perlang.ITypeReference
+  name: ITypeReference
+  href: api/Perlang.ITypeReference.html
+  commentId: T:Perlang.ITypeReference
+  fullName: Perlang.ITypeReference
+  nameWithType: ITypeReference
+- uid: Perlang.ITypeReference.ClrType
+  name: ClrType
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_ClrType
+  commentId: P:Perlang.ITypeReference.ClrType
+  fullName: Perlang.ITypeReference.ClrType
+  nameWithType: ITypeReference.ClrType
+- uid: Perlang.ITypeReference.ClrType*
+  name: ClrType
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_ClrType_
+  commentId: Overload:Perlang.ITypeReference.ClrType
+  isSpec: "True"
+  fullName: Perlang.ITypeReference.ClrType
+  nameWithType: ITypeReference.ClrType
+- uid: Perlang.ITypeReference.ExplicitTypeSpecified
+  name: ExplicitTypeSpecified
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_ExplicitTypeSpecified
+  commentId: P:Perlang.ITypeReference.ExplicitTypeSpecified
+  fullName: Perlang.ITypeReference.ExplicitTypeSpecified
+  nameWithType: ITypeReference.ExplicitTypeSpecified
+- uid: Perlang.ITypeReference.ExplicitTypeSpecified*
+  name: ExplicitTypeSpecified
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_ExplicitTypeSpecified_
+  commentId: Overload:Perlang.ITypeReference.ExplicitTypeSpecified
+  isSpec: "True"
+  fullName: Perlang.ITypeReference.ExplicitTypeSpecified
+  nameWithType: ITypeReference.ExplicitTypeSpecified
+- uid: Perlang.ITypeReference.IsResolved
+  name: IsResolved
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_IsResolved
+  commentId: P:Perlang.ITypeReference.IsResolved
+  fullName: Perlang.ITypeReference.IsResolved
+  nameWithType: ITypeReference.IsResolved
+- uid: Perlang.ITypeReference.IsResolved*
+  name: IsResolved
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_IsResolved_
+  commentId: Overload:Perlang.ITypeReference.IsResolved
+  isSpec: "True"
+  fullName: Perlang.ITypeReference.IsResolved
+  nameWithType: ITypeReference.IsResolved
+- uid: Perlang.ITypeReference.TypeSpecifier
+  name: TypeSpecifier
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_TypeSpecifier
+  commentId: P:Perlang.ITypeReference.TypeSpecifier
+  fullName: Perlang.ITypeReference.TypeSpecifier
+  nameWithType: ITypeReference.TypeSpecifier
+- uid: Perlang.ITypeReference.TypeSpecifier*
+  name: TypeSpecifier
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_TypeSpecifier_
+  commentId: Overload:Perlang.ITypeReference.TypeSpecifier
+  isSpec: "True"
+  fullName: Perlang.ITypeReference.TypeSpecifier
+  nameWithType: ITypeReference.TypeSpecifier
 - uid: Perlang.NullObject
   name: NullObject
   href: api/Perlang.NullObject.html
