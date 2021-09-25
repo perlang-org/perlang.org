@@ -3000,6 +3000,160 @@ references:
   commentId: F:Perlang.Interpreter.PerlangInterpreter.runtimeErrorHandler
   fullName: Perlang.Interpreter.PerlangInterpreter.runtimeErrorHandler
   nameWithType: PerlangInterpreter.runtimeErrorHandler
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParse(System.String,Perlang.Parser.ScanErrorHandler,Perlang.Parser.ParseErrorHandler)
+  name: ScanAndParse(String, ScanErrorHandler, ParseErrorHandler)
+  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParse_System_String_Perlang_Parser_ScanErrorHandler_Perlang_Parser_ParseErrorHandler_
+  commentId: M:Perlang.Interpreter.PerlangInterpreter.ScanAndParse(System.String,Perlang.Parser.ScanErrorHandler,Perlang.Parser.ParseErrorHandler)
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParse(System.String, Perlang.Parser.ScanErrorHandler, Perlang.Parser.ParseErrorHandler)
+  nameWithType: PerlangInterpreter.ScanAndParse(String, ScanErrorHandler, ParseErrorHandler)
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParse*
+  name: ScanAndParse
+  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParse_
+  commentId: Overload:Perlang.Interpreter.PerlangInterpreter.ScanAndParse
+  isSpec: "True"
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParse
+  nameWithType: PerlangInterpreter.ScanAndParse
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult
+  name: PerlangInterpreter.ScanAndParseResult
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html
+  commentId: T:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult
+  nameWithType: PerlangInterpreter.ScanAndParseResult
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.#ctor
+  name: ScanAndParseResult()
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult__ctor
+  commentId: M:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.#ctor
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.ScanAndParseResult()
+  nameWithType: PerlangInterpreter.ScanAndParseResult.ScanAndParseResult()
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.#ctor(IList{Perlang.Stmt})
+  name: ScanAndParseResult(IList<Stmt>)
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult__ctor_IList_Perlang_Stmt__
+  commentId: M:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.#ctor(IList{Perlang.Stmt})
+  name.vb: ScanAndParseResult(IList(Of Stmt))
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.ScanAndParseResult(IList<Perlang.Stmt>)
+  fullName.vb: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.ScanAndParseResult(IList(Of Perlang.Stmt))
+  nameWithType: PerlangInterpreter.ScanAndParseResult.ScanAndParseResult(IList<Stmt>)
+  nameWithType.vb: PerlangInterpreter.ScanAndParseResult.ScanAndParseResult(IList(Of Stmt))
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.#ctor(Perlang.Expr)
+  name: ScanAndParseResult(Expr)
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult__ctor_Perlang_Expr_
+  commentId: M:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.#ctor(Perlang.Expr)
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.ScanAndParseResult(Perlang.Expr)
+  nameWithType: PerlangInterpreter.ScanAndParseResult.ScanAndParseResult(Expr)
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.#ctor*
+  name: ScanAndParseResult
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult__ctor_
+  commentId: Overload:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.#ctor
+  isSpec: "True"
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.ScanAndParseResult
+  nameWithType: PerlangInterpreter.ScanAndParseResult.ScanAndParseResult
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.Expr
+  name: Expr
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult_Expr
+  commentId: P:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.Expr
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.Expr
+  nameWithType: PerlangInterpreter.ScanAndParseResult.Expr
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.Expr*
+  name: Expr
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult_Expr_
+  commentId: Overload:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.Expr
+  isSpec: "True"
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.Expr
+  nameWithType: PerlangInterpreter.ScanAndParseResult.Expr
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.HasExpr
+  name: HasExpr
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult_HasExpr
+  commentId: P:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.HasExpr
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.HasExpr
+  nameWithType: PerlangInterpreter.ScanAndParseResult.HasExpr
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.HasExpr*
+  name: HasExpr
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult_HasExpr_
+  commentId: Overload:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.HasExpr
+  isSpec: "True"
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.HasExpr
+  nameWithType: PerlangInterpreter.ScanAndParseResult.HasExpr
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.HasStatements
+  name: HasStatements
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult_HasStatements
+  commentId: P:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.HasStatements
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.HasStatements
+  nameWithType: PerlangInterpreter.ScanAndParseResult.HasStatements
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.HasStatements*
+  name: HasStatements
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult_HasStatements_
+  commentId: Overload:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.HasStatements
+  isSpec: "True"
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.HasStatements
+  nameWithType: PerlangInterpreter.ScanAndParseResult.HasStatements
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.OfExpr(Perlang.Expr)
+  name: OfExpr(Expr)
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult_OfExpr_Perlang_Expr_
+  commentId: M:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.OfExpr(Perlang.Expr)
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.OfExpr(Perlang.Expr)
+  nameWithType: PerlangInterpreter.ScanAndParseResult.OfExpr(Expr)
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.OfExpr*
+  name: OfExpr
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult_OfExpr_
+  commentId: Overload:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.OfExpr
+  isSpec: "True"
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.OfExpr
+  nameWithType: PerlangInterpreter.ScanAndParseResult.OfExpr
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.OfStmts(List{Perlang.Stmt})
+  name: OfStmts(List<Stmt>)
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult_OfStmts_List_Perlang_Stmt__
+  commentId: M:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.OfStmts(List{Perlang.Stmt})
+  name.vb: OfStmts(List(Of Stmt))
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.OfStmts(List<Perlang.Stmt>)
+  fullName.vb: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.OfStmts(List(Of Perlang.Stmt))
+  nameWithType: PerlangInterpreter.ScanAndParseResult.OfStmts(List<Stmt>)
+  nameWithType.vb: PerlangInterpreter.ScanAndParseResult.OfStmts(List(Of Stmt))
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.OfStmts*
+  name: OfStmts
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult_OfStmts_
+  commentId: Overload:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.OfStmts
+  isSpec: "True"
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.OfStmts
+  nameWithType: PerlangInterpreter.ScanAndParseResult.OfStmts
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.ParseErrorEncountered
+  name: ParseErrorEncountered
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult_ParseErrorEncountered
+  commentId: P:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.ParseErrorEncountered
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.ParseErrorEncountered
+  nameWithType: PerlangInterpreter.ScanAndParseResult.ParseErrorEncountered
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.ParseErrorEncountered*
+  name: ParseErrorEncountered
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult_ParseErrorEncountered_
+  commentId: Overload:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.ParseErrorEncountered
+  isSpec: "True"
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.ParseErrorEncountered
+  nameWithType: PerlangInterpreter.ScanAndParseResult.ParseErrorEncountered
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.ScanErrorOccurred
+  name: ScanErrorOccurred
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult_ScanErrorOccurred
+  commentId: P:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.ScanErrorOccurred
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.ScanErrorOccurred
+  nameWithType: PerlangInterpreter.ScanAndParseResult.ScanErrorOccurred
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.ScanErrorOccurred*
+  name: ScanErrorOccurred
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult_ScanErrorOccurred_
+  commentId: Overload:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.ScanErrorOccurred
+  isSpec: "True"
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.ScanErrorOccurred
+  nameWithType: PerlangInterpreter.ScanAndParseResult.ScanErrorOccurred
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.Statements
+  name: Statements
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult_Statements
+  commentId: P:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.Statements
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.Statements
+  nameWithType: PerlangInterpreter.ScanAndParseResult.Statements
+- uid: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.Statements*
+  name: Statements
+  href: api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html#Perlang_Interpreter_PerlangInterpreter_ScanAndParseResult_Statements_
+  commentId: Overload:Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.Statements
+  isSpec: "True"
+  fullName: Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.Statements
+  nameWithType: PerlangInterpreter.ScanAndParseResult.Statements
 - uid: Perlang.Interpreter.PerlangInterpreter.standardOutputHandler
   name: standardOutputHandler
   href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_standardOutputHandler
@@ -4094,6 +4248,19 @@ references:
   commentId: F:Perlang.Interpreter.Resolution.Resolver.globals
   fullName: Perlang.Interpreter.Resolution.Resolver.globals
   nameWithType: Resolver.globals
+- uid: Perlang.Interpreter.Resolution.Resolver.Globals
+  name: Globals
+  href: api/Perlang.Interpreter.Resolution.Resolver.html#Perlang_Interpreter_Resolution_Resolver_Globals
+  commentId: P:Perlang.Interpreter.Resolution.Resolver.Globals
+  fullName: Perlang.Interpreter.Resolution.Resolver.Globals
+  nameWithType: Resolver.Globals
+- uid: Perlang.Interpreter.Resolution.Resolver.Globals*
+  name: Globals
+  href: api/Perlang.Interpreter.Resolution.Resolver.html#Perlang_Interpreter_Resolution_Resolver_Globals_
+  commentId: Overload:Perlang.Interpreter.Resolution.Resolver.Globals
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Resolution.Resolver.Globals
+  nameWithType: Resolver.Globals
 - uid: Perlang.Interpreter.Resolution.Resolver.IsEmpty(ICollection)
   name: IsEmpty(ICollection)
   href: api/Perlang.Interpreter.Resolution.Resolver.html#Perlang_Interpreter_Resolution_Resolver_IsEmpty_ICollection_
