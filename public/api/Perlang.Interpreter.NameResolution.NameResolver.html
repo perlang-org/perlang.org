@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Resolver
+    <title>Class NameResolver
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Resolver
+    <meta name="title" content="Class NameResolver
    ">
     <meta name="generator" content="docfx 2.57.2.0">
     
@@ -72,47 +72,47 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Perlang.Interpreter.Resolution.Resolver">
+            <article class="content wrap" id="_content" data-uid="Perlang.Interpreter.NameResolution.NameResolver">
   
   
-  <h1 id="Perlang_Interpreter_Resolution_Resolver" data-uid="Perlang.Interpreter.Resolution.Resolver" class="text-break">Class Resolver
+  <h1 id="Perlang_Interpreter_NameResolution_NameResolver" data-uid="Perlang.Interpreter.NameResolution.NameResolver" class="text-break">Class NameResolver
   </h1>
-  <div class="markdown level0 summary"><p>The Resolver is responsible for resolving names of local and global variable/function names.</p>
+  <div class="markdown level0 summary"><p>The <code>NameResolver</code> is responsible for resolving names of local and global variable/function names.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">Resolver</span></div>
+    <div class="level1"><span class="xref">NameResolver</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="Perlang.Expr.IVisitor-1.html">Expr.IVisitor</a>&lt;<a class="xref" href="Perlang.VoidObject.html">VoidObject</a>&gt;</div>
     <div><a class="xref" href="Perlang.Stmt.IVisitor-1.html">Stmt.IVisitor</a>&lt;<a class="xref" href="Perlang.VoidObject.html">VoidObject</a>&gt;</div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.Interpreter.Resolution.html">Perlang.Interpreter.Resolution</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.Interpreter.NameResolution.html">Perlang.Interpreter.NameResolution</a></h6>
   <h6><strong>Assembly</strong>: Perlang.Interpreter.dll</h6>
-  <h5 id="Perlang_Interpreter_Resolution_Resolver_syntax">Syntax</h5>
+  <h5 id="Perlang_Interpreter_NameResolution_NameResolver_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">class Resolver : object, Expr.IVisitor&lt;VoidObject&gt;, Stmt.IVisitor&lt;VoidObject&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">class NameResolver : object, Expr.IVisitor&lt;VoidObject&gt;, Stmt.IVisitor&lt;VoidObject&gt;</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver__ctor_IImmutableDictionary_System_String_Type__IImmutableDictionary_System_String_Type__Perlang_Interpreter_Internals_IBindingHandler_Action_System_String_Perlang_PerlangClass__Perlang_Interpreter_ResolveErrorHandler_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.%23ctor(IImmutableDictionary%7BSystem.String%2CType%7D%2CIImmutableDictionary%7BSystem.String%2CType%7D%2CPerlang.Interpreter.Internals.IBindingHandler%2CAction%7BSystem.String%2CPerlang.PerlangClass%7D%2CPerlang.Interpreter.ResolveErrorHandler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver__ctor_IImmutableDictionary_System_String_Type__IImmutableDictionary_System_String_Type__Perlang_Interpreter_Internals_IBindingHandler_Action_System_String_Perlang_PerlangClass__Perlang_Interpreter_NameResolutionErrorHandler_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.%23ctor(IImmutableDictionary%7BSystem.String%2CType%7D%2CIImmutableDictionary%7BSystem.String%2CType%7D%2CPerlang.Interpreter.Internals.IBindingHandler%2CAction%7BSystem.String%2CPerlang.PerlangClass%7D%2CPerlang.Interpreter.NameResolutionErrorHandler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L47">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L48">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver__ctor_" data-uid="Perlang.Interpreter.Resolution.Resolver.#ctor*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver__ctor_IImmutableDictionary_System_String_Type__IImmutableDictionary_System_String_Type__Perlang_Interpreter_Internals_IBindingHandler_Action_System_String_Perlang_PerlangClass__Perlang_Interpreter_ResolveErrorHandler_" data-uid="Perlang.Interpreter.Resolution.Resolver.#ctor(IImmutableDictionary{System.String,Type},IImmutableDictionary{System.String,Type},Perlang.Interpreter.Internals.IBindingHandler,Action{System.String,Perlang.PerlangClass},Perlang.Interpreter.ResolveErrorHandler)">Resolver(IImmutableDictionary&lt;String, Type&gt;, IImmutableDictionary&lt;String, Type&gt;, IBindingHandler, Action&lt;String, PerlangClass&gt;, ResolveErrorHandler)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Perlang.Interpreter.Resolution.Resolver.html">Resolver</a> class.</p>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver__ctor_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.#ctor*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver__ctor_IImmutableDictionary_System_String_Type__IImmutableDictionary_System_String_Type__Perlang_Interpreter_Internals_IBindingHandler_Action_System_String_Perlang_PerlangClass__Perlang_Interpreter_NameResolutionErrorHandler_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.#ctor(IImmutableDictionary{System.String,Type},IImmutableDictionary{System.String,Type},Perlang.Interpreter.Internals.IBindingHandler,Action{System.String,Perlang.PerlangClass},Perlang.Interpreter.NameResolutionErrorHandler)">NameResolver(IImmutableDictionary&lt;String, Type&gt;, IImmutableDictionary&lt;String, Type&gt;, IBindingHandler, Action&lt;String, PerlangClass&gt;, NameResolutionErrorHandler)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Perlang.Interpreter.NameResolution.NameResolver.html">NameResolver</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Resolver(IImmutableDictionary&lt;string, Type&gt; globalClasses, IImmutableDictionary&lt;string, Type&gt; superGlobals, IBindingHandler bindingHandler, Action&lt;string, PerlangClass&gt; addGlobalClassCallback, ResolveErrorHandler resolveErrorHandler)</code></pre>
+    <pre><code class="lang-csharp hljs">NameResolver(IImmutableDictionary&lt;string, Type&gt; globalClasses, IImmutableDictionary&lt;string, Type&gt; superGlobals, IBindingHandler bindingHandler, Action&lt;string, PerlangClass&gt; addGlobalClassCallback, NameResolutionErrorHandler nameResolutionErrorHandler)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -150,10 +150,10 @@ from outside of the program itself.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Perlang.Interpreter.ResolveErrorHandler.html">ResolveErrorHandler</a></td>
-        <td><span class="parametername">resolveErrorHandler</span></td>
-        <td><p>A callback which will be called in case of resolution errors. Note that
-multiple resolution errors will cause the provided callback to be called multiple times.</p>
+        <td><a class="xref" href="Perlang.Interpreter.NameResolutionErrorHandler.html">NameResolutionErrorHandler</a></td>
+        <td><span class="parametername">nameResolutionErrorHandler</span></td>
+        <td><p>A callback which will be called in case of name resolution errors.
+Note that multiple resolution errors will cause the provided callback to be called multiple times.</p>
 </td>
       </tr>
     </tbody>
@@ -162,12 +162,12 @@ multiple resolution errors will cause the provided callback to be called multipl
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_addGlobalClassCallback.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.addGlobalClassCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_addGlobalClassCallback.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.addGlobalClassCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L19">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L20">View Source</a>
   </span>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_addGlobalClassCallback" data-uid="Perlang.Interpreter.Resolution.Resolver.addGlobalClassCallback">addGlobalClassCallback</h4>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_addGlobalClassCallback" data-uid="Perlang.Interpreter.NameResolution.NameResolver.addGlobalClassCallback">addGlobalClassCallback</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -191,12 +191,12 @@ multiple resolution errors will cause the provided callback to be called multipl
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_bindingHandler.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.bindingHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_bindingHandler.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.bindingHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L18">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L19">View Source</a>
   </span>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_bindingHandler" data-uid="Perlang.Interpreter.Resolution.Resolver.bindingHandler">bindingHandler</h4>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_bindingHandler" data-uid="Perlang.Interpreter.NameResolution.NameResolver.bindingHandler">bindingHandler</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -220,17 +220,17 @@ multiple resolution errors will cause the provided callback to be called multipl
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_currentFunction.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.currentFunction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_currentFunction.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.currentFunction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L35">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L36">View Source</a>
   </span>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_currentFunction" data-uid="Perlang.Interpreter.Resolution.Resolver.currentFunction">currentFunction</h4>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_currentFunction" data-uid="Perlang.Interpreter.NameResolution.NameResolver.currentFunction">currentFunction</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Resolver.FunctionType currentFunction</code></pre>
+    <pre><code class="lang-csharp hljs">NameResolver.FunctionType currentFunction</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -242,19 +242,19 @@ multiple resolution errors will cause the provided callback to be called multipl
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Perlang.Interpreter.Resolution.Resolver.FunctionType.html">Resolver.FunctionType</a></td>
+        <td><a class="xref" href="Perlang.Interpreter.NameResolution.NameResolver.FunctionType.html">NameResolver.FunctionType</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_globals.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.globals%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_globals.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.globals%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L31">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L32">View Source</a>
   </span>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_globals" data-uid="Perlang.Interpreter.Resolution.Resolver.globals">globals</h4>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_globals" data-uid="Perlang.Interpreter.NameResolution.NameResolver.globals">globals</h4>
   <div class="markdown level1 summary"><p>An instance-local list of global symbols (variables, functions etc).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -272,24 +272,24 @@ multiple resolution errors will cause the provided callback to be called multipl
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Perlang.Interpreter.Resolution.IBindingFactory.html">IBindingFactory</a>&gt;</td>
+        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Perlang.Interpreter.NameResolution.IBindingFactory.html">IBindingFactory</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_resolveErrorHandler.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.resolveErrorHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_nameResolutionErrorHandler.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.nameResolutionErrorHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L20">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L21">View Source</a>
   </span>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_resolveErrorHandler" data-uid="Perlang.Interpreter.Resolution.Resolver.resolveErrorHandler">resolveErrorHandler</h4>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_nameResolutionErrorHandler" data-uid="Perlang.Interpreter.NameResolution.NameResolver.nameResolutionErrorHandler">nameResolutionErrorHandler</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">readonly ResolveErrorHandler resolveErrorHandler</code></pre>
+    <pre><code class="lang-csharp hljs">readonly NameResolutionErrorHandler nameResolutionErrorHandler</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -301,19 +301,19 @@ multiple resolution errors will cause the provided callback to be called multipl
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Perlang.Interpreter.ResolveErrorHandler.html">ResolveErrorHandler</a></td>
+        <td><a class="xref" href="Perlang.Interpreter.NameResolutionErrorHandler.html">NameResolutionErrorHandler</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_scopes.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.scopes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_scopes.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.scopes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L26">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L27">View Source</a>
   </span>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_scopes" data-uid="Perlang.Interpreter.Resolution.Resolver.scopes">scopes</h4>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_scopes" data-uid="Perlang.Interpreter.NameResolution.NameResolver.scopes">scopes</h4>
   <div class="markdown level1 summary"><p>An instance-local list of scopes. The innermost scope is always the last entry in this list. As the code is
 being traversed, scopes are created and removed as blocks are opened/closed.</p>
 </div>
@@ -332,7 +332,7 @@ being traversed, scopes are created and removed as blocks are opened/closed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Perlang.Interpreter.Resolution.IBindingFactory.html">IBindingFactory</a>&gt;&gt;</td>
+        <td><span class="xref">List</span>&lt;<span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Perlang.Interpreter.NameResolution.IBindingFactory.html">IBindingFactory</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -341,13 +341,13 @@ being traversed, scopes are created and removed as blocks are opened/closed.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_Globals.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.Globals%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_Globals.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.Globals%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L33">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L34">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_Globals_" data-uid="Perlang.Interpreter.Resolution.Resolver.Globals*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_Globals" data-uid="Perlang.Interpreter.Resolution.Resolver.Globals">Globals</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_Globals_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.Globals*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_Globals" data-uid="Perlang.Interpreter.NameResolution.NameResolver.Globals">Globals</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -366,7 +366,7 @@ being traversed, scopes are created and removed as blocks are opened/closed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Perlang.Interpreter.Resolution.IBindingFactory.html">IBindingFactory</a>&gt;</td>
+        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Perlang.Interpreter.NameResolution.IBindingFactory.html">IBindingFactory</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -375,13 +375,13 @@ being traversed, scopes are created and removed as blocks are opened/closed.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_BeginScope.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.BeginScope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_BeginScope.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.BeginScope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L82">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L83">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_BeginScope_" data-uid="Perlang.Interpreter.Resolution.Resolver.BeginScope*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_BeginScope" data-uid="Perlang.Interpreter.Resolution.Resolver.BeginScope">BeginScope()</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_BeginScope_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.BeginScope*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_BeginScope" data-uid="Perlang.Interpreter.NameResolution.NameResolver.BeginScope">BeginScope()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -390,13 +390,13 @@ being traversed, scopes are created and removed as blocks are opened/closed.</p>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_Declare_Perlang_Token_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.Declare(Perlang.Token)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_Declare_Perlang_Token_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.Declare(Perlang.Token)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L97">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L98">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_Declare_" data-uid="Perlang.Interpreter.Resolution.Resolver.Declare*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_Declare_Perlang_Token_" data-uid="Perlang.Interpreter.Resolution.Resolver.Declare(Perlang.Token)">Declare(Token)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_Declare_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.Declare*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_Declare_Perlang_Token_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.Declare(Perlang.Token)">Declare(Token)</h4>
   <div class="markdown level1 summary"><p>Declares a variable or function as existing (but not yet initialized) in the innermost scope. This allows
 the variable to shadow variables in outer scopes with the same name.</p>
 </div>
@@ -425,13 +425,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_Define_Perlang_Token_Perlang_ITypeReference_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.Define(Perlang.Token%2CPerlang.ITypeReference)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_Define_Perlang_Token_Perlang_ITypeReference_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.Define(Perlang.Token%2CPerlang.ITypeReference)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L131">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L132">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_Define_" data-uid="Perlang.Interpreter.Resolution.Resolver.Define*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_Define_Perlang_Token_Perlang_ITypeReference_" data-uid="Perlang.Interpreter.Resolution.Resolver.Define(Perlang.Token,Perlang.ITypeReference)">Define(Token, ITypeReference)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_Define_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.Define*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_Define_Perlang_Token_Perlang_ITypeReference_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.Define(Perlang.Token,Perlang.ITypeReference)">Define(Token, ITypeReference)</h4>
   <div class="markdown level1 summary"><p>Defines a previously declared variable as initialized, available for use.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -465,13 +465,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_DefineClass_Perlang_Token_Perlang_PerlangClass_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.DefineClass(Perlang.Token%2CPerlang.PerlangClass)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_DefineClass_Perlang_Token_Perlang_PerlangClass_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.DefineClass(Perlang.Token%2CPerlang.PerlangClass)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L177">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L178">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_DefineClass_" data-uid="Perlang.Interpreter.Resolution.Resolver.DefineClass*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_DefineClass_Perlang_Token_Perlang_PerlangClass_" data-uid="Perlang.Interpreter.Resolution.Resolver.DefineClass(Perlang.Token,Perlang.PerlangClass)">DefineClass(Token, PerlangClass)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_DefineClass_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.DefineClass*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_DefineClass_Perlang_Token_Perlang_PerlangClass_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.DefineClass(Perlang.Token,Perlang.PerlangClass)">DefineClass(Token, PerlangClass)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -502,13 +502,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_DefineFunction_Perlang_Token_Perlang_ITypeReference_Perlang_Stmt_Function_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.DefineFunction(Perlang.Token%2CPerlang.ITypeReference%2CPerlang.Stmt.Function)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_DefineFunction_Perlang_Token_Perlang_ITypeReference_Perlang_Stmt_Function_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.DefineFunction(Perlang.Token%2CPerlang.ITypeReference%2CPerlang.Stmt.Function)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L157">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L158">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_DefineFunction_" data-uid="Perlang.Interpreter.Resolution.Resolver.DefineFunction*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_DefineFunction_Perlang_Token_Perlang_ITypeReference_Perlang_Stmt_Function_" data-uid="Perlang.Interpreter.Resolution.Resolver.DefineFunction(Perlang.Token,Perlang.ITypeReference,Perlang.Stmt.Function)">DefineFunction(Token, ITypeReference, Stmt.Function)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_DefineFunction_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.DefineFunction*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_DefineFunction_Perlang_Token_Perlang_ITypeReference_Perlang_Stmt_Function_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.DefineFunction(Perlang.Token,Perlang.ITypeReference,Perlang.Stmt.Function)">DefineFunction(Token, ITypeReference, Stmt.Function)</h4>
   <div class="markdown level1 summary"><p>Defines a previously declared function as defined, available for use.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -548,13 +548,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_EndScope.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.EndScope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_EndScope.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.EndScope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L87">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L88">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_EndScope_" data-uid="Perlang.Interpreter.Resolution.Resolver.EndScope*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_EndScope" data-uid="Perlang.Interpreter.Resolution.Resolver.EndScope">EndScope()</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_EndScope_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.EndScope*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_EndScope" data-uid="Perlang.Interpreter.NameResolution.NameResolver.EndScope">EndScope()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -563,13 +563,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_IsEmpty_ICollection_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.IsEmpty(ICollection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_IsEmpty_ICollection_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.IsEmpty(ICollection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L120">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L121">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_IsEmpty_" data-uid="Perlang.Interpreter.Resolution.Resolver.IsEmpty*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_IsEmpty_ICollection_" data-uid="Perlang.Interpreter.Resolution.Resolver.IsEmpty(ICollection)">IsEmpty(ICollection)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_IsEmpty_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.IsEmpty*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_IsEmpty_ICollection_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.IsEmpty(ICollection)">IsEmpty(ICollection)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -610,13 +610,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_Resolve_IEnumerable_Perlang_Stmt__.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.Resolve(IEnumerable%7BPerlang.Stmt%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_Resolve_IEnumerable_Perlang_Stmt__.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.Resolve(IEnumerable%7BPerlang.Stmt%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L69">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L70">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_Resolve_" data-uid="Perlang.Interpreter.Resolution.Resolver.Resolve*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_Resolve_IEnumerable_Perlang_Stmt__" data-uid="Perlang.Interpreter.Resolution.Resolver.Resolve(IEnumerable{Perlang.Stmt})">Resolve(IEnumerable&lt;Stmt&gt;)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_Resolve_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.Resolve*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_Resolve_IEnumerable_Perlang_Stmt__" data-uid="Perlang.Interpreter.NameResolution.NameResolver.Resolve(IEnumerable{Perlang.Stmt})">Resolve(IEnumerable&lt;Stmt&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -642,13 +642,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_Resolve_Perlang_Expr_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.Resolve(Perlang.Expr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_Resolve_Perlang_Expr_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.Resolve(Perlang.Expr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L77">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L78">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_Resolve_" data-uid="Perlang.Interpreter.Resolution.Resolver.Resolve*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_Resolve_Perlang_Expr_" data-uid="Perlang.Interpreter.Resolution.Resolver.Resolve(Perlang.Expr)">Resolve(Expr)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_Resolve_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.Resolve*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_Resolve_Perlang_Expr_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.Resolve(Perlang.Expr)">Resolve(Expr)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -674,13 +674,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_Resolve_Perlang_Stmt_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.Resolve(Perlang.Stmt)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_Resolve_Perlang_Stmt_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.Resolve(Perlang.Stmt)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L344">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L345">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_Resolve_" data-uid="Perlang.Interpreter.Resolution.Resolver.Resolve*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_Resolve_Perlang_Stmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.Resolve(Perlang.Stmt)">Resolve(Stmt)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_Resolve_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.Resolve*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_Resolve_Perlang_Stmt_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.Resolve(Perlang.Stmt)">Resolve(Stmt)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -706,18 +706,18 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_ResolveFunction_Perlang_Stmt_Function_Perlang_Interpreter_Resolution_Resolver_FunctionType_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.ResolveFunction(Perlang.Stmt.Function%2CPerlang.Interpreter.Resolution.Resolver.FunctionType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_ResolveFunction_Perlang_Stmt_Function_Perlang_Interpreter_NameResolution_NameResolver_FunctionType_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.ResolveFunction(Perlang.Stmt.Function%2CPerlang.Interpreter.NameResolution.NameResolver.FunctionType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L365">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L366">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_ResolveFunction_" data-uid="Perlang.Interpreter.Resolution.Resolver.ResolveFunction*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_ResolveFunction_Perlang_Stmt_Function_Perlang_Interpreter_Resolution_Resolver_FunctionType_" data-uid="Perlang.Interpreter.Resolution.Resolver.ResolveFunction(Perlang.Stmt.Function,Perlang.Interpreter.Resolution.Resolver.FunctionType)">ResolveFunction(Stmt.Function, Resolver.FunctionType)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_ResolveFunction_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.ResolveFunction*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_ResolveFunction_Perlang_Stmt_Function_Perlang_Interpreter_NameResolution_NameResolver_FunctionType_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.ResolveFunction(Perlang.Stmt.Function,Perlang.Interpreter.NameResolution.NameResolver.FunctionType)">ResolveFunction(Stmt.Function, NameResolver.FunctionType)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ResolveFunction(Stmt.Function function, Resolver.FunctionType type)</code></pre>
+    <pre><code class="lang-csharp hljs">void ResolveFunction(Stmt.Function function, NameResolver.FunctionType type)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -735,7 +735,7 @@ the variable to shadow variables in outer scopes with the same name.</p>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Perlang.Interpreter.Resolution.Resolver.FunctionType.html">Resolver.FunctionType</a></td>
+        <td><a class="xref" href="Perlang.Interpreter.NameResolution.NameResolver.FunctionType.html">NameResolver.FunctionType</a></td>
         <td><span class="parametername">type</span></td>
         <td></td>
       </tr>
@@ -743,13 +743,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_ResolveLocalOrGlobal_Perlang_Expr_Perlang_Token_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.ResolveLocalOrGlobal(Perlang.Expr%2CPerlang.Token)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_ResolveLocalOrGlobal_Perlang_Expr_Perlang_Token_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.ResolveLocalOrGlobal(Perlang.Expr%2CPerlang.Token)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L189">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L190">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_ResolveLocalOrGlobal_" data-uid="Perlang.Interpreter.Resolution.Resolver.ResolveLocalOrGlobal*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_ResolveLocalOrGlobal_Perlang_Expr_Perlang_Token_" data-uid="Perlang.Interpreter.Resolution.Resolver.ResolveLocalOrGlobal(Perlang.Expr,Perlang.Token)">ResolveLocalOrGlobal(Expr, Token)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_ResolveLocalOrGlobal_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.ResolveLocalOrGlobal*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_ResolveLocalOrGlobal_Perlang_Expr_Perlang_Token_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.ResolveLocalOrGlobal(Perlang.Expr,Perlang.Token)">ResolveLocalOrGlobal(Expr, Token)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -780,13 +780,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitAssignExpr_Perlang_Expr_Assign_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitAssignExpr(Perlang.Expr.Assign)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitAssignExpr_Perlang_Expr_Assign_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitAssignExpr(Perlang.Expr.Assign)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L232">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L233">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitAssignExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitAssignExpr*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitAssignExpr_Perlang_Expr_Assign_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitAssignExpr(Perlang.Expr.Assign)">VisitAssignExpr(Expr.Assign)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitAssignExpr_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitAssignExpr*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitAssignExpr_Perlang_Expr_Assign_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitAssignExpr(Perlang.Expr.Assign)">VisitAssignExpr(Expr.Assign)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -827,13 +827,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitBinaryExpr_Perlang_Expr_Binary_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitBinaryExpr(Perlang.Expr.Binary)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitBinaryExpr_Perlang_Expr_Binary_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitBinaryExpr(Perlang.Expr.Binary)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L240">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L241">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitBinaryExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitBinaryExpr*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitBinaryExpr_Perlang_Expr_Binary_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitBinaryExpr(Perlang.Expr.Binary)">VisitBinaryExpr(Expr.Binary)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitBinaryExpr_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitBinaryExpr*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitBinaryExpr_Perlang_Expr_Binary_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitBinaryExpr(Perlang.Expr.Binary)">VisitBinaryExpr(Expr.Binary)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -874,13 +874,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitBlockStmt_Perlang_Stmt_Block_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitBlockStmt(Perlang.Stmt.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitBlockStmt_Perlang_Stmt_Block_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitBlockStmt(Perlang.Stmt.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L321">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L322">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitBlockStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitBlockStmt*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitBlockStmt_Perlang_Stmt_Block_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitBlockStmt(Perlang.Stmt.Block)">VisitBlockStmt(Stmt.Block)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitBlockStmt_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitBlockStmt*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitBlockStmt_Perlang_Stmt_Block_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitBlockStmt(Perlang.Stmt.Block)">VisitBlockStmt(Stmt.Block)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -921,13 +921,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitCallExpr_Perlang_Expr_Call_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitCallExpr(Perlang.Expr.Call)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitCallExpr_Perlang_Expr_Call_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitCallExpr(Perlang.Expr.Call)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L248">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L249">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitCallExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitCallExpr*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitCallExpr_Perlang_Expr_Call_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitCallExpr(Perlang.Expr.Call)">VisitCallExpr(Expr.Call)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitCallExpr_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitCallExpr*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitCallExpr_Perlang_Expr_Call_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitCallExpr(Perlang.Expr.Call)">VisitCallExpr(Expr.Call)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -968,13 +968,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitClassStmt_Perlang_Stmt_Class_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitClassStmt(Perlang.Stmt.Class)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitClassStmt_Perlang_Stmt_Class_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitClassStmt(Perlang.Stmt.Class)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L330">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L331">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitClassStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitClassStmt*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitClassStmt_Perlang_Stmt_Class_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitClassStmt(Perlang.Stmt.Class)">VisitClassStmt(Stmt.Class)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitClassStmt_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitClassStmt*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitClassStmt_Perlang_Stmt_Class_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitClassStmt(Perlang.Stmt.Class)">VisitClassStmt(Stmt.Class)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1015,13 +1015,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitEmptyExpr_Perlang_Expr_Empty_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitEmptyExpr(Perlang.Expr.Empty)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitEmptyExpr_Perlang_Expr_Empty_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitEmptyExpr(Perlang.Expr.Empty)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L227">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L228">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitEmptyExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitEmptyExpr*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitEmptyExpr_Perlang_Expr_Empty_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitEmptyExpr(Perlang.Expr.Empty)">VisitEmptyExpr(Expr.Empty)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitEmptyExpr_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitEmptyExpr*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitEmptyExpr_Perlang_Expr_Empty_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitEmptyExpr(Perlang.Expr.Empty)">VisitEmptyExpr(Expr.Empty)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1062,13 +1062,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitExpressionStmt_Perlang_Stmt_ExpressionStmt_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitExpressionStmt(Perlang.Stmt.ExpressionStmt)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitExpressionStmt_Perlang_Stmt_ExpressionStmt_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitExpressionStmt(Perlang.Stmt.ExpressionStmt)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L349">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L350">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitExpressionStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitExpressionStmt*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitExpressionStmt_Perlang_Stmt_ExpressionStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitExpressionStmt(Perlang.Stmt.ExpressionStmt)">VisitExpressionStmt(Stmt.ExpressionStmt)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitExpressionStmt_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitExpressionStmt*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitExpressionStmt_Perlang_Stmt_ExpressionStmt_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitExpressionStmt(Perlang.Stmt.ExpressionStmt)">VisitExpressionStmt(Stmt.ExpressionStmt)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1109,13 +1109,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitFunctionStmt_Perlang_Stmt_Function_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitFunctionStmt(Perlang.Stmt.Function)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitFunctionStmt_Perlang_Stmt_Function_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitFunctionStmt(Perlang.Stmt.Function)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L355">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L356">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitFunctionStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitFunctionStmt*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitFunctionStmt_Perlang_Stmt_Function_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitFunctionStmt(Perlang.Stmt.Function)">VisitFunctionStmt(Stmt.Function)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitFunctionStmt_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitFunctionStmt*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitFunctionStmt_Perlang_Stmt_Function_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitFunctionStmt(Perlang.Stmt.Function)">VisitFunctionStmt(Stmt.Function)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1156,13 +1156,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitGetExpr_Perlang_Expr_Get_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitGetExpr(Perlang.Expr.Get)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitGetExpr_Perlang_Expr_Get_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitGetExpr(Perlang.Expr.Get)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L314">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L315">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitGetExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitGetExpr*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitGetExpr_Perlang_Expr_Get_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitGetExpr(Perlang.Expr.Get)">VisitGetExpr(Expr.Get)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitGetExpr_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitGetExpr*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitGetExpr_Perlang_Expr_Get_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitGetExpr(Perlang.Expr.Get)">VisitGetExpr(Expr.Get)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1203,13 +1203,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitGroupingExpr_Perlang_Expr_Grouping_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitGroupingExpr(Perlang.Expr.Grouping)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitGroupingExpr_Perlang_Expr_Grouping_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitGroupingExpr(Perlang.Expr.Grouping)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L265">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L266">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitGroupingExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitGroupingExpr*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitGroupingExpr_Perlang_Expr_Grouping_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitGroupingExpr(Perlang.Expr.Grouping)">VisitGroupingExpr(Expr.Grouping)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitGroupingExpr_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitGroupingExpr*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitGroupingExpr_Perlang_Expr_Grouping_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitGroupingExpr(Perlang.Expr.Grouping)">VisitGroupingExpr(Expr.Grouping)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1250,13 +1250,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitIdentifierExpr_Perlang_Expr_Identifier_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitIdentifierExpr(Perlang.Expr.Identifier)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitIdentifierExpr_Perlang_Expr_Identifier_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitIdentifierExpr(Perlang.Expr.Identifier)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L299">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L300">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitIdentifierExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitIdentifierExpr*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitIdentifierExpr_Perlang_Expr_Identifier_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitIdentifierExpr(Perlang.Expr.Identifier)">VisitIdentifierExpr(Expr.Identifier)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitIdentifierExpr_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitIdentifierExpr*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitIdentifierExpr_Perlang_Expr_Identifier_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitIdentifierExpr(Perlang.Expr.Identifier)">VisitIdentifierExpr(Expr.Identifier)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1297,13 +1297,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitIfStmt_Perlang_Stmt_If_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitIfStmt(Perlang.Stmt.If)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitIfStmt_Perlang_Stmt_If_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitIfStmt(Perlang.Stmt.If)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L384">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L385">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitIfStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitIfStmt*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitIfStmt_Perlang_Stmt_If_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitIfStmt(Perlang.Stmt.If)">VisitIfStmt(Stmt.If)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitIfStmt_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitIfStmt*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitIfStmt_Perlang_Stmt_If_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitIfStmt(Perlang.Stmt.If)">VisitIfStmt(Stmt.If)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1344,13 +1344,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitLiteralExpr_Perlang_Expr_Literal_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitLiteralExpr(Perlang.Expr.Literal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitLiteralExpr_Perlang_Expr_Literal_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitLiteralExpr(Perlang.Expr.Literal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L271">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L272">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitLiteralExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitLiteralExpr*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitLiteralExpr_Perlang_Expr_Literal_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitLiteralExpr(Perlang.Expr.Literal)">VisitLiteralExpr(Expr.Literal)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitLiteralExpr_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitLiteralExpr*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitLiteralExpr_Perlang_Expr_Literal_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitLiteralExpr(Perlang.Expr.Literal)">VisitLiteralExpr(Expr.Literal)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1391,13 +1391,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitLogicalExpr_Perlang_Expr_Logical_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitLogicalExpr(Perlang.Expr.Logical)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitLogicalExpr_Perlang_Expr_Logical_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitLogicalExpr(Perlang.Expr.Logical)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L276">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L277">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitLogicalExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitLogicalExpr*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitLogicalExpr_Perlang_Expr_Logical_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitLogicalExpr(Perlang.Expr.Logical)">VisitLogicalExpr(Expr.Logical)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitLogicalExpr_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitLogicalExpr*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitLogicalExpr_Perlang_Expr_Logical_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitLogicalExpr(Perlang.Expr.Logical)">VisitLogicalExpr(Expr.Logical)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1438,13 +1438,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitPrintStmt_Perlang_Stmt_Print_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitPrintStmt(Perlang.Stmt.Print)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitPrintStmt_Perlang_Stmt_Print_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitPrintStmt(Perlang.Stmt.Print)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L397">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L398">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitPrintStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitPrintStmt*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitPrintStmt_Perlang_Stmt_Print_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitPrintStmt(Perlang.Stmt.Print)">VisitPrintStmt(Stmt.Print)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitPrintStmt_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitPrintStmt*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitPrintStmt_Perlang_Stmt_Print_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitPrintStmt(Perlang.Stmt.Print)">VisitPrintStmt(Stmt.Print)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1485,13 +1485,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitReturnStmt_Perlang_Stmt_Return_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitReturnStmt(Perlang.Stmt.Return)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitReturnStmt_Perlang_Stmt_Return_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitReturnStmt(Perlang.Stmt.Return)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L403">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L404">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitReturnStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitReturnStmt*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitReturnStmt_Perlang_Stmt_Return_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitReturnStmt(Perlang.Stmt.Return)">VisitReturnStmt(Stmt.Return)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitReturnStmt_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitReturnStmt*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitReturnStmt_Perlang_Stmt_Return_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitReturnStmt(Perlang.Stmt.Return)">VisitReturnStmt(Stmt.Return)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1532,13 +1532,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitUnaryPostfixExpr_Perlang_Expr_UnaryPostfix_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitUnaryPostfixExpr(Perlang.Expr.UnaryPostfix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitUnaryPostfixExpr_Perlang_Expr_UnaryPostfix_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitUnaryPostfixExpr(Perlang.Expr.UnaryPostfix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L291">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L292">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitUnaryPostfixExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitUnaryPostfixExpr*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitUnaryPostfixExpr_Perlang_Expr_UnaryPostfix_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitUnaryPostfixExpr(Perlang.Expr.UnaryPostfix)">VisitUnaryPostfixExpr(Expr.UnaryPostfix)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitUnaryPostfixExpr_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitUnaryPostfixExpr*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitUnaryPostfixExpr_Perlang_Expr_UnaryPostfix_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitUnaryPostfixExpr(Perlang.Expr.UnaryPostfix)">VisitUnaryPostfixExpr(Expr.UnaryPostfix)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1579,13 +1579,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitUnaryPrefixExpr_Perlang_Expr_UnaryPrefix_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitUnaryPrefixExpr(Perlang.Expr.UnaryPrefix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitUnaryPrefixExpr_Perlang_Expr_UnaryPrefix_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitUnaryPrefixExpr(Perlang.Expr.UnaryPrefix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L284">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L285">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitUnaryPrefixExpr_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitUnaryPrefixExpr*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitUnaryPrefixExpr_Perlang_Expr_UnaryPrefix_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitUnaryPrefixExpr(Perlang.Expr.UnaryPrefix)">VisitUnaryPrefixExpr(Expr.UnaryPrefix)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitUnaryPrefixExpr_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitUnaryPrefixExpr*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitUnaryPrefixExpr_Perlang_Expr_UnaryPrefix_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitUnaryPrefixExpr(Perlang.Expr.UnaryPrefix)">VisitUnaryPrefixExpr(Expr.UnaryPrefix)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1626,13 +1626,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitVarStmt_Perlang_Stmt_Var_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitVarStmt(Perlang.Stmt.Var)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitVarStmt_Perlang_Stmt_Var_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitVarStmt(Perlang.Stmt.Var)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L418">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L419">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitVarStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitVarStmt*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitVarStmt_Perlang_Stmt_Var_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitVarStmt(Perlang.Stmt.Var)">VisitVarStmt(Stmt.Var)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitVarStmt_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitVarStmt*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitVarStmt_Perlang_Stmt_Var_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitVarStmt(Perlang.Stmt.Var)">VisitVarStmt(Stmt.Var)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1673,13 +1673,13 @@ the variable to shadow variables in outer scopes with the same name.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver_VisitWhileStmt_Perlang_Stmt_While_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver.VisitWhileStmt(Perlang.Stmt.While)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver_VisitWhileStmt_Perlang_Stmt_While_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver.VisitWhileStmt(Perlang.Stmt.While)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L432">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L433">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_Resolver_VisitWhileStmt_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitWhileStmt*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_Resolver_VisitWhileStmt_Perlang_Stmt_While_" data-uid="Perlang.Interpreter.Resolution.Resolver.VisitWhileStmt(Perlang.Stmt.While)">VisitWhileStmt(Stmt.While)</h4>
+  <a id="Perlang_Interpreter_NameResolution_NameResolver_VisitWhileStmt_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitWhileStmt*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_NameResolver_VisitWhileStmt_Perlang_Stmt_While_" data-uid="Perlang.Interpreter.NameResolution.NameResolver.VisitWhileStmt(Perlang.Stmt.While)">VisitWhileStmt(Stmt.While)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1733,10 +1733,10 @@ the variable to shadow variables in outer scopes with the same name.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_Resolver.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.Resolver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_NameResolver.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.NameResolver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/Resolver.cs/#L16" class="contribution-link">View Source</a>
+                    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/NameResolver.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

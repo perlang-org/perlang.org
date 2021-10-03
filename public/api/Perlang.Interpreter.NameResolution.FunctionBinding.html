@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class VariableBinding
+    <title>Class FunctionBinding
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class VariableBinding
+    <meta name="title" content="Class FunctionBinding
    ">
     <meta name="generator" content="docfx 2.57.2.0">
     
@@ -72,64 +72,67 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Perlang.Interpreter.Resolution.VariableBinding">
+            <article class="content wrap" id="_content" data-uid="Perlang.Interpreter.NameResolution.FunctionBinding">
   
   
-  <h1 id="Perlang_Interpreter_Resolution_VariableBinding" data-uid="Perlang.Interpreter.Resolution.VariableBinding" class="text-break">Class VariableBinding
+  <h1 id="Perlang_Interpreter_NameResolution_FunctionBinding" data-uid="Perlang.Interpreter.NameResolution.FunctionBinding" class="text-break">Class FunctionBinding
   </h1>
-  <div class="markdown level0 summary"><p>A binding to a (local or global) variable.</p>
+  <div class="markdown level0 summary"><p>A binding to a function defined in Perlang.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="Perlang.Interpreter.Resolution.Binding.html">Binding</a></div>
-    <div class="level2"><span class="xref">VariableBinding</span></div>
+    <div class="level1"><a class="xref" href="Perlang.Interpreter.NameResolution.Binding.html">Binding</a></div>
+    <div class="level2"><span class="xref">FunctionBinding</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="Perlang.Interpreter.Resolution.IDistanceAwareBinding.html">IDistanceAwareBinding</a></div>
+    <div><a class="xref" href="Perlang.Interpreter.NameResolution.IDistanceAwareBinding.html">IDistanceAwareBinding</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="Perlang.Interpreter.Resolution.Binding.html#Perlang_Interpreter_Resolution_Binding_TypeReference">Binding.TypeReference</a>
+      <a class="xref" href="Perlang.Interpreter.NameResolution.Binding.html#Perlang_Interpreter_NameResolution_Binding_TypeReference">Binding.TypeReference</a>
     </div>
     <div>
-      <a class="xref" href="Perlang.Interpreter.Resolution.Binding.html#Perlang_Interpreter_Resolution_Binding_ReferringExpr">Binding.ReferringExpr</a>
+      <a class="xref" href="Perlang.Interpreter.NameResolution.Binding.html#Perlang_Interpreter_NameResolution_Binding_ReferringExpr">Binding.ReferringExpr</a>
     </div>
     <div>
-      <a class="xref" href="Perlang.Interpreter.Resolution.Binding.html#Perlang_Interpreter_Resolution_Binding_IsImmutable">Binding.IsImmutable</a>
+      <a class="xref" href="Perlang.Interpreter.NameResolution.Binding.html#Perlang_Interpreter_NameResolution_Binding_IsMutable">Binding.IsMutable</a>
     </div>
     <div>
-      <a class="xref" href="Perlang.Interpreter.Resolution.Binding.html#Perlang_Interpreter_Resolution_Binding_ObjectTypeTitleized">Binding.ObjectTypeTitleized</a>
+      <a class="xref" href="Perlang.Interpreter.NameResolution.Binding.html#Perlang_Interpreter_NameResolution_Binding_IsImmutable">Binding.IsImmutable</a>
     </div>
     <div>
-      <a class="xref" href="Perlang.Interpreter.Resolution.Binding.html#Perlang_Interpreter_Resolution_Binding_ToString">Binding.ToString()</a>
+      <a class="xref" href="Perlang.Interpreter.NameResolution.Binding.html#Perlang_Interpreter_NameResolution_Binding_ObjectTypeTitleized">Binding.ObjectTypeTitleized</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.Interpreter.NameResolution.Binding.html#Perlang_Interpreter_NameResolution_Binding_ToString">Binding.ToString()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.Interpreter.Resolution.html">Perlang.Interpreter.Resolution</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.Interpreter.NameResolution.html">Perlang.Interpreter.NameResolution</a></h6>
   <h6><strong>Assembly</strong>: Perlang.Interpreter.dll</h6>
-  <h5 id="Perlang_Interpreter_Resolution_VariableBinding_syntax">Syntax</h5>
+  <h5 id="Perlang_Interpreter_NameResolution_FunctionBinding_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">class VariableBinding : Binding, IDistanceAwareBinding</code></pre>
+    <pre><code class="lang-csharp hljs">class FunctionBinding : Binding, IDistanceAwareBinding</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_VariableBinding__ctor_Perlang_ITypeReference_System_Int32_Perlang_Expr_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.VariableBinding.%23ctor(Perlang.ITypeReference%2CSystem.Int32%2CPerlang.Expr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_FunctionBinding__ctor_Perlang_Stmt_Function_Perlang_ITypeReference_System_Int32_Perlang_Expr_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.FunctionBinding.%23ctor(Perlang.Stmt.Function%2CPerlang.ITypeReference%2CSystem.Int32%2CPerlang.Expr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/VariableBinding.cs/#L14">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/FunctionBinding.cs/#L13">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_VariableBinding__ctor_" data-uid="Perlang.Interpreter.Resolution.VariableBinding.#ctor*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_VariableBinding__ctor_Perlang_ITypeReference_System_Int32_Perlang_Expr_" data-uid="Perlang.Interpreter.Resolution.VariableBinding.#ctor(Perlang.ITypeReference,System.Int32,Perlang.Expr)">VariableBinding(ITypeReference, Int32, Expr)</h4>
+  <a id="Perlang_Interpreter_NameResolution_FunctionBinding__ctor_" data-uid="Perlang.Interpreter.NameResolution.FunctionBinding.#ctor*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_FunctionBinding__ctor_Perlang_Stmt_Function_Perlang_ITypeReference_System_Int32_Perlang_Expr_" data-uid="Perlang.Interpreter.NameResolution.FunctionBinding.#ctor(Perlang.Stmt.Function,Perlang.ITypeReference,System.Int32,Perlang.Expr)">FunctionBinding(Stmt.Function, ITypeReference, Int32, Expr)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public VariableBinding(ITypeReference typeReference, int distance, Expr referringExpr)</code></pre>
+    <pre><code class="lang-csharp hljs">public FunctionBinding(Stmt.Function function, ITypeReference typeReference, int distance, Expr referringExpr)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -141,6 +144,11 @@
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.Function.html">Stmt.Function</a></td>
+        <td><span class="parametername">function</span></td>
+        <td></td>
+      </tr>
       <tr>
         <td><a class="xref" href="Perlang.ITypeReference.html">ITypeReference</a></td>
         <td><span class="parametername">typeReference</span></td>
@@ -162,13 +170,13 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_VariableBinding_Distance.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.VariableBinding.Distance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_FunctionBinding_Distance.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.FunctionBinding.Distance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/VariableBinding.cs/#L9">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/FunctionBinding.cs/#L8">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_VariableBinding_Distance_" data-uid="Perlang.Interpreter.Resolution.VariableBinding.Distance*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_VariableBinding_Distance" data-uid="Perlang.Interpreter.Resolution.VariableBinding.Distance">Distance</h4>
+  <a id="Perlang_Interpreter_NameResolution_FunctionBinding_Distance_" data-uid="Perlang.Interpreter.NameResolution.FunctionBinding.Distance*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_FunctionBinding_Distance" data-uid="Perlang.Interpreter.NameResolution.FunctionBinding.Distance">Distance</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -192,18 +200,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_VariableBinding_IsMutable.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.VariableBinding.IsMutable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_FunctionBinding_Function.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.FunctionBinding.Function%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/VariableBinding.cs/#L12">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/FunctionBinding.cs/#L9">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_VariableBinding_IsMutable_" data-uid="Perlang.Interpreter.Resolution.VariableBinding.IsMutable*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_VariableBinding_IsMutable" data-uid="Perlang.Interpreter.Resolution.VariableBinding.IsMutable">IsMutable</h4>
+  <a id="Perlang_Interpreter_NameResolution_FunctionBinding_Function_" data-uid="Perlang.Interpreter.NameResolution.FunctionBinding.Function*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_FunctionBinding_Function" data-uid="Perlang.Interpreter.NameResolution.FunctionBinding.Function">Function</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool IsMutable { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Stmt.Function Function { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -215,22 +223,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
+        <td><a class="xref" href="Perlang.Stmt.Function.html">Stmt.Function</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Perlang.Interpreter.Resolution.Binding.html#Perlang_Interpreter_Resolution_Binding_IsMutable">Binding.IsMutable</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_VariableBinding_ObjectType.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.VariableBinding.ObjectType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_FunctionBinding_ObjectType.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.FunctionBinding.ObjectType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/VariableBinding.cs/#L11">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/FunctionBinding.cs/#L11">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Resolution_VariableBinding_ObjectType_" data-uid="Perlang.Interpreter.Resolution.VariableBinding.ObjectType*"></a>
-  <h4 id="Perlang_Interpreter_Resolution_VariableBinding_ObjectType" data-uid="Perlang.Interpreter.Resolution.VariableBinding.ObjectType">ObjectType</h4>
+  <a id="Perlang_Interpreter_NameResolution_FunctionBinding_ObjectType_" data-uid="Perlang.Interpreter.NameResolution.FunctionBinding.ObjectType*"></a>
+  <h4 id="Perlang_Interpreter_NameResolution_FunctionBinding_ObjectType" data-uid="Perlang.Interpreter.NameResolution.FunctionBinding.ObjectType">ObjectType</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -253,10 +259,10 @@
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Perlang.Interpreter.Resolution.Binding.html#Perlang_Interpreter_Resolution_Binding_ObjectType">Binding.ObjectType</a></div>
+  <div><a class="xref" href="Perlang.Interpreter.NameResolution.Binding.html#Perlang_Interpreter_NameResolution_Binding_ObjectType">Binding.ObjectType</a></div>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="Perlang.Interpreter.Resolution.IDistanceAwareBinding.html">IDistanceAwareBinding</a>
+      <a class="xref" href="Perlang.Interpreter.NameResolution.IDistanceAwareBinding.html">IDistanceAwareBinding</a>
   </div>
 </article>
           </div>
@@ -266,10 +272,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Resolution_VariableBinding.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Resolution.VariableBinding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_NameResolution_FunctionBinding.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.NameResolution.FunctionBinding%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/c15d707298705c4add16250376ff4f05fe932cc8/src/Perlang.Interpreter/Resolution/VariableBinding.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/NameResolution/FunctionBinding.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
