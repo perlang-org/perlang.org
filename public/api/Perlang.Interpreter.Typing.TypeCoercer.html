@@ -89,59 +89,28 @@
   <h6><strong>Assembly</strong>: Perlang.Interpreter.dll</h6>
   <h5 id="Perlang_Interpreter_Typing_TypeCoercer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TypeCoercer : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class TypeCoercer : object</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypeCoercer__ctor_Action_Perlang_Parser_CompilerWarning__.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypeCoercer.%23ctor(Action%7BPerlang.Parser.CompilerWarning%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypeCoercer_SignedIntegerLengthByType.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypeCoercer.SignedIntegerLengthByType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/Typing/TypeCoercer.cs/#L13">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/e6cb003de265cffe12734ae96ac18285be7efcd1/src/Perlang.Interpreter/Typing/TypeCoercer.cs/#L13">View Source</a>
   </span>
-  <a id="Perlang_Interpreter_Typing_TypeCoercer__ctor_" data-uid="Perlang.Interpreter.Typing.TypeCoercer.#ctor*"></a>
-  <h4 id="Perlang_Interpreter_Typing_TypeCoercer__ctor_Action_Perlang_Parser_CompilerWarning__" data-uid="Perlang.Interpreter.Typing.TypeCoercer.#ctor(Action{Perlang.Parser.CompilerWarning})">TypeCoercer(Action&lt;CompilerWarning&gt;)</h4>
+  <a id="Perlang_Interpreter_Typing_TypeCoercer_SignedIntegerLengthByType_" data-uid="Perlang.Interpreter.Typing.TypeCoercer.SignedIntegerLengthByType*"></a>
+  <h4 id="Perlang_Interpreter_Typing_TypeCoercer_SignedIntegerLengthByType" data-uid="Perlang.Interpreter.Typing.TypeCoercer.SignedIntegerLengthByType">SignedIntegerLengthByType</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TypeCoercer(Action&lt;CompilerWarning&gt; compilerWarningCallback)</code></pre>
+    <pre><code class="lang-csharp hljs">static ImmutableDictionary&lt;Type, int?&gt; SignedIntegerLengthByType
+{
+}</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Parser.CompilerWarning.html">CompilerWarning</a>&gt;</td>
-        <td><span class="parametername">compilerWarningCallback</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="fields">Fields
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypeCoercer_compilerWarningCallback.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypeCoercer.compilerWarningCallback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/Typing/TypeCoercer.cs/#L11">View Source</a>
-  </span>
-  <h4 id="Perlang_Interpreter_Typing_TypeCoercer_compilerWarningCallback" data-uid="Perlang.Interpreter.Typing.TypeCoercer.compilerWarningCallback">compilerWarningCallback</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">readonly Action&lt;CompilerWarning&gt; compilerWarningCallback</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -151,7 +120,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Parser.CompilerWarning.html">CompilerWarning</a>&gt;</td>
+        <td><span class="xref">ImmutableDictionary</span>&lt;<span class="xref">Type</span>, <span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -160,13 +129,13 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Perlang_Token_Perlang_ITypeReference_Perlang_ITypeReference_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token%2CPerlang.ITypeReference%2CPerlang.ITypeReference)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Perlang_ITypeReference_Perlang_ITypeReference_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.ITypeReference%2CPerlang.ITypeReference)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/Typing/TypeCoercer.cs/#L33">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/e6cb003de265cffe12734ae96ac18285be7efcd1/src/Perlang.Interpreter/Typing/TypeCoercer.cs/#L32">View Source</a>
   </span>
   <a id="Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_" data-uid="Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto*"></a>
-  <h4 id="Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Perlang_Token_Perlang_ITypeReference_Perlang_ITypeReference_" data-uid="Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token,Perlang.ITypeReference,Perlang.ITypeReference)">CanBeCoercedInto(Token, ITypeReference, ITypeReference)</h4>
+  <h4 id="Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Perlang_ITypeReference_Perlang_ITypeReference_" data-uid="Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.ITypeReference,Perlang.ITypeReference)">CanBeCoercedInto(ITypeReference, ITypeReference)</h4>
   <div class="markdown level1 summary"><p>Determines if a value of <code data-dev-comment-type="paramref" class="paramref">sourceTypeReference</code> can be coerced into
 <code data-dev-comment-type="paramref" class="paramref">targetTypeReference</code>.</p>
 <p>The <code>source</code> and <code>target</code> concepts are important here. Sometimes values can be coerced in one direction
@@ -178,7 +147,7 @@ available.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanBeCoercedInto(Token token, ITypeReference targetTypeReference, ITypeReference sourceTypeReference)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool CanBeCoercedInto(ITypeReference targetTypeReference, ITypeReference sourceTypeReference)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -190,12 +159,6 @@ available.</p>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td><a class="xref" href="Perlang.Token.html">Token</a></td>
-        <td><span class="parametername">token</span></td>
-        <td><p>The approximate location of the source token (the token from which the <code data-dev-comment-type="paramref" class="paramref">sourceTypeReference</code> is derived).</p>
-</td>
-      </tr>
       <tr>
         <td><a class="xref" href="Perlang.ITypeReference.html">ITypeReference</a></td>
         <td><span class="parametername">targetTypeReference</span></td>
@@ -228,25 +191,25 @@ available.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Perlang_Token_Type_Type_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token%2CType%2CType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Type_Type_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Type%2CType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/Typing/TypeCoercer.cs/#L53">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/e6cb003de265cffe12734ae96ac18285be7efcd1/src/Perlang.Interpreter/Typing/TypeCoercer.cs/#L50">View Source</a>
   </span>
   <a id="Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_" data-uid="Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto*"></a>
-  <h4 id="Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Perlang_Token_Type_Type_" data-uid="Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token,Type,Type)">CanBeCoercedInto(Token, Type, Type)</h4>
+  <h4 id="Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Type_Type_" data-uid="Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Type,Type)">CanBeCoercedInto(Type, Type)</h4>
   <div class="markdown level1 summary"><p>Determines if a value of <code data-dev-comment-type="paramref" class="paramref">sourceType</code> can be coerced into
 <code data-dev-comment-type="paramref" class="paramref">targetType</code>.</p>
 <p>The <code>source</code> and <code>target</code> concepts are important here. Sometimes values can be coerced in one direction
 but not the other. For example, an <code>int</code> can be coerced to a <code>long</code>, but not the other way around
 (without an explicit type cast). The same goes for unsigned integer types; they can not be coerced to
-their signed counterpart (<code>uint</code> -&gt; <code>int</code>), but they can be coerced to a larger signed type if
-available.</p>
+their signed counterpart (e.g. <code>uint</code> -&gt; <code>int</code>), but they can be coerced to a larger signed type if
+available (e.g. <code>uint</code> to <code>long</code>).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool CanBeCoercedInto(Token token, Type targetType, Type sourceType)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool CanBeCoercedInto(Type targetType, Type sourceType)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -258,12 +221,6 @@ available.</p>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td><a class="xref" href="Perlang.Token.html">Token</a></td>
-        <td><span class="parametername">token</span></td>
-        <td><p>The approximate location of the source token (the token from which the <code data-dev-comment-type="paramref" class="paramref">sourceType</code> is derived).</p>
-</td>
-      </tr>
       <tr>
         <td><span class="xref">Type</span></td>
         <td><span class="parametername">targetType</span></td>
@@ -305,7 +262,7 @@ available.</p>
                     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Typing_TypeCoercer.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Typing.TypeCoercer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/9e62e0f2332f1ea743e89e806d733b1114e17c75/src/Perlang.Interpreter/Typing/TypeCoercer.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/perlang-org/perlang/blob/e6cb003de265cffe12734ae96ac18285be7efcd1/src/Perlang.Interpreter/Typing/TypeCoercer.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

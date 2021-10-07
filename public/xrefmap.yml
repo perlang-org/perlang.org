@@ -1863,15 +1863,15 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Extensions.DictionaryExtensions.TryGetObjectValue
   nameWithType: DictionaryExtensions.TryGetObjectValue
-- uid: Perlang.Interpreter.Extensions.DictionaryExtensions.TryGetObjectValue``1(IDictionary{System.String,``0},System.String,``0)
-  name: TryGetObjectValue<T>(IDictionary<String, T>, String, T)
-  href: api/Perlang.Interpreter.Extensions.DictionaryExtensions.html#Perlang_Interpreter_Extensions_DictionaryExtensions_TryGetObjectValue__1_IDictionary_System_String___0__System_String___0_
-  commentId: M:Perlang.Interpreter.Extensions.DictionaryExtensions.TryGetObjectValue``1(IDictionary{System.String,``0},System.String,``0)
-  name.vb: TryGetObjectValue(Of T)(IDictionary(Of String, T), String, T)
-  fullName: Perlang.Interpreter.Extensions.DictionaryExtensions.TryGetObjectValue<T>(IDictionary<System.String, T>, System.String, T)
-  fullName.vb: Perlang.Interpreter.Extensions.DictionaryExtensions.TryGetObjectValue(Of T)(IDictionary(Of System.String, T), System.String, T)
-  nameWithType: DictionaryExtensions.TryGetObjectValue<T>(IDictionary<String, T>, String, T)
-  nameWithType.vb: DictionaryExtensions.TryGetObjectValue(Of T)(IDictionary(Of String, T), String, T)
+- uid: Perlang.Interpreter.Extensions.DictionaryExtensions.TryGetObjectValue``2(IDictionary{``0,``1},``0,``1)
+  name: TryGetObjectValue<TKey, TValue>(IDictionary<TKey, TValue>, TKey, TValue)
+  href: api/Perlang.Interpreter.Extensions.DictionaryExtensions.html#Perlang_Interpreter_Extensions_DictionaryExtensions_TryGetObjectValue__2_IDictionary___0___1____0___1_
+  commentId: M:Perlang.Interpreter.Extensions.DictionaryExtensions.TryGetObjectValue``2(IDictionary{``0,``1},``0,``1)
+  name.vb: TryGetObjectValue(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, TValue)
+  fullName: Perlang.Interpreter.Extensions.DictionaryExtensions.TryGetObjectValue<TKey, TValue>(IDictionary<TKey, TValue>, TKey, TValue)
+  fullName.vb: Perlang.Interpreter.Extensions.DictionaryExtensions.TryGetObjectValue(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, TValue)
+  nameWithType: DictionaryExtensions.TryGetObjectValue<TKey, TValue>(IDictionary<TKey, TValue>, TKey, TValue)
+  nameWithType.vb: DictionaryExtensions.TryGetObjectValue(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey, TValue)
 - uid: Perlang.Interpreter.Extensions.DictionaryExtensions.TryGetStructValue*
   name: TryGetStructValue
   href: api/Perlang.Interpreter.Extensions.DictionaryExtensions.html#Perlang_Interpreter_Extensions_DictionaryExtensions_TryGetStructValue_
@@ -4103,6 +4103,22 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.PerlangInterpreter.ExecuteBlock
   nameWithType: PerlangInterpreter.ExecuteBlock
+- uid: Perlang.Interpreter.PerlangInterpreter.ExpandIntegerIfRequired(System.Nullable{System.Object},Perlang.ITypeReference)
+  name: ExpandIntegerIfRequired(Nullable<Object>, ITypeReference)
+  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_ExpandIntegerIfRequired_System_Nullable_System_Object__Perlang_ITypeReference_
+  commentId: M:Perlang.Interpreter.PerlangInterpreter.ExpandIntegerIfRequired(System.Nullable{System.Object},Perlang.ITypeReference)
+  name.vb: ExpandIntegerIfRequired(Nullable(Of Object), ITypeReference)
+  fullName: Perlang.Interpreter.PerlangInterpreter.ExpandIntegerIfRequired(System.Nullable<System.Object>, Perlang.ITypeReference)
+  fullName.vb: Perlang.Interpreter.PerlangInterpreter.ExpandIntegerIfRequired(System.Nullable(Of System.Object), Perlang.ITypeReference)
+  nameWithType: PerlangInterpreter.ExpandIntegerIfRequired(Nullable<Object>, ITypeReference)
+  nameWithType.vb: PerlangInterpreter.ExpandIntegerIfRequired(Nullable(Of Object), ITypeReference)
+- uid: Perlang.Interpreter.PerlangInterpreter.ExpandIntegerIfRequired*
+  name: ExpandIntegerIfRequired
+  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_ExpandIntegerIfRequired_
+  commentId: Overload:Perlang.Interpreter.PerlangInterpreter.ExpandIntegerIfRequired
+  isSpec: "True"
+  fullName: Perlang.Interpreter.PerlangInterpreter.ExpandIntegerIfRequired
+  nameWithType: PerlangInterpreter.ExpandIntegerIfRequired
 - uid: Perlang.Interpreter.PerlangInterpreter.globalClasses
   name: globalClasses
   href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_globalClasses
@@ -4837,15 +4853,15 @@ references:
   commentId: T:Perlang.Interpreter.Typing.TypeAssignmentValidator
   fullName: Perlang.Interpreter.Typing.TypeAssignmentValidator
   nameWithType: TypeAssignmentValidator
-- uid: Perlang.Interpreter.Typing.TypeAssignmentValidator.#ctor(Func{Perlang.Expr,Perlang.Interpreter.NameResolution.Binding},Action{Perlang.Interpreter.Typing.TypeValidationError},Action{Perlang.Parser.CompilerWarning})
-  name: TypeAssignmentValidator(Func<Expr, Binding>, Action<TypeValidationError>, Action<CompilerWarning>)
-  href: api/Perlang.Interpreter.Typing.TypeAssignmentValidator.html#Perlang_Interpreter_Typing_TypeAssignmentValidator__ctor_Func_Perlang_Expr_Perlang_Interpreter_NameResolution_Binding__Action_Perlang_Interpreter_Typing_TypeValidationError__Action_Perlang_Parser_CompilerWarning__
-  commentId: M:Perlang.Interpreter.Typing.TypeAssignmentValidator.#ctor(Func{Perlang.Expr,Perlang.Interpreter.NameResolution.Binding},Action{Perlang.Interpreter.Typing.TypeValidationError},Action{Perlang.Parser.CompilerWarning})
-  name.vb: TypeAssignmentValidator(Func(Of Expr, Binding), Action(Of TypeValidationError), Action(Of CompilerWarning))
-  fullName: Perlang.Interpreter.Typing.TypeAssignmentValidator.TypeAssignmentValidator(Func<Perlang.Expr, Perlang.Interpreter.NameResolution.Binding>, Action<Perlang.Interpreter.Typing.TypeValidationError>, Action<Perlang.Parser.CompilerWarning>)
-  fullName.vb: Perlang.Interpreter.Typing.TypeAssignmentValidator.TypeAssignmentValidator(Func(Of Perlang.Expr, Perlang.Interpreter.NameResolution.Binding), Action(Of Perlang.Interpreter.Typing.TypeValidationError), Action(Of Perlang.Parser.CompilerWarning))
-  nameWithType: TypeAssignmentValidator.TypeAssignmentValidator(Func<Expr, Binding>, Action<TypeValidationError>, Action<CompilerWarning>)
-  nameWithType.vb: TypeAssignmentValidator.TypeAssignmentValidator(Func(Of Expr, Binding), Action(Of TypeValidationError), Action(Of CompilerWarning))
+- uid: Perlang.Interpreter.Typing.TypeAssignmentValidator.#ctor(Func{Perlang.Expr,Perlang.Interpreter.NameResolution.Binding},Action{Perlang.Interpreter.Typing.TypeValidationError})
+  name: TypeAssignmentValidator(Func<Expr, Binding>, Action<TypeValidationError>)
+  href: api/Perlang.Interpreter.Typing.TypeAssignmentValidator.html#Perlang_Interpreter_Typing_TypeAssignmentValidator__ctor_Func_Perlang_Expr_Perlang_Interpreter_NameResolution_Binding__Action_Perlang_Interpreter_Typing_TypeValidationError__
+  commentId: M:Perlang.Interpreter.Typing.TypeAssignmentValidator.#ctor(Func{Perlang.Expr,Perlang.Interpreter.NameResolution.Binding},Action{Perlang.Interpreter.Typing.TypeValidationError})
+  name.vb: TypeAssignmentValidator(Func(Of Expr, Binding), Action(Of TypeValidationError))
+  fullName: Perlang.Interpreter.Typing.TypeAssignmentValidator.TypeAssignmentValidator(Func<Perlang.Expr, Perlang.Interpreter.NameResolution.Binding>, Action<Perlang.Interpreter.Typing.TypeValidationError>)
+  fullName.vb: Perlang.Interpreter.Typing.TypeAssignmentValidator.TypeAssignmentValidator(Func(Of Perlang.Expr, Perlang.Interpreter.NameResolution.Binding), Action(Of Perlang.Interpreter.Typing.TypeValidationError))
+  nameWithType: TypeAssignmentValidator.TypeAssignmentValidator(Func<Expr, Binding>, Action<TypeValidationError>)
+  nameWithType.vb: TypeAssignmentValidator.TypeAssignmentValidator(Func(Of Expr, Binding), Action(Of TypeValidationError))
 - uid: Perlang.Interpreter.Typing.TypeAssignmentValidator.#ctor*
   name: TypeAssignmentValidator
   href: api/Perlang.Interpreter.Typing.TypeAssignmentValidator.html#Perlang_Interpreter_Typing_TypeAssignmentValidator__ctor_
@@ -4875,12 +4891,6 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Typing.TypeAssignmentValidator.ReportErrors
   nameWithType: TypeAssignmentValidator.ReportErrors
-- uid: Perlang.Interpreter.Typing.TypeAssignmentValidator.typeCoercer
-  name: typeCoercer
-  href: api/Perlang.Interpreter.Typing.TypeAssignmentValidator.html#Perlang_Interpreter_Typing_TypeAssignmentValidator_typeCoercer
-  commentId: F:Perlang.Interpreter.Typing.TypeAssignmentValidator.typeCoercer
-  fullName: Perlang.Interpreter.Typing.TypeAssignmentValidator.typeCoercer
-  nameWithType: TypeAssignmentValidator.typeCoercer
 - uid: Perlang.Interpreter.Typing.TypeAssignmentValidator.typeValidationErrorCallback
   name: typeValidationErrorCallback
   href: api/Perlang.Interpreter.Typing.TypeAssignmentValidator.html#Perlang_Interpreter_Typing_TypeAssignmentValidator_typeValidationErrorCallback
@@ -4906,34 +4916,18 @@ references:
   commentId: T:Perlang.Interpreter.Typing.TypeCoercer
   fullName: Perlang.Interpreter.Typing.TypeCoercer
   nameWithType: TypeCoercer
-- uid: Perlang.Interpreter.Typing.TypeCoercer.#ctor(Action{Perlang.Parser.CompilerWarning})
-  name: TypeCoercer(Action<CompilerWarning>)
-  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer__ctor_Action_Perlang_Parser_CompilerWarning__
-  commentId: M:Perlang.Interpreter.Typing.TypeCoercer.#ctor(Action{Perlang.Parser.CompilerWarning})
-  name.vb: TypeCoercer(Action(Of CompilerWarning))
-  fullName: Perlang.Interpreter.Typing.TypeCoercer.TypeCoercer(Action<Perlang.Parser.CompilerWarning>)
-  fullName.vb: Perlang.Interpreter.Typing.TypeCoercer.TypeCoercer(Action(Of Perlang.Parser.CompilerWarning))
-  nameWithType: TypeCoercer.TypeCoercer(Action<CompilerWarning>)
-  nameWithType.vb: TypeCoercer.TypeCoercer(Action(Of CompilerWarning))
-- uid: Perlang.Interpreter.Typing.TypeCoercer.#ctor*
-  name: TypeCoercer
-  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer__ctor_
-  commentId: Overload:Perlang.Interpreter.Typing.TypeCoercer.#ctor
-  isSpec: "True"
-  fullName: Perlang.Interpreter.Typing.TypeCoercer.TypeCoercer
-  nameWithType: TypeCoercer.TypeCoercer
-- uid: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token,Perlang.ITypeReference,Perlang.ITypeReference)
-  name: CanBeCoercedInto(Token, ITypeReference, ITypeReference)
-  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Perlang_Token_Perlang_ITypeReference_Perlang_ITypeReference_
-  commentId: M:Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token,Perlang.ITypeReference,Perlang.ITypeReference)
-  fullName: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token, Perlang.ITypeReference, Perlang.ITypeReference)
-  nameWithType: TypeCoercer.CanBeCoercedInto(Token, ITypeReference, ITypeReference)
-- uid: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token,Type,Type)
-  name: CanBeCoercedInto(Token, Type, Type)
-  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Perlang_Token_Type_Type_
-  commentId: M:Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token,Type,Type)
-  fullName: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.Token, Type, Type)
-  nameWithType: TypeCoercer.CanBeCoercedInto(Token, Type, Type)
+- uid: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.ITypeReference,Perlang.ITypeReference)
+  name: CanBeCoercedInto(ITypeReference, ITypeReference)
+  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Perlang_ITypeReference_Perlang_ITypeReference_
+  commentId: M:Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.ITypeReference,Perlang.ITypeReference)
+  fullName: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.ITypeReference, Perlang.ITypeReference)
+  nameWithType: TypeCoercer.CanBeCoercedInto(ITypeReference, ITypeReference)
+- uid: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Type,Type)
+  name: CanBeCoercedInto(Type, Type)
+  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Type_Type_
+  commentId: M:Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Type,Type)
+  fullName: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Type, Type)
+  nameWithType: TypeCoercer.CanBeCoercedInto(Type, Type)
 - uid: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto*
   name: CanBeCoercedInto
   href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_
@@ -4941,12 +4935,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto
   nameWithType: TypeCoercer.CanBeCoercedInto
-- uid: Perlang.Interpreter.Typing.TypeCoercer.compilerWarningCallback
-  name: compilerWarningCallback
-  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_compilerWarningCallback
-  commentId: F:Perlang.Interpreter.Typing.TypeCoercer.compilerWarningCallback
-  fullName: Perlang.Interpreter.Typing.TypeCoercer.compilerWarningCallback
-  nameWithType: TypeCoercer.compilerWarningCallback
+- uid: Perlang.Interpreter.Typing.TypeCoercer.SignedIntegerLengthByType
+  name: SignedIntegerLengthByType
+  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_SignedIntegerLengthByType
+  commentId: P:Perlang.Interpreter.Typing.TypeCoercer.SignedIntegerLengthByType
+  fullName: Perlang.Interpreter.Typing.TypeCoercer.SignedIntegerLengthByType
+  nameWithType: TypeCoercer.SignedIntegerLengthByType
+- uid: Perlang.Interpreter.Typing.TypeCoercer.SignedIntegerLengthByType*
+  name: SignedIntegerLengthByType
+  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_SignedIntegerLengthByType_
+  commentId: Overload:Perlang.Interpreter.Typing.TypeCoercer.SignedIntegerLengthByType
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Typing.TypeCoercer.SignedIntegerLengthByType
+  nameWithType: TypeCoercer.SignedIntegerLengthByType
 - uid: Perlang.Interpreter.Typing.TypeResolver
   name: TypeResolver
   href: api/Perlang.Interpreter.Typing.TypeResolver.html
@@ -4969,25 +4970,25 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Typing.TypeResolver.TypeResolver
   nameWithType: TypeResolver.TypeResolver
+- uid: Perlang.Interpreter.Typing.TypeResolver.GetApproximateMaxValue(Type)
+  name: GetApproximateMaxValue(Type)
+  href: api/Perlang.Interpreter.Typing.TypeResolver.html#Perlang_Interpreter_Typing_TypeResolver_GetApproximateMaxValue_Type_
+  commentId: M:Perlang.Interpreter.Typing.TypeResolver.GetApproximateMaxValue(Type)
+  fullName: Perlang.Interpreter.Typing.TypeResolver.GetApproximateMaxValue(Type)
+  nameWithType: TypeResolver.GetApproximateMaxValue(Type)
+- uid: Perlang.Interpreter.Typing.TypeResolver.GetApproximateMaxValue*
+  name: GetApproximateMaxValue
+  href: api/Perlang.Interpreter.Typing.TypeResolver.html#Perlang_Interpreter_Typing_TypeResolver_GetApproximateMaxValue_
+  commentId: Overload:Perlang.Interpreter.Typing.TypeResolver.GetApproximateMaxValue
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Typing.TypeResolver.GetApproximateMaxValue
+  nameWithType: TypeResolver.GetApproximateMaxValue
 - uid: Perlang.Interpreter.Typing.TypeResolver.getIdentifierCallback
   name: getIdentifierCallback
   href: api/Perlang.Interpreter.Typing.TypeResolver.html#Perlang_Interpreter_Typing_TypeResolver_getIdentifierCallback
   commentId: F:Perlang.Interpreter.Typing.TypeResolver.getIdentifierCallback
   fullName: Perlang.Interpreter.Typing.TypeResolver.getIdentifierCallback
   nameWithType: TypeResolver.getIdentifierCallback
-- uid: Perlang.Interpreter.Typing.TypeResolver.GetMaxValue(Type)
-  name: GetMaxValue(Type)
-  href: api/Perlang.Interpreter.Typing.TypeResolver.html#Perlang_Interpreter_Typing_TypeResolver_GetMaxValue_Type_
-  commentId: M:Perlang.Interpreter.Typing.TypeResolver.GetMaxValue(Type)
-  fullName: Perlang.Interpreter.Typing.TypeResolver.GetMaxValue(Type)
-  nameWithType: TypeResolver.GetMaxValue(Type)
-- uid: Perlang.Interpreter.Typing.TypeResolver.GetMaxValue*
-  name: GetMaxValue
-  href: api/Perlang.Interpreter.Typing.TypeResolver.html#Perlang_Interpreter_Typing_TypeResolver_GetMaxValue_
-  commentId: Overload:Perlang.Interpreter.Typing.TypeResolver.GetMaxValue
-  isSpec: "True"
-  fullName: Perlang.Interpreter.Typing.TypeResolver.GetMaxValue
-  nameWithType: TypeResolver.GetMaxValue
 - uid: Perlang.Interpreter.Typing.TypeResolver.GreaterType(Perlang.ITypeReference,Perlang.ITypeReference)
   name: GreaterType(ITypeReference, ITypeReference)
   href: api/Perlang.Interpreter.Typing.TypeResolver.html#Perlang_Interpreter_Typing_TypeResolver_GreaterType_Perlang_ITypeReference_Perlang_ITypeReference_
@@ -5241,12 +5242,6 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Typing.TypesResolvedValidator.ReportErrors
   nameWithType: TypesResolvedValidator.ReportErrors
-- uid: Perlang.Interpreter.Typing.TypesResolvedValidator.typeCoercer
-  name: typeCoercer
-  href: api/Perlang.Interpreter.Typing.TypesResolvedValidator.html#Perlang_Interpreter_Typing_TypesResolvedValidator_typeCoercer
-  commentId: F:Perlang.Interpreter.Typing.TypesResolvedValidator.typeCoercer
-  fullName: Perlang.Interpreter.Typing.TypesResolvedValidator.typeCoercer
-  nameWithType: TypesResolvedValidator.typeCoercer
 - uid: Perlang.Interpreter.Typing.TypesResolvedValidator.typeValidationErrorCallback
   name: typeValidationErrorCallback
   href: api/Perlang.Interpreter.Typing.TypesResolvedValidator.html#Perlang_Interpreter_Typing_TypesResolvedValidator_typeValidationErrorCallback
