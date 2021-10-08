@@ -1913,19 +1913,19 @@ references:
   commentId: T:Perlang.Interpreter.Extensions.TypeExtensions
   fullName: Perlang.Interpreter.Extensions.TypeExtensions
   nameWithType: TypeExtensions
-- uid: Perlang.Interpreter.Extensions.TypeExtensions.IsAssignableTo(Type,Type)
-  name: IsAssignableTo(Type, Type)
-  href: api/Perlang.Interpreter.Extensions.TypeExtensions.html#Perlang_Interpreter_Extensions_TypeExtensions_IsAssignableTo_Type_Type_
-  commentId: M:Perlang.Interpreter.Extensions.TypeExtensions.IsAssignableTo(Type,Type)
-  fullName: Perlang.Interpreter.Extensions.TypeExtensions.IsAssignableTo(Type, Type)
-  nameWithType: TypeExtensions.IsAssignableTo(Type, Type)
-- uid: Perlang.Interpreter.Extensions.TypeExtensions.IsAssignableTo*
-  name: IsAssignableTo
-  href: api/Perlang.Interpreter.Extensions.TypeExtensions.html#Perlang_Interpreter_Extensions_TypeExtensions_IsAssignableTo_
-  commentId: Overload:Perlang.Interpreter.Extensions.TypeExtensions.IsAssignableTo
+- uid: Perlang.Interpreter.Extensions.TypeExtensions.ToTypeKeyword(Type)
+  name: ToTypeKeyword(Type)
+  href: api/Perlang.Interpreter.Extensions.TypeExtensions.html#Perlang_Interpreter_Extensions_TypeExtensions_ToTypeKeyword_Type_
+  commentId: M:Perlang.Interpreter.Extensions.TypeExtensions.ToTypeKeyword(Type)
+  fullName: Perlang.Interpreter.Extensions.TypeExtensions.ToTypeKeyword(Type)
+  nameWithType: TypeExtensions.ToTypeKeyword(Type)
+- uid: Perlang.Interpreter.Extensions.TypeExtensions.ToTypeKeyword*
+  name: ToTypeKeyword
+  href: api/Perlang.Interpreter.Extensions.TypeExtensions.html#Perlang_Interpreter_Extensions_TypeExtensions_ToTypeKeyword_
+  commentId: Overload:Perlang.Interpreter.Extensions.TypeExtensions.ToTypeKeyword
   isSpec: "True"
-  fullName: Perlang.Interpreter.Extensions.TypeExtensions.IsAssignableTo
-  nameWithType: TypeExtensions.IsAssignableTo
+  fullName: Perlang.Interpreter.Extensions.TypeExtensions.ToTypeKeyword
+  nameWithType: TypeExtensions.ToTypeKeyword
 - uid: Perlang.Interpreter.Immutability
   name: Perlang.Interpreter.Immutability
   href: api/Perlang.Interpreter.Immutability.html
