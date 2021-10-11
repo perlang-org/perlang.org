@@ -6399,6 +6399,24 @@ references:
   isSpec: "True"
   fullName: Perlang.Parser.Scanner.Advance
   nameWithType: Scanner.Advance
+- uid: Perlang.Parser.Scanner.Base
+  name: Scanner.Base
+  href: api/Perlang.Parser.Scanner.Base.html
+  commentId: T:Perlang.Parser.Scanner.Base
+  fullName: Perlang.Parser.Scanner.Base
+  nameWithType: Scanner.Base
+- uid: Perlang.Parser.Scanner.Base.DECIMAL
+  name: DECIMAL
+  href: api/Perlang.Parser.Scanner.Base.html#Perlang_Parser_Scanner_Base_DECIMAL
+  commentId: F:Perlang.Parser.Scanner.Base.DECIMAL
+  fullName: Perlang.Parser.Scanner.Base.DECIMAL
+  nameWithType: Scanner.Base.DECIMAL
+- uid: Perlang.Parser.Scanner.Base.HEXADECIMAL
+  name: HEXADECIMAL
+  href: api/Perlang.Parser.Scanner.Base.html#Perlang_Parser_Scanner_Base_HEXADECIMAL
+  commentId: F:Perlang.Parser.Scanner.Base.HEXADECIMAL
+  fullName: Perlang.Parser.Scanner.Base.HEXADECIMAL
+  nameWithType: Scanner.Base.HEXADECIMAL
 - uid: Perlang.Parser.Scanner.current
   name: current
   href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_current
@@ -6457,12 +6475,12 @@ references:
   isSpec: "True"
   fullName: Perlang.Parser.Scanner.IsAtEnd
   nameWithType: Scanner.IsAtEnd
-- uid: Perlang.Parser.Scanner.IsDigit(System.Char)
-  name: IsDigit(Char)
-  href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_IsDigit_System_Char_
-  commentId: M:Perlang.Parser.Scanner.IsDigit(System.Char)
-  fullName: Perlang.Parser.Scanner.IsDigit(System.Char)
-  nameWithType: Scanner.IsDigit(Char)
+- uid: Perlang.Parser.Scanner.IsDigit(System.Char,Perlang.Parser.Scanner.Base)
+  name: IsDigit(Char, Scanner.Base)
+  href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_IsDigit_System_Char_Perlang_Parser_Scanner_Base_
+  commentId: M:Perlang.Parser.Scanner.IsDigit(System.Char,Perlang.Parser.Scanner.Base)
+  fullName: Perlang.Parser.Scanner.IsDigit(System.Char, Perlang.Parser.Scanner.Base)
+  nameWithType: Scanner.IsDigit(Char, Scanner.Base)
 - uid: Perlang.Parser.Scanner.IsDigit*
   name: IsDigit
   href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_IsDigit_
