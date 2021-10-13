@@ -6423,6 +6423,12 @@ references:
   commentId: F:Perlang.Parser.Scanner.Base.HEXADECIMAL
   fullName: Perlang.Parser.Scanner.Base.HEXADECIMAL
   nameWithType: Scanner.Base.HEXADECIMAL
+- uid: Perlang.Parser.Scanner.Base.OCTAL
+  name: OCTAL
+  href: api/Perlang.Parser.Scanner.Base.html#Perlang_Parser_Scanner_Base_OCTAL
+  commentId: F:Perlang.Parser.Scanner.Base.OCTAL
+  fullName: Perlang.Parser.Scanner.Base.OCTAL
+  nameWithType: Scanner.Base.OCTAL
 - uid: Perlang.Parser.Scanner.current
   name: current
   href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_current
