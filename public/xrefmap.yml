@@ -6405,6 +6405,12 @@ references:
   commentId: T:Perlang.Parser.Scanner.Base
   fullName: Perlang.Parser.Scanner.Base
   nameWithType: Scanner.Base
+- uid: Perlang.Parser.Scanner.Base.BINARY
+  name: BINARY
+  href: api/Perlang.Parser.Scanner.Base.html#Perlang_Parser_Scanner_Base_BINARY
+  commentId: F:Perlang.Parser.Scanner.Base.BINARY
+  fullName: Perlang.Parser.Scanner.Base.BINARY
+  nameWithType: Scanner.Base.BINARY
 - uid: Perlang.Parser.Scanner.Base.DECIMAL
   name: DECIMAL
   href: api/Perlang.Parser.Scanner.Base.html#Perlang_Parser_Scanner_Base_DECIMAL
