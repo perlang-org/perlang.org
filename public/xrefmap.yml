@@ -6558,6 +6558,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Parser.Scanner.PeekNext
   nameWithType: Scanner.PeekNext
+- uid: Perlang.Parser.Scanner.RemoveUnderscores(System.String)
+  name: RemoveUnderscores(String)
+  href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_RemoveUnderscores_System_String_
+  commentId: M:Perlang.Parser.Scanner.RemoveUnderscores(System.String)
+  fullName: Perlang.Parser.Scanner.RemoveUnderscores(System.String)
+  nameWithType: Scanner.RemoveUnderscores(String)
+- uid: Perlang.Parser.Scanner.RemoveUnderscores*
+  name: RemoveUnderscores
+  href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_RemoveUnderscores_
+  commentId: Overload:Perlang.Parser.Scanner.RemoveUnderscores
+  isSpec: "True"
+  fullName: Perlang.Parser.Scanner.RemoveUnderscores
+  nameWithType: Scanner.RemoveUnderscores
 - uid: Perlang.Parser.Scanner.ReservedKeywords
   name: ReservedKeywords
   href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_ReservedKeywords
