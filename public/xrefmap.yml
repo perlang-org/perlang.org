@@ -1736,6 +1736,31 @@ references:
   isSpec: "True"
   fullName: Perlang.Expr.UnaryPrefix.Token
   nameWithType: Expr.UnaryPrefix.Token
+- uid: Perlang.Extensions
+  name: Perlang.Extensions
+  href: api/Perlang.Extensions.html
+  commentId: N:Perlang.Extensions
+  fullName: Perlang.Extensions
+  nameWithType: Perlang.Extensions
+- uid: Perlang.Extensions.TypeExtensions
+  name: TypeExtensions
+  href: api/Perlang.Extensions.TypeExtensions.html
+  commentId: T:Perlang.Extensions.TypeExtensions
+  fullName: Perlang.Extensions.TypeExtensions
+  nameWithType: TypeExtensions
+- uid: Perlang.Extensions.TypeExtensions.ToTypeKeyword(Type)
+  name: ToTypeKeyword(Type)
+  href: api/Perlang.Extensions.TypeExtensions.html#Perlang_Extensions_TypeExtensions_ToTypeKeyword_Type_
+  commentId: M:Perlang.Extensions.TypeExtensions.ToTypeKeyword(Type)
+  fullName: Perlang.Extensions.TypeExtensions.ToTypeKeyword(Type)
+  nameWithType: TypeExtensions.ToTypeKeyword(Type)
+- uid: Perlang.Extensions.TypeExtensions.ToTypeKeyword*
+  name: ToTypeKeyword
+  href: api/Perlang.Extensions.TypeExtensions.html#Perlang_Extensions_TypeExtensions_ToTypeKeyword_
+  commentId: Overload:Perlang.Extensions.TypeExtensions.ToTypeKeyword
+  isSpec: "True"
+  fullName: Perlang.Extensions.TypeExtensions.ToTypeKeyword
+  nameWithType: TypeExtensions.ToTypeKeyword
 - uid: Perlang.ICallable
   name: ICallable
   href: api/Perlang.ICallable.html
@@ -1907,25 +1932,6 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Extensions.TokenTypeExtensions.ToSourceString
   nameWithType: TokenTypeExtensions.ToSourceString
-- uid: Perlang.Interpreter.Extensions.TypeExtensions
-  name: TypeExtensions
-  href: api/Perlang.Interpreter.Extensions.TypeExtensions.html
-  commentId: T:Perlang.Interpreter.Extensions.TypeExtensions
-  fullName: Perlang.Interpreter.Extensions.TypeExtensions
-  nameWithType: TypeExtensions
-- uid: Perlang.Interpreter.Extensions.TypeExtensions.ToTypeKeyword(Type)
-  name: ToTypeKeyword(Type)
-  href: api/Perlang.Interpreter.Extensions.TypeExtensions.html#Perlang_Interpreter_Extensions_TypeExtensions_ToTypeKeyword_Type_
-  commentId: M:Perlang.Interpreter.Extensions.TypeExtensions.ToTypeKeyword(Type)
-  fullName: Perlang.Interpreter.Extensions.TypeExtensions.ToTypeKeyword(Type)
-  nameWithType: TypeExtensions.ToTypeKeyword(Type)
-- uid: Perlang.Interpreter.Extensions.TypeExtensions.ToTypeKeyword*
-  name: ToTypeKeyword
-  href: api/Perlang.Interpreter.Extensions.TypeExtensions.html#Perlang_Interpreter_Extensions_TypeExtensions_ToTypeKeyword_
-  commentId: Overload:Perlang.Interpreter.Extensions.TypeExtensions.ToTypeKeyword
-  isSpec: "True"
-  fullName: Perlang.Interpreter.Extensions.TypeExtensions.ToTypeKeyword
-  nameWithType: TypeExtensions.ToTypeKeyword
 - uid: Perlang.Interpreter.Immutability
   name: Perlang.Interpreter.Immutability
   href: api/Perlang.Interpreter.Immutability.html
@@ -5418,6 +5424,12 @@ references:
   commentId: T:Perlang.Interpreter.ValidationErrorHandler
   fullName: Perlang.Interpreter.ValidationErrorHandler
   nameWithType: ValidationErrorHandler
+- uid: Perlang.IPerlangFunction
+  name: IPerlangFunction
+  href: api/Perlang.IPerlangFunction.html
+  commentId: T:Perlang.IPerlangFunction
+  fullName: Perlang.IPerlangFunction
+  nameWithType: IPerlangFunction
 - uid: Perlang.ITokenAware
   name: ITokenAware
   href: api/Perlang.ITokenAware.html
