@@ -4976,12 +4976,15 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Typing.TypeResolver.TypeResolver
   nameWithType: TypeResolver.TypeResolver
-- uid: Perlang.Interpreter.Typing.TypeResolver.GetApproximateMaxValue(Type)
-  name: GetApproximateMaxValue(Type)
-  href: api/Perlang.Interpreter.Typing.TypeResolver.html#Perlang_Interpreter_Typing_TypeResolver_GetApproximateMaxValue_Type_
-  commentId: M:Perlang.Interpreter.Typing.TypeResolver.GetApproximateMaxValue(Type)
-  fullName: Perlang.Interpreter.Typing.TypeResolver.GetApproximateMaxValue(Type)
-  nameWithType: TypeResolver.GetApproximateMaxValue(Type)
+- uid: Perlang.Interpreter.Typing.TypeResolver.GetApproximateMaxValue(System.Nullable{Type})
+  name: GetApproximateMaxValue(Nullable<Type>)
+  href: api/Perlang.Interpreter.Typing.TypeResolver.html#Perlang_Interpreter_Typing_TypeResolver_GetApproximateMaxValue_System_Nullable_Type__
+  commentId: M:Perlang.Interpreter.Typing.TypeResolver.GetApproximateMaxValue(System.Nullable{Type})
+  name.vb: GetApproximateMaxValue(Nullable(Of Type))
+  fullName: Perlang.Interpreter.Typing.TypeResolver.GetApproximateMaxValue(System.Nullable<Type>)
+  fullName.vb: Perlang.Interpreter.Typing.TypeResolver.GetApproximateMaxValue(System.Nullable(Of Type))
+  nameWithType: TypeResolver.GetApproximateMaxValue(Nullable<Type>)
+  nameWithType.vb: TypeResolver.GetApproximateMaxValue(Nullable(Of Type))
 - uid: Perlang.Interpreter.Typing.TypeResolver.GetApproximateMaxValue*
   name: GetApproximateMaxValue
   href: api/Perlang.Interpreter.Typing.TypeResolver.html#Perlang_Interpreter_Typing_TypeResolver_GetApproximateMaxValue_
