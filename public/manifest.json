@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Humanizer.InflectorExtensions.html",
-          "hash": "0klVQqdarC8qXUzKveg+0C1eJwwT7iMn3ETWrXyqPY4="
+          "hash": "rwP+FttRyvQzqKK84P1RclTawqNgkFvJ0qxAgOyoXRY="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Attributes.GlobalClassAttribute.html",
-          "hash": "RgySCkH6G24DQEadF9wUBu1kY6QpbqHGFdyfHhUWlQQ="
+          "hash": "9cjkfPY0nQw5hd3w48krV5iXSs2LEpsqgw/r/UzKrjY="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.CommonConstants.html",
-          "hash": "EWaIr/R79hHavaFrQeRU+NeyPw6FOYCOVsXbAi37YBw="
+          "hash": "8vGNspzqzNFjRf4qySi3rdswur6NRaIxQE4yB8c6etw="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.ConsoleApp.CommandResultExtensions.html",
-          "hash": "OBUdyvOMSPcHOgrfW+ZqfOhTH+0PQZnibuW6e4QFiV8="
+          "hash": "H3Cm9UNuffWHE0OnoMZvzzuBWZoTlb4e78e14A7hLu4="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.ConsoleApp.Program.AutoCompletionHandler.html",
-          "hash": "WphhUnTfs9PJisIdG+GehayfP19yNMzEWad6CfUOOak="
+          "hash": "xjffoUPq4VeqNUWG2m/otiPXz8dOLIddmUH1WgAljRU="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.ConsoleApp.Program.ExitCodes.html",
-          "hash": "UW12xmedTcZAAjO9pXPLkK9YUG56rbR7G3YydwAjiH0="
+          "hash": "qUanBozdHBYL8SleM9lTepDlw+PXVRDVpafwA8+0DsQ="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.ConsoleApp.Program.html",
-          "hash": "kUDzD4UGZLfCdgb4B369ZOAYIYSlCEenAMlMGcDMZDo="
+          "hash": "89jFwDuLUpXq91NOaajHwcdpW0Vhx+xSnuVWKBD2a0s="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Exceptions.IllegalStateException.html",
-          "hash": "wgtrDPLsFjMsWst5IkfiTxJWE1iphU98EzhgYOKLE3o="
+          "hash": "wzIgxA06CXWiyc0C2sr/B+W9xLtpxbMk2g2Y2AgisDE="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Exceptions.StdlibException.html",
-          "hash": "hUPdzgZKM8MKXIihAtBzHsnPOC8vOSym6FB+zvc31bM="
+          "hash": "LCWvSMpHMgvRphNMBIv5UM8I1ZbD/hYACX7kkjgD5Kg="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Expr.Assign.html",
-          "hash": "ZvhhvES4xcEjUHD0qMP3L1sfvQf+zpjsKtMuaXdTw10="
+          "hash": "gALVXPj+0X+o5npvy9QoVpXBejT2tbBrzZTyZJkckek="
         }
       },
       "is_incremental": false,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Expr.Binary.html",
-          "hash": "Ba1AFn26P8XTmsAcENtz/Oh7GEo01mrPPxH2ng2E78M="
+          "hash": "nhtPQF53owzDIr5a2UdILmtioIqb4DQy6ThwDVO3RfA="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Expr.Call.html",
-          "hash": "/UDOj4W4AysT0OtJgi12t3XseBc/GQk+5+GiC+/17uI="
+          "hash": "BARO/REI3fjpK2xHqb3nOzr75Bw43CtlFE8+TgpieOI="
         }
       },
       "is_incremental": false,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Expr.Empty.html",
-          "hash": "18XkaQSXoMwwLi+JSpnjpIxIPA1/8eYaYBRkfpjmMEE="
+          "hash": "Ii+2TUwQdPPHaf2hsg+EewujqUpAs0F2yBrYTRoG9o8="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Expr.Get.html",
-          "hash": "72z9VkgQPGzrDKFCbP0fUTpAdFyvg15ZG/7wkeGkqLo="
+          "hash": "PDG09tvsOCiiGEQF1Mt/zROl9sFkdT/TsfQuiFFFm0g="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Expr.Grouping.html",
-          "hash": "pZfZQvhycE6b5WDPawCKnOcldsXKd+snPCpPKJ4XLPc="
+          "hash": "nNd1Za7PoRZOQbQ0extZFBUQrXB6SW6lwYep3tGzS6Q="
         }
       },
       "is_incremental": false,
@@ -237,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Expr.IVisitor-1.html",
-          "hash": "JQJlmnE1XuNqzuv0bPpDyJPiXMQsmSPV1qCEfWE5SVU="
+          "hash": "xWs3wgRgQoQli28GEUJK5OUYfGZpAPyxOtyTPS1qj14="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Expr.Identifier.html",
-          "hash": "YNZWRMROZmgBpP1D1wYiAXK5cIVpCaB42OSiBdBVZC4="
+          "hash": "uFfPL9DkBZcH4RnX1m7in9Y2H8lE5GSag5IRJ0GolW8="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Expr.Literal.html",
-          "hash": "E8INCFaFrkjKu+Aj8rLiv5s/1FPlaC8xBO2IbD/jo2I="
+          "hash": "CMUMAPP4P3XfjOE9uxH47vsrAqc/M2CmZ5/ifYdtIfI="
         }
       },
       "is_incremental": false,
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Expr.Logical.html",
-          "hash": "GaSIoWS+MHOT02YovLHUd1nLVcGQ/JM6WYSfbyPkNMA="
+          "hash": "7IA8jJUlgysNHx2NdnoBwKnI2lCT+AwysqfkVYKGnjI="
         }
       },
       "is_incremental": false,
@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Expr.UnaryPostfix.html",
-          "hash": "eHrqOkXop+tjzgu8Dc47DdDJ3bXG+QeFxiA9rIkRTwo="
+          "hash": "lmpWgMKcC9ZiyrjoLivafHzDR6ZINizXhDMCjDHrIYM="
         }
       },
       "is_incremental": false,
@@ -297,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Expr.UnaryPrefix.html",
-          "hash": "Xskzvg4/HxDIr7bd+iIxb+EK8MA9xz9wLNmV1UZVQy0="
+          "hash": "0MQR/E1/CTeeHcNOiNQywo9o7jgbICm5qRvPDspAb/0="
         }
       },
       "is_incremental": false,
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Expr.html",
-          "hash": "NCo8nWdoMm6qhPpkupaw0/GOHVCKWl3N1kr5SEbEIqA="
+          "hash": "050blvnkhHUeVRPQ3LHA7K7vUPnFXhcDIGWJQW+/KSI="
         }
       },
       "is_incremental": false,
@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Extensions.TypeExtensions.html",
-          "hash": "B1vYWzMyo9/riFRluRvbTmHWk/XPz/oUMuw1Ybdpyig="
+          "hash": "e+RIu0r+VCvZlmWZOm6uQrDMjJjnjgrBQd07QH+WwiE="
         }
       },
       "is_incremental": false,
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.ICallable.html",
-          "hash": "IsEiaTKdUDtC/MBzD/L0D4NNgQkMVV69k+OibCHt2Ks="
+          "hash": "vrLNq7EXFblvg4rs1NMV1rCHyrR2l9C2cmFDKdcvKxw="
         }
       },
       "is_incremental": false,
@@ -357,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.IEnvironment.html",
-          "hash": "Q0Iu5MqzlIUn6wF14VdM9FzLr+6+TcBbta0k1uDSQ1g="
+          "hash": "kUicotkSEH+glpEmV2RprahIKe/k2PD3TmiajY0BGxY="
         }
       },
       "is_incremental": false,
@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.IInterpreter.html",
-          "hash": "LFu9GhdeKrXZgAgG2bYktkAqts60s06ulUJO54z0n7M="
+          "hash": "W7Elgf+oBFR+PfH2Bu+PItH6OqD1rAOIOaP58yrBoTo="
         }
       },
       "is_incremental": false,
@@ -381,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.IPerlangFunction.html",
-          "hash": "J5cc/tPVNaxMAoxoznbH5dyUcRI3CqXJuPUxV3v5kuI="
+          "hash": "ypEifLa1qKSA6oTMoNkFhK6rcxIAjL+lRf25QLwi1/s="
         }
       },
       "is_incremental": false,
@@ -393,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.ITokenAware.html",
-          "hash": "f/xHkw6KN4H1gEx2wEIZMm1EDJRZY48mA2pc3iD+DhU="
+          "hash": "1kd1FQMqCSdLzEf0+ZlDUgklxQK4s2Qa/4oqG/9I1Bg="
         }
       },
       "is_incremental": false,
@@ -405,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.ITypeReference.html",
-          "hash": "q5LvQzXVaNYh63AnnJiW3lSIUkn1RR/we9XhCPWGsAE="
+          "hash": "x7p/hciAJ3313Z2lw7zBMfsqcN/tAYcAUeSoOh/eEaY="
         }
       },
       "is_incremental": false,
@@ -417,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.Extensions.DictionaryExtensions.html",
-          "hash": "cnW9rDmK6dusel/p+PVSgT0GzNH3ELksdfgFUQTRCgY="
+          "hash": "Wj57ImR1LtfFx7n4pR7NEgaf8Cx6M9egbDyIXNLp+v4="
         }
       },
       "is_incremental": false,
@@ -429,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.Extensions.TokenTypeExtensions.html",
-          "hash": "6qLdRfMDOCAopfcjtuGSMgQlh5IFfvICs+HC8oagrq8="
+          "hash": "IxV+ju7pT1J92wZ3p7oDHoiW2IG3+9zanj1IT5BdTGw="
         }
       },
       "is_incremental": false,
@@ -453,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.Immutability.ImmutabilityValidationError.html",
-          "hash": "YnmIBx8MyI6xdX78DacbQjQBHCDQyQrPdwb7pXLJYR8="
+          "hash": "NVTG5AZ1DEwpw1GQbaeXsl3wZMn/j/+G8JqW4grI794="
         }
       },
       "is_incremental": false,
@@ -465,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.Immutability.ImmutabilityValidator.html",
-          "hash": "OOzY2E31EuzEFOgThc8qiYRzqYnLgASFP71P5+v9BXU="
+          "hash": "tIWJA+pgTtk6tD4nizvFt/aICDWSBeo+MhEg/bcIUec="
         }
       },
       "is_incremental": false,
@@ -489,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.Internals.AstPrinter.html",
-          "hash": "Nca12GF8H76Um6J4tJv1iOKJzAU0bMODZdK4ioUT370="
+          "hash": "pdBUopq2uVsnK4R8PLOWVsSFKwpR+yydtK6xWKiFRiM="
         }
       },
       "is_incremental": false,
@@ -501,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.Internals.BindingHandler.html",
-          "hash": "SPk17mHoSsiVkE2ij9gxxu1y0M8tRcGaKMIsGrBbWgc="
+          "hash": "sDoWRuLfbvRZc2ZHfYsq3PqrCmpkvnGrrmyImaLdF64="
         }
       },
       "is_incremental": false,
@@ -513,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.Internals.IBindingHandler.html",
-          "hash": "aRPX2PnjVVxDMjiesOcoNYHLmH49gffYgROwSAQGAWA="
+          "hash": "Li4m4fx39ioi+3+hstB9F6UWJgqbVzCdIr2zcwoueG0="
         }
       },
       "is_incremental": false,
@@ -537,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.NameResolution.Binding.html",
-          "hash": "2s2lSVd0IC1rhNYwFDWXhoZStHuxO+6nJ21EGYb4koU="
+          "hash": "1psFLfVajKP+TO/EeNnBC6YUU0vTIFBRWGG63Ld4xeM="
         }
       },
       "is_incremental": false,
@@ -549,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.NameResolution.ClassBinding.html",
-          "hash": "wOTxvWxCUSpv8b8fgtAGVsgzZf2f7ju4xN2ZS2NYDqI="
+          "hash": "/OgPMxDYQyr5cwiKSr+Jhi0S/hXFM9i8zFWOge56Zig="
         }
       },
       "is_incremental": false,
@@ -561,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.NameResolution.ClassBindingFactory.html",
-          "hash": "BGg7/EAqkKfm68BVjIGsK1k7mQ243Qnp2H66/wH5a2w="
+          "hash": "Tc4tfOP7mHjOwHmKKy583mrNJ/+508+8x+9fYDCiYXY="
         }
       },
       "is_incremental": false,
@@ -573,7 +573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.NameResolution.FunctionBinding.html",
-          "hash": "U5jdSETXCZgTe1mwWszYVM4fT7g/C1rPICxEYLcZBM0="
+          "hash": "3HfXHgAaKaM0Wh+GcP/5sV0kONkIEhir+d3eLgjnI2E="
         }
       },
       "is_incremental": false,
@@ -585,7 +585,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.NameResolution.FunctionBindingFactory.html",
-          "hash": "HPGiM1c4bce6wZZjn+c7kI+DlwI2uL5ZKAHk5+My81M="
+          "hash": "B8XF4cMNyVXL5acx7AocVRcaQ7DvqBIbTd8XYiBLrXo="
         }
       },
       "is_incremental": false,
@@ -597,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.NameResolution.IBindingFactory.html",
-          "hash": "QmmYe7qPNdeO4dNqhgLahBV348s4YbVJy1tcnwNQiKk="
+          "hash": "N+4bUze6+q040vSO46UTrWQkTL6PHhoA83Riqi8FdcA="
         }
       },
       "is_incremental": false,
@@ -609,7 +609,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.NameResolution.IDistanceAwareBinding.html",
-          "hash": "zsQsry5ecLqXOpX1nJAyjplYe9ynH3/EEeiH+hfQrFQ="
+          "hash": "E2FEXxqozo9ZZbdTz/Nt+R7lACtPmaMsrtTNjcGfro4="
         }
       },
       "is_incremental": false,
@@ -621,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.NameResolution.NameResolutionError.html",
-          "hash": "i/A7m/gbv4ejFuVb3tPQaMUhZVtwVgQ2j9krNhwOGR4="
+          "hash": "NHFlUNYOGAN0/3UxjsIVrUxh4R4wMZiQO7ula0F3j5w="
         }
       },
       "is_incremental": false,
@@ -633,7 +633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.NameResolution.NameResolver.FunctionType.html",
-          "hash": "OVvbMuPQa58lTqWIt8TvysiNKtQmnPFrvR38YlkD0QM="
+          "hash": "z3z8kYONtcCsD9Dw9esUUsZaYMY4U/jFJY6p960vIu4="
         }
       },
       "is_incremental": false,
@@ -645,7 +645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.NameResolution.NameResolver.html",
-          "hash": "PmSkOTQPryaL6c5aWLzLg4SHTzX3x090riYXHgs4PR8="
+          "hash": "tfKfBUp00bcbU9Febzgh+xFe9XgoEFFV76oS2u8LSss="
         }
       },
       "is_incremental": false,
@@ -657,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.NameResolution.NativeClassBinding.html",
-          "hash": "yQQIsPVkkq6CGrlW4aLM+ROE2kW4jZcsk1zbzbNSAHs="
+          "hash": "T6uEFKF4TP+eKdnmgsJcG+NFCkiojGZb/xHchAJdc8w="
         }
       },
       "is_incremental": false,
@@ -669,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.NameResolution.NativeClassBindingFactory.html",
-          "hash": "w0eVC+Oylkauxl4MaN1xgTX7fxyjid5zIqGPCLxA13U="
+          "hash": "b3znvjvxMWJPS/P/yuuw6oIk2kW1jHsfM5Hzwh+MbDU="
         }
       },
       "is_incremental": false,
@@ -681,7 +681,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.NameResolution.NativeObjectBinding.html",
-          "hash": "Qiw2Cceqm7hjxRh/ykpHzeaznysRhEon7wSamMS2E8A="
+          "hash": "BPnLi1/gey5Nxh8wNt6sB1HrmfINeO5qt9aaJ/6iCJo="
         }
       },
       "is_incremental": false,
@@ -693,7 +693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.NameResolution.NativeObjectBindingFactory.html",
-          "hash": "whcPfG4Pw37eK98v/zXOJNqZZOCpDfrGMQukDVtnJSY="
+          "hash": "GurN1yy7LAhJpyok14sDkh8yZMkzf+s+9pezT5XJeWA="
         }
       },
       "is_incremental": false,
@@ -705,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.NameResolution.VariableBinding.html",
-          "hash": "wsAljLlzRq53JWwG4AaYo7xxLI1xInsVXebpd5Ieo+g="
+          "hash": "3t/P7kqjEOXK72Q9VyT1djoJbXN7lxHVxFNnIM5vVqo="
         }
       },
       "is_incremental": false,
@@ -717,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.NameResolution.VariableBindingFactory.html",
-          "hash": "PFYGhYCoX7LV378G7Eh0I15vd7T7G9P59j05+7DyYm4="
+          "hash": "UPZpCRi7X1lmJNBhJIIJOax3Gfd3LldeaelWq6bNvds="
         }
       },
       "is_incremental": false,
@@ -741,7 +741,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.NameResolutionErrorHandler.html",
-          "hash": "qD5kfOLcRjAOIXS6L973GJr6eRLdZRdRfJHg91astoo="
+          "hash": "1rDgJSZQqliLZMz49ifRL8OZV2W7WhY9KYNXIYAiIcM="
         }
       },
       "is_incremental": false,
@@ -753,7 +753,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.PerlangEnvironment.html",
-          "hash": "rFElWexrDWgHkJrQJik/1yh3ymBQ23ehXsp1ix71Fjk="
+          "hash": "Zfy9w05Rgta18lvca+jBKFbczX62g4fEpQlat5oaRFA="
         }
       },
       "is_incremental": false,
@@ -765,7 +765,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.PerlangFunction.html",
-          "hash": "umcHBIFV3UsZaP1glsNWPGp+1sZnjZ/CM7Q4uou4CGY="
+          "hash": "zmRup0Ci1ZuugthFxmMleafVqRybNGBMhPcr4VkqTjs="
         }
       },
       "is_incremental": false,
@@ -777,7 +777,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.PerlangInterpreter.ScanAndParseResult.html",
-          "hash": "MrsHUv64pclOobr58HamNRF9Qlpz7Uqf5J/jdkKZ+Ak="
+          "hash": "2AcyEVuMsfjSQk4HZqNZds1ZbWgtyiLiW3s7xoVHfz8="
         }
       },
       "is_incremental": false,
@@ -789,7 +789,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.PerlangInterpreter.html",
-          "hash": "Bb3AKBw9J5n2EvwuzBqMro1hxKvHMbmSZc7BcBhlsKw="
+          "hash": "hjILu2kuVYoNvaRAAOlB4f+BvwiN63IxLxgPFUsN1m8="
         }
       },
       "is_incremental": false,
@@ -801,7 +801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.PerlangInterpreterException.html",
-          "hash": "uXayol3bzg0IvAgwohx99DIaHey86glN25uIH1ITXIY="
+          "hash": "Hpb19wY2exgaffsRkBeryEghsafNzFXyGDczTwjxaLY="
         }
       },
       "is_incremental": false,
@@ -813,7 +813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.Return.html",
-          "hash": "7BDl1AWanZWXmQzv6Vtd9j0o1GDEKTyYbEHeUXMhmo0="
+          "hash": "gSP/gRzAzxRXIsYyxUenxGT4yuKn96JLrss1ZWaJKtc="
         }
       },
       "is_incremental": false,
@@ -825,7 +825,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.TargetAndMethodContainer.html",
-          "hash": "Mbd8zOP5HEtSGuX8COO0zIbwjOukNUYkZkidOaMEp4U="
+          "hash": "xnBhM3GBt04ZeEMJ94hViXCyTYq5Ipgkl5VQfVrDMiA="
         }
       },
       "is_incremental": false,
@@ -837,7 +837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.Typing.NameResolutionTypeValidationError.html",
-          "hash": "/47DHu2OXkfy4X8exht4l7kRSbDuvTC6LOAXx1lccCM="
+          "hash": "GCfpNCf5DOCmD5O+kPJLmF5bM1gaxmozsDaWRo1K9fU="
         }
       },
       "is_incremental": false,
@@ -849,7 +849,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.Typing.TypeAssignmentValidator.html",
-          "hash": "dsjWf75UOSJe8H+us4qsf+44+cJY/oXBaxRORnofYjU="
+          "hash": "NGSxM/mUaIhHVegg2yJxMSBHJdvWc3algcf75cpntyc="
         }
       },
       "is_incremental": false,
@@ -861,7 +861,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.Typing.TypeCoercer.html",
-          "hash": "FroIIhqiGPKHJtQlot6rObxUiQa9yaWxRPOQe5BZ9nE="
+          "hash": "XdXNGfi3QcZIdLZmmp9yzX3p01ASS2U05ttzLmLyMDE="
         }
       },
       "is_incremental": false,
@@ -873,7 +873,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.Typing.TypeResolver.html",
-          "hash": "8P+7hx6KSs/xc46oVvjAxXDtwabUa4uduM4otc1h3uQ="
+          "hash": "awX2hgkWosazcwQj0uaAd/r4VFCuHvY/dgc4IGoCS+M="
         }
       },
       "is_incremental": false,
@@ -885,7 +885,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.Typing.TypeValidationError.html",
-          "hash": "KFoi0uC5jwIqMlzdzeeWjUbkw9bpaHcV9cr4yvrle60="
+          "hash": "vImiJP5DTgCmfBOPF0gK51dtyGhL255wPjaXYB9xWU8="
         }
       },
       "is_incremental": false,
@@ -897,7 +897,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.Typing.TypeValidator.html",
-          "hash": "uZXOELOHFTvX4G5RowMd16CBSebbElRn3M4+BnIp+SM="
+          "hash": "IaAfmCYqRT5oqlmReS1l5i7dMSZ1cIpJPi/7sv1XLyY="
         }
       },
       "is_incremental": false,
@@ -909,7 +909,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.Typing.TypesResolvedValidator.html",
-          "hash": "uYlnCyGcm7f1Unxo+AQblcA9h7vHaUzOn6c0rM0JQNI="
+          "hash": "3Hhr6Uq+aU6+Sn8X+QX0fjiLpPCRVQmDlrHlXeuMrnU="
         }
       },
       "is_incremental": false,
@@ -933,7 +933,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.ValidationError.html",
-          "hash": "6zFiL3JpVchgFaRQltzcXURThxCH3W1WZgnSZzWlcUw="
+          "hash": "MB4ykPZrJOH03RqGfC+jpQ0VCEn2klpBCjOFd9/rDy8="
         }
       },
       "is_incremental": false,
@@ -945,7 +945,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Interpreter.ValidationErrorHandler.html",
-          "hash": "PfL5/1xXRSFQxRMjYY+19xHvVG+L2slFDmawzsmxxIM="
+          "hash": "AkM+AVQqliCr6CT0GQuwA9B9EmufD8zfd405jgfHRYk="
         }
       },
       "is_incremental": false,
@@ -969,7 +969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.NullObject.html",
-          "hash": "d3vyB+sRcACcWQy6PRVhwY+kdCz24j55olvI5AMH8oQ="
+          "hash": "T58SKI8blx5U3yb3iz3wNPluC5zDxCZGlcepp1A2OAc="
         }
       },
       "is_incremental": false,
@@ -981,7 +981,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Parameter.html",
-          "hash": "+xdq4RwCk0SCasWFPV6k944YrKOvXw8ZU1x35zoPq+c="
+          "hash": "Ilr5h1PO+0V8e2kL2HKxdFXG1iBtKHN4F6qg+8zeDqI="
         }
       },
       "is_incremental": false,
@@ -993,7 +993,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Parser.CompilerWarning.html",
-          "hash": "EGoiGqvBBUfHNhazHlJo/brH405opAVUCkT4uqF7lzs="
+          "hash": "BYNgXnxY0noCrlLUVqRiUyYhdFckM8OEEXZg04sqj3U="
         }
       },
       "is_incremental": false,
@@ -1005,7 +1005,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Parser.CompilerWarningHandler.html",
-          "hash": "lb1BrKEuvn/RGcy5ZgeovtK2uhpSPjqANiboEy4AVME="
+          "hash": "a0yHIJX+X1oEoAiB1GSHtzHZ6mFtWKjW6maZJXWJywc="
         }
       },
       "is_incremental": false,
@@ -1017,7 +1017,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Parser.ParseError.html",
-          "hash": "RkDsdfeW+r7Y9aWz8Ff5N2Tvc/Ywtwc4WSTMczH8QOs="
+          "hash": "FqNuzO0lduQe1ZVQdpE4urFcS0otm2iqS2u/yMUKKWU="
         }
       },
       "is_incremental": false,
@@ -1029,7 +1029,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Parser.ParseErrorHandler.html",
-          "hash": "c1nJ+wlwUut1HlFkDSzcOjJtpVVZgnyrCRt+JNX/6Y8="
+          "hash": "9D3CGQ97FA9/9B2aC4UJ5zil7ufISvOjB4U/dNYB9Hc="
         }
       },
       "is_incremental": false,
@@ -1041,7 +1041,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Parser.ParseErrorType.html",
-          "hash": "4ez4H2lNiDyZwVVvbjXL75JaeiYQcozVJyFxZ00YIQs="
+          "hash": "tZqfxolZ4fCKipnPEG6Jsdu9n/DHTDgotUMLq3DBDGk="
         }
       },
       "is_incremental": false,
@@ -1053,7 +1053,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Parser.PerlangParser.InternalParseError.html",
-          "hash": "cJ8TQl83eFvrkWtb8jJOWacJorX/O5AmqrpcCqRaxos="
+          "hash": "slL2LaK0rbzph9A6wphXh88IarbgWzFQfmY2Yg8D56c="
         }
       },
       "is_incremental": false,
@@ -1065,7 +1065,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Parser.PerlangParser.html",
-          "hash": "3PzSdhFT4wAT/6Y7Xdmy4nQSLgxr/7RF7GzLAHqdwSk="
+          "hash": "mbCOI5D9UKaSD9F9kGL6ilBGyD4TgVQzynExPpezHqw="
         }
       },
       "is_incremental": false,
@@ -1077,7 +1077,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Parser.ScanError.html",
-          "hash": "MSsG4kekixlO1dvcLgkRs4szOElrdwCYn9TNNx7b78s="
+          "hash": "g9ZXDq5PxDoB/hS0d5gQEP/EgchhUmkW6wxYzb7RvBM="
         }
       },
       "is_incremental": false,
@@ -1089,7 +1089,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Parser.ScanErrorHandler.html",
-          "hash": "JHq9bGzEMAwLHY0WwRrg90EA+UxNUFRXI4LOK/dBZI8="
+          "hash": "lal0IMg08a8HUx/YZbyT/B4RDXvanOTMXAnC6fad/0U="
         }
       },
       "is_incremental": false,
@@ -1101,7 +1101,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Parser.Scanner.Base.html",
-          "hash": "VpdPhxx8q2DxIrT9FTTzlSOHqOJl1X61AT2og1CUsSA="
+          "hash": "ypmjbPN+4z6Q3TBy2nEKGfc1TWZZcm05pgGqvlfruVs="
         }
       },
       "is_incremental": false,
@@ -1113,7 +1113,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Parser.Scanner.html",
-          "hash": "NPYEMXZ9YchejFm44EdIL0IdjCpiF+7aM6GXWDQYlD0="
+          "hash": "IqtR3FZBc06+1VDwvAom77Jo+QA67NgMY0h+612RbE8="
         }
       },
       "is_incremental": false,
@@ -1125,7 +1125,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Parser.WarningType.html",
-          "hash": "sZvw/G7vXiyYEgSZAhmAb89uCHRsiUBeg+sAP3zyTo8="
+          "hash": "1xW6smubT9styB2pBr942d2FJFCHHw0YSxEbKP37KK0="
         }
       },
       "is_incremental": false,
@@ -1149,7 +1149,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.PerlangClass.html",
-          "hash": "P+vdXKj4agFSSkQdig/f9qT5QwoS2C8PpxnZqHMc7mU="
+          "hash": "CsaJF1oXFkrRvWlFf4vhwMftIPN7/Zkrz/CPiauiP2k="
         }
       },
       "is_incremental": false,
@@ -1161,7 +1161,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.RuntimeError.html",
-          "hash": "Va2l959vJXsmTi62MKUxMiAc0HCF7SI82hZg8SIlLqk="
+          "hash": "NDdwTN84Dc1XeKq2Buzg8kweW4D2BnsMKZsv9u+hpQ4="
         }
       },
       "is_incremental": false,
@@ -1173,7 +1173,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Stdlib.Argv.html",
-          "hash": "xmS9mr2rN/GYbN3zI9oGhFYK/b1bgRv8w1MWxrf/7S4="
+          "hash": "euqoUuVMNi4pS3dQ8B1vyDEliAQZxVxIJYd7GnDgtao="
         }
       },
       "is_incremental": false,
@@ -1185,7 +1185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Stdlib.Base64.html",
-          "hash": "/gGtOYnfiQy9C8JsXUN9hRwWWhdHOvHzuGQ/oa2qNA0="
+          "hash": "bHQGfiGLNItENTE80Wm4rN7womx1U+nm4R69urX/WJc="
         }
       },
       "is_incremental": false,
@@ -1197,7 +1197,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Stdlib.Time.html",
-          "hash": "7GMCkLMwRXFKnqJBNaO5QjEnAWJy01UQ2Il42yMTeKY="
+          "hash": "x/Ohr2akeFlbjf1WJrXn2XJE42aYMx2Aq8u/UpJFQro="
         }
       },
       "is_incremental": false,
@@ -1221,7 +1221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Stmt.Block.html",
-          "hash": "yaCXYvDkyip4EvyQjqID9ny8AK+T24Qe3Rf9/5GLqfk="
+          "hash": "KIkAIWssSG0Wlvyz4MSjSzWvO23U3NMpZi4uVUXlCBk="
         }
       },
       "is_incremental": false,
@@ -1233,7 +1233,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Stmt.Class.html",
-          "hash": "W8rPobQGCxXOssjX9uctrtM37O3SbxCHceAaZ0/Tgl4="
+          "hash": "qmWiU+SD4uNNSvprSw0heytiXovKnjqJ0MTAPVh90Pc="
         }
       },
       "is_incremental": false,
@@ -1245,7 +1245,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Stmt.ExpressionStmt.html",
-          "hash": "9B6Quxj0EMwza9t08sdMi9eMFPa7Pw3tTxy7ZfrLAqI="
+          "hash": "WJAeZX+IH/8/VdGqsPUhGslHKgpiV8loExRsNm/2Bvg="
         }
       },
       "is_incremental": false,
@@ -1257,7 +1257,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Stmt.Function.html",
-          "hash": "UDzWPF2+9213gW/PngP6sYHdgIgg8le8zbbNM/WkXZY="
+          "hash": "A3XhCpyGRHrev8MV+IJMlXgnMZGMag1JiG3kFzgWPvI="
         }
       },
       "is_incremental": false,
@@ -1269,7 +1269,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Stmt.IVisitor-1.html",
-          "hash": "8BVIZQTzn+Vued6wC9t1Q5DtYpcTkDHdlyew8f8eiDo="
+          "hash": "H19oHNCzdSc0ZjTkFw4MS7DF0GpMBfdD1moIeywUY9A="
         }
       },
       "is_incremental": false,
@@ -1281,7 +1281,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Stmt.If.html",
-          "hash": "6lheheJYB16J9es+eboIw2VhbulVqmyRGdrFBGqcUDM="
+          "hash": "mjqSmzMP62SmPFx/WlaIg+bO4yjFX5tEc7FTLG9Po34="
         }
       },
       "is_incremental": false,
@@ -1293,7 +1293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Stmt.Print.html",
-          "hash": "cLMIA5wg4yEaZKWySFQ7SQS7MhmwhZzzS0vJCInODyg="
+          "hash": "PijJNxKEfov+uf5OgLxR1aAELG1Zuq1uIMMbfD93nlk="
         }
       },
       "is_incremental": false,
@@ -1305,7 +1305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Stmt.Return.html",
-          "hash": "1HennP6KVdXo6aOseKZJEP+X7tDSHg5drOKatb96igE="
+          "hash": "lHy43sr4dZlDWG6BZ1jD2hP5le8iCwYsvYSL/1KE4Qs="
         }
       },
       "is_incremental": false,
@@ -1317,7 +1317,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Stmt.Var.html",
-          "hash": "ZntlB4UIW5cbVVE9qUFdT8OrHZCpNV6vqWnnrwWviTI="
+          "hash": "p6oAKGGdNqzwTAT7p6vzqeE4Z2JEAnvViKgWdWK9X2E="
         }
       },
       "is_incremental": false,
@@ -1329,7 +1329,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Stmt.While.html",
-          "hash": "VFcxD9aHhOMFuco2giAzvlpsNuvbXt7fx5JJx/DvO/4="
+          "hash": "wDYpVgV0d5b0R9mfs6C/Zgt8NTL4owI3miuoaqHLDqs="
         }
       },
       "is_incremental": false,
@@ -1341,7 +1341,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Stmt.html",
-          "hash": "u8JCqtJQv64Cy/vWT+sLH6PHEMZuySMqxnmfajCRb/E="
+          "hash": "F+y1crXfGTcU5Ir99xlL6LVnI9tDA086sx9dGL7JRUY="
         }
       },
       "is_incremental": false,
@@ -1353,7 +1353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Token.html",
-          "hash": "PpkKhtjZLxzpWZFbupYiz46DDLRZO/32evLhLtRBzQs="
+          "hash": "281H8xvk6YpKedQo6aWtjQzaP/twmzYADaQ2MyGbD/Y="
         }
       },
       "is_incremental": false,
@@ -1365,7 +1365,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.TokenType.html",
-          "hash": "Go8F7aZBjsBPGOm3U2Qhl4WhLT4wD9wXTZD5vZ1DOUQ="
+          "hash": "mFqQUxEFDvnG9vJwZIkYOgJ+A52I4Q8bxsxkvJbmGsE="
         }
       },
       "is_incremental": false,
@@ -1377,7 +1377,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.TypeReference.html",
-          "hash": "B+PbrQDkVDK5jG2uQUJC3K7enCdsxMPdDbqKSc+Nrsw="
+          "hash": "CB1g+bMWcegP/8qb1Z1jl5RRvKCz8u34txrilgUTt50="
         }
       },
       "is_incremental": false,
@@ -1389,7 +1389,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.Utils.html",
-          "hash": "oRlDm9pFBxMA8pfqnQox1+YblWpUQkxb36ivabf15TA="
+          "hash": "ywL9f9egjj8zOi5xg3XB209A9ohc5n+kbo4/Z9PsW1E="
         }
       },
       "is_incremental": false,
@@ -1401,7 +1401,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.VisitorBase.html",
-          "hash": "llln+keFxrxgVD2nJQSqKulPR3lHEzzOUe1HVkBNC50="
+          "hash": "To171Kieg6bozH9ZmqRPoPJS0ioBcb8Ouruxcqe2u7g="
         }
       },
       "is_incremental": false,
@@ -1413,7 +1413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Perlang.VoidObject.html",
-          "hash": "B6h/FMBGuJpMSwOpHZUAqkt9/3OoaqnzLOv6UrgU0Mc="
+          "hash": "gz5PSspeRveJUx26Mx3HZ8QJLdPTnc2poBTqQVrqGy8="
         }
       },
       "is_incremental": false,
