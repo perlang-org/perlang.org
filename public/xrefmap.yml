@@ -7918,6 +7918,12 @@ references:
   commentId: F:Perlang.TokenType.GREATER_EQUAL
   fullName: Perlang.TokenType.GREATER_EQUAL
   nameWithType: TokenType.GREATER_EQUAL
+- uid: Perlang.TokenType.GREATER_GREATER
+  name: GREATER_GREATER
+  href: api/Perlang.TokenType.html#Perlang_TokenType_GREATER_GREATER
+  commentId: F:Perlang.TokenType.GREATER_GREATER
+  fullName: Perlang.TokenType.GREATER_GREATER
+  nameWithType: TokenType.GREATER_GREATER
 - uid: Perlang.TokenType.IDENTIFIER
   name: IDENTIFIER
   href: api/Perlang.TokenType.html#Perlang_TokenType_IDENTIFIER
@@ -7954,6 +7960,12 @@ references:
   commentId: F:Perlang.TokenType.LESS_EQUAL
   fullName: Perlang.TokenType.LESS_EQUAL
   nameWithType: TokenType.LESS_EQUAL
+- uid: Perlang.TokenType.LESS_LESS
+  name: LESS_LESS
+  href: api/Perlang.TokenType.html#Perlang_TokenType_LESS_LESS
+  commentId: F:Perlang.TokenType.LESS_LESS
+  fullName: Perlang.TokenType.LESS_LESS
+  nameWithType: TokenType.LESS_LESS
 - uid: Perlang.TokenType.MINUS
   name: MINUS
   href: api/Perlang.TokenType.html#Perlang_TokenType_MINUS
