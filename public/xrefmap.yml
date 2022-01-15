@@ -6515,6 +6515,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Parser.Scanner.IsDigit
   nameWithType: Scanner.IsDigit
+- uid: Perlang.Parser.Scanner.IsUnderscore(System.Char)
+  name: IsUnderscore(Char)
+  href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_IsUnderscore_System_Char_
+  commentId: M:Perlang.Parser.Scanner.IsUnderscore(System.Char)
+  fullName: Perlang.Parser.Scanner.IsUnderscore(System.Char)
+  nameWithType: Scanner.IsUnderscore(Char)
+- uid: Perlang.Parser.Scanner.IsUnderscore*
+  name: IsUnderscore
+  href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_IsUnderscore_
+  commentId: Overload:Perlang.Parser.Scanner.IsUnderscore
+  isSpec: "True"
+  fullName: Perlang.Parser.Scanner.IsUnderscore
+  nameWithType: Scanner.IsUnderscore
 - uid: Perlang.Parser.Scanner.line
   name: line
   href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_line
