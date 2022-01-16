@@ -7847,12 +7847,12 @@ references:
   commentId: F:Perlang.TokenType.AMPERSAND
   fullName: Perlang.TokenType.AMPERSAND
   nameWithType: TokenType.AMPERSAND
-- uid: Perlang.TokenType.AND
-  name: AND
-  href: api/Perlang.TokenType.html#Perlang_TokenType_AND
-  commentId: F:Perlang.TokenType.AND
-  fullName: Perlang.TokenType.AND
-  nameWithType: TokenType.AND
+- uid: Perlang.TokenType.AMPERSAND_AMPERSAND
+  name: AMPERSAND_AMPERSAND
+  href: api/Perlang.TokenType.html#Perlang_TokenType_AMPERSAND_AMPERSAND
+  commentId: F:Perlang.TokenType.AMPERSAND_AMPERSAND
+  fullName: Perlang.TokenType.AMPERSAND_AMPERSAND
+  nameWithType: TokenType.AMPERSAND_AMPERSAND
 - uid: Perlang.TokenType.BANG
   name: BANG
   href: api/Perlang.TokenType.html#Perlang_TokenType_BANG
@@ -8027,18 +8027,24 @@ references:
   commentId: F:Perlang.TokenType.NUMBER
   fullName: Perlang.TokenType.NUMBER
   nameWithType: TokenType.NUMBER
-- uid: Perlang.TokenType.OR
-  name: OR
-  href: api/Perlang.TokenType.html#Perlang_TokenType_OR
-  commentId: F:Perlang.TokenType.OR
-  fullName: Perlang.TokenType.OR
-  nameWithType: TokenType.OR
 - uid: Perlang.TokenType.PERCENT
   name: PERCENT
   href: api/Perlang.TokenType.html#Perlang_TokenType_PERCENT
   commentId: F:Perlang.TokenType.PERCENT
   fullName: Perlang.TokenType.PERCENT
   nameWithType: TokenType.PERCENT
+- uid: Perlang.TokenType.PIPE
+  name: PIPE
+  href: api/Perlang.TokenType.html#Perlang_TokenType_PIPE
+  commentId: F:Perlang.TokenType.PIPE
+  fullName: Perlang.TokenType.PIPE
+  nameWithType: TokenType.PIPE
+- uid: Perlang.TokenType.PIPE_PIPE
+  name: PIPE_PIPE
+  href: api/Perlang.TokenType.html#Perlang_TokenType_PIPE_PIPE
+  commentId: F:Perlang.TokenType.PIPE_PIPE
+  fullName: Perlang.TokenType.PIPE_PIPE
+  nameWithType: TokenType.PIPE_PIPE
 - uid: Perlang.TokenType.PLUS
   name: PLUS
   href: api/Perlang.TokenType.html#Perlang_TokenType_PLUS
@@ -8159,12 +8165,6 @@ references:
   commentId: F:Perlang.TokenType.VAR
   fullName: Perlang.TokenType.VAR
   nameWithType: TokenType.VAR
-- uid: Perlang.TokenType.VERTICAL_BAR
-  name: VERTICAL_BAR
-  href: api/Perlang.TokenType.html#Perlang_TokenType_VERTICAL_BAR
-  commentId: F:Perlang.TokenType.VERTICAL_BAR
-  fullName: Perlang.TokenType.VERTICAL_BAR
-  nameWithType: TokenType.VERTICAL_BAR
 - uid: Perlang.TokenType.WHILE
   name: WHILE
   href: api/Perlang.TokenType.html#Perlang_TokenType_WHILE
