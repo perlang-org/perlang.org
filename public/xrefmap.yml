@@ -7841,6 +7841,12 @@ references:
   commentId: T:Perlang.TokenType
   fullName: Perlang.TokenType
   nameWithType: TokenType
+- uid: Perlang.TokenType.AMPERSAND
+  name: AMPERSAND
+  href: api/Perlang.TokenType.html#Perlang_TokenType_AMPERSAND
+  commentId: F:Perlang.TokenType.AMPERSAND
+  fullName: Perlang.TokenType.AMPERSAND
+  nameWithType: TokenType.AMPERSAND
 - uid: Perlang.TokenType.AND
   name: AND
   href: api/Perlang.TokenType.html#Perlang_TokenType_AND
@@ -7859,6 +7865,12 @@ references:
   commentId: F:Perlang.TokenType.BANG_EQUAL
   fullName: Perlang.TokenType.BANG_EQUAL
   nameWithType: TokenType.BANG_EQUAL
+- uid: Perlang.TokenType.CARET
+  name: CARET
+  href: api/Perlang.TokenType.html#Perlang_TokenType_CARET
+  commentId: F:Perlang.TokenType.CARET
+  fullName: Perlang.TokenType.CARET
+  nameWithType: TokenType.CARET
 - uid: Perlang.TokenType.COLON
   name: COLON
   href: api/Perlang.TokenType.html#Perlang_TokenType_COLON
@@ -7961,6 +7973,12 @@ references:
   commentId: F:Perlang.TokenType.LEFT_PAREN
   fullName: Perlang.TokenType.LEFT_PAREN
   nameWithType: TokenType.LEFT_PAREN
+- uid: Perlang.TokenType.LEFT_SQUARE_BRACKET
+  name: LEFT_SQUARE_BRACKET
+  href: api/Perlang.TokenType.html#Perlang_TokenType_LEFT_SQUARE_BRACKET
+  commentId: F:Perlang.TokenType.LEFT_SQUARE_BRACKET
+  fullName: Perlang.TokenType.LEFT_SQUARE_BRACKET
+  nameWithType: TokenType.LEFT_SQUARE_BRACKET
 - uid: Perlang.TokenType.LESS
   name: LESS
   href: api/Perlang.TokenType.html#Perlang_TokenType_LESS
@@ -8045,6 +8063,12 @@ references:
   commentId: F:Perlang.TokenType.PRINT
   fullName: Perlang.TokenType.PRINT
   nameWithType: TokenType.PRINT
+- uid: Perlang.TokenType.QUESTION_MARK
+  name: QUESTION_MARK
+  href: api/Perlang.TokenType.html#Perlang_TokenType_QUESTION_MARK
+  commentId: F:Perlang.TokenType.QUESTION_MARK
+  fullName: Perlang.TokenType.QUESTION_MARK
+  nameWithType: TokenType.QUESTION_MARK
 - uid: Perlang.TokenType.RESERVED_WORD
   name: RESERVED_WORD
   href: api/Perlang.TokenType.html#Perlang_TokenType_RESERVED_WORD
@@ -8069,12 +8093,24 @@ references:
   commentId: F:Perlang.TokenType.RIGHT_PAREN
   fullName: Perlang.TokenType.RIGHT_PAREN
   nameWithType: TokenType.RIGHT_PAREN
+- uid: Perlang.TokenType.RIGHT_SQUARE_BRACKET
+  name: RIGHT_SQUARE_BRACKET
+  href: api/Perlang.TokenType.html#Perlang_TokenType_RIGHT_SQUARE_BRACKET
+  commentId: F:Perlang.TokenType.RIGHT_SQUARE_BRACKET
+  fullName: Perlang.TokenType.RIGHT_SQUARE_BRACKET
+  nameWithType: TokenType.RIGHT_SQUARE_BRACKET
 - uid: Perlang.TokenType.SEMICOLON
   name: SEMICOLON
   href: api/Perlang.TokenType.html#Perlang_TokenType_SEMICOLON
   commentId: F:Perlang.TokenType.SEMICOLON
   fullName: Perlang.TokenType.SEMICOLON
   nameWithType: TokenType.SEMICOLON
+- uid: Perlang.TokenType.SINGLE_QUOTE
+  name: SINGLE_QUOTE
+  href: api/Perlang.TokenType.html#Perlang_TokenType_SINGLE_QUOTE
+  commentId: F:Perlang.TokenType.SINGLE_QUOTE
+  fullName: Perlang.TokenType.SINGLE_QUOTE
+  nameWithType: TokenType.SINGLE_QUOTE
 - uid: Perlang.TokenType.SLASH
   name: SLASH
   href: api/Perlang.TokenType.html#Perlang_TokenType_SLASH
@@ -8123,6 +8159,12 @@ references:
   commentId: F:Perlang.TokenType.VAR
   fullName: Perlang.TokenType.VAR
   nameWithType: TokenType.VAR
+- uid: Perlang.TokenType.VERTICAL_BAR
+  name: VERTICAL_BAR
+  href: api/Perlang.TokenType.html#Perlang_TokenType_VERTICAL_BAR
+  commentId: F:Perlang.TokenType.VERTICAL_BAR
+  fullName: Perlang.TokenType.VERTICAL_BAR
+  nameWithType: TokenType.VERTICAL_BAR
 - uid: Perlang.TokenType.WHILE
   name: WHILE
   href: api/Perlang.TokenType.html#Perlang_TokenType_WHILE
