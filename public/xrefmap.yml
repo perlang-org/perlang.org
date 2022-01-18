@@ -4169,22 +4169,6 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.PerlangInterpreter.IsEqual
   nameWithType: PerlangInterpreter.IsEqual
-- uid: Perlang.Interpreter.PerlangInterpreter.IsTruthy(System.Nullable{System.Object})
-  name: IsTruthy(Nullable<Object>)
-  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_IsTruthy_System_Nullable_System_Object__
-  commentId: M:Perlang.Interpreter.PerlangInterpreter.IsTruthy(System.Nullable{System.Object})
-  name.vb: IsTruthy(Nullable(Of Object))
-  fullName: Perlang.Interpreter.PerlangInterpreter.IsTruthy(System.Nullable<System.Object>)
-  fullName.vb: Perlang.Interpreter.PerlangInterpreter.IsTruthy(System.Nullable(Of System.Object))
-  nameWithType: PerlangInterpreter.IsTruthy(Nullable<Object>)
-  nameWithType.vb: PerlangInterpreter.IsTruthy(Nullable(Of Object))
-- uid: Perlang.Interpreter.PerlangInterpreter.IsTruthy*
-  name: IsTruthy
-  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_IsTruthy_
-  commentId: Overload:Perlang.Interpreter.PerlangInterpreter.IsTruthy
-  isSpec: "True"
-  fullName: Perlang.Interpreter.PerlangInterpreter.IsTruthy
-  nameWithType: PerlangInterpreter.IsTruthy
 - uid: Perlang.Interpreter.PerlangInterpreter.IsValidNumberType(System.Nullable{System.Object})
   name: IsValidNumberType(Nullable<Object>)
   href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_IsValidNumberType_System_Nullable_System_Object__
@@ -4834,6 +4818,67 @@ references:
   commentId: N:Perlang.Interpreter.Typing
   fullName: Perlang.Interpreter.Typing
   nameWithType: Perlang.Interpreter.Typing
+- uid: Perlang.Interpreter.Typing.BooleanOperandsValidator
+  name: BooleanOperandsValidator
+  href: api/Perlang.Interpreter.Typing.BooleanOperandsValidator.html
+  commentId: T:Perlang.Interpreter.Typing.BooleanOperandsValidator
+  fullName: Perlang.Interpreter.Typing.BooleanOperandsValidator
+  nameWithType: BooleanOperandsValidator
+- uid: Perlang.Interpreter.Typing.BooleanOperandsValidator.#ctor(Func{Perlang.Expr,Perlang.Interpreter.NameResolution.Binding},Action{Perlang.Interpreter.Typing.TypeValidationError})
+  name: BooleanOperandsValidator(Func<Expr, Binding>, Action<TypeValidationError>)
+  href: api/Perlang.Interpreter.Typing.BooleanOperandsValidator.html#Perlang_Interpreter_Typing_BooleanOperandsValidator__ctor_Func_Perlang_Expr_Perlang_Interpreter_NameResolution_Binding__Action_Perlang_Interpreter_Typing_TypeValidationError__
+  commentId: M:Perlang.Interpreter.Typing.BooleanOperandsValidator.#ctor(Func{Perlang.Expr,Perlang.Interpreter.NameResolution.Binding},Action{Perlang.Interpreter.Typing.TypeValidationError})
+  name.vb: BooleanOperandsValidator(Func(Of Expr, Binding), Action(Of TypeValidationError))
+  fullName: Perlang.Interpreter.Typing.BooleanOperandsValidator.BooleanOperandsValidator(Func<Perlang.Expr, Perlang.Interpreter.NameResolution.Binding>, Action<Perlang.Interpreter.Typing.TypeValidationError>)
+  fullName.vb: Perlang.Interpreter.Typing.BooleanOperandsValidator.BooleanOperandsValidator(Func(Of Perlang.Expr, Perlang.Interpreter.NameResolution.Binding), Action(Of Perlang.Interpreter.Typing.TypeValidationError))
+  nameWithType: BooleanOperandsValidator.BooleanOperandsValidator(Func<Expr, Binding>, Action<TypeValidationError>)
+  nameWithType.vb: BooleanOperandsValidator.BooleanOperandsValidator(Func(Of Expr, Binding), Action(Of TypeValidationError))
+- uid: Perlang.Interpreter.Typing.BooleanOperandsValidator.#ctor*
+  name: BooleanOperandsValidator
+  href: api/Perlang.Interpreter.Typing.BooleanOperandsValidator.html#Perlang_Interpreter_Typing_BooleanOperandsValidator__ctor_
+  commentId: Overload:Perlang.Interpreter.Typing.BooleanOperandsValidator.#ctor
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Typing.BooleanOperandsValidator.BooleanOperandsValidator
+  nameWithType: BooleanOperandsValidator.BooleanOperandsValidator
+- uid: Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitIfStmt(Perlang.Stmt.If)
+  name: VisitIfStmt(Stmt.If)
+  href: api/Perlang.Interpreter.Typing.BooleanOperandsValidator.html#Perlang_Interpreter_Typing_BooleanOperandsValidator_VisitIfStmt_Perlang_Stmt_If_
+  commentId: M:Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitIfStmt(Perlang.Stmt.If)
+  fullName: Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitIfStmt(Perlang.Stmt.If)
+  nameWithType: BooleanOperandsValidator.VisitIfStmt(Stmt.If)
+- uid: Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitIfStmt*
+  name: VisitIfStmt
+  href: api/Perlang.Interpreter.Typing.BooleanOperandsValidator.html#Perlang_Interpreter_Typing_BooleanOperandsValidator_VisitIfStmt_
+  commentId: Overload:Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitIfStmt
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitIfStmt
+  nameWithType: BooleanOperandsValidator.VisitIfStmt
+- uid: Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitLogicalExpr(Perlang.Expr.Logical)
+  name: VisitLogicalExpr(Expr.Logical)
+  href: api/Perlang.Interpreter.Typing.BooleanOperandsValidator.html#Perlang_Interpreter_Typing_BooleanOperandsValidator_VisitLogicalExpr_Perlang_Expr_Logical_
+  commentId: M:Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitLogicalExpr(Perlang.Expr.Logical)
+  fullName: Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitLogicalExpr(Perlang.Expr.Logical)
+  nameWithType: BooleanOperandsValidator.VisitLogicalExpr(Expr.Logical)
+- uid: Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitLogicalExpr*
+  name: VisitLogicalExpr
+  href: api/Perlang.Interpreter.Typing.BooleanOperandsValidator.html#Perlang_Interpreter_Typing_BooleanOperandsValidator_VisitLogicalExpr_
+  commentId: Overload:Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitLogicalExpr
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitLogicalExpr
+  nameWithType: BooleanOperandsValidator.VisitLogicalExpr
+- uid: Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitWhileStmt(Perlang.Stmt.While)
+  name: VisitWhileStmt(Stmt.While)
+  href: api/Perlang.Interpreter.Typing.BooleanOperandsValidator.html#Perlang_Interpreter_Typing_BooleanOperandsValidator_VisitWhileStmt_Perlang_Stmt_While_
+  commentId: M:Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitWhileStmt(Perlang.Stmt.While)
+  fullName: Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitWhileStmt(Perlang.Stmt.While)
+  nameWithType: BooleanOperandsValidator.VisitWhileStmt(Stmt.While)
+- uid: Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitWhileStmt*
+  name: VisitWhileStmt
+  href: api/Perlang.Interpreter.Typing.BooleanOperandsValidator.html#Perlang_Interpreter_Typing_BooleanOperandsValidator_VisitWhileStmt_
+  commentId: Overload:Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitWhileStmt
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Typing.BooleanOperandsValidator.VisitWhileStmt
+  nameWithType: BooleanOperandsValidator.VisitWhileStmt
 - uid: Perlang.Interpreter.Typing.NameResolutionTypeValidationError
   name: NameResolutionTypeValidationError
   href: api/Perlang.Interpreter.Typing.NameResolutionTypeValidationError.html
@@ -5122,6 +5167,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Typing.TypeResolver.VisitLiteralExpr
   nameWithType: TypeResolver.VisitLiteralExpr
+- uid: Perlang.Interpreter.Typing.TypeResolver.VisitLogicalExpr(Perlang.Expr.Logical)
+  name: VisitLogicalExpr(Expr.Logical)
+  href: api/Perlang.Interpreter.Typing.TypeResolver.html#Perlang_Interpreter_Typing_TypeResolver_VisitLogicalExpr_Perlang_Expr_Logical_
+  commentId: M:Perlang.Interpreter.Typing.TypeResolver.VisitLogicalExpr(Perlang.Expr.Logical)
+  fullName: Perlang.Interpreter.Typing.TypeResolver.VisitLogicalExpr(Perlang.Expr.Logical)
+  nameWithType: TypeResolver.VisitLogicalExpr(Expr.Logical)
+- uid: Perlang.Interpreter.Typing.TypeResolver.VisitLogicalExpr*
+  name: VisitLogicalExpr
+  href: api/Perlang.Interpreter.Typing.TypeResolver.html#Perlang_Interpreter_Typing_TypeResolver_VisitLogicalExpr_
+  commentId: Overload:Perlang.Interpreter.Typing.TypeResolver.VisitLogicalExpr
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Typing.TypeResolver.VisitLogicalExpr
+  nameWithType: TypeResolver.VisitLogicalExpr
 - uid: Perlang.Interpreter.Typing.TypeResolver.VisitUnaryPostfixExpr(Perlang.Expr.UnaryPostfix)
   name: VisitUnaryPostfixExpr(Expr.UnaryPostfix)
   href: api/Perlang.Interpreter.Typing.TypeResolver.html#Perlang_Interpreter_Typing_TypeResolver_VisitUnaryPostfixExpr_Perlang_Expr_UnaryPostfix_
