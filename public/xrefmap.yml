@@ -1869,6 +1869,69 @@ references:
   commentId: N:Perlang.Interpreter
   fullName: Perlang.Interpreter
   nameWithType: Perlang.Interpreter
+- uid: Perlang.Interpreter.CodeAnalysis
+  name: Perlang.Interpreter.CodeAnalysis
+  href: api/Perlang.Interpreter.CodeAnalysis.html
+  commentId: N:Perlang.Interpreter.CodeAnalysis
+  fullName: Perlang.Interpreter.CodeAnalysis
+  nameWithType: Perlang.Interpreter.CodeAnalysis
+- uid: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator
+  name: CodeAnalysisValidator
+  href: api/Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.html
+  commentId: T:Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator
+  fullName: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator
+  nameWithType: CodeAnalysisValidator
+- uid: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.#ctor(Action{Perlang.Parser.CompilerWarning})
+  name: CodeAnalysisValidator(Action<CompilerWarning>)
+  href: api/Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.html#Perlang_Interpreter_CodeAnalysis_CodeAnalysisValidator__ctor_Action_Perlang_Parser_CompilerWarning__
+  commentId: M:Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.#ctor(Action{Perlang.Parser.CompilerWarning})
+  name.vb: CodeAnalysisValidator(Action(Of CompilerWarning))
+  fullName: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.CodeAnalysisValidator(Action<Perlang.Parser.CompilerWarning>)
+  fullName.vb: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.CodeAnalysisValidator(Action(Of Perlang.Parser.CompilerWarning))
+  nameWithType: CodeAnalysisValidator.CodeAnalysisValidator(Action<CompilerWarning>)
+  nameWithType.vb: CodeAnalysisValidator.CodeAnalysisValidator(Action(Of CompilerWarning))
+- uid: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.#ctor*
+  name: CodeAnalysisValidator
+  href: api/Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.html#Perlang_Interpreter_CodeAnalysis_CodeAnalysisValidator__ctor_
+  commentId: Overload:Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.#ctor
+  isSpec: "True"
+  fullName: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.CodeAnalysisValidator
+  nameWithType: CodeAnalysisValidator.CodeAnalysisValidator
+- uid: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.compilerWarningCallback
+  name: compilerWarningCallback
+  href: api/Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.html#Perlang_Interpreter_CodeAnalysis_CodeAnalysisValidator_compilerWarningCallback
+  commentId: F:Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.compilerWarningCallback
+  fullName: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.compilerWarningCallback
+  nameWithType: CodeAnalysisValidator.compilerWarningCallback
+- uid: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.Validate(ImmutableList{Perlang.Stmt},Action{Perlang.Parser.CompilerWarning})
+  name: Validate(ImmutableList<Stmt>, Action<CompilerWarning>)
+  href: api/Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.html#Perlang_Interpreter_CodeAnalysis_CodeAnalysisValidator_Validate_ImmutableList_Perlang_Stmt__Action_Perlang_Parser_CompilerWarning__
+  commentId: M:Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.Validate(ImmutableList{Perlang.Stmt},Action{Perlang.Parser.CompilerWarning})
+  name.vb: Validate(ImmutableList(Of Stmt), Action(Of CompilerWarning))
+  fullName: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.Validate(ImmutableList<Perlang.Stmt>, Action<Perlang.Parser.CompilerWarning>)
+  fullName.vb: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.Validate(ImmutableList(Of Perlang.Stmt), Action(Of Perlang.Parser.CompilerWarning))
+  nameWithType: CodeAnalysisValidator.Validate(ImmutableList<Stmt>, Action<CompilerWarning>)
+  nameWithType.vb: CodeAnalysisValidator.Validate(ImmutableList(Of Stmt), Action(Of CompilerWarning))
+- uid: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.Validate*
+  name: Validate
+  href: api/Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.html#Perlang_Interpreter_CodeAnalysis_CodeAnalysisValidator_Validate_
+  commentId: Overload:Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.Validate
+  isSpec: "True"
+  fullName: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.Validate
+  nameWithType: CodeAnalysisValidator.Validate
+- uid: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.VisitLogicalExpr(Perlang.Expr.Logical)
+  name: VisitLogicalExpr(Expr.Logical)
+  href: api/Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.html#Perlang_Interpreter_CodeAnalysis_CodeAnalysisValidator_VisitLogicalExpr_Perlang_Expr_Logical_
+  commentId: M:Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.VisitLogicalExpr(Perlang.Expr.Logical)
+  fullName: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.VisitLogicalExpr(Perlang.Expr.Logical)
+  nameWithType: CodeAnalysisValidator.VisitLogicalExpr(Expr.Logical)
+- uid: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.VisitLogicalExpr*
+  name: VisitLogicalExpr
+  href: api/Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.html#Perlang_Interpreter_CodeAnalysis_CodeAnalysisValidator_VisitLogicalExpr_
+  commentId: Overload:Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.VisitLogicalExpr
+  isSpec: "True"
+  fullName: Perlang.Interpreter.CodeAnalysis.CodeAnalysisValidator.VisitLogicalExpr
+  nameWithType: CodeAnalysisValidator.VisitLogicalExpr
 - uid: Perlang.Interpreter.Extensions
   name: Perlang.Interpreter.Extensions
   href: api/Perlang.Interpreter.Extensions.html
@@ -6766,6 +6829,12 @@ references:
   commentId: F:Perlang.Parser.WarningType.AllWarnings
   fullName: Perlang.Parser.WarningType.AllWarnings
   nameWithType: WarningType.AllWarnings
+- uid: Perlang.Parser.WarningType.AMBIGUOUS_COMBINATION_OF_BOOLEAN_OPERATORS
+  name: AMBIGUOUS_COMBINATION_OF_BOOLEAN_OPERATORS
+  href: api/Perlang.Parser.WarningType.html#Perlang_Parser_WarningType_AMBIGUOUS_COMBINATION_OF_BOOLEAN_OPERATORS
+  commentId: F:Perlang.Parser.WarningType.AMBIGUOUS_COMBINATION_OF_BOOLEAN_OPERATORS
+  fullName: Perlang.Parser.WarningType.AMBIGUOUS_COMBINATION_OF_BOOLEAN_OPERATORS
+  nameWithType: WarningType.AMBIGUOUS_COMBINATION_OF_BOOLEAN_OPERATORS
 - uid: Perlang.Parser.WarningType.Get(System.String)
   name: Get(String)
   href: api/Perlang.Parser.WarningType.html#Perlang_Parser_WarningType_Get_System_String_
