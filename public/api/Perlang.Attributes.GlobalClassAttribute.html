@@ -99,6 +99,44 @@ they are private, Perlang will produce a compile-time error if an attempt is mad
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class GlobalClassAttribute : Attribute</code></pre>
   </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Attributes_GlobalClassAttribute__ctor_PlatformID___.md&amp;value=---%0Auid%3A%20Perlang.Attributes.GlobalClassAttribute.%23ctor(PlatformID%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/71801710aea56267862329da3be032c58857af3a/src/Perlang.Common/Attributes/GlobalClassAttribute.cs/#L40">View Source</a>
+  </span>
+  <a id="Perlang_Attributes_GlobalClassAttribute__ctor_" data-uid="Perlang.Attributes.GlobalClassAttribute.#ctor*"></a>
+  <h4 id="Perlang_Attributes_GlobalClassAttribute__ctor_PlatformID___" data-uid="Perlang.Attributes.GlobalClassAttribute.#ctor(PlatformID[])">GlobalClassAttribute(PlatformID[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Perlang.Attributes.GlobalClassAttribute.html">GlobalClassAttribute</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GlobalClassAttribute(params PlatformID[] platforms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PlatformID</span>[]</td>
+        <td><span class="parametername">platforms</span></td>
+        <td><p>An optional list of platform IDs for which the given global class should be
+registered. If no platform IDs are provided, the global class is presumed to be platform-agnostic and
+registered on all supported platforms.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
@@ -106,7 +144,7 @@ they are private, Perlang will produce a compile-time error if an attempt is mad
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Attributes_GlobalClassAttribute_Name.md&amp;value=---%0Auid%3A%20Perlang.Attributes.GlobalClassAttribute.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/8acb2e16487831fd468b8674471e08a4a4b92f16/src/Perlang.Common/Attributes/GlobalClassAttribute.cs/#L25">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/71801710aea56267862329da3be032c58857af3a/src/Perlang.Common/Attributes/GlobalClassAttribute.cs/#L26">View Source</a>
   </span>
   <a id="Perlang_Attributes_GlobalClassAttribute_Name_" data-uid="Perlang.Attributes.GlobalClassAttribute.Name*"></a>
   <h4 id="Perlang_Attributes_GlobalClassAttribute_Name" data-uid="Perlang.Attributes.GlobalClassAttribute.Name">Name</h4>
@@ -132,6 +170,38 @@ they are private, Perlang will produce a compile-time error if an attempt is mad
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Attributes_GlobalClassAttribute_Platforms.md&amp;value=---%0Auid%3A%20Perlang.Attributes.GlobalClassAttribute.Platforms%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/71801710aea56267862329da3be032c58857af3a/src/Perlang.Common/Attributes/GlobalClassAttribute.cs/#L32">View Source</a>
+  </span>
+  <a id="Perlang_Attributes_GlobalClassAttribute_Platforms_" data-uid="Perlang.Attributes.GlobalClassAttribute.Platforms*"></a>
+  <h4 id="Perlang_Attributes_GlobalClassAttribute_Platforms" data-uid="Perlang.Attributes.GlobalClassAttribute.Platforms">Platforms</h4>
+  <div class="markdown level1 summary"><p>Gets a collection of all the platforms on which the class should be registered. If empty, the class should
+be registered on all platforms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;PlatformID&gt; Platforms { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">PlatformID</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -143,7 +213,7 @@ they are private, Perlang will produce a compile-time error if an attempt is mad
                     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Attributes_GlobalClassAttribute.md&amp;value=---%0Auid%3A%20Perlang.Attributes.GlobalClassAttribute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/8acb2e16487831fd468b8674471e08a4a4b92f16/src/Perlang.Common/Attributes/GlobalClassAttribute.cs/#L19" class="contribution-link">View Source</a>
+                    <a href="https://github.com/perlang-org/perlang/blob/71801710aea56267862329da3be032c58857af3a/src/Perlang.Common/Attributes/GlobalClassAttribute.cs/#L20" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

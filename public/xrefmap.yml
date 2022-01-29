@@ -109,6 +109,22 @@ references:
   commentId: T:Perlang.Attributes.GlobalClassAttribute
   fullName: Perlang.Attributes.GlobalClassAttribute
   nameWithType: GlobalClassAttribute
+- uid: Perlang.Attributes.GlobalClassAttribute.#ctor(PlatformID[])
+  name: GlobalClassAttribute(PlatformID[])
+  href: api/Perlang.Attributes.GlobalClassAttribute.html#Perlang_Attributes_GlobalClassAttribute__ctor_PlatformID___
+  commentId: M:Perlang.Attributes.GlobalClassAttribute.#ctor(PlatformID[])
+  name.vb: GlobalClassAttribute(PlatformID())
+  fullName: Perlang.Attributes.GlobalClassAttribute.GlobalClassAttribute(PlatformID[])
+  fullName.vb: Perlang.Attributes.GlobalClassAttribute.GlobalClassAttribute(PlatformID())
+  nameWithType: GlobalClassAttribute.GlobalClassAttribute(PlatformID[])
+  nameWithType.vb: GlobalClassAttribute.GlobalClassAttribute(PlatformID())
+- uid: Perlang.Attributes.GlobalClassAttribute.#ctor*
+  name: GlobalClassAttribute
+  href: api/Perlang.Attributes.GlobalClassAttribute.html#Perlang_Attributes_GlobalClassAttribute__ctor_
+  commentId: Overload:Perlang.Attributes.GlobalClassAttribute.#ctor
+  isSpec: "True"
+  fullName: Perlang.Attributes.GlobalClassAttribute.GlobalClassAttribute
+  nameWithType: GlobalClassAttribute.GlobalClassAttribute
 - uid: Perlang.Attributes.GlobalClassAttribute.Name
   name: Name
   href: api/Perlang.Attributes.GlobalClassAttribute.html#Perlang_Attributes_GlobalClassAttribute_Name
@@ -122,6 +138,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Attributes.GlobalClassAttribute.Name
   nameWithType: GlobalClassAttribute.Name
+- uid: Perlang.Attributes.GlobalClassAttribute.Platforms
+  name: Platforms
+  href: api/Perlang.Attributes.GlobalClassAttribute.html#Perlang_Attributes_GlobalClassAttribute_Platforms
+  commentId: P:Perlang.Attributes.GlobalClassAttribute.Platforms
+  fullName: Perlang.Attributes.GlobalClassAttribute.Platforms
+  nameWithType: GlobalClassAttribute.Platforms
+- uid: Perlang.Attributes.GlobalClassAttribute.Platforms*
+  name: Platforms
+  href: api/Perlang.Attributes.GlobalClassAttribute.html#Perlang_Attributes_GlobalClassAttribute_Platforms_
+  commentId: Overload:Perlang.Attributes.GlobalClassAttribute.Platforms
+  isSpec: "True"
+  fullName: Perlang.Attributes.GlobalClassAttribute.Platforms
+  nameWithType: GlobalClassAttribute.Platforms
 - uid: Perlang.CommonConstants
   name: CommonConstants
   href: api/Perlang.CommonConstants.html
