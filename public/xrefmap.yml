@@ -3039,6 +3039,64 @@ references:
   isSpec: "True"
   fullName: Perlang.Stdlib.Base64.Encode
   nameWithType: Base64.Encode
+- uid: Perlang.Stdlib.Libc
+  name: Libc
+  href: api/Perlang.Stdlib.Libc.html
+  commentId: T:Perlang.Stdlib.Libc
+  fullName: Perlang.Stdlib.Libc
+  nameWithType: Libc
+- uid: Perlang.Stdlib.Libc.environ
+  name: environ()
+  href: api/Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_environ
+  commentId: M:Perlang.Stdlib.Libc.environ
+  fullName: Perlang.Stdlib.Libc.environ()
+  nameWithType: Libc.environ()
+- uid: Perlang.Stdlib.Libc.environ*
+  name: environ
+  href: api/Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_environ_
+  commentId: Overload:Perlang.Stdlib.Libc.environ
+  isSpec: "True"
+  fullName: Perlang.Stdlib.Libc.environ
+  nameWithType: Libc.environ
+- uid: Perlang.Stdlib.Libc.getcwd
+  name: getcwd()
+  href: api/Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_getcwd
+  commentId: M:Perlang.Stdlib.Libc.getcwd
+  fullName: Perlang.Stdlib.Libc.getcwd()
+  nameWithType: Libc.getcwd()
+- uid: Perlang.Stdlib.Libc.getcwd*
+  name: getcwd
+  href: api/Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_getcwd_
+  commentId: Overload:Perlang.Stdlib.Libc.getcwd
+  isSpec: "True"
+  fullName: Perlang.Stdlib.Libc.getcwd
+  nameWithType: Libc.getcwd
+- uid: Perlang.Stdlib.Libc.getenv(System.String)
+  name: getenv(String)
+  href: api/Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_getenv_System_String_
+  commentId: M:Perlang.Stdlib.Libc.getenv(System.String)
+  fullName: Perlang.Stdlib.Libc.getenv(System.String)
+  nameWithType: Libc.getenv(String)
+- uid: Perlang.Stdlib.Libc.getenv*
+  name: getenv
+  href: api/Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_getenv_
+  commentId: Overload:Perlang.Stdlib.Libc.getenv
+  isSpec: "True"
+  fullName: Perlang.Stdlib.Libc.getenv
+  nameWithType: Libc.getenv
+- uid: Perlang.Stdlib.Libc.getpid
+  name: getpid()
+  href: api/Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_getpid
+  commentId: M:Perlang.Stdlib.Libc.getpid
+  fullName: Perlang.Stdlib.Libc.getpid()
+  nameWithType: Libc.getpid()
+- uid: Perlang.Stdlib.Libc.getpid*
+  name: getpid
+  href: api/Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_getpid_
+  commentId: Overload:Perlang.Stdlib.Libc.getpid
+  isSpec: "True"
+  fullName: Perlang.Stdlib.Libc.getpid
+  nameWithType: Libc.getpid
 - uid: Perlang.Stdlib.Posix
   name: Posix
   href: api/Perlang.Stdlib.Posix.html
@@ -3084,19 +3142,6 @@ references:
   isSpec: "True"
   fullName: Perlang.Stdlib.Posix.getgid
   nameWithType: Posix.getgid
-- uid: Perlang.Stdlib.Posix.getpid
-  name: getpid()
-  href: api/Perlang.Stdlib.Posix.html#Perlang_Stdlib_Posix_getpid
-  commentId: M:Perlang.Stdlib.Posix.getpid
-  fullName: Perlang.Stdlib.Posix.getpid()
-  nameWithType: Posix.getpid()
-- uid: Perlang.Stdlib.Posix.getpid*
-  name: getpid
-  href: api/Perlang.Stdlib.Posix.html#Perlang_Stdlib_Posix_getpid_
-  commentId: Overload:Perlang.Stdlib.Posix.getpid
-  isSpec: "True"
-  fullName: Perlang.Stdlib.Posix.getpid
-  nameWithType: Posix.getpid
 - uid: Perlang.Stdlib.Posix.getppid
   name: getppid()
   href: api/Perlang.Stdlib.Posix.html#Perlang_Stdlib_Posix_getppid

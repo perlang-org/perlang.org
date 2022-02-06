@@ -89,11 +89,28 @@
       <section><p>Provides support for encoding and decoding base64-encoded content.</p>
 <p>See <a href="https://en.wikipedia.org/wiki/Base64">https://en.wikipedia.org/wiki/Base64</a> for more details on the base64 encoding.</p>
 </section>
+      <h4><a class="xref" href="Perlang.Stdlib.Libc.html">Libc</a></h4>
+      <section><p>Provides support for calling standard C library functions.</p>
+<p>This class supplements see <a class="xref" href="Perlang.Stdlib.Posix.html">Posix</a> class by implementing support for functions available on all
+supported platforms.</p>
+</section>
       <h4><a class="xref" href="Perlang.Stdlib.Posix.html">Posix</a></h4>
-      <section><p>Provides support for calling standard POSIX methods.</p>
+      <section><p>Provides support for calling standard POSIX functions.</p>
 <p>The method names are deliberately using &quot;POSIX-style&quot;, i.e. short, C-oriented names for methods like <code>getuid</code>,
 <code>getpid</code> and so forth. This is to make it simple for people with experience from POSIX-based systems to find the
 method they are looking for.</p>
+<p>This class only contains POSIX-specific functions, i.e. functions available on POSIX-compliant systems like BSD,
+GNU/Linux and macOS, but not available on Windows. For C functions available on all supported platforms, see the
+list below.</p>
+<p>Code which uses this class will only run on POSIX-compliant systems. If an attempt to use these methods is made
+on Windows, a compile-time error is emitted.</p>
+<h3 id="list-of-methods-defined-in-posix-but-available-elsewhere">List of methods defined in POSIX but available elsewhere:</h3>
+<ul>
+<li><a class="xref" href="Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_environ">environ()</a></li>
+<li><a class="xref" href="Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_getcwd">getcwd()</a></li>
+<li><a class="xref" href="Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_getenv_System_String_">getenv(String)</a></li>
+<li><a class="xref" href="Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_getpid">getpid()</a></li>
+</ul>
 </section>
       <h4><a class="xref" href="Perlang.Stdlib.Time.html">Time</a></h4>
       <section></section>

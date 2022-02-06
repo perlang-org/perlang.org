@@ -77,10 +77,22 @@
   
   <h1 id="Perlang_Stdlib_Posix" data-uid="Perlang.Stdlib.Posix" class="text-break">Class Posix
   </h1>
-  <div class="markdown level0 summary"><p>Provides support for calling standard POSIX methods.</p>
+  <div class="markdown level0 summary"><p>Provides support for calling standard POSIX functions.</p>
 <p>The method names are deliberately using &quot;POSIX-style&quot;, i.e. short, C-oriented names for methods like <code>getuid</code>,
 <code>getpid</code> and so forth. This is to make it simple for people with experience from POSIX-based systems to find the
 method they are looking for.</p>
+<p>This class only contains POSIX-specific functions, i.e. functions available on POSIX-compliant systems like BSD,
+GNU/Linux and macOS, but not available on Windows. For C functions available on all supported platforms, see the
+list below.</p>
+<p>Code which uses this class will only run on POSIX-compliant systems. If an attempt to use these methods is made
+on Windows, a compile-time error is emitted.</p>
+<h3 id="list-of-methods-defined-in-posix-but-available-elsewhere">List of methods defined in POSIX but available elsewhere:</h3>
+<ul>
+<li><a class="xref" href="Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_environ">environ()</a></li>
+<li><a class="xref" href="Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_getcwd">getcwd()</a></li>
+<li><a class="xref" href="Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_getenv_System_String_">getenv(String)</a></li>
+<li><a class="xref" href="Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_getpid">getpid()</a></li>
+</ul>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -95,37 +107,12 @@ method they are looking for.</p>
     <pre><code class="lang-csharp hljs">public static class Posix : object</code></pre>
   </div>
   <h5 id="Perlang_Stdlib_Posix_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>The XML method descriptions are based on <a href="https://github.com/NetBSD/src">the NetBSD source code</a>. The full
-license of these man pages can be found below.</p>
-<p>There might be subtle differences between systems on some of these methods. For information on how these work on
-e.g. Linux, use a command like <code>man 2 getgid</code> (replace <code>getgid</code> with the name of the function you are interested
-in).</p>
-<p>Copyright (c) 1980, 1991, 1993
-The Regents of the University of California.  All rights reserved.</p>
-<p>Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions
-are met:</p>
-<ol>
-<li>Redistributions of source code must retain the above copyright
-notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright
-notice, this list of conditions and the following disclaimer in the
-documentation and/or other materials provided with the distribution.</li>
-<li>Neither the name of the University nor the names of its contributors
-may be used to endorse or promote products derived from this software
-without specific prior written permission.</li>
-</ol>
-<p>THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS&apos;&apos; AND
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
-OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
-HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
-OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
-SUCH DAMAGE.</p>
+  <div class="markdown level0 remarks"><p>The XML method descriptions are based on <code>man</code> pages in <a href="https://github.com/NetBSD/src">the NetBSD source code</a>.
+The full license of these man pages can be found at <a href="https://github.com/perlang-org/perlang/blob/master/NOTICE.md">https://github.com/perlang-org/perlang/blob/master/NOTICE.md</a></p>
+<p>There might be subtle differences between systems on some of these functions. For information on how these work
+on e.g. GNU/Linux, use a command like <code>man 2 getgid</code> (replace <code>getgid</code> with the name of the function you are
+interested in). You can also consult the Linux man pages project:
+<a href="https://man7.org/linux/man-pages/dir_all_alphabetic.html/">https://man7.org/linux/man-pages/dir_all_alphabetic.html/</a>.</p>
 </div>
   <h3 id="methods">Methods
   </h3>
@@ -134,7 +121,7 @@ SUCH DAMAGE.</p>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Posix_getegid.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Posix.getegid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/181f6ecd181cbc289585e724f2344d3f8c10ad40/src/Perlang.Stdlib/Stdlib/Posix.cs/#L99">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/f5d59637743d8839cb23dbdbd248140aae328514/src/Perlang.Stdlib/Stdlib/Posix.cs/#L82">View Source</a>
   </span>
   <a id="Perlang_Stdlib_Posix_getegid_" data-uid="Perlang.Stdlib.Posix.getegid*"></a>
   <h4 id="Perlang_Stdlib_Posix_getegid" data-uid="Perlang.Stdlib.Posix.getegid">getegid()</h4>
@@ -175,7 +162,7 @@ process additional permissions during the execution of <code>set-group-ID</code>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Posix_geteuid.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Posix.geteuid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/181f6ecd181cbc289585e724f2344d3f8c10ad40/src/Perlang.Stdlib/Stdlib/Posix.cs/#L118">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/f5d59637743d8839cb23dbdbd248140aae328514/src/Perlang.Stdlib/Stdlib/Posix.cs/#L101">View Source</a>
   </span>
   <a id="Perlang_Stdlib_Posix_geteuid_" data-uid="Perlang.Stdlib.Posix.geteuid*"></a>
   <h4 id="Perlang_Stdlib_Posix_geteuid" data-uid="Perlang.Stdlib.Posix.geteuid">geteuid()</h4>
@@ -215,7 +202,7 @@ process additional permissions during execution of <code>set-user-ID</code> mode
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Posix_getgid.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Posix.getgid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/181f6ecd181cbc289585e724f2344d3f8c10ad40/src/Perlang.Stdlib/Stdlib/Posix.cs/#L140">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/f5d59637743d8839cb23dbdbd248140aae328514/src/Perlang.Stdlib/Stdlib/Posix.cs/#L123">View Source</a>
   </span>
   <a id="Perlang_Stdlib_Posix_getgid_" data-uid="Perlang.Stdlib.Posix.getgid*"></a>
   <h4 id="Perlang_Stdlib_Posix_getgid" data-uid="Perlang.Stdlib.Posix.getgid">getgid()</h4>
@@ -249,54 +236,15 @@ process additional permissions during the execution of <code>set-group-ID</code>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Posix_getpid.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Posix.getpid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/181f6ecd181cbc289585e724f2344d3f8c10ad40/src/Perlang.Stdlib/Stdlib/Posix.cs/#L154">View Source</a>
-  </span>
-  <a id="Perlang_Stdlib_Posix_getpid_" data-uid="Perlang.Stdlib.Posix.getpid*"></a>
-  <h4 id="Perlang_Stdlib_Posix_getpid" data-uid="Perlang.Stdlib.Posix.getpid">getpid()</h4>
-  <div class="markdown level1 summary"><p>Returns the process ID of the calling process.  The ID is guaranteed to be unique and it might be tempting
-to use it for constructing temporary file names. However, this is <em>NOT</em> recommended since it is not secure.
-In C <code>mkstemp</code> can be used for this purpose. <code>mkstemp</code> is not yet available to use from Perlang, though.</p>
-<p><a class="xref" href="Perlang.Stdlib.Posix.html#Perlang_Stdlib_Posix_getpid">getpid()</a> conform to ISO/IEC 9945-1:1990 (<code>POSIX.1</code>).</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int getpid()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>The process ID of the calling process.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Perlang_Stdlib_Posix_getpid_seealso">See Also</h5>
-  <div class="seealso">
-      <div><a class="xref" href="Perlang.Stdlib.Posix.html#Perlang_Stdlib_Posix_getppid">getppid()</a></div>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Posix_getppid.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Posix.getppid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/181f6ecd181cbc289585e724f2344d3f8c10ad40/src/Perlang.Stdlib/Stdlib/Posix.cs/#L166">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/f5d59637743d8839cb23dbdbd248140aae328514/src/Perlang.Stdlib/Stdlib/Posix.cs/#L135">View Source</a>
   </span>
   <a id="Perlang_Stdlib_Posix_getppid_" data-uid="Perlang.Stdlib.Posix.getppid*"></a>
   <h4 id="Perlang_Stdlib_Posix_getppid" data-uid="Perlang.Stdlib.Posix.getppid">getppid()</h4>
   <div class="markdown level1 summary"><p>Returns the process ID of the parent of the calling process.</p>
-<p><a class="xref" href="Perlang.Stdlib.Posix.html#Perlang_Stdlib_Posix_getpid">getpid()</a> conform to ISO/IEC 9945-1:1990 (<code>POSIX.1</code>).</p>
+<p><a class="xref" href="Perlang.Stdlib.Posix.html#Perlang_Stdlib_Posix_getppid">getppid()</a> conform to ISO/IEC 9945-1:1990 (<code>POSIX.1</code>).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -321,14 +269,14 @@ In C <code>mkstemp</code> can be used for this purpose. <code>mkstemp</code> is 
   </table>
   <h5 id="Perlang_Stdlib_Posix_getppid_seealso">See Also</h5>
   <div class="seealso">
-      <div><a class="xref" href="Perlang.Stdlib.Posix.html#Perlang_Stdlib_Posix_getpid">getpid()</a></div>
+      <div><a class="xref" href="Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_getpid">getpid()</a></div>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Posix_getuid.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Posix.getuid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/181f6ecd181cbc289585e724f2344d3f8c10ad40/src/Perlang.Stdlib/Stdlib/Posix.cs/#L185">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/f5d59637743d8839cb23dbdbd248140aae328514/src/Perlang.Stdlib/Stdlib/Posix.cs/#L154">View Source</a>
   </span>
   <a id="Perlang_Stdlib_Posix_getuid_" data-uid="Perlang.Stdlib.Posix.getuid*"></a>
   <h4 id="Perlang_Stdlib_Posix_getuid" data-uid="Perlang.Stdlib.Posix.getuid">getuid()</h4>
@@ -374,7 +322,7 @@ process additional permissions during execution of <code>set-user-ID</code> mode
                     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Posix.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Posix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/181f6ecd181cbc289585e724f2344d3f8c10ad40/src/Perlang.Stdlib/Stdlib/Posix.cs/#L56" class="contribution-link">View Source</a>
+                    <a href="https://github.com/perlang-org/perlang/blob/f5d59637743d8839cb23dbdbd248140aae328514/src/Perlang.Stdlib/Stdlib/Posix.cs/#L41" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
