@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Learn Perlang </title>
+    <title>Quick Start </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Learn Perlang ">
+    <meta name="title" content="Quick Start ">
     <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -71,10 +71,10 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="learn-perlang">Learn Perlang</h1>
+<h1 id="quick-start">Quick Start</h1>
 
 <h2 id="prerequisites">Prerequisites</h2>
-<p>This section presumes that you have installed the Perlang tooling using the instructions on our <a href="/download">download page</a>, and added it to your <code>$PATH</code>.</p>
+<p>This section presumes that you have installed the Perlang tooling using the instructions on our <a href="../../download/index.html">download page</a>, and added it to your <code>$PATH</code>.</p>
 <p>There are basically two ways in which you can use Perlang:</p>
 <ul>
 <li><em>REPL mode</em></li>
@@ -82,7 +82,7 @@
 </ul>
 <p>In <em>REPL mode</em>, each line you type is interpreted as you press Enter. This mode is useful for doing mathematical operations (for example: <code>2 * 3</code>, <code>2 ** 10</code>, etc) as well as for doing &quot;exploratory programming&quot;, learning how a particular class or API works. For this purpose, it works well. If you are working on a program where the program will be executed more than one time, it is typically not the right choice.</p>
 <p>In <em>scripting mode</em>, you type your program in a file and execute <code>perlang &lt;filename&gt;</code> (without the angle brackets). Perlang scripts conventionally follows the  <code>filename.per</code> convention, although this is no way enforced by the interpreter.</p>
-<blockquote><p>In the future, we hope to add a <em>compiled mode</em> as well, where Perlang programs are precompiled to bytecode before they are executed. It is anticipated that this will provide magnitudes better performance than the current, interpreted mode.</p>
+<blockquote><p>In the future, we hope to add a <em>compiled mode</em> as well, where Perlang programs are precompiled to MSIL bytecode before they are executed. It is anticipated that this will provide magnitudes better performance than the current, interpreted mode.</p>
 </blockquote>
 <p>Some of the examples below illustrate both ways of running a Perlang program, but the longer examples are only really practical to run in scripting mode. As we move along through this guide, we introduce various concepts in how the Perlang interpreter and language works as well, so this section aims to provide the reader with more than just the bare essentials.</p>
 <h2 id="hello-world">Hello World</h2>
@@ -98,7 +98,7 @@ Hello World
 </code></pre><p>In the Perlang REPL, much like in the Python or Ruby REPL, the result of each (valid) expression is printed. You can try this with other expressions also, like <code>10 * 50</code>, <code>2 ** 32</code> and so forth.</p>
 <p>Here&#39;s an example of a REPL session in action:</p>
 <p><asciinema-player cols="126" rows="30" speed="2" src="/casts/repl.cast"></asciinema-player></p>
-<p>Worth mentioning is that normally in Perlang, each complete <em>statement</em> (like <code>print &quot;Hello World&quot;</code>) must be terminated by a semicolon, much like in languages in the C-family. In the REPL however, it&#39;s permissible to skip the semicolon. A newline can be considered to be interpreted as a &quot;semicolon and newline&quot;, for convenience.</p>
+<p>Worth mentioning is that normally in Perlang, each complete <em>statement</em> (like <code>print &quot;Hello World&quot;</code>) must be terminated by a semicolon, much like in the C family of languages (C, C++, C#, Java etc). In the REPL however, it&#39;s permissible to skip the semicolon. A newline can be considered to be interpreted as a &quot;semicolon and newline&quot;, for convenience.</p>
 <h4 id="scripting-mode">Scripting mode</h4>
 <pre><code class="lang-perlang" name="hello_world">// hello_world.per
 print &quot;Hello World&quot;;
@@ -144,6 +144,9 @@ real    0m0.380s
 user    0m0.383s
 sys 0m0.005s
 </code></pre><p>So, we are running about 60% slower than the JavaScript counterpart. For many applications, this could be tolerable but it&#39;s quite obvious that there&#39;s a lot of work that needs to be done in this area before Perlang is anywhere near &quot;production quality&quot;.</p>
+<h3 id="further-reading">Further reading</h3>
+<p>This guide only takes some initial steps in teaching the user how to use Perlang. For example, <em>functions</em> aren&#39;t covered at all.</p>
+<p>For a more in-depth guide which aims to cover all parts of Perlang which are currently implemented, see the page about <a href="../the-language/index.html">the Perlang language</a>.</p>
 </article>
           </div>
           
@@ -152,7 +155,7 @@ sys 0m0.005s
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/master/docs/perlang/learn/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/perlang-org/perlang/blob/master/docs/learn/quickstart/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

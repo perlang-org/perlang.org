@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Draft: The Perlang Language </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Draft: The Perlang Language ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/asciinema-player.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/override.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <div class="toc-toggle">
+            <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          </div>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="draft-the-perlang-language">Draft: The Perlang Language</h2>
+
+<blockquote><p>This is a more in-depth page describing the Perlang language. It tries to cover all features currently implemented. If you are impatient and just want to see some examples of what Perlang can look like in action, <a href="../quickstart/index.html">the quickstart page</a> might be a better start for you.</p>
+</blockquote>
+<p><em>The text is currently a draft of the text which we provide as a &quot;public preview&quot;. Once the document describes all aspects of Perlang in a satisfiable way, we will remove the &quot;draft&quot; status.</em></p>
+<!--
+For some of the functionality where the documentation is missing, we have added links to the corresponding tests; these provide real-world examples on how the functionality is being used. Pull requests that add proper examples to this page are highly welcome and appreciated.
+-->
+<h2 id="language-features">Language features</h2>
+<h3 id="the-top-level-scope">The top-level scope</h3>
+<p>Much like other scripting-based languages like JavaScript, Ruby and Python, a program in Perlang does not necessarily have to consist of a <em>class</em> or <em>function</em> (which is the case in languages like Java and C). This is because of the existence of a top-level scope. You can write statements in this scope, and they will be executed when the program is executed:</p>
+<pre><code class="lang-perlang" name="printing-from-the-top-level-scope">// printing-from-the-top-level-scope.per
+print &quot;Printing from the top-level-scope&quot;;
+</code></pre><p>You can also declare variables in this scope and refer to them later in your program. It makes sense to think of the top-level scope as an &quot;implicit function&quot; or even an &quot;implicit class&quot;, if you come from a background in other languages where this way of thinking makes sense to you.</p>
+<pre><code class="lang-perlang" name="defining-a-variable">// defining-a-variable.per
+var a = 1;
+print a;
+</code></pre><h3 id="variables">Variables</h3>
+<p>We already cheated at bit and defined a variable in the previous section, but let&#39;s look a bit more in-depth at this now. Variables can be defined in two ways: with <em>explicit</em> or <em>implicit</em> (&quot;inferred&quot;) typing specified.</p>
+<pre><code class="lang-perlang" name="two-types-of-variables">// two-types-of-variables.per
+var a = 1;
+var b: int = 2;
+
+print a;
+print b;
+</code></pre><p>The above variable declarations are the same in essence. However, be not deceived; Perlang is not a dynamic language even though it supports constructs like <code>var a = 1</code>. These examples illustrates this point further:</p>
+<!-- Inline example instead of file in examples/, because those are validated to return non-zero
+     (=not generate any errors) in CI -->
+<pre><code class="lang-perlang">// invalid-reassignment-to-typed-variable.per
+var a: int = 1;
+a = &quot;foo&quot;;
+</code></pre><p>If you try to run the above in a REPL session, you&#39;ll get an error like this:</p>
+<p><code>Error at &#39;a&#39;: Cannot assign System.String to variable defined as &#39;System.Int32&#39;</code></p>
+<p>This is because once a variable is declared, the type of this variable (explicitly or implicitly defined) is stored. The Perlang typechecker uses this information to ensure the type-wise correctness of your program, much like any other statically typed language.</p>
+<h3 id="functions">Functions</h3>
+<p>Top-level functions are currently defined used the <code>fun</code> keyword. Here&#39;s a simple example of how a function can be defined and called:</p>
+<pre><code class="lang-perlang" name="defining-and-calling-a-function">// defining-and-calling-a-function.per
+fun foo(): void {
+  print &quot;foo&quot;;
+}
+
+foo();
+</code></pre><p>Many functions take one or more parameters. Here&#39;s an example of how such a function can be defined and called:</p>
+<pre><code class="lang-perlang" name="defining-and-calling-a-function-with-parameters">// defining-and-calling-a-function-with-parameters.per
+fun greet(name: string, age: int): void {
+  print &quot;Hello &quot; + name + &quot;. Your age is &quot; + age;
+}
+
+// Expected output: Hello John Doe. Your age is 42
+greet(&quot;John Doe&quot;, 42);
+</code></pre><p>The last example is interesting in a different way as well. It illustrates a language feature available in Perlang which we share with other languages like Java, C# and JavasScript - being able to concatenate <code>string</code> and <code>int</code> values without any conversions. Other languages like Ruby and Python are more strict in this regard, requiring an implicit conversion to <code>String</code>/<code>str</code>.</p>
+<p>I imagine the reason for this to be the dynamic nature of these languages. In a dynamic language, it is not certain that a particular variable or parameter has a given type, so forcing the user to call <code>i.to_s</code> makes quite a bit of sense. By doing so, you ensure that the operation will do what the user expected. What would happen if you try to concatenate an integer and a random DTO/model instance? Such an operation does not make so much sense, so forcing the user to call <code>model.to_s</code> if they <em>really</em> want to do that does make the code more explicit and clear to the reader.</p>
+<p>However, in statically typed languages we can make a compile-time <em>guarantee</em> that the implicit coercion to <code>string</code> will succeed (or produce a compilation error if this is not the case). While Perlang is not currently a compiled language, it does already have a primitive typechecker so it makes sense to mimic the behavior of our statically typed friends - Java and C#.</p>
+<blockquote><p>Interestingly enough, JavaScript wants to be different - it is indeed a <em>dynamic</em> programming language, but it still supports concatenation of arbitrary (non-numeric) objects. For example, doing <code>new Object() + new Object()</code> gives you the string <code>[object Object][object Object]</code>. To have a custom representation of the object being used in this case, you implement a custom <code>toString()</code> method for the object in question.</p>
+</blockquote>
+<h3 id="the-existence-of-null">The existence of <code>null</code></h3>
+<p>If you have worked with other programming languages, you have likely encountered the concept of <code>null</code> (or <code>NULL</code> in C). Some languages call it something else (<code>nil</code> in Ruby, <code>None</code> in Python) but the concept is the same: it tries to describe the concept of an <em>object reference which does not point to an existing object</em>.</p>
+<p>While this is incredibly useful sometimes, it can also cause significant headache since the existence of <code>null</code> in a programming language means that <strong>all</strong> code in your program now suddenly has to take into consideration that an object reference can have two forms - an actual object or this dreaded <code>null</code> thing. If you try to call a method on a <code>null</code> object, even something harmless like <code>obj.toString()</code>, you will get a runtime exception. (Ruby tries to do slightly better by making <code>nil</code> an actual object that you <em>can</em> call <code>to_s</code> on, but it doesn&#39;t actually solve the big program which would make your program easier to write and maintain).</p>
+<p>Tony Hoare, who invented the <code>null</code> reference in the <a href="https://en.wikipedia.org/wiki/ALGOL_W">ALGOL W</a> programming language actually went as far as to describe it as a huge mistake:</p>
+<blockquote><p><em>I call it my billion-dollar mistake. It was the invention of the null reference in 1965. At that time, I was designing the first comprehensive type system for references in an object oriented language (ALGOL W). My goal was to ensure that all use of references should be absolutely safe, with checking performed automatically by the compiler. But I couldn&#39;t resist the temptation to put in a null reference, simply because it was so easy to implement. This has led to innumerable errors, vulnerabilities, and system crashes, which have probably caused a billion dollars of pain and damage in the last forty years.</em> <sub><em>Hoare, Tony (2009). <a href="http://qconlondon.com/london-2009/speaker/Tony+Hoare">&quot;Null References: The Billion Dollar Mistake&quot;</a> (Presentation abstract). QCon London. <a href="https://web.archive.org/web/20090628071208/http://qconlondon.com/london-2009/speaker/Tony+Hoare">Archived</a> from the original on 28 June 2009.</em></sub></p>
+</blockquote>
+<p>The Perlang approach to <code>null</code> references is that we aim for doing things right from the start. Consider the following program:</p>
+<!-- Inline example instead of file in examples/, because those are validated to return non-zero
+     (=not generate any errors) in CI -->
+<pre><code class="lang-perlang">// defining-and-calling-a-function-with-null-parameter.per
+fun greet(name: string, age: int): void {
+  print &quot;Hello &quot; + name + &quot;. Your age is &quot; + age;
+}
+
+// Expected error: [line 2] Error at &#39;name&#39;: Null parameter detected
+greet(null, 42);
+</code></pre><p>Running this program gives you an error like this:</p>
+<p><code>[line 7] Error at &#39;greet&#39;: Null parameter detected for &#39;name&#39;</code></p>
+<p>The path we have chosen here is to let  <code>null</code> exist as a concept in Perlang, mainly for interoperability with C#, Java, C, C++ and other languages that uses <code>null</code> references extensively. Making it impossible to use <code>null</code> would significantly limit the ability to call existing code from e.g. the .NET Base Class Library. Hence, we have decided to include <code>null</code> in the language.</p>
+<p>But: we deliberately restrict the use of <code>null</code> in an attempt to steer the user to better constructs, when possible. Whenever <code>null</code> is encountered, a compiler warning is emitted. By default, all compiler warnings are considered errors<sup>1</sup>, which is why you get the above error whenever you try to use <code>null</code>.</p>
+<p>Now, including <code>null</code> in the language but making it impossible to use would be kind of pointless. What we have instead is a mechanism to demote this warning from an error to an actual warning:</p>
+<pre><code>$ perlang -Wno-error=null-usage defining-and-calling-a-function-with-null-parameter.per
+[line 7] Warning at &#39;greet&#39;: Null parameter detected for &#39;name&#39;
+[line 3] Operands must be numbers, not string and null
+</code></pre><p>As can be seen, the previous <code>Error at &#39;name&#39;</code> has now turned into a slightly more friendly <code>Warning at &#39;greet&#39;</code>. However, we then get a runtime error (the &quot;line 3&quot; output) because <code>&quot;Hello &quot; + name</code> is not a valid operation in cases where <code>name</code> is <code>null</code>. <code>string + null</code> will produce a runtime error as above.</p>
+<blockquote><p>The reason for why these errors seem to come in the &quot;wrong order&quot; in terms of the line numbers is because the compilation and analysis phase of the program happens first, as a separate stage, before the actual execution of the program beings. In other words, all compilation warnings for a program would appear before any runtime errors would be emitted.</p>
+</blockquote>
+<h3 id="classes">Classes</h3>
+<p>In its current version, Perlang does not currently support defining user-defined classes. Calling static methods defined on already existing (stdlib) classes, written in C#, is however possible as the following example demonstrates:</p>
+<pre><code class="lang-perlang" name="calling-base64-encode">// calling-base64-encode.per
+
+// Will output SGVsbG8sIFdvcmxk
+print Base64.encode(&quot;Hello, World&quot;);
+</code></pre><h3 id="the-standard-library">The standard library</h3>
+<p>The standard library is in a very early stage of development. Read more about it in the <a href="../../api/index.html">API documentation</a> section.</p>
+<h3 id="the-future">The future</h3>
+<blockquote><p><em>The future is not set</em> (John &amp; Sarah Connor, <em>Terminator 2: Judgment Day</em>)</p>
+</blockquote>
+<p>There is currently no road map as for exactly &quot;when&quot; and &quot;if&quot; various features will be implemented into the language and its standard library. Your best bet for now is looking at <a href="https://github.com/perlang-org/perlang/milestones">the milestones</a> in the GitHub repo, where various ideas are roughly categorized into projected releases, depending on when we imagine that they may get introduced into the language.</p>
+<h2 id="footnotes">Footnotes</h2>
+<p><sup>1</sup>: Making warnings be considered errors by default is a deliberate, conscious design decision in an attempt to ensure that a codebase is not littered with numerous minor errors - errors which are really <em>there</em> but the developers have learn to look the other way, to ignore them. It is our experience that this can too-easily become the case when warnings are ignored by default.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/perlang-org/perlang/blob/master/docs/learn/the-language/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+                <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright 2020 The Perlang Authors
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../js/highlight.min.js"></script>
+    <script type="text/javascript" src="../../js/highlightjs-perlang.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../js/asciinema-player.js"></script>
+  </body>
+</html>
