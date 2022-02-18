@@ -107,7 +107,7 @@ can be found at <a href="https://github.com/perlang-org/perlang/blob/master/NOTI
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Libc_environ.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Libc.environ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/7fa620c39dd988712e04b65d7cdc70ac313b0378/src/Perlang.Stdlib/Stdlib/Libc.cs/#L103">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/b5eb21279d0167348cb02e1b97adbb231c9fcafc/src/Perlang.Stdlib/Stdlib/Libc.cs/#L105">View Source</a>
   </span>
   <a id="Perlang_Stdlib_Libc_environ_" data-uid="Perlang.Stdlib.Libc.environ*"></a>
   <h4 id="Perlang_Stdlib_Libc_environ" data-uid="Perlang.Stdlib.Libc.environ">environ()</h4>
@@ -139,6 +139,13 @@ dictionary if no environment variables are found.</p>
   <div class="markdown level1 remarks"><p>The names and values for the environment variables are stored as key-value pairs in the returned
 <see cref="!:ImmutableDictionary"></see>. Note that this dictionary is <strong>case-sensitive</strong> when looking up items
 based on the key, even on Windows.</p>
+<h3 id="on-linux-and-macos-systems">On Linux and macOS systems</h3>
+<p>On Linux and macOS, the <a class="xref" href="Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_environ">environ()</a> method retrieves the name and value of all environment
+variables that are inherited from the parent process that launched the <code>dotnet</code> process or that are defined
+within the scope of the <code>dotnet</code> process itself. Once the <code>dotnet</code> process ends, these latter environment
+variables cease to exist.</p>
+<p>.NET running on Unix-based systems does not support per-machine or per-user environment variables.</p>
+<h3 id="on-windows-systems">On Windows systems</h3>
 <p>On Windows systems, the <a class="xref" href="Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_environ">environ()</a> method returns the following environment variables:</p>
 <ul>
 <li><p>All per-machine environment variables that are defined at the time the process is created, along with
@@ -150,12 +157,6 @@ values.</p>
 <li><p>Any variables inherited from the parent process from which the application was launched.</p>
 </li>
 </ul>
-<h3 id="on-macos-and-linux-systems">On macOS and Linux systems</h3>
-<p>On MacOS and Linux, the <a class="xref" href="Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_environ">environ()</a> method retrieves the name and value of all environment
-variables that are inherited from the parent process that launched the <code>dotnet</code> process or that are defined
-within the scope of the <code>dotnet</code> process itself. Once the <code>dotnet</code> process ends, these latter environment
-variables cease to exist.</p>
-<p>.NET running on Unix-based systems does not support per-machine or per-user environment variables.</p>
 <h3 id="standard-environment-variables">Standard environment variables</h3>
 <p>The POSIX standard defines the following environment variables:</p>
 <ul>
@@ -178,7 +179,7 @@ variables cease to exist.</p>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Libc_getcwd.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Libc.getcwd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/7fa620c39dd988712e04b65d7cdc70ac313b0378/src/Perlang.Stdlib/Stdlib/Libc.cs/#L54">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/b5eb21279d0167348cb02e1b97adbb231c9fcafc/src/Perlang.Stdlib/Stdlib/Libc.cs/#L54">View Source</a>
   </span>
   <a id="Perlang_Stdlib_Libc_getcwd_" data-uid="Perlang.Stdlib.Libc.getcwd*"></a>
   <h4 id="Perlang_Stdlib_Libc_getcwd" data-uid="Perlang.Stdlib.Libc.getcwd">getcwd()</h4>
@@ -237,7 +238,7 @@ example, <code>/usr/bin</code> or <code>C:\mySubDirectory</code>).</p>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Libc_getenv_System_String_.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Libc.getenv(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/7fa620c39dd988712e04b65d7cdc70ac313b0378/src/Perlang.Stdlib/Stdlib/Libc.cs/#L159">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/b5eb21279d0167348cb02e1b97adbb231c9fcafc/src/Perlang.Stdlib/Stdlib/Libc.cs/#L161">View Source</a>
   </span>
   <a id="Perlang_Stdlib_Libc_getenv_" data-uid="Perlang.Stdlib.Libc.getenv*"></a>
   <h4 id="Perlang_Stdlib_Libc_getenv_System_String_" data-uid="Perlang.Stdlib.Libc.getenv(System.String)">getenv(String)</h4>
@@ -287,6 +288,14 @@ example, <code>/usr/bin</code> or <code>C:\mySubDirectory</code>).</p>
 variable from the environment block of the current process.</p>
 <p>To retrieve all environment variables along with their values, call the <a class="xref" href="Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_environ">environ()</a> method.</p>
 <p>Environment variable names are case-sensitive on Linux and macOS and case-insensitive on Windows.</p>
+<h3 id="on-linux-and-macos-systems">On Linux and macOS systems</h3>
+<p>On Linux and macOS, the environment block of the current process includes the following environment
+variables:</p>
+<ul>
+<li>All environment variables that are provided to it by the parent process that created it. For .NET
+applications launched from a shell, this includes all environment variables defined in the shell.</li>
+</ul>
+<p>.NET on Linux and macOS does not support per-machine or per-user environment variables.</p>
 <h3 id="on-windows-systems">On Windows systems</h3>
 <p>On Windows systems, the environment block of the current process includes:</p>
 <ul>
@@ -298,14 +307,6 @@ example, a new console window has all per-machine and per-user environment varia
 time it was launched.</p>
 </li>
 </ul>
-<h3 id="on-macos-and-linux-systems">On macOS and Linux systems</h3>
-<p>On macOS and Linux, the environment block of the current process includes the following environment
-variables:</p>
-<ul>
-<li>All environment variables that are provided to it by the parent process that created it. For .NET
-applications launched from a shell, this includes all environment variables defined in the shell.</li>
-</ul>
-<p>.NET on macOS and Linux does not support per-machine or per-user environment variables.</p>
 <h3 id="standard-environment-variables">Standard environment variables</h3>
 <p>In addition to user-defined environment variables, ISO/IEC 9945-1:1990 (<code>POSIX.1</code>) defines a set of standard
 environment variables. See <a class="xref" href="Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_environ">environ()</a> for more details
@@ -338,7 +339,7 @@ perform this operation.</p>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Libc_getpid.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Libc.getpid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/7fa620c39dd988712e04b65d7cdc70ac313b0378/src/Perlang.Stdlib/Stdlib/Libc.cs/#L173">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/b5eb21279d0167348cb02e1b97adbb231c9fcafc/src/Perlang.Stdlib/Stdlib/Libc.cs/#L175">View Source</a>
   </span>
   <a id="Perlang_Stdlib_Libc_getpid_" data-uid="Perlang.Stdlib.Libc.getpid*"></a>
   <h4 id="Perlang_Stdlib_Libc_getpid" data-uid="Perlang.Stdlib.Libc.getpid">getpid()</h4>
@@ -383,7 +384,7 @@ In C, <code>mkstemp</code> can be used for this purpose. <code>mkstemp</code> is
                     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Libc.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Libc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/7fa620c39dd988712e04b65d7cdc70ac313b0378/src/Perlang.Stdlib/Stdlib/Libc.cs/#L28" class="contribution-link">View Source</a>
+                    <a href="https://github.com/perlang-org/perlang/blob/b5eb21279d0167348cb02e1b97adbb231c9fcafc/src/Perlang.Stdlib/Stdlib/Libc.cs/#L28" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
