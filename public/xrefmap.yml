@@ -2454,6 +2454,94 @@ references:
   commentId: T:Perlang.NullObject
   fullName: Perlang.NullObject
   nameWithType: NullObject
+- uid: Perlang.NumericToken
+  name: NumericToken
+  href: api/Perlang.NumericToken.html
+  commentId: T:Perlang.NumericToken
+  fullName: Perlang.NumericToken
+  nameWithType: NumericToken
+- uid: Perlang.NumericToken.#ctor(System.String,System.Int32,System.String,System.Boolean,Perlang.NumericToken.Base,NumberStyles)
+  name: NumericToken(String, Int32, String, Boolean, NumericToken.Base, NumberStyles)
+  href: api/Perlang.NumericToken.html#Perlang_NumericToken__ctor_System_String_System_Int32_System_String_System_Boolean_Perlang_NumericToken_Base_NumberStyles_
+  commentId: M:Perlang.NumericToken.#ctor(System.String,System.Int32,System.String,System.Boolean,Perlang.NumericToken.Base,NumberStyles)
+  fullName: Perlang.NumericToken.NumericToken(System.String, System.Int32, System.String, System.Boolean, Perlang.NumericToken.Base, NumberStyles)
+  nameWithType: NumericToken.NumericToken(String, Int32, String, Boolean, NumericToken.Base, NumberStyles)
+- uid: Perlang.NumericToken.#ctor*
+  name: NumericToken
+  href: api/Perlang.NumericToken.html#Perlang_NumericToken__ctor_
+  commentId: Overload:Perlang.NumericToken.#ctor
+  isSpec: "True"
+  fullName: Perlang.NumericToken.NumericToken
+  nameWithType: NumericToken.NumericToken
+- uid: Perlang.NumericToken.Base
+  name: NumericToken.Base
+  href: api/Perlang.NumericToken.Base.html
+  commentId: T:Perlang.NumericToken.Base
+  fullName: Perlang.NumericToken.Base
+  nameWithType: NumericToken.Base
+- uid: Perlang.NumericToken.Base.BINARY
+  name: BINARY
+  href: api/Perlang.NumericToken.Base.html#Perlang_NumericToken_Base_BINARY
+  commentId: F:Perlang.NumericToken.Base.BINARY
+  fullName: Perlang.NumericToken.Base.BINARY
+  nameWithType: NumericToken.Base.BINARY
+- uid: Perlang.NumericToken.Base.DECIMAL
+  name: DECIMAL
+  href: api/Perlang.NumericToken.Base.html#Perlang_NumericToken_Base_DECIMAL
+  commentId: F:Perlang.NumericToken.Base.DECIMAL
+  fullName: Perlang.NumericToken.Base.DECIMAL
+  nameWithType: NumericToken.Base.DECIMAL
+- uid: Perlang.NumericToken.Base.HEXADECIMAL
+  name: HEXADECIMAL
+  href: api/Perlang.NumericToken.Base.html#Perlang_NumericToken_Base_HEXADECIMAL
+  commentId: F:Perlang.NumericToken.Base.HEXADECIMAL
+  fullName: Perlang.NumericToken.Base.HEXADECIMAL
+  nameWithType: NumericToken.Base.HEXADECIMAL
+- uid: Perlang.NumericToken.Base.OCTAL
+  name: OCTAL
+  href: api/Perlang.NumericToken.Base.html#Perlang_NumericToken_Base_OCTAL
+  commentId: F:Perlang.NumericToken.Base.OCTAL
+  fullName: Perlang.NumericToken.Base.OCTAL
+  nameWithType: NumericToken.Base.OCTAL
+- uid: Perlang.NumericToken.IsFractional
+  name: IsFractional
+  href: api/Perlang.NumericToken.html#Perlang_NumericToken_IsFractional
+  commentId: P:Perlang.NumericToken.IsFractional
+  fullName: Perlang.NumericToken.IsFractional
+  nameWithType: NumericToken.IsFractional
+- uid: Perlang.NumericToken.IsFractional*
+  name: IsFractional
+  href: api/Perlang.NumericToken.html#Perlang_NumericToken_IsFractional_
+  commentId: Overload:Perlang.NumericToken.IsFractional
+  isSpec: "True"
+  fullName: Perlang.NumericToken.IsFractional
+  nameWithType: NumericToken.IsFractional
+- uid: Perlang.NumericToken.NumberBase
+  name: NumberBase
+  href: api/Perlang.NumericToken.html#Perlang_NumericToken_NumberBase
+  commentId: P:Perlang.NumericToken.NumberBase
+  fullName: Perlang.NumericToken.NumberBase
+  nameWithType: NumericToken.NumberBase
+- uid: Perlang.NumericToken.NumberBase*
+  name: NumberBase
+  href: api/Perlang.NumericToken.html#Perlang_NumericToken_NumberBase_
+  commentId: Overload:Perlang.NumericToken.NumberBase
+  isSpec: "True"
+  fullName: Perlang.NumericToken.NumberBase
+  nameWithType: NumericToken.NumberBase
+- uid: Perlang.NumericToken.NumberStyles
+  name: NumberStyles
+  href: api/Perlang.NumericToken.html#Perlang_NumericToken_NumberStyles
+  commentId: P:Perlang.NumericToken.NumberStyles
+  fullName: Perlang.NumericToken.NumberStyles
+  nameWithType: NumericToken.NumberStyles
+- uid: Perlang.NumericToken.NumberStyles*
+  name: NumberStyles
+  href: api/Perlang.NumericToken.html#Perlang_NumericToken_NumberStyles_
+  commentId: Overload:Perlang.NumericToken.NumberStyles
+  isSpec: "True"
+  fullName: Perlang.NumericToken.NumberStyles
+  nameWithType: NumericToken.NumberStyles
 - uid: Perlang.Parameter
   name: Parameter
   href: api/Perlang.Parameter.html

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Parameter
+    <title>Class NumericToken
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Parameter
+    <meta name="title" content="Class NumericToken
    ">
     <meta name="generator" content="docfx 2.57.2.0">
     
@@ -72,40 +72,59 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Perlang.Parameter">
+            <article class="content wrap" id="_content" data-uid="Perlang.NumericToken">
   
   
-  <h1 id="Perlang_Parameter" data-uid="Perlang.Parameter" class="text-break">Class Parameter
+  <h1 id="Perlang_NumericToken" data-uid="Perlang.NumericToken" class="text-break">Class NumericToken
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">Parameter</span></div>
+    <div class="level1"><a class="xref" href="Perlang.Token.html">Token</a></div>
+    <div class="level2"><span class="xref">NumericToken</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Perlang.Token.html#Perlang_Token_Type">Token.Type</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.Token.html#Perlang_Token_Lexeme">Token.Lexeme</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.Token.html#Perlang_Token_Literal">Token.Literal</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.Token.html#Perlang_Token_Line">Token.Line</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.Token.html#Perlang_Token_ToString">Token.ToString()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.html">Perlang</a></h6>
   <h6><strong>Assembly</strong>: Perlang.Common.dll</h6>
-  <h5 id="Perlang_Parameter_syntax">Syntax</h5>
+  <h5 id="Perlang_NumericToken_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Parameter : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class NumericToken : Token</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Parameter__ctor_Perlang_ITypeReference_.md&amp;value=---%0Auid%3A%20Perlang.Parameter.%23ctor(Perlang.ITypeReference)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_NumericToken__ctor_System_String_System_Int32_System_String_System_Boolean_Perlang_NumericToken_Base_NumberStyles_.md&amp;value=---%0Auid%3A%20Perlang.NumericToken.%23ctor(System.String%2CSystem.Int32%2CSystem.String%2CSystem.Boolean%2CPerlang.NumericToken.Base%2CNumberStyles)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/5d89f6da6664fdc28b6896a5a808e4782f80c3a6/src/Perlang.Common/Parameter.cs/#L10">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/5d89f6da6664fdc28b6896a5a808e4782f80c3a6/src/Perlang.Common/NumericToken.cs/#L11">View Source</a>
   </span>
-  <a id="Perlang_Parameter__ctor_" data-uid="Perlang.Parameter.#ctor*"></a>
-  <h4 id="Perlang_Parameter__ctor_Perlang_ITypeReference_" data-uid="Perlang.Parameter.#ctor(Perlang.ITypeReference)">Parameter(ITypeReference)</h4>
+  <a id="Perlang_NumericToken__ctor_" data-uid="Perlang.NumericToken.#ctor*"></a>
+  <h4 id="Perlang_NumericToken__ctor_System_String_System_Int32_System_String_System_Boolean_Perlang_NumericToken_Base_NumberStyles_" data-uid="Perlang.NumericToken.#ctor(System.String,System.Int32,System.String,System.Boolean,Perlang.NumericToken.Base,NumberStyles)">NumericToken(String, Int32, String, Boolean, NumericToken.Base, NumberStyles)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Parameter(ITypeReference typeReference)</code></pre>
+    <pre><code class="lang-csharp hljs">public NumericToken(string lexeme, int line, string numberCharacters, bool isFractional, NumericToken.Base numberBase, NumberStyles numberStyles)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -118,45 +137,33 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Perlang.ITypeReference.html">ITypeReference</a></td>
-        <td><span class="parametername">typeReference</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Parameter__ctor_Perlang_Token_Perlang_ITypeReference_.md&amp;value=---%0Auid%3A%20Perlang.Parameter.%23ctor(Perlang.Token%2CPerlang.ITypeReference)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/5d89f6da6664fdc28b6896a5a808e4782f80c3a6/src/Perlang.Common/Parameter.cs/#L15">View Source</a>
-  </span>
-  <a id="Perlang_Parameter__ctor_" data-uid="Perlang.Parameter.#ctor*"></a>
-  <h4 id="Perlang_Parameter__ctor_Perlang_Token_Perlang_ITypeReference_" data-uid="Perlang.Parameter.#ctor(Perlang.Token,Perlang.ITypeReference)">Parameter(Token, ITypeReference)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Parameter(Token name, ITypeReference typeReference)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Perlang.Token.html">Token</a></td>
-        <td><span class="parametername">name</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">lexeme</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="Perlang.ITypeReference.html">ITypeReference</a></td>
-        <td><span class="parametername">typeReference</span></td>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">line</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">numberCharacters</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isFractional</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.NumericToken.Base.html">NumericToken.Base</a></td>
+        <td><span class="parametername">numberBase</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">NumberStyles</span></td>
+        <td><span class="parametername">numberStyles</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -165,18 +172,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Parameter_Name.md&amp;value=---%0Auid%3A%20Perlang.Parameter.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_NumericToken_IsFractional.md&amp;value=---%0Auid%3A%20Perlang.NumericToken.IsFractional%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/5d89f6da6664fdc28b6896a5a808e4782f80c3a6/src/Perlang.Common/Parameter.cs/#L5">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/5d89f6da6664fdc28b6896a5a808e4782f80c3a6/src/Perlang.Common/NumericToken.cs/#L7">View Source</a>
   </span>
-  <a id="Perlang_Parameter_Name_" data-uid="Perlang.Parameter.Name*"></a>
-  <h4 id="Perlang_Parameter_Name" data-uid="Perlang.Parameter.Name">Name</h4>
+  <a id="Perlang_NumericToken_IsFractional_" data-uid="Perlang.NumericToken.IsFractional*"></a>
+  <h4 id="Perlang_NumericToken_IsFractional" data-uid="Perlang.NumericToken.IsFractional">IsFractional</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Token Name { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool IsFractional { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -188,25 +195,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Perlang.Token.html">Token</a></td>
+        <td><span class="xref">System.Boolean</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Parameter_TypeReference.md&amp;value=---%0Auid%3A%20Perlang.Parameter.TypeReference%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_NumericToken_NumberBase.md&amp;value=---%0Auid%3A%20Perlang.NumericToken.NumberBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/5d89f6da6664fdc28b6896a5a808e4782f80c3a6/src/Perlang.Common/Parameter.cs/#L6">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/5d89f6da6664fdc28b6896a5a808e4782f80c3a6/src/Perlang.Common/NumericToken.cs/#L8">View Source</a>
   </span>
-  <a id="Perlang_Parameter_TypeReference_" data-uid="Perlang.Parameter.TypeReference*"></a>
-  <h4 id="Perlang_Parameter_TypeReference" data-uid="Perlang.Parameter.TypeReference">TypeReference</h4>
+  <a id="Perlang_NumericToken_NumberBase_" data-uid="Perlang.NumericToken.NumberBase*"></a>
+  <h4 id="Perlang_NumericToken_NumberBase" data-uid="Perlang.NumericToken.NumberBase">NumberBase</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ITypeReference TypeReference { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public NumericToken.Base NumberBase { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -218,25 +225,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Perlang.ITypeReference.html">ITypeReference</a></td>
+        <td><a class="xref" href="Perlang.NumericToken.Base.html">NumericToken.Base</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Parameter_TypeSpecifier.md&amp;value=---%0Auid%3A%20Perlang.Parameter.TypeSpecifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_NumericToken_NumberStyles.md&amp;value=---%0Auid%3A%20Perlang.NumericToken.NumberStyles%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/5d89f6da6664fdc28b6896a5a808e4782f80c3a6/src/Perlang.Common/Parameter.cs/#L8">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/5d89f6da6664fdc28b6896a5a808e4782f80c3a6/src/Perlang.Common/NumericToken.cs/#L9">View Source</a>
   </span>
-  <a id="Perlang_Parameter_TypeSpecifier_" data-uid="Perlang.Parameter.TypeSpecifier*"></a>
-  <h4 id="Perlang_Parameter_TypeSpecifier" data-uid="Perlang.Parameter.TypeSpecifier">TypeSpecifier</h4>
+  <a id="Perlang_NumericToken_NumberStyles_" data-uid="Perlang.NumericToken.NumberStyles*"></a>
+  <h4 id="Perlang_NumericToken_NumberStyles" data-uid="Perlang.NumericToken.NumberStyles">NumberStyles</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Token TypeSpecifier { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public NumberStyles NumberStyles { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -248,7 +255,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Perlang.Token.html">Token</a></td>
+        <td><span class="xref">NumberStyles</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -261,10 +268,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Parameter.md&amp;value=---%0Auid%3A%20Perlang.Parameter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_NumericToken.md&amp;value=---%0Auid%3A%20Perlang.NumericToken%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/5d89f6da6664fdc28b6896a5a808e4782f80c3a6/src/Perlang.Common/Parameter.cs/#L3" class="contribution-link">View Source</a>
+                    <a href="https://github.com/perlang-org/perlang/blob/5d89f6da6664fdc28b6896a5a808e4782f80c3a6/src/Perlang.Common/NumericToken.cs/#L5" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
