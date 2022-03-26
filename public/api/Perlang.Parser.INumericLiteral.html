@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Time
+    <title>Interface INumericLiteral
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Time
+    <meta name="title" content="Interface INumericLiteral
    ">
     <meta name="generator" content="docfx 2.57.2.0">
     
@@ -72,42 +72,39 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Perlang.Stdlib.Time">
+            <article class="content wrap" id="_content" data-uid="Perlang.Parser.INumericLiteral">
   
   
-  <h1 id="Perlang_Stdlib_Time" data-uid="Perlang.Stdlib.Time" class="text-break">Class Time
+  <h1 id="Perlang_Parser_INumericLiteral" data-uid="Perlang.Parser.INumericLiteral" class="text-break">Interface INumericLiteral
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">Time</span></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.Stdlib.html">Perlang.Stdlib</a></h6>
-  <h6><strong>Assembly</strong>: Perlang.Stdlib.dll</h6>
-  <h5 id="Perlang_Stdlib_Time_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.Parser.html">Perlang.Parser</a></h6>
+  <h6><strong>Assembly</strong>: Perlang.Parser.dll</h6>
+  <h5 id="Perlang_Parser_INumericLiteral_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class Time : object</code></pre>
+    <pre><code class="lang-csharp hljs">public interface INumericLiteral</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Time_Now.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Time.Now%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Parser_INumericLiteral_BitsUsed.md&amp;value=---%0Auid%3A%20Perlang.Parser.INumericLiteral.BitsUsed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/eb10d291087388b15f457d2f95fe87cbd0d90f02/src/Perlang.Stdlib/Stdlib/Time.cs/#L9">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/eb10d291087388b15f457d2f95fe87cbd0d90f02/src/Perlang.Parser/INumericLiteral.cs/#L12">View Source</a>
   </span>
-  <a id="Perlang_Stdlib_Time_Now_" data-uid="Perlang.Stdlib.Time.Now*"></a>
-  <h4 id="Perlang_Stdlib_Time_Now" data-uid="Perlang.Stdlib.Time.Now">Now()</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Perlang_Parser_INumericLiteral_BitsUsed_" data-uid="Perlang.Parser.INumericLiteral.BitsUsed*"></a>
+  <h4 id="Perlang_Parser_INumericLiteral_BitsUsed" data-uid="Perlang.Parser.INumericLiteral.BitsUsed">BitsUsed</h4>
+  <div class="markdown level1 summary"><p>Gets a number that indicates the actual size of the value in <a class="xref" href="Perlang.Parser.INumericLiteral.html#Perlang_Parser_INumericLiteral_Value">Value</a>. This is used to be able to do
+things like &quot;implicit casting&quot; from <code>int</code> to <code>uint</code>, which is perfectly safe for positive integers.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DateTime Now()</code></pre>
+    <pre><code class="lang-csharp hljs">long BitsUsed { get; }</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -117,7 +114,37 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DateTime</span></td>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Parser_INumericLiteral_Value.md&amp;value=---%0Auid%3A%20Perlang.Parser.INumericLiteral.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/eb10d291087388b15f457d2f95fe87cbd0d90f02/src/Perlang.Parser/INumericLiteral.cs/#L6">View Source</a>
+  </span>
+  <a id="Perlang_Parser_INumericLiteral_Value_" data-uid="Perlang.Parser.INumericLiteral.Value*"></a>
+  <h4 id="Perlang_Parser_INumericLiteral_Value" data-uid="Perlang.Parser.INumericLiteral.Value">Value</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object Value { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -130,10 +157,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Time.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Time%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Parser_INumericLiteral.md&amp;value=---%0Auid%3A%20Perlang.Parser.INumericLiteral%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/eb10d291087388b15f457d2f95fe87cbd0d90f02/src/Perlang.Stdlib/Stdlib/Time.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/perlang-org/perlang/blob/eb10d291087388b15f457d2f95fe87cbd0d90f02/src/Perlang.Parser/INumericLiteral.cs/#L4" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
