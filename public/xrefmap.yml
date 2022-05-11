@@ -1674,6 +1674,38 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Internals.IBindingHandler.GetVariableOrFunctionBinding
   nameWithType: IBindingHandler.GetVariableOrFunctionBinding
+- uid: Perlang.Interpreter.InterpreterMessages
+  name: InterpreterMessages
+  href: api/Perlang.Interpreter.InterpreterMessages.html
+  commentId: T:Perlang.Interpreter.InterpreterMessages
+  fullName: Perlang.Interpreter.InterpreterMessages
+  nameWithType: InterpreterMessages
+- uid: Perlang.Interpreter.InterpreterMessages.UnsupportedOperandTypes(Perlang.TokenType,System.Object,System.Object)
+  name: UnsupportedOperandTypes(TokenType, Object, Object)
+  href: api/Perlang.Interpreter.InterpreterMessages.html#Perlang_Interpreter_InterpreterMessages_UnsupportedOperandTypes_Perlang_TokenType_System_Object_System_Object_
+  commentId: M:Perlang.Interpreter.InterpreterMessages.UnsupportedOperandTypes(Perlang.TokenType,System.Object,System.Object)
+  fullName: Perlang.Interpreter.InterpreterMessages.UnsupportedOperandTypes(Perlang.TokenType, System.Object, System.Object)
+  nameWithType: InterpreterMessages.UnsupportedOperandTypes(TokenType, Object, Object)
+- uid: Perlang.Interpreter.InterpreterMessages.UnsupportedOperandTypes*
+  name: UnsupportedOperandTypes
+  href: api/Perlang.Interpreter.InterpreterMessages.html#Perlang_Interpreter_InterpreterMessages_UnsupportedOperandTypes_
+  commentId: Overload:Perlang.Interpreter.InterpreterMessages.UnsupportedOperandTypes
+  isSpec: "True"
+  fullName: Perlang.Interpreter.InterpreterMessages.UnsupportedOperandTypes
+  nameWithType: InterpreterMessages.UnsupportedOperandTypes
+- uid: Perlang.Interpreter.InterpreterMessages.UnsupportedOperatorTypeInBinaryExpression(Perlang.TokenType)
+  name: UnsupportedOperatorTypeInBinaryExpression(TokenType)
+  href: api/Perlang.Interpreter.InterpreterMessages.html#Perlang_Interpreter_InterpreterMessages_UnsupportedOperatorTypeInBinaryExpression_Perlang_TokenType_
+  commentId: M:Perlang.Interpreter.InterpreterMessages.UnsupportedOperatorTypeInBinaryExpression(Perlang.TokenType)
+  fullName: Perlang.Interpreter.InterpreterMessages.UnsupportedOperatorTypeInBinaryExpression(Perlang.TokenType)
+  nameWithType: InterpreterMessages.UnsupportedOperatorTypeInBinaryExpression(TokenType)
+- uid: Perlang.Interpreter.InterpreterMessages.UnsupportedOperatorTypeInBinaryExpression*
+  name: UnsupportedOperatorTypeInBinaryExpression
+  href: api/Perlang.Interpreter.InterpreterMessages.html#Perlang_Interpreter_InterpreterMessages_UnsupportedOperatorTypeInBinaryExpression_
+  commentId: Overload:Perlang.Interpreter.InterpreterMessages.UnsupportedOperatorTypeInBinaryExpression
+  isSpec: "True"
+  fullName: Perlang.Interpreter.InterpreterMessages.UnsupportedOperatorTypeInBinaryExpression
+  nameWithType: InterpreterMessages.UnsupportedOperatorTypeInBinaryExpression
 - uid: Perlang.Interpreter.NameResolution
   name: Perlang.Interpreter.NameResolution
   href: api/Perlang.Interpreter.NameResolution.html
@@ -4568,19 +4600,6 @@ references:
   isSpec: "True"
   fullName: Perlang.TypeReference.TypeReference
   nameWithType: TypeReference.TypeReference
-- uid: Perlang.TypeReference.Bool
-  name: Bool
-  href: api/Perlang.TypeReference.html#Perlang_TypeReference_Bool
-  commentId: P:Perlang.TypeReference.Bool
-  fullName: Perlang.TypeReference.Bool
-  nameWithType: TypeReference.Bool
-- uid: Perlang.TypeReference.Bool*
-  name: Bool
-  href: api/Perlang.TypeReference.html#Perlang_TypeReference_Bool_
-  commentId: Overload:Perlang.TypeReference.Bool
-  isSpec: "True"
-  fullName: Perlang.TypeReference.Bool
-  nameWithType: TypeReference.Bool
 - uid: Perlang.TypeReference.ClrType
   name: ClrType
   href: api/Perlang.TypeReference.html#Perlang_TypeReference_ClrType
