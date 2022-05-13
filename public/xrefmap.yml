@@ -2949,6 +2949,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Parser.Scanner.Scanner
   nameWithType: Scanner.Scanner
+- uid: Perlang.Parser.Scanner.ReservedKeywordOnlyStrings
+  name: ReservedKeywordOnlyStrings
+  href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_ReservedKeywordOnlyStrings
+  commentId: P:Perlang.Parser.Scanner.ReservedKeywordOnlyStrings
+  fullName: Perlang.Parser.Scanner.ReservedKeywordOnlyStrings
+  nameWithType: Scanner.ReservedKeywordOnlyStrings
+- uid: Perlang.Parser.Scanner.ReservedKeywordOnlyStrings*
+  name: ReservedKeywordOnlyStrings
+  href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_ReservedKeywordOnlyStrings_
+  commentId: Overload:Perlang.Parser.Scanner.ReservedKeywordOnlyStrings
+  isSpec: "True"
+  fullName: Perlang.Parser.Scanner.ReservedKeywordOnlyStrings
+  nameWithType: Scanner.ReservedKeywordOnlyStrings
 - uid: Perlang.Parser.Scanner.ReservedKeywords
   name: ReservedKeywords
   href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_ReservedKeywords
@@ -2968,6 +2981,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Parser.Scanner.ReservedKeywordStrings
   nameWithType: Scanner.ReservedKeywordStrings
+- uid: Perlang.Parser.Scanner.ReservedTypeKeywordStrings
+  name: ReservedTypeKeywordStrings
+  href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_ReservedTypeKeywordStrings
+  commentId: P:Perlang.Parser.Scanner.ReservedTypeKeywordStrings
+  fullName: Perlang.Parser.Scanner.ReservedTypeKeywordStrings
+  nameWithType: Scanner.ReservedTypeKeywordStrings
+- uid: Perlang.Parser.Scanner.ReservedTypeKeywordStrings*
+  name: ReservedTypeKeywordStrings
+  href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_ReservedTypeKeywordStrings_
+  commentId: Overload:Perlang.Parser.Scanner.ReservedTypeKeywordStrings
+  isSpec: "True"
+  fullName: Perlang.Parser.Scanner.ReservedTypeKeywordStrings
+  nameWithType: Scanner.ReservedTypeKeywordStrings
 - uid: Perlang.Parser.Scanner.ScanTokens
   name: ScanTokens()
   href: api/Perlang.Parser.Scanner.html#Perlang_Parser_Scanner_ScanTokens
