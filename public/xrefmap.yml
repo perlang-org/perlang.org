@@ -2308,24 +2308,21 @@ references:
   commentId: T:Perlang.Interpreter.Typing.TypeCoercer
   fullName: Perlang.Interpreter.Typing.TypeCoercer
   nameWithType: TypeCoercer
-- uid: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.ITypeReference,Perlang.ITypeReference,System.Nullable{System.Int64})
-  name: CanBeCoercedInto(ITypeReference, ITypeReference, Nullable<Int64>)
-  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Perlang_ITypeReference_Perlang_ITypeReference_System_Nullable_System_Int64__
-  commentId: M:Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.ITypeReference,Perlang.ITypeReference,System.Nullable{System.Int64})
-  name.vb: CanBeCoercedInto(ITypeReference, ITypeReference, Nullable(Of Int64))
-  fullName: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.ITypeReference, Perlang.ITypeReference, System.Nullable<System.Int64>)
-  fullName.vb: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.ITypeReference, Perlang.ITypeReference, System.Nullable(Of System.Int64))
-  nameWithType: TypeCoercer.CanBeCoercedInto(ITypeReference, ITypeReference, Nullable<Int64>)
-  nameWithType.vb: TypeCoercer.CanBeCoercedInto(ITypeReference, ITypeReference, Nullable(Of Int64))
-- uid: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Type,Type,System.Nullable{System.Int64})
-  name: CanBeCoercedInto(Type, Type, Nullable<Int64>)
-  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Type_Type_System_Nullable_System_Int64__
-  commentId: M:Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Type,Type,System.Nullable{System.Int64})
-  name.vb: CanBeCoercedInto(Type, Type, Nullable(Of Int64))
-  fullName: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Type, Type, System.Nullable<System.Int64>)
-  fullName.vb: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Type, Type, System.Nullable(Of System.Int64))
-  nameWithType: TypeCoercer.CanBeCoercedInto(Type, Type, Nullable<Int64>)
-  nameWithType.vb: TypeCoercer.CanBeCoercedInto(Type, Type, Nullable(Of Int64))
+- uid: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.ITypeReference,Perlang.ITypeReference,Perlang.Parser.INumericLiteral)
+  name: CanBeCoercedInto(ITypeReference, ITypeReference, INumericLiteral)
+  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_Perlang_ITypeReference_Perlang_ITypeReference_Perlang_Parser_INumericLiteral_
+  commentId: M:Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.ITypeReference,Perlang.ITypeReference,Perlang.Parser.INumericLiteral)
+  fullName: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(Perlang.ITypeReference, Perlang.ITypeReference, Perlang.Parser.INumericLiteral)
+  nameWithType: TypeCoercer.CanBeCoercedInto(ITypeReference, ITypeReference, INumericLiteral)
+- uid: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(System.Nullable{Type},System.Nullable{Type},Perlang.Parser.INumericLiteral)
+  name: CanBeCoercedInto(Nullable<Type>, Nullable<Type>, INumericLiteral)
+  href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_System_Nullable_Type__System_Nullable_Type__Perlang_Parser_INumericLiteral_
+  commentId: M:Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(System.Nullable{Type},System.Nullable{Type},Perlang.Parser.INumericLiteral)
+  name.vb: CanBeCoercedInto(Nullable(Of Type), Nullable(Of Type), INumericLiteral)
+  fullName: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(System.Nullable<Type>, System.Nullable<Type>, Perlang.Parser.INumericLiteral)
+  fullName.vb: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto(System.Nullable(Of Type), System.Nullable(Of Type), Perlang.Parser.INumericLiteral)
+  nameWithType: TypeCoercer.CanBeCoercedInto(Nullable<Type>, Nullable<Type>, INumericLiteral)
+  nameWithType.vb: TypeCoercer.CanBeCoercedInto(Nullable(Of Type), Nullable(Of Type), INumericLiteral)
 - uid: Perlang.Interpreter.Typing.TypeCoercer.CanBeCoercedInto*
   name: CanBeCoercedInto
   href: api/Perlang.Interpreter.Typing.TypeCoercer.html#Perlang_Interpreter_Typing_TypeCoercer_CanBeCoercedInto_
@@ -2733,6 +2730,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Parser.INumericLiteral.BitsUsed
   nameWithType: INumericLiteral.BitsUsed
+- uid: Perlang.Parser.INumericLiteral.IsPositive
+  name: IsPositive
+  href: api/Perlang.Parser.INumericLiteral.html#Perlang_Parser_INumericLiteral_IsPositive
+  commentId: P:Perlang.Parser.INumericLiteral.IsPositive
+  fullName: Perlang.Parser.INumericLiteral.IsPositive
+  nameWithType: INumericLiteral.IsPositive
+- uid: Perlang.Parser.INumericLiteral.IsPositive*
+  name: IsPositive
+  href: api/Perlang.Parser.INumericLiteral.html#Perlang_Parser_INumericLiteral_IsPositive_
+  commentId: Overload:Perlang.Parser.INumericLiteral.IsPositive
+  isSpec: "True"
+  fullName: Perlang.Parser.INumericLiteral.IsPositive
+  nameWithType: INumericLiteral.IsPositive
 - uid: Perlang.Parser.INumericLiteral.Value
   name: Value
   href: api/Perlang.Parser.INumericLiteral.html#Perlang_Parser_INumericLiteral_Value
