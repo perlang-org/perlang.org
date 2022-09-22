@@ -1430,6 +1430,19 @@ references:
   commentId: T:Perlang.Extensions.TypeExtensions
   fullName: Perlang.Extensions.TypeExtensions
   nameWithType: TypeExtensions
+- uid: Perlang.Extensions.TypeExtensions.ToQuotedTypeKeyword(Type)
+  name: ToQuotedTypeKeyword(Type)
+  href: api/Perlang.Extensions.TypeExtensions.html#Perlang_Extensions_TypeExtensions_ToQuotedTypeKeyword_Type_
+  commentId: M:Perlang.Extensions.TypeExtensions.ToQuotedTypeKeyword(Type)
+  fullName: Perlang.Extensions.TypeExtensions.ToQuotedTypeKeyword(Type)
+  nameWithType: TypeExtensions.ToQuotedTypeKeyword(Type)
+- uid: Perlang.Extensions.TypeExtensions.ToQuotedTypeKeyword*
+  name: ToQuotedTypeKeyword
+  href: api/Perlang.Extensions.TypeExtensions.html#Perlang_Extensions_TypeExtensions_ToQuotedTypeKeyword_
+  commentId: Overload:Perlang.Extensions.TypeExtensions.ToQuotedTypeKeyword
+  isSpec: "True"
+  fullName: Perlang.Extensions.TypeExtensions.ToQuotedTypeKeyword
+  nameWithType: TypeExtensions.ToQuotedTypeKeyword
 - uid: Perlang.Extensions.TypeExtensions.ToTypeKeyword(Type)
   name: ToTypeKeyword(Type)
   href: api/Perlang.Extensions.TypeExtensions.html#Perlang_Extensions_TypeExtensions_ToTypeKeyword_Type_
