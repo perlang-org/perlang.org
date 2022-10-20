@@ -194,12 +194,12 @@ references:
   commentId: T:Perlang.ConsoleApp.CommandResultExtensions
   fullName: Perlang.ConsoleApp.CommandResultExtensions
   nameWithType: CommandResultExtensions
-- uid: Perlang.ConsoleApp.CommandResultExtensions.HasArgument(CommandResult,IArgument)
-  name: HasArgument(CommandResult, IArgument)
-  href: api/Perlang.ConsoleApp.CommandResultExtensions.html#Perlang_ConsoleApp_CommandResultExtensions_HasArgument_CommandResult_IArgument_
-  commentId: M:Perlang.ConsoleApp.CommandResultExtensions.HasArgument(CommandResult,IArgument)
-  fullName: Perlang.ConsoleApp.CommandResultExtensions.HasArgument(CommandResult, IArgument)
-  nameWithType: CommandResultExtensions.HasArgument(CommandResult, IArgument)
+- uid: Perlang.ConsoleApp.CommandResultExtensions.HasArgument(CommandResult,Argument)
+  name: HasArgument(CommandResult, Argument)
+  href: api/Perlang.ConsoleApp.CommandResultExtensions.html#Perlang_ConsoleApp_CommandResultExtensions_HasArgument_CommandResult_Argument_
+  commentId: M:Perlang.ConsoleApp.CommandResultExtensions.HasArgument(CommandResult,Argument)
+  fullName: Perlang.ConsoleApp.CommandResultExtensions.HasArgument(CommandResult, Argument)
+  nameWithType: CommandResultExtensions.HasArgument(CommandResult, Argument)
 - uid: Perlang.ConsoleApp.CommandResultExtensions.HasArgument*
   name: HasArgument
   href: api/Perlang.ConsoleApp.CommandResultExtensions.html#Perlang_ConsoleApp_CommandResultExtensions_HasArgument_
@@ -207,12 +207,12 @@ references:
   isSpec: "True"
   fullName: Perlang.ConsoleApp.CommandResultExtensions.HasArgument
   nameWithType: CommandResultExtensions.HasArgument
-- uid: Perlang.ConsoleApp.CommandResultExtensions.HasOption(CommandResult,IOption)
-  name: HasOption(CommandResult, IOption)
-  href: api/Perlang.ConsoleApp.CommandResultExtensions.html#Perlang_ConsoleApp_CommandResultExtensions_HasOption_CommandResult_IOption_
-  commentId: M:Perlang.ConsoleApp.CommandResultExtensions.HasOption(CommandResult,IOption)
-  fullName: Perlang.ConsoleApp.CommandResultExtensions.HasOption(CommandResult, IOption)
-  nameWithType: CommandResultExtensions.HasOption(CommandResult, IOption)
+- uid: Perlang.ConsoleApp.CommandResultExtensions.HasOption(CommandResult,Option)
+  name: HasOption(CommandResult, Option)
+  href: api/Perlang.ConsoleApp.CommandResultExtensions.html#Perlang_ConsoleApp_CommandResultExtensions_HasOption_CommandResult_Option_
+  commentId: M:Perlang.ConsoleApp.CommandResultExtensions.HasOption(CommandResult,Option)
+  fullName: Perlang.ConsoleApp.CommandResultExtensions.HasOption(CommandResult, Option)
+  nameWithType: CommandResultExtensions.HasOption(CommandResult, Option)
 - uid: Perlang.ConsoleApp.CommandResultExtensions.HasOption*
   name: HasOption
   href: api/Perlang.ConsoleApp.CommandResultExtensions.html#Perlang_ConsoleApp_CommandResultExtensions_HasOption_
