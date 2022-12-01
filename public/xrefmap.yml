@@ -2508,12 +2508,15 @@ references:
   commentId: T:Perlang.NumericToken
   fullName: Perlang.NumericToken
   nameWithType: NumericToken
-- uid: Perlang.NumericToken.#ctor(System.String,System.Int32,System.String,System.Boolean,Perlang.NumericToken.Base,NumberStyles)
-  name: NumericToken(String, Int32, String, Boolean, NumericToken.Base, NumberStyles)
-  href: api/Perlang.NumericToken.html#Perlang_NumericToken__ctor_System_String_System_Int32_System_String_System_Boolean_Perlang_NumericToken_Base_NumberStyles_
-  commentId: M:Perlang.NumericToken.#ctor(System.String,System.Int32,System.String,System.Boolean,Perlang.NumericToken.Base,NumberStyles)
-  fullName: Perlang.NumericToken.NumericToken(System.String, System.Int32, System.String, System.Boolean, Perlang.NumericToken.Base, NumberStyles)
-  nameWithType: NumericToken.NumericToken(String, Int32, String, Boolean, NumericToken.Base, NumberStyles)
+- uid: Perlang.NumericToken.#ctor(System.String,System.Int32,System.String,System.Nullable{System.Char},System.Boolean,Perlang.NumericToken.Base,NumberStyles)
+  name: NumericToken(String, Int32, String, Nullable<Char>, Boolean, NumericToken.Base, NumberStyles)
+  href: api/Perlang.NumericToken.html#Perlang_NumericToken__ctor_System_String_System_Int32_System_String_System_Nullable_System_Char__System_Boolean_Perlang_NumericToken_Base_NumberStyles_
+  commentId: M:Perlang.NumericToken.#ctor(System.String,System.Int32,System.String,System.Nullable{System.Char},System.Boolean,Perlang.NumericToken.Base,NumberStyles)
+  name.vb: NumericToken(String, Int32, String, Nullable(Of Char), Boolean, NumericToken.Base, NumberStyles)
+  fullName: Perlang.NumericToken.NumericToken(System.String, System.Int32, System.String, System.Nullable<System.Char>, System.Boolean, Perlang.NumericToken.Base, NumberStyles)
+  fullName.vb: Perlang.NumericToken.NumericToken(System.String, System.Int32, System.String, System.Nullable(Of System.Char), System.Boolean, Perlang.NumericToken.Base, NumberStyles)
+  nameWithType: NumericToken.NumericToken(String, Int32, String, Nullable<Char>, Boolean, NumericToken.Base, NumberStyles)
+  nameWithType.vb: NumericToken.NumericToken(String, Int32, String, Nullable(Of Char), Boolean, NumericToken.Base, NumberStyles)
 - uid: Perlang.NumericToken.#ctor*
   name: NumericToken
   href: api/Perlang.NumericToken.html#Perlang_NumericToken__ctor_
@@ -2551,6 +2554,19 @@ references:
   commentId: F:Perlang.NumericToken.Base.OCTAL
   fullName: Perlang.NumericToken.Base.OCTAL
   nameWithType: NumericToken.Base.OCTAL
+- uid: Perlang.NumericToken.HasSuffix
+  name: HasSuffix
+  href: api/Perlang.NumericToken.html#Perlang_NumericToken_HasSuffix
+  commentId: P:Perlang.NumericToken.HasSuffix
+  fullName: Perlang.NumericToken.HasSuffix
+  nameWithType: NumericToken.HasSuffix
+- uid: Perlang.NumericToken.HasSuffix*
+  name: HasSuffix
+  href: api/Perlang.NumericToken.html#Perlang_NumericToken_HasSuffix_
+  commentId: Overload:Perlang.NumericToken.HasSuffix
+  isSpec: "True"
+  fullName: Perlang.NumericToken.HasSuffix
+  nameWithType: NumericToken.HasSuffix
 - uid: Perlang.NumericToken.IsFractional
   name: IsFractional
   href: api/Perlang.NumericToken.html#Perlang_NumericToken_IsFractional
@@ -2590,6 +2606,19 @@ references:
   isSpec: "True"
   fullName: Perlang.NumericToken.NumberStyles
   nameWithType: NumericToken.NumberStyles
+- uid: Perlang.NumericToken.Suffix
+  name: Suffix
+  href: api/Perlang.NumericToken.html#Perlang_NumericToken_Suffix
+  commentId: P:Perlang.NumericToken.Suffix
+  fullName: Perlang.NumericToken.Suffix
+  nameWithType: NumericToken.Suffix
+- uid: Perlang.NumericToken.Suffix*
+  name: Suffix
+  href: api/Perlang.NumericToken.html#Perlang_NumericToken_Suffix_
+  commentId: Overload:Perlang.NumericToken.Suffix
+  isSpec: "True"
+  fullName: Perlang.NumericToken.Suffix
+  nameWithType: NumericToken.Suffix
 - uid: Perlang.Parameter
   name: Parameter
   href: api/Perlang.Parameter.html
