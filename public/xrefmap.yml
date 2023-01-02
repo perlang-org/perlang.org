@@ -91,6 +91,128 @@ references:
   isSpec: "True"
   fullName: Humanizer.InflectorExtensions.Underscore
   nameWithType: InflectorExtensions.Underscore
+- uid: Mono.Terminal
+  name: Mono.Terminal
+  href: api/Mono.Terminal.html
+  commentId: N:Mono.Terminal
+  fullName: Mono.Terminal
+  nameWithType: Mono.Terminal
+- uid: Mono.Terminal.LineEditor
+  name: LineEditor
+  href: api/Mono.Terminal.LineEditor.html
+  commentId: T:Mono.Terminal.LineEditor
+  fullName: Mono.Terminal.LineEditor
+  nameWithType: LineEditor
+- uid: Mono.Terminal.LineEditor.#ctor(System.String)
+  name: LineEditor(String)
+  href: api/Mono.Terminal.LineEditor.html#Mono_Terminal_LineEditor__ctor_System_String_
+  commentId: M:Mono.Terminal.LineEditor.#ctor(System.String)
+  fullName: Mono.Terminal.LineEditor.LineEditor(System.String)
+  nameWithType: LineEditor.LineEditor(String)
+- uid: Mono.Terminal.LineEditor.#ctor(System.String,System.Int32)
+  name: LineEditor(String, Int32)
+  href: api/Mono.Terminal.LineEditor.html#Mono_Terminal_LineEditor__ctor_System_String_System_Int32_
+  commentId: M:Mono.Terminal.LineEditor.#ctor(System.String,System.Int32)
+  fullName: Mono.Terminal.LineEditor.LineEditor(System.String, System.Int32)
+  nameWithType: LineEditor.LineEditor(String, Int32)
+- uid: Mono.Terminal.LineEditor.#ctor*
+  name: LineEditor
+  href: api/Mono.Terminal.LineEditor.html#Mono_Terminal_LineEditor__ctor_
+  commentId: Overload:Mono.Terminal.LineEditor.#ctor
+  isSpec: "True"
+  fullName: Mono.Terminal.LineEditor.LineEditor
+  nameWithType: LineEditor.LineEditor
+- uid: Mono.Terminal.LineEditor.AutoCompleteEvent
+  name: AutoCompleteEvent
+  href: api/Mono.Terminal.LineEditor.html#Mono_Terminal_LineEditor_AutoCompleteEvent
+  commentId: F:Mono.Terminal.LineEditor.AutoCompleteEvent
+  fullName: Mono.Terminal.LineEditor.AutoCompleteEvent
+  nameWithType: LineEditor.AutoCompleteEvent
+- uid: Mono.Terminal.LineEditor.AutoCompleteHandler
+  name: LineEditor.AutoCompleteHandler
+  href: api/Mono.Terminal.LineEditor.AutoCompleteHandler.html
+  commentId: T:Mono.Terminal.LineEditor.AutoCompleteHandler
+  fullName: Mono.Terminal.LineEditor.AutoCompleteHandler
+  nameWithType: LineEditor.AutoCompleteHandler
+- uid: Mono.Terminal.LineEditor.Completion
+  name: LineEditor.Completion
+  href: api/Mono.Terminal.LineEditor.Completion.html
+  commentId: T:Mono.Terminal.LineEditor.Completion
+  fullName: Mono.Terminal.LineEditor.Completion
+  nameWithType: LineEditor.Completion
+- uid: Mono.Terminal.LineEditor.Completion.#ctor(System.String,System.String[])
+  name: Completion(String, String[])
+  href: api/Mono.Terminal.LineEditor.Completion.html#Mono_Terminal_LineEditor_Completion__ctor_System_String_System_String___
+  commentId: M:Mono.Terminal.LineEditor.Completion.#ctor(System.String,System.String[])
+  name.vb: Completion(String, String())
+  fullName: Mono.Terminal.LineEditor.Completion.Completion(System.String, System.String[])
+  fullName.vb: Mono.Terminal.LineEditor.Completion.Completion(System.String, System.String())
+  nameWithType: LineEditor.Completion.Completion(String, String[])
+  nameWithType.vb: LineEditor.Completion.Completion(String, String())
+- uid: Mono.Terminal.LineEditor.Completion.#ctor*
+  name: Completion
+  href: api/Mono.Terminal.LineEditor.Completion.html#Mono_Terminal_LineEditor_Completion__ctor_
+  commentId: Overload:Mono.Terminal.LineEditor.Completion.#ctor
+  isSpec: "True"
+  fullName: Mono.Terminal.LineEditor.Completion.Completion
+  nameWithType: LineEditor.Completion.Completion
+- uid: Mono.Terminal.LineEditor.Completion.Prefix
+  name: Prefix
+  href: api/Mono.Terminal.LineEditor.Completion.html#Mono_Terminal_LineEditor_Completion_Prefix
+  commentId: F:Mono.Terminal.LineEditor.Completion.Prefix
+  fullName: Mono.Terminal.LineEditor.Completion.Prefix
+  nameWithType: LineEditor.Completion.Prefix
+- uid: Mono.Terminal.LineEditor.Completion.Result
+  name: Result
+  href: api/Mono.Terminal.LineEditor.Completion.html#Mono_Terminal_LineEditor_Completion_Result
+  commentId: F:Mono.Terminal.LineEditor.Completion.Result
+  fullName: Mono.Terminal.LineEditor.Completion.Result
+  nameWithType: LineEditor.Completion.Result
+- uid: Mono.Terminal.LineEditor.Edit(System.String,System.String)
+  name: Edit(String, String)
+  href: api/Mono.Terminal.LineEditor.html#Mono_Terminal_LineEditor_Edit_System_String_System_String_
+  commentId: M:Mono.Terminal.LineEditor.Edit(System.String,System.String)
+  fullName: Mono.Terminal.LineEditor.Edit(System.String, System.String)
+  nameWithType: LineEditor.Edit(String, String)
+- uid: Mono.Terminal.LineEditor.Edit*
+  name: Edit
+  href: api/Mono.Terminal.LineEditor.html#Mono_Terminal_LineEditor_Edit_
+  commentId: Overload:Mono.Terminal.LineEditor.Edit
+  isSpec: "True"
+  fullName: Mono.Terminal.LineEditor.Edit
+  nameWithType: LineEditor.Edit
+- uid: Mono.Terminal.LineEditor.HeuristicsMode
+  name: HeuristicsMode
+  href: api/Mono.Terminal.LineEditor.html#Mono_Terminal_LineEditor_HeuristicsMode
+  commentId: F:Mono.Terminal.LineEditor.HeuristicsMode
+  fullName: Mono.Terminal.LineEditor.HeuristicsMode
+  nameWithType: LineEditor.HeuristicsMode
+- uid: Mono.Terminal.LineEditor.SaveHistory
+  name: SaveHistory()
+  href: api/Mono.Terminal.LineEditor.html#Mono_Terminal_LineEditor_SaveHistory
+  commentId: M:Mono.Terminal.LineEditor.SaveHistory
+  fullName: Mono.Terminal.LineEditor.SaveHistory()
+  nameWithType: LineEditor.SaveHistory()
+- uid: Mono.Terminal.LineEditor.SaveHistory*
+  name: SaveHistory
+  href: api/Mono.Terminal.LineEditor.html#Mono_Terminal_LineEditor_SaveHistory_
+  commentId: Overload:Mono.Terminal.LineEditor.SaveHistory
+  isSpec: "True"
+  fullName: Mono.Terminal.LineEditor.SaveHistory
+  nameWithType: LineEditor.SaveHistory
+- uid: Mono.Terminal.LineEditor.TabAtStartCompletes
+  name: TabAtStartCompletes
+  href: api/Mono.Terminal.LineEditor.html#Mono_Terminal_LineEditor_TabAtStartCompletes
+  commentId: P:Mono.Terminal.LineEditor.TabAtStartCompletes
+  fullName: Mono.Terminal.LineEditor.TabAtStartCompletes
+  nameWithType: LineEditor.TabAtStartCompletes
+- uid: Mono.Terminal.LineEditor.TabAtStartCompletes*
+  name: TabAtStartCompletes
+  href: api/Mono.Terminal.LineEditor.html#Mono_Terminal_LineEditor_TabAtStartCompletes_
+  commentId: Overload:Mono.Terminal.LineEditor.TabAtStartCompletes
+  isSpec: "True"
+  fullName: Mono.Terminal.LineEditor.TabAtStartCompletes
+  nameWithType: LineEditor.TabAtStartCompletes
 - uid: Perlang
   name: Perlang
   href: api/Perlang.html
