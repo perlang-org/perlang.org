@@ -121,8 +121,9 @@ comparison     → addition ( ( &quot;&gt;&quot; | &quot;&gt;=&quot; | &quot;&lt
 addition       → multiplication ( ( &quot;-&quot; | &quot;+&quot; ) multiplication )* ;
 multiplication → unary_prefix ( ( &quot;/&quot; | &quot;*&quot; ) unary_prefix )* ;
 
-unary_prefix   → ( &quot;!&quot; | &quot;-&quot; ) unary_prefix | call ;
+unary_prefix   → ( &quot;!&quot; | &quot;-&quot; ) unary_prefix | indexing | call ;
 call           → primary ( &quot;(&quot; arguments? &quot;)&quot; | &quot;.&quot; IDENTIFIER )* ;
+indexing       → primary ( &quot;[&quot; expression &quot;]&quot; ) ;
 primary        → &quot;true&quot; | &quot;false&quot; | &quot;nil&quot; | &quot;this&quot;
                | NUMBER | STRING | IDENTIFIER | &quot;(&quot; expression &quot;)&quot;
                | &quot;super&quot; &quot;.&quot; IDENTIFIER ;

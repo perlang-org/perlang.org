@@ -1019,6 +1019,93 @@ references:
   isSpec: "True"
   fullName: Perlang.Expr.Identifier.ToString
   nameWithType: Expr.Identifier.ToString
+- uid: Perlang.Expr.Index
+  name: Expr.Index
+  href: api/Perlang.Expr.Index.html
+  commentId: T:Perlang.Expr.Index
+  fullName: Perlang.Expr.Index
+  nameWithType: Expr.Index
+- uid: Perlang.Expr.Index.#ctor(Perlang.Expr,Perlang.Token,Perlang.Expr)
+  name: Index(Expr, Token, Expr)
+  href: api/Perlang.Expr.Index.html#Perlang_Expr_Index__ctor_Perlang_Expr_Perlang_Token_Perlang_Expr_
+  commentId: M:Perlang.Expr.Index.#ctor(Perlang.Expr,Perlang.Token,Perlang.Expr)
+  fullName: Perlang.Expr.Index.Index(Perlang.Expr, Perlang.Token, Perlang.Expr)
+  nameWithType: Expr.Index.Index(Expr, Token, Expr)
+- uid: Perlang.Expr.Index.#ctor*
+  name: Index
+  href: api/Perlang.Expr.Index.html#Perlang_Expr_Index__ctor_
+  commentId: Overload:Perlang.Expr.Index.#ctor
+  isSpec: "True"
+  fullName: Perlang.Expr.Index.Index
+  nameWithType: Expr.Index.Index
+- uid: Perlang.Expr.Index.Accept*
+  name: Accept
+  href: api/Perlang.Expr.Index.html#Perlang_Expr_Index_Accept_
+  commentId: Overload:Perlang.Expr.Index.Accept
+  isSpec: "True"
+  fullName: Perlang.Expr.Index.Accept
+  nameWithType: Expr.Index.Accept
+- uid: Perlang.Expr.Index.Accept``1(Perlang.Expr.IVisitor{``0})
+  name: Accept<TR>(Expr.IVisitor<TR>)
+  href: api/Perlang.Expr.Index.html#Perlang_Expr_Index_Accept__1_Perlang_Expr_IVisitor___0__
+  commentId: M:Perlang.Expr.Index.Accept``1(Perlang.Expr.IVisitor{``0})
+  name.vb: Accept(Of TR)(Expr.IVisitor(Of TR))
+  fullName: Perlang.Expr.Index.Accept<TR>(Perlang.Expr.IVisitor<TR>)
+  fullName.vb: Perlang.Expr.Index.Accept(Of TR)(Perlang.Expr.IVisitor(Of TR))
+  nameWithType: Expr.Index.Accept<TR>(Expr.IVisitor<TR>)
+  nameWithType.vb: Expr.Index.Accept(Of TR)(Expr.IVisitor(Of TR))
+- uid: Perlang.Expr.Index.Argument
+  name: Argument
+  href: api/Perlang.Expr.Index.html#Perlang_Expr_Index_Argument
+  commentId: P:Perlang.Expr.Index.Argument
+  fullName: Perlang.Expr.Index.Argument
+  nameWithType: Expr.Index.Argument
+- uid: Perlang.Expr.Index.Argument*
+  name: Argument
+  href: api/Perlang.Expr.Index.html#Perlang_Expr_Index_Argument_
+  commentId: Overload:Perlang.Expr.Index.Argument
+  isSpec: "True"
+  fullName: Perlang.Expr.Index.Argument
+  nameWithType: Expr.Index.Argument
+- uid: Perlang.Expr.Index.ClosingBracket
+  name: ClosingBracket
+  href: api/Perlang.Expr.Index.html#Perlang_Expr_Index_ClosingBracket
+  commentId: P:Perlang.Expr.Index.ClosingBracket
+  fullName: Perlang.Expr.Index.ClosingBracket
+  nameWithType: Expr.Index.ClosingBracket
+- uid: Perlang.Expr.Index.ClosingBracket*
+  name: ClosingBracket
+  href: api/Perlang.Expr.Index.html#Perlang_Expr_Index_ClosingBracket_
+  commentId: Overload:Perlang.Expr.Index.ClosingBracket
+  isSpec: "True"
+  fullName: Perlang.Expr.Index.ClosingBracket
+  nameWithType: Expr.Index.ClosingBracket
+- uid: Perlang.Expr.Index.Indexee
+  name: Indexee
+  href: api/Perlang.Expr.Index.html#Perlang_Expr_Index_Indexee
+  commentId: P:Perlang.Expr.Index.Indexee
+  fullName: Perlang.Expr.Index.Indexee
+  nameWithType: Expr.Index.Indexee
+- uid: Perlang.Expr.Index.Indexee*
+  name: Indexee
+  href: api/Perlang.Expr.Index.html#Perlang_Expr_Index_Indexee_
+  commentId: Overload:Perlang.Expr.Index.Indexee
+  isSpec: "True"
+  fullName: Perlang.Expr.Index.Indexee
+  nameWithType: Expr.Index.Indexee
+- uid: Perlang.Expr.Index.Token
+  name: Token
+  href: api/Perlang.Expr.Index.html#Perlang_Expr_Index_Token
+  commentId: P:Perlang.Expr.Index.Token
+  fullName: Perlang.Expr.Index.Token
+  nameWithType: Expr.Index.Token
+- uid: Perlang.Expr.Index.Token*
+  name: Token
+  href: api/Perlang.Expr.Index.html#Perlang_Expr_Index_Token_
+  commentId: Overload:Perlang.Expr.Index.Token
+  isSpec: "True"
+  fullName: Perlang.Expr.Index.Token
+  nameWithType: Expr.Index.Token
 - uid: Perlang.Expr.IVisitor`1
   name: Expr.IVisitor<TR>
   href: api/Perlang.Expr.IVisitor-1.html
@@ -1147,6 +1234,23 @@ references:
   fullName.vb: Perlang.Expr.IVisitor(Of TR).VisitIdentifierExpr
   nameWithType: Expr.IVisitor<TR>.VisitIdentifierExpr
   nameWithType.vb: Expr.IVisitor(Of TR).VisitIdentifierExpr
+- uid: Perlang.Expr.IVisitor`1.VisitIndexExpr(Perlang.Expr.Index)
+  name: VisitIndexExpr(Expr.Index)
+  href: api/Perlang.Expr.IVisitor-1.html#Perlang_Expr_IVisitor_1_VisitIndexExpr_Perlang_Expr_Index_
+  commentId: M:Perlang.Expr.IVisitor`1.VisitIndexExpr(Perlang.Expr.Index)
+  fullName: Perlang.Expr.IVisitor<TR>.VisitIndexExpr(Perlang.Expr.Index)
+  fullName.vb: Perlang.Expr.IVisitor(Of TR).VisitIndexExpr(Perlang.Expr.Index)
+  nameWithType: Expr.IVisitor<TR>.VisitIndexExpr(Expr.Index)
+  nameWithType.vb: Expr.IVisitor(Of TR).VisitIndexExpr(Expr.Index)
+- uid: Perlang.Expr.IVisitor`1.VisitIndexExpr*
+  name: VisitIndexExpr
+  href: api/Perlang.Expr.IVisitor-1.html#Perlang_Expr_IVisitor_1_VisitIndexExpr_
+  commentId: Overload:Perlang.Expr.IVisitor`1.VisitIndexExpr
+  isSpec: "True"
+  fullName: Perlang.Expr.IVisitor<TR>.VisitIndexExpr
+  fullName.vb: Perlang.Expr.IVisitor(Of TR).VisitIndexExpr
+  nameWithType: Expr.IVisitor<TR>.VisitIndexExpr
+  nameWithType.vb: Expr.IVisitor(Of TR).VisitIndexExpr
 - uid: Perlang.Expr.IVisitor`1.VisitLiteralExpr(Perlang.Expr.Literal)
   name: VisitLiteralExpr(Expr.Literal)
   href: api/Perlang.Expr.IVisitor-1.html#Perlang_Expr_IVisitor_1_VisitLiteralExpr_Perlang_Expr_Literal_
@@ -2231,6 +2335,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.PerlangInterpreter.VisitIfStmt
   nameWithType: PerlangInterpreter.VisitIfStmt
+- uid: Perlang.Interpreter.PerlangInterpreter.VisitIndexExpr(Perlang.Expr.Index)
+  name: VisitIndexExpr(Expr.Index)
+  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_VisitIndexExpr_Perlang_Expr_Index_
+  commentId: M:Perlang.Interpreter.PerlangInterpreter.VisitIndexExpr(Perlang.Expr.Index)
+  fullName: Perlang.Interpreter.PerlangInterpreter.VisitIndexExpr(Perlang.Expr.Index)
+  nameWithType: PerlangInterpreter.VisitIndexExpr(Expr.Index)
+- uid: Perlang.Interpreter.PerlangInterpreter.VisitIndexExpr*
+  name: VisitIndexExpr
+  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_VisitIndexExpr_
+  commentId: Overload:Perlang.Interpreter.PerlangInterpreter.VisitIndexExpr
+  isSpec: "True"
+  fullName: Perlang.Interpreter.PerlangInterpreter.VisitIndexExpr
+  nameWithType: PerlangInterpreter.VisitIndexExpr
 - uid: Perlang.Interpreter.PerlangInterpreter.VisitLiteralExpr(Perlang.Expr.Literal)
   name: VisitLiteralExpr(Expr.Literal)
   href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter_VisitLiteralExpr_Perlang_Expr_Literal_
@@ -5055,6 +5172,19 @@ references:
   isSpec: "True"
   fullName: Perlang.VisitorBase.VisitIfStmt
   nameWithType: VisitorBase.VisitIfStmt
+- uid: Perlang.VisitorBase.VisitIndexExpr(Perlang.Expr.Index)
+  name: VisitIndexExpr(Expr.Index)
+  href: api/Perlang.VisitorBase.html#Perlang_VisitorBase_VisitIndexExpr_Perlang_Expr_Index_
+  commentId: M:Perlang.VisitorBase.VisitIndexExpr(Perlang.Expr.Index)
+  fullName: Perlang.VisitorBase.VisitIndexExpr(Perlang.Expr.Index)
+  nameWithType: VisitorBase.VisitIndexExpr(Expr.Index)
+- uid: Perlang.VisitorBase.VisitIndexExpr*
+  name: VisitIndexExpr
+  href: api/Perlang.VisitorBase.html#Perlang_VisitorBase_VisitIndexExpr_
+  commentId: Overload:Perlang.VisitorBase.VisitIndexExpr
+  isSpec: "True"
+  fullName: Perlang.VisitorBase.VisitIndexExpr
+  nameWithType: VisitorBase.VisitIndexExpr
 - uid: Perlang.VisitorBase.VisitLiteralExpr(Perlang.Expr.Literal)
   name: VisitLiteralExpr(Expr.Literal)
   href: api/Perlang.VisitorBase.html#Perlang_VisitorBase_VisitLiteralExpr_Perlang_Expr_Literal_

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Token
+    <title>Class Expr.Index
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Token
+    <meta name="title" content="Class Expr.Index
    ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -72,41 +72,51 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Perlang.Token">
+            <article class="content wrap" id="_content" data-uid="Perlang.Expr.Index">
   
   
-  <h1 id="Perlang_Token" data-uid="Perlang.Token" class="text-break">Class Token
+  <h1 id="Perlang_Expr_Index" data-uid="Perlang.Expr.Index" class="text-break">Class Expr.Index
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">Token</span></div>
-      <div class="level2"><a class="xref" href="Perlang.NumericToken.html">NumericToken</a></div>
+    <div class="level1"><a class="xref" href="Perlang.Expr.html">Expr</a></div>
+    <div class="level2"><span class="xref">Expr.Index</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Perlang.ITokenAware.html">ITokenAware</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Perlang.Expr.html#Perlang_Expr_TypeReference">Expr.TypeReference</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.html">Perlang</a></h6>
   <h6><strong>Assembly</strong>: Perlang.Common.dll</h6>
-  <h5 id="Perlang_Token_syntax">Syntax</h5>
+  <h5 id="Perlang_Expr_Index_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Token : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class Index : Expr, ITokenAware</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Token__ctor_Perlang_TokenType_System_String_System_Nullable_System_Object__System_Int32_.md&amp;value=---%0Auid%3A%20Perlang.Token.%23ctor(Perlang.TokenType%2CSystem.String%2CSystem.Nullable%7BSystem.Object%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Expr_Index__ctor_Perlang_Expr_Perlang_Token_Perlang_Expr_.md&amp;value=---%0Auid%3A%20Perlang.Expr.Index.%23ctor(Perlang.Expr%2CPerlang.Token%2CPerlang.Expr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/70e656c42ad750e12a450ccedcdc58af32e73579/src/Perlang.Common/Token.cs/#L13">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/70e656c42ad750e12a450ccedcdc58af32e73579/src/Perlang.Common/Expr.cs/#L189">View Source</a>
   </span>
-  <a id="Perlang_Token__ctor_" data-uid="Perlang.Token.#ctor*"></a>
-  <h4 id="Perlang_Token__ctor_Perlang_TokenType_System_String_System_Nullable_System_Object__System_Int32_" data-uid="Perlang.Token.#ctor(Perlang.TokenType,System.String,System.Nullable{System.Object},System.Int32)">Token(TokenType, String, Nullable&lt;Object&gt;, Int32)</h4>
+  <a id="Perlang_Expr_Index__ctor_" data-uid="Perlang.Expr.Index.#ctor*"></a>
+  <h4 id="Perlang_Expr_Index__ctor_Perlang_Expr_Perlang_Token_Perlang_Expr_" data-uid="Perlang.Expr.Index.#ctor(Perlang.Expr,Perlang.Token,Perlang.Expr)">Index(Expr, Token, Expr)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Token(TokenType type, string lexeme, object? literal, int line)</code></pre>
+    <pre><code class="lang-csharp hljs">public Index(Expr indexee, Token closingBracket, Expr argument)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -119,23 +129,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Perlang.TokenType.html">TokenType</a></td>
-        <td><span class="parametername">type</span></td>
+        <td><a class="xref" href="Perlang.Expr.html">Expr</a></td>
+        <td><span class="parametername">indexee</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">lexeme</span></td>
+        <td><a class="xref" href="Perlang.Token.html">Token</a></td>
+        <td><span class="parametername">closingBracket</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
-        <td><span class="parametername">literal</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">line</span></td>
+        <td><a class="xref" href="Perlang.Expr.html">Expr</a></td>
+        <td><span class="parametername">argument</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -144,18 +149,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Token_Lexeme.md&amp;value=---%0Auid%3A%20Perlang.Token.Lexeme%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Expr_Index_Argument.md&amp;value=---%0Auid%3A%20Perlang.Expr.Index.Argument%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/70e656c42ad750e12a450ccedcdc58af32e73579/src/Perlang.Common/Token.cs/#L9">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/70e656c42ad750e12a450ccedcdc58af32e73579/src/Perlang.Common/Expr.cs/#L187">View Source</a>
   </span>
-  <a id="Perlang_Token_Lexeme_" data-uid="Perlang.Token.Lexeme*"></a>
-  <h4 id="Perlang_Token_Lexeme" data-uid="Perlang.Token.Lexeme">Lexeme</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Perlang_Expr_Index_Argument_" data-uid="Perlang.Expr.Index.Argument*"></a>
+  <h4 id="Perlang_Expr_Index_Argument" data-uid="Perlang.Expr.Index.Argument">Argument</h4>
+  <div class="markdown level1 summary"><p>Gets the position in the object being indexed to retrieve.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Lexeme { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Expr Argument { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -167,25 +173,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="Perlang.Expr.html">Expr</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Token_Line.md&amp;value=---%0Auid%3A%20Perlang.Token.Line%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Expr_Index_ClosingBracket.md&amp;value=---%0Auid%3A%20Perlang.Expr.Index.ClosingBracket%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/70e656c42ad750e12a450ccedcdc58af32e73579/src/Perlang.Common/Token.cs/#L11">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/70e656c42ad750e12a450ccedcdc58af32e73579/src/Perlang.Common/Expr.cs/#L182">View Source</a>
   </span>
-  <a id="Perlang_Token_Line_" data-uid="Perlang.Token.Line*"></a>
-  <h4 id="Perlang_Token_Line" data-uid="Perlang.Token.Line">Line</h4>
+  <a id="Perlang_Expr_Index_ClosingBracket_" data-uid="Perlang.Expr.Index.ClosingBracket*"></a>
+  <h4 id="Perlang_Expr_Index_ClosingBracket" data-uid="Perlang.Expr.Index.ClosingBracket">ClosingBracket</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Line { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Token ClosingBracket { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -197,25 +203,26 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><a class="xref" href="Perlang.Token.html">Token</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Token_Literal.md&amp;value=---%0Auid%3A%20Perlang.Token.Literal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Expr_Index_Indexee.md&amp;value=---%0Auid%3A%20Perlang.Expr.Index.Indexee%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/70e656c42ad750e12a450ccedcdc58af32e73579/src/Perlang.Common/Token.cs/#L10">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/70e656c42ad750e12a450ccedcdc58af32e73579/src/Perlang.Common/Expr.cs/#L180">View Source</a>
   </span>
-  <a id="Perlang_Token_Literal_" data-uid="Perlang.Token.Literal*"></a>
-  <h4 id="Perlang_Token_Literal" data-uid="Perlang.Token.Literal">Literal</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Perlang_Expr_Index_Indexee_" data-uid="Perlang.Expr.Index.Indexee*"></a>
+  <h4 id="Perlang_Expr_Index_Indexee" data-uid="Perlang.Expr.Index.Indexee">Indexee</h4>
+  <div class="markdown level1 summary"><p>Gets the object being indexed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public object? Literal { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Expr Indexee { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -227,25 +234,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><a class="xref" href="Perlang.Expr.html">Expr</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Token_Type.md&amp;value=---%0Auid%3A%20Perlang.Token.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Expr_Index_Token.md&amp;value=---%0Auid%3A%20Perlang.Expr.Index.Token%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/70e656c42ad750e12a450ccedcdc58af32e73579/src/Perlang.Common/Token.cs/#L8">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/70e656c42ad750e12a450ccedcdc58af32e73579/src/Perlang.Common/Expr.cs/#L203">View Source</a>
   </span>
-  <a id="Perlang_Token_Type_" data-uid="Perlang.Token.Type*"></a>
-  <h4 id="Perlang_Token_Type" data-uid="Perlang.Token.Type">Type</h4>
+  <a id="Perlang_Expr_Index_Token_" data-uid="Perlang.Expr.Index.Token*"></a>
+  <h4 id="Perlang_Expr_Index_Token" data-uid="Perlang.Expr.Index.Token">Token</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TokenType Type { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Token Token { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -257,7 +264,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Perlang.TokenType.html">TokenType</a></td>
+        <td><a class="xref" href="Perlang.Token.html">Token</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -266,19 +273,36 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Token_ToString.md&amp;value=---%0Auid%3A%20Perlang.Token.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Expr_Index_Accept__1_Perlang_Expr_IVisitor___0__.md&amp;value=---%0Auid%3A%20Perlang.Expr.Index.Accept%60%601(Perlang.Expr.IVisitor%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/70e656c42ad750e12a450ccedcdc58af32e73579/src/Perlang.Common/Token.cs/#L22">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/70e656c42ad750e12a450ccedcdc58af32e73579/src/Perlang.Common/Expr.cs/#L196">View Source</a>
   </span>
-  <a id="Perlang_Token_ToString_" data-uid="Perlang.Token.ToString*"></a>
-  <h4 id="Perlang_Token_ToString" data-uid="Perlang.Token.ToString">ToString()</h4>
+  <a id="Perlang_Expr_Index_Accept_" data-uid="Perlang.Expr.Index.Accept*"></a>
+  <h4 id="Perlang_Expr_Index_Accept__1_Perlang_Expr_IVisitor___0__" data-uid="Perlang.Expr.Index.Accept``1(Perlang.Expr.IVisitor{``0})">Accept&lt;TR&gt;(Expr.IVisitor&lt;TR&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override TR Accept&lt;TR&gt;(Expr.IVisitor&lt;TR&gt; visitor)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.IVisitor-1.html">Expr.IVisitor</a>&lt;TR&gt;</td>
+        <td><span class="parametername">visitor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -289,11 +313,32 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">TR</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TR</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Perlang.Expr.Accept&lt;TR&gt;(Perlang.Expr.IVisitor&lt;TR&gt;)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Perlang.ITokenAware.html">ITokenAware</a>
+  </div>
 </article>
           </div>
           
@@ -302,10 +347,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Token.md&amp;value=---%0Auid%3A%20Perlang.Token%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Expr_Index.md&amp;value=---%0Auid%3A%20Perlang.Expr.Index%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/70e656c42ad750e12a450ccedcdc58af32e73579/src/Perlang.Common/Token.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/perlang-org/perlang/blob/70e656c42ad750e12a450ccedcdc58af32e73579/src/Perlang.Common/Expr.cs/#L175" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
