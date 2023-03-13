@@ -1644,44 +1644,6 @@ references:
   isSpec: "True"
   fullName: Perlang.Expr.UnaryPrefix.Token
   nameWithType: Expr.UnaryPrefix.Token
-- uid: Perlang.Extensions
-  name: Perlang.Extensions
-  href: api/Perlang.Extensions.html
-  commentId: N:Perlang.Extensions
-  fullName: Perlang.Extensions
-  nameWithType: Perlang.Extensions
-- uid: Perlang.Extensions.TypeExtensions
-  name: TypeExtensions
-  href: api/Perlang.Extensions.TypeExtensions.html
-  commentId: T:Perlang.Extensions.TypeExtensions
-  fullName: Perlang.Extensions.TypeExtensions
-  nameWithType: TypeExtensions
-- uid: Perlang.Extensions.TypeExtensions.ToQuotedTypeKeyword(Type)
-  name: ToQuotedTypeKeyword(Type)
-  href: api/Perlang.Extensions.TypeExtensions.html#Perlang_Extensions_TypeExtensions_ToQuotedTypeKeyword_Type_
-  commentId: M:Perlang.Extensions.TypeExtensions.ToQuotedTypeKeyword(Type)
-  fullName: Perlang.Extensions.TypeExtensions.ToQuotedTypeKeyword(Type)
-  nameWithType: TypeExtensions.ToQuotedTypeKeyword(Type)
-- uid: Perlang.Extensions.TypeExtensions.ToQuotedTypeKeyword*
-  name: ToQuotedTypeKeyword
-  href: api/Perlang.Extensions.TypeExtensions.html#Perlang_Extensions_TypeExtensions_ToQuotedTypeKeyword_
-  commentId: Overload:Perlang.Extensions.TypeExtensions.ToQuotedTypeKeyword
-  isSpec: "True"
-  fullName: Perlang.Extensions.TypeExtensions.ToQuotedTypeKeyword
-  nameWithType: TypeExtensions.ToQuotedTypeKeyword
-- uid: Perlang.Extensions.TypeExtensions.ToTypeKeyword(Type)
-  name: ToTypeKeyword(Type)
-  href: api/Perlang.Extensions.TypeExtensions.html#Perlang_Extensions_TypeExtensions_ToTypeKeyword_Type_
-  commentId: M:Perlang.Extensions.TypeExtensions.ToTypeKeyword(Type)
-  fullName: Perlang.Extensions.TypeExtensions.ToTypeKeyword(Type)
-  nameWithType: TypeExtensions.ToTypeKeyword(Type)
-- uid: Perlang.Extensions.TypeExtensions.ToTypeKeyword*
-  name: ToTypeKeyword
-  href: api/Perlang.Extensions.TypeExtensions.html#Perlang_Extensions_TypeExtensions_ToTypeKeyword_
-  commentId: Overload:Perlang.Extensions.TypeExtensions.ToTypeKeyword
-  isSpec: "True"
-  fullName: Perlang.Extensions.TypeExtensions.ToTypeKeyword
-  nameWithType: TypeExtensions.ToTypeKeyword
 - uid: Perlang.ICallable
   name: ICallable
   href: api/Perlang.ICallable.html
@@ -1784,6 +1746,82 @@ references:
   isSpec: "True"
   fullName: Perlang.IInterpreter.ExecuteBlock
   nameWithType: IInterpreter.ExecuteBlock
+- uid: Perlang.Internal
+  name: Perlang.Internal
+  href: api/Perlang.Internal.html
+  commentId: N:Perlang.Internal
+  fullName: Perlang.Internal
+  nameWithType: Perlang.Internal
+- uid: Perlang.Internal.Extensions
+  name: Perlang.Internal.Extensions
+  href: api/Perlang.Internal.Extensions.html
+  commentId: N:Perlang.Internal.Extensions
+  fullName: Perlang.Internal.Extensions
+  nameWithType: Perlang.Internal.Extensions
+- uid: Perlang.Internal.Extensions.TypeExtensions
+  name: TypeExtensions
+  href: api/Perlang.Internal.Extensions.TypeExtensions.html
+  commentId: T:Perlang.Internal.Extensions.TypeExtensions
+  fullName: Perlang.Internal.Extensions.TypeExtensions
+  nameWithType: TypeExtensions
+- uid: Perlang.Internal.Extensions.TypeExtensions.ToQuotedTypeKeyword(Type)
+  name: ToQuotedTypeKeyword(Type)
+  href: api/Perlang.Internal.Extensions.TypeExtensions.html#Perlang_Internal_Extensions_TypeExtensions_ToQuotedTypeKeyword_Type_
+  commentId: M:Perlang.Internal.Extensions.TypeExtensions.ToQuotedTypeKeyword(Type)
+  fullName: Perlang.Internal.Extensions.TypeExtensions.ToQuotedTypeKeyword(Type)
+  nameWithType: TypeExtensions.ToQuotedTypeKeyword(Type)
+- uid: Perlang.Internal.Extensions.TypeExtensions.ToQuotedTypeKeyword*
+  name: ToQuotedTypeKeyword
+  href: api/Perlang.Internal.Extensions.TypeExtensions.html#Perlang_Internal_Extensions_TypeExtensions_ToQuotedTypeKeyword_
+  commentId: Overload:Perlang.Internal.Extensions.TypeExtensions.ToQuotedTypeKeyword
+  isSpec: "True"
+  fullName: Perlang.Internal.Extensions.TypeExtensions.ToQuotedTypeKeyword
+  nameWithType: TypeExtensions.ToQuotedTypeKeyword
+- uid: Perlang.Internal.Extensions.TypeExtensions.ToTypeKeyword(Type)
+  name: ToTypeKeyword(Type)
+  href: api/Perlang.Internal.Extensions.TypeExtensions.html#Perlang_Internal_Extensions_TypeExtensions_ToTypeKeyword_Type_
+  commentId: M:Perlang.Internal.Extensions.TypeExtensions.ToTypeKeyword(Type)
+  fullName: Perlang.Internal.Extensions.TypeExtensions.ToTypeKeyword(Type)
+  nameWithType: TypeExtensions.ToTypeKeyword(Type)
+- uid: Perlang.Internal.Extensions.TypeExtensions.ToTypeKeyword*
+  name: ToTypeKeyword
+  href: api/Perlang.Internal.Extensions.TypeExtensions.html#Perlang_Internal_Extensions_TypeExtensions_ToTypeKeyword_
+  commentId: Overload:Perlang.Internal.Extensions.TypeExtensions.ToTypeKeyword
+  isSpec: "True"
+  fullName: Perlang.Internal.Extensions.TypeExtensions.ToTypeKeyword
+  nameWithType: TypeExtensions.ToTypeKeyword
+- uid: Perlang.Internal.Utils
+  name: Utils
+  href: api/Perlang.Internal.Utils.html
+  commentId: T:Perlang.Internal.Utils
+  fullName: Perlang.Internal.Utils
+  nameWithType: Utils
+- uid: Perlang.Internal.Utils.Stringify(System.Object)
+  name: Stringify(Object)
+  href: api/Perlang.Internal.Utils.html#Perlang_Internal_Utils_Stringify_System_Object_
+  commentId: M:Perlang.Internal.Utils.Stringify(System.Object)
+  fullName: Perlang.Internal.Utils.Stringify(System.Object)
+  nameWithType: Utils.Stringify(Object)
+- uid: Perlang.Internal.Utils.Stringify*
+  name: Stringify
+  href: api/Perlang.Internal.Utils.html#Perlang_Internal_Utils_Stringify_
+  commentId: Overload:Perlang.Internal.Utils.Stringify
+  isSpec: "True"
+  fullName: Perlang.Internal.Utils.Stringify
+  nameWithType: Utils.Stringify
+- uid: Perlang.Internal.Utils.StringifyType(System.Object)
+  name: StringifyType(Object)
+  href: api/Perlang.Internal.Utils.html#Perlang_Internal_Utils_StringifyType_System_Object_
+  commentId: M:Perlang.Internal.Utils.StringifyType(System.Object)
+  fullName: Perlang.Internal.Utils.StringifyType(System.Object)
+  nameWithType: Utils.StringifyType(Object)
+- uid: Perlang.Internal.Utils.StringifyType*
+  name: StringifyType
+  href: api/Perlang.Internal.Utils.html#Perlang_Internal_Utils_StringifyType_
+  commentId: Overload:Perlang.Internal.Utils.StringifyType
+  isSpec: "True"
+  fullName: Perlang.Internal.Utils.StringifyType
+  nameWithType: Utils.StringifyType
 - uid: Perlang.Interpreter
   name: Perlang.Interpreter
   href: api/Perlang.Interpreter.html
@@ -2735,6 +2773,208 @@ references:
   isSpec: "True"
   fullName: Perlang.ITypeReference.TypeSpecifier
   nameWithType: ITypeReference.TypeSpecifier
+- uid: Perlang.Lang
+  name: Perlang.Lang
+  href: api/Perlang.Lang.html
+  commentId: N:Perlang.Lang
+  fullName: Perlang.Lang
+  nameWithType: Perlang.Lang
+- uid: Perlang.Lang.AsciiString
+  name: AsciiString
+  href: api/Perlang.Lang.AsciiString.html
+  commentId: T:Perlang.Lang.AsciiString
+  fullName: Perlang.Lang.AsciiString
+  nameWithType: AsciiString
+- uid: Perlang.Lang.AsciiString.Equals(System.Nullable{System.Object})
+  name: Equals(Nullable<Object>)
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_Equals_System_Nullable_System_Object__
+  commentId: M:Perlang.Lang.AsciiString.Equals(System.Nullable{System.Object})
+  name.vb: Equals(Nullable(Of Object))
+  fullName: Perlang.Lang.AsciiString.Equals(System.Nullable<System.Object>)
+  fullName.vb: Perlang.Lang.AsciiString.Equals(System.Nullable(Of System.Object))
+  nameWithType: AsciiString.Equals(Nullable<Object>)
+  nameWithType.vb: AsciiString.Equals(Nullable(Of Object))
+- uid: Perlang.Lang.AsciiString.Equals*
+  name: Equals
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_Equals_
+  commentId: Overload:Perlang.Lang.AsciiString.Equals
+  isSpec: "True"
+  fullName: Perlang.Lang.AsciiString.Equals
+  nameWithType: AsciiString.Equals
+- uid: Perlang.Lang.AsciiString.from(IReadOnlyList{System.Char})
+  name: from(IReadOnlyList<Char>)
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_from_IReadOnlyList_System_Char__
+  commentId: M:Perlang.Lang.AsciiString.from(IReadOnlyList{System.Char})
+  name.vb: from(IReadOnlyList(Of Char))
+  fullName: Perlang.Lang.AsciiString.from(IReadOnlyList<System.Char>)
+  fullName.vb: Perlang.Lang.AsciiString.from(IReadOnlyList(Of System.Char))
+  nameWithType: AsciiString.from(IReadOnlyList<Char>)
+  nameWithType.vb: AsciiString.from(IReadOnlyList(Of Char))
+- uid: Perlang.Lang.AsciiString.from(System.String)
+  name: from(String)
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_from_System_String_
+  commentId: M:Perlang.Lang.AsciiString.from(System.String)
+  fullName: Perlang.Lang.AsciiString.from(System.String)
+  nameWithType: AsciiString.from(String)
+- uid: Perlang.Lang.AsciiString.from*
+  name: from
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_from_
+  commentId: Overload:Perlang.Lang.AsciiString.from
+  isSpec: "True"
+  fullName: Perlang.Lang.AsciiString.from
+  nameWithType: AsciiString.from
+- uid: Perlang.Lang.AsciiString.GetHashCode
+  name: GetHashCode()
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_GetHashCode
+  commentId: M:Perlang.Lang.AsciiString.GetHashCode
+  fullName: Perlang.Lang.AsciiString.GetHashCode()
+  nameWithType: AsciiString.GetHashCode()
+- uid: Perlang.Lang.AsciiString.GetHashCode*
+  name: GetHashCode
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_GetHashCode_
+  commentId: Overload:Perlang.Lang.AsciiString.GetHashCode
+  isSpec: "True"
+  fullName: Perlang.Lang.AsciiString.GetHashCode
+  nameWithType: AsciiString.GetHashCode
+- uid: Perlang.Lang.AsciiString.Item(System.UIntPtr)
+  name: Item[UIntPtr]
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_Item_System_UIntPtr_
+  commentId: P:Perlang.Lang.AsciiString.Item(System.UIntPtr)
+  name.vb: Item(UIntPtr)
+  fullName: Perlang.Lang.AsciiString.Item[System.UIntPtr]
+  fullName.vb: Perlang.Lang.AsciiString.Item(System.UIntPtr)
+  nameWithType: AsciiString.Item[UIntPtr]
+  nameWithType.vb: AsciiString.Item(UIntPtr)
+- uid: Perlang.Lang.AsciiString.Item*
+  name: Item
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_Item_
+  commentId: Overload:Perlang.Lang.AsciiString.Item
+  isSpec: "True"
+  fullName: Perlang.Lang.AsciiString.Item
+  nameWithType: AsciiString.Item
+- uid: Perlang.Lang.AsciiString.Length
+  name: Length
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_Length
+  commentId: P:Perlang.Lang.AsciiString.Length
+  fullName: Perlang.Lang.AsciiString.Length
+  nameWithType: AsciiString.Length
+- uid: Perlang.Lang.AsciiString.Length*
+  name: Length
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_Length_
+  commentId: Overload:Perlang.Lang.AsciiString.Length
+  isSpec: "True"
+  fullName: Perlang.Lang.AsciiString.Length
+  nameWithType: AsciiString.Length
+- uid: Perlang.Lang.AsciiString.op_Addition(Perlang.Lang.AsciiString,Perlang.Lang.AsciiString)
+  name: Addition(AsciiString, AsciiString)
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_op_Addition_Perlang_Lang_AsciiString_Perlang_Lang_AsciiString_
+  commentId: M:Perlang.Lang.AsciiString.op_Addition(Perlang.Lang.AsciiString,Perlang.Lang.AsciiString)
+  fullName: Perlang.Lang.AsciiString.Addition(Perlang.Lang.AsciiString, Perlang.Lang.AsciiString)
+  nameWithType: AsciiString.Addition(AsciiString, AsciiString)
+- uid: Perlang.Lang.AsciiString.op_Addition*
+  name: Addition
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_op_Addition_
+  commentId: Overload:Perlang.Lang.AsciiString.op_Addition
+  isSpec: "True"
+  fullName: Perlang.Lang.AsciiString.Addition
+  nameWithType: AsciiString.Addition
+- uid: Perlang.Lang.AsciiString.op_Equality(Perlang.Lang.AsciiString,Perlang.Lang.AsciiString)
+  name: Equality(AsciiString, AsciiString)
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_op_Equality_Perlang_Lang_AsciiString_Perlang_Lang_AsciiString_
+  commentId: M:Perlang.Lang.AsciiString.op_Equality(Perlang.Lang.AsciiString,Perlang.Lang.AsciiString)
+  fullName: Perlang.Lang.AsciiString.Equality(Perlang.Lang.AsciiString, Perlang.Lang.AsciiString)
+  nameWithType: AsciiString.Equality(AsciiString, AsciiString)
+- uid: Perlang.Lang.AsciiString.op_Equality*
+  name: Equality
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_op_Equality_
+  commentId: Overload:Perlang.Lang.AsciiString.op_Equality
+  isSpec: "True"
+  fullName: Perlang.Lang.AsciiString.Equality
+  nameWithType: AsciiString.Equality
+- uid: Perlang.Lang.AsciiString.op_Inequality(Perlang.Lang.AsciiString,Perlang.Lang.AsciiString)
+  name: Inequality(AsciiString, AsciiString)
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_op_Inequality_Perlang_Lang_AsciiString_Perlang_Lang_AsciiString_
+  commentId: M:Perlang.Lang.AsciiString.op_Inequality(Perlang.Lang.AsciiString,Perlang.Lang.AsciiString)
+  fullName: Perlang.Lang.AsciiString.Inequality(Perlang.Lang.AsciiString, Perlang.Lang.AsciiString)
+  nameWithType: AsciiString.Inequality(AsciiString, AsciiString)
+- uid: Perlang.Lang.AsciiString.op_Inequality*
+  name: Inequality
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_op_Inequality_
+  commentId: Overload:Perlang.Lang.AsciiString.op_Inequality
+  isSpec: "True"
+  fullName: Perlang.Lang.AsciiString.Inequality
+  nameWithType: AsciiString.Inequality
+- uid: Perlang.Lang.AsciiString.ToString
+  name: ToString()
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_ToString
+  commentId: M:Perlang.Lang.AsciiString.ToString
+  fullName: Perlang.Lang.AsciiString.ToString()
+  nameWithType: AsciiString.ToString()
+- uid: Perlang.Lang.AsciiString.ToString*
+  name: ToString
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_ToString_
+  commentId: Overload:Perlang.Lang.AsciiString.ToString
+  isSpec: "True"
+  fullName: Perlang.Lang.AsciiString.ToString
+  nameWithType: AsciiString.ToString
+- uid: Perlang.Lang.AsciiString.ToUpper
+  name: ToUpper()
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_ToUpper
+  commentId: M:Perlang.Lang.AsciiString.ToUpper
+  fullName: Perlang.Lang.AsciiString.ToUpper()
+  nameWithType: AsciiString.ToUpper()
+- uid: Perlang.Lang.AsciiString.ToUpper*
+  name: ToUpper
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_ToUpper_
+  commentId: Overload:Perlang.Lang.AsciiString.ToUpper
+  isSpec: "True"
+  fullName: Perlang.Lang.AsciiString.ToUpper
+  nameWithType: AsciiString.ToUpper
+- uid: Perlang.Lang.String
+  name: String
+  href: api/Perlang.Lang.String.html
+  commentId: T:Perlang.Lang.String
+  fullName: Perlang.Lang.String
+  nameWithType: String
+- uid: Perlang.Lang.String.Length
+  name: Length
+  href: api/Perlang.Lang.String.html#Perlang_Lang_String_Length
+  commentId: P:Perlang.Lang.String.Length
+  fullName: Perlang.Lang.String.Length
+  nameWithType: String.Length
+- uid: Perlang.Lang.String.Length*
+  name: Length
+  href: api/Perlang.Lang.String.html#Perlang_Lang_String_Length_
+  commentId: Overload:Perlang.Lang.String.Length
+  isSpec: "True"
+  fullName: Perlang.Lang.String.Length
+  nameWithType: String.Length
+- uid: Perlang.Lang.String.ToString
+  name: ToString()
+  href: api/Perlang.Lang.String.html#Perlang_Lang_String_ToString
+  commentId: M:Perlang.Lang.String.ToString
+  fullName: Perlang.Lang.String.ToString()
+  nameWithType: String.ToString()
+- uid: Perlang.Lang.String.ToString*
+  name: ToString
+  href: api/Perlang.Lang.String.html#Perlang_Lang_String_ToString_
+  commentId: Overload:Perlang.Lang.String.ToString
+  isSpec: "True"
+  fullName: Perlang.Lang.String.ToString
+  nameWithType: String.ToString
+- uid: Perlang.Lang.String.ToUpper
+  name: ToUpper()
+  href: api/Perlang.Lang.String.html#Perlang_Lang_String_ToUpper
+  commentId: M:Perlang.Lang.String.ToUpper
+  fullName: Perlang.Lang.String.ToUpper()
+  nameWithType: String.ToUpper()
+- uid: Perlang.Lang.String.ToUpper*
+  name: ToUpper
+  href: api/Perlang.Lang.String.html#Perlang_Lang_String_ToUpper_
+  commentId: Overload:Perlang.Lang.String.ToUpper
+  isSpec: "True"
+  fullName: Perlang.Lang.String.ToUpper
+  nameWithType: String.ToUpper
 - uid: Perlang.NullObject
   name: NullObject
   href: api/Perlang.NullObject.html
@@ -3501,11 +3741,11 @@ references:
   commentId: T:Perlang.Stdlib.Base64
   fullName: Perlang.Stdlib.Base64
   nameWithType: Base64
-- uid: Perlang.Stdlib.Base64.Decode(System.String)
+- uid: Perlang.Stdlib.Base64.Decode(Perlang.Lang.String)
   name: Decode(String)
-  href: api/Perlang.Stdlib.Base64.html#Perlang_Stdlib_Base64_Decode_System_String_
-  commentId: M:Perlang.Stdlib.Base64.Decode(System.String)
-  fullName: Perlang.Stdlib.Base64.Decode(System.String)
+  href: api/Perlang.Stdlib.Base64.html#Perlang_Stdlib_Base64_Decode_Perlang_Lang_String_
+  commentId: M:Perlang.Stdlib.Base64.Decode(Perlang.Lang.String)
+  fullName: Perlang.Stdlib.Base64.Decode(Perlang.Lang.String)
   nameWithType: Base64.Decode(String)
 - uid: Perlang.Stdlib.Base64.Decode*
   name: Decode
@@ -3514,11 +3754,11 @@ references:
   isSpec: "True"
   fullName: Perlang.Stdlib.Base64.Decode
   nameWithType: Base64.Decode
-- uid: Perlang.Stdlib.Base64.Encode(System.String)
+- uid: Perlang.Stdlib.Base64.Encode(Perlang.Lang.String)
   name: Encode(String)
-  href: api/Perlang.Stdlib.Base64.html#Perlang_Stdlib_Base64_Encode_System_String_
-  commentId: M:Perlang.Stdlib.Base64.Encode(System.String)
-  fullName: Perlang.Stdlib.Base64.Encode(System.String)
+  href: api/Perlang.Stdlib.Base64.html#Perlang_Stdlib_Base64_Encode_Perlang_Lang_String_
+  commentId: M:Perlang.Stdlib.Base64.Encode(Perlang.Lang.String)
+  fullName: Perlang.Stdlib.Base64.Encode(Perlang.Lang.String)
   nameWithType: Base64.Encode(String)
 - uid: Perlang.Stdlib.Base64.Encode*
   name: Encode
@@ -3559,11 +3799,11 @@ references:
   isSpec: "True"
   fullName: Perlang.Stdlib.Libc.getcwd
   nameWithType: Libc.getcwd
-- uid: Perlang.Stdlib.Libc.getenv(System.String)
+- uid: Perlang.Stdlib.Libc.getenv(Perlang.Lang.String)
   name: getenv(String)
-  href: api/Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_getenv_System_String_
-  commentId: M:Perlang.Stdlib.Libc.getenv(System.String)
-  fullName: Perlang.Stdlib.Libc.getenv(System.String)
+  href: api/Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_getenv_Perlang_Lang_String_
+  commentId: M:Perlang.Stdlib.Libc.getenv(Perlang.Lang.String)
+  fullName: Perlang.Stdlib.Libc.getenv(Perlang.Lang.String)
   nameWithType: Libc.getenv(String)
 - uid: Perlang.Stdlib.Libc.getenv*
   name: getenv
@@ -4956,38 +5196,6 @@ references:
   isSpec: "True"
   fullName: Perlang.TypeReference.TypeSpecifier
   nameWithType: TypeReference.TypeSpecifier
-- uid: Perlang.Utils
-  name: Utils
-  href: api/Perlang.Utils.html
-  commentId: T:Perlang.Utils
-  fullName: Perlang.Utils
-  nameWithType: Utils
-- uid: Perlang.Utils.Stringify(System.Object)
-  name: Stringify(Object)
-  href: api/Perlang.Utils.html#Perlang_Utils_Stringify_System_Object_
-  commentId: M:Perlang.Utils.Stringify(System.Object)
-  fullName: Perlang.Utils.Stringify(System.Object)
-  nameWithType: Utils.Stringify(Object)
-- uid: Perlang.Utils.Stringify*
-  name: Stringify
-  href: api/Perlang.Utils.html#Perlang_Utils_Stringify_
-  commentId: Overload:Perlang.Utils.Stringify
-  isSpec: "True"
-  fullName: Perlang.Utils.Stringify
-  nameWithType: Utils.Stringify
-- uid: Perlang.Utils.StringifyType(System.Object)
-  name: StringifyType(Object)
-  href: api/Perlang.Utils.html#Perlang_Utils_StringifyType_System_Object_
-  commentId: M:Perlang.Utils.StringifyType(System.Object)
-  fullName: Perlang.Utils.StringifyType(System.Object)
-  nameWithType: Utils.StringifyType(Object)
-- uid: Perlang.Utils.StringifyType*
-  name: StringifyType
-  href: api/Perlang.Utils.html#Perlang_Utils_StringifyType_
-  commentId: Overload:Perlang.Utils.StringifyType
-  isSpec: "True"
-  fullName: Perlang.Utils.StringifyType
-  nameWithType: Utils.StringifyType
 - uid: Perlang.VisitorBase
   name: VisitorBase
   href: api/Perlang.VisitorBase.html

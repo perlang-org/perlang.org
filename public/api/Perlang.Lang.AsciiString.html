@@ -1,0 +1,668 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AsciiString
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AsciiString
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/asciinema-player.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/override.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <div class="toc-toggle">
+            <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          </div>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Perlang.Lang.AsciiString">
+  
+  
+  <h1 id="Perlang_Lang_AsciiString" data-uid="Perlang.Lang.AsciiString" class="text-break">Class AsciiString
+  </h1>
+  <div class="markdown level0 summary"><p>Representation of a string with ASCII-only content.</p>
+<p><a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a> have the following characteristics:</p>
+<ul>
+<li><p>They consist of valid ASCII characters (0-127) only.</p>
+</li>
+<li><p>They are <em>immutable</em>. Once constructed, an <a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a> cannot be modified. Methods which seem to
+perform &quot;modifications&quot; of the string like <a class="xref" href="Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_ToUpper">ToUpper()</a> etc. will always allocate a new instance and
+operate on that.</p>
+</li>
+<li><p>They are <em>backed by native memory</em>. This means that they can be used with zero/very low cost together with
+standard POSIX/libc functions like <code>puts</code>, <code>memcmp</code>, etc.</p>
+</li>
+</ul>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Perlang.Lang.String.html">String</a></div>
+    <div class="level2"><span class="xref">AsciiString</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.Lang.html">Perlang.Lang</a></h6>
+  <h6><strong>Assembly</strong>: Perlang.Stdlib.dll</h6>
+  <h5 id="Perlang_Lang_AsciiString_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AsciiString : String</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_AsciiString_Item_System_UIntPtr_.md&amp;value=---%0Auid%3A%20Perlang.Lang.AsciiString.Item(System.UIntPtr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/688f88231a0d3bef93735b3d967ba43cfb6778f3/src/Perlang.Stdlib/Lang/AsciiString.cs/#L253">View Source</a>
+  </span>
+  <a id="Perlang_Lang_AsciiString_Item_" data-uid="Perlang.Lang.AsciiString.Item*"></a>
+  <h4 id="Perlang_Lang_AsciiString_Item_System_UIntPtr_" data-uid="Perlang.Lang.AsciiString.Item(System.UIntPtr)">Item[UIntPtr]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char this[nuint i] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UIntPtr</span></td>
+        <td><span class="parametername">i</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_AsciiString_Length.md&amp;value=---%0Auid%3A%20Perlang.Lang.AsciiString.Length%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/688f88231a0d3bef93735b3d967ba43cfb6778f3/src/Perlang.Stdlib/Lang/AsciiString.cs/#L32">View Source</a>
+  </span>
+  <a id="Perlang_Lang_AsciiString_Length_" data-uid="Perlang.Lang.AsciiString.Length*"></a>
+  <h4 id="Perlang_Lang_AsciiString_Length" data-uid="Perlang.Lang.AsciiString.Length">Length</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override nuint Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UIntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Perlang.Lang.String.html#Perlang_Lang_String_Length">String.Length</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_AsciiString_Equals_System_Nullable_System_Object__.md&amp;value=---%0Auid%3A%20Perlang.Lang.AsciiString.Equals(System.Nullable%7BSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/688f88231a0d3bef93735b3d967ba43cfb6778f3/src/Perlang.Stdlib/Lang/AsciiString.cs/#L171">View Source</a>
+  </span>
+  <a id="Perlang_Lang_AsciiString_Equals_" data-uid="Perlang.Lang.AsciiString.Equals*"></a>
+  <h4 id="Perlang_Lang_AsciiString_Equals_System_Nullable_System_Object__" data-uid="Perlang.Lang.AsciiString.Equals(System.Nullable{System.Object})">Equals(Nullable&lt;Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object? obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object to compare with the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if the specified object is equal to the current object; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_AsciiString_from_IReadOnlyList_System_Char__.md&amp;value=---%0Auid%3A%20Perlang.Lang.AsciiString.from(IReadOnlyList%7BSystem.Char%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/688f88231a0d3bef93735b3d967ba43cfb6778f3/src/Perlang.Stdlib/Lang/AsciiString.cs/#L45">View Source</a>
+  </span>
+  <a id="Perlang_Lang_AsciiString_from_" data-uid="Perlang.Lang.AsciiString.from*"></a>
+  <h4 id="Perlang_Lang_AsciiString_from_IReadOnlyList_System_Char__" data-uid="Perlang.Lang.AsciiString.from(IReadOnlyList{System.Char})">from(IReadOnlyList&lt;Char&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a> class from an existing <see cref="!:System.Char"></see> array. A
+new <code>byte[]</code> will be allocated to contain the string content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsciiString from(IReadOnlyList&lt;char&gt; chars)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyList</span>&lt;<span class="xref">System.Char</span>&gt;</td>
+        <td><span class="parametername">chars</span></td>
+        <td><p>A char array, validated by the caller to be ASCII safe.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a></td>
+        <td><p>A newly allocated <a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_AsciiString_from_System_String_.md&amp;value=---%0Auid%3A%20Perlang.Lang.AsciiString.from(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/688f88231a0d3bef93735b3d967ba43cfb6778f3/src/Perlang.Stdlib/Lang/AsciiString.cs/#L59">View Source</a>
+  </span>
+  <a id="Perlang_Lang_AsciiString_from_" data-uid="Perlang.Lang.AsciiString.from*"></a>
+  <h4 id="Perlang_Lang_AsciiString_from_System_String_" data-uid="Perlang.Lang.AsciiString.from(System.String)">from(String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a> from the given .NET string. Note that this method will allocate a new
+backing buffer for holding the string contents; it will not reuse the existing bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsciiString from(string s)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">s</span></td>
+        <td><p>The input string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a></td>
+        <td><p>A newly allocated <a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_AsciiString_GetHashCode.md&amp;value=---%0Auid%3A%20Perlang.Lang.AsciiString.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/688f88231a0d3bef93735b3d967ba43cfb6778f3/src/Perlang.Stdlib/Lang/AsciiString.cs/#L198">View Source</a>
+  </span>
+  <a id="Perlang_Lang_AsciiString_GetHashCode_" data-uid="Perlang.Lang.AsciiString.GetHashCode*"></a>
+  <h4 id="Perlang_Lang_AsciiString_GetHashCode" data-uid="Perlang.Lang.AsciiString.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Gets a numerical hash for this <a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>A hash code for the current <a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_AsciiString_ToString.md&amp;value=---%0Auid%3A%20Perlang.Lang.AsciiString.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/688f88231a0d3bef93735b3d967ba43cfb6778f3/src/Perlang.Stdlib/Lang/AsciiString.cs/#L219">View Source</a>
+  </span>
+  <a id="Perlang_Lang_AsciiString_ToString_" data-uid="Perlang.Lang.AsciiString.ToString*"></a>
+  <h4 id="Perlang_Lang_AsciiString_ToString" data-uid="Perlang.Lang.AsciiString.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Perlang.Lang.String.html#Perlang_Lang_String_ToString">String.ToString()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_AsciiString_ToUpper.md&amp;value=---%0Auid%3A%20Perlang.Lang.AsciiString.ToUpper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/688f88231a0d3bef93735b3d967ba43cfb6778f3/src/Perlang.Stdlib/Lang/AsciiString.cs/#L224">View Source</a>
+  </span>
+  <a id="Perlang_Lang_AsciiString_ToUpper_" data-uid="Perlang.Lang.AsciiString.ToUpper*"></a>
+  <h4 id="Perlang_Lang_AsciiString_ToUpper" data-uid="Perlang.Lang.AsciiString.ToUpper">ToUpper()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override String ToUpper()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Lang.String.html">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Perlang.Lang.String.html#Perlang_Lang_String_ToUpper">String.ToUpper()</a></div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_AsciiString_op_Addition_Perlang_Lang_AsciiString_Perlang_Lang_AsciiString_.md&amp;value=---%0Auid%3A%20Perlang.Lang.AsciiString.op_Addition(Perlang.Lang.AsciiString%2CPerlang.Lang.AsciiString)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/688f88231a0d3bef93735b3d967ba43cfb6778f3/src/Perlang.Stdlib/Lang/AsciiString.cs/#L81">View Source</a>
+  </span>
+  <a id="Perlang_Lang_AsciiString_op_Addition_" data-uid="Perlang.Lang.AsciiString.op_Addition*"></a>
+  <h4 id="Perlang_Lang_AsciiString_op_Addition_Perlang_Lang_AsciiString_Perlang_Lang_AsciiString_" data-uid="Perlang.Lang.AsciiString.op_Addition(Perlang.Lang.AsciiString,Perlang.Lang.AsciiString)">Addition(AsciiString, AsciiString)</h4>
+  <div class="markdown level1 summary"><p>Concatenates the given strings. This method will allocate a new <a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a> and the existing
+string data will be copied to it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AsciiString operator +(AsciiString a, AsciiString b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The first string to concatenate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The second string to concatenate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a></td>
+        <td><p>A concatenated string (<code>a</code> + <code>b</code>).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_AsciiString_op_Equality_Perlang_Lang_AsciiString_Perlang_Lang_AsciiString_.md&amp;value=---%0Auid%3A%20Perlang.Lang.AsciiString.op_Equality(Perlang.Lang.AsciiString%2CPerlang.Lang.AsciiString)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/688f88231a0d3bef93735b3d967ba43cfb6778f3/src/Perlang.Stdlib/Lang/AsciiString.cs/#L102">View Source</a>
+  </span>
+  <a id="Perlang_Lang_AsciiString_op_Equality_" data-uid="Perlang.Lang.AsciiString.op_Equality*"></a>
+  <h4 id="Perlang_Lang_AsciiString_op_Equality_Perlang_Lang_AsciiString_Perlang_Lang_AsciiString_" data-uid="Perlang.Lang.AsciiString.op_Equality(Perlang.Lang.AsciiString,Perlang.Lang.AsciiString)">Equality(AsciiString, AsciiString)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the given strings are identical.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(AsciiString a, AsciiString b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The first string to compare, or <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The second string to compare, or <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if <code>a</code> is identical to <code>b</code>; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_AsciiString_op_Inequality_Perlang_Lang_AsciiString_Perlang_Lang_AsciiString_.md&amp;value=---%0Auid%3A%20Perlang.Lang.AsciiString.op_Inequality(Perlang.Lang.AsciiString%2CPerlang.Lang.AsciiString)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/688f88231a0d3bef93735b3d967ba43cfb6778f3/src/Perlang.Stdlib/Lang/AsciiString.cs/#L113">View Source</a>
+  </span>
+  <a id="Perlang_Lang_AsciiString_op_Inequality_" data-uid="Perlang.Lang.AsciiString.op_Inequality*"></a>
+  <h4 id="Perlang_Lang_AsciiString_op_Inequality_Perlang_Lang_AsciiString_Perlang_Lang_AsciiString_" data-uid="Perlang.Lang.AsciiString.op_Inequality(Perlang.Lang.AsciiString,Perlang.Lang.AsciiString)">Inequality(AsciiString, AsciiString)</h4>
+  <div class="markdown level1 summary"><p>Determined whether the given strings are non-identical.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(AsciiString a, AsciiString b)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a></td>
+        <td><span class="parametername">a</span></td>
+        <td><p>The first string to compare, or <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a></td>
+        <td><span class="parametername">b</span></td>
+        <td><p>The second string to compare, or <code>null</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if <code>a</code> is not identical to <code>b</code>; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_AsciiString.md&amp;value=---%0Auid%3A%20Perlang.Lang.AsciiString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/perlang-org/perlang/blob/688f88231a0d3bef93735b3d967ba43cfb6778f3/src/Perlang.Stdlib/Lang/AsciiString.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+                <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright 2020 The Perlang Authors
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../js/highlight.min.js"></script>
+    <script type="text/javascript" src="../js/highlightjs-perlang.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../js/asciinema-player.js"></script>
+  </body>
+</html>

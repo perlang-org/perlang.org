@@ -94,7 +94,8 @@ supported platforms.</p>
     <pre><code class="lang-csharp hljs">public static class Libc : object</code></pre>
   </div>
   <h5 id="Perlang_Stdlib_Libc_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>The XML method descriptions are based on <a href="https://github.com/dotnet/runtime">the .NET source code</a>, licensed
+  <div class="markdown level0 remarks"><p>The XML method descriptions are based on <a href="https://github.com/dotnet/dotnet-api-docs/blob/main/xml/System/Environment.xml">the .NET source
+code</a>, licensed
 under the MIT license. Copyright (c) .NET Foundation and Contributors. Some method descriptions are also based
 on <code>man</code> pages in <a href="https://github.com/NetBSD/src">the NetBSD source code</a>. The full license of these man pages
 can be found at <a href="https://github.com/perlang-org/perlang/blob/master/NOTICE.md">https://github.com/perlang-org/perlang/blob/master/NOTICE.md</a>.</p>
@@ -107,7 +108,7 @@ can be found at <a href="https://github.com/perlang-org/perlang/blob/master/NOTI
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Libc_environ.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Libc.environ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/ba0ee116db7c65deb2b0bd5045f7c01601cc3917/src/Perlang.Stdlib/Stdlib/Libc.cs/#L105">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/688f88231a0d3bef93735b3d967ba43cfb6778f3/src/Perlang.Stdlib/Stdlib/Libc.cs/#L127">View Source</a>
   </span>
   <a id="Perlang_Stdlib_Libc_environ_" data-uid="Perlang.Stdlib.Libc.environ*"></a>
   <h4 id="Perlang_Stdlib_Libc_environ" data-uid="Perlang.Stdlib.Libc.environ">environ()</h4>
@@ -116,7 +117,7 @@ can be found at <a href="https://github.com/perlang-org/perlang/blob/master/NOTI
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ImmutableDictionary&lt;string, string&gt; environ()</code></pre>
+    <pre><code class="lang-csharp hljs">public static ImmutableDictionary&lt;String, string&gt; environ()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -128,7 +129,7 @@ can be found at <a href="https://github.com/perlang-org/perlang/blob/master/NOTI
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ImmutableDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">ImmutableDictionary</span>&lt;<a class="xref" href="Perlang.Lang.String.html">String</a>, <span class="xref">System.String</span>&gt;</td>
         <td><p>A dictionary that contains all environment variable names and their values; otherwise, an empty
 dictionary if no environment variables are found.</p>
 </td>
@@ -169,7 +170,7 @@ values.</p>
 <li><code>LC_NUMERIC</code>: The name of the locale for numeric editing.</li>
 <li><code>LC_TIME</code>: The name of the locale for date- and time-formatting information.</li>
 <li><code>LOGNAME</code>: The name of the user&apos;s login account.</li>
-<li><code>PATH</code>: The sequence of path prefeixes used by &quot;exec&quot; functions in locating programs to run.</li>
+<li><code>PATH</code>: The sequence of path prefixes used by &quot;exec&quot; functions in locating programs to run.</li>
 <li><code>TERM</code>: The user&apos;s terminal type.</li>
 <li><code>TZ</code>: Time zone information.</li>
 </ul>
@@ -179,7 +180,7 @@ values.</p>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Libc_getcwd.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Libc.getcwd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/ba0ee116db7c65deb2b0bd5045f7c01601cc3917/src/Perlang.Stdlib/Stdlib/Libc.cs/#L54">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/688f88231a0d3bef93735b3d967ba43cfb6778f3/src/Perlang.Stdlib/Stdlib/Libc.cs/#L76">View Source</a>
   </span>
   <a id="Perlang_Stdlib_Libc_getcwd_" data-uid="Perlang.Stdlib.Libc.getcwd*"></a>
   <h4 id="Perlang_Stdlib_Libc_getcwd" data-uid="Perlang.Stdlib.Libc.getcwd">getcwd()</h4>
@@ -235,19 +236,19 @@ example, <code>/usr/bin</code> or <code>C:\mySubDirectory</code>).</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Libc_getenv_System_String_.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Libc.getenv(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Libc_getenv_Perlang_Lang_String_.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Libc.getenv(Perlang.Lang.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/ba0ee116db7c65deb2b0bd5045f7c01601cc3917/src/Perlang.Stdlib/Stdlib/Libc.cs/#L161">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/688f88231a0d3bef93735b3d967ba43cfb6778f3/src/Perlang.Stdlib/Stdlib/Libc.cs/#L183">View Source</a>
   </span>
   <a id="Perlang_Stdlib_Libc_getenv_" data-uid="Perlang.Stdlib.Libc.getenv*"></a>
-  <h4 id="Perlang_Stdlib_Libc_getenv_System_String_" data-uid="Perlang.Stdlib.Libc.getenv(System.String)">getenv(String)</h4>
+  <h4 id="Perlang_Stdlib_Libc_getenv_Perlang_Lang_String_" data-uid="Perlang.Stdlib.Libc.getenv(Perlang.Lang.String)">getenv(String)</h4>
   <div class="markdown level1 summary"><p>Retrieves the value of an environment variable from the current process.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string? getenv(string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string? getenv(String name)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -260,7 +261,7 @@ example, <code>/usr/bin</code> or <code>C:\mySubDirectory</code>).</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><a class="xref" href="Perlang.Lang.String.html">String</a></td>
         <td><span class="parametername">name</span></td>
         <td><p>The name of the environment variable.</p>
 </td>
@@ -283,8 +284,8 @@ example, <code>/usr/bin</code> or <code>C:\mySubDirectory</code>).</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Perlang_Stdlib_Libc_getenv_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The  <a class="xref" href="Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_getenv_System_String_">getenv(String)</a> method retrieves an environment
+  <h5 id="Perlang_Stdlib_Libc_getenv_Perlang_Lang_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The  <a class="xref" href="Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_getenv_Perlang_Lang_String_">getenv(String)</a> method retrieves an environment
 variable from the environment block of the current process.</p>
 <p>To retrieve all environment variables along with their values, call the <a class="xref" href="Perlang.Stdlib.Libc.html#Perlang_Stdlib_Libc_environ">environ()</a> method.</p>
 <p>Environment variable names are case-sensitive on Linux and macOS and case-insensitive on Windows.</p>
@@ -339,7 +340,7 @@ perform this operation.</p>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Libc_getpid.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Libc.getpid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/ba0ee116db7c65deb2b0bd5045f7c01601cc3917/src/Perlang.Stdlib/Stdlib/Libc.cs/#L175">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/688f88231a0d3bef93735b3d967ba43cfb6778f3/src/Perlang.Stdlib/Stdlib/Libc.cs/#L197">View Source</a>
   </span>
   <a id="Perlang_Stdlib_Libc_getpid_" data-uid="Perlang.Stdlib.Libc.getpid*"></a>
   <h4 id="Perlang_Stdlib_Libc_getpid" data-uid="Perlang.Stdlib.Libc.getpid">getpid()</h4>
@@ -384,7 +385,7 @@ In C, <code>mkstemp</code> can be used for this purpose. <code>mkstemp</code> is
                     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Stdlib_Libc.md&amp;value=---%0Auid%3A%20Perlang.Stdlib.Libc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/ba0ee116db7c65deb2b0bd5045f7c01601cc3917/src/Perlang.Stdlib/Stdlib/Libc.cs/#L28" class="contribution-link">View Source</a>
+                    <a href="https://github.com/perlang-org/perlang/blob/688f88231a0d3bef93735b3d967ba43cfb6778f3/src/Perlang.Stdlib/Stdlib/Libc.cs/#L32" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
