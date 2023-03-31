@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface ITypeReference
+    <title>Class Utf8String
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface ITypeReference
+    <meta name="title" content="Class Utf8String
    ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -72,35 +72,44 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Perlang.ITypeReference">
+            <article class="content wrap" id="_content" data-uid="Perlang.Lang.Utf8String">
   
   
-  <h1 id="Perlang_ITypeReference" data-uid="Perlang.ITypeReference" class="text-break">Interface ITypeReference
+  <h1 id="Perlang_Lang_Utf8String" data-uid="Perlang.Lang.Utf8String" class="text-break">Class Utf8String
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Representation of a string encoded with the UTF-8 encoding.</p>
+<p>UTF-8 strings can represent the full Unicode span of characters. Their main disadvantage is that the variable-length
+encoding of non-ASCII characters makes looping over characters be a much more complex process than with <a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a> or the future Utf16String.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.html">Perlang</a></h6>
-  <h6><strong>Assembly</strong>: Perlang.Common.dll</h6>
-  <h5 id="Perlang_ITypeReference_syntax">Syntax</h5>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Perlang.Lang.String.html">String</a></div>
+    <div class="level2"><span class="xref">Utf8String</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.Lang.html">Perlang.Lang</a></h6>
+  <h6><strong>Assembly</strong>: Perlang.Stdlib.dll</h6>
+  <h5 id="Perlang_Lang_Utf8String_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ITypeReference</code></pre>
+    <pre><code class="lang-csharp hljs">public class Utf8String : String</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_ITypeReference_ClrType.md&amp;value=---%0Auid%3A%20Perlang.ITypeReference.ClrType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_Utf8String_Length.md&amp;value=---%0Auid%3A%20Perlang.Lang.Utf8String.Length%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/bccbd0c48ba60ef157203a77de3e4e9cf0a3ef2e/src/Perlang.Common/ITypeReference.cs/#L12">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/bccbd0c48ba60ef157203a77de3e4e9cf0a3ef2e/src/Perlang.Stdlib/Lang/Utf8String.cs/#L22">View Source</a>
   </span>
-  <a id="Perlang_ITypeReference_ClrType_" data-uid="Perlang.ITypeReference.ClrType*"></a>
-  <h4 id="Perlang_ITypeReference_ClrType" data-uid="Perlang.ITypeReference.ClrType">ClrType</h4>
+  <a id="Perlang_Lang_Utf8String_Length_" data-uid="Perlang.Lang.Utf8String.Length*"></a>
+  <h4 id="Perlang_Lang_Utf8String_Length" data-uid="Perlang.Lang.Utf8String.Length">Length</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Type? ClrType { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override nuint Length { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -112,29 +121,51 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Type</span>&gt;</td>
+        <td><span class="xref">System.UIntPtr</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Perlang.Lang.String.html#Perlang_Lang_String_Length">String.Length</a></div>
+  <h3 id="methods">Methods
+  </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_ITypeReference_ExplicitTypeSpecified.md&amp;value=---%0Auid%3A%20Perlang.ITypeReference.ExplicitTypeSpecified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_Utf8String_from_System_String_.md&amp;value=---%0Auid%3A%20Perlang.Lang.Utf8String.from(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/bccbd0c48ba60ef157203a77de3e4e9cf0a3ef2e/src/Perlang.Common/ITypeReference.cs/#L18">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/bccbd0c48ba60ef157203a77de3e4e9cf0a3ef2e/src/Perlang.Stdlib/Lang/Utf8String.cs/#L30">View Source</a>
   </span>
-  <a id="Perlang_ITypeReference_ExplicitTypeSpecified_" data-uid="Perlang.ITypeReference.ExplicitTypeSpecified*"></a>
-  <h4 id="Perlang_ITypeReference_ExplicitTypeSpecified" data-uid="Perlang.ITypeReference.ExplicitTypeSpecified">ExplicitTypeSpecified</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether the type reference contains an explicit type specifier or not. If this is
-false, the user is perhaps intending for the type to be inferred from the program context.</p>
+  <a id="Perlang_Lang_Utf8String_from_" data-uid="Perlang.Lang.Utf8String.from*"></a>
+  <h4 id="Perlang_Lang_Utf8String_from_System_String_" data-uid="Perlang.Lang.Utf8String.from(System.String)">from(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Perlang.Lang.Utf8String.html">Utf8String</a> class from an existing <see cref="!:System.Char"></see> array. A
+new <see cref="!:System.Byte"></see> buffer will be allocated to contain the string content.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">virtual bool ExplicitTypeSpecified { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static Utf8String from(string s)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">s</span></td>
+        <td><p>A .NET string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -144,90 +175,28 @@ false, the user is perhaps intending for the type to be inferred from the progra
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><a class="xref" href="Perlang.Lang.Utf8String.html">Utf8String</a></td>
+        <td><p>A newly allocated <a class="xref" href="Perlang.Lang.Utf8String.html">Utf8String</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_ITypeReference_IsNullObject.md&amp;value=---%0Auid%3A%20Perlang.ITypeReference.IsNullObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_Utf8String_ToString.md&amp;value=---%0Auid%3A%20Perlang.Lang.Utf8String.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/bccbd0c48ba60ef157203a77de3e4e9cf0a3ef2e/src/Perlang.Common/ITypeReference.cs/#L29">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/bccbd0c48ba60ef157203a77de3e4e9cf0a3ef2e/src/Perlang.Stdlib/Lang/Utf8String.cs/#L59">View Source</a>
   </span>
-  <a id="Perlang_ITypeReference_IsNullObject_" data-uid="Perlang.ITypeReference.IsNullObject*"></a>
-  <h4 id="Perlang_ITypeReference_IsNullObject" data-uid="Perlang.ITypeReference.IsNullObject">IsNullObject</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether this type reference refers to a <code>null</code> value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">virtual bool IsNullObject { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_ITypeReference_IsResolved.md&amp;value=---%0Auid%3A%20Perlang.ITypeReference.IsResolved%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/bccbd0c48ba60ef157203a77de3e4e9cf0a3ef2e/src/Perlang.Common/ITypeReference.cs/#L24">View Source</a>
-  </span>
-  <a id="Perlang_ITypeReference_IsResolved_" data-uid="Perlang.ITypeReference.IsResolved*"></a>
-  <h4 id="Perlang_ITypeReference_IsResolved" data-uid="Perlang.ITypeReference.IsResolved">IsResolved</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether the type reference has been successfully resolved to a (loaded) CLR type or
-not.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">virtual bool IsResolved { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_ITypeReference_TypeSpecifier.md&amp;value=---%0Auid%3A%20Perlang.ITypeReference.TypeSpecifier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/bccbd0c48ba60ef157203a77de3e4e9cf0a3ef2e/src/Perlang.Common/ITypeReference.cs/#L9">View Source</a>
-  </span>
-  <a id="Perlang_ITypeReference_TypeSpecifier_" data-uid="Perlang.ITypeReference.TypeSpecifier*"></a>
-  <h4 id="Perlang_ITypeReference_TypeSpecifier" data-uid="Perlang.ITypeReference.TypeSpecifier">TypeSpecifier</h4>
+  <a id="Perlang_Lang_Utf8String_ToString_" data-uid="Perlang.Lang.Utf8String.ToString*"></a>
+  <h4 id="Perlang_Lang_Utf8String_ToString" data-uid="Perlang.Lang.Utf8String.ToString">ToString()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Token TypeSpecifier { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -237,11 +206,45 @@ not.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Perlang.Token.html">Token</a></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Perlang.Lang.String.html#Perlang_Lang_String_ToString">String.ToString()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_Utf8String_ToUpper.md&amp;value=---%0Auid%3A%20Perlang.Lang.Utf8String.ToUpper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/bccbd0c48ba60ef157203a77de3e4e9cf0a3ef2e/src/Perlang.Stdlib/Lang/Utf8String.cs/#L54">View Source</a>
+  </span>
+  <a id="Perlang_Lang_Utf8String_ToUpper_" data-uid="Perlang.Lang.Utf8String.ToUpper*"></a>
+  <h4 id="Perlang_Lang_Utf8String_ToUpper" data-uid="Perlang.Lang.Utf8String.ToUpper">ToUpper()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override String ToUpper()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Lang.String.html">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Perlang.Lang.String.html#Perlang_Lang_String_ToUpper">String.ToUpper()</a></div>
 </article>
           </div>
           
@@ -250,10 +253,10 @@ not.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_ITypeReference.md&amp;value=---%0Auid%3A%20Perlang.ITypeReference%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_Utf8String.md&amp;value=---%0Auid%3A%20Perlang.Lang.Utf8String%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/bccbd0c48ba60ef157203a77de3e4e9cf0a3ef2e/src/Perlang.Common/ITypeReference.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/perlang-org/perlang/blob/bccbd0c48ba60ef157203a77de3e4e9cf0a3ef2e/src/Perlang.Stdlib/Lang/Utf8String.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

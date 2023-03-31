@@ -2975,6 +2975,64 @@ references:
   isSpec: "True"
   fullName: Perlang.Lang.String.ToUpper
   nameWithType: String.ToUpper
+- uid: Perlang.Lang.Utf8String
+  name: Utf8String
+  href: api/Perlang.Lang.Utf8String.html
+  commentId: T:Perlang.Lang.Utf8String
+  fullName: Perlang.Lang.Utf8String
+  nameWithType: Utf8String
+- uid: Perlang.Lang.Utf8String.from(System.String)
+  name: from(String)
+  href: api/Perlang.Lang.Utf8String.html#Perlang_Lang_Utf8String_from_System_String_
+  commentId: M:Perlang.Lang.Utf8String.from(System.String)
+  fullName: Perlang.Lang.Utf8String.from(System.String)
+  nameWithType: Utf8String.from(String)
+- uid: Perlang.Lang.Utf8String.from*
+  name: from
+  href: api/Perlang.Lang.Utf8String.html#Perlang_Lang_Utf8String_from_
+  commentId: Overload:Perlang.Lang.Utf8String.from
+  isSpec: "True"
+  fullName: Perlang.Lang.Utf8String.from
+  nameWithType: Utf8String.from
+- uid: Perlang.Lang.Utf8String.Length
+  name: Length
+  href: api/Perlang.Lang.Utf8String.html#Perlang_Lang_Utf8String_Length
+  commentId: P:Perlang.Lang.Utf8String.Length
+  fullName: Perlang.Lang.Utf8String.Length
+  nameWithType: Utf8String.Length
+- uid: Perlang.Lang.Utf8String.Length*
+  name: Length
+  href: api/Perlang.Lang.Utf8String.html#Perlang_Lang_Utf8String_Length_
+  commentId: Overload:Perlang.Lang.Utf8String.Length
+  isSpec: "True"
+  fullName: Perlang.Lang.Utf8String.Length
+  nameWithType: Utf8String.Length
+- uid: Perlang.Lang.Utf8String.ToString
+  name: ToString()
+  href: api/Perlang.Lang.Utf8String.html#Perlang_Lang_Utf8String_ToString
+  commentId: M:Perlang.Lang.Utf8String.ToString
+  fullName: Perlang.Lang.Utf8String.ToString()
+  nameWithType: Utf8String.ToString()
+- uid: Perlang.Lang.Utf8String.ToString*
+  name: ToString
+  href: api/Perlang.Lang.Utf8String.html#Perlang_Lang_Utf8String_ToString_
+  commentId: Overload:Perlang.Lang.Utf8String.ToString
+  isSpec: "True"
+  fullName: Perlang.Lang.Utf8String.ToString
+  nameWithType: Utf8String.ToString
+- uid: Perlang.Lang.Utf8String.ToUpper
+  name: ToUpper()
+  href: api/Perlang.Lang.Utf8String.html#Perlang_Lang_Utf8String_ToUpper
+  commentId: M:Perlang.Lang.Utf8String.ToUpper
+  fullName: Perlang.Lang.Utf8String.ToUpper()
+  nameWithType: Utf8String.ToUpper()
+- uid: Perlang.Lang.Utf8String.ToUpper*
+  name: ToUpper
+  href: api/Perlang.Lang.Utf8String.html#Perlang_Lang_Utf8String_ToUpper_
+  commentId: Overload:Perlang.Lang.Utf8String.ToUpper
+  isSpec: "True"
+  fullName: Perlang.Lang.Utf8String.ToUpper
+  nameWithType: Utf8String.ToUpper
 - uid: Perlang.NullObject
   name: NullObject
   href: api/Perlang.NullObject.html
