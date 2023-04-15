@@ -364,15 +364,15 @@ references:
   isSpec: "True"
   fullName: Perlang.ConsoleApp.Program.Main
   nameWithType: Program.Main
-- uid: Perlang.ConsoleApp.Program.MainWithCustomConsole(System.String[],IConsole)
-  name: MainWithCustomConsole(String[], IConsole)
-  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_MainWithCustomConsole_System_String___IConsole_
-  commentId: M:Perlang.ConsoleApp.Program.MainWithCustomConsole(System.String[],IConsole)
-  name.vb: MainWithCustomConsole(String(), IConsole)
-  fullName: Perlang.ConsoleApp.Program.MainWithCustomConsole(System.String[], IConsole)
-  fullName.vb: Perlang.ConsoleApp.Program.MainWithCustomConsole(System.String(), IConsole)
-  nameWithType: Program.MainWithCustomConsole(String[], IConsole)
-  nameWithType.vb: Program.MainWithCustomConsole(String(), IConsole)
+- uid: Perlang.ConsoleApp.Program.MainWithCustomConsole(System.String[],System.Nullable{IConsole})
+  name: MainWithCustomConsole(String[], Nullable<IConsole>)
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_MainWithCustomConsole_System_String___System_Nullable_IConsole__
+  commentId: M:Perlang.ConsoleApp.Program.MainWithCustomConsole(System.String[],System.Nullable{IConsole})
+  name.vb: MainWithCustomConsole(String(), Nullable(Of IConsole))
+  fullName: Perlang.ConsoleApp.Program.MainWithCustomConsole(System.String[], System.Nullable<IConsole>)
+  fullName.vb: Perlang.ConsoleApp.Program.MainWithCustomConsole(System.String(), System.Nullable(Of IConsole))
+  nameWithType: Program.MainWithCustomConsole(String[], Nullable<IConsole>)
+  nameWithType.vb: Program.MainWithCustomConsole(String(), Nullable(Of IConsole))
 - uid: Perlang.ConsoleApp.Program.MainWithCustomConsole*
   name: MainWithCustomConsole
   href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_MainWithCustomConsole_
