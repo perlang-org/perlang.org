@@ -342,6 +342,122 @@ references:
   isSpec: "True"
   fullName: Perlang.ConsoleApp.CommandResultExtensions.HasOption
   nameWithType: CommandResultExtensions.HasOption
+- uid: Perlang.ConsoleApp.IPerlangConsole
+  name: IPerlangConsole
+  href: api/Perlang.ConsoleApp.IPerlangConsole.html
+  commentId: T:Perlang.ConsoleApp.IPerlangConsole
+  fullName: Perlang.ConsoleApp.IPerlangConsole
+  nameWithType: IPerlangConsole
+- uid: Perlang.ConsoleApp.IPerlangConsole.WriteStdoutLine(Lang.String)
+  name: WriteStdoutLine(Lang.String)
+  href: api/Perlang.ConsoleApp.IPerlangConsole.html#Perlang_ConsoleApp_IPerlangConsole_WriteStdoutLine_Lang_String_
+  commentId: M:Perlang.ConsoleApp.IPerlangConsole.WriteStdoutLine(Lang.String)
+  fullName: Perlang.ConsoleApp.IPerlangConsole.WriteStdoutLine(Lang.String)
+  nameWithType: IPerlangConsole.WriteStdoutLine(Lang.String)
+- uid: Perlang.ConsoleApp.IPerlangConsole.WriteStdoutLine*
+  name: WriteStdoutLine
+  href: api/Perlang.ConsoleApp.IPerlangConsole.html#Perlang_ConsoleApp_IPerlangConsole_WriteStdoutLine_
+  commentId: Overload:Perlang.ConsoleApp.IPerlangConsole.WriteStdoutLine
+  isSpec: "True"
+  fullName: Perlang.ConsoleApp.IPerlangConsole.WriteStdoutLine
+  nameWithType: IPerlangConsole.WriteStdoutLine
+- uid: Perlang.ConsoleApp.PerlangConsole
+  name: PerlangConsole
+  href: api/Perlang.ConsoleApp.PerlangConsole.html
+  commentId: T:Perlang.ConsoleApp.PerlangConsole
+  fullName: Perlang.ConsoleApp.PerlangConsole
+  nameWithType: PerlangConsole
+- uid: Perlang.ConsoleApp.PerlangConsole.#ctor
+  name: PerlangConsole()
+  href: api/Perlang.ConsoleApp.PerlangConsole.html#Perlang_ConsoleApp_PerlangConsole__ctor
+  commentId: M:Perlang.ConsoleApp.PerlangConsole.#ctor
+  fullName: Perlang.ConsoleApp.PerlangConsole.PerlangConsole()
+  nameWithType: PerlangConsole.PerlangConsole()
+- uid: Perlang.ConsoleApp.PerlangConsole.#ctor*
+  name: PerlangConsole
+  href: api/Perlang.ConsoleApp.PerlangConsole.html#Perlang_ConsoleApp_PerlangConsole__ctor_
+  commentId: Overload:Perlang.ConsoleApp.PerlangConsole.#ctor
+  isSpec: "True"
+  fullName: Perlang.ConsoleApp.PerlangConsole.PerlangConsole
+  nameWithType: PerlangConsole.PerlangConsole
+- uid: Perlang.ConsoleApp.PerlangConsole.Error
+  name: Error
+  href: api/Perlang.ConsoleApp.PerlangConsole.html#Perlang_ConsoleApp_PerlangConsole_Error
+  commentId: P:Perlang.ConsoleApp.PerlangConsole.Error
+  fullName: Perlang.ConsoleApp.PerlangConsole.Error
+  nameWithType: PerlangConsole.Error
+- uid: Perlang.ConsoleApp.PerlangConsole.Error*
+  name: Error
+  href: api/Perlang.ConsoleApp.PerlangConsole.html#Perlang_ConsoleApp_PerlangConsole_Error_
+  commentId: Overload:Perlang.ConsoleApp.PerlangConsole.Error
+  isSpec: "True"
+  fullName: Perlang.ConsoleApp.PerlangConsole.Error
+  nameWithType: PerlangConsole.Error
+- uid: Perlang.ConsoleApp.PerlangConsole.IsErrorRedirected
+  name: IsErrorRedirected
+  href: api/Perlang.ConsoleApp.PerlangConsole.html#Perlang_ConsoleApp_PerlangConsole_IsErrorRedirected
+  commentId: P:Perlang.ConsoleApp.PerlangConsole.IsErrorRedirected
+  fullName: Perlang.ConsoleApp.PerlangConsole.IsErrorRedirected
+  nameWithType: PerlangConsole.IsErrorRedirected
+- uid: Perlang.ConsoleApp.PerlangConsole.IsErrorRedirected*
+  name: IsErrorRedirected
+  href: api/Perlang.ConsoleApp.PerlangConsole.html#Perlang_ConsoleApp_PerlangConsole_IsErrorRedirected_
+  commentId: Overload:Perlang.ConsoleApp.PerlangConsole.IsErrorRedirected
+  isSpec: "True"
+  fullName: Perlang.ConsoleApp.PerlangConsole.IsErrorRedirected
+  nameWithType: PerlangConsole.IsErrorRedirected
+- uid: Perlang.ConsoleApp.PerlangConsole.IsInputRedirected
+  name: IsInputRedirected
+  href: api/Perlang.ConsoleApp.PerlangConsole.html#Perlang_ConsoleApp_PerlangConsole_IsInputRedirected
+  commentId: P:Perlang.ConsoleApp.PerlangConsole.IsInputRedirected
+  fullName: Perlang.ConsoleApp.PerlangConsole.IsInputRedirected
+  nameWithType: PerlangConsole.IsInputRedirected
+- uid: Perlang.ConsoleApp.PerlangConsole.IsInputRedirected*
+  name: IsInputRedirected
+  href: api/Perlang.ConsoleApp.PerlangConsole.html#Perlang_ConsoleApp_PerlangConsole_IsInputRedirected_
+  commentId: Overload:Perlang.ConsoleApp.PerlangConsole.IsInputRedirected
+  isSpec: "True"
+  fullName: Perlang.ConsoleApp.PerlangConsole.IsInputRedirected
+  nameWithType: PerlangConsole.IsInputRedirected
+- uid: Perlang.ConsoleApp.PerlangConsole.IsOutputRedirected
+  name: IsOutputRedirected
+  href: api/Perlang.ConsoleApp.PerlangConsole.html#Perlang_ConsoleApp_PerlangConsole_IsOutputRedirected
+  commentId: P:Perlang.ConsoleApp.PerlangConsole.IsOutputRedirected
+  fullName: Perlang.ConsoleApp.PerlangConsole.IsOutputRedirected
+  nameWithType: PerlangConsole.IsOutputRedirected
+- uid: Perlang.ConsoleApp.PerlangConsole.IsOutputRedirected*
+  name: IsOutputRedirected
+  href: api/Perlang.ConsoleApp.PerlangConsole.html#Perlang_ConsoleApp_PerlangConsole_IsOutputRedirected_
+  commentId: Overload:Perlang.ConsoleApp.PerlangConsole.IsOutputRedirected
+  isSpec: "True"
+  fullName: Perlang.ConsoleApp.PerlangConsole.IsOutputRedirected
+  nameWithType: PerlangConsole.IsOutputRedirected
+- uid: Perlang.ConsoleApp.PerlangConsole.Out
+  name: Out
+  href: api/Perlang.ConsoleApp.PerlangConsole.html#Perlang_ConsoleApp_PerlangConsole_Out
+  commentId: P:Perlang.ConsoleApp.PerlangConsole.Out
+  fullName: Perlang.ConsoleApp.PerlangConsole.Out
+  nameWithType: PerlangConsole.Out
+- uid: Perlang.ConsoleApp.PerlangConsole.Out*
+  name: Out
+  href: api/Perlang.ConsoleApp.PerlangConsole.html#Perlang_ConsoleApp_PerlangConsole_Out_
+  commentId: Overload:Perlang.ConsoleApp.PerlangConsole.Out
+  isSpec: "True"
+  fullName: Perlang.ConsoleApp.PerlangConsole.Out
+  nameWithType: PerlangConsole.Out
+- uid: Perlang.ConsoleApp.PerlangConsole.WriteStdoutLine(Perlang.Lang.String)
+  name: WriteStdoutLine(Lang.String)
+  href: api/Perlang.ConsoleApp.PerlangConsole.html#Perlang_ConsoleApp_PerlangConsole_WriteStdoutLine_Perlang_Lang_String_
+  commentId: M:Perlang.ConsoleApp.PerlangConsole.WriteStdoutLine(Perlang.Lang.String)
+  fullName: Perlang.ConsoleApp.PerlangConsole.WriteStdoutLine(Perlang.Lang.String)
+  nameWithType: PerlangConsole.WriteStdoutLine(Lang.String)
+- uid: Perlang.ConsoleApp.PerlangConsole.WriteStdoutLine*
+  name: WriteStdoutLine
+  href: api/Perlang.ConsoleApp.PerlangConsole.html#Perlang_ConsoleApp_PerlangConsole_WriteStdoutLine_
+  commentId: Overload:Perlang.ConsoleApp.PerlangConsole.WriteStdoutLine
+  isSpec: "True"
+  fullName: Perlang.ConsoleApp.PerlangConsole.WriteStdoutLine
+  nameWithType: PerlangConsole.WriteStdoutLine
 - uid: Perlang.ConsoleApp.Program
   name: Program
   href: api/Perlang.ConsoleApp.Program.html
@@ -364,15 +480,15 @@ references:
   isSpec: "True"
   fullName: Perlang.ConsoleApp.Program.Main
   nameWithType: Program.Main
-- uid: Perlang.ConsoleApp.Program.MainWithCustomConsole(System.String[],System.Nullable{IConsole})
-  name: MainWithCustomConsole(String[], Nullable<IConsole>)
-  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_MainWithCustomConsole_System_String___System_Nullable_IConsole__
-  commentId: M:Perlang.ConsoleApp.Program.MainWithCustomConsole(System.String[],System.Nullable{IConsole})
-  name.vb: MainWithCustomConsole(String(), Nullable(Of IConsole))
-  fullName: Perlang.ConsoleApp.Program.MainWithCustomConsole(System.String[], System.Nullable<IConsole>)
-  fullName.vb: Perlang.ConsoleApp.Program.MainWithCustomConsole(System.String(), System.Nullable(Of IConsole))
-  nameWithType: Program.MainWithCustomConsole(String[], Nullable<IConsole>)
-  nameWithType.vb: Program.MainWithCustomConsole(String(), Nullable(Of IConsole))
+- uid: Perlang.ConsoleApp.Program.MainWithCustomConsole(System.String[],Perlang.ConsoleApp.IPerlangConsole)
+  name: MainWithCustomConsole(String[], IPerlangConsole)
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_MainWithCustomConsole_System_String___Perlang_ConsoleApp_IPerlangConsole_
+  commentId: M:Perlang.ConsoleApp.Program.MainWithCustomConsole(System.String[],Perlang.ConsoleApp.IPerlangConsole)
+  name.vb: MainWithCustomConsole(String(), IPerlangConsole)
+  fullName: Perlang.ConsoleApp.Program.MainWithCustomConsole(System.String[], Perlang.ConsoleApp.IPerlangConsole)
+  fullName.vb: Perlang.ConsoleApp.Program.MainWithCustomConsole(System.String(), Perlang.ConsoleApp.IPerlangConsole)
+  nameWithType: Program.MainWithCustomConsole(String[], IPerlangConsole)
+  nameWithType.vb: Program.MainWithCustomConsole(String(), IPerlangConsole)
 - uid: Perlang.ConsoleApp.Program.MainWithCustomConsole*
   name: MainWithCustomConsole
   href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_MainWithCustomConsole_
@@ -405,6 +521,38 @@ references:
   isSpec: "True"
   fullName: Perlang.Exceptions.IllegalStateException.IllegalStateException
   nameWithType: IllegalStateException.IllegalStateException
+- uid: Perlang.Exceptions.IOException
+  name: IOException
+  href: api/Perlang.Exceptions.IOException.html
+  commentId: T:Perlang.Exceptions.IOException
+  fullName: Perlang.Exceptions.IOException
+  nameWithType: IOException
+- uid: Perlang.Exceptions.IOException.#ctor(System.String,System.Int32)
+  name: IOException(String, Int32)
+  href: api/Perlang.Exceptions.IOException.html#Perlang_Exceptions_IOException__ctor_System_String_System_Int32_
+  commentId: M:Perlang.Exceptions.IOException.#ctor(System.String,System.Int32)
+  fullName: Perlang.Exceptions.IOException.IOException(System.String, System.Int32)
+  nameWithType: IOException.IOException(String, Int32)
+- uid: Perlang.Exceptions.IOException.#ctor*
+  name: IOException
+  href: api/Perlang.Exceptions.IOException.html#Perlang_Exceptions_IOException__ctor_
+  commentId: Overload:Perlang.Exceptions.IOException.#ctor
+  isSpec: "True"
+  fullName: Perlang.Exceptions.IOException.IOException
+  nameWithType: IOException.IOException
+- uid: Perlang.Exceptions.IOException.ErrorNumber
+  name: ErrorNumber
+  href: api/Perlang.Exceptions.IOException.html#Perlang_Exceptions_IOException_ErrorNumber
+  commentId: P:Perlang.Exceptions.IOException.ErrorNumber
+  fullName: Perlang.Exceptions.IOException.ErrorNumber
+  nameWithType: IOException.ErrorNumber
+- uid: Perlang.Exceptions.IOException.ErrorNumber*
+  name: ErrorNumber
+  href: api/Perlang.Exceptions.IOException.html#Perlang_Exceptions_IOException_ErrorNumber_
+  commentId: Overload:Perlang.Exceptions.IOException.ErrorNumber
+  isSpec: "True"
+  fullName: Perlang.Exceptions.IOException.ErrorNumber
+  nameWithType: IOException.ErrorNumber
 - uid: Perlang.Exceptions.StdlibException
   name: StdlibException
   href: api/Perlang.Exceptions.StdlibException.html
@@ -2156,13 +2304,13 @@ references:
   commentId: T:Perlang.Interpreter.PerlangInterpreter
   fullName: Perlang.Interpreter.PerlangInterpreter
   nameWithType: PerlangInterpreter
-- uid: Perlang.Interpreter.PerlangInterpreter.#ctor(Action{Perlang.RuntimeError},Action{System.String},Perlang.Interpreter.Internals.IBindingHandler,System.Nullable{IEnumerable{System.String}},System.Boolean)
+- uid: Perlang.Interpreter.PerlangInterpreter.#ctor(Action{Perlang.RuntimeError},Action{Perlang.Lang.String},Perlang.Interpreter.Internals.IBindingHandler,System.Nullable{IEnumerable{System.String}},System.Boolean)
   name: PerlangInterpreter(Action<RuntimeError>, Action<String>, IBindingHandler, Nullable<IEnumerable<String>>, Boolean)
-  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter__ctor_Action_Perlang_RuntimeError__Action_System_String__Perlang_Interpreter_Internals_IBindingHandler_System_Nullable_IEnumerable_System_String___System_Boolean_
-  commentId: M:Perlang.Interpreter.PerlangInterpreter.#ctor(Action{Perlang.RuntimeError},Action{System.String},Perlang.Interpreter.Internals.IBindingHandler,System.Nullable{IEnumerable{System.String}},System.Boolean)
+  href: api/Perlang.Interpreter.PerlangInterpreter.html#Perlang_Interpreter_PerlangInterpreter__ctor_Action_Perlang_RuntimeError__Action_Perlang_Lang_String__Perlang_Interpreter_Internals_IBindingHandler_System_Nullable_IEnumerable_System_String___System_Boolean_
+  commentId: M:Perlang.Interpreter.PerlangInterpreter.#ctor(Action{Perlang.RuntimeError},Action{Perlang.Lang.String},Perlang.Interpreter.Internals.IBindingHandler,System.Nullable{IEnumerable{System.String}},System.Boolean)
   name.vb: PerlangInterpreter(Action(Of RuntimeError), Action(Of String), IBindingHandler, Nullable(Of IEnumerable(Of String)), Boolean)
-  fullName: Perlang.Interpreter.PerlangInterpreter.PerlangInterpreter(Action<Perlang.RuntimeError>, Action<System.String>, Perlang.Interpreter.Internals.IBindingHandler, System.Nullable<IEnumerable<System.String>>, System.Boolean)
-  fullName.vb: Perlang.Interpreter.PerlangInterpreter.PerlangInterpreter(Action(Of Perlang.RuntimeError), Action(Of System.String), Perlang.Interpreter.Internals.IBindingHandler, System.Nullable(Of IEnumerable(Of System.String)), System.Boolean)
+  fullName: Perlang.Interpreter.PerlangInterpreter.PerlangInterpreter(Action<Perlang.RuntimeError>, Action<Perlang.Lang.String>, Perlang.Interpreter.Internals.IBindingHandler, System.Nullable<IEnumerable<System.String>>, System.Boolean)
+  fullName.vb: Perlang.Interpreter.PerlangInterpreter.PerlangInterpreter(Action(Of Perlang.RuntimeError), Action(Of Perlang.Lang.String), Perlang.Interpreter.Internals.IBindingHandler, System.Nullable(Of IEnumerable(Of System.String)), System.Boolean)
   nameWithType: PerlangInterpreter.PerlangInterpreter(Action<RuntimeError>, Action<String>, IBindingHandler, Nullable<IEnumerable<String>>, Boolean)
   nameWithType.vb: PerlangInterpreter.PerlangInterpreter(Action(Of RuntimeError), Action(Of String), IBindingHandler, Nullable(Of IEnumerable(Of String)), Boolean)
 - uid: Perlang.Interpreter.PerlangInterpreter.#ctor*
@@ -2904,6 +3052,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Lang.AsciiString.Inequality
   nameWithType: AsciiString.Inequality
+- uid: Perlang.Lang.AsciiString.to_upper
+  name: to_upper()
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_to_upper
+  commentId: M:Perlang.Lang.AsciiString.to_upper
+  fullName: Perlang.Lang.AsciiString.to_upper()
+  nameWithType: AsciiString.to_upper()
+- uid: Perlang.Lang.AsciiString.to_upper*
+  name: to_upper
+  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_to_upper_
+  commentId: Overload:Perlang.Lang.AsciiString.to_upper
+  isSpec: "True"
+  fullName: Perlang.Lang.AsciiString.to_upper
+  nameWithType: AsciiString.to_upper
 - uid: Perlang.Lang.AsciiString.ToString
   name: ToString()
   href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_ToString
@@ -2917,25 +3078,41 @@ references:
   isSpec: "True"
   fullName: Perlang.Lang.AsciiString.ToString
   nameWithType: AsciiString.ToString
-- uid: Perlang.Lang.AsciiString.ToUpper
-  name: ToUpper()
-  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_ToUpper
-  commentId: M:Perlang.Lang.AsciiString.ToUpper
-  fullName: Perlang.Lang.AsciiString.ToUpper()
-  nameWithType: AsciiString.ToUpper()
-- uid: Perlang.Lang.AsciiString.ToUpper*
-  name: ToUpper
-  href: api/Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_ToUpper_
-  commentId: Overload:Perlang.Lang.AsciiString.ToUpper
-  isSpec: "True"
-  fullName: Perlang.Lang.AsciiString.ToUpper
-  nameWithType: AsciiString.ToUpper
 - uid: Perlang.Lang.String
   name: String
   href: api/Perlang.Lang.String.html
   commentId: T:Perlang.Lang.String
   fullName: Perlang.Lang.String
   nameWithType: String
+- uid: Perlang.Lang.String.Empty
+  name: Empty
+  href: api/Perlang.Lang.String.html#Perlang_Lang_String_Empty
+  commentId: P:Perlang.Lang.String.Empty
+  fullName: Perlang.Lang.String.Empty
+  nameWithType: String.Empty
+- uid: Perlang.Lang.String.Empty*
+  name: Empty
+  href: api/Perlang.Lang.String.html#Perlang_Lang_String_Empty_
+  commentId: Overload:Perlang.Lang.String.Empty
+  isSpec: "True"
+  fullName: Perlang.Lang.String.Empty
+  nameWithType: String.Empty
+- uid: Perlang.Lang.String.from(System.Nullable{System.String})
+  name: from(Nullable<String>)
+  href: api/Perlang.Lang.String.html#Perlang_Lang_String_from_System_Nullable_System_String__
+  commentId: M:Perlang.Lang.String.from(System.Nullable{System.String})
+  name.vb: from(Nullable(Of String))
+  fullName: Perlang.Lang.String.from(System.Nullable<System.String>)
+  fullName.vb: Perlang.Lang.String.from(System.Nullable(Of System.String))
+  nameWithType: String.from(Nullable<String>)
+  nameWithType.vb: String.from(Nullable(Of String))
+- uid: Perlang.Lang.String.from*
+  name: from
+  href: api/Perlang.Lang.String.html#Perlang_Lang_String_from_
+  commentId: Overload:Perlang.Lang.String.from
+  isSpec: "True"
+  fullName: Perlang.Lang.String.from
+  nameWithType: String.from
 - uid: Perlang.Lang.String.Length
   name: Length
   href: api/Perlang.Lang.String.html#Perlang_Lang_String_Length
@@ -2949,6 +3126,32 @@ references:
   isSpec: "True"
   fullName: Perlang.Lang.String.Length
   nameWithType: String.Length
+- uid: Perlang.Lang.String.Newline
+  name: Newline
+  href: api/Perlang.Lang.String.html#Perlang_Lang_String_Newline
+  commentId: P:Perlang.Lang.String.Newline
+  fullName: Perlang.Lang.String.Newline
+  nameWithType: String.Newline
+- uid: Perlang.Lang.String.Newline*
+  name: Newline
+  href: api/Perlang.Lang.String.html#Perlang_Lang_String_Newline_
+  commentId: Overload:Perlang.Lang.String.Newline
+  isSpec: "True"
+  fullName: Perlang.Lang.String.Newline
+  nameWithType: String.Newline
+- uid: Perlang.Lang.String.to_upper
+  name: to_upper()
+  href: api/Perlang.Lang.String.html#Perlang_Lang_String_to_upper
+  commentId: M:Perlang.Lang.String.to_upper
+  fullName: Perlang.Lang.String.to_upper()
+  nameWithType: String.to_upper()
+- uid: Perlang.Lang.String.to_upper*
+  name: to_upper
+  href: api/Perlang.Lang.String.html#Perlang_Lang_String_to_upper_
+  commentId: Overload:Perlang.Lang.String.to_upper
+  isSpec: "True"
+  fullName: Perlang.Lang.String.to_upper
+  nameWithType: String.to_upper
 - uid: Perlang.Lang.String.ToString
   name: ToString()
   href: api/Perlang.Lang.String.html#Perlang_Lang_String_ToString
@@ -2962,19 +3165,6 @@ references:
   isSpec: "True"
   fullName: Perlang.Lang.String.ToString
   nameWithType: String.ToString
-- uid: Perlang.Lang.String.ToUpper
-  name: ToUpper()
-  href: api/Perlang.Lang.String.html#Perlang_Lang_String_ToUpper
-  commentId: M:Perlang.Lang.String.ToUpper
-  fullName: Perlang.Lang.String.ToUpper()
-  nameWithType: String.ToUpper()
-- uid: Perlang.Lang.String.ToUpper*
-  name: ToUpper
-  href: api/Perlang.Lang.String.html#Perlang_Lang_String_ToUpper_
-  commentId: Overload:Perlang.Lang.String.ToUpper
-  isSpec: "True"
-  fullName: Perlang.Lang.String.ToUpper
-  nameWithType: String.ToUpper
 - uid: Perlang.Lang.Utf8String
   name: Utf8String
   href: api/Perlang.Lang.Utf8String.html
@@ -3007,6 +3197,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Lang.Utf8String.Length
   nameWithType: Utf8String.Length
+- uid: Perlang.Lang.Utf8String.to_upper
+  name: to_upper()
+  href: api/Perlang.Lang.Utf8String.html#Perlang_Lang_Utf8String_to_upper
+  commentId: M:Perlang.Lang.Utf8String.to_upper
+  fullName: Perlang.Lang.Utf8String.to_upper()
+  nameWithType: Utf8String.to_upper()
+- uid: Perlang.Lang.Utf8String.to_upper*
+  name: to_upper
+  href: api/Perlang.Lang.Utf8String.html#Perlang_Lang_Utf8String_to_upper_
+  commentId: Overload:Perlang.Lang.Utf8String.to_upper
+  isSpec: "True"
+  fullName: Perlang.Lang.Utf8String.to_upper
+  nameWithType: Utf8String.to_upper
 - uid: Perlang.Lang.Utf8String.ToString
   name: ToString()
   href: api/Perlang.Lang.Utf8String.html#Perlang_Lang_Utf8String_ToString
@@ -3020,19 +3223,6 @@ references:
   isSpec: "True"
   fullName: Perlang.Lang.Utf8String.ToString
   nameWithType: Utf8String.ToString
-- uid: Perlang.Lang.Utf8String.ToUpper
-  name: ToUpper()
-  href: api/Perlang.Lang.Utf8String.html#Perlang_Lang_Utf8String_ToUpper
-  commentId: M:Perlang.Lang.Utf8String.ToUpper
-  fullName: Perlang.Lang.Utf8String.ToUpper()
-  nameWithType: Utf8String.ToUpper()
-- uid: Perlang.Lang.Utf8String.ToUpper*
-  name: ToUpper
-  href: api/Perlang.Lang.Utf8String.html#Perlang_Lang_Utf8String_ToUpper_
-  commentId: Overload:Perlang.Lang.Utf8String.ToUpper
-  isSpec: "True"
-  fullName: Perlang.Lang.Utf8String.ToUpper
-  nameWithType: Utf8String.ToUpper
 - uid: Perlang.NullObject
   name: NullObject
   href: api/Perlang.NullObject.html

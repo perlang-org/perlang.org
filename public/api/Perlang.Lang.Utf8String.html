@@ -88,6 +88,18 @@ encoding of non-ASCII characters makes looping over characters be a much more co
     <div class="level1"><a class="xref" href="Perlang.Lang.String.html">String</a></div>
     <div class="level2"><span class="xref">Utf8String</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Perlang.Lang.String.html#Perlang_Lang_String_Empty">String.Empty</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.Lang.String.html#Perlang_Lang_String_Newline">String.Newline</a>
+    </div>
+    <div>
+      <a class="xref" href="Perlang.Lang.String.html#Perlang_Lang_String_from_System_Nullable_System_String__">String.from(Nullable&lt;String&gt;)</a>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.Lang.html">Perlang.Lang</a></h6>
   <h6><strong>Assembly</strong>: Perlang.Stdlib.dll</h6>
   <h5 id="Perlang_Lang_Utf8String_syntax">Syntax</h5>
@@ -101,7 +113,7 @@ encoding of non-ASCII characters makes looping over characters be a much more co
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_Utf8String_Length.md&amp;value=---%0Auid%3A%20Perlang.Lang.Utf8String.Length%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/893c5be18ae3823bd0a84415c4f1783d3365591f/src/Perlang.Stdlib/Lang/Utf8String.cs/#L22">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/d64f556b034b454e0f959dab1d88b0d5b6ad7dcc/src/Perlang.Stdlib/Lang/Utf8String.cs/#L22">View Source</a>
   </span>
   <a id="Perlang_Lang_Utf8String_Length_" data-uid="Perlang.Lang.Utf8String.Length*"></a>
   <h4 id="Perlang_Lang_Utf8String_Length" data-uid="Perlang.Lang.Utf8String.Length">Length</h4>
@@ -135,7 +147,7 @@ encoding of non-ASCII characters makes looping over characters be a much more co
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_Utf8String_from_System_String_.md&amp;value=---%0Auid%3A%20Perlang.Lang.Utf8String.from(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/893c5be18ae3823bd0a84415c4f1783d3365591f/src/Perlang.Stdlib/Lang/Utf8String.cs/#L30">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/d64f556b034b454e0f959dab1d88b0d5b6ad7dcc/src/Perlang.Stdlib/Lang/Utf8String.cs/#L32">View Source</a>
   </span>
   <a id="Perlang_Lang_Utf8String_from_" data-uid="Perlang.Lang.Utf8String.from*"></a>
   <h4 id="Perlang_Lang_Utf8String_from_System_String_" data-uid="Perlang.Lang.Utf8String.from(System.String)">from(String)</h4>
@@ -183,10 +195,42 @@ new <see cref="!:System.Byte"></see> buffer will be allocated to contain the str
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_Utf8String_to_upper.md&amp;value=---%0Auid%3A%20Perlang.Lang.Utf8String.to_upper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/d64f556b034b454e0f959dab1d88b0d5b6ad7dcc/src/Perlang.Stdlib/Lang/Utf8String.cs/#L56">View Source</a>
+  </span>
+  <a id="Perlang_Lang_Utf8String_to_upper_" data-uid="Perlang.Lang.Utf8String.to_upper*"></a>
+  <h4 id="Perlang_Lang_Utf8String_to_upper" data-uid="Perlang.Lang.Utf8String.to_upper">to_upper()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override String to_upper()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Lang.String.html">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Perlang.Lang.String.html#Perlang_Lang_String_to_upper">String.to_upper()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_Utf8String_ToString.md&amp;value=---%0Auid%3A%20Perlang.Lang.Utf8String.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/893c5be18ae3823bd0a84415c4f1783d3365591f/src/Perlang.Stdlib/Lang/Utf8String.cs/#L59">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/d64f556b034b454e0f959dab1d88b0d5b6ad7dcc/src/Perlang.Stdlib/Lang/Utf8String.cs/#L61">View Source</a>
   </span>
   <a id="Perlang_Lang_Utf8String_ToString_" data-uid="Perlang.Lang.Utf8String.ToString*"></a>
   <h4 id="Perlang_Lang_Utf8String_ToString" data-uid="Perlang.Lang.Utf8String.ToString">ToString()</h4>
@@ -213,38 +257,6 @@ new <see cref="!:System.Byte"></see> buffer will be allocated to contain the str
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="Perlang.Lang.String.html#Perlang_Lang_String_ToString">String.ToString()</a></div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_Utf8String_ToUpper.md&amp;value=---%0Auid%3A%20Perlang.Lang.Utf8String.ToUpper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/893c5be18ae3823bd0a84415c4f1783d3365591f/src/Perlang.Stdlib/Lang/Utf8String.cs/#L54">View Source</a>
-  </span>
-  <a id="Perlang_Lang_Utf8String_ToUpper_" data-uid="Perlang.Lang.Utf8String.ToUpper*"></a>
-  <h4 id="Perlang_Lang_Utf8String_ToUpper" data-uid="Perlang.Lang.Utf8String.ToUpper">ToUpper()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override String ToUpper()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Perlang.Lang.String.html">String</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Perlang.Lang.String.html#Perlang_Lang_String_ToUpper">String.ToUpper()</a></div>
 </article>
           </div>
           
@@ -256,7 +268,7 @@ new <see cref="!:System.Byte"></see> buffer will be allocated to contain the str
                     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Lang_Utf8String.md&amp;value=---%0Auid%3A%20Perlang.Lang.Utf8String%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/893c5be18ae3823bd0a84415c4f1783d3365591f/src/Perlang.Stdlib/Lang/Utf8String.cs/#L17" class="contribution-link">View Source</a>
+                    <a href="https://github.com/perlang-org/perlang/blob/d64f556b034b454e0f959dab1d88b0d5b6ad7dcc/src/Perlang.Stdlib/Lang/Utf8String.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

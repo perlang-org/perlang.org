@@ -88,7 +88,7 @@
 <li><p>They consist of valid ASCII characters (0-127) only.</p>
 </li>
 <li><p>They are <em>immutable</em>. Once constructed, an <a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a> cannot be modified. Methods which seem to
-perform &quot;modifications&quot; of the string like <a class="xref" href="Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_ToUpper">ToUpper()</a> etc. will always allocate a new instance and
+perform &quot;modifications&quot; of the string like <a class="xref" href="Perlang.Lang.AsciiString.html#Perlang_Lang_AsciiString_to_upper">to_upper()</a> etc. will always allocate a new instance and
 operate on that.</p>
 </li>
 <li><p>They are <em>backed by native memory</em>. This means that they can be used with zero/very low cost together with
@@ -102,6 +102,7 @@ standard POSIX/libc functions like <code>puts</code>, <code>memcmp</code>, etc.<
 <ul>
 <li><a class="xref" href="Perlang.Lang.AsciiString.html">AsciiString</a> - a string known to consist of valid ASCII characters only. The uppermost bit in each
                        byte is zero for all characters.</li>
+<li><a class="xref" href="Perlang.Lang.Utf8String.html">Utf8String</a> - a string which can contain all Unicode characters, encoded with the UTF-8 encoding.</li>
 </ul>
 </section>
       <h4><a class="xref" href="Perlang.Lang.Utf8String.html">Utf8String</a></h4>
