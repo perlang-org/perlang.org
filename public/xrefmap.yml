@@ -3480,6 +3480,25 @@ references:
   commentId: T:Perlang.Parser.CompilerWarningHandler
   fullName: Perlang.Parser.CompilerWarningHandler
   nameWithType: CompilerWarningHandler
+- uid: Perlang.Parser.IFloatingPointLiteral
+  name: IFloatingPointLiteral
+  href: api/Perlang.Parser.IFloatingPointLiteral.html
+  commentId: T:Perlang.Parser.IFloatingPointLiteral
+  fullName: Perlang.Parser.IFloatingPointLiteral
+  nameWithType: IFloatingPointLiteral
+- uid: Perlang.Parser.IFloatingPointLiteral.NumberCharacters
+  name: NumberCharacters
+  href: api/Perlang.Parser.IFloatingPointLiteral.html#Perlang_Parser_IFloatingPointLiteral_NumberCharacters
+  commentId: P:Perlang.Parser.IFloatingPointLiteral.NumberCharacters
+  fullName: Perlang.Parser.IFloatingPointLiteral.NumberCharacters
+  nameWithType: IFloatingPointLiteral.NumberCharacters
+- uid: Perlang.Parser.IFloatingPointLiteral.NumberCharacters*
+  name: NumberCharacters
+  href: api/Perlang.Parser.IFloatingPointLiteral.html#Perlang_Parser_IFloatingPointLiteral_NumberCharacters_
+  commentId: Overload:Perlang.Parser.IFloatingPointLiteral.NumberCharacters
+  isSpec: "True"
+  fullName: Perlang.Parser.IFloatingPointLiteral.NumberCharacters
+  nameWithType: IFloatingPointLiteral.NumberCharacters
 - uid: Perlang.Parser.INumericLiteral
   name: INumericLiteral
   href: api/Perlang.Parser.INumericLiteral.html
