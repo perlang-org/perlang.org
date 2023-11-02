@@ -1,0 +1,1353 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PerlangCompiler
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PerlangCompiler
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/asciinema-player.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/override.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <div class="toc-toggle">
+            <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          </div>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler">
+  
+  
+  <h1 id="Perlang_Interpreter_Compiler_PerlangCompiler" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler" class="text-break">Class PerlangCompiler
+  </h1>
+  <div class="markdown level0 summary"><p>Compiles Perlang source to executable form (typically ELF binaries on Linux, Mach-O on macOS and PE32/PE32+ on
+Windows).</p>
+<p>The compilation takes place in two steps:</p>
+<ul>
+<li>First, a machine-generated C++ file is generated.</li>
+<li>Then, the C++ file is piped to <code>clang</code> (version 14). <code>clang</code> generates an executable file.</li>
+</ul>
+<p>Note that the compilation is highly experimental at the moment and has only been tested on Linux.</p>
+<p>The generated C++ files follows the following design principles, in order of importance:</p>
+<ul>
+<li>They are valid C++</li>
+<li>They semantically correspond to the Perlang program they have been compiled from</li>
+<li>They are properly intended and formatted, as close to the &quot;PL Style&quot; for Perlang as possible.</li>
+</ul>
+<p>Particularly the formatting is a &quot;best-effort&quot; at this stage. Machine-generated code in general is unlikely to be as
+well-formatted as human-formatted code, unless passed through a semantically aware post-processor for formatting.
+This is not the case for this simple implementation; it simply knows the level of indentation at each stage in the
+processing and does its best to try to produce something which is &quot;not garbage&quot;, but not necessarily perfectly
+aesthetically pleasing.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PerlangCompiler</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Perlang.Expr.IVisitor-1.html">Expr.IVisitor</a>&lt;<span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</div>
+    <div><a class="xref" href="Perlang.Stmt.IVisitor-1.html">Stmt.IVisitor</a>&lt;<a class="xref" href="Perlang.VoidObject.html">VoidObject</a>&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.Interpreter.Compiler.html">Perlang.Interpreter.Compiler</a></h6>
+  <h6><strong>Assembly</strong>: Perlang.Interpreter.dll</h6>
+  <h5 id="Perlang_Interpreter_Compiler_PerlangCompiler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PerlangCompiler : object, Expr.IVisitor&lt;object?&gt;, Stmt.IVisitor&lt;VoidObject&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler__ctor_Action_Perlang_RuntimeError__Action_Perlang_Lang_String__Perlang_Interpreter_Internals_IBindingHandler_System_Nullable_IEnumerable_System_String___.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.%23ctor(Action%7BPerlang.RuntimeError%7D%2CAction%7BPerlang.Lang.String%7D%2CPerlang.Interpreter.Internals.IBindingHandler%2CSystem.Nullable%7BIEnumerable%7BSystem.String%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L108">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler__ctor_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.#ctor*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler__ctor_Action_Perlang_RuntimeError__Action_Perlang_Lang_String__Perlang_Interpreter_Internals_IBindingHandler_System_Nullable_IEnumerable_System_String___" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.#ctor(Action{Perlang.RuntimeError},Action{Perlang.Lang.String},Perlang.Interpreter.Internals.IBindingHandler,System.Nullable{IEnumerable{System.String}})">PerlangCompiler(Action&lt;RuntimeError&gt;, Action&lt;String&gt;, IBindingHandler, Nullable&lt;IEnumerable&lt;String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Perlang.Interpreter.Compiler.PerlangCompiler.html">PerlangCompiler</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PerlangCompiler(Action&lt;RuntimeError&gt; runtimeErrorHandler, Action&lt;String&gt; standardOutputHandler, IBindingHandler bindingHandler = null, IEnumerable&lt;string&gt;? arguments = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.RuntimeError.html">RuntimeError</a>&gt;</td>
+        <td><span class="parametername">runtimeErrorHandler</span></td>
+        <td><p>A callback that will be called on runtime errors. Note that after calling
+    this handler, the interpreter will abort the script.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Perlang.Lang.String.html">String</a>&gt;</td>
+        <td><span class="parametername">standardOutputHandler</span></td>
+        <td><p>An callback that will receive output printed to standard output.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.Interpreter.Internals.IBindingHandler.html">IBindingHandler</a></td>
+        <td><span class="parametername">bindingHandler</span></td>
+        <td><p>A binding handler, or <code>null</code> to let the interpreter create a new instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>An optional list of runtime arguments.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_ParametersString.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.ParametersString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L1302">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_ParametersString_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.ParametersString*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_ParametersString" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.ParametersString">ParametersString</h4>
+  <div class="markdown level1 summary"><p>Gets the method parameters as a comma-separated string, in C++ format. Example: <code>int foo, int bar</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ParametersString { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_CompileAndRun_System_String_System_String_Perlang_Parser_ScanErrorHandler_Perlang_Parser_ParseErrorHandler_Perlang_Interpreter_NameResolutionErrorHandler_Perlang_Interpreter_ValidationErrorHandler_Perlang_Interpreter_ValidationErrorHandler_Perlang_Parser_CompilerWarningHandler_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.CompileAndRun(System.String%2CSystem.String%2CPerlang.Parser.ScanErrorHandler%2CPerlang.Parser.ParseErrorHandler%2CPerlang.Interpreter.NameResolutionErrorHandler%2CPerlang.Interpreter.ValidationErrorHandler%2CPerlang.Interpreter.ValidationErrorHandler%2CPerlang.Parser.CompilerWarningHandler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L207">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_CompileAndRun_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.CompileAndRun*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_CompileAndRun_System_String_System_String_Perlang_Parser_ScanErrorHandler_Perlang_Parser_ParseErrorHandler_Perlang_Interpreter_NameResolutionErrorHandler_Perlang_Interpreter_ValidationErrorHandler_Perlang_Interpreter_ValidationErrorHandler_Perlang_Parser_CompilerWarningHandler_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.CompileAndRun(System.String,System.String,Perlang.Parser.ScanErrorHandler,Perlang.Parser.ParseErrorHandler,Perlang.Interpreter.NameResolutionErrorHandler,Perlang.Interpreter.ValidationErrorHandler,Perlang.Interpreter.ValidationErrorHandler,Perlang.Parser.CompilerWarningHandler)">CompileAndRun(String, String, ScanErrorHandler, ParseErrorHandler, NameResolutionErrorHandler, ValidationErrorHandler, ValidationErrorHandler, CompilerWarningHandler)</h4>
+  <div class="markdown level1 summary"><p>Compiles the given Perlang program to an executable, and runs the executable afterwards.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? CompileAndRun(string source, string path, ScanErrorHandler scanErrorHandler, ParseErrorHandler parseErrorHandler, NameResolutionErrorHandler nameResolutionErrorHandler, ValidationErrorHandler typeValidationErrorHandler, ValidationErrorHandler immutabilityValidationErrorHandler, CompilerWarningHandler compilerWarningHandler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The Perlang program to compile.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the source file (used for generating error messages).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.Parser.ScanErrorHandler.html">ScanErrorHandler</a></td>
+        <td><span class="parametername">scanErrorHandler</span></td>
+        <td><p>A handler for scanner errors.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.Parser.ParseErrorHandler.html">ParseErrorHandler</a></td>
+        <td><span class="parametername">parseErrorHandler</span></td>
+        <td><p>A handler for parse errors.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.Interpreter.NameResolutionErrorHandler.html">NameResolutionErrorHandler</a></td>
+        <td><span class="parametername">nameResolutionErrorHandler</span></td>
+        <td><p>A handler for resolve errors.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.Interpreter.ValidationErrorHandler.html">ValidationErrorHandler</a></td>
+        <td><span class="parametername">typeValidationErrorHandler</span></td>
+        <td><p>A handler for type validation errors.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.Interpreter.ValidationErrorHandler.html">ValidationErrorHandler</a></td>
+        <td><span class="parametername">immutabilityValidationErrorHandler</span></td>
+        <td><p>A handler for immutability validation errors.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Perlang.Parser.CompilerWarningHandler.html">CompilerWarningHandler</a></td>
+        <td><span class="parametername">compilerWarningHandler</span></td>
+        <td><p>A handler for compiler warnings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The path to the compiled executable. Note that this will be non-null even on unsuccessful
+compilation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitAssignExpr_Perlang_Expr_Assign_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitAssignExpr(Perlang.Expr.Assign)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L618">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitAssignExpr_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitAssignExpr*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitAssignExpr_Perlang_Expr_Assign_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitAssignExpr(Perlang.Expr.Assign)">VisitAssignExpr(Expr.Assign)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? VisitAssignExpr(Expr.Assign expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Assign.html">Expr.Assign</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitBinaryExpr_Perlang_Expr_Binary_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitBinaryExpr(Perlang.Expr.Binary)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L624">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitBinaryExpr_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitBinaryExpr*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitBinaryExpr_Perlang_Expr_Binary_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitBinaryExpr(Perlang.Expr.Binary)">VisitBinaryExpr(Expr.Binary)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? VisitBinaryExpr(Expr.Binary expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Binary.html">Expr.Binary</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitBlockStmt_Perlang_Stmt_Block_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitBlockStmt(Perlang.Stmt.Block)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L1155">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitBlockStmt_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitBlockStmt*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitBlockStmt_Perlang_Stmt_Block_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitBlockStmt(Perlang.Stmt.Block)">VisitBlockStmt(Stmt.Block)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitBlockStmt(Stmt.Block block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.Block.html">Stmt.Block</a></td>
+        <td><span class="parametername">block</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitCallExpr_Perlang_Expr_Call_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitCallExpr(Perlang.Expr.Call)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L918">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitCallExpr_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitCallExpr*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitCallExpr_Perlang_Expr_Call_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitCallExpr(Perlang.Expr.Call)">VisitCallExpr(Expr.Call)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? VisitCallExpr(Expr.Call expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Call.html">Expr.Call</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitClassStmt_Perlang_Stmt_Class_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitClassStmt(Perlang.Stmt.Class)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L1173">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitClassStmt_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitClassStmt*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitClassStmt_Perlang_Stmt_Class_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitClassStmt(Perlang.Stmt.Class)">VisitClassStmt(Stmt.Class)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitClassStmt(Stmt.Class stmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.Class.html">Stmt.Class</a></td>
+        <td><span class="parametername">stmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitEmptyExpr_Perlang_Expr_Empty_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitEmptyExpr(Perlang.Expr.Empty)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L613">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitEmptyExpr_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitEmptyExpr*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitEmptyExpr_Perlang_Expr_Empty_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitEmptyExpr(Perlang.Expr.Empty)">VisitEmptyExpr(Expr.Empty)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? VisitEmptyExpr(Expr.Empty expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Empty.html">Expr.Empty</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitExpressionStmt_Perlang_Stmt_ExpressionStmt_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitExpressionStmt(Perlang.Stmt.ExpressionStmt)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L1178">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitExpressionStmt_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitExpressionStmt*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitExpressionStmt_Perlang_Stmt_ExpressionStmt_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitExpressionStmt(Perlang.Stmt.ExpressionStmt)">VisitExpressionStmt(Stmt.ExpressionStmt)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitExpressionStmt(Stmt.ExpressionStmt stmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.ExpressionStmt.html">Stmt.ExpressionStmt</a></td>
+        <td><span class="parametername">stmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitFunctionStmt_Perlang_Stmt_Function_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitFunctionStmt(Perlang.Stmt.Function)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L1189">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitFunctionStmt_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitFunctionStmt*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitFunctionStmt_Perlang_Stmt_Function_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitFunctionStmt(Perlang.Stmt.Function)">VisitFunctionStmt(Stmt.Function)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitFunctionStmt(Stmt.Function functionStmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.Function.html">Stmt.Function</a></td>
+        <td><span class="parametername">functionStmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitGetExpr_Perlang_Expr_Get_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitGetExpr(Perlang.Expr.Get)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L1114">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitGetExpr_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitGetExpr*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitGetExpr_Perlang_Expr_Get_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitGetExpr(Perlang.Expr.Get)">VisitGetExpr(Expr.Get)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? VisitGetExpr(Expr.Get expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Get.html">Expr.Get</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitGroupingExpr_Perlang_Expr_Grouping_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitGroupingExpr(Perlang.Expr.Grouping)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L961">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitGroupingExpr_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitGroupingExpr*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitGroupingExpr_Perlang_Expr_Grouping_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitGroupingExpr(Perlang.Expr.Grouping)">VisitGroupingExpr(Expr.Grouping)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? VisitGroupingExpr(Expr.Grouping expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Grouping.html">Expr.Grouping</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitIdentifierExpr_Perlang_Expr_Identifier_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitIdentifierExpr(Perlang.Expr.Identifier)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L1108">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitIdentifierExpr_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitIdentifierExpr*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitIdentifierExpr_Perlang_Expr_Identifier_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitIdentifierExpr(Perlang.Expr.Identifier)">VisitIdentifierExpr(Expr.Identifier)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? VisitIdentifierExpr(Expr.Identifier expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Identifier.html">Expr.Identifier</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitIfStmt_Perlang_Stmt_If_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitIfStmt(Perlang.Stmt.If)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L1213">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitIfStmt_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitIfStmt*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitIfStmt_Perlang_Stmt_If_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitIfStmt(Perlang.Stmt.If)">VisitIfStmt(Stmt.If)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitIfStmt(Stmt.If stmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.If.html">Stmt.If</a></td>
+        <td><span class="parametername">stmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitIndexExpr_Perlang_Expr_Index_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitIndexExpr(Perlang.Expr.Index)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L944">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitIndexExpr_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitIndexExpr*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitIndexExpr_Perlang_Expr_Index_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitIndexExpr(Perlang.Expr.Index)">VisitIndexExpr(Expr.Index)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? VisitIndexExpr(Expr.Index expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Index.html">Expr.Index</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitLiteralExpr_Perlang_Expr_Literal_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitLiteralExpr(Perlang.Expr.Literal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L970">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitLiteralExpr_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitLiteralExpr*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitLiteralExpr_Perlang_Expr_Literal_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitLiteralExpr(Perlang.Expr.Literal)">VisitLiteralExpr(Expr.Literal)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object VisitLiteralExpr(Expr.Literal expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Literal.html">Expr.Literal</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitLogicalExpr_Perlang_Expr_Logical_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitLogicalExpr(Perlang.Expr.Logical)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L1040">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitLogicalExpr_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitLogicalExpr*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitLogicalExpr_Perlang_Expr_Logical_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitLogicalExpr(Perlang.Expr.Logical)">VisitLogicalExpr(Expr.Logical)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? VisitLogicalExpr(Expr.Logical expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.Logical.html">Expr.Logical</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitPrintStmt_Perlang_Stmt_Print_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitPrintStmt(Perlang.Stmt.Print)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L1245">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitPrintStmt_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitPrintStmt*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitPrintStmt_Perlang_Stmt_Print_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitPrintStmt(Perlang.Stmt.Print)">VisitPrintStmt(Stmt.Print)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitPrintStmt(Stmt.Print stmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.Print.html">Stmt.Print</a></td>
+        <td><span class="parametername">stmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitReturnStmt_Perlang_Stmt_Return_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitReturnStmt(Perlang.Stmt.Return)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L1252">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitReturnStmt_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitReturnStmt*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitReturnStmt_Perlang_Stmt_Return_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitReturnStmt(Perlang.Stmt.Return)">VisitReturnStmt(Stmt.Return)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitReturnStmt(Stmt.Return stmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.Return.html">Stmt.Return</a></td>
+        <td><span class="parametername">stmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitUnaryPostfixExpr_Perlang_Expr_UnaryPostfix_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitUnaryPostfixExpr(Perlang.Expr.UnaryPostfix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L1086">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitUnaryPostfixExpr_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitUnaryPostfixExpr*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitUnaryPostfixExpr_Perlang_Expr_UnaryPostfix_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitUnaryPostfixExpr(Perlang.Expr.UnaryPostfix)">VisitUnaryPostfixExpr(Expr.UnaryPostfix)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? VisitUnaryPostfixExpr(Expr.UnaryPostfix expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.UnaryPostfix.html">Expr.UnaryPostfix</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitUnaryPrefixExpr_Perlang_Expr_UnaryPrefix_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitUnaryPrefixExpr(Perlang.Expr.UnaryPrefix)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L1064">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitUnaryPrefixExpr_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitUnaryPrefixExpr*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitUnaryPrefixExpr_Perlang_Expr_UnaryPrefix_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitUnaryPrefixExpr(Perlang.Expr.UnaryPrefix)">VisitUnaryPrefixExpr(Expr.UnaryPrefix)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? VisitUnaryPrefixExpr(Expr.UnaryPrefix expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Expr.UnaryPrefix.html">Expr.UnaryPrefix</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitVarStmt_Perlang_Stmt_Var_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitVarStmt(Perlang.Stmt.Var)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L1269">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitVarStmt_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitVarStmt*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitVarStmt_Perlang_Stmt_Var_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitVarStmt(Perlang.Stmt.Var)">VisitVarStmt(Stmt.Var)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitVarStmt(Stmt.Var stmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.Var.html">Stmt.Var</a></td>
+        <td><span class="parametername">stmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler_VisitWhileStmt_Perlang_Stmt_While_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler.VisitWhileStmt(Perlang.Stmt.While)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L1285">View Source</a>
+  </span>
+  <a id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitWhileStmt_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitWhileStmt*"></a>
+  <h4 id="Perlang_Interpreter_Compiler_PerlangCompiler_VisitWhileStmt_Perlang_Stmt_While_" data-uid="Perlang.Interpreter.Compiler.PerlangCompiler.VisitWhileStmt(Perlang.Stmt.While)">VisitWhileStmt(Stmt.While)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoidObject VisitWhileStmt(Stmt.While whileStmt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.Stmt.While.html">Stmt.While</a></td>
+        <td><span class="parametername">whileStmt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Perlang.VoidObject.html">VoidObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Perlang.Expr.IVisitor-1.html">Expr.IVisitor&lt;TR&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Perlang.Stmt.IVisitor-1.html">Stmt.IVisitor&lt;TR&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Compiler_PerlangCompiler.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Compiler.PerlangCompiler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/perlang-org/perlang/blob/b3891442a96110cf4ae65282cdf31d68a2768cf7/src/Perlang.Interpreter/Compiler/PerlangCompiler.cs/#L52" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="toggle-mode">
+                <div class="icon">
+                  <i aria-hidden="true">☀</i>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="switch-style">
+                  <span class="slider round"></span>
+                </label>
+                <div class="icon">
+                  <i aria-hidden="true">☾</i>
+                </div>
+                <script type="text/javascript" src="../styles/toggle-theme.js"></script>
+              </div>
+          
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright 2020 The Perlang Authors
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../js/highlight.min.js"></script>
+    <script type="text/javascript" src="../js/highlightjs-perlang.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../js/asciinema-player.js"></script>
+  </body>
+</html>
