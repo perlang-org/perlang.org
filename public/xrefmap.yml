@@ -3233,6 +3233,19 @@ references:
   isSpec: "True"
   fullName: Perlang.ITypeReference.CppTypeCast
   nameWithType: ITypeReference.CppTypeCast
+- uid: Perlang.ITypeReference.CppWrapInSharedPtr
+  name: CppWrapInSharedPtr
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_CppWrapInSharedPtr
+  commentId: P:Perlang.ITypeReference.CppWrapInSharedPtr
+  fullName: Perlang.ITypeReference.CppWrapInSharedPtr
+  nameWithType: ITypeReference.CppWrapInSharedPtr
+- uid: Perlang.ITypeReference.CppWrapInSharedPtr*
+  name: CppWrapInSharedPtr
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_CppWrapInSharedPtr_
+  commentId: Overload:Perlang.ITypeReference.CppWrapInSharedPtr
+  isSpec: "True"
+  fullName: Perlang.ITypeReference.CppWrapInSharedPtr
+  nameWithType: ITypeReference.CppWrapInSharedPtr
 - uid: Perlang.ITypeReference.ExplicitTypeSpecified
   name: ExplicitTypeSpecified
   href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_ExplicitTypeSpecified
@@ -3298,6 +3311,19 @@ references:
   isSpec: "True"
   fullName: Perlang.ITypeReference.IsValidNumberType
   nameWithType: ITypeReference.IsValidNumberType
+- uid: Perlang.ITypeReference.PossiblyWrappedCppType
+  name: PossiblyWrappedCppType
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_PossiblyWrappedCppType
+  commentId: P:Perlang.ITypeReference.PossiblyWrappedCppType
+  fullName: Perlang.ITypeReference.PossiblyWrappedCppType
+  nameWithType: ITypeReference.PossiblyWrappedCppType
+- uid: Perlang.ITypeReference.PossiblyWrappedCppType*
+  name: PossiblyWrappedCppType
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_PossiblyWrappedCppType_
+  commentId: Overload:Perlang.ITypeReference.PossiblyWrappedCppType
+  isSpec: "True"
+  fullName: Perlang.ITypeReference.PossiblyWrappedCppType
+  nameWithType: ITypeReference.PossiblyWrappedCppType
 - uid: Perlang.ITypeReference.TypeSpecifier
   name: TypeSpecifier
   href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_TypeSpecifier
@@ -5985,6 +6011,32 @@ references:
   isSpec: "True"
   fullName: Perlang.TypeReference.CppType
   nameWithType: TypeReference.CppType
+- uid: Perlang.TypeReference.CppWrapInSharedPtr
+  name: CppWrapInSharedPtr
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_CppWrapInSharedPtr
+  commentId: P:Perlang.TypeReference.CppWrapInSharedPtr
+  fullName: Perlang.TypeReference.CppWrapInSharedPtr
+  nameWithType: TypeReference.CppWrapInSharedPtr
+- uid: Perlang.TypeReference.CppWrapInSharedPtr*
+  name: CppWrapInSharedPtr
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_CppWrapInSharedPtr_
+  commentId: Overload:Perlang.TypeReference.CppWrapInSharedPtr
+  isSpec: "True"
+  fullName: Perlang.TypeReference.CppWrapInSharedPtr
+  nameWithType: TypeReference.CppWrapInSharedPtr
+- uid: Perlang.TypeReference.PossiblyWrappedCppType
+  name: PossiblyWrappedCppType
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_PossiblyWrappedCppType
+  commentId: P:Perlang.TypeReference.PossiblyWrappedCppType
+  fullName: Perlang.TypeReference.PossiblyWrappedCppType
+  nameWithType: TypeReference.PossiblyWrappedCppType
+- uid: Perlang.TypeReference.PossiblyWrappedCppType*
+  name: PossiblyWrappedCppType
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_PossiblyWrappedCppType_
+  commentId: Overload:Perlang.TypeReference.PossiblyWrappedCppType
+  isSpec: "True"
+  fullName: Perlang.TypeReference.PossiblyWrappedCppType
+  nameWithType: TypeReference.PossiblyWrappedCppType
 - uid: Perlang.TypeReference.ToString
   name: ToString()
   href: api/Perlang.TypeReference.html#Perlang_TypeReference_ToString
