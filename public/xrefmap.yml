@@ -206,6 +206,12 @@ references:
   commentId: F:Perlang.Compiler.CompilerFlags.None
   fullName: Perlang.Compiler.CompilerFlags.None
   nameWithType: CompilerFlags.None
+- uid: Perlang.Compiler.CompilerFlags.RemoveEmptyMainMethod
+  name: RemoveEmptyMainMethod
+  href: api/Perlang.Compiler.CompilerFlags.html#Perlang_Compiler_CompilerFlags_RemoveEmptyMainMethod
+  commentId: F:Perlang.Compiler.CompilerFlags.RemoveEmptyMainMethod
+  fullName: Perlang.Compiler.CompilerFlags.RemoveEmptyMainMethod
+  nameWithType: CompilerFlags.RemoveEmptyMainMethod
 - uid: Perlang.Compiler.NotImplementedInCompiledModeException
   name: NotImplementedInCompiledModeException
   href: api/Perlang.Compiler.NotImplementedInCompiledModeException.html
@@ -4006,6 +4012,32 @@ references:
   commentId: T:Perlang.Parser.ScanAndParseResult
   fullName: Perlang.Parser.ScanAndParseResult
   nameWithType: ScanAndParseResult
+- uid: Perlang.Parser.ScanAndParseResult.CppMethods
+  name: CppMethods
+  href: api/Perlang.Parser.ScanAndParseResult.html#Perlang_Parser_ScanAndParseResult_CppMethods
+  commentId: P:Perlang.Parser.ScanAndParseResult.CppMethods
+  fullName: Perlang.Parser.ScanAndParseResult.CppMethods
+  nameWithType: ScanAndParseResult.CppMethods
+- uid: Perlang.Parser.ScanAndParseResult.CppMethods*
+  name: CppMethods
+  href: api/Perlang.Parser.ScanAndParseResult.html#Perlang_Parser_ScanAndParseResult_CppMethods_
+  commentId: Overload:Perlang.Parser.ScanAndParseResult.CppMethods
+  isSpec: "True"
+  fullName: Perlang.Parser.ScanAndParseResult.CppMethods
+  nameWithType: ScanAndParseResult.CppMethods
+- uid: Perlang.Parser.ScanAndParseResult.CppPrototypes
+  name: CppPrototypes
+  href: api/Perlang.Parser.ScanAndParseResult.html#Perlang_Parser_ScanAndParseResult_CppPrototypes
+  commentId: P:Perlang.Parser.ScanAndParseResult.CppPrototypes
+  fullName: Perlang.Parser.ScanAndParseResult.CppPrototypes
+  nameWithType: ScanAndParseResult.CppPrototypes
+- uid: Perlang.Parser.ScanAndParseResult.CppPrototypes*
+  name: CppPrototypes
+  href: api/Perlang.Parser.ScanAndParseResult.html#Perlang_Parser_ScanAndParseResult_CppPrototypes_
+  commentId: Overload:Perlang.Parser.ScanAndParseResult.CppPrototypes
+  isSpec: "True"
+  fullName: Perlang.Parser.ScanAndParseResult.CppPrototypes
+  nameWithType: ScanAndParseResult.CppPrototypes
 - uid: Perlang.Parser.ScanAndParseResult.Expr
   name: Expr
   href: api/Perlang.Parser.ScanAndParseResult.html#Perlang_Parser_ScanAndParseResult_Expr
@@ -4058,15 +4090,15 @@ references:
   isSpec: "True"
   fullName: Perlang.Parser.ScanAndParseResult.OfExpr
   nameWithType: ScanAndParseResult.OfExpr
-- uid: Perlang.Parser.ScanAndParseResult.OfStmts(List{Perlang.Stmt})
-  name: OfStmts(List<Stmt>)
-  href: api/Perlang.Parser.ScanAndParseResult.html#Perlang_Parser_ScanAndParseResult_OfStmts_List_Perlang_Stmt__
-  commentId: M:Perlang.Parser.ScanAndParseResult.OfStmts(List{Perlang.Stmt})
-  name.vb: OfStmts(List(Of Stmt))
-  fullName: Perlang.Parser.ScanAndParseResult.OfStmts(List<Perlang.Stmt>)
-  fullName.vb: Perlang.Parser.ScanAndParseResult.OfStmts(List(Of Perlang.Stmt))
-  nameWithType: ScanAndParseResult.OfStmts(List<Stmt>)
-  nameWithType.vb: ScanAndParseResult.OfStmts(List(Of Stmt))
+- uid: Perlang.Parser.ScanAndParseResult.OfStmts(List{Perlang.Stmt},List{Perlang.Token},List{Perlang.Token})
+  name: OfStmts(List<Stmt>, List<Token>, List<Token>)
+  href: api/Perlang.Parser.ScanAndParseResult.html#Perlang_Parser_ScanAndParseResult_OfStmts_List_Perlang_Stmt__List_Perlang_Token__List_Perlang_Token__
+  commentId: M:Perlang.Parser.ScanAndParseResult.OfStmts(List{Perlang.Stmt},List{Perlang.Token},List{Perlang.Token})
+  name.vb: OfStmts(List(Of Stmt), List(Of Token), List(Of Token))
+  fullName: Perlang.Parser.ScanAndParseResult.OfStmts(List<Perlang.Stmt>, List<Perlang.Token>, List<Perlang.Token>)
+  fullName.vb: Perlang.Parser.ScanAndParseResult.OfStmts(List(Of Perlang.Stmt), List(Of Perlang.Token), List(Of Perlang.Token))
+  nameWithType: ScanAndParseResult.OfStmts(List<Stmt>, List<Token>, List<Token>)
+  nameWithType.vb: ScanAndParseResult.OfStmts(List(Of Stmt), List(Of Token), List(Of Token))
 - uid: Perlang.Parser.ScanAndParseResult.OfStmts*
   name: OfStmts
   href: api/Perlang.Parser.ScanAndParseResult.html#Perlang_Parser_ScanAndParseResult_OfStmts_
@@ -5733,6 +5765,18 @@ references:
   commentId: F:Perlang.TokenType.PLUS_PLUS
   fullName: Perlang.TokenType.PLUS_PLUS
   nameWithType: TokenType.PLUS_PLUS
+- uid: Perlang.TokenType.PREPROCESSOR_DIRECTIVE_CPP_METHODS
+  name: PREPROCESSOR_DIRECTIVE_CPP_METHODS
+  href: api/Perlang.TokenType.html#Perlang_TokenType_PREPROCESSOR_DIRECTIVE_CPP_METHODS
+  commentId: F:Perlang.TokenType.PREPROCESSOR_DIRECTIVE_CPP_METHODS
+  fullName: Perlang.TokenType.PREPROCESSOR_DIRECTIVE_CPP_METHODS
+  nameWithType: TokenType.PREPROCESSOR_DIRECTIVE_CPP_METHODS
+- uid: Perlang.TokenType.PREPROCESSOR_DIRECTIVE_CPP_PROTOTYPES
+  name: PREPROCESSOR_DIRECTIVE_CPP_PROTOTYPES
+  href: api/Perlang.TokenType.html#Perlang_TokenType_PREPROCESSOR_DIRECTIVE_CPP_PROTOTYPES
+  commentId: F:Perlang.TokenType.PREPROCESSOR_DIRECTIVE_CPP_PROTOTYPES
+  fullName: Perlang.TokenType.PREPROCESSOR_DIRECTIVE_CPP_PROTOTYPES
+  nameWithType: TokenType.PREPROCESSOR_DIRECTIVE_CPP_PROTOTYPES
 - uid: Perlang.TokenType.PRINT
   name: PRINT
   href: api/Perlang.TokenType.html#Perlang_TokenType_PRINT
