@@ -116,7 +116,9 @@ foo();
 </code></pre><p>Many functions take one or more parameters. Here&#39;s an example of how such a function can be defined and called:</p>
 <pre><code class="lang-perlang" name="defining-and-calling-a-function-with-parameters">// defining-and-calling-a-function-with-parameters.per
 fun greet(name: string, age: int): void {
-  print &quot;Hello &quot; + name + &quot;. Your age is &quot; + age;
+  // TODO: depends on functionality not yet supported in compiled mode.
+  // https://github.com/perlang-org/perlang/issues/406
+  //print &quot;Hello &quot; + name + &quot;. Your age is &quot; + age;
 }
 
 // Expected output: Hello John Doe. Your age is 42
@@ -157,8 +159,12 @@ greet(null, 42);
 <p>In its current version, Perlang does not currently support defining user-defined classes. Calling static methods defined on already existing (stdlib) classes, written in C#, is however possible as the following example demonstrates:</p>
 <pre><code class="lang-perlang" name="calling-base64-encode">// calling-base64-encode.per
 
+// TODO: The code below no longer works as of the changes being done in
+// https://github.com/perlang-org/perlang/issues/406; calling methods in
+// the standard library is currently broken.
+
 // Will output SGVsbG8sIFdvcmxk
-print Base64.encode(&quot;Hello, World&quot;);
+//print Base64.encode(&quot;Hello, World&quot;);
 </code></pre><h3 id="the-standard-library">The standard library</h3>
 <p>The standard library is in a very early stage of development. Read more about it in the <a href="../../api/index.html">API documentation</a> section.</p>
 <h3 id="the-future">The future</h3>
