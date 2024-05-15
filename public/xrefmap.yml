@@ -4069,12 +4069,6 @@ references:
   commentId: M:Perlang.RuntimeError.#ctor(Perlang.Token,System.String)
   fullName: Perlang.RuntimeError.RuntimeError(Perlang.Token, System.String)
   nameWithType: RuntimeError.RuntimeError(Token, String)
-- uid: Perlang.RuntimeError.#ctor(Perlang.Token,System.String,Exception)
-  name: RuntimeError(Token, String, Exception)
-  href: api/Perlang.RuntimeError.html#Perlang_RuntimeError__ctor_Perlang_Token_System_String_Exception_
-  commentId: M:Perlang.RuntimeError.#ctor(Perlang.Token,System.String,Exception)
-  fullName: Perlang.RuntimeError.RuntimeError(Perlang.Token, System.String, Exception)
-  nameWithType: RuntimeError.RuntimeError(Token, String, Exception)
 - uid: Perlang.RuntimeError.#ctor*
   name: RuntimeError
   href: api/Perlang.RuntimeError.html#Perlang_RuntimeError__ctor_
