@@ -200,6 +200,12 @@ references:
   commentId: F:Perlang.Compiler.CompilerFlags.CacheDisabled
   fullName: Perlang.Compiler.CompilerFlags.CacheDisabled
   nameWithType: CompilerFlags.CacheDisabled
+- uid: Perlang.Compiler.CompilerFlags.Idempotent
+  name: Idempotent
+  href: api/Perlang.Compiler.CompilerFlags.html#Perlang_Compiler_CompilerFlags_Idempotent
+  commentId: F:Perlang.Compiler.CompilerFlags.Idempotent
+  fullName: Perlang.Compiler.CompilerFlags.Idempotent
+  nameWithType: CompilerFlags.Idempotent
 - uid: Perlang.Compiler.CompilerFlags.None
   name: None
   href: api/Perlang.Compiler.CompilerFlags.html#Perlang_Compiler_CompilerFlags_None
