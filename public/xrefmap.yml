@@ -4990,19 +4990,6 @@ references:
   fullName.vb: Perlang.Stmt.Var.Accept(Of TR)(Perlang.Stmt.IVisitor(Of TR))
   nameWithType: Stmt.Var.Accept<TR>(Stmt.IVisitor<TR>)
   nameWithType.vb: Stmt.Var.Accept(Of TR)(Stmt.IVisitor(Of TR))
-- uid: Perlang.Stmt.Var.HasInitializer
-  name: HasInitializer
-  href: api/Perlang.Stmt.Var.html#Perlang_Stmt_Var_HasInitializer
-  commentId: P:Perlang.Stmt.Var.HasInitializer
-  fullName: Perlang.Stmt.Var.HasInitializer
-  nameWithType: Stmt.Var.HasInitializer
-- uid: Perlang.Stmt.Var.HasInitializer*
-  name: HasInitializer
-  href: api/Perlang.Stmt.Var.html#Perlang_Stmt_Var_HasInitializer_
-  commentId: Overload:Perlang.Stmt.Var.HasInitializer
-  isSpec: "True"
-  fullName: Perlang.Stmt.Var.HasInitializer
-  nameWithType: Stmt.Var.HasInitializer
 - uid: Perlang.Stmt.Var.Initializer
   name: Initializer
   href: api/Perlang.Stmt.Var.html#Perlang_Stmt_Var_Initializer
