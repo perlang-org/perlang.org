@@ -2845,11 +2845,11 @@ references:
   fullName: Perlang.ITypeReference.IsResolved
   nameWithType: ITypeReference.IsResolved
 - uid: Perlang.ITypeReference.IsStringType
-  name: IsStringType()
+  name: IsStringType
   href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_IsStringType
-  commentId: M:Perlang.ITypeReference.IsStringType
-  fullName: Perlang.ITypeReference.IsStringType()
-  nameWithType: ITypeReference.IsStringType()
+  commentId: P:Perlang.ITypeReference.IsStringType
+  fullName: Perlang.ITypeReference.IsStringType
+  nameWithType: ITypeReference.IsStringType
 - uid: Perlang.ITypeReference.IsStringType*
   name: IsStringType
   href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_IsStringType_
