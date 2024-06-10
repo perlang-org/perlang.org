@@ -2883,6 +2883,22 @@ references:
   isSpec: "True"
   fullName: Perlang.ITypeReference.PossiblyWrappedCppType
   nameWithType: ITypeReference.PossiblyWrappedCppType
+- uid: Perlang.ITypeReference.SetClrType(System.Nullable{Type})
+  name: SetClrType(Nullable<Type>)
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_SetClrType_System_Nullable_Type__
+  commentId: M:Perlang.ITypeReference.SetClrType(System.Nullable{Type})
+  name.vb: SetClrType(Nullable(Of Type))
+  fullName: Perlang.ITypeReference.SetClrType(System.Nullable<Type>)
+  fullName.vb: Perlang.ITypeReference.SetClrType(System.Nullable(Of Type))
+  nameWithType: ITypeReference.SetClrType(Nullable<Type>)
+  nameWithType.vb: ITypeReference.SetClrType(Nullable(Of Type))
+- uid: Perlang.ITypeReference.SetClrType*
+  name: SetClrType
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_SetClrType_
+  commentId: Overload:Perlang.ITypeReference.SetClrType
+  isSpec: "True"
+  fullName: Perlang.ITypeReference.SetClrType
+  nameWithType: ITypeReference.SetClrType
 - uid: Perlang.ITypeReference.TypeSpecifier
   name: TypeSpecifier
   href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_TypeSpecifier
@@ -5615,6 +5631,22 @@ references:
   isSpec: "True"
   fullName: Perlang.TypeReference.PossiblyWrappedCppType
   nameWithType: TypeReference.PossiblyWrappedCppType
+- uid: Perlang.TypeReference.SetClrType(System.Nullable{Type})
+  name: SetClrType(Nullable<Type>)
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_SetClrType_System_Nullable_Type__
+  commentId: M:Perlang.TypeReference.SetClrType(System.Nullable{Type})
+  name.vb: SetClrType(Nullable(Of Type))
+  fullName: Perlang.TypeReference.SetClrType(System.Nullable<Type>)
+  fullName.vb: Perlang.TypeReference.SetClrType(System.Nullable(Of Type))
+  nameWithType: TypeReference.SetClrType(Nullable<Type>)
+  nameWithType.vb: TypeReference.SetClrType(Nullable(Of Type))
+- uid: Perlang.TypeReference.SetClrType*
+  name: SetClrType
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_SetClrType_
+  commentId: Overload:Perlang.TypeReference.SetClrType
+  isSpec: "True"
+  fullName: Perlang.TypeReference.SetClrType
+  nameWithType: TypeReference.SetClrType
 - uid: Perlang.TypeReference.ToString
   name: ToString()
   href: api/Perlang.TypeReference.html#Perlang_TypeReference_ToString
