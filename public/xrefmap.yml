@@ -743,6 +743,70 @@ references:
   isSpec: "True"
   fullName: Perlang.Expr.Call.ToString
   nameWithType: Expr.Call.ToString
+- uid: Perlang.Expr.CollectionInitializer
+  name: Expr.CollectionInitializer
+  href: api/Perlang.Expr.CollectionInitializer.html
+  commentId: T:Perlang.Expr.CollectionInitializer
+  fullName: Perlang.Expr.CollectionInitializer
+  nameWithType: Expr.CollectionInitializer
+- uid: Perlang.Expr.CollectionInitializer.#ctor(List{Perlang.Expr},Perlang.Token)
+  name: CollectionInitializer(List<Expr>, Token)
+  href: api/Perlang.Expr.CollectionInitializer.html#Perlang_Expr_CollectionInitializer__ctor_List_Perlang_Expr__Perlang_Token_
+  commentId: M:Perlang.Expr.CollectionInitializer.#ctor(List{Perlang.Expr},Perlang.Token)
+  name.vb: CollectionInitializer(List(Of Expr), Token)
+  fullName: Perlang.Expr.CollectionInitializer.CollectionInitializer(List<Perlang.Expr>, Perlang.Token)
+  fullName.vb: Perlang.Expr.CollectionInitializer.CollectionInitializer(List(Of Perlang.Expr), Perlang.Token)
+  nameWithType: Expr.CollectionInitializer.CollectionInitializer(List<Expr>, Token)
+  nameWithType.vb: Expr.CollectionInitializer.CollectionInitializer(List(Of Expr), Token)
+- uid: Perlang.Expr.CollectionInitializer.#ctor*
+  name: CollectionInitializer
+  href: api/Perlang.Expr.CollectionInitializer.html#Perlang_Expr_CollectionInitializer__ctor_
+  commentId: Overload:Perlang.Expr.CollectionInitializer.#ctor
+  isSpec: "True"
+  fullName: Perlang.Expr.CollectionInitializer.CollectionInitializer
+  nameWithType: Expr.CollectionInitializer.CollectionInitializer
+- uid: Perlang.Expr.CollectionInitializer.Accept*
+  name: Accept
+  href: api/Perlang.Expr.CollectionInitializer.html#Perlang_Expr_CollectionInitializer_Accept_
+  commentId: Overload:Perlang.Expr.CollectionInitializer.Accept
+  isSpec: "True"
+  fullName: Perlang.Expr.CollectionInitializer.Accept
+  nameWithType: Expr.CollectionInitializer.Accept
+- uid: Perlang.Expr.CollectionInitializer.Accept``1(Perlang.Expr.IVisitor{``0})
+  name: Accept<TR>(Expr.IVisitor<TR>)
+  href: api/Perlang.Expr.CollectionInitializer.html#Perlang_Expr_CollectionInitializer_Accept__1_Perlang_Expr_IVisitor___0__
+  commentId: M:Perlang.Expr.CollectionInitializer.Accept``1(Perlang.Expr.IVisitor{``0})
+  name.vb: Accept(Of TR)(Expr.IVisitor(Of TR))
+  fullName: Perlang.Expr.CollectionInitializer.Accept<TR>(Perlang.Expr.IVisitor<TR>)
+  fullName.vb: Perlang.Expr.CollectionInitializer.Accept(Of TR)(Perlang.Expr.IVisitor(Of TR))
+  nameWithType: Expr.CollectionInitializer.Accept<TR>(Expr.IVisitor<TR>)
+  nameWithType.vb: Expr.CollectionInitializer.Accept(Of TR)(Expr.IVisitor(Of TR))
+- uid: Perlang.Expr.CollectionInitializer.Elements
+  name: Elements
+  href: api/Perlang.Expr.CollectionInitializer.html#Perlang_Expr_CollectionInitializer_Elements
+  commentId: P:Perlang.Expr.CollectionInitializer.Elements
+  fullName: Perlang.Expr.CollectionInitializer.Elements
+  nameWithType: Expr.CollectionInitializer.Elements
+- uid: Perlang.Expr.CollectionInitializer.Elements*
+  name: Elements
+  href: api/Perlang.Expr.CollectionInitializer.html#Perlang_Expr_CollectionInitializer_Elements_
+  commentId: Overload:Perlang.Expr.CollectionInitializer.Elements
+  isSpec: "True"
+  fullName: Perlang.Expr.CollectionInitializer.Elements
+  nameWithType: Expr.CollectionInitializer.Elements
+- uid: Perlang.Expr.CollectionInitializer.Token
+  name: Token
+  href: api/Perlang.Expr.CollectionInitializer.html#Perlang_Expr_CollectionInitializer_Token
+  commentId: P:Perlang.Expr.CollectionInitializer.Token
+  fullName: Perlang.Expr.CollectionInitializer.Token
+  nameWithType: Expr.CollectionInitializer.Token
+- uid: Perlang.Expr.CollectionInitializer.Token*
+  name: Token
+  href: api/Perlang.Expr.CollectionInitializer.html#Perlang_Expr_CollectionInitializer_Token_
+  commentId: Overload:Perlang.Expr.CollectionInitializer.Token
+  isSpec: "True"
+  fullName: Perlang.Expr.CollectionInitializer.Token
+  nameWithType: Expr.CollectionInitializer.Token
 - uid: Perlang.Expr.Empty
   name: Expr.Empty
   href: api/Perlang.Expr.Empty.html
@@ -919,12 +983,12 @@ references:
   commentId: T:Perlang.Expr.Identifier
   fullName: Perlang.Expr.Identifier
   nameWithType: Expr.Identifier
-- uid: Perlang.Expr.Identifier.#ctor(Perlang.Token)
-  name: Identifier(Token)
-  href: api/Perlang.Expr.Identifier.html#Perlang_Expr_Identifier__ctor_Perlang_Token_
-  commentId: M:Perlang.Expr.Identifier.#ctor(Perlang.Token)
-  fullName: Perlang.Expr.Identifier.Identifier(Perlang.Token)
-  nameWithType: Expr.Identifier.Identifier(Token)
+- uid: Perlang.Expr.Identifier.#ctor(Perlang.Token,System.Boolean)
+  name: Identifier(Token, Boolean)
+  href: api/Perlang.Expr.Identifier.html#Perlang_Expr_Identifier__ctor_Perlang_Token_System_Boolean_
+  commentId: M:Perlang.Expr.Identifier.#ctor(Perlang.Token,System.Boolean)
+  fullName: Perlang.Expr.Identifier.Identifier(Perlang.Token, System.Boolean)
+  nameWithType: Expr.Identifier.Identifier(Token, Boolean)
 - uid: Perlang.Expr.Identifier.#ctor*
   name: Identifier
   href: api/Perlang.Expr.Identifier.html#Perlang_Expr_Identifier__ctor_
@@ -948,6 +1012,19 @@ references:
   fullName.vb: Perlang.Expr.Identifier.Accept(Of TR)(Perlang.Expr.IVisitor(Of TR))
   nameWithType: Expr.Identifier.Accept<TR>(Expr.IVisitor<TR>)
   nameWithType.vb: Expr.Identifier.Accept(Of TR)(Expr.IVisitor(Of TR))
+- uid: Perlang.Expr.Identifier.IsCollection
+  name: IsCollection
+  href: api/Perlang.Expr.Identifier.html#Perlang_Expr_Identifier_IsCollection
+  commentId: P:Perlang.Expr.Identifier.IsCollection
+  fullName: Perlang.Expr.Identifier.IsCollection
+  nameWithType: Expr.Identifier.IsCollection
+- uid: Perlang.Expr.Identifier.IsCollection*
+  name: IsCollection
+  href: api/Perlang.Expr.Identifier.html#Perlang_Expr_Identifier_IsCollection_
+  commentId: Overload:Perlang.Expr.Identifier.IsCollection
+  isSpec: "True"
+  fullName: Perlang.Expr.Identifier.IsCollection
+  nameWithType: Expr.Identifier.IsCollection
 - uid: Perlang.Expr.Identifier.Name
   name: Name
   href: api/Perlang.Expr.Identifier.html#Perlang_Expr_Identifier_Name
@@ -1134,6 +1211,23 @@ references:
   fullName.vb: Perlang.Expr.IVisitor(Of TR).VisitCallExpr
   nameWithType: Expr.IVisitor<TR>.VisitCallExpr
   nameWithType.vb: Expr.IVisitor(Of TR).VisitCallExpr
+- uid: Perlang.Expr.IVisitor`1.VisitCollectionInitializerExpr(Perlang.Expr.CollectionInitializer)
+  name: VisitCollectionInitializerExpr(Expr.CollectionInitializer)
+  href: api/Perlang.Expr.IVisitor-1.html#Perlang_Expr_IVisitor_1_VisitCollectionInitializerExpr_Perlang_Expr_CollectionInitializer_
+  commentId: M:Perlang.Expr.IVisitor`1.VisitCollectionInitializerExpr(Perlang.Expr.CollectionInitializer)
+  fullName: Perlang.Expr.IVisitor<TR>.VisitCollectionInitializerExpr(Perlang.Expr.CollectionInitializer)
+  fullName.vb: Perlang.Expr.IVisitor(Of TR).VisitCollectionInitializerExpr(Perlang.Expr.CollectionInitializer)
+  nameWithType: Expr.IVisitor<TR>.VisitCollectionInitializerExpr(Expr.CollectionInitializer)
+  nameWithType.vb: Expr.IVisitor(Of TR).VisitCollectionInitializerExpr(Expr.CollectionInitializer)
+- uid: Perlang.Expr.IVisitor`1.VisitCollectionInitializerExpr*
+  name: VisitCollectionInitializerExpr
+  href: api/Perlang.Expr.IVisitor-1.html#Perlang_Expr_IVisitor_1_VisitCollectionInitializerExpr_
+  commentId: Overload:Perlang.Expr.IVisitor`1.VisitCollectionInitializerExpr
+  isSpec: "True"
+  fullName: Perlang.Expr.IVisitor<TR>.VisitCollectionInitializerExpr
+  fullName.vb: Perlang.Expr.IVisitor(Of TR).VisitCollectionInitializerExpr
+  nameWithType: Expr.IVisitor<TR>.VisitCollectionInitializerExpr
+  nameWithType.vb: Expr.IVisitor(Of TR).VisitCollectionInitializerExpr
 - uid: Perlang.Expr.IVisitor`1.VisitEmptyExpr(Perlang.Expr.Empty)
   name: VisitEmptyExpr(Expr.Empty)
   href: api/Perlang.Expr.IVisitor-1.html#Perlang_Expr_IVisitor_1_VisitEmptyExpr_Perlang_Expr_Empty_
@@ -2005,6 +2099,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Compiler.PerlangCompiler.VisitClassStmt
   nameWithType: PerlangCompiler.VisitClassStmt
+- uid: Perlang.Interpreter.Compiler.PerlangCompiler.VisitCollectionInitializerExpr(Perlang.Expr.CollectionInitializer)
+  name: VisitCollectionInitializerExpr(Expr.CollectionInitializer)
+  href: api/Perlang.Interpreter.Compiler.PerlangCompiler.html#Perlang_Interpreter_Compiler_PerlangCompiler_VisitCollectionInitializerExpr_Perlang_Expr_CollectionInitializer_
+  commentId: M:Perlang.Interpreter.Compiler.PerlangCompiler.VisitCollectionInitializerExpr(Perlang.Expr.CollectionInitializer)
+  fullName: Perlang.Interpreter.Compiler.PerlangCompiler.VisitCollectionInitializerExpr(Perlang.Expr.CollectionInitializer)
+  nameWithType: PerlangCompiler.VisitCollectionInitializerExpr(Expr.CollectionInitializer)
+- uid: Perlang.Interpreter.Compiler.PerlangCompiler.VisitCollectionInitializerExpr*
+  name: VisitCollectionInitializerExpr
+  href: api/Perlang.Interpreter.Compiler.PerlangCompiler.html#Perlang_Interpreter_Compiler_PerlangCompiler_VisitCollectionInitializerExpr_
+  commentId: Overload:Perlang.Interpreter.Compiler.PerlangCompiler.VisitCollectionInitializerExpr
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Compiler.PerlangCompiler.VisitCollectionInitializerExpr
+  nameWithType: PerlangCompiler.VisitCollectionInitializerExpr
 - uid: Perlang.Interpreter.Compiler.PerlangCompiler.VisitEmptyExpr(Perlang.Expr.Empty)
   name: VisitEmptyExpr(Expr.Empty)
   href: api/Perlang.Interpreter.Compiler.PerlangCompiler.html#Perlang_Interpreter_Compiler_PerlangCompiler_VisitEmptyExpr_Perlang_Expr_Empty_
@@ -2818,6 +2925,19 @@ references:
   isSpec: "True"
   fullName: Perlang.ITypeReference.ExplicitTypeSpecified
   nameWithType: ITypeReference.ExplicitTypeSpecified
+- uid: Perlang.ITypeReference.IsArray
+  name: IsArray
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_IsArray
+  commentId: P:Perlang.ITypeReference.IsArray
+  fullName: Perlang.ITypeReference.IsArray
+  nameWithType: ITypeReference.IsArray
+- uid: Perlang.ITypeReference.IsArray*
+  name: IsArray
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_IsArray_
+  commentId: Overload:Perlang.ITypeReference.IsArray
+  isSpec: "True"
+  fullName: Perlang.ITypeReference.IsArray
+  nameWithType: ITypeReference.IsArray
 - uid: Perlang.ITypeReference.IsNullObject
   name: IsNullObject
   href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_IsNullObject
@@ -3343,12 +3463,6 @@ references:
   commentId: T:Perlang.Parameter
   fullName: Perlang.Parameter
   nameWithType: Parameter
-- uid: Perlang.Parameter.#ctor(Perlang.ITypeReference)
-  name: Parameter(ITypeReference)
-  href: api/Perlang.Parameter.html#Perlang_Parameter__ctor_Perlang_ITypeReference_
-  commentId: M:Perlang.Parameter.#ctor(Perlang.ITypeReference)
-  fullName: Perlang.Parameter.Parameter(Perlang.ITypeReference)
-  nameWithType: Parameter.Parameter(ITypeReference)
 - uid: Perlang.Parameter.#ctor(Perlang.Token,Perlang.ITypeReference)
   name: Parameter(Token, ITypeReference)
   href: api/Perlang.Parameter.html#Perlang_Parameter__ctor_Perlang_Token_Perlang_ITypeReference_
@@ -5618,6 +5732,19 @@ references:
   isSpec: "True"
   fullName: Perlang.TypeReference.CppWrapInSharedPtr
   nameWithType: TypeReference.CppWrapInSharedPtr
+- uid: Perlang.TypeReference.IsArray
+  name: IsArray
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_IsArray
+  commentId: P:Perlang.TypeReference.IsArray
+  fullName: Perlang.TypeReference.IsArray
+  nameWithType: TypeReference.IsArray
+- uid: Perlang.TypeReference.IsArray*
+  name: IsArray
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_IsArray_
+  commentId: Overload:Perlang.TypeReference.IsArray
+  isSpec: "True"
+  fullName: Perlang.TypeReference.IsArray
+  nameWithType: TypeReference.IsArray
 - uid: Perlang.TypeReference.PossiblyWrappedCppType
   name: PossiblyWrappedCppType
   href: api/Perlang.TypeReference.html#Perlang_TypeReference_PossiblyWrappedCppType
@@ -5766,6 +5893,19 @@ references:
   isSpec: "True"
   fullName: Perlang.VisitorBase.VisitClassStmt
   nameWithType: VisitorBase.VisitClassStmt
+- uid: Perlang.VisitorBase.VisitCollectionInitializerExpr(Perlang.Expr.CollectionInitializer)
+  name: VisitCollectionInitializerExpr(Expr.CollectionInitializer)
+  href: api/Perlang.VisitorBase.html#Perlang_VisitorBase_VisitCollectionInitializerExpr_Perlang_Expr_CollectionInitializer_
+  commentId: M:Perlang.VisitorBase.VisitCollectionInitializerExpr(Perlang.Expr.CollectionInitializer)
+  fullName: Perlang.VisitorBase.VisitCollectionInitializerExpr(Perlang.Expr.CollectionInitializer)
+  nameWithType: VisitorBase.VisitCollectionInitializerExpr(Expr.CollectionInitializer)
+- uid: Perlang.VisitorBase.VisitCollectionInitializerExpr*
+  name: VisitCollectionInitializerExpr
+  href: api/Perlang.VisitorBase.html#Perlang_VisitorBase_VisitCollectionInitializerExpr_
+  commentId: Overload:Perlang.VisitorBase.VisitCollectionInitializerExpr
+  isSpec: "True"
+  fullName: Perlang.VisitorBase.VisitCollectionInitializerExpr
+  nameWithType: VisitorBase.VisitCollectionInitializerExpr
 - uid: Perlang.VisitorBase.VisitEmptyExpr(Perlang.Expr.Empty)
   name: VisitEmptyExpr(Expr.Empty)
   href: api/Perlang.VisitorBase.html#Perlang_VisitorBase_VisitEmptyExpr_Perlang_Expr_Empty_
