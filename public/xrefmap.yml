@@ -3476,6 +3476,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Parameter.Parameter
   nameWithType: Parameter.Parameter
+- uid: Perlang.Parameter.IsArray
+  name: IsArray
+  href: api/Perlang.Parameter.html#Perlang_Parameter_IsArray
+  commentId: P:Perlang.Parameter.IsArray
+  fullName: Perlang.Parameter.IsArray
+  nameWithType: Parameter.IsArray
+- uid: Perlang.Parameter.IsArray*
+  name: IsArray
+  href: api/Perlang.Parameter.html#Perlang_Parameter_IsArray_
+  commentId: Overload:Perlang.Parameter.IsArray
+  isSpec: "True"
+  fullName: Perlang.Parameter.IsArray
+  nameWithType: Parameter.IsArray
 - uid: Perlang.Parameter.Name
   name: Name
   href: api/Perlang.Parameter.html#Perlang_Parameter_Name
@@ -5674,12 +5687,12 @@ references:
   commentId: T:Perlang.TypeReference
   fullName: Perlang.TypeReference
   nameWithType: TypeReference
-- uid: Perlang.TypeReference.#ctor(Perlang.Token)
-  name: TypeReference(Token)
-  href: api/Perlang.TypeReference.html#Perlang_TypeReference__ctor_Perlang_Token_
-  commentId: M:Perlang.TypeReference.#ctor(Perlang.Token)
-  fullName: Perlang.TypeReference.TypeReference(Perlang.Token)
-  nameWithType: TypeReference.TypeReference(Token)
+- uid: Perlang.TypeReference.#ctor(Perlang.Token,System.Boolean)
+  name: TypeReference(Token, Boolean)
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference__ctor_Perlang_Token_System_Boolean_
+  commentId: M:Perlang.TypeReference.#ctor(Perlang.Token,System.Boolean)
+  fullName: Perlang.TypeReference.TypeReference(Perlang.Token, System.Boolean)
+  nameWithType: TypeReference.TypeReference(Token, Boolean)
 - uid: Perlang.TypeReference.#ctor(Type)
   name: TypeReference(Type)
   href: api/Perlang.TypeReference.html#Perlang_TypeReference__ctor_Type_
