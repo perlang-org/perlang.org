@@ -77,7 +77,7 @@
 </blockquote>
 <p><em>The text is currently a draft of the text which we provide as a &quot;public preview&quot;. Once the document describes all aspects of Perlang in a satisfiable way, we will remove the &quot;draft&quot; status.</em></p>
 <!--
-For some of the functionality where the documentation is missing, we have added links to the corresponding tests; these provide real-world examples on how the functionality is being used. Pull requests that add proper examples to this page are highly welcome and appreciated.
+For some of the functionality where the documentation is missing, we have added links to the corresponding tests; these provide real-world examples on how the functionality is being used. Merge requests that add proper examples to this page are highly welcome and appreciated.
 -->
 <h2 id="language-features">Language features</h2>
 <h3 id="the-top-level-scope">The top-level scope</h3>
@@ -117,7 +117,7 @@ foo();
 <pre><code class="lang-perlang" name="defining-and-calling-a-function-with-parameters">// defining-and-calling-a-function-with-parameters.per
 fun greet(name: string, age: int): void {
   // TODO: depends on functionality not yet supported in compiled mode.
-  // https://github.com/perlang-org/perlang/issues/406
+  // https://gitlab.perlang.org/perlang/perlang/-/issues/406
   //print &quot;Hello &quot; + name + &quot;. Your age is &quot; + age;
 }
 
@@ -160,8 +160,8 @@ greet(null, 42);
 <pre><code class="lang-perlang" name="calling-base64-encode">// calling-base64-encode.per
 
 // TODO: The code below no longer works as of the changes being done in
-// https://github.com/perlang-org/perlang/issues/406; calling methods in
-// the standard library is currently broken.
+// https://gitlab.perlang.org/perlang/perlang/-/issues/406; calling
+// methods in the standard library is currently broken.
 
 // Will output SGVsbG8sIFdvcmxk
 //print Base64.encode(&quot;Hello, World&quot;);
@@ -170,7 +170,7 @@ greet(null, 42);
 <h3 id="the-future">The future</h3>
 <blockquote><p><em>The future is not set</em> (John &amp; Sarah Connor, <em>Terminator 2: Judgment Day</em>)</p>
 </blockquote>
-<p>There is currently no road map as for exactly &quot;when&quot; and &quot;if&quot; various features will be implemented into the language and its standard library. Your best bet for now is looking at <a href="https://github.com/perlang-org/perlang/milestones">the milestones</a> in the GitHub repo, where various ideas are roughly categorized into projected releases, depending on when we imagine that they may get introduced into the language.</p>
+<p>There is currently no road map as for exactly &quot;when&quot; and &quot;if&quot; various features will be implemented into the language and its standard library. Your best bet for now is looking at <a href="https://gitlab.perlang.org/perlang/perlang/-/milestones">the milestones</a> in the GitLab repo, where various ideas are roughly categorized into projected releases, depending on when we imagine that they may get introduced into the language.</p>
 <h2 id="footnotes">Footnotes</h2>
 <p><sup>1</sup>: Making warnings be considered errors by default is a deliberate, conscious design decision in an attempt to ensure that a codebase is not littered with numerous minor errors - errors which are really <em>there</em> but the developers have learn to look the other way, to ignore them. It is our experience that this can too-easily become the case when warnings are ignored by default.</p>
 </article>
