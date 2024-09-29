@@ -157,19 +157,6 @@ references:
   commentId: T:Perlang.CommonConstants
   fullName: Perlang.CommonConstants
   nameWithType: CommonConstants
-- uid: Perlang.CommonConstants.GetFullVersion
-  name: GetFullVersion()
-  href: api/Perlang.CommonConstants.html#Perlang_CommonConstants_GetFullVersion
-  commentId: M:Perlang.CommonConstants.GetFullVersion
-  fullName: Perlang.CommonConstants.GetFullVersion()
-  nameWithType: CommonConstants.GetFullVersion()
-- uid: Perlang.CommonConstants.GetFullVersion*
-  name: GetFullVersion
-  href: api/Perlang.CommonConstants.html#Perlang_CommonConstants_GetFullVersion_
-  commentId: Overload:Perlang.CommonConstants.GetFullVersion
-  isSpec: "True"
-  fullName: Perlang.CommonConstants.GetFullVersion
-  nameWithType: CommonConstants.GetFullVersion
 - uid: Perlang.CommonConstants.InformationalVersion
   name: InformationalVersion
   href: api/Perlang.CommonConstants.html#Perlang_CommonConstants_InformationalVersion
