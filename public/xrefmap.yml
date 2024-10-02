@@ -1693,41 +1693,6 @@ references:
   isSpec: "True"
   fullName: Perlang.Expr.UnaryPrefix.Token
   nameWithType: Expr.UnaryPrefix.Token
-- uid: Perlang.ICallable
-  name: ICallable
-  href: api/Perlang.ICallable.html
-  commentId: T:Perlang.ICallable
-  fullName: Perlang.ICallable
-  nameWithType: ICallable
-- uid: Perlang.ICallable.Arity
-  name: Arity()
-  href: api/Perlang.ICallable.html#Perlang_ICallable_Arity
-  commentId: M:Perlang.ICallable.Arity
-  fullName: Perlang.ICallable.Arity()
-  nameWithType: ICallable.Arity()
-- uid: Perlang.ICallable.Arity*
-  name: Arity
-  href: api/Perlang.ICallable.html#Perlang_ICallable_Arity_
-  commentId: Overload:Perlang.ICallable.Arity
-  isSpec: "True"
-  fullName: Perlang.ICallable.Arity
-  nameWithType: ICallable.Arity
-- uid: Perlang.ICallable.Call(Perlang.IInterpreter,List{System.Object})
-  name: Call(IInterpreter, List<Object>)
-  href: api/Perlang.ICallable.html#Perlang_ICallable_Call_Perlang_IInterpreter_List_System_Object__
-  commentId: M:Perlang.ICallable.Call(Perlang.IInterpreter,List{System.Object})
-  name.vb: Call(IInterpreter, List(Of Object))
-  fullName: Perlang.ICallable.Call(Perlang.IInterpreter, List<System.Object>)
-  fullName.vb: Perlang.ICallable.Call(Perlang.IInterpreter, List(Of System.Object))
-  nameWithType: ICallable.Call(IInterpreter, List<Object>)
-  nameWithType.vb: ICallable.Call(IInterpreter, List(Of Object))
-- uid: Perlang.ICallable.Call*
-  name: Call
-  href: api/Perlang.ICallable.html#Perlang_ICallable_Call_
-  commentId: Overload:Perlang.ICallable.Call
-  isSpec: "True"
-  fullName: Perlang.ICallable.Call
-  nameWithType: ICallable.Call
 - uid: Perlang.IEnvironment
   name: IEnvironment
   href: api/Perlang.IEnvironment.html
@@ -1773,28 +1738,6 @@ references:
   isSpec: "True"
   fullName: Perlang.IEnvironment.GetAt
   nameWithType: IEnvironment.GetAt
-- uid: Perlang.IInterpreter
-  name: IInterpreter
-  href: api/Perlang.IInterpreter.html
-  commentId: T:Perlang.IInterpreter
-  fullName: Perlang.IInterpreter
-  nameWithType: IInterpreter
-- uid: Perlang.IInterpreter.ExecuteBlock(IEnumerable{Perlang.Stmt},Perlang.IEnvironment)
-  name: ExecuteBlock(IEnumerable<Stmt>, IEnvironment)
-  href: api/Perlang.IInterpreter.html#Perlang_IInterpreter_ExecuteBlock_IEnumerable_Perlang_Stmt__Perlang_IEnvironment_
-  commentId: M:Perlang.IInterpreter.ExecuteBlock(IEnumerable{Perlang.Stmt},Perlang.IEnvironment)
-  name.vb: ExecuteBlock(IEnumerable(Of Stmt), IEnvironment)
-  fullName: Perlang.IInterpreter.ExecuteBlock(IEnumerable<Perlang.Stmt>, Perlang.IEnvironment)
-  fullName.vb: Perlang.IInterpreter.ExecuteBlock(IEnumerable(Of Perlang.Stmt), Perlang.IEnvironment)
-  nameWithType: IInterpreter.ExecuteBlock(IEnumerable<Stmt>, IEnvironment)
-  nameWithType.vb: IInterpreter.ExecuteBlock(IEnumerable(Of Stmt), IEnvironment)
-- uid: Perlang.IInterpreter.ExecuteBlock*
-  name: ExecuteBlock
-  href: api/Perlang.IInterpreter.html#Perlang_IInterpreter_ExecuteBlock_
-  commentId: Overload:Perlang.IInterpreter.ExecuteBlock
-  isSpec: "True"
-  fullName: Perlang.IInterpreter.ExecuteBlock
-  nameWithType: IInterpreter.ExecuteBlock
 - uid: Perlang.Internal
   name: Perlang.Internal
   href: api/Perlang.Internal.html
