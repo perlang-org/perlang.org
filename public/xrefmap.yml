@@ -2055,6 +2055,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Compiler.PerlangCompiler.VisitEmptyExpr
   nameWithType: PerlangCompiler.VisitEmptyExpr
+- uid: Perlang.Interpreter.Compiler.PerlangCompiler.VisitEnumStmt(Perlang.Stmt.Enum)
+  name: VisitEnumStmt(Stmt.Enum)
+  href: api/Perlang.Interpreter.Compiler.PerlangCompiler.html#Perlang_Interpreter_Compiler_PerlangCompiler_VisitEnumStmt_Perlang_Stmt_Enum_
+  commentId: M:Perlang.Interpreter.Compiler.PerlangCompiler.VisitEnumStmt(Perlang.Stmt.Enum)
+  fullName: Perlang.Interpreter.Compiler.PerlangCompiler.VisitEnumStmt(Perlang.Stmt.Enum)
+  nameWithType: PerlangCompiler.VisitEnumStmt(Stmt.Enum)
+- uid: Perlang.Interpreter.Compiler.PerlangCompiler.VisitEnumStmt*
+  name: VisitEnumStmt
+  href: api/Perlang.Interpreter.Compiler.PerlangCompiler.html#Perlang_Interpreter_Compiler_PerlangCompiler_VisitEnumStmt_
+  commentId: Overload:Perlang.Interpreter.Compiler.PerlangCompiler.VisitEnumStmt
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Compiler.PerlangCompiler.VisitEnumStmt
+  nameWithType: PerlangCompiler.VisitEnumStmt
 - uid: Perlang.Interpreter.Compiler.PerlangCompiler.VisitExpressionStmt(Perlang.Stmt.ExpressionStmt)
   name: VisitExpressionStmt(Stmt.ExpressionStmt)
   href: api/Perlang.Interpreter.Compiler.PerlangCompiler.html#Perlang_Interpreter_Compiler_PerlangCompiler_VisitExpressionStmt_Perlang_Stmt_ExpressionStmt_
@@ -2344,22 +2357,6 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Internals.IBindingHandler.AddLocalExpr
   nameWithType: IBindingHandler.AddLocalExpr
-- uid: Perlang.Interpreter.Internals.IBindingHandler.GetLocalBinding(Perlang.Expr,Perlang.Interpreter.NameResolution.Binding@)
-  name: GetLocalBinding(Expr, out Binding)
-  href: api/Perlang.Interpreter.Internals.IBindingHandler.html#Perlang_Interpreter_Internals_IBindingHandler_GetLocalBinding_Perlang_Expr_Perlang_Interpreter_NameResolution_Binding__
-  commentId: M:Perlang.Interpreter.Internals.IBindingHandler.GetLocalBinding(Perlang.Expr,Perlang.Interpreter.NameResolution.Binding@)
-  name.vb: GetLocalBinding(Expr, ByRef Binding)
-  fullName: Perlang.Interpreter.Internals.IBindingHandler.GetLocalBinding(Perlang.Expr, out Perlang.Interpreter.NameResolution.Binding)
-  fullName.vb: Perlang.Interpreter.Internals.IBindingHandler.GetLocalBinding(Perlang.Expr, ByRef Perlang.Interpreter.NameResolution.Binding)
-  nameWithType: IBindingHandler.GetLocalBinding(Expr, out Binding)
-  nameWithType.vb: IBindingHandler.GetLocalBinding(Expr, ByRef Binding)
-- uid: Perlang.Interpreter.Internals.IBindingHandler.GetLocalBinding*
-  name: GetLocalBinding
-  href: api/Perlang.Interpreter.Internals.IBindingHandler.html#Perlang_Interpreter_Internals_IBindingHandler_GetLocalBinding_
-  commentId: Overload:Perlang.Interpreter.Internals.IBindingHandler.GetLocalBinding
-  isSpec: "True"
-  fullName: Perlang.Interpreter.Internals.IBindingHandler.GetLocalBinding
-  nameWithType: IBindingHandler.GetLocalBinding
 - uid: Perlang.Interpreter.Internals.IBindingHandler.GetVariableOrFunctionBinding(Perlang.Expr)
   name: GetVariableOrFunctionBinding(Expr)
   href: api/Perlang.Interpreter.Internals.IBindingHandler.html#Perlang_Interpreter_Internals_IBindingHandler_GetVariableOrFunctionBinding_Perlang_Expr_
@@ -4123,6 +4120,54 @@ references:
   isSpec: "True"
   fullName: Perlang.PerlangClass.ToString
   nameWithType: PerlangClass.ToString
+- uid: Perlang.PerlangEnum
+  name: PerlangEnum
+  href: api/Perlang.PerlangEnum.html
+  commentId: T:Perlang.PerlangEnum
+  fullName: Perlang.PerlangEnum
+  nameWithType: PerlangEnum
+- uid: Perlang.PerlangEnum.#ctor(Perlang.Token,Dictionary{System.String,Perlang.Expr})
+  name: PerlangEnum(Token, Dictionary<String, Expr>)
+  href: api/Perlang.PerlangEnum.html#Perlang_PerlangEnum__ctor_Perlang_Token_Dictionary_System_String_Perlang_Expr__
+  commentId: M:Perlang.PerlangEnum.#ctor(Perlang.Token,Dictionary{System.String,Perlang.Expr})
+  name.vb: PerlangEnum(Token, Dictionary(Of String, Expr))
+  fullName: Perlang.PerlangEnum.PerlangEnum(Perlang.Token, Dictionary<System.String, Perlang.Expr>)
+  fullName.vb: Perlang.PerlangEnum.PerlangEnum(Perlang.Token, Dictionary(Of System.String, Perlang.Expr))
+  nameWithType: PerlangEnum.PerlangEnum(Token, Dictionary<String, Expr>)
+  nameWithType.vb: PerlangEnum.PerlangEnum(Token, Dictionary(Of String, Expr))
+- uid: Perlang.PerlangEnum.#ctor*
+  name: PerlangEnum
+  href: api/Perlang.PerlangEnum.html#Perlang_PerlangEnum__ctor_
+  commentId: Overload:Perlang.PerlangEnum.#ctor
+  isSpec: "True"
+  fullName: Perlang.PerlangEnum.PerlangEnum
+  nameWithType: PerlangEnum.PerlangEnum
+- uid: Perlang.PerlangEnum.EnumMembers
+  name: EnumMembers
+  href: api/Perlang.PerlangEnum.html#Perlang_PerlangEnum_EnumMembers
+  commentId: P:Perlang.PerlangEnum.EnumMembers
+  fullName: Perlang.PerlangEnum.EnumMembers
+  nameWithType: PerlangEnum.EnumMembers
+- uid: Perlang.PerlangEnum.EnumMembers*
+  name: EnumMembers
+  href: api/Perlang.PerlangEnum.html#Perlang_PerlangEnum_EnumMembers_
+  commentId: Overload:Perlang.PerlangEnum.EnumMembers
+  isSpec: "True"
+  fullName: Perlang.PerlangEnum.EnumMembers
+  nameWithType: PerlangEnum.EnumMembers
+- uid: Perlang.PerlangEnum.Name
+  name: Name
+  href: api/Perlang.PerlangEnum.html#Perlang_PerlangEnum_Name
+  commentId: P:Perlang.PerlangEnum.Name
+  fullName: Perlang.PerlangEnum.Name
+  nameWithType: PerlangEnum.Name
+- uid: Perlang.PerlangEnum.Name*
+  name: Name
+  href: api/Perlang.PerlangEnum.html#Perlang_PerlangEnum_Name_
+  commentId: Overload:Perlang.PerlangEnum.Name
+  isSpec: "True"
+  fullName: Perlang.PerlangEnum.Name
+  nameWithType: PerlangEnum.Name
 - uid: Perlang.PerlangMode
   name: PerlangMode
   href: api/Perlang.PerlangMode.html
@@ -4532,6 +4577,70 @@ references:
   isSpec: "True"
   fullName: Perlang.Stmt.Class.Name
   nameWithType: Stmt.Class.Name
+- uid: Perlang.Stmt.Enum
+  name: Stmt.Enum
+  href: api/Perlang.Stmt.Enum.html
+  commentId: T:Perlang.Stmt.Enum
+  fullName: Perlang.Stmt.Enum
+  nameWithType: Stmt.Enum
+- uid: Perlang.Stmt.Enum.#ctor(Perlang.Token,Dictionary{System.String,Perlang.Expr})
+  name: Enum(Token, Dictionary<String, Expr>)
+  href: api/Perlang.Stmt.Enum.html#Perlang_Stmt_Enum__ctor_Perlang_Token_Dictionary_System_String_Perlang_Expr__
+  commentId: M:Perlang.Stmt.Enum.#ctor(Perlang.Token,Dictionary{System.String,Perlang.Expr})
+  name.vb: Enum(Token, Dictionary(Of String, Expr))
+  fullName: Perlang.Stmt.Enum.Enum(Perlang.Token, Dictionary<System.String, Perlang.Expr>)
+  fullName.vb: Perlang.Stmt.Enum.Enum(Perlang.Token, Dictionary(Of System.String, Perlang.Expr))
+  nameWithType: Stmt.Enum.Enum(Token, Dictionary<String, Expr>)
+  nameWithType.vb: Stmt.Enum.Enum(Token, Dictionary(Of String, Expr))
+- uid: Perlang.Stmt.Enum.#ctor*
+  name: Enum
+  href: api/Perlang.Stmt.Enum.html#Perlang_Stmt_Enum__ctor_
+  commentId: Overload:Perlang.Stmt.Enum.#ctor
+  isSpec: "True"
+  fullName: Perlang.Stmt.Enum.Enum
+  nameWithType: Stmt.Enum.Enum
+- uid: Perlang.Stmt.Enum.Accept*
+  name: Accept
+  href: api/Perlang.Stmt.Enum.html#Perlang_Stmt_Enum_Accept_
+  commentId: Overload:Perlang.Stmt.Enum.Accept
+  isSpec: "True"
+  fullName: Perlang.Stmt.Enum.Accept
+  nameWithType: Stmt.Enum.Accept
+- uid: Perlang.Stmt.Enum.Accept``1(Perlang.Stmt.IVisitor{``0})
+  name: Accept<TR>(Stmt.IVisitor<TR>)
+  href: api/Perlang.Stmt.Enum.html#Perlang_Stmt_Enum_Accept__1_Perlang_Stmt_IVisitor___0__
+  commentId: M:Perlang.Stmt.Enum.Accept``1(Perlang.Stmt.IVisitor{``0})
+  name.vb: Accept(Of TR)(Stmt.IVisitor(Of TR))
+  fullName: Perlang.Stmt.Enum.Accept<TR>(Perlang.Stmt.IVisitor<TR>)
+  fullName.vb: Perlang.Stmt.Enum.Accept(Of TR)(Perlang.Stmt.IVisitor(Of TR))
+  nameWithType: Stmt.Enum.Accept<TR>(Stmt.IVisitor<TR>)
+  nameWithType.vb: Stmt.Enum.Accept(Of TR)(Stmt.IVisitor(Of TR))
+- uid: Perlang.Stmt.Enum.Members
+  name: Members
+  href: api/Perlang.Stmt.Enum.html#Perlang_Stmt_Enum_Members
+  commentId: P:Perlang.Stmt.Enum.Members
+  fullName: Perlang.Stmt.Enum.Members
+  nameWithType: Stmt.Enum.Members
+- uid: Perlang.Stmt.Enum.Members*
+  name: Members
+  href: api/Perlang.Stmt.Enum.html#Perlang_Stmt_Enum_Members_
+  commentId: Overload:Perlang.Stmt.Enum.Members
+  isSpec: "True"
+  fullName: Perlang.Stmt.Enum.Members
+  nameWithType: Stmt.Enum.Members
+- uid: Perlang.Stmt.Enum.Name
+  name: Name
+  href: api/Perlang.Stmt.Enum.html#Perlang_Stmt_Enum_Name
+  commentId: P:Perlang.Stmt.Enum.Name
+  fullName: Perlang.Stmt.Enum.Name
+  nameWithType: Stmt.Enum.Name
+- uid: Perlang.Stmt.Enum.Name*
+  name: Name
+  href: api/Perlang.Stmt.Enum.html#Perlang_Stmt_Enum_Name_
+  commentId: Overload:Perlang.Stmt.Enum.Name
+  isSpec: "True"
+  fullName: Perlang.Stmt.Enum.Name
+  nameWithType: Stmt.Enum.Name
 - uid: Perlang.Stmt.ExpressionStmt
   name: Stmt.ExpressionStmt
   href: api/Perlang.Stmt.ExpressionStmt.html
@@ -4800,6 +4909,23 @@ references:
   fullName.vb: Perlang.Stmt.IVisitor(Of TR).VisitClassStmt
   nameWithType: Stmt.IVisitor<TR>.VisitClassStmt
   nameWithType.vb: Stmt.IVisitor(Of TR).VisitClassStmt
+- uid: Perlang.Stmt.IVisitor`1.VisitEnumStmt(Perlang.Stmt.Enum)
+  name: VisitEnumStmt(Stmt.Enum)
+  href: api/Perlang.Stmt.IVisitor-1.html#Perlang_Stmt_IVisitor_1_VisitEnumStmt_Perlang_Stmt_Enum_
+  commentId: M:Perlang.Stmt.IVisitor`1.VisitEnumStmt(Perlang.Stmt.Enum)
+  fullName: Perlang.Stmt.IVisitor<TR>.VisitEnumStmt(Perlang.Stmt.Enum)
+  fullName.vb: Perlang.Stmt.IVisitor(Of TR).VisitEnumStmt(Perlang.Stmt.Enum)
+  nameWithType: Stmt.IVisitor<TR>.VisitEnumStmt(Stmt.Enum)
+  nameWithType.vb: Stmt.IVisitor(Of TR).VisitEnumStmt(Stmt.Enum)
+- uid: Perlang.Stmt.IVisitor`1.VisitEnumStmt*
+  name: VisitEnumStmt
+  href: api/Perlang.Stmt.IVisitor-1.html#Perlang_Stmt_IVisitor_1_VisitEnumStmt_
+  commentId: Overload:Perlang.Stmt.IVisitor`1.VisitEnumStmt
+  isSpec: "True"
+  fullName: Perlang.Stmt.IVisitor<TR>.VisitEnumStmt
+  fullName.vb: Perlang.Stmt.IVisitor(Of TR).VisitEnumStmt
+  nameWithType: Stmt.IVisitor<TR>.VisitEnumStmt
+  nameWithType.vb: Stmt.IVisitor(Of TR).VisitEnumStmt
 - uid: Perlang.Stmt.IVisitor`1.VisitExpressionStmt(Perlang.Stmt.ExpressionStmt)
   name: VisitExpressionStmt(Stmt.ExpressionStmt)
   href: api/Perlang.Stmt.IVisitor-1.html#Perlang_Stmt_IVisitor_1_VisitExpressionStmt_Perlang_Stmt_ExpressionStmt_
@@ -5323,6 +5449,12 @@ references:
   commentId: F:Perlang.TokenType.ELSE
   fullName: Perlang.TokenType.ELSE
   nameWithType: TokenType.ELSE
+- uid: Perlang.TokenType.ENUM
+  name: ENUM
+  href: api/Perlang.TokenType.html#Perlang_TokenType_ENUM
+  commentId: F:Perlang.TokenType.ENUM
+  fullName: Perlang.TokenType.ENUM
+  nameWithType: TokenType.ENUM
 - uid: Perlang.TokenType.EOF
   name: EOF
   href: api/Perlang.TokenType.html#Perlang_TokenType_EOF
@@ -5862,6 +5994,19 @@ references:
   isSpec: "True"
   fullName: Perlang.VisitorBase.VisitEmptyExpr
   nameWithType: VisitorBase.VisitEmptyExpr
+- uid: Perlang.VisitorBase.VisitEnumStmt(Perlang.Stmt.Enum)
+  name: VisitEnumStmt(Stmt.Enum)
+  href: api/Perlang.VisitorBase.html#Perlang_VisitorBase_VisitEnumStmt_Perlang_Stmt_Enum_
+  commentId: M:Perlang.VisitorBase.VisitEnumStmt(Perlang.Stmt.Enum)
+  fullName: Perlang.VisitorBase.VisitEnumStmt(Perlang.Stmt.Enum)
+  nameWithType: VisitorBase.VisitEnumStmt(Stmt.Enum)
+- uid: Perlang.VisitorBase.VisitEnumStmt*
+  name: VisitEnumStmt
+  href: api/Perlang.VisitorBase.html#Perlang_VisitorBase_VisitEnumStmt_
+  commentId: Overload:Perlang.VisitorBase.VisitEnumStmt
+  isSpec: "True"
+  fullName: Perlang.VisitorBase.VisitEnumStmt
+  nameWithType: VisitorBase.VisitEnumStmt
 - uid: Perlang.VisitorBase.VisitExpressionStmt(Perlang.Stmt.ExpressionStmt)
   name: VisitExpressionStmt(Stmt.ExpressionStmt)
   href: api/Perlang.VisitorBase.html#Perlang_VisitorBase_VisitExpressionStmt_Perlang_Stmt_ExpressionStmt_
