@@ -205,6 +205,12 @@ references:
   commentId: F:Perlang.Compiler.CompilerFlags.RemoveEmptyMainMethod
   fullName: Perlang.Compiler.CompilerFlags.RemoveEmptyMainMethod
   nameWithType: CompilerFlags.RemoveEmptyMainMethod
+- uid: Perlang.Compiler.CompilerFlags.RunWithValgrind
+  name: RunWithValgrind
+  href: api/Perlang.Compiler.CompilerFlags.html#Perlang_Compiler_CompilerFlags_RunWithValgrind
+  commentId: F:Perlang.Compiler.CompilerFlags.RunWithValgrind
+  fullName: Perlang.Compiler.CompilerFlags.RunWithValgrind
+  nameWithType: CompilerFlags.RunWithValgrind
 - uid: Perlang.Compiler.NotImplementedInCompiledModeException
   name: NotImplementedInCompiledModeException
   href: api/Perlang.Compiler.NotImplementedInCompiledModeException.html
@@ -4187,6 +4193,19 @@ references:
   isSpec: "True"
   fullName: Perlang.PerlangMode.ExperimentalCompilation
   nameWithType: PerlangMode.ExperimentalCompilation
+- uid: Perlang.PerlangMode.RunWithValgrind
+  name: RunWithValgrind
+  href: api/Perlang.PerlangMode.html#Perlang_PerlangMode_RunWithValgrind
+  commentId: P:Perlang.PerlangMode.RunWithValgrind
+  fullName: Perlang.PerlangMode.RunWithValgrind
+  nameWithType: PerlangMode.RunWithValgrind
+- uid: Perlang.PerlangMode.RunWithValgrind*
+  name: RunWithValgrind
+  href: api/Perlang.PerlangMode.html#Perlang_PerlangMode_RunWithValgrind_
+  commentId: Overload:Perlang.PerlangMode.RunWithValgrind
+  isSpec: "True"
+  fullName: Perlang.PerlangMode.RunWithValgrind
+  nameWithType: PerlangMode.RunWithValgrind
 - uid: Perlang.RuntimeError
   name: RuntimeError
   href: api/Perlang.RuntimeError.html
