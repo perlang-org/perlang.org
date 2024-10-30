@@ -293,6 +293,19 @@ references:
   commentId: T:Perlang.ConsoleApp.Program
   fullName: Perlang.ConsoleApp.Program
   nameWithType: Program
+- uid: Perlang.ConsoleApp.Program.Dispose
+  name: Dispose()
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_Dispose
+  commentId: M:Perlang.ConsoleApp.Program.Dispose
+  fullName: Perlang.ConsoleApp.Program.Dispose()
+  nameWithType: Program.Dispose()
+- uid: Perlang.ConsoleApp.Program.Dispose*
+  name: Dispose
+  href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_Dispose_
+  commentId: Overload:Perlang.ConsoleApp.Program.Dispose
+  isSpec: "True"
+  fullName: Perlang.ConsoleApp.Program.Dispose
+  nameWithType: Program.Dispose
 - uid: Perlang.ConsoleApp.Program.Main(System.String[])
   name: Main(String[])
   href: api/Perlang.ConsoleApp.Program.html#Perlang_ConsoleApp_Program_Main_System_String___
@@ -1957,6 +1970,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Compiler.PerlangCompiler.CompileAndRun
   nameWithType: PerlangCompiler.CompileAndRun
+- uid: Perlang.Interpreter.Compiler.PerlangCompiler.Dispose
+  name: Dispose()
+  href: api/Perlang.Interpreter.Compiler.PerlangCompiler.html#Perlang_Interpreter_Compiler_PerlangCompiler_Dispose
+  commentId: M:Perlang.Interpreter.Compiler.PerlangCompiler.Dispose
+  fullName: Perlang.Interpreter.Compiler.PerlangCompiler.Dispose()
+  nameWithType: PerlangCompiler.Dispose()
+- uid: Perlang.Interpreter.Compiler.PerlangCompiler.Dispose*
+  name: Dispose
+  href: api/Perlang.Interpreter.Compiler.PerlangCompiler.html#Perlang_Interpreter_Compiler_PerlangCompiler_Dispose_
+  commentId: Overload:Perlang.Interpreter.Compiler.PerlangCompiler.Dispose
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Compiler.PerlangCompiler.Dispose
+  nameWithType: PerlangCompiler.Dispose
 - uid: Perlang.Interpreter.Compiler.PerlangCompiler.ParametersString
   name: ParametersString
   href: api/Perlang.Interpreter.Compiler.PerlangCompiler.html#Perlang_Interpreter_Compiler_PerlangCompiler_ParametersString
@@ -3267,6 +3293,114 @@ references:
   isSpec: "True"
   fullName: Perlang.Lang.Utf8String.ToString
   nameWithType: Utf8String.ToString
+- uid: Perlang.Native
+  name: Perlang.Native
+  href: api/Perlang.Native.html
+  commentId: N:Perlang.Native
+  fullName: Perlang.Native
+  nameWithType: Perlang.Native
+- uid: Perlang.Native.NativeStringBuilder
+  name: NativeStringBuilder
+  href: api/Perlang.Native.NativeStringBuilder.html
+  commentId: T:Perlang.Native.NativeStringBuilder
+  fullName: Perlang.Native.NativeStringBuilder
+  nameWithType: NativeStringBuilder
+- uid: Perlang.Native.NativeStringBuilder.Append(System.Char)
+  name: Append(Char)
+  href: api/Perlang.Native.NativeStringBuilder.html#Perlang_Native_NativeStringBuilder_Append_System_Char_
+  commentId: M:Perlang.Native.NativeStringBuilder.Append(System.Char)
+  fullName: Perlang.Native.NativeStringBuilder.Append(System.Char)
+  nameWithType: NativeStringBuilder.Append(Char)
+- uid: Perlang.Native.NativeStringBuilder.Append(System.Nullable{System.Object})
+  name: Append(Nullable<Object>)
+  href: api/Perlang.Native.NativeStringBuilder.html#Perlang_Native_NativeStringBuilder_Append_System_Nullable_System_Object__
+  commentId: M:Perlang.Native.NativeStringBuilder.Append(System.Nullable{System.Object})
+  name.vb: Append(Nullable(Of Object))
+  fullName: Perlang.Native.NativeStringBuilder.Append(System.Nullable<System.Object>)
+  fullName.vb: Perlang.Native.NativeStringBuilder.Append(System.Nullable(Of System.Object))
+  nameWithType: NativeStringBuilder.Append(Nullable<Object>)
+  nameWithType.vb: NativeStringBuilder.Append(Nullable(Of Object))
+- uid: Perlang.Native.NativeStringBuilder.Append(System.String)
+  name: Append(String)
+  href: api/Perlang.Native.NativeStringBuilder.html#Perlang_Native_NativeStringBuilder_Append_System_String_
+  commentId: M:Perlang.Native.NativeStringBuilder.Append(System.String)
+  fullName: Perlang.Native.NativeStringBuilder.Append(System.String)
+  nameWithType: NativeStringBuilder.Append(String)
+- uid: Perlang.Native.NativeStringBuilder.Append*
+  name: Append
+  href: api/Perlang.Native.NativeStringBuilder.html#Perlang_Native_NativeStringBuilder_Append_
+  commentId: Overload:Perlang.Native.NativeStringBuilder.Append
+  isSpec: "True"
+  fullName: Perlang.Native.NativeStringBuilder.Append
+  nameWithType: NativeStringBuilder.Append
+- uid: Perlang.Native.NativeStringBuilder.AppendLine(System.Nullable{System.String})
+  name: AppendLine(Nullable<String>)
+  href: api/Perlang.Native.NativeStringBuilder.html#Perlang_Native_NativeStringBuilder_AppendLine_System_Nullable_System_String__
+  commentId: M:Perlang.Native.NativeStringBuilder.AppendLine(System.Nullable{System.String})
+  name.vb: AppendLine(Nullable(Of String))
+  fullName: Perlang.Native.NativeStringBuilder.AppendLine(System.Nullable<System.String>)
+  fullName.vb: Perlang.Native.NativeStringBuilder.AppendLine(System.Nullable(Of System.String))
+  nameWithType: NativeStringBuilder.AppendLine(Nullable<String>)
+  nameWithType.vb: NativeStringBuilder.AppendLine(Nullable(Of String))
+- uid: Perlang.Native.NativeStringBuilder.AppendLine*
+  name: AppendLine
+  href: api/Perlang.Native.NativeStringBuilder.html#Perlang_Native_NativeStringBuilder_AppendLine_
+  commentId: Overload:Perlang.Native.NativeStringBuilder.AppendLine
+  isSpec: "True"
+  fullName: Perlang.Native.NativeStringBuilder.AppendLine
+  nameWithType: NativeStringBuilder.AppendLine
+- uid: Perlang.Native.NativeStringBuilder.Create
+  name: Create()
+  href: api/Perlang.Native.NativeStringBuilder.html#Perlang_Native_NativeStringBuilder_Create
+  commentId: M:Perlang.Native.NativeStringBuilder.Create
+  fullName: Perlang.Native.NativeStringBuilder.Create()
+  nameWithType: NativeStringBuilder.Create()
+- uid: Perlang.Native.NativeStringBuilder.Create*
+  name: Create
+  href: api/Perlang.Native.NativeStringBuilder.html#Perlang_Native_NativeStringBuilder_Create_
+  commentId: Overload:Perlang.Native.NativeStringBuilder.Create
+  isSpec: "True"
+  fullName: Perlang.Native.NativeStringBuilder.Create
+  nameWithType: NativeStringBuilder.Create
+- uid: Perlang.Native.NativeStringBuilder.Dispose
+  name: Dispose()
+  href: api/Perlang.Native.NativeStringBuilder.html#Perlang_Native_NativeStringBuilder_Dispose
+  commentId: M:Perlang.Native.NativeStringBuilder.Dispose
+  fullName: Perlang.Native.NativeStringBuilder.Dispose()
+  nameWithType: NativeStringBuilder.Dispose()
+- uid: Perlang.Native.NativeStringBuilder.Dispose*
+  name: Dispose
+  href: api/Perlang.Native.NativeStringBuilder.html#Perlang_Native_NativeStringBuilder_Dispose_
+  commentId: Overload:Perlang.Native.NativeStringBuilder.Dispose
+  isSpec: "True"
+  fullName: Perlang.Native.NativeStringBuilder.Dispose
+  nameWithType: NativeStringBuilder.Dispose
+- uid: Perlang.Native.NativeStringBuilder.Length
+  name: Length
+  href: api/Perlang.Native.NativeStringBuilder.html#Perlang_Native_NativeStringBuilder_Length
+  commentId: P:Perlang.Native.NativeStringBuilder.Length
+  fullName: Perlang.Native.NativeStringBuilder.Length
+  nameWithType: NativeStringBuilder.Length
+- uid: Perlang.Native.NativeStringBuilder.Length*
+  name: Length
+  href: api/Perlang.Native.NativeStringBuilder.html#Perlang_Native_NativeStringBuilder_Length_
+  commentId: Overload:Perlang.Native.NativeStringBuilder.Length
+  isSpec: "True"
+  fullName: Perlang.Native.NativeStringBuilder.Length
+  nameWithType: NativeStringBuilder.Length
+- uid: Perlang.Native.NativeStringBuilder.ToString
+  name: ToString()
+  href: api/Perlang.Native.NativeStringBuilder.html#Perlang_Native_NativeStringBuilder_ToString
+  commentId: M:Perlang.Native.NativeStringBuilder.ToString
+  fullName: Perlang.Native.NativeStringBuilder.ToString()
+  nameWithType: NativeStringBuilder.ToString()
+- uid: Perlang.Native.NativeStringBuilder.ToString*
+  name: ToString
+  href: api/Perlang.Native.NativeStringBuilder.html#Perlang_Native_NativeStringBuilder_ToString_
+  commentId: Overload:Perlang.Native.NativeStringBuilder.ToString
+  isSpec: "True"
+  fullName: Perlang.Native.NativeStringBuilder.ToString
+  nameWithType: NativeStringBuilder.ToString
 - uid: Perlang.NullObject
   name: NullObject
   href: api/Perlang.NullObject.html
