@@ -64,25 +64,38 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="contributing">Contributing</h1>
 
-<p>Perlang is at a very early state in its infancy, but do not let this scare you away from contributing anyway. Here are some suggestions:</p>
+<p>Perlang is at a quite early state in its childhood, and directly contributing code changes is
+perhaps challenging; it&#39;s unlikely to be obvious to outside contributors where the project is
+heading. For now, this is probably where you can be of most help:</p>
 <ul>
-<li><p>Proof-read this documentation web site. Find out obvious mistakes and submit fixes as GitLab merge requests. There is a convenient &quot;Improve this Doc&quot; link at the right-hand side of each page that simplifies the process of doing simple edits. (<em>Update</em>: This doesn&#39;t work since <a href="https://gitlab.perlang.org/perlang/perlang/-/issues/423">the move to GitLab</a>) For more extensive changes, making a proper fork &amp; pulling down the repo locally is probably more practical.</p>
-</li>
-<li><p>Download the Perlang source code and try to build it on your local machine. Run the unit tests, to see if they work correctly with your operating system/.NET SDK version. If you have ideas for new unit tests, feel free to submit an MR. Smaller things are fine to just hack up and then submit an MR about. For larger things, to avoid wasting both your and our time, make sure to file an issue (see below) first and get an indication from the team that this is indeed a test that we should have.</p>
-</li>
-<li><p><a href="https://gitlab.perlang.org/perlang/perlang/-/issues">File new issues</a> about things that you think Perlang should support. This is <strong>especially</strong> of interest if you have worked with other programming languages before, that were either lacking some important feature, or <em>included</em> a particular killer feature that you really think we should consider for inclusion in the Perlang code base as well. We make no promise to include your feature, but we <em>do</em> promise to at least listen to what you have to say.</p>
-</li>
+<li>Read existing issues, and give suggestions if you have thoughts on how particular things should be
+implemented/platforms that would be important to support/language features that you consider very
+useful, etc.</li>
 </ul>
+<p>You can of course also download the Perlang tooling to your machine and attempt to run it, but
+please be aware that since <a href="https://github.com/perlang-org/perlang/pull/446">the removal of the
+REPL</a>, &quot;toying around&quot; with the Perlang interpreter
+is much less obvious than what it used to be. Don&#39;t let this scare you away, though! It&#39;s just that
+we are working on reimplementing Perlang as a fully AOT-compiled language (including the REPL), so
+the intermediate result (version 0.5.0, 0.6.0 and current snapshots) might not be obviously useful
+to outsiders. At the moment, Perlang is mostly useful for developing the Perlang compiler.</p>
+<p>In the future, we hope to also provide a way to help fund the Perlang development financially. For
+those of you interested in this, it will provide a very direct way to contribute to and benefit the
+project. Stay tuned; we&#39;ll update this page whenever we are ready for this.</p>
 <h2 id="gitlab-repository-structure--perlang-resources">GitLab repository structure &amp; Perlang resources</h2>
 <ul>
-<li><a href="https://perlang.org">https://perlang.org</a> - the web site you are currently watching.</li>
-<li><a href="https://gitlab.perlang.org/perlang/perlang/-/tree/master/docs">https://gitlab.perlang.org/perlang/perlang/-/tree/master/docs</a> - the source code to this documentation.</li>
-<li><a href="https://gitlab.perlang.org/perlang/perlang">https://gitlab.perlang.org/perlang/perlang</a> - the source code for the Perlang interpreter, stdlib etc.<ul>
-<li><a href="https://repo.perlang.org">https://repo.perlang.org</a> - convenience shortlink to the GitLab repo</li>
+<li><a href="https://perlang.org">perlang.org</a> - the web site you are currently watching.</li>
+<li><a href="https://gitlab.perlang.org/perlang/perlang">gitlab.perlang.org/perlang/perlang</a> - the source code for the Perlang interpreter, stdlib etc.<ul>
+<li><a href="https://repo.perlang.org">repo.perlang.org</a> - convenience shortlink to the GitLab repo</li>
+<li><a href="https://issues.perlang.org">issues.perlang.org</a> - convenience shortlink to the list of open issues</li>
 </ul>
 </li>
-<li><a href="https://builds.perlang.org">https://builds.perlang.org</a> - automated builds, updated on each commit to the <code>master</code> branch</li>
+<li><a href="https://builds.perlang.org">builds.perlang.org</a> - automated builds, updated on each commit to the <code>master</code> branch (powered by Fastly CDN)</li>
 </ul>
+<p>There is also a <a href="https://github.com/perlang-org/perlang">GitHub mirror</a> of our repository which is
+instantly refreshed whenever new commits are being pushed to our GitLab instance. Feel free to clone
+the project from whichever host you prefer, but Merge Requests/change suggestions should be directed
+towards our GitLab instance for practical reasons.</p>
 </article>
           </div>
           
