@@ -81,6 +81,8 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
+      <h4><a class="xref" href="Perlang.ASCIIString.html">ASCIIString</a></h4>
+      <section></section>
       <h4><a class="xref" href="Perlang.CommonConstants.html">CommonConstants</a></h4>
       <section><p>Contains common constants shared between multiple assemblies.</p>
 <p>This mechanism serves two purposes:</p>
@@ -124,6 +126,8 @@ awkward to bump version numbers).</li>
       <section><p>Represents unary prefix expressions. Examples of such expressions are <code>!flag</code> and <code>-10</code>. Note that prefix
 increment and decrement are currently not supported.</p>
 </section>
+      <h4><a class="xref" href="Perlang.IntArray.html">IntArray</a></h4>
+      <section></section>
       <h4><a class="xref" href="Perlang.NullObject.html">NullObject</a></h4>
       <section><p>&quot;Null-object&quot;. This object is used in cases where we need a Type that corresponds to null values. Since
 typeof(null) is invalid, we need a fake construct we can use instead.</p>
@@ -131,6 +135,8 @@ typeof(null) is invalid, we need a fake construct we can use instead.</p>
       <h4><a class="xref" href="Perlang.NumericToken.html">NumericToken</a></h4>
       <section></section>
       <h4><a class="xref" href="Perlang.Parameter.html">Parameter</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.perlang_stdlib.html">perlang_stdlib</a></h4>
       <section></section>
       <h4><a class="xref" href="Perlang.PerlangClass.html">PerlangClass</a></h4>
       <section></section>
@@ -163,12 +169,16 @@ typeof(null) is invalid, we need a fake construct we can use instead.</p>
       <section></section>
       <h4><a class="xref" href="Perlang.Stmt.While.html">Stmt.While</a></h4>
       <section></section>
+      <h4><a class="xref" href="Perlang.StringArray.html">StringArray</a></h4>
+      <section></section>
       <h4><a class="xref" href="Perlang.Token.html">Token</a></h4>
       <section></section>
       <h4><a class="xref" href="Perlang.TypeReference.html">TypeReference</a></h4>
       <section><p>A type reference is a (potentially unresolved) reference to a Perlang type.</p>
 <p>The object is mutable.</p>
 </section>
+      <h4><a class="xref" href="Perlang.UTF8String.html">UTF8String</a></h4>
+      <section></section>
       <h4><a class="xref" href="Perlang.VisitorBase.html">VisitorBase</a></h4>
       <section><p>Abstract base class for expression visitors.</p>
 <p>All the methods implemented in this class are no-op, but they do their best to try and make the whole tree
@@ -185,6 +195,18 @@ a couple of type-parameterized interfaces. However, for other use cases the retu
 VoidObject is an answer to this question. Given that it is abstract, it can never be instantiated. A visitor
 using this type as type parameter is expected to return &quot;VoidObject.Void&quot; from all its methods.</p>
 </section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="Perlang.ASCIIString.__Internal.html">ASCIIString.__Internal</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.IntArray.__Internal.html">IntArray.__Internal</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.perlang_stdlib.__Internal.html">perlang_stdlib.__Internal</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.StringArray.__Internal.html">StringArray.__Internal</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Perlang.UTF8String.__Internal.html">UTF8String.__Internal</a></h4>
+      <section></section>
     <h3 id="interfaces">Interfaces
   </h3>
       <h4><a class="xref" href="Perlang.Expr.IVisitor-1.html">Expr.IVisitor&lt;TR&gt;</a></h4>
