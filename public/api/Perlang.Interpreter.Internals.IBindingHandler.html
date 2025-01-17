@@ -79,11 +79,17 @@
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Perlang.Interpreter.Internals.IBindingRetriever.html#Perlang_Interpreter_Internals_IBindingRetriever_GetVariableOrFunctionBinding_Perlang_Expr_">IBindingRetriever.GetVariableOrFunctionBinding(Expr)</a>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Perlang.Interpreter.Internals.html">Perlang.Interpreter.Internals</a></h6>
   <h6><strong>Assembly</strong>: Perlang.Interpreter.dll</h6>
   <h5 id="Perlang_Interpreter_Internals_IBindingHandler_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IBindingHandler</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IBindingHandler : IBindingRetriever</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -92,7 +98,7 @@
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Internals_IBindingHandler_AddGlobalExpr_Perlang_Interpreter_NameResolution_Binding_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Internals.IBindingHandler.AddGlobalExpr(Perlang.Interpreter.NameResolution.Binding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/351749675479293d513b740dfa149dd398dd848b/src/Perlang.Interpreter/Internals/IBindingHandler.cs/#L15">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/a2535c0ab1beb6930c3aa32dcb6a8c3155b4d144/src/Perlang.Interpreter/Internals/IBindingHandler.cs/#L13">View Source</a>
   </span>
   <a id="Perlang_Interpreter_Internals_IBindingHandler_AddGlobalExpr_" data-uid="Perlang.Interpreter.Internals.IBindingHandler.AddGlobalExpr*"></a>
   <h4 id="Perlang_Interpreter_Internals_IBindingHandler_AddGlobalExpr_Perlang_Interpreter_NameResolution_Binding_" data-uid="Perlang.Interpreter.Internals.IBindingHandler.AddGlobalExpr(Perlang.Interpreter.NameResolution.Binding)">AddGlobalExpr(Binding)</h4>
@@ -126,7 +132,7 @@
     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Internals_IBindingHandler_AddLocalExpr_Perlang_Interpreter_NameResolution_Binding_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Internals.IBindingHandler.AddLocalExpr(Perlang.Interpreter.NameResolution.Binding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/351749675479293d513b740dfa149dd398dd848b/src/Perlang.Interpreter/Internals/IBindingHandler.cs/#L23">View Source</a>
+    <a href="https://github.com/perlang-org/perlang/blob/a2535c0ab1beb6930c3aa32dcb6a8c3155b4d144/src/Perlang.Interpreter/Internals/IBindingHandler.cs/#L21">View Source</a>
   </span>
   <a id="Perlang_Interpreter_Internals_IBindingHandler_AddLocalExpr_" data-uid="Perlang.Interpreter.Internals.IBindingHandler.AddLocalExpr*"></a>
   <h4 id="Perlang_Interpreter_Internals_IBindingHandler_AddLocalExpr_Perlang_Interpreter_NameResolution_Binding_" data-uid="Perlang.Interpreter.Internals.IBindingHandler.AddLocalExpr(Perlang.Interpreter.NameResolution.Binding)">AddLocalExpr(Binding)</h4>
@@ -157,53 +163,6 @@ bindings.</p>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Internals_IBindingHandler_GetVariableOrFunctionBinding_Perlang_Expr_.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Internals.IBindingHandler.GetVariableOrFunctionBinding(Perlang.Expr)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/perlang-org/perlang/blob/351749675479293d513b740dfa149dd398dd848b/src/Perlang.Interpreter/Internals/IBindingHandler.cs/#L9">View Source</a>
-  </span>
-  <a id="Perlang_Interpreter_Internals_IBindingHandler_GetVariableOrFunctionBinding_" data-uid="Perlang.Interpreter.Internals.IBindingHandler.GetVariableOrFunctionBinding*"></a>
-  <h4 id="Perlang_Interpreter_Internals_IBindingHandler_GetVariableOrFunctionBinding_Perlang_Expr_" data-uid="Perlang.Interpreter.Internals.IBindingHandler.GetVariableOrFunctionBinding(Perlang.Expr)">GetVariableOrFunctionBinding(Expr)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Binding GetVariableOrFunctionBinding(Expr expr)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Perlang.Expr.html">Expr</a></td>
-        <td><span class="parametername">expr</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Perlang.Interpreter.NameResolution.Binding.html">Binding</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           
@@ -215,7 +174,7 @@ bindings.</p>
                     <a href="https://github.com/perlang-org/perlang/new/master/apiSpec/new?filename=Perlang_Interpreter_Internals_IBindingHandler.md&amp;value=---%0Auid%3A%20Perlang.Interpreter.Internals.IBindingHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/351749675479293d513b740dfa149dd398dd848b/src/Perlang.Interpreter/Internals/IBindingHandler.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/perlang-org/perlang/blob/a2535c0ab1beb6930c3aa32dcb6a8c3155b4d144/src/Perlang.Interpreter/Internals/IBindingHandler.cs/#L7" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

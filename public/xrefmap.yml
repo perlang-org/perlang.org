@@ -2636,19 +2636,25 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Internals.IBindingHandler.AddLocalExpr
   nameWithType: IBindingHandler.AddLocalExpr
-- uid: Perlang.Interpreter.Internals.IBindingHandler.GetVariableOrFunctionBinding(Perlang.Expr)
+- uid: Perlang.Interpreter.Internals.IBindingRetriever
+  name: IBindingRetriever
+  href: api/Perlang.Interpreter.Internals.IBindingRetriever.html
+  commentId: T:Perlang.Interpreter.Internals.IBindingRetriever
+  fullName: Perlang.Interpreter.Internals.IBindingRetriever
+  nameWithType: IBindingRetriever
+- uid: Perlang.Interpreter.Internals.IBindingRetriever.GetVariableOrFunctionBinding(Perlang.Expr)
   name: GetVariableOrFunctionBinding(Expr)
-  href: api/Perlang.Interpreter.Internals.IBindingHandler.html#Perlang_Interpreter_Internals_IBindingHandler_GetVariableOrFunctionBinding_Perlang_Expr_
-  commentId: M:Perlang.Interpreter.Internals.IBindingHandler.GetVariableOrFunctionBinding(Perlang.Expr)
-  fullName: Perlang.Interpreter.Internals.IBindingHandler.GetVariableOrFunctionBinding(Perlang.Expr)
-  nameWithType: IBindingHandler.GetVariableOrFunctionBinding(Expr)
-- uid: Perlang.Interpreter.Internals.IBindingHandler.GetVariableOrFunctionBinding*
+  href: api/Perlang.Interpreter.Internals.IBindingRetriever.html#Perlang_Interpreter_Internals_IBindingRetriever_GetVariableOrFunctionBinding_Perlang_Expr_
+  commentId: M:Perlang.Interpreter.Internals.IBindingRetriever.GetVariableOrFunctionBinding(Perlang.Expr)
+  fullName: Perlang.Interpreter.Internals.IBindingRetriever.GetVariableOrFunctionBinding(Perlang.Expr)
+  nameWithType: IBindingRetriever.GetVariableOrFunctionBinding(Expr)
+- uid: Perlang.Interpreter.Internals.IBindingRetriever.GetVariableOrFunctionBinding*
   name: GetVariableOrFunctionBinding
-  href: api/Perlang.Interpreter.Internals.IBindingHandler.html#Perlang_Interpreter_Internals_IBindingHandler_GetVariableOrFunctionBinding_
-  commentId: Overload:Perlang.Interpreter.Internals.IBindingHandler.GetVariableOrFunctionBinding
+  href: api/Perlang.Interpreter.Internals.IBindingRetriever.html#Perlang_Interpreter_Internals_IBindingRetriever_GetVariableOrFunctionBinding_
+  commentId: Overload:Perlang.Interpreter.Internals.IBindingRetriever.GetVariableOrFunctionBinding
   isSpec: "True"
-  fullName: Perlang.Interpreter.Internals.IBindingHandler.GetVariableOrFunctionBinding
-  nameWithType: IBindingHandler.GetVariableOrFunctionBinding
+  fullName: Perlang.Interpreter.Internals.IBindingRetriever.GetVariableOrFunctionBinding
+  nameWithType: IBindingRetriever.GetVariableOrFunctionBinding
 - uid: Perlang.Interpreter.NameResolution
   name: Perlang.Interpreter.NameResolution
   href: api/Perlang.Interpreter.NameResolution.html
