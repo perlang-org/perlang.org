@@ -1007,19 +1007,19 @@ references:
   fullName.vb: Perlang.Expr.Get.Accept(Of TR)(Perlang.Expr.IVisitor(Of TR))
   nameWithType: Expr.Get.Accept<TR>(Expr.IVisitor<TR>)
   nameWithType.vb: Expr.Get.Accept(Of TR)(Expr.IVisitor(Of TR))
-- uid: Perlang.Expr.Get.Methods
-  name: Methods
-  href: api/Perlang.Expr.Get.html#Perlang_Expr_Get_Methods
-  commentId: P:Perlang.Expr.Get.Methods
-  fullName: Perlang.Expr.Get.Methods
-  nameWithType: Expr.Get.Methods
-- uid: Perlang.Expr.Get.Methods*
-  name: Methods
-  href: api/Perlang.Expr.Get.html#Perlang_Expr_Get_Methods_
-  commentId: Overload:Perlang.Expr.Get.Methods
+- uid: Perlang.Expr.Get.ClrMethods
+  name: ClrMethods
+  href: api/Perlang.Expr.Get.html#Perlang_Expr_Get_ClrMethods
+  commentId: P:Perlang.Expr.Get.ClrMethods
+  fullName: Perlang.Expr.Get.ClrMethods
+  nameWithType: Expr.Get.ClrMethods
+- uid: Perlang.Expr.Get.ClrMethods*
+  name: ClrMethods
+  href: api/Perlang.Expr.Get.html#Perlang_Expr_Get_ClrMethods_
+  commentId: Overload:Perlang.Expr.Get.ClrMethods
   isSpec: "True"
-  fullName: Perlang.Expr.Get.Methods
-  nameWithType: Expr.Get.Methods
+  fullName: Perlang.Expr.Get.ClrMethods
+  nameWithType: Expr.Get.ClrMethods
 - uid: Perlang.Expr.Get.Name
   name: Name
   href: api/Perlang.Expr.Get.html#Perlang_Expr_Get_Name
@@ -1046,6 +1046,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Expr.Get.Object
   nameWithType: Expr.Get.Object
+- uid: Perlang.Expr.Get.PerlangMethods
+  name: PerlangMethods
+  href: api/Perlang.Expr.Get.html#Perlang_Expr_Get_PerlangMethods
+  commentId: P:Perlang.Expr.Get.PerlangMethods
+  fullName: Perlang.Expr.Get.PerlangMethods
+  nameWithType: Expr.Get.PerlangMethods
+- uid: Perlang.Expr.Get.PerlangMethods*
+  name: PerlangMethods
+  href: api/Perlang.Expr.Get.html#Perlang_Expr_Get_PerlangMethods_
+  commentId: Overload:Perlang.Expr.Get.PerlangMethods
+  isSpec: "True"
+  fullName: Perlang.Expr.Get.PerlangMethods
+  nameWithType: Expr.Get.PerlangMethods
 - uid: Perlang.Expr.Get.Token
   name: Token
   href: api/Perlang.Expr.Get.html#Perlang_Expr_Get_Token
@@ -1490,6 +1503,40 @@ references:
   fullName.vb: Perlang.Expr.IVisitor(Of TR).VisitLogicalExpr
   nameWithType: Expr.IVisitor<TR>.VisitLogicalExpr
   nameWithType.vb: Expr.IVisitor(Of TR).VisitLogicalExpr
+- uid: Perlang.Expr.IVisitor`1.VisitNewExpression(Perlang.Expr.NewExpression)
+  name: VisitNewExpression(Expr.NewExpression)
+  href: api/Perlang.Expr.IVisitor-1.html#Perlang_Expr_IVisitor_1_VisitNewExpression_Perlang_Expr_NewExpression_
+  commentId: M:Perlang.Expr.IVisitor`1.VisitNewExpression(Perlang.Expr.NewExpression)
+  fullName: Perlang.Expr.IVisitor<TR>.VisitNewExpression(Perlang.Expr.NewExpression)
+  fullName.vb: Perlang.Expr.IVisitor(Of TR).VisitNewExpression(Perlang.Expr.NewExpression)
+  nameWithType: Expr.IVisitor<TR>.VisitNewExpression(Expr.NewExpression)
+  nameWithType.vb: Expr.IVisitor(Of TR).VisitNewExpression(Expr.NewExpression)
+- uid: Perlang.Expr.IVisitor`1.VisitNewExpression*
+  name: VisitNewExpression
+  href: api/Perlang.Expr.IVisitor-1.html#Perlang_Expr_IVisitor_1_VisitNewExpression_
+  commentId: Overload:Perlang.Expr.IVisitor`1.VisitNewExpression
+  isSpec: "True"
+  fullName: Perlang.Expr.IVisitor<TR>.VisitNewExpression
+  fullName.vb: Perlang.Expr.IVisitor(Of TR).VisitNewExpression
+  nameWithType: Expr.IVisitor<TR>.VisitNewExpression
+  nameWithType.vb: Expr.IVisitor(Of TR).VisitNewExpression
+- uid: Perlang.Expr.IVisitor`1.VisitThisExpr(Perlang.Expr.This)
+  name: VisitThisExpr(Expr.This)
+  href: api/Perlang.Expr.IVisitor-1.html#Perlang_Expr_IVisitor_1_VisitThisExpr_Perlang_Expr_This_
+  commentId: M:Perlang.Expr.IVisitor`1.VisitThisExpr(Perlang.Expr.This)
+  fullName: Perlang.Expr.IVisitor<TR>.VisitThisExpr(Perlang.Expr.This)
+  fullName.vb: Perlang.Expr.IVisitor(Of TR).VisitThisExpr(Perlang.Expr.This)
+  nameWithType: Expr.IVisitor<TR>.VisitThisExpr(Expr.This)
+  nameWithType.vb: Expr.IVisitor(Of TR).VisitThisExpr(Expr.This)
+- uid: Perlang.Expr.IVisitor`1.VisitThisExpr*
+  name: VisitThisExpr
+  href: api/Perlang.Expr.IVisitor-1.html#Perlang_Expr_IVisitor_1_VisitThisExpr_
+  commentId: Overload:Perlang.Expr.IVisitor`1.VisitThisExpr
+  isSpec: "True"
+  fullName: Perlang.Expr.IVisitor<TR>.VisitThisExpr
+  fullName.vb: Perlang.Expr.IVisitor(Of TR).VisitThisExpr
+  nameWithType: Expr.IVisitor<TR>.VisitThisExpr
+  nameWithType.vb: Expr.IVisitor(Of TR).VisitThisExpr
 - uid: Perlang.Expr.IVisitor`1.VisitUnaryPostfixExpr(Perlang.Expr.UnaryPostfix)
   name: VisitUnaryPostfixExpr(Expr.UnaryPostfix)
   href: api/Perlang.Expr.IVisitor-1.html#Perlang_Expr_IVisitor_1_VisitUnaryPostfixExpr_Perlang_Expr_UnaryPostfix_
@@ -1675,6 +1722,157 @@ references:
   isSpec: "True"
   fullName: Perlang.Expr.Logical.Token
   nameWithType: Expr.Logical.Token
+- uid: Perlang.Expr.NewExpression
+  name: Expr.NewExpression
+  href: api/Perlang.Expr.NewExpression.html
+  commentId: T:Perlang.Expr.NewExpression
+  fullName: Perlang.Expr.NewExpression
+  nameWithType: Expr.NewExpression
+- uid: Perlang.Expr.NewExpression.#ctor(Perlang.Token,List{Perlang.Expr})
+  name: NewExpression(Token, List<Expr>)
+  href: api/Perlang.Expr.NewExpression.html#Perlang_Expr_NewExpression__ctor_Perlang_Token_List_Perlang_Expr__
+  commentId: M:Perlang.Expr.NewExpression.#ctor(Perlang.Token,List{Perlang.Expr})
+  name.vb: NewExpression(Token, List(Of Expr))
+  fullName: Perlang.Expr.NewExpression.NewExpression(Perlang.Token, List<Perlang.Expr>)
+  fullName.vb: Perlang.Expr.NewExpression.NewExpression(Perlang.Token, List(Of Perlang.Expr))
+  nameWithType: Expr.NewExpression.NewExpression(Token, List<Expr>)
+  nameWithType.vb: Expr.NewExpression.NewExpression(Token, List(Of Expr))
+- uid: Perlang.Expr.NewExpression.#ctor*
+  name: NewExpression
+  href: api/Perlang.Expr.NewExpression.html#Perlang_Expr_NewExpression__ctor_
+  commentId: Overload:Perlang.Expr.NewExpression.#ctor
+  isSpec: "True"
+  fullName: Perlang.Expr.NewExpression.NewExpression
+  nameWithType: Expr.NewExpression.NewExpression
+- uid: Perlang.Expr.NewExpression.Accept*
+  name: Accept
+  href: api/Perlang.Expr.NewExpression.html#Perlang_Expr_NewExpression_Accept_
+  commentId: Overload:Perlang.Expr.NewExpression.Accept
+  isSpec: "True"
+  fullName: Perlang.Expr.NewExpression.Accept
+  nameWithType: Expr.NewExpression.Accept
+- uid: Perlang.Expr.NewExpression.Accept``1(Perlang.Expr.IVisitor{``0})
+  name: Accept<TR>(Expr.IVisitor<TR>)
+  href: api/Perlang.Expr.NewExpression.html#Perlang_Expr_NewExpression_Accept__1_Perlang_Expr_IVisitor___0__
+  commentId: M:Perlang.Expr.NewExpression.Accept``1(Perlang.Expr.IVisitor{``0})
+  name.vb: Accept(Of TR)(Expr.IVisitor(Of TR))
+  fullName: Perlang.Expr.NewExpression.Accept<TR>(Perlang.Expr.IVisitor<TR>)
+  fullName.vb: Perlang.Expr.NewExpression.Accept(Of TR)(Perlang.Expr.IVisitor(Of TR))
+  nameWithType: Expr.NewExpression.Accept<TR>(Expr.IVisitor<TR>)
+  nameWithType.vb: Expr.NewExpression.Accept(Of TR)(Expr.IVisitor(Of TR))
+- uid: Perlang.Expr.NewExpression.Parameters
+  name: Parameters
+  href: api/Perlang.Expr.NewExpression.html#Perlang_Expr_NewExpression_Parameters
+  commentId: P:Perlang.Expr.NewExpression.Parameters
+  fullName: Perlang.Expr.NewExpression.Parameters
+  nameWithType: Expr.NewExpression.Parameters
+- uid: Perlang.Expr.NewExpression.Parameters*
+  name: Parameters
+  href: api/Perlang.Expr.NewExpression.html#Perlang_Expr_NewExpression_Parameters_
+  commentId: Overload:Perlang.Expr.NewExpression.Parameters
+  isSpec: "True"
+  fullName: Perlang.Expr.NewExpression.Parameters
+  nameWithType: Expr.NewExpression.Parameters
+- uid: Perlang.Expr.NewExpression.Token
+  name: Token
+  href: api/Perlang.Expr.NewExpression.html#Perlang_Expr_NewExpression_Token
+  commentId: P:Perlang.Expr.NewExpression.Token
+  fullName: Perlang.Expr.NewExpression.Token
+  nameWithType: Expr.NewExpression.Token
+- uid: Perlang.Expr.NewExpression.Token*
+  name: Token
+  href: api/Perlang.Expr.NewExpression.html#Perlang_Expr_NewExpression_Token_
+  commentId: Overload:Perlang.Expr.NewExpression.Token
+  isSpec: "True"
+  fullName: Perlang.Expr.NewExpression.Token
+  nameWithType: Expr.NewExpression.Token
+- uid: Perlang.Expr.NewExpression.ToString
+  name: ToString()
+  href: api/Perlang.Expr.NewExpression.html#Perlang_Expr_NewExpression_ToString
+  commentId: M:Perlang.Expr.NewExpression.ToString
+  fullName: Perlang.Expr.NewExpression.ToString()
+  nameWithType: Expr.NewExpression.ToString()
+- uid: Perlang.Expr.NewExpression.ToString*
+  name: ToString
+  href: api/Perlang.Expr.NewExpression.html#Perlang_Expr_NewExpression_ToString_
+  commentId: Overload:Perlang.Expr.NewExpression.ToString
+  isSpec: "True"
+  fullName: Perlang.Expr.NewExpression.ToString
+  nameWithType: Expr.NewExpression.ToString
+- uid: Perlang.Expr.NewExpression.TypeName
+  name: TypeName
+  href: api/Perlang.Expr.NewExpression.html#Perlang_Expr_NewExpression_TypeName
+  commentId: P:Perlang.Expr.NewExpression.TypeName
+  fullName: Perlang.Expr.NewExpression.TypeName
+  nameWithType: Expr.NewExpression.TypeName
+- uid: Perlang.Expr.NewExpression.TypeName*
+  name: TypeName
+  href: api/Perlang.Expr.NewExpression.html#Perlang_Expr_NewExpression_TypeName_
+  commentId: Overload:Perlang.Expr.NewExpression.TypeName
+  isSpec: "True"
+  fullName: Perlang.Expr.NewExpression.TypeName
+  nameWithType: Expr.NewExpression.TypeName
+- uid: Perlang.Expr.This
+  name: Expr.This
+  href: api/Perlang.Expr.This.html
+  commentId: T:Perlang.Expr.This
+  fullName: Perlang.Expr.This
+  nameWithType: Expr.This
+- uid: Perlang.Expr.This.#ctor(Perlang.Token)
+  name: This(Token)
+  href: api/Perlang.Expr.This.html#Perlang_Expr_This__ctor_Perlang_Token_
+  commentId: M:Perlang.Expr.This.#ctor(Perlang.Token)
+  fullName: Perlang.Expr.This.This(Perlang.Token)
+  nameWithType: Expr.This.This(Token)
+- uid: Perlang.Expr.This.#ctor*
+  name: This
+  href: api/Perlang.Expr.This.html#Perlang_Expr_This__ctor_
+  commentId: Overload:Perlang.Expr.This.#ctor
+  isSpec: "True"
+  fullName: Perlang.Expr.This.This
+  nameWithType: Expr.This.This
+- uid: Perlang.Expr.This.Accept*
+  name: Accept
+  href: api/Perlang.Expr.This.html#Perlang_Expr_This_Accept_
+  commentId: Overload:Perlang.Expr.This.Accept
+  isSpec: "True"
+  fullName: Perlang.Expr.This.Accept
+  nameWithType: Expr.This.Accept
+- uid: Perlang.Expr.This.Accept``1(Perlang.Expr.IVisitor{``0})
+  name: Accept<TR>(Expr.IVisitor<TR>)
+  href: api/Perlang.Expr.This.html#Perlang_Expr_This_Accept__1_Perlang_Expr_IVisitor___0__
+  commentId: M:Perlang.Expr.This.Accept``1(Perlang.Expr.IVisitor{``0})
+  name.vb: Accept(Of TR)(Expr.IVisitor(Of TR))
+  fullName: Perlang.Expr.This.Accept<TR>(Perlang.Expr.IVisitor<TR>)
+  fullName.vb: Perlang.Expr.This.Accept(Of TR)(Perlang.Expr.IVisitor(Of TR))
+  nameWithType: Expr.This.Accept<TR>(Expr.IVisitor<TR>)
+  nameWithType.vb: Expr.This.Accept(Of TR)(Expr.IVisitor(Of TR))
+- uid: Perlang.Expr.This.Keyword
+  name: Keyword
+  href: api/Perlang.Expr.This.html#Perlang_Expr_This_Keyword
+  commentId: P:Perlang.Expr.This.Keyword
+  fullName: Perlang.Expr.This.Keyword
+  nameWithType: Expr.This.Keyword
+- uid: Perlang.Expr.This.Keyword*
+  name: Keyword
+  href: api/Perlang.Expr.This.html#Perlang_Expr_This_Keyword_
+  commentId: Overload:Perlang.Expr.This.Keyword
+  isSpec: "True"
+  fullName: Perlang.Expr.This.Keyword
+  nameWithType: Expr.This.Keyword
+- uid: Perlang.Expr.This.Token
+  name: Token
+  href: api/Perlang.Expr.This.html#Perlang_Expr_This_Token
+  commentId: P:Perlang.Expr.This.Token
+  fullName: Perlang.Expr.This.Token
+  nameWithType: Expr.This.Token
+- uid: Perlang.Expr.This.Token*
+  name: Token
+  href: api/Perlang.Expr.This.html#Perlang_Expr_This_Token_
+  commentId: Overload:Perlang.Expr.This.Token
+  isSpec: "True"
+  fullName: Perlang.Expr.This.Token
+  nameWithType: Expr.This.Token
 - uid: Perlang.Expr.TypeReference
   name: TypeReference
   href: api/Perlang.Expr.html#Perlang_Expr_TypeReference
@@ -2464,6 +2662,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Compiler.PerlangCompiler.VisitLogicalExpr
   nameWithType: PerlangCompiler.VisitLogicalExpr
+- uid: Perlang.Interpreter.Compiler.PerlangCompiler.VisitNewExpression(Perlang.Expr.NewExpression)
+  name: VisitNewExpression(Expr.NewExpression)
+  href: api/Perlang.Interpreter.Compiler.PerlangCompiler.html#Perlang_Interpreter_Compiler_PerlangCompiler_VisitNewExpression_Perlang_Expr_NewExpression_
+  commentId: M:Perlang.Interpreter.Compiler.PerlangCompiler.VisitNewExpression(Perlang.Expr.NewExpression)
+  fullName: Perlang.Interpreter.Compiler.PerlangCompiler.VisitNewExpression(Perlang.Expr.NewExpression)
+  nameWithType: PerlangCompiler.VisitNewExpression(Expr.NewExpression)
+- uid: Perlang.Interpreter.Compiler.PerlangCompiler.VisitNewExpression*
+  name: VisitNewExpression
+  href: api/Perlang.Interpreter.Compiler.PerlangCompiler.html#Perlang_Interpreter_Compiler_PerlangCompiler_VisitNewExpression_
+  commentId: Overload:Perlang.Interpreter.Compiler.PerlangCompiler.VisitNewExpression
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Compiler.PerlangCompiler.VisitNewExpression
+  nameWithType: PerlangCompiler.VisitNewExpression
 - uid: Perlang.Interpreter.Compiler.PerlangCompiler.VisitPrintStmt(Perlang.Stmt.Print)
   name: VisitPrintStmt(Stmt.Print)
   href: api/Perlang.Interpreter.Compiler.PerlangCompiler.html#Perlang_Interpreter_Compiler_PerlangCompiler_VisitPrintStmt_Perlang_Stmt_Print_
@@ -2490,6 +2701,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Compiler.PerlangCompiler.VisitReturnStmt
   nameWithType: PerlangCompiler.VisitReturnStmt
+- uid: Perlang.Interpreter.Compiler.PerlangCompiler.VisitThisExpr(Perlang.Expr.This)
+  name: VisitThisExpr(Expr.This)
+  href: api/Perlang.Interpreter.Compiler.PerlangCompiler.html#Perlang_Interpreter_Compiler_PerlangCompiler_VisitThisExpr_Perlang_Expr_This_
+  commentId: M:Perlang.Interpreter.Compiler.PerlangCompiler.VisitThisExpr(Perlang.Expr.This)
+  fullName: Perlang.Interpreter.Compiler.PerlangCompiler.VisitThisExpr(Perlang.Expr.This)
+  nameWithType: PerlangCompiler.VisitThisExpr(Expr.This)
+- uid: Perlang.Interpreter.Compiler.PerlangCompiler.VisitThisExpr*
+  name: VisitThisExpr
+  href: api/Perlang.Interpreter.Compiler.PerlangCompiler.html#Perlang_Interpreter_Compiler_PerlangCompiler_VisitThisExpr_
+  commentId: Overload:Perlang.Interpreter.Compiler.PerlangCompiler.VisitThisExpr
+  isSpec: "True"
+  fullName: Perlang.Interpreter.Compiler.PerlangCompiler.VisitThisExpr
+  nameWithType: PerlangCompiler.VisitThisExpr
 - uid: Perlang.Interpreter.Compiler.PerlangCompiler.VisitUnaryPostfixExpr(Perlang.Expr.UnaryPostfix)
   name: VisitUnaryPostfixExpr(Expr.UnaryPostfix)
   href: api/Perlang.Interpreter.Compiler.PerlangCompiler.html#Perlang_Interpreter_Compiler_PerlangCompiler_VisitUnaryPostfixExpr_Perlang_Expr_UnaryPostfix_
@@ -2655,6 +2879,12 @@ references:
   isSpec: "True"
   fullName: Perlang.Interpreter.Internals.IBindingRetriever.GetVariableOrFunctionBinding
   nameWithType: IBindingRetriever.GetVariableOrFunctionBinding
+- uid: Perlang.Interpreter.Internals.IPerlangTypeRetriever
+  name: IPerlangTypeRetriever
+  href: api/Perlang.Interpreter.Internals.IPerlangTypeRetriever.html
+  commentId: T:Perlang.Interpreter.Internals.IPerlangTypeRetriever
+  fullName: Perlang.Interpreter.Internals.IPerlangTypeRetriever
+  nameWithType: IPerlangTypeRetriever
 - uid: Perlang.Interpreter.NameResolution
   name: Perlang.Interpreter.NameResolution
   href: api/Perlang.Interpreter.NameResolution.html
@@ -3096,6 +3326,12 @@ references:
   commentId: T:Perlang.IPerlangFunction
   fullName: Perlang.IPerlangFunction
   nameWithType: IPerlangFunction
+- uid: Perlang.IPerlangType
+  name: IPerlangType
+  href: api/Perlang.IPerlangType.html
+  commentId: T:Perlang.IPerlangType
+  fullName: Perlang.IPerlangType
+  nameWithType: IPerlangType
 - uid: Perlang.ITokenAware
   name: ITokenAware
   href: api/Perlang.ITokenAware.html
@@ -3148,11 +3384,11 @@ references:
   fullName: Perlang.ITypeReference.CppType
   nameWithType: ITypeReference.CppType
 - uid: Perlang.ITypeReference.CppTypeCast
-  name: CppTypeCast
+  name: CppTypeCast()
   href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_CppTypeCast
-  commentId: P:Perlang.ITypeReference.CppTypeCast
-  fullName: Perlang.ITypeReference.CppTypeCast
-  nameWithType: ITypeReference.CppTypeCast
+  commentId: M:Perlang.ITypeReference.CppTypeCast
+  fullName: Perlang.ITypeReference.CppTypeCast()
+  nameWithType: ITypeReference.CppTypeCast()
 - uid: Perlang.ITypeReference.CppTypeCast*
   name: CppTypeCast
   href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_CppTypeCast_
@@ -3251,6 +3487,19 @@ references:
   isSpec: "True"
   fullName: Perlang.ITypeReference.IsValidNumberType
   nameWithType: ITypeReference.IsValidNumberType
+- uid: Perlang.ITypeReference.PerlangClass
+  name: PerlangClass
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_PerlangClass
+  commentId: P:Perlang.ITypeReference.PerlangClass
+  fullName: Perlang.ITypeReference.PerlangClass
+  nameWithType: ITypeReference.PerlangClass
+- uid: Perlang.ITypeReference.PerlangClass*
+  name: PerlangClass
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_PerlangClass_
+  commentId: Overload:Perlang.ITypeReference.PerlangClass
+  isSpec: "True"
+  fullName: Perlang.ITypeReference.PerlangClass
+  nameWithType: ITypeReference.PerlangClass
 - uid: Perlang.ITypeReference.PossiblyWrappedCppType
   name: PossiblyWrappedCppType
   href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_PossiblyWrappedCppType
@@ -3280,6 +3529,35 @@ references:
   isSpec: "True"
   fullName: Perlang.ITypeReference.SetClrType
   nameWithType: ITypeReference.SetClrType
+- uid: Perlang.ITypeReference.SetCppType(System.Nullable{CppType})
+  name: SetCppType(Nullable<CppType>)
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_SetCppType_System_Nullable_CppType__
+  commentId: M:Perlang.ITypeReference.SetCppType(System.Nullable{CppType})
+  name.vb: SetCppType(Nullable(Of CppType))
+  fullName: Perlang.ITypeReference.SetCppType(System.Nullable<CppType>)
+  fullName.vb: Perlang.ITypeReference.SetCppType(System.Nullable(Of CppType))
+  nameWithType: ITypeReference.SetCppType(Nullable<CppType>)
+  nameWithType.vb: ITypeReference.SetCppType(Nullable(Of CppType))
+- uid: Perlang.ITypeReference.SetCppType*
+  name: SetCppType
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_SetCppType_
+  commentId: Overload:Perlang.ITypeReference.SetCppType
+  isSpec: "True"
+  fullName: Perlang.ITypeReference.SetCppType
+  nameWithType: ITypeReference.SetCppType
+- uid: Perlang.ITypeReference.SetPerlangClass(Perlang.PerlangClass)
+  name: SetPerlangClass(PerlangClass)
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_SetPerlangClass_Perlang_PerlangClass_
+  commentId: M:Perlang.ITypeReference.SetPerlangClass(Perlang.PerlangClass)
+  fullName: Perlang.ITypeReference.SetPerlangClass(Perlang.PerlangClass)
+  nameWithType: ITypeReference.SetPerlangClass(PerlangClass)
+- uid: Perlang.ITypeReference.SetPerlangClass*
+  name: SetPerlangClass
+  href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_SetPerlangClass_
+  commentId: Overload:Perlang.ITypeReference.SetPerlangClass
+  isSpec: "True"
+  fullName: Perlang.ITypeReference.SetPerlangClass
+  nameWithType: ITypeReference.SetPerlangClass
 - uid: Perlang.ITypeReference.TypeSpecifier
   name: TypeSpecifier
   href: api/Perlang.ITypeReference.html#Perlang_ITypeReference_TypeSpecifier
@@ -5090,15 +5368,15 @@ references:
   commentId: T:Perlang.Stmt.Class
   fullName: Perlang.Stmt.Class
   nameWithType: Stmt.Class
-- uid: Perlang.Stmt.Class.#ctor(Perlang.Token,List{Perlang.Stmt.Function})
-  name: Class(Token, List<Stmt.Function>)
-  href: api/Perlang.Stmt.Class.html#Perlang_Stmt_Class__ctor_Perlang_Token_List_Perlang_Stmt_Function__
-  commentId: M:Perlang.Stmt.Class.#ctor(Perlang.Token,List{Perlang.Stmt.Function})
-  name.vb: Class(Token, List(Of Stmt.Function))
-  fullName: Perlang.Stmt.Class.Class(Perlang.Token, List<Perlang.Stmt.Function>)
-  fullName.vb: Perlang.Stmt.Class.Class(Perlang.Token, List(Of Perlang.Stmt.Function))
-  nameWithType: Stmt.Class.Class(Token, List<Stmt.Function>)
-  nameWithType.vb: Stmt.Class.Class(Token, List(Of Stmt.Function))
+- uid: Perlang.Stmt.Class.#ctor(Perlang.Token,Perlang.Visibility,List{Perlang.Stmt.Function})
+  name: Class(Token, Visibility, List<Stmt.Function>)
+  href: api/Perlang.Stmt.Class.html#Perlang_Stmt_Class__ctor_Perlang_Token_Perlang_Visibility_List_Perlang_Stmt_Function__
+  commentId: M:Perlang.Stmt.Class.#ctor(Perlang.Token,Perlang.Visibility,List{Perlang.Stmt.Function})
+  name.vb: Class(Token, Visibility, List(Of Stmt.Function))
+  fullName: Perlang.Stmt.Class.Class(Perlang.Token, Perlang.Visibility, List<Perlang.Stmt.Function>)
+  fullName.vb: Perlang.Stmt.Class.Class(Perlang.Token, Perlang.Visibility, List(Of Perlang.Stmt.Function))
+  nameWithType: Stmt.Class.Class(Token, Visibility, List<Stmt.Function>)
+  nameWithType.vb: Stmt.Class.Class(Token, Visibility, List(Of Stmt.Function))
 - uid: Perlang.Stmt.Class.#ctor*
   name: Class
   href: api/Perlang.Stmt.Class.html#Perlang_Stmt_Class__ctor_
@@ -5148,6 +5426,19 @@ references:
   isSpec: "True"
   fullName: Perlang.Stmt.Class.Name
   nameWithType: Stmt.Class.Name
+- uid: Perlang.Stmt.Class.Visibility
+  name: Visibility
+  href: api/Perlang.Stmt.Class.html#Perlang_Stmt_Class_Visibility
+  commentId: P:Perlang.Stmt.Class.Visibility
+  fullName: Perlang.Stmt.Class.Visibility
+  nameWithType: Stmt.Class.Visibility
+- uid: Perlang.Stmt.Class.Visibility*
+  name: Visibility
+  href: api/Perlang.Stmt.Class.html#Perlang_Stmt_Class_Visibility_
+  commentId: Overload:Perlang.Stmt.Class.Visibility
+  isSpec: "True"
+  fullName: Perlang.Stmt.Class.Visibility
+  nameWithType: Stmt.Class.Visibility
 - uid: Perlang.Stmt.Enum
   name: Stmt.Enum
   href: api/Perlang.Stmt.Enum.html
@@ -5266,15 +5557,15 @@ references:
   commentId: T:Perlang.Stmt.Function
   fullName: Perlang.Stmt.Function
   nameWithType: Stmt.Function
-- uid: Perlang.Stmt.Function.#ctor(Perlang.Token,IEnumerable{Perlang.Parameter},IEnumerable{Perlang.Stmt},Perlang.TypeReference)
-  name: Function(Token, IEnumerable<Parameter>, IEnumerable<Stmt>, TypeReference)
-  href: api/Perlang.Stmt.Function.html#Perlang_Stmt_Function__ctor_Perlang_Token_IEnumerable_Perlang_Parameter__IEnumerable_Perlang_Stmt__Perlang_TypeReference_
-  commentId: M:Perlang.Stmt.Function.#ctor(Perlang.Token,IEnumerable{Perlang.Parameter},IEnumerable{Perlang.Stmt},Perlang.TypeReference)
-  name.vb: Function(Token, IEnumerable(Of Parameter), IEnumerable(Of Stmt), TypeReference)
-  fullName: Perlang.Stmt.Function.Function(Perlang.Token, IEnumerable<Perlang.Parameter>, IEnumerable<Perlang.Stmt>, Perlang.TypeReference)
-  fullName.vb: Perlang.Stmt.Function.Function(Perlang.Token, IEnumerable(Of Perlang.Parameter), IEnumerable(Of Perlang.Stmt), Perlang.TypeReference)
-  nameWithType: Stmt.Function.Function(Token, IEnumerable<Parameter>, IEnumerable<Stmt>, TypeReference)
-  nameWithType.vb: Stmt.Function.Function(Token, IEnumerable(Of Parameter), IEnumerable(Of Stmt), TypeReference)
+- uid: Perlang.Stmt.Function.#ctor(Perlang.Token,IEnumerable{Perlang.Parameter},IEnumerable{Perlang.Stmt},Perlang.TypeReference,System.Boolean,System.Boolean)
+  name: Function(Token, IEnumerable<Parameter>, IEnumerable<Stmt>, TypeReference, Boolean, Boolean)
+  href: api/Perlang.Stmt.Function.html#Perlang_Stmt_Function__ctor_Perlang_Token_IEnumerable_Perlang_Parameter__IEnumerable_Perlang_Stmt__Perlang_TypeReference_System_Boolean_System_Boolean_
+  commentId: M:Perlang.Stmt.Function.#ctor(Perlang.Token,IEnumerable{Perlang.Parameter},IEnumerable{Perlang.Stmt},Perlang.TypeReference,System.Boolean,System.Boolean)
+  name.vb: Function(Token, IEnumerable(Of Parameter), IEnumerable(Of Stmt), TypeReference, Boolean, Boolean)
+  fullName: Perlang.Stmt.Function.Function(Perlang.Token, IEnumerable<Perlang.Parameter>, IEnumerable<Perlang.Stmt>, Perlang.TypeReference, System.Boolean, System.Boolean)
+  fullName.vb: Perlang.Stmt.Function.Function(Perlang.Token, IEnumerable(Of Perlang.Parameter), IEnumerable(Of Perlang.Stmt), Perlang.TypeReference, System.Boolean, System.Boolean)
+  nameWithType: Stmt.Function.Function(Token, IEnumerable<Parameter>, IEnumerable<Stmt>, TypeReference, Boolean, Boolean)
+  nameWithType.vb: Stmt.Function.Function(Token, IEnumerable(Of Parameter), IEnumerable(Of Stmt), TypeReference, Boolean, Boolean)
 - uid: Perlang.Stmt.Function.#ctor*
   name: Function
   href: api/Perlang.Stmt.Function.html#Perlang_Stmt_Function__ctor_
@@ -5311,6 +5602,32 @@ references:
   isSpec: "True"
   fullName: Perlang.Stmt.Function.Body
   nameWithType: Stmt.Function.Body
+- uid: Perlang.Stmt.Function.IsConstructor
+  name: IsConstructor
+  href: api/Perlang.Stmt.Function.html#Perlang_Stmt_Function_IsConstructor
+  commentId: P:Perlang.Stmt.Function.IsConstructor
+  fullName: Perlang.Stmt.Function.IsConstructor
+  nameWithType: Stmt.Function.IsConstructor
+- uid: Perlang.Stmt.Function.IsConstructor*
+  name: IsConstructor
+  href: api/Perlang.Stmt.Function.html#Perlang_Stmt_Function_IsConstructor_
+  commentId: Overload:Perlang.Stmt.Function.IsConstructor
+  isSpec: "True"
+  fullName: Perlang.Stmt.Function.IsConstructor
+  nameWithType: Stmt.Function.IsConstructor
+- uid: Perlang.Stmt.Function.IsDestructor
+  name: IsDestructor
+  href: api/Perlang.Stmt.Function.html#Perlang_Stmt_Function_IsDestructor
+  commentId: P:Perlang.Stmt.Function.IsDestructor
+  fullName: Perlang.Stmt.Function.IsDestructor
+  nameWithType: Stmt.Function.IsDestructor
+- uid: Perlang.Stmt.Function.IsDestructor*
+  name: IsDestructor
+  href: api/Perlang.Stmt.Function.html#Perlang_Stmt_Function_IsDestructor_
+  commentId: Overload:Perlang.Stmt.Function.IsDestructor
+  isSpec: "True"
+  fullName: Perlang.Stmt.Function.IsDestructor
+  nameWithType: Stmt.Function.IsDestructor
 - uid: Perlang.Stmt.Function.Name
   name: Name
   href: api/Perlang.Stmt.Function.html#Perlang_Stmt_Function_Name
@@ -6172,6 +6489,12 @@ references:
   commentId: F:Perlang.TokenType.CARET
   fullName: Perlang.TokenType.CARET
   nameWithType: TokenType.CARET
+- uid: Perlang.TokenType.CLASS
+  name: CLASS
+  href: api/Perlang.TokenType.html#Perlang_TokenType_CLASS
+  commentId: F:Perlang.TokenType.CLASS
+  fullName: Perlang.TokenType.CLASS
+  nameWithType: TokenType.CLASS
 - uid: Perlang.TokenType.COLON
   name: COLON
   href: api/Perlang.TokenType.html#Perlang_TokenType_COLON
@@ -6184,6 +6507,18 @@ references:
   commentId: F:Perlang.TokenType.COMMA
   fullName: Perlang.TokenType.COMMA
   nameWithType: TokenType.COMMA
+- uid: Perlang.TokenType.CONSTRUCTOR
+  name: CONSTRUCTOR
+  href: api/Perlang.TokenType.html#Perlang_TokenType_CONSTRUCTOR
+  commentId: F:Perlang.TokenType.CONSTRUCTOR
+  fullName: Perlang.TokenType.CONSTRUCTOR
+  nameWithType: TokenType.CONSTRUCTOR
+- uid: Perlang.TokenType.DESTRUCTOR
+  name: DESTRUCTOR
+  href: api/Perlang.TokenType.html#Perlang_TokenType_DESTRUCTOR
+  commentId: F:Perlang.TokenType.DESTRUCTOR
+  fullName: Perlang.TokenType.DESTRUCTOR
+  nameWithType: TokenType.DESTRUCTOR
 - uid: Perlang.TokenType.DOT
   name: DOT
   href: api/Perlang.TokenType.html#Perlang_TokenType_DOT
@@ -6316,6 +6651,12 @@ references:
   commentId: F:Perlang.TokenType.MINUS_MINUS
   fullName: Perlang.TokenType.MINUS_MINUS
   nameWithType: TokenType.MINUS_MINUS
+- uid: Perlang.TokenType.NEW
+  name: NEW
+  href: api/Perlang.TokenType.html#Perlang_TokenType_NEW
+  commentId: F:Perlang.TokenType.NEW
+  fullName: Perlang.TokenType.NEW
+  nameWithType: TokenType.NEW
 - uid: Perlang.TokenType.NUMBER
   name: NUMBER
   href: api/Perlang.TokenType.html#Perlang_TokenType_NUMBER
@@ -6388,6 +6729,12 @@ references:
   commentId: F:Perlang.TokenType.PRINT
   fullName: Perlang.TokenType.PRINT
   nameWithType: TokenType.PRINT
+- uid: Perlang.TokenType.PUBLIC
+  name: PUBLIC
+  href: api/Perlang.TokenType.html#Perlang_TokenType_PUBLIC
+  commentId: F:Perlang.TokenType.PUBLIC
+  fullName: Perlang.TokenType.PUBLIC
+  nameWithType: TokenType.PUBLIC
 - uid: Perlang.TokenType.QUESTION_MARK
   name: QUESTION_MARK
   href: api/Perlang.TokenType.html#Perlang_TokenType_QUESTION_MARK
@@ -6567,6 +6914,32 @@ references:
   isSpec: "True"
   fullName: Perlang.TypeReference.IsArray
   nameWithType: TypeReference.IsArray
+- uid: Perlang.TypeReference.IsResolved
+  name: IsResolved
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_IsResolved
+  commentId: P:Perlang.TypeReference.IsResolved
+  fullName: Perlang.TypeReference.IsResolved
+  nameWithType: TypeReference.IsResolved
+- uid: Perlang.TypeReference.IsResolved*
+  name: IsResolved
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_IsResolved_
+  commentId: Overload:Perlang.TypeReference.IsResolved
+  isSpec: "True"
+  fullName: Perlang.TypeReference.IsResolved
+  nameWithType: TypeReference.IsResolved
+- uid: Perlang.TypeReference.PerlangClass
+  name: PerlangClass
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_PerlangClass
+  commentId: P:Perlang.TypeReference.PerlangClass
+  fullName: Perlang.TypeReference.PerlangClass
+  nameWithType: TypeReference.PerlangClass
+- uid: Perlang.TypeReference.PerlangClass*
+  name: PerlangClass
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_PerlangClass_
+  commentId: Overload:Perlang.TypeReference.PerlangClass
+  isSpec: "True"
+  fullName: Perlang.TypeReference.PerlangClass
+  nameWithType: TypeReference.PerlangClass
 - uid: Perlang.TypeReference.PossiblyWrappedCppType
   name: PossiblyWrappedCppType
   href: api/Perlang.TypeReference.html#Perlang_TypeReference_PossiblyWrappedCppType
@@ -6596,6 +6969,35 @@ references:
   isSpec: "True"
   fullName: Perlang.TypeReference.SetClrType
   nameWithType: TypeReference.SetClrType
+- uid: Perlang.TypeReference.SetCppType(System.Nullable{CppType})
+  name: SetCppType(Nullable<CppType>)
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_SetCppType_System_Nullable_CppType__
+  commentId: M:Perlang.TypeReference.SetCppType(System.Nullable{CppType})
+  name.vb: SetCppType(Nullable(Of CppType))
+  fullName: Perlang.TypeReference.SetCppType(System.Nullable<CppType>)
+  fullName.vb: Perlang.TypeReference.SetCppType(System.Nullable(Of CppType))
+  nameWithType: TypeReference.SetCppType(Nullable<CppType>)
+  nameWithType.vb: TypeReference.SetCppType(Nullable(Of CppType))
+- uid: Perlang.TypeReference.SetCppType*
+  name: SetCppType
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_SetCppType_
+  commentId: Overload:Perlang.TypeReference.SetCppType
+  isSpec: "True"
+  fullName: Perlang.TypeReference.SetCppType
+  nameWithType: TypeReference.SetCppType
+- uid: Perlang.TypeReference.SetPerlangClass(Perlang.PerlangClass)
+  name: SetPerlangClass(PerlangClass)
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_SetPerlangClass_Perlang_PerlangClass_
+  commentId: M:Perlang.TypeReference.SetPerlangClass(Perlang.PerlangClass)
+  fullName: Perlang.TypeReference.SetPerlangClass(Perlang.PerlangClass)
+  nameWithType: TypeReference.SetPerlangClass(PerlangClass)
+- uid: Perlang.TypeReference.SetPerlangClass*
+  name: SetPerlangClass
+  href: api/Perlang.TypeReference.html#Perlang_TypeReference_SetPerlangClass_
+  commentId: Overload:Perlang.TypeReference.SetPerlangClass
+  isSpec: "True"
+  fullName: Perlang.TypeReference.SetPerlangClass
+  nameWithType: TypeReference.SetPerlangClass
 - uid: Perlang.TypeReference.ToString
   name: ToString()
   href: api/Perlang.TypeReference.html#Perlang_TypeReference_ToString
@@ -6743,6 +7145,18 @@ references:
   isSpec: "True"
   fullName: Perlang.UTF8String.Inequality
   nameWithType: UTF8String.Inequality
+- uid: Perlang.Visibility
+  name: Visibility
+  href: api/Perlang.Visibility.html
+  commentId: T:Perlang.Visibility
+  fullName: Perlang.Visibility
+  nameWithType: Visibility
+- uid: Perlang.Visibility.Public
+  name: Public
+  href: api/Perlang.Visibility.html#Perlang_Visibility_Public
+  commentId: F:Perlang.Visibility.Public
+  fullName: Perlang.Visibility.Public
+  nameWithType: Visibility.Public
 - uid: Perlang.VisitorBase
   name: VisitorBase
   href: api/Perlang.VisitorBase.html
@@ -6992,6 +7406,19 @@ references:
   isSpec: "True"
   fullName: Perlang.VisitorBase.VisitLogicalExpr
   nameWithType: VisitorBase.VisitLogicalExpr
+- uid: Perlang.VisitorBase.VisitNewExpression(Perlang.Expr.NewExpression)
+  name: VisitNewExpression(Expr.NewExpression)
+  href: api/Perlang.VisitorBase.html#Perlang_VisitorBase_VisitNewExpression_Perlang_Expr_NewExpression_
+  commentId: M:Perlang.VisitorBase.VisitNewExpression(Perlang.Expr.NewExpression)
+  fullName: Perlang.VisitorBase.VisitNewExpression(Perlang.Expr.NewExpression)
+  nameWithType: VisitorBase.VisitNewExpression(Expr.NewExpression)
+- uid: Perlang.VisitorBase.VisitNewExpression*
+  name: VisitNewExpression
+  href: api/Perlang.VisitorBase.html#Perlang_VisitorBase_VisitNewExpression_
+  commentId: Overload:Perlang.VisitorBase.VisitNewExpression
+  isSpec: "True"
+  fullName: Perlang.VisitorBase.VisitNewExpression
+  nameWithType: VisitorBase.VisitNewExpression
 - uid: Perlang.VisitorBase.VisitPrintStmt(Perlang.Stmt.Print)
   name: VisitPrintStmt(Stmt.Print)
   href: api/Perlang.VisitorBase.html#Perlang_VisitorBase_VisitPrintStmt_Perlang_Stmt_Print_
@@ -7018,6 +7445,19 @@ references:
   isSpec: "True"
   fullName: Perlang.VisitorBase.VisitReturnStmt
   nameWithType: VisitorBase.VisitReturnStmt
+- uid: Perlang.VisitorBase.VisitThisExpr(Perlang.Expr.This)
+  name: VisitThisExpr(Expr.This)
+  href: api/Perlang.VisitorBase.html#Perlang_VisitorBase_VisitThisExpr_Perlang_Expr_This_
+  commentId: M:Perlang.VisitorBase.VisitThisExpr(Perlang.Expr.This)
+  fullName: Perlang.VisitorBase.VisitThisExpr(Perlang.Expr.This)
+  nameWithType: VisitorBase.VisitThisExpr(Expr.This)
+- uid: Perlang.VisitorBase.VisitThisExpr*
+  name: VisitThisExpr
+  href: api/Perlang.VisitorBase.html#Perlang_VisitorBase_VisitThisExpr_
+  commentId: Overload:Perlang.VisitorBase.VisitThisExpr
+  isSpec: "True"
+  fullName: Perlang.VisitorBase.VisitThisExpr
+  nameWithType: VisitorBase.VisitThisExpr
 - uid: Perlang.VisitorBase.VisitUnaryPostfixExpr(Perlang.Expr.UnaryPostfix)
   name: VisitUnaryPostfixExpr(Expr.UnaryPostfix)
   href: api/Perlang.VisitorBase.html#Perlang_VisitorBase_VisitUnaryPostfixExpr_Perlang_Expr_UnaryPostfix_
