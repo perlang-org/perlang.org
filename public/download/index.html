@@ -76,7 +76,7 @@
 
 <h2 id="automated-snapshot-builds">Automated snapshot builds</h2>
 <p>In addition to the above, each commit to the <code>master</code> branch triggers a build that gets published as a set of <code>.tar.gz</code> files at <a href="https://builds.perlang.org">https://builds.perlang.org</a> (CDN sponsored by <a href="https://www.fastly.com/">Fastly</a> - thank you!). These builds are available for Linux, macOS and Windows.</p>
-<p>The easiest way to install the latest build is by using the <a href="https://gitlab.perlang.org/perlang/perlang/-/blob/master/scripts/perlang-install">perlang-install</a> script. It works on all supported platforms (Linux (<code>arm</code>, <code>arm64</code> and <code>x64</code>), macOS (<code>x64</code>) and Windows (<code>x64</code>) - the latter requires a POSIX shell like Git Bash to be available). Use it like this:</p>
+<p>The easiest way to install the latest build is by using the <a href="https://gitlab.perlang.org/perlang/perlang/-/blob/master/scripts/perlang-install">perlang-install</a> script. The installer script works on all supported platforms (Linux (<code>arm</code>, <code>arm64</code> and <code>x64</code>), macOS (<code>x64</code>) and Windows (<code>x64</code>), but the binaries themselves <strong>only supports <code>linux-x64</code> right now</strong>. Use it like this:</p>
 <pre><code class="lang-shell hljs"><span class="hljs-meta">$ </span><span class="bash">curl -sSL https://perlang.org/install.sh | sh</span>
 </code></pre>
 
