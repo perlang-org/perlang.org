@@ -62,12 +62,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "contribute/index.md",
       "output": {
         ".html": {
           "relative_path": "contribute/index.html",
-          "hash": "foRDMp1HvlNuT8sucY2NUsr99Mm09h5IGOyEeUFs4N0="
+          "hash": "3to5auy7jQCrm3XNMYV6IkPXm1utvKzaYlZAF5pToxY="
         }
       },
       "is_incremental": false,
