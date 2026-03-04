@@ -8,13 +8,9 @@
       
       
       
-        <link rel="canonical" href="https://perlang.org/download/">
+        <link rel="canonical" href="https://perlang.org/syntax-grammar/">
       
       
-        <link rel="prev" href="../learn/the-language/">
-      
-      
-        <link rel="next" href="../contribute/">
       
       
         
@@ -25,7 +21,7 @@
     
     
       
-        <title>Download - Perlang</title>
+        <title>Syntax grammar - Perlang</title>
       
     
     
@@ -82,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#downloading-perlang" class="md-skip">
+        <a href="#syntax-grammar" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Download
+              Syntax grammar
             
           </span>
         </div>
@@ -494,37 +490,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Download
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../download/" class="md-nav__link">
         
   
   
@@ -540,59 +509,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#released-versions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Released versions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#automated-snapshot-builds" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Automated snapshot builds
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#video-tutorial" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Video tutorial
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -641,8 +557,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -651,32 +565,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#released-versions" class="md-nav__link">
+  <a href="#syntax-grammar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Released versions
+        Syntax Grammar
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Syntax Grammar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#declarations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Declarations
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#automated-snapshot-builds" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#statements" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Automated snapshot builds
+        Statements
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#video-tutorial" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#expressions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Video tutorial
+        Expressions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utility-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utility Rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lexical-grammar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lexical Grammar
       
     </span>
   </a>
@@ -700,30 +653,93 @@
 
 
 
-<h1 id="downloading-perlang">Downloading Perlang</h1>
-<h2 id="released-versions">Released versions</h2>
-<p>From time to time, we publish a release version of Perlang at https://gitlab.perlang.org/perlang/perlang/-/releases. These releases are useful if you want to have something a little more "stable" than the automated snapshots, but please be aware that these releases are still not recommended for "production usage" unless you are very brave.</p>
-<p>For most of you, the automated snapshots are more suitable than the release versions, since they include all the latest bug fixes and new features. Nevertheless, use the following command to download the latest release version:</p>
-<pre><code class="lang-shell hljs"><span class="hljs-meta">$ </span><span class="bash">curl -sSL https://perlang.org/install.sh | sh -s -- --default-toolchain release</span>
-</code></pre>
+  <h1>Syntax grammar</h1>
 
-<p>If you have a previous release installed and want to overwrite it, use the following command line:</p>
-<pre><code class="lang-shell hljs"><span class="hljs-meta">$ </span><span class="bash">curl -sSL https://perlang.org/install.sh | sh -s -- --default-toolchain release --force</span>
-</code></pre>
+<p>(This whole document is shamelessly inspired by https://github.com/munificent/craftinginterpreters/blob/master/book/appendix-i.md)</p>
+<h2 id="syntax-grammar">Syntax Grammar</h2>
+<p>The syntactic grammar is used to parse the linear sequence of tokens into the
+nested syntax tree structure. It starts with the first rule that matches an
+entire Perlang program (or a single REPL entry):</p>
+<pre><code class="language-perlang">program        → declaration* EOF ;</code></pre>
 
-<h2 id="automated-snapshot-builds">Automated snapshot builds</h2>
-<p>In addition to the above, each commit to the <code>master</code> branch triggers a build that gets published as a set of <code>.tar.gz</code> files at https://builds.perlang.org (CDN sponsored by <a href="https://www.fastly.com/">Fastly</a> - thank you!). These builds are available for Linux, macOS and Windows.</p>
-<p>The easiest way to install the latest build is by using the <a href="https://gitlab.perlang.org/perlang/perlang/-/blob/master/scripts/perlang-install">perlang-install</a> script. The installer script works on all supported platforms (Linux (<code>arm</code>, <code>arm64</code> and <code>x64</code>), macOS (<code>x64</code>) and Windows (<code>x64</code>), but the binaries themselves <strong>only supports <code>linux-x64</code> right now</strong>. Use it like this:</p>
-<pre><code class="lang-shell hljs"><span class="hljs-meta">$ </span><span class="bash">curl -sSL https://perlang.org/install.sh | sh</span>
-</code></pre>
+<h3 id="declarations">Declarations</h3>
+<p>A program is a series of declarations, which are the statements that bind new
+identifiers or any of the other statement types:</p>
+<pre><code class="language-perlang">declaration    → classDecl
+               | funDecl
+               | varDecl
+               | statement ;
 
-<p>Just as with the stable releses, if you have a previous build installed and want to overwrite it, you need to enable this in the installer. Use the following command line:</p>
-<pre><code class="lang-shell hljs"><span class="hljs-meta">$ </span><span class="bash">curl -sSL https://perlang.org/install.sh | sh -s -- --force</span>
-</code></pre>
+classDecl      → &quot;class&quot; IDENTIFIER ( &quot;&lt;&quot; IDENTIFIER )?
+                 &quot;{&quot; function* &quot;}&quot; ;
+funDecl        → &quot;fun&quot; function ;
+varDecl        → &quot;var&quot; IDENTIFIER ( &quot;=&quot; expression )? &quot;;&quot; ;</code></pre>
 
-<h2 id="video-tutorial">Video tutorial</h2>
-<p>For those of you who prefer to learn by watching videos, here's a short screencast (courtesy of <a href="https://asciinema.org/">Asciinema</a>) which shows what the installer looks like when you run it:</p>
-<p><asciinema-player cols="177" rows="28" speed="2" src="/casts/perlang-install.cast"></asciinema-player></p>
+<h3 id="statements">Statements</h3>
+<p>The remaining statement rules produce side effects, but do not introduce
+bindings:</p>
+<pre><code class="language-perlang">statement      → exprStmt
+               | forStmt
+               | ifStmt
+               | printStmt
+               | returnStmt
+               | whileStmt
+               | block ;
+
+exprStmt       → expression &quot;;&quot; ;
+forStmt        → &quot;for&quot; &quot;(&quot; ( varDecl | exprStmt | &quot;;&quot; )
+                           expression? &quot;;&quot;
+                           expression? &quot;)&quot; statement ;
+ifStmt         → &quot;if&quot; &quot;(&quot; expression &quot;)&quot; statement ( &quot;else&quot; statement )? ;
+printStmt      → &quot;print&quot; expression &quot;;&quot; ;
+returnStmt     → &quot;return&quot; expression? &quot;;&quot; ;
+whileStmt      → &quot;while&quot; &quot;(&quot; expression &quot;)&quot; statement ;
+block          → &quot;{&quot; declaration* &quot;}&quot; ;</code></pre>
+
+<p>Note that <code>block</code> is a statement rule, but is also used as a nonterminal in a
+couple of other rules for things like function bodies.</p>
+<h3 id="expressions">Expressions</h3>
+<p>Expressions produce values. Perlang has a number of unary and binary operators with
+different levels of precedence. Some grammars for languages do not directly
+encode the precedence relationships and specify that elsewhere. Here, we use a
+separate rule for each precedence level to make it explicit:</p>
+<pre><code class="language-perlang">expression     → assignment ;
+
+assignment     → ( call &quot;.&quot; )? IDENTIFIER &quot;=&quot; assignment
+               | unary_postfix | logic_or;
+unary_postfix  → IDENTIFIER ( &quot;--&quot; | &quot;++&quot; ) ;
+
+logic_or       → logic_and ( &quot;or&quot; logic_and )* ;
+logic_and      → equality ( &quot;and&quot; equality )* ;
+equality       → comparison ( ( &quot;!=&quot; | &quot;==&quot; ) comparison )* ;
+comparison     → addition ( ( &quot;&gt;&quot; | &quot;&gt;=&quot; | &quot;&lt;&quot; | &quot;&lt;=&quot; ) addition )* ;
+addition       → multiplication ( ( &quot;-&quot; | &quot;+&quot; ) multiplication )* ;
+multiplication → unary_prefix ( ( &quot;/&quot; | &quot;*&quot; ) unary_prefix )* ;
+
+unary_prefix   → ( &quot;!&quot; | &quot;-&quot; ) unary_prefix | indexing | call ;
+call           → primary ( &quot;(&quot; arguments? &quot;)&quot; | &quot;.&quot; IDENTIFIER )* ;
+indexing       → primary ( &quot;[&quot; expression &quot;]&quot; ) ;
+primary        → &quot;true&quot; | &quot;false&quot; | &quot;nil&quot; | &quot;this&quot;
+               | NUMBER | STRING | IDENTIFIER | &quot;(&quot; expression &quot;)&quot;
+               | &quot;super&quot; &quot;.&quot; IDENTIFIER ;</code></pre>
+
+<h3 id="utility-rules">Utility Rules</h3>
+<p>In order to keep the above rules a little cleaner, some of the grammar is
+split out into a few reused helper rules:</p>
+<pre><code class="language-perlang">function       → IDENTIFIER &quot;(&quot; parameters? &quot;)&quot; block ;
+parameters     → IDENTIFIER ( &quot;,&quot; IDENTIFIER )* ;
+arguments      → expression ( &quot;,&quot; expression )* ;</code></pre>
+
+<h2 id="lexical-grammar">Lexical Grammar</h2>
+<p>The lexical grammar is used by the scanner to group characters into tokens.
+Where the syntax is <a href="https://en.wikipedia.org/wiki/Context-free_grammar">context free</a>, the lexical grammar is <a href="https://en.wikipedia.org/wiki/Regular_grammar">regular</a> -- note
+that there are no recursive rules.</p>
+<div class="language-text highlight"><pre><span></span><code>NUMBER         → DIGIT+ ( &quot;.&quot; DIGIT+ )? ;
+STRING         → &#39;&quot;&#39; &lt;any char except &#39;&quot;&#39;&gt;* &#39;&quot;&#39; ;
+IDENTIFIER     → ALPHA ( ALPHA | DIGIT )* ;
+ALPHA          → &#39;a&#39; ... &#39;z&#39; | &#39;A&#39; ... &#39;Z&#39; | &#39;_&#39; ;
+DIGIT          → &#39;0&#39; ... &#39;9&#39; ;
+</code></pre></div>
 
 
 

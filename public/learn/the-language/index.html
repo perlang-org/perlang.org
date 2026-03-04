@@ -1,120 +1,920 @@
-﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
-<html>
-  
+
+<!doctype html>
+<html lang="en" class="no-js">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Draft: The Perlang Language </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Draft: The Perlang Language ">
-    <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/asciinema-player.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <link rel="stylesheet" href="../../styles/override.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://perlang.org/learn/the-language/">
+      
+      
+        <link rel="prev" href="../quickstart/">
+      
+      
+        <link rel="next" href="../../download/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
     
+    
+      
+        <title>The Perlang Language - Perlang</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../styles/asciinema-player.css">
+    
+      <link rel="stylesheet" href="../../styles/override.css">
+    
+      <link rel="stylesheet" href="../../styles/perlang-hljs.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
         
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <div class="toc-toggle">
-            <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          </div>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h2 id="draft-the-perlang-language">Draft: The Perlang Language</h2>
+        <a href="#draft-the-perlang-language" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
 
-<blockquote><p>This is a more in-depth page describing the Perlang language. It tries to cover all features currently implemented. If you are impatient and just want to see some examples of what Perlang can look like in action, <a href="../quickstart/index.html">the quickstart page</a> might be a better start for you.</p>
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Perlang" class="md-header__button md-logo" aria-label="Perlang" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Perlang
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The Perlang Language
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Perlang" class="md-nav__button md-logo" aria-label="Perlang" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Perlang
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perlang
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    History
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learn
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Learn
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quickstart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Perlang Language
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Perlang Language
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#draft-the-perlang-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Draft: The Perlang Language
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#language-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Language features
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Language features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-top-level-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The top-level scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-existence-of-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The existence of null
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-standard-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The standard library
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-future" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The future
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footnotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Footnotes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../download/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Download
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribute
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#draft-the-perlang-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Draft: The Perlang Language
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#language-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Language features
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Language features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-top-level-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The top-level scope
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-existence-of-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The existence of null
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-standard-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The standard library
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-future" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The future
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footnotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Footnotes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>The Perlang Language</h1>
+
+<h2 id="draft-the-perlang-language">Draft: The Perlang Language</h2>
+<blockquote>
+<p>This is a more in-depth page describing the Perlang language. It tries to cover all features currently implemented. If you are impatient and just want to see some examples of what Perlang can look like in action, <a href="../quickstart/">the quickstart page</a> might be a better start for you.</p>
 </blockquote>
-<p><em>The text is currently a draft of the text which we provide as a &quot;public preview&quot;. Once the document describes all aspects of Perlang in a satisfiable way, we will remove the &quot;draft&quot; status.</em></p>
+<p><em>The text is currently a draft of the text which we provide as a "public preview". Once the document describes all aspects of Perlang in a satisfiable way, we will remove the "draft" status.</em></p>
 <!--
 For some of the functionality where the documentation is missing, we have added links to the corresponding tests; these provide real-world examples on how the functionality is being used. Merge requests that add proper examples to this page are highly welcome and appreciated.
 -->
+
 <h2 id="language-features">Language features</h2>
 <h3 id="the-top-level-scope">The top-level scope</h3>
 <p>Much like other scripting-based languages like JavaScript, Ruby and Python, a program in Perlang does not necessarily have to consist of a <em>class</em> or <em>function</em> (which is the case in languages like Java and C). This is because of the existence of a top-level scope. You can write statements in this scope, and they will be executed when the program is executed:</p>
-<pre><code class="lang-perlang" name="printing-from-the-top-level-scope">// printing-from-the-top-level-scope.per
-print &quot;Printing from the top-level-scope&quot;;
-</code></pre><p>You can also declare variables in this scope and refer to them later in your program. It makes sense to think of the top-level scope as an &quot;implicit function&quot; or even an &quot;implicit class&quot;, if you come from a background in other languages where this way of thinking makes sense to you.</p>
-<pre><code class="lang-perlang" name="defining-a-variable">// defining-a-variable.per
+<pre><code class="language-perlang">// printing-from-the-top-level-scope.per
+print &quot;Printing from the top-level-scope&quot;;</code></pre>
+
+<p>You can also declare variables in this scope and refer to them later in your program. It makes sense to think of the top-level scope as an "implicit function" or even an "implicit class", if you come from a background in other languages where this way of thinking makes sense to you.</p>
+<pre><code class="language-perlang">// defining-a-variable.per
 var a = 1;
-print a;
-</code></pre><h3 id="variables">Variables</h3>
-<p>We already cheated at bit and defined a variable in the previous section, but let&#39;s look a bit more in-depth at this now. Variables can be defined in two ways: with <em>explicit</em> or <em>implicit</em> (&quot;inferred&quot;) typing specified.</p>
-<pre><code class="lang-perlang" name="two-types-of-variables">// two-types-of-variables.per
+print a;</code></pre>
+
+<h3 id="variables">Variables</h3>
+<p>We already cheated at bit and defined a variable in the previous section, but let's look a bit more in-depth at this now. Variables can be defined in two ways: with <em>explicit</em> or <em>implicit</em> ("inferred") typing specified.</p>
+<pre><code class="language-perlang">// two-types-of-variables.per
 var a = 1;
 var b: int = 2;
 
 print a;
-print b;
-</code></pre><p>The above variable declarations are the same in essence. However, be not deceived; Perlang is not a dynamic language even though it supports constructs like <code>var a = 1</code>. These examples illustrates this point further:</p>
+print b;</code></pre>
+
+<p>The above variable declarations are the same in essence. However, be not deceived; Perlang is not a dynamic language even though it supports constructs like <code>var a = 1</code>. These examples illustrates this point further:</p>
 <!-- Inline example instead of file in examples/, because those are validated to return non-zero
      (=not generate any errors) in CI -->
-<pre><code class="lang-perlang">// invalid-reassignment-to-typed-variable.per
+
+<pre><code class="language-perlang">// invalid-reassignment-to-typed-variable.per
 var a: int = 1;
-a = &quot;foo&quot;;
-</code></pre><p>If you try to run the above in a REPL session, you&#39;ll get an error like this:</p>
-<p><code>Error at &#39;a&#39;: Cannot assign System.String to variable defined as &#39;System.Int32&#39;</code></p>
+a = &quot;foo&quot;;</code></pre>
+
+<p>If you try to run the above in a REPL session, you'll get an error like this:</p>
+<p><code>Error at 'a': Cannot assign System.String to variable defined as 'System.Int32'</code></p>
 <p>This is because once a variable is declared, the type of this variable (explicitly or implicitly defined) is stored. The Perlang typechecker uses this information to ensure the type-wise correctness of your program, much like any other statically typed language.</p>
 <h3 id="functions">Functions</h3>
-<p>Top-level functions are currently defined used the <code>fun</code> keyword. Here&#39;s a simple example of how a function can be defined and called:</p>
-<pre><code class="lang-perlang" name="defining-and-calling-a-function">// defining-and-calling-a-function.per
+<p>Top-level functions are currently defined used the <code>fun</code> keyword. Here's a simple example of how a function can be defined and called:</p>
+<pre><code class="language-perlang">// defining-and-calling-a-function.per
 fun foo(): void {
   print &quot;foo&quot;;
 }
 
-foo();
-</code></pre><p>Many functions take one or more parameters. Here&#39;s an example of how such a function can be defined and called:</p>
-<pre><code class="lang-perlang" name="defining-and-calling-a-function-with-parameters">// defining-and-calling-a-function-with-parameters.per
+foo();</code></pre>
+
+<p>Many functions take one or more parameters. Here's an example of how such a function can be defined and called:</p>
+<pre><code class="language-perlang">// defining-and-calling-a-function-with-parameters.per
 fun greet(name: string, age: int): void {
   // TODO: depends on functionality not yet supported in compiled mode.
   // https://gitlab.perlang.org/perlang/perlang/-/issues/406
@@ -122,111 +922,128 @@ fun greet(name: string, age: int): void {
 }
 
 // Expected output: Hello John Doe. Your age is 42
-greet(&quot;John Doe&quot;, 42);
-</code></pre><p>The last example is interesting in a different way as well. It illustrates a language feature available in Perlang which we share with other languages like Java, C# and JavasScript - being able to concatenate <code>string</code> and <code>int</code> values without any conversions. Other languages like Ruby and Python are more strict in this regard, requiring an implicit conversion to <code>String</code>/<code>str</code>.</p>
+greet(&quot;John Doe&quot;, 42);</code></pre>
+
+<p>The last example is interesting in a different way as well. It illustrates a language feature available in Perlang which we share with other languages like Java, C# and JavasScript - being able to concatenate <code>string</code> and <code>int</code> values without any conversions. Other languages like Ruby and Python are more strict in this regard, requiring an implicit conversion to <code>String</code>/<code>str</code>.</p>
 <p>I imagine the reason for this to be the dynamic nature of these languages. In a dynamic language, it is not certain that a particular variable or parameter has a given type, so forcing the user to call <code>i.to_s</code> makes quite a bit of sense. By doing so, you ensure that the operation will do what the user expected. What would happen if you try to concatenate an integer and a random DTO/model instance? Such an operation does not make so much sense, so forcing the user to call <code>model.to_s</code> if they <em>really</em> want to do that does make the code more explicit and clear to the reader.</p>
 <p>However, in statically typed languages we can make a compile-time <em>guarantee</em> that the implicit coercion to <code>string</code> will succeed (or produce a compilation error if this is not the case). While Perlang is not currently a compiled language, it does already have a primitive typechecker so it makes sense to mimic the behavior of our statically typed friends - Java and C#.</p>
-<blockquote><p>Interestingly enough, JavaScript wants to be different - it is indeed a <em>dynamic</em> programming language, but it still supports concatenation of arbitrary (non-numeric) objects. For example, doing <code>new Object() + new Object()</code> gives you the string <code>[object Object][object Object]</code>. To have a custom representation of the object being used in this case, you implement a custom <code>toString()</code> method for the object in question.</p>
+<blockquote>
+<p>Interestingly enough, JavaScript wants to be different - it is indeed a <em>dynamic</em> programming language, but it still supports concatenation of arbitrary (non-numeric) objects. For example, doing <code>new Object() + new Object()</code> gives you the string <code>[object Object][object Object]</code>. To have a custom representation of the object being used in this case, you implement a custom <code>toString()</code> method for the object in question.</p>
 </blockquote>
 <h3 id="the-existence-of-null">The existence of <code>null</code></h3>
 <p>If you have worked with other programming languages, you have likely encountered the concept of <code>null</code> (or <code>NULL</code> in C). Some languages call it something else (<code>nil</code> in Ruby, <code>None</code> in Python) but the concept is the same: it tries to describe the concept of an <em>object reference which does not point to an existing object</em>.</p>
-<p>While this is incredibly useful sometimes, it can also cause significant headache since the existence of <code>null</code> in a programming language means that <strong>all</strong> code in your program now suddenly has to take into consideration that an object reference can have two forms - an actual object or this dreaded <code>null</code> thing. If you try to call a method on a <code>null</code> object, even something harmless like <code>obj.toString()</code>, you will get a runtime exception. (Ruby tries to do slightly better by making <code>nil</code> an actual object that you <em>can</em> call <code>to_s</code> on, but it doesn&#39;t actually solve the big problem which would make your program easier to write and maintain).</p>
+<p>While this is incredibly useful sometimes, it can also cause significant headache since the existence of <code>null</code> in a programming language means that <strong>all</strong> code in your program now suddenly has to take into consideration that an object reference can have two forms - an actual object or this dreaded <code>null</code> thing. If you try to call a method on a <code>null</code> object, even something harmless like <code>obj.toString()</code>, you will get a runtime exception. (Ruby tries to do slightly better by making <code>nil</code> an actual object that you <em>can</em> call <code>to_s</code> on, but it doesn't actually solve the big problem which would make your program easier to write and maintain).</p>
 <p>Tony Hoare, who invented the <code>null</code> reference in the <a href="https://en.wikipedia.org/wiki/ALGOL_W">ALGOL W</a> programming language actually went as far as to describe it as a huge mistake:</p>
-<blockquote><p><em>I call it my billion-dollar mistake. It was the invention of the null reference in 1965. At that time, I was designing the first comprehensive type system for references in an object oriented language (ALGOL W). My goal was to ensure that all use of references should be absolutely safe, with checking performed automatically by the compiler. But I couldn&#39;t resist the temptation to put in a null reference, simply because it was so easy to implement. This has led to innumerable errors, vulnerabilities, and system crashes, which have probably caused a billion dollars of pain and damage in the last forty years.</em> <sub><em>Hoare, Tony (2009). <a href="http://qconlondon.com/london-2009/speaker/Tony+Hoare">&quot;Null References: The Billion Dollar Mistake&quot;</a> (Presentation abstract). QCon London. <a href="https://web.archive.org/web/20090628071208/http://qconlondon.com/london-2009/speaker/Tony+Hoare">Archived</a> from the original on 28 June 2009.</em></sub></p>
+<blockquote>
+<p><em>I call it my billion-dollar mistake. It was the invention of the null reference in 1965. At that time, I was designing the first comprehensive type system for references in an object oriented language (ALGOL W). My goal was to ensure that all use of references should be absolutely safe, with checking performed automatically by the compiler. But I couldn't resist the temptation to put in a null reference, simply because it was so easy to implement. This has led to innumerable errors, vulnerabilities, and system crashes, which have probably caused a billion dollars of pain and damage in the last forty years.</em> <sub><em>Hoare, Tony (2009). <a href="http://qconlondon.com/london-2009/speaker/Tony+Hoare">"Null References: The Billion Dollar Mistake"</a> (Presentation abstract). QCon London. <a href="https://web.archive.org/web/20090628071208/http://qconlondon.com/london-2009/speaker/Tony+Hoare">Archived</a> from the original on 28 June 2009.</em></sub></p>
 </blockquote>
 <p>The Perlang approach to <code>null</code> references is that we aim for doing things right from the start. Consider the following program:</p>
 <!-- Inline example instead of file in examples/, because those are validated to return non-zero
      (=not generate any errors) in CI -->
-<pre><code class="lang-perlang">// defining-and-calling-a-function-with-null-parameter.per
+
+<pre><code class="language-perlang">// defining-and-calling-a-function-with-null-parameter.per
 fun greet(name: string, age: int): void {
   print &quot;Hello &quot; + name + &quot;. Your age is &quot; + age;
 }
 
-// Expected error: [line 2] Error at &#39;name&#39;: Null parameter detected
-greet(null, 42);
-</code></pre><p>Running this program gives you an error like this:</p>
-<p><code>[line 7] Error at &#39;greet&#39;: Null parameter detected for &#39;name&#39;</code></p>
+// Expected error: [line 2] Error at &#x27;name&#x27;: Null parameter detected
+greet(null, 42);</code></pre>
+
+<p>Running this program gives you an error like this:</p>
+<p><code>[line 7] Error at 'greet': Null parameter detected for 'name'</code></p>
 <p>The path we have chosen here is to let  <code>null</code> exist as a concept in Perlang, mainly for interoperability with C#, Java, C, C++ and other languages that uses <code>null</code> references extensively. Making it impossible to use <code>null</code> would significantly limit the ability to call existing code from e.g. the .NET Base Class Library. Hence, we have decided to include <code>null</code> in the language.</p>
 <p>But: we deliberately restrict the use of <code>null</code> in an attempt to steer the user to better constructs, when possible. Whenever <code>null</code> is encountered, a compiler warning is emitted. By default, all compiler warnings are considered errors<sup>1</sup>, which is why you get the above error whenever you try to use <code>null</code>.</p>
 <p>Now, including <code>null</code> in the language but making it impossible to use would be kind of pointless. What we have instead is a mechanism to demote this warning from an error to an actual warning:</p>
-<pre><code>$ perlang -Wno-error=null-usage defining-and-calling-a-function-with-null-parameter.per
+<div class="language-text highlight"><pre><span></span><code>$ perlang -Wno-error=null-usage defining-and-calling-a-function-with-null-parameter.per
 [line 7] Warning at &#39;greet&#39;: Null parameter detected for &#39;name&#39;
 [line 3] Operands must be numbers, not string and null
-</code></pre><p>As can be seen, the previous <code>Error at &#39;name&#39;</code> has now turned into a slightly more friendly <code>Warning at &#39;greet&#39;</code>. However, we then get a runtime error (the &quot;line 3&quot; output) because <code>&quot;Hello &quot; + name</code> is not a valid operation in cases where <code>name</code> is <code>null</code>. <code>string + null</code> will produce a runtime error as above.</p>
-<blockquote><p>The reason for why these errors seem to come in the &quot;wrong order&quot; in terms of the line numbers is because the compilation and analysis phase of the program happens first, as a separate stage, before the actual execution of the program beings. In other words, all compilation warnings for a program would appear before any runtime errors would be emitted.</p>
+</code></pre></div>
+<p>As can be seen, the previous <code>Error at 'name'</code> has now turned into a slightly more friendly <code>Warning at 'greet'</code>. However, we then get a runtime error (the "line 3" output) because <code>"Hello " + name</code> is not a valid operation in cases where <code>name</code> is <code>null</code>. <code>string + null</code> will produce a runtime error as above.</p>
+<blockquote>
+<p>The reason for why these errors seem to come in the "wrong order" in terms of the line numbers is because the compilation and analysis phase of the program happens first, as a separate stage, before the actual execution of the program beings. In other words, all compilation warnings for a program would appear before any runtime errors would be emitted.</p>
 </blockquote>
 <h3 id="classes">Classes</h3>
 <p>In its current version, Perlang does not currently support defining user-defined classes. Calling static methods defined on already existing (stdlib) classes, written in C#, is however possible as the following example demonstrates:</p>
-<pre><code class="lang-perlang" name="calling-base64-encode">// calling-base64-encode.per
+<pre><code class="language-perlang">// calling-base64-encode.per
 
 // TODO: The code below no longer works as of the changes being done in
 // https://gitlab.perlang.org/perlang/perlang/-/issues/406; calling
 // methods in the standard library is currently broken.
 
 // Will output SGVsbG8sIFdvcmxk
-//print Base64.encode(&quot;Hello, World&quot;);
-</code></pre><h3 id="the-standard-library">The standard library</h3>
+//print Base64.encode(&quot;Hello, World&quot;);</code></pre>
+
+<h3 id="the-standard-library">The standard library</h3>
 <p>The standard library is in a very early stage of development. Is it currently being rewritten from C# to C++, and more functionality is being added to it.</p>
 <h3 id="the-future">The future</h3>
-<blockquote><p><em>The future is not set</em> (John &amp; Sarah Connor, <em>Terminator 2: Judgment Day</em>)</p>
+<blockquote>
+<p><em>The future is not set</em> (John &amp; Sarah Connor, <em>Terminator 2: Judgment Day</em>)</p>
 </blockquote>
-<p>There is currently no road map as for exactly &quot;when&quot; and &quot;if&quot; various features will be implemented into the language and its standard library. Your best bet for now is looking at <a href="https://gitlab.perlang.org/perlang/perlang/-/milestones">the milestones</a> in the GitLab repo, where various ideas are roughly categorized into projected releases, depending on when we imagine that they may get introduced into the language.</p>
+<p>There is currently no road map as for exactly "when" and "if" various features will be implemented into the language and its standard library. Your best bet for now is looking at <a href="https://gitlab.perlang.org/perlang/perlang/-/milestones">the milestones</a> in the GitLab repo, where various ideas are roughly categorized into projected releases, depending on when we imagine that they may get introduced into the language.</p>
 <h2 id="footnotes">Footnotes</h2>
 <p><sup>1</sup>: Making warnings be considered errors by default is a deliberate, conscious design decision in an attempt to ensure that a codebase is not littered with numerous minor errors - errors which are really <em>there</em> but the developers have learned to look the other way, to ignore them. It is our experience that this can too-easily become the case when warnings are ignored by default.</p>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/master/docs/learn/the-language/index.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="toggle-mode">
-                <div class="icon">
-                  <i aria-hidden="true">☀</i>
-                </div>
-                <label class="switch">
-                  <input type="checkbox" id="switch-style">
-                  <span class="slider round"></span>
-                </label>
-                <div class="icon">
-                  <i aria-hidden="true">☾</i>
-                </div>
-                <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
-              </div>
-          
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
             </div>
-          </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-      </div>
+        
+      </main>
       
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            © Copyright 2020 The Perlang Authors
-            
-          </div>
-        </div>
-      </footer>
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../js/highlight.min.js"></script>
-    <script type="text/javascript" src="../../js/highlightjs-perlang.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
-    <script type="text/javascript" src="../../js/asciinema-player.js"></script>
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../js/highlight.min.js"></script>
+      
+        <script src="../../js/highlightjs-perlang.js"></script>
+      
+        <script src="../../js/perlang-highlight-init.js"></script>
+      
+        <script src="../../js/asciinema-player.js"></script>
+      
+    
   </body>
 </html>

@@ -1,115 +1,862 @@
-﻿<!DOCTYPE html>
-<!--[if IE]><![endif]-->
-<html>
-  
+
+<!doctype html>
+<html lang="en" class="no-js">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Quick Start </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Quick Start ">
-    <meta name="generator" content="docfx 2.59.4.0">
     
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/asciinema-player.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <link rel="stylesheet" href="../../styles/override.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://perlang.org/learn/quickstart/">
+      
+      
+        <link rel="prev" href="../../about/history/">
+      
+      
+        <link rel="next" href="../the-language/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
     
+    
+      
+        <title>Quickstart - Perlang</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../styles/asciinema-player.css">
+    
+      <link rel="stylesheet" href="../../styles/override.css">
+    
+      <link rel="stylesheet" href="../../styles/perlang-hljs.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
     
     
   </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
         
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <div class="toc-toggle">
-            <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          </div>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="quick-start">Quick Start</h1>
+        <a href="#quick-start" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
 
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Perlang" class="md-header__button md-logo" aria-label="Perlang" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Perlang
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Quickstart
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Perlang" class="md-nav__button md-logo" aria-label="Perlang" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Perlang
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    About
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perlang
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    History
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learn
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Learn
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quickstart
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quickstart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hello-world" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hello World
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hello World">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#repl-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        REPL version
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scripting-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scripting mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calculating-an-arbitrary-number-of-pi-decimals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calculating an arbitrary number of pi decimals
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Calculating an arbitrary number of pi decimals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-about-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How about performance?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further reading
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-language/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Perlang Language
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../download/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Download
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribute
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hello-world" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hello World
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hello World">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#repl-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        REPL version
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scripting-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scripting mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calculating-an-arbitrary-number-of-pi-decimals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calculating an arbitrary number of pi decimals
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Calculating an arbitrary number of pi decimals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-about-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How about performance?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Further reading
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="quick-start">Quick Start</h1>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>This section presumes that you have installed the Perlang tooling using the instructions on our <a href="../../download/index.html">download page</a>, and added it to your <code>$PATH</code>.</p>
+<p>This section presumes that you have installed the Perlang tooling using the instructions on our <a href="../../download/">download page</a>, and added it to your <code>$PATH</code>.</p>
 <p>There are basically two ways in which you can use Perlang:</p>
 <ul>
 <li><em>REPL mode</em></li>
 <li><em>Scripting mode</em></li>
 </ul>
-<p>In <em>REPL mode</em>, each line you type is interpreted as you press Enter. This mode is useful for doing mathematical operations (for example: <code>2 * 3</code>, <code>2 ** 10</code>, etc) as well as for doing &quot;exploratory programming&quot;, learning how a particular class or API works. For this purpose, it works well. If you are working on a program where the program will be executed more than one time, it is typically not the right choice.</p>
+<p>In <em>REPL mode</em>, each line you type is interpreted as you press Enter. This mode is useful for doing mathematical operations (for example: <code>2 * 3</code>, <code>2 ** 10</code>, etc) as well as for doing "exploratory programming", learning how a particular class or API works. For this purpose, it works well. If you are working on a program where the program will be executed more than one time, it is typically not the right choice.</p>
 <p>In <em>scripting mode</em>, you type your program in a file and execute <code>perlang &lt;filename&gt;</code> (without the angle brackets). Perlang scripts conventionally follows the  <code>filename.per</code> convention, although this is no way enforced by the interpreter.</p>
-<blockquote><p>In the future, we hope to add a <em>compiled mode</em> as well, where Perlang programs are precompiled to MSIL bytecode before they are executed. It is anticipated that this will provide magnitudes better performance than the current, interpreted mode.</p>
+<blockquote>
+<p>In the future, we hope to add a <em>compiled mode</em> as well, where Perlang programs are precompiled to MSIL bytecode before they are executed. It is anticipated that this will provide magnitudes better performance than the current, interpreted mode.</p>
 </blockquote>
 <p>Some of the examples below illustrate both ways of running a Perlang program, but the longer examples are only really practical to run in scripting mode. As we move along through this guide, we introduce various concepts in how the Perlang interpreter and language works as well, so this section aims to provide the reader with more than just the bare essentials.</p>
 <h2 id="hello-world">Hello World</h2>
 <h4 id="repl-version">REPL version</h4>
-<pre><code class="lang-shell">$ perlang
-Perlang Interactive REPL Console (0.1.0-dev.117, built from 3263a42)
-&gt; print &quot;Hello World&quot;
-Hello World
-</code></pre><p>As can be seen, printing Hello World is pretty much like in many other programming languages. The <code>print</code> function is a language keyword, so there is no requirement to use parentheses around the string being printed. (The interpreter will not complain if you do choose to use parentheses, though.)</p>
+<div class="language-shell highlight"><pre><span></span><code>$<span class="w"> </span>perlang
+Perlang<span class="w"> </span>Interactive<span class="w"> </span>REPL<span class="w"> </span>Console<span class="w"> </span><span class="o">(</span><span class="m">0</span>.1.0-dev.117,<span class="w"> </span>built<span class="w"> </span>from<span class="w"> </span>3263a42<span class="o">)</span>
+&gt;<span class="w"> </span>print<span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
+Hello<span class="w"> </span>World
+</code></pre></div>
+<p>As can be seen, printing Hello World is pretty much like in many other programming languages. The <code>print</code> function is a language keyword, so there is no requirement to use parentheses around the string being printed. (The interpreter will not complain if you do choose to use parentheses, though.)</p>
 <p>You can also do it like this:</p>
-<pre><code class="lang-shell">&gt; &quot;Hello World&quot;
-Hello World
-</code></pre><p>In the Perlang REPL, much like in the Python or Ruby REPL, the result of each (valid) expression is printed. You can try this with other expressions also, like <code>10 * 50</code>, <code>2 ** 32</code> and so forth.</p>
-<p>Here&#39;s an example of a REPL session in action:</p>
+<div class="language-shell highlight"><pre><span></span><code>&gt;<span class="w"> </span><span class="s2">&quot;Hello World&quot;</span>
+Hello<span class="w"> </span>World
+</code></pre></div>
+<p>In the Perlang REPL, much like in the Python or Ruby REPL, the result of each (valid) expression is printed. You can try this with other expressions also, like <code>10 * 50</code>, <code>2 ** 32</code> and so forth.</p>
+<p>Here's an example of a REPL session in action:</p>
 <p><asciinema-player cols="126" rows="30" speed="2" src="/casts/repl.cast"></asciinema-player></p>
-<p>Worth mentioning is that normally in Perlang, each complete <em>statement</em> (like <code>print &quot;Hello World&quot;</code>) must be terminated by a semicolon, much like in the C family of languages (C, C++, C#, Java etc). In the REPL however, it&#39;s permissible to skip the semicolon. A newline can be considered to be interpreted as a &quot;semicolon and newline&quot;, for convenience.</p>
+<p>Worth mentioning is that normally in Perlang, each complete <em>statement</em> (like <code>print "Hello World"</code>) must be terminated by a semicolon, much like in the C family of languages (C, C++, C#, Java etc). In the REPL however, it's permissible to skip the semicolon. A newline can be considered to be interpreted as a "semicolon and newline", for convenience.</p>
 <h4 id="scripting-mode">Scripting mode</h4>
-<pre><code class="lang-perlang" name="hello_world">// hello_world.per
-print &quot;Hello World&quot;;
-</code></pre><p>The comment on the first line is strictly speaking not a required part in this script. It is only there to help you understand that this program should be saved to disk using the suggested file name given there. (Feel free to disobey this suggestion if you are a little rebellious, just like me.)</p>
+<pre><code class="language-perlang">// hello_world.per
+print &quot;Hello World&quot;;</code></pre>
+
+<p>The comment on the first line is strictly speaking not a required part in this script. It is only there to help you understand that this program should be saved to disk using the suggested file name given there. (Feel free to disobey this suggestion if you are a little rebellious, just like me.)</p>
 <p>Run the program like this: <code>perlang hello_world.per</code>. If all goes well, you should get an output that looks like this:</p>
-<pre><code class="lang-shell">$ perlang hello_world.per
-Hello World
-</code></pre><h2 id="calculating-an-arbitrary-number-of-pi-decimals">Calculating an arbitrary number of pi decimals</h2>
+<div class="language-shell highlight"><pre><span></span><code>$<span class="w"> </span>perlang<span class="w"> </span>hello_world.per
+Hello<span class="w"> </span>World
+</code></pre></div>
+<h2 id="calculating-an-arbitrary-number-of-pi-decimals">Calculating an arbitrary number of pi decimals</h2>
 <p>Many programming language tutorials are kind of boring (<em>feel like calculating Fibonacci sequences, anyone?</em>). This is my feeble attempt to make it just a <em>little</em> bit more exciting. Based on an algorithm by Andrew Jennings<a href="http://ajennings.net/blog/a-million-digits-of-pi-in-9-lines-of-javascript.html">1</a>, this program will give you the first 1000 digits of π.</p>
 <p>(Given the size of this, there is little reason to show the REPL version; some of this would also have to be typed on a single line in the REPL at the moment, making it even more inconvenient.)</p>
-<pre><code class="lang-perlang" name="pi">// pi.per
+<pre><code class="language-perlang">// pi.per
 //
 // The number of digits we should calculate
 var digits = 1000;
@@ -124,18 +871,20 @@ while (x &gt; 0) {
     i += 2;
 }
 
-print(pi / (10 ** 20));
-</code></pre><h3 id="how-about-performance">How about performance?</h3>
-<p>Perlang is in no way performance-optimized (yet). Because of its scripted, interpreted nature, it will be much inferior to more grown-up languages like Java and C# (which compile to &quot;virtual machine executables&quot; - Java bytecode and MSIL respectively). It will likely even be less efficient than JavaScript. Let&#39;s try it and see for ourselves!</p>
-<p>If we increase the number of Pi digits from 1000 to 10000, this is the runtime on my current machine (i5-8250U CPU @ 1.60GHz):</p>
-<pre><code class="lang-shell">$ time perlang docs/examples/pi.per
-314159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339360726024914127372458700660631558817488152092096282925409171536436789259036001133053054882046652138414695194151160943305727036575959195309218611738193261179310511854807446237996274956735188575272489122793818301194912983367336244065664308602139494639522473719070217986094370277053921717629317675238467481846766940513200056812714526356082778577134275778960917363717872146844090122495343014654958537105079227968925892354201995611212902196086403441815981362977477130996051870721134999999837297804995105973173281609631859502445945534690830264252230825334468503526193118817101000313783875288658753320838142061717766914730359825349042875546873115956286388235378759375195778185778053217122680661300192787661119590921642019893809525720106548586327886593615338182796823030195203530185296899577362259941389[...]
+print(pi / (10 ** 20));</code></pre>
 
-real    0m0.614s
-user    0m0.602s
-sys 0m0.032s
-</code></pre><p>Now, for the sake of it, here is the JavaScript equivalent (Andrew Jennings example with number of digits increased from 1000 to 10000):</p>
-<pre><code>$ node -v
+<h3 id="how-about-performance">How about performance?</h3>
+<p>Perlang is in no way performance-optimized (yet). Because of its scripted, interpreted nature, it will be much inferior to more grown-up languages like Java and C# (which compile to "virtual machine executables" - Java bytecode and MSIL respectively). It will likely even be less efficient than JavaScript. Let's try it and see for ourselves!</p>
+<p>If we increase the number of Pi digits from 1000 to 10000, this is the runtime on my current machine (i5-8250U CPU @ 1.60GHz):</p>
+<div class="language-shell highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">time</span><span class="w"> </span>perlang<span class="w"> </span>docs/examples/pi.per
+<span class="m">314159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339360726024914127372458700660631558817488152092096282925409171536436789259036001133053054882046652138414695194151160943305727036575959195309218611738193261179310511854807446237996274956735188575272489122793818301194912983367336244065664308602139494639522473719070217986094370277053921717629317675238467481846766940513200056812714526356082778577134275778960917363717872146844090122495343014654958537105079227968925892354201995611212902196086403441815981362977477130996051870721134999999837297804995105973173281609631859502445945534690830264252230825334468503526193118817101000313783875288658753320838142061717766914730359825349042875546873115956286388235378759375195778185778053217122680661300192787661119590921642019893809525720106548586327886593615338182796823030195203530185296899577362259941389</span><span class="o">[</span>...<span class="o">]</span>
+
+real<span class="w">    </span>0m0.614s
+user<span class="w">    </span>0m0.602s
+sys<span class="w"> </span>0m0.032s
+</code></pre></div>
+<p>Now, for the sake of it, here is the JavaScript equivalent (Andrew Jennings example with number of digits increased from 1000 to 10000):</p>
+<div class="language-text highlight"><pre><span></span><code>$ node -v
 v14.15.5
 $ time node pi.js
 314159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339360726024914127372458700660631558817488152092096282925409171536436789259036001133053054882046652138414695194151160943305727036575959195309218611738193261179310511854807446237996274956735188575272489122793818301194912983367336244065664308602139494639522473719070217986094370277053921717629317675238467481846766940513200056812714526356082778577134275778960917363717872146844090122495343014654958537105079227968925892354201995611212902196086403441815981362977477130996051870721134999999837297804995105973173281609631859502445945534690830264252230825334468503526193118817101000313783875288658753320838142061717766914730359825349042875546873115956286388235378759375195778185778053217122680661300192787661119590921642019893809525720106548586327886593615338182796823030195203530185296899577362259941389[...]
@@ -143,64 +892,73 @@ $ time node pi.js
 real    0m0.380s
 user    0m0.383s
 sys 0m0.005s
-</code></pre><p>So, we are running about 60% slower than the JavaScript counterpart. For many applications, this could be tolerable but it&#39;s quite obvious that there&#39;s a lot of work that needs to be done in this area before Perlang is anywhere near &quot;production quality&quot;.</p>
+</code></pre></div>
+<p>So, we are running about 60% slower than the JavaScript counterpart. For many applications, this could be tolerable but it's quite obvious that there's a lot of work that needs to be done in this area before Perlang is anywhere near "production quality".</p>
 <h3 id="further-reading">Further reading</h3>
-<p>This guide only takes some initial steps in teaching the user how to use Perlang. For example, <em>functions</em> aren&#39;t covered at all.</p>
-<p>For a more in-depth guide which aims to cover all parts of Perlang which are currently implemented, see the page about <a href="../the-language/index.html">the Perlang language</a>.</p>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/perlang-org/perlang/blob/master/docs/learn/quickstart/index.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="toggle-mode">
-                <div class="icon">
-                  <i aria-hidden="true">☀</i>
-                </div>
-                <label class="switch">
-                  <input type="checkbox" id="switch-style">
-                  <span class="slider round"></span>
-                </label>
-                <div class="icon">
-                  <i aria-hidden="true">☾</i>
-                </div>
-                <script type="text/javascript" src="../../styles/toggle-theme.js"></script>
-              </div>
-          
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-                <h5>In This Article</h5>
-                <div></div>
-              </nav>
+<p>This guide only takes some initial steps in teaching the user how to use Perlang. For example, <em>functions</em> aren't covered at all.</p>
+<p>For a more in-depth guide which aims to cover all parts of Perlang which are currently implemented, see the page about <a href="../the-language/">the Perlang language</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
             </div>
-          </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-      </div>
+        
+      </main>
       
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            © Copyright 2020 The Perlang Authors
-            
-          </div>
-        </div>
-      </footer>
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../js/highlight.min.js"></script>
-    <script type="text/javascript" src="../../js/highlightjs-perlang.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
-    <script type="text/javascript" src="../../js/asciinema-player.js"></script>
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../js/highlight.min.js"></script>
+      
+        <script src="../../js/highlightjs-perlang.js"></script>
+      
+        <script src="../../js/perlang-highlight-init.js"></script>
+      
+        <script src="../../js/asciinema-player.js"></script>
+      
+    
   </body>
 </html>
