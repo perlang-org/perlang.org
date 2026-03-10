@@ -885,7 +885,7 @@ var a = 1;
 print a;</code></pre>
 
 <h3 id="variables">Variables</h3>
-<p>We already cheated at bit and defined a variable in the previous section, but let's look a bit more in-depth at this now. Variables can be defined in two ways: with <em>explicit</em> or <em>implicit</em> ("inferred") typing specified.</p>
+<p>We already cheated a bit and defined a variable in the previous section, but let's look a bit more in-depth at this now. Variables can be defined in two ways: with <em>explicit</em> or <em>implicit</em> ("inferred") typing specified.</p>
 <pre><code class="language-perlang">// two-types-of-variables.per
 var a = 1;
 var b: int = 2;
@@ -905,7 +905,7 @@ a = &quot;foo&quot;;</code></pre>
 <p><code>Error at 'a': Cannot assign System.String to variable defined as 'System.Int32'</code></p>
 <p>This is because once a variable is declared, the type of this variable (explicitly or implicitly defined) is stored. The Perlang typechecker uses this information to ensure the type-wise correctness of your program, much like any other statically typed language.</p>
 <h3 id="functions">Functions</h3>
-<p>Top-level functions are currently defined used the <code>fun</code> keyword. Here's a simple example of how a function can be defined and called:</p>
+<p>Top-level functions are currently defined using the <code>fun</code> keyword. Here's a simple example of how a function can be defined and called:</p>
 <pre><code class="language-perlang">// defining-and-calling-a-function.per
 fun foo(): void {
   print &quot;foo&quot;;
@@ -974,7 +974,7 @@ greet(null, 42);</code></pre>
 //print Base64.encode(&quot;Hello, World&quot;);</code></pre>
 
 <h3 id="the-standard-library">The standard library</h3>
-<p>The standard library is in a very early stage of development. Is it currently being rewritten from C# to C++, and more functionality is being added to it.</p>
+<p>The standard library is in a very early stage of development. It is currently being rewritten from C# to C++, and more functionality is being added to it.</p>
 <h3 id="the-future">The future</h3>
 <blockquote>
 <p><em>The future is not set</em> (John &amp; Sarah Connor, <em>Terminator 2: Judgment Day</em>)</p>
