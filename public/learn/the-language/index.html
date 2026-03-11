@@ -595,6 +595,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#static-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Static methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Destructors
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -805,6 +833,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#static-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Static methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Destructors
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -916,17 +972,15 @@ foo();</code></pre>
 <p>Many functions take one or more parameters. Here's an example of how such a function can be defined and called:</p>
 <pre><code class="language-perlang">// defining-and-calling-a-function-with-parameters.per
 fun greet(name: string, age: int): void {
-  // TODO: depends on functionality not yet supported in compiled mode.
-  // https://gitlab.perlang.org/perlang/perlang/-/issues/406
-  //print &quot;Hello &quot; + name + &quot;. Your age is &quot; + age;
+  print &quot;Hello &quot; + name + &quot;. Your age is &quot; + age;
 }
 
 // Expected output: Hello John Doe. Your age is 42
 greet(&quot;John Doe&quot;, 42);</code></pre>
 
-<p>The last example is interesting in a different way as well. It illustrates a language feature available in Perlang which we share with other languages like Java, C# and JavasScript - being able to concatenate <code>string</code> and <code>int</code> values without any conversions. Other languages like Ruby and Python are more strict in this regard, requiring an implicit conversion to <code>String</code>/<code>str</code>.</p>
+<p>The last example is interesting in a different way as well. It illustrates a language feature available in Perlang which we share with other languages like Java, C# and JavaScript - being able to concatenate <code>string</code> and <code>int</code> values without any conversions. Other languages like Ruby and Python are more strict in this regard, requiring an implicit conversion to <code>String</code>/<code>str</code>.</p>
 <p>I imagine the reason for this to be the dynamic nature of these languages. In a dynamic language, it is not certain that a particular variable or parameter has a given type, so forcing the user to call <code>i.to_s</code> makes quite a bit of sense. By doing so, you ensure that the operation will do what the user expected. What would happen if you try to concatenate an integer and a random DTO/model instance? Such an operation does not make so much sense, so forcing the user to call <code>model.to_s</code> if they <em>really</em> want to do that does make the code more explicit and clear to the reader.</p>
-<p>However, in statically typed languages we can make a compile-time <em>guarantee</em> that the implicit coercion to <code>string</code> will succeed (or produce a compilation error if this is not the case). While Perlang is not currently a compiled language, it does already have a primitive typechecker so it makes sense to mimic the behavior of our statically typed friends - Java and C#.</p>
+<p>As a compiled, statically typed language, Perlang can make compile-time guarantees that implicit coercions like this will succeed — or produce a compilation error if they cannot. This is consistent with the behavior of our statically typed friends — Java and C#.</p>
 <blockquote>
 <p>Interestingly enough, JavaScript wants to be different - it is indeed a <em>dynamic</em> programming language, but it still supports concatenation of arbitrary (non-numeric) objects. For example, doing <code>new Object() + new Object()</code> gives you the string <code>[object Object][object Object]</code>. To have a custom representation of the object being used in this case, you implement a custom <code>toString()</code> method for the object in question.</p>
 </blockquote>
@@ -963,7 +1017,79 @@ greet(null, 42);</code></pre>
 <p>The reason for why these errors seem to come in the "wrong order" in terms of the line numbers is because the compilation and analysis phase of the program happens first, as a separate stage, before the actual execution of the program beings. In other words, all compilation warnings for a program would appear before any runtime errors would be emitted.</p>
 </blockquote>
 <h3 id="classes">Classes</h3>
-<p>In its current version, Perlang does not currently support defining user-defined classes. Calling static methods defined on already existing (stdlib) classes, written in C#, is however possible as the following example demonstrates:</p>
+<p>Perlang supports defining user-defined classes with instance methods, static methods, constructors, and fields. Fields are immutable by default; use the <code>mutable</code> keyword to allow reassignment. Inheritance is not yet supported.</p>
+<p>Here is a simple example of a user-defined class with a constructor, a private field, and an instance method:</p>
+<pre><code class="language-perlang">// user-defined-class.per
+public class Greeter
+{
+    private name_: string;
+
+    public constructor(name: string)
+    {
+        this.name_ = name;
+    }
+
+    public say_hello(): void
+    {
+        // Both the fully qualified &quot;this.name_&quot; form and the shorter &quot;name_&quot; forms can be used here
+        // for  referring to the field
+        print(&quot;Hello, &quot; + name_ + &quot;!&quot;);
+    }
+}
+
+// Expected output: Hello, World!
+var greeter = new Greeter(&quot;World&quot;);
+greeter.say_hello();</code></pre>
+
+<h4 id="static-methods">Static methods</h4>
+<p>Classes can also define static methods, which can be called directly on the class without instantiating it first:</p>
+<pre><code class="language-perlang">// user-defined-class-with-static-method.per
+public class Greeter
+{
+    public static say_hello(): void
+    {
+        print(&quot;Hello World from static class method&quot;);
+    }
+}
+
+// Expected output: Hello World from static class method
+Greeter.say_hello();</code></pre>
+
+<h4 id="destructors">Destructors</h4>
+<p>Like in C++, a class can define a destructor. The destructor will always be called when the object goes out of scope. This is different from languages like Java and C#, where you have less control over when an object will actually be destroyed.</p>
+<pre><code class="language-perlang">// user-defined-class-with-destructor.per
+public class Greeter
+{
+    private name_: string;
+
+    public constructor(name: string)
+    {
+        this.name_ = name;
+    }
+
+    public destructor()
+    {
+        print(&quot;Goodbye from &quot; + this.name_ + &quot;!&quot;);
+    }
+
+    public say_hello(): void
+    {
+        print(&quot;Hello, &quot; + this.name_ + &quot;!&quot;);
+    }
+}
+
+// Expected output:
+// Hello, World!
+// Goodbye from World!
+var greeter = new Greeter(&quot;World&quot;);
+greeter.say_hello();</code></pre>
+
+<!-- TODO: Re-enable this example once calling Base64.encode() works again. Currently
+     fails with "Internal error: C++ type for System.Object not defined".
+
+Static methods can also be called on existing stdlib classes, as the following example demonstrates:
+
+
 <pre><code class="language-perlang">// calling-base64-encode.per
 
 // TODO: The code below no longer works as of the changes being done in
@@ -972,6 +1098,8 @@ greet(null, 42);</code></pre>
 
 // Will output SGVsbG8sIFdvcmxk
 //print Base64.encode(&quot;Hello, World&quot;);</code></pre>
+
+-->
 
 <h3 id="the-standard-library">The standard library</h3>
 <p>The standard library is in a very early stage of development. It is currently being rewritten from C# to C++, and more functionality is being added to it.</p>
