@@ -587,6 +587,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#switch-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        switch statements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#classes" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -825,6 +836,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#switch-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        switch statements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#classes" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1016,6 +1038,61 @@ greet(null, 42);</code></pre>
 <blockquote>
 <p>The reason for why these errors seem to come in the "wrong order" in terms of the line numbers is because the compilation and analysis phase of the program happens first, as a separate stage, before the actual execution of the program beings. In other words, all compilation warnings for a program would appear before any runtime errors would be emitted.</p>
 </blockquote>
+<h3 id="switch-statements"><code>switch</code> statements</h3>
+<p>Like many languages in the C family, Perlang supports <code>switch</code> statements for branching based on a value. The following types can be used as the switch expression: <code>int</code>, <code>char</code>, <code>string</code>, and <code>enum</code> types. A <code>default</code> branch can be added to handle values not matched by any <code>case</code>.</p>
+<p>A notable feature is support for <em>range conditions</em> using the <code>..</code> operator, which allows matching a contiguous range of values in a single case. The example below shows both range conditions and "regular", single conditions.</p>
+<pre><code class="language-perlang">// switch-statement.per
+fun classify(i: int): void
+{
+    switch (i) {
+        case 1..5:
+            print &quot;one to five&quot;;
+        case 6..10:
+            print &quot;six to ten&quot;;
+        case 11:
+            print &quot;eleven&quot;;
+        default:
+            print &quot;other&quot;;
+    }
+}
+
+// Expected output:
+// one to five
+// six to ten
+// eleven
+// other
+classify(3);
+classify(7);
+classify(11);
+classify(42);</code></pre>
+
+<p>Multiple cases can share the same branch by listing them consecutively without a body between them. Note that unlike C and C++, there is no implicit fallthrough between cases — each case is independent. Because of this, there is no need to use the <code>break</code> keyword in this context.</p>
+<p>Switch statements can also branch based on <code>char</code> values:</p>
+<pre><code class="language-perlang">// switch-statement-char.per
+fun classify_char(c: char): void
+{
+    switch (c) {
+        case &#x27;a&#x27;..&#x27;c&#x27;:
+            print &quot;a to c&quot;;
+        case &#x27;d&#x27;..&#x27;f&#x27;:
+            print &quot;d to f&quot;;
+        case &#x27;q&#x27;:
+            print &quot;special case&quot;;
+        default:
+            print &quot;other&quot;;
+    }
+}
+
+// Expected output:
+// a to c
+// d to f
+// special case
+// other
+classify_char(&#x27;b&#x27;);
+classify_char(&#x27;e&#x27;);
+classify_char(&#x27;q&#x27;);
+classify_char(&#x27;し&#x27;);</code></pre>
+
 <h3 id="classes">Classes</h3>
 <p>Perlang supports defining user-defined classes with instance methods, static methods, constructors, and fields. Fields are immutable by default; use the <code>mutable</code> keyword to allow reassignment. Inheritance is not yet supported.</p>
 <p>Here is a simple example of a user-defined class with a constructor, a private field, and an instance method:</p>
