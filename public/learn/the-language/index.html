@@ -626,17 +626,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-existence-of-null" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The existence of null
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#switch-statements" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -683,6 +672,17 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-existence-of-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The existence of null
+      
+    </span>
+  </a>
   
 </li>
         
@@ -925,17 +925,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-existence-of-null" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The existence of null
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#switch-statements" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -982,6 +971,17 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-existence-of-null" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The existence of null
+      
+    </span>
+  </a>
   
 </li>
         
@@ -1209,38 +1209,6 @@ greet(&quot;John Doe&quot;, 42);</code></pre>
 <blockquote>
 <p>Interestingly enough, JavaScript wants to be different - it is indeed a <em>dynamic</em> programming language, but it still supports concatenation of arbitrary (non-numeric) objects. For example, doing <code>new Object() + new Object()</code> gives you the string <code>[object Object][object Object]</code>. To have a custom representation of the object being used in this case, you implement a custom <code>toString()</code> method for the object in question.</p>
 </blockquote>
-<h3 id="the-existence-of-null">The existence of <code>null</code></h3>
-<p>If you have worked with other programming languages, you have likely encountered the concept of <code>null</code> (or <code>NULL</code> in C). Some languages call it something else (<code>nil</code> in Ruby, <code>None</code> in Python) but the concept is the same: it tries to describe the concept of an <em>object reference which does not point to an existing object</em>.</p>
-<p>While this is incredibly useful sometimes, it can also cause significant headache since the existence of <code>null</code> in a programming language means that <strong>all</strong> code in your program now suddenly has to take into consideration that an object reference can have two forms - an actual object or this dreaded <code>null</code> thing. If you try to call a method on a <code>null</code> object, even something harmless like <code>obj.toString()</code>, you will get a runtime exception. (Ruby tries to do slightly better by making <code>nil</code> an actual object that you <em>can</em> call <code>to_s</code> on, but it doesn't actually solve the big problem which would make your program easier to write and maintain).</p>
-<p>Tony Hoare, who invented the <code>null</code> reference in the <a href="https://en.wikipedia.org/wiki/ALGOL_W">ALGOL W</a> programming language actually went as far as to describe it as a huge mistake:</p>
-<blockquote>
-<p><em>I call it my billion-dollar mistake. It was the invention of the null reference in 1965. At that time, I was designing the first comprehensive type system for references in an object oriented language (ALGOL W). My goal was to ensure that all use of references should be absolutely safe, with checking performed automatically by the compiler. But I couldn't resist the temptation to put in a null reference, simply because it was so easy to implement. This has led to innumerable errors, vulnerabilities, and system crashes, which have probably caused a billion dollars of pain and damage in the last forty years.</em> <sub><em>Hoare, Tony (2009). <a href="http://qconlondon.com/london-2009/speaker/Tony+Hoare">"Null References: The Billion Dollar Mistake"</a> (Presentation abstract). QCon London. <a href="https://web.archive.org/web/20090628071208/http://qconlondon.com/london-2009/speaker/Tony+Hoare">Archived</a> from the original on 28 June 2009.</em></sub></p>
-</blockquote>
-<p>The Perlang approach to <code>null</code> references is that we aim for doing things right from the start. Consider the following program:</p>
-<!-- Inline example instead of file in examples/, because those are validated to return non-zero
-     (=not generate any errors) in CI -->
-
-<pre><code class="language-perlang">// defining-and-calling-a-function-with-null-parameter.per
-fun greet(name: string, age: int): void {
-  print &quot;Hello &quot; + name + &quot;. Your age is &quot; + age;
-}
-
-// Expected error: [line 2] Error at &#x27;name&#x27;: Null parameter detected
-greet(null, 42);</code></pre>
-
-<p>Running this program gives you an error like this:</p>
-<p><code>[line 7] Error at 'greet': Null parameter detected for 'name'</code></p>
-<p>The path we have chosen here is to let  <code>null</code> exist as a concept in Perlang, mainly for interoperability with C#, Java, C, C++ and other languages that uses <code>null</code> references extensively. Making it impossible to use <code>null</code> would significantly limit the ability to call existing code from e.g. the .NET Base Class Library. Hence, we have decided to include <code>null</code> in the language.</p>
-<p>But: we deliberately restrict the use of <code>null</code> in an attempt to steer the user to better constructs, when possible. Whenever <code>null</code> is encountered, a compiler warning is emitted. By default, all compiler warnings are considered errors<sup>1</sup>, which is why you get the above error whenever you try to use <code>null</code>.</p>
-<p>Now, including <code>null</code> in the language but making it impossible to use would be kind of pointless. What we have instead is a mechanism to demote this warning from an error to an actual warning:</p>
-<div class="language-text highlight"><pre><span></span><code>$ perlang -Wno-error=null-usage defining-and-calling-a-function-with-null-parameter.per
-[line 7] Warning at &#39;greet&#39;: Null parameter detected for &#39;name&#39;
-[line 3] Operands must be numbers, not string and null
-</code></pre></div>
-<p>As can be seen, the previous <code>Error at 'name'</code> has now turned into a slightly more friendly <code>Warning at 'greet'</code>. However, we then get a runtime error (the "line 3" output) because <code>"Hello " + name</code> is not a valid operation in cases where <code>name</code> is <code>null</code>. <code>string + null</code> will produce a runtime error as above.</p>
-<blockquote>
-<p>The reason for why these errors seem to come in the "wrong order" in terms of the line numbers is because the compilation and analysis phase of the program happens first, as a separate stage, before the actual execution of the program beings. In other words, all compilation warnings for a program would appear before any runtime errors would be emitted.</p>
-</blockquote>
 <h3 id="switch-statements"><code>switch</code> statements</h3>
 <p>Like many languages in the C family, Perlang supports <code>switch</code> statements for branching based on a value. The following types can be used as the switch expression: <code>int</code>, <code>char</code>, <code>string</code>, and <code>enum</code> types. A <code>default</code> branch can be added to handle values not matched by any <code>case</code>.</p>
 <p>A notable feature is support for <em>range conditions</em> using the <code>..</code> operator, which allows matching a contiguous range of values in a single case. The example below shows both range conditions and "regular", single conditions.</p>
@@ -1381,6 +1349,32 @@ Static methods can also be called on existing stdlib classes, as the following e
 
 -->
 
+<h3 id="the-existence-of-null">The existence of <code>null</code></h3>
+<p>The concept of <code>null</code> — a reference that points to no object — is well-known from languages like C, Java, and C#, but can be a common source of runtime errors<sup>2</sup>. Perlang includes <code>null</code> primarily for interoperability with other ecosystems, but deliberately restricts its use. Consider the following program:</p>
+<!-- Inline example instead of file in examples/, because those are validated to return non-zero
+     (=not generate any errors) in CI -->
+
+<pre><code class="language-perlang">// defining-and-calling-a-function-with-null-parameter.per
+fun greet(name: string, age: int): void {
+  print &quot;Hello &quot; + name + &quot;. Your age is &quot; + age;
+}
+
+// Expected error: [line 2] Error at &#x27;name&#x27;: Null parameter detected
+greet(null, 42);</code></pre>
+
+<p>Running this program gives you an error like this:</p>
+<p><code>[line 7] Error at 'greet': Null parameter detected for 'name'</code></p>
+<p>The path we have chosen here is to let  <code>null</code> exist as a concept in Perlang, mainly for interoperability with C, C++ and other languages that uses <code>null</code> references extensively. Making it impossible to use <code>null</code> would significantly limit the ability to e.g. use existing C libraries. Hence, we have decided to include <code>null</code> in the language.</p>
+<p>But: we deliberately restrict the use of <code>null</code> in an attempt to steer the user to better constructs, when possible. Whenever <code>null</code> is encountered, a compiler warning is emitted. By default, all compiler warnings are considered errors<sup>1</sup>, which is why you get the above error whenever you try to use <code>null</code>.</p>
+<p>Now, including <code>null</code> in the language but making it impossible to use would be kind of pointless. What we have instead is a mechanism to demote this warning from an error to an actual warning:</p>
+<div class="language-text highlight"><pre><span></span><code>$ perlang -Wno-error=null-usage defining-and-calling-a-function-with-null-parameter.per
+[line 7] Warning at &#39;greet&#39;: Null parameter detected for &#39;name&#39;
+[line 3] Operands must be numbers, not string and null
+</code></pre></div>
+<p>As can be seen, the previous <code>Error at 'name'</code> has now turned into a slightly more friendly <code>Warning at 'greet'</code>. However, we then get a runtime error (the "line 3" output) because <code>"Hello " + name</code> is not a valid operation in cases where <code>name</code> is <code>null</code>. <code>string + null</code> will produce a runtime error as above.</p>
+<blockquote>
+<p>The reason for why these errors seem to come in the "wrong order" in terms of the line numbers is because the compilation and analysis phase of the program happens first, as a separate stage, before the actual execution of the program beings. In other words, all compilation warnings for a program would appear before any runtime errors would be emitted.</p>
+</blockquote>
 <h3 id="the-standard-library">The standard library</h3>
 <p>The standard library is in a very early stage of development. It is currently being rewritten from C# to C++, and more functionality is being added to it.</p>
 <h3 id="the-future">The future</h3>
@@ -1390,6 +1384,7 @@ Static methods can also be called on existing stdlib classes, as the following e
 <p>There is currently no road map as for exactly "when" and "if" various features will be implemented into the language and its standard library. Your best bet for now is looking at <a href="https://gitlab.perlang.org/perlang/perlang/-/milestones">the milestones</a> in the GitLab repo, where various ideas are roughly categorized into projected releases, depending on when we imagine that they may get introduced into the language.</p>
 <h2 id="footnotes">Footnotes</h2>
 <p><sup>1</sup>: Making warnings be considered errors by default is a deliberate, conscious design decision in an attempt to ensure that a codebase is not littered with numerous minor errors - errors which are really <em>there</em> but the developers have learned to look the other way, to ignore them. It is our experience that this can too-easily become the case when warnings are ignored by default.</p>
+<p><sup>2</sup>: Tony Hoare, who invented the <code>null</code> reference in the <a href="https://en.wikipedia.org/wiki/ALGOL_W">ALGOL W</a> programming language, famously called it his "billion-dollar mistake": <em>"It was the invention of the null reference in 1965. [...] I couldn't resist the temptation to put in a null reference, simply because it was so easy to implement. This has led to innumerable errors, vulnerabilities, and system crashes, which have probably caused a billion dollars of pain and damage in the last forty years."</em> (<a href="https://web.archive.org/web/20090628071208/http://qconlondon.com/london-2009/speaker/Tony+Hoare">QCon London, 2009</a>)</p>
 
 
 
