@@ -565,6 +565,56 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#integer-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integer types
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integer types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automatic-type-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automatic type inference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compile-time-assignment-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compile-time assignment checks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-literal-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternative literal formats
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -814,6 +864,56 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#integer-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integer types
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integer types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automatic-type-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automatic type inference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compile-time-assignment-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compile-time assignment checks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-literal-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alternative literal formats
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -953,11 +1053,11 @@ For some of the functionality where the documentation is missing, we have added 
 
 <h2 id="language-features">Language features</h2>
 <h3 id="the-top-level-scope">The top-level scope</h3>
-<p>Much like other scripting-based languages like JavaScript, Ruby and Python, a program in Perlang does not necessarily have to consist of a <em>class</em> or <em>function</em> (which is the case in languages like Java and C). This is because of the existence of a top-level scope. You can write statements in this scope, and they will be executed when the program is executed:</p>
+<p>Similar to script-based languages like JavaScript, Ruby and Python, a program in Perlang does not necessarily have to consist of a <em>class</em> or <em>function</em> (which is the case in languages like Java and C). This is because of the existence of a <em>top-level scope</em>. You can write statements in this scope, and they will be executed when the program is executed:</p>
 <pre><code class="language-perlang">// printing-from-the-top-level-scope.per
 print &quot;Printing from the top-level-scope&quot;;</code></pre>
 
-<p>You can also declare variables in this scope and refer to them later in your program. It makes sense to think of the top-level scope as an "implicit function" or even an "implicit class", if you come from a background in other languages where this way of thinking makes sense to you.</p>
+<p>You can also declare variables in this scope and refer to them later in your program. It makes sense to think of the top-level scope as an "implicit <code>main</code> method" or even an "implicit class", if you come from a background in other languages where this way of thinking makes sense to you.</p>
 <pre><code class="language-perlang">// defining-a-variable.per
 var a = 1;
 print a;</code></pre>
@@ -979,9 +1079,112 @@ print b;</code></pre>
 var a: int = 1;
 a = &quot;foo&quot;;</code></pre>
 
-<p>If you try to run the above in a REPL session, you'll get an error like this:</p>
-<p><code>Error at 'a': Cannot assign System.String to variable defined as 'System.Int32'</code></p>
+<p>If you save the above and try to run it, you'll get an error like this:</p>
+<p><code>Error at 'a': Cannot assign 'ASCIIString' to 'int' variable</code></p>
 <p>This is because once a variable is declared, the type of this variable (explicitly or implicitly defined) is stored. The Perlang typechecker uses this information to ensure the type-wise correctness of your program, much like any other statically typed language.</p>
+<h3 id="integer-types">Integer types</h3>
+<p>Perlang currently supports the following integer types. Their usage is demonstrated below.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Width</th>
+<th>Signed</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>int</code></td>
+<td>32 bits</td>
+<td>Yes</td>
+<td>-2,147,483,648 to 2,147,483,647</td>
+</tr>
+<tr>
+<td><code>uint</code></td>
+<td>32 bits</td>
+<td>No</td>
+<td>0 to 4,294,967,295</td>
+</tr>
+<tr>
+<td><code>long</code></td>
+<td>64 bits</td>
+<td>Yes</td>
+<td>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
+</tr>
+<tr>
+<td><code>ulong</code></td>
+<td>64 bits</td>
+<td>No</td>
+<td>0 to 18,446,744,073,709,551,615</td>
+</tr>
+<tr>
+<td><code>bigint</code></td>
+<td>Arbitrary</td>
+<td>Yes</td>
+<td>No limit</td>
+</tr>
+</tbody>
+</table>
+<h4 id="automatic-type-inference">Automatic type inference</h4>
+<p>When using <code>var</code> without an explicit type annotation, the compiler automatically selects the smallest integer type in which the literal value fits, but never smaller than 32 bits, i.e. <code>int</code> or <code>uint</code>. The following program illustrates this:</p>
+<pre><code class="language-perlang">// integer-types.per
+var i = 2147483647;
+var u = 4294967295;
+var l = 9223372036854775807;
+var x = 1231231230912839019312831232;
+
+print i.get_type();
+print u.get_type();
+print l.get_type();
+print x.get_type();
+
+// Expected output:
+// perlang.Int32
+// perlang.UInt32
+// perlang.Int64
+// perlang.BigInt</code></pre>
+
+<p>As can be seen above, the compiler will determine the appropriate size (from <code>int</code> and upwards) to use as the type as values grow larger. Here are some other examples:</p>
+<pre><code class="language-perlang">var a = 1;                    // int   (fits in 32 bits)
+var b = -1;                   // int
+var c = 2147483648;           // uint  (too large for int, fits in 32-bit unsigned)
+var d = -2147483649;          // long  (too large for int)
+var e = 4294967296;           // long  (too large for uint, fits in 64-bit signed)
+var f = 9223372036854775808;  // ulong (too large for long)</code></pre>
+
+<h4 id="compile-time-assignment-checks">Compile-time assignment checks</h4>
+<p>Assigning an <code>int</code> to a <code>long</code> is perfectly permissible, since such assignments can be performed without data loss. In other words, the following code compiles without errors:</p>
+<pre><code class="language-perlang">var i: int = 12345;
+var v: long = i;</code></pre>
+
+<p>On the other hand, trying to assign a <code>long</code> to an <code>int</code> variable will fail, because the value cannot be guaranteed to fit into to the smaller variable size:</p>
+<pre><code class="language-perlang">var v: long = 8589934592;
+var i: int = v; // Error: Cannot assign long to int variable</code></pre>
+
+<p>In many languages, the above behaviour can be overriden using explicit casts, like <code>int i = (int)v</code> in C, C# and Java. In Perlang, such explicit casting is currently not supported.</p>
+<h4 id="alternative-literal-formats">Alternative literal formats</h4>
+<p>Integer literals can be written in decimal, hexadecimal, octal, or binary notation. When applicable, underscores can be used as digit separators for improved readability:</p>
+<pre><code class="language-perlang">// integer-literal-formats.per
+var year_of_quake = 1996;
+var vga_framebuffer = 0xA0000;
+var file_mode = 0o755;
+var high_nibble_set = 0b11110000;
+var one_megabyte = 1_048_576;
+
+print year_of_quake;
+print vga_framebuffer;
+print file_mode;
+print high_nibble_set;
+print one_megabyte;
+
+// Expected output:
+// 1996
+// 655360
+// 493
+// 240
+// 1048576</code></pre>
+
 <h3 id="functions">Functions</h3>
 <p>Top-level functions are currently defined using the <code>fun</code> keyword. Here's a simple example of how a function can be defined and called:</p>
 <pre><code class="language-perlang">// defining-and-calling-a-function.per
