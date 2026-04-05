@@ -615,6 +615,67 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concatenation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concatenation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String length
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -914,6 +975,67 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concatenation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concatenation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        String length
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1185,6 +1307,116 @@ print one_megabyte;
 // 240
 // 1048576</code></pre>
 
+<h3 id="strings">Strings</h3>
+<blockquote>
+<p>This section reflects the currently implemented functionality; not the full intended functionality. For more details, see <a href="https://gitlab.perlang.org/perlang/perlang/-/issues/370">#370 Implement <code>string</code> interface with smart handling of string literals</a>.</p>
+</blockquote>
+<p>String literals in Perlang are enclosed in double quotes (<code>"string-value"</code>). The easiest way to use strings are by using type inference (i.e. "implicit typing"). The example below also shows the actual type used under the hood:</p>
+<pre><code class="language-perlang">// string-types.per
+var s1 = &quot;Hello, World&quot;;
+var s2 = &quot;こんにちは、世界&quot;; // &quot;Hello World&quot; in Japanese
+
+print s1;
+print s2;
+print;
+
+print s1.get_type();
+print s2.get_type();
+
+// Expected output:
+// Hello, World
+// こんにちは、世界
+//
+// perlang.ASCIIString
+// perlang.UTF8String</code></pre>
+
+<p>The above example can also be rephrased to use the generic <code>string</code> type explicitly, like this. As illustrated, the actual types used are still the same:</p>
+<pre><code class="language-perlang">// string-type-agnostic.per
+var s1: string = &quot;hello, world&quot;;
+var s2: string = &quot;こんにちは、世界&quot;;
+
+print s1.get_type();
+print s2.get_type();
+
+// Expected output:
+// perlang.ASCIIString
+// perlang.UTF8String</code></pre>
+
+<h4 id="string-types">String types</h4>
+<p>The examples above illustrate usage of three of the most common string types in Perlang: <code>string</code>, <code>ASCIIString</code> and <code>UTF8String</code>. Here is a brief explanation of how they work.</p>
+<ul>
+<li>
+<p><code>string</code> is the most generic type. It can be used for code saying "I can accept any kind of string". Note that retrieving the string length, or indexing the string based on character position is not possible with this type. This is because for some string types (most notably <code>UTF8String</code>), such operations are not easily supported. If indexing the string is required, you must convert it to <code>ASCIIString</code> or <code>UTF16String</code>, by calling <code>as_ascii()</code> or <code>as_utf16()</code> respectively.</p>
+</li>
+<li>
+<p><code>ASCIIString</code> is the underlying type used for strings which contain only ASCII characters. It's an efficient type for such content, using one byte per character.</p>
+</li>
+<li>
+<p><code>UTF8String</code> is used for string literals containing non-ASCII content. It uses the UTF-8 encoding, which is space-efficient for both ASCII and non-ASCII content, but has the significant disadvantage of using <em>varying length</em> for each character (code point). Each individual code point can be between 1 and 4 bytes, per RFC 3629.</p>
+</li>
+<li>
+<p><code>UTF16String</code> is never used implicitly for string literals, but can be used for programs that need to index a string based on position. It supports the full Unicode range, but code points outside the BMP (Basic Multilingual Plane) will use two characters using something called a <em>surrogate pair</em>. To create a <code>UTF16String</code>, call <code>as_utf16()</code> on an existing string.</p>
+</li>
+</ul>
+<p>All these types can be used explicitly in variable declarations:</p>
+<pre><code class="language-perlang">// string-explicit-types.per
+var s1: string = &quot;hello&quot;;
+var s2: ASCIIString = &quot;hello&quot;;
+var s3: UTF8String = &quot;héllo&quot;;
+var s4: UTF16String = &quot;hello&quot;.as_utf16();</code></pre>
+
+<h4 id="concatenation">Concatenation</h4>
+<blockquote>
+<p>Perlang currently does not support Ruby/C#-style string interpolation. For more details, see <a href="https://gitlab.perlang.org/perlang/perlang/-/issues/295">#295 Support string interpolation</a></p>
+</blockquote>
+<p>Strings can be concatenated using the <code>+</code> operator. Perlang also supports concatenating strings directly with numeric types, without requiring an explicit conversion:</p>
+<pre><code class="language-perlang">// string-concatenation.per
+var s1: string = &quot;Hello&quot;;
+var s2: string = &quot;world&quot;;
+var i: int = 2026;
+
+print s1 + &quot;, &quot; + s2 + &quot;!&quot;;
+print &quot;The year is &quot; + i;
+
+// Expected output:
+// Hello, world!
+// The year is 2026</code></pre>
+
+<h4 id="comparison">Comparison</h4>
+<p>Strings are compared by value using the <code>==</code> operator:</p>
+<pre><code class="language-perlang">// string-comparison.per
+var s1: string = &quot;hello&quot;;
+var s2: string = &quot;hello&quot;;
+var s3: string = &quot;world&quot;;
+
+print s1 == s2;
+print s1 == s3;
+
+// Expected output:
+// true
+// false</code></pre>
+
+<p>Note that comparisons are currently "dumb"; they perform a character-by-character comparison and do not take different locales into consideration. For example, the following strings are "semantically equivalent" (<code>café</code> vs <code>cafe</code> + combining acute accent (U+0301)), but will be compared as non-equal with our current operator:</p>
+<pre><code class="language-perlang">// string-comparison-unicode.per
+print &quot;caf\u00e9&quot; == &quot;cafe\u0301&quot;;
+
+// Expected output:
+// false</code></pre>
+
+<h4 id="string-length">String length</h4>
+<p>The <code>.length</code> property is available on <code>ASCIIString</code> and <code>UTF16String</code>. For non-indexable strings like <code>UTF8String</code>, this information is not available.</p>
+<pre><code class="language-perlang">// string-length.per
+var ascii: ASCIIString = &quot;hello&quot;;
+var utf16: UTF16String = &quot;こんにちは&quot;.as_utf16();
+
+print ascii.length;
+print utf16.length;
+
+// Expected output:
+// 5
+// 5</code></pre>
+
+<p>Like for <code>UTF8String</code>, the <code>.length</code> property is not available on <code>string</code>, so attempting to access it on such objects will result in compilation errors.</p>
 <h3 id="functions">Functions</h3>
 <p>Top-level functions are currently defined using the <code>fun</code> keyword. Here's a simple example of how a function can be defined and called:</p>
 <pre><code class="language-perlang">// defining-and-calling-a-function.per
