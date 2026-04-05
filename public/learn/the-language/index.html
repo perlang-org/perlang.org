@@ -676,6 +676,56 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#the-char-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The char type
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The char type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unicode-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unicode support
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escape-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Escape sequences
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-in-switch-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage in switch statements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1024,6 +1074,56 @@
     <span class="md-ellipsis">
       
         String length
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-char-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The char type
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The char type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unicode-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Unicode support
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escape-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Escape sequences
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-in-switch-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usage in switch statements
       
     </span>
   </a>
@@ -1417,6 +1517,35 @@ print utf16.length;
 // 5</code></pre>
 
 <p>Like for <code>UTF8String</code>, the <code>.length</code> property is not available on <code>string</code>, so attempting to access it on such objects will result in compilation errors.</p>
+<h3 id="the-char-type">The <code>char</code> type</h3>
+<p>The <code>char</code> type represents a single character. Character literals are enclosed in single quotes:</p>
+<pre><code class="language-perlang">// char-literal.per
+var c1: char = &#x27;A&#x27;; // ASCII character
+var c2: char = &#x27;ø&#x27;; // Unicode character
+
+print c1;
+print c2;
+
+// Expected output:
+// A
+// ø</code></pre>
+
+<h4 id="unicode-support">Unicode support</h4>
+<p><code>char</code> supports characters from the Unicode Basic Multilingual Plane (BMP), covering code points <code>U+0000</code> to <code>U+FFFF</code>. This includes most characters used in the world's writing systems.</p>
+<blockquote>
+<p>The <code>char</code> type in Perlang is 16-bit wide — wider than C and C++ (8-bit <code>char</code>), but narrower than languages like Rust which use a 32-bit character type. This is the same width as C# and Java, and is a deliberate compromise: 16 bits is enough to represent the vast majority of the world's writing systems, without doubling the memory footprint of character data compared to a 32-bit type. The trade-off is that characters outside the BMP — most notably emoji — cannot be stored in a single <code>char</code>. They can still be used in Perlang via UTF8String and UTF16String; they just cannot be used as char literals.</p>
+</blockquote>
+<h4 id="escape-sequences">Escape sequences</h4>
+<p>The following escape sequences are supported in <code>char</code> literals:</p>
+<ul>
+<li><code>'\n'</code> — LF (Line feed/newline)</li>
+<li><code>'\r'</code> — CR (Carriage return)</li>
+<li><code>'\t'</code> — TAB</li>
+<li><code>'\0'</code> — NUL character</li>
+</ul>
+<p>Hexadecimal (<code>'\x1B'</code>) and octal (<code>'\033'</code>) escape sequences are not supported. The <code>'\0'</code> null sequence is the only exception to the octal rule, included for convenience.</p>
+<h4 id="usage-in-switch-statements">Usage in <code>switch</code> statements</h4>
+<p><code>char</code> values can be used as the expression in <code>switch</code> statements, including with range conditions. See the <a href="#switch-statements">switch statements</a> section for examples.</p>
 <h3 id="functions">Functions</h3>
 <p>Top-level functions are currently defined using the <code>fun</code> keyword. Here's a simple example of how a function can be defined and called:</p>
 <pre><code class="language-perlang">// defining-and-calling-a-function.per
