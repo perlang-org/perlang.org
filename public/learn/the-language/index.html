@@ -615,6 +615,56 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#floating-point-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Floating-point types
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Floating-point types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automatic-type-inference_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automatic type inference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicit-type-annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Explicit type annotations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precision-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Precision considerations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#strings" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1025,6 +1075,56 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#floating-point-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Floating-point types
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Floating-point types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automatic-type-inference_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Automatic type inference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicit-type-annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Explicit type annotations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precision-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Precision considerations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#strings" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1306,48 +1406,13 @@ a = &quot;foo&quot;;</code></pre>
 <p>This is because once a variable is declared, the type of this variable (explicitly or implicitly defined) is stored. The Perlang typechecker uses this information to ensure the type-wise correctness of your program, much like any other statically typed language.</p>
 <h3 id="integer-types">Integer types</h3>
 <p>Perlang currently supports the following integer types. Their usage is demonstrated below.</p>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Width</th>
-<th>Signed</th>
-<th>Range</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>int</code></td>
-<td>32 bits</td>
-<td>Yes</td>
-<td>-2,147,483,648 to 2,147,483,647</td>
-</tr>
-<tr>
-<td><code>uint</code></td>
-<td>32 bits</td>
-<td>No</td>
-<td>0 to 4,294,967,295</td>
-</tr>
-<tr>
-<td><code>long</code></td>
-<td>64 bits</td>
-<td>Yes</td>
-<td>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
-</tr>
-<tr>
-<td><code>ulong</code></td>
-<td>64 bits</td>
-<td>No</td>
-<td>0 to 18,446,744,073,709,551,615</td>
-</tr>
-<tr>
-<td><code>bigint</code></td>
-<td>Arbitrary</td>
-<td>Yes</td>
-<td>No limit</td>
-</tr>
-</tbody>
-</table>
+<ul>
+<li><code>int</code> — 32-bit, signed (-2,147,483,648 to 2,147,483,647)</li>
+<li><code>uint</code> — 32-bit, unsigned (0 to 4,294,967,295)</li>
+<li><code>long</code> — 64-bit, signed (-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)</li>
+<li><code>ulong</code> — 64-bit, unsigned (0 to 18,446,744,073,709,551,615)</li>
+<li><code>bigint</code> — Dynamic number of bits, signed. No upper size limit.</li>
+</ul>
 <h4 id="automatic-type-inference">Automatic type inference</h4>
 <p>When using <code>var</code> without an explicit type annotation, the compiler automatically selects the smallest integer type in which the literal value fits, but never smaller than 32 bits, i.e. <code>int</code> or <code>uint</code>. The following program illustrates this:</p>
 <pre><code class="language-perlang">// integer-types.per
@@ -1407,6 +1472,50 @@ print one_megabyte;
 // 240
 // 1048576</code></pre>
 
+<h3 id="floating-point-types">Floating-point types</h3>
+<p>Perlang supports two floating-point types, based on the IEEE 754 standard:</p>
+<ul>
+<li><code>float</code> — 32-bit, single-precision (~7 significant decimal digits)</li>
+<li><code>double</code> — 64-bit, double-precision (~15–17 significant decimal digits)</li>
+</ul>
+<h4 id="automatic-type-inference_1">Automatic type inference</h4>
+<p>Floating-point literals without a suffix default to <code>double</code>. To get a <code>float</code> instead, append the <code>f</code> suffix to the literal. The <code>d</code> suffix can also be used explicitly, to indicate <code>double</code> precision:</p>
+<pre><code class="language-perlang">// floating-point-types.per
+var d = 1.0;    // When no suffix is specified, floating-point literals will use
+                // &#x27;double&#x27;
+var e = 1.0d;   // Explicit &#x27;d&#x27; suffix can also be used
+var f = 1.0f;   // Explicit &#x27;f&#x27; suffix forces single precision (&#x27;float&#x27;)
+
+print d.get_type();
+print e.get_type();
+print f.get_type();
+
+// Expected output:
+// perlang.Double
+// perlang.Double
+// perlang.Float</code></pre>
+
+<h4 id="explicit-type-annotations">Explicit type annotations</h4>
+<p>You can also declare floating-point variables with an explicit type, like with integer types:</p>
+<pre><code class="language-perlang">// floating-point-explicit-types.per
+var d: double = 3.14159265358979;
+var f: float = 3.14f;
+
+print d;
+print f;
+
+// Expected output:
+// 3.14159265358979
+// 3.14</code></pre>
+
+<h4 id="precision-considerations">Precision considerations</h4>
+<p>Because of the way floating-point numbers are represented in memory, not all decimal values can be stored exactly. <code>double</code> offers higher precision than <code>float</code> and is typically preferred unless memory usage or interoperability with single-precision data is a concern.</p>
+<p>Assigning an integer to a <code>float</code> or <code>double</code> variable is permitted, but may lose precision for large values. For example, a 32-bit integer assigned to a <code>float</code> may not be represented exactly, since <code>float</code> can only represent integers without data loss in the range −2²⁴+1 to 2²⁴−1. Assigning a <code>long</code> (64-bit integer) to a <code>float</code> is not allowed and will produce a compile-time error; assigning it to a <code>double</code> is permitted, but may likewise lose precision for values outside the range −2⁵³ to 2⁵³.</p>
+<p>Floating-point values cannot be assigned to integer variables — the following will produce a compile-time error:</p>
+<pre><code class="language-perlang">var d: double = 3.14;
+var i: int = d; // Error: Cannot assign double to int variable</code></pre>
+
+<p>Like with integers, the above can be overridden using explicit casts in other languages, but in Perlang this is currently not supported.</p>
 <h3 id="strings">Strings</h3>
 <blockquote>
 <p>This section reflects the currently implemented functionality; not the full intended functionality. For more details, see <a href="https://gitlab.perlang.org/perlang/perlang/-/issues/370">#370 Implement <code>string</code> interface with smart handling of string literals</a>.</p>
@@ -1579,7 +1688,9 @@ fun classify(i: int): void
     switch (i) {
         case 1..5:
             print &quot;one to five&quot;;
-        case 6..10:
+        case 6..8:
+        case 9:
+        case 10:
             print &quot;six to ten&quot;;
         case 11:
             print &quot;eleven&quot;;
