@@ -1840,7 +1840,7 @@ greet(null, 42);</code></pre>
 <p>But: we deliberately restrict the use of <code>null</code> in an attempt to steer the user to better constructs, when possible. Whenever <code>null</code> is encountered, a compiler warning is emitted. By default, all compiler warnings are considered errors<sup>1</sup>, which is why you get the above error whenever you try to use <code>null</code>.</p>
 <p>Now, including <code>null</code> in the language but making it impossible to use would be kind of pointless. What we have instead is a mechanism to demote this warning from an error to an actual warning:</p>
 <div class="language-text highlight"><pre><span></span><code>$ perlang -Wno-error=null-usage defining-and-calling-a-function-with-null-parameter.per
-[line 7] Warning at &#39;greet&#39;: Null parameter detected for &#39;name&#39;
+[line 7] Warning at 'greet': Null parameter detected for 'name'
 [line 3] Operands must be numbers, not string and null
 </code></pre></div>
 <p>As can be seen, the previous <code>Error at 'name'</code> has now turned into a slightly more friendly <code>Warning at 'greet'</code>. However, we then get a runtime error (the "line 3" output) because <code>"Hello " + name</code> is not a valid operation in cases where <code>name</code> is <code>null</code>. <code>string + null</code> will produce a runtime error as above.</p>

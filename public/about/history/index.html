@@ -883,7 +883,7 @@
 <li>For <em>some</em> variables/parameters because of optional typing</li>
 </ul>
 <p>...it can use this information about the typing information to perform static analysis. For example, it can determine that the following Java program is invalid:</p>
-<div class="language-java highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hej hej&quot;</span><span class="p">;</span>
+<div class="language-java highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Hej hej"</span><span class="p">;</span>
 
 <span class="c1">// Produces the following error in JShell 11.0.6:</span>
 <span class="c1">//</span>
@@ -902,7 +902,7 @@
 <span class="w">  </span><span class="n">bar</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
 <span class="k">end</span>
 
-<span class="nb">puts</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">)</span>
+<span class="nb">puts</span><span class="p">(</span><span class="s2">"Hello world"</span><span class="p">)</span>
 </code></pre></div>
 <p>If you save this to a file <code>foo.rb</code> and run <code>ruby foo.rb</code>, the program will run without any errors whatsoever, even though the <code>foo</code> method referenced a method that does not exist. This is because of how method invocations work in Ruby; all method calls are by definition "legal", even when they refer to methods that do not exist. If you call an undefined method, there is even a nice little mechanism called <code>method_missing</code> which lets you define, in any class, a method called <code>method_missing</code>. All calls to non-existing methods will then be delegated to that method. An example:</p>
 <div class="language-ruby highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">foo</span>
@@ -910,11 +910,11 @@
 <span class="k">end</span>
 
 <span class="k">def</span><span class="w"> </span><span class="nf">method_missing</span><span class="p">(</span><span class="n">method_name</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
-<span class="w">  </span><span class="nb">puts</span><span class="w"> </span><span class="s2">&quot;You called </span><span class="si">#{</span><span class="n">method_name</span><span class="si">}</span><span class="s2"> with </span><span class="si">#{</span><span class="n">args</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="w">  </span><span class="nb">puts</span><span class="w"> </span><span class="s2">"You called </span><span class="si">#{</span><span class="n">method_name</span><span class="si">}</span><span class="s2"> with </span><span class="si">#{</span><span class="n">args</span><span class="si">}</span><span class="s2">"</span>
 <span class="k">end</span>
 
 <span class="c1"># (Note: parentheses for method calls are not mandatory in Ruby. The</span>
-<span class="c1"># line below calls the &quot;foo&quot; method defined above.)</span>
+<span class="c1"># line below calls the "foo" method defined above.)</span>
 <span class="n">foo</span>
 </code></pre></div>
 <p>Running the program above yields the following output:</p>

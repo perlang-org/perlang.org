@@ -734,11 +734,11 @@ arguments      → expression ( &quot;,&quot; expression )* ;</code></pre>
 <p>The lexical grammar is used by the scanner to group characters into tokens.
 Where the syntax is <a href="https://en.wikipedia.org/wiki/Context-free_grammar">context free</a>, the lexical grammar is <a href="https://en.wikipedia.org/wiki/Regular_grammar">regular</a> -- note
 that there are no recursive rules.</p>
-<div class="language-text highlight"><pre><span></span><code>NUMBER         → DIGIT+ ( &quot;.&quot; DIGIT+ )? ;
-STRING         → &#39;&quot;&#39; &lt;any char except &#39;&quot;&#39;&gt;* &#39;&quot;&#39; ;
+<div class="language-text highlight"><pre><span></span><code>NUMBER         → DIGIT+ ( "." DIGIT+ )? ;
+STRING         → '"' &lt;any char except '"'&gt;* '"' ;
 IDENTIFIER     → ALPHA ( ALPHA | DIGIT )* ;
-ALPHA          → &#39;a&#39; ... &#39;z&#39; | &#39;A&#39; ... &#39;Z&#39; | &#39;_&#39; ;
-DIGIT          → &#39;0&#39; ... &#39;9&#39; ;
+ALPHA          → 'a' ... 'z' | 'A' ... 'Z' | '_' ;
+DIGIT          → '0' ... '9' ;
 </code></pre></div>
 
 
