@@ -1831,22 +1831,19 @@ fun greet(name: string, age: int): void {
   print &quot;Hello &quot; + name + &quot;. Your age is &quot; + age;
 }
 
-// Expected error: [line 2] Error at &#x27;name&#x27;: Null parameter detected
+// This line is expected to fail
 greet(null, 42);</code></pre>
 
 <p>Running this program gives you an error like this:</p>
-<p><code>[line 7] Error at 'greet': Null parameter detected for 'name'</code></p>
+<p><code>[defining-and-calling-a-function-with-null-parameter.per:7] Error at 'greet': Null parameter detected for 'name'</code></p>
 <p>The path we have chosen here is to let  <code>null</code> exist as a concept in Perlang, mainly for interoperability with C, C++ and other languages that uses <code>null</code> references extensively. Making it impossible to use <code>null</code> would significantly limit the ability to e.g. use existing C libraries. Hence, we have decided to include <code>null</code> in the language.</p>
 <p>But: we deliberately restrict the use of <code>null</code> in an attempt to steer the user to better constructs, when possible. Whenever <code>null</code> is encountered, a compiler warning is emitted. By default, all compiler warnings are considered errors<sup>1</sup>, which is why you get the above error whenever you try to use <code>null</code>.</p>
 <p>Now, including <code>null</code> in the language but making it impossible to use would be kind of pointless. What we have instead is a mechanism to demote this warning from an error to an actual warning:</p>
 <div class="language-text highlight"><pre><span></span><code>$ perlang -Wno-error=null-usage defining-and-calling-a-function-with-null-parameter.per
 [line 7] Warning at 'greet': Null parameter detected for 'name'
-[line 3] Operands must be numbers, not string and null
+[line unknown] Process defining-and-calling-a-function-with-null-parameter exited with exit code 139
 </code></pre></div>
-<p>As can be seen, the previous <code>Error at 'name'</code> has now turned into a slightly more friendly <code>Warning at 'greet'</code>. However, we then get a runtime error (the "line 3" output) because <code>"Hello " + name</code> is not a valid operation in cases where <code>name</code> is <code>null</code>. <code>string + null</code> will produce a runtime error as above.</p>
-<blockquote>
-<p>The reason for why these errors seem to come in the "wrong order" in terms of the line numbers is because the compilation and analysis phase of the program happens first, as a separate stage, before the actual execution of the program beings. In other words, all compilation warnings for a program would appear before any runtime errors would be emitted.</p>
-</blockquote>
+<p>As can be seen, the previous <code>Error at 'name'</code> has now turned into a slightly more friendly <code>Warning at 'greet'</code>. However, we then get a "Process ... exited with exit code 139" because the program tries to dereference a <code>null</code> pointer (concatenating <code>"Hello "</code> and <code>null</code>).</p>
 <h3 id="the-standard-library">The standard library</h3>
 <p>The standard library is in a very early stage of development. It is currently being rewritten from C# to C++, and more functionality is being added to it.</p>
 <h3 id="the-future">The future</h3>
